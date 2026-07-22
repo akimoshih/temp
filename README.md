@@ -15,24 +15,28 @@
 - `generate.py`：讀取上面兩個檔案產生 `site/*.html`
 - `site/`：產出的頁面（overview + 每位成員一頁）
 
-## 網頁網址對照表
+## 網頁網址對照表（VibeHost，workspace: dcard）
 
-| 頁面 | 網址 |
-|---|---|
-| 總覽（僅供 Akimo） | https://claude.ai/code/artifact/7a02d760-cbb5-48a7-9221-bcec8055a9fc |
-| Rio（壹比零） | https://claude.ai/code/artifact/67fa1dfd-4578-4ef3-922a-4416412081b3 |
-| Andrew（安主） | https://claude.ai/code/artifact/1de6b202-0f38-4a08-9992-d12faeca4404 |
-| 阿根 | https://claude.ai/code/artifact/94b2cbda-915b-4a4b-b2be-4ddb13e3d2f5 |
-| Roy（主委） | https://claude.ai/code/artifact/46d09b57-317d-4a97-950d-3c8728a0fa9c |
-| 梅伯 | https://claude.ai/code/artifact/08223c11-6f41-40cd-88b3-0dc08f1c8cbf |
-| YY | https://claude.ai/code/artifact/94bc648b-26b7-482f-8125-95483060ef33 |
-| Lauren | https://claude.ai/code/artifact/0f00042d-377b-4f00-82c4-b6fb28b5f907 |
-| Royce | https://claude.ai/code/artifact/f81a7dd2-137f-4873-9787-dad683bc5475 |
-| Ellie | https://claude.ai/code/artifact/1b578260-179e-4cfb-9e7c-b98fdb477aff |
-| Nakaw | https://claude.ai/code/artifact/1c58c4c3-4dcf-4399-86d0-9383cb595499 |
-| Leo（Leo道仙人） | https://claude.ai/code/artifact/8c7d243e-99e6-4df6-8688-d8f2c8a082e6 |
+所有站點 private-by-default：開啟需 Google 登入，只有 workspace owner 與被授權的 email 看得到。每個成員頁已授權該成員的 @dcard.cc email（viewer）。
+
+| 頁面 | 網址 | 已授權 |
+|---|---|---|
+| 總覽（僅供 Akimo） | https://collab-overview-dcard.vibehost.space | （owner） |
+| Rio（壹比零） | https://collab-rio-dcard.vibehost.space | rio@dcard.cc |
+| Andrew（安主） | https://collab-andrew-dcard.vibehost.space | andrew.wang@dcard.cc |
+| 阿根 | https://collab-agen-dcard.vibehost.space | anthony@dcard.cc |
+| Roy（主委） | https://collab-roy-dcard.vibehost.space | roy.wu@dcard.cc |
+| 梅伯 | https://collab-meber-dcard.vibehost.space | paul.mei@dcard.cc |
+| YY | https://collab-yy-dcard.vibehost.space | yy@dcard.cc |
+| Lauren | https://collab-lauren-dcard.vibehost.space | lauren@dcard.cc |
+| Royce | https://collab-royce-dcard.vibehost.space | royce@dcard.cc |
+| Ellie | https://collab-ellie-dcard.vibehost.space | ellie.yu@dcard.cc |
+| Nakaw | https://collab-nakaw-dcard.vibehost.space | nakaw@dcard.cc |
+| Leo（Leo道仙人） | https://collab-leo-dcard.vibehost.space | leo.lin@dcard.cc |
 
 成員頁不含 Gmail 連結；總覽頁的品牌名可點回 Gmail 原信。
+
+部署方式：`python3 vibehost_deploy.py`（讀 `~/.config/vibehost/config.json` 的登入 token，經由 REST API 上傳；CLI 的串流上傳與這個環境的 proxy 不相容，故不用 `vibehost deploy`）。新成員第一次部署會自動建 app 並授權其 email。
 
 ## Google Sheet 後台
 
