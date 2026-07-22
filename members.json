@@ -1,0 +1,13 @@
+[
+  {"name": "Rio", "key": "rio", "aliases": ["壹比零"], "email": "rio@dcard.cc", "enabled": true},
+  {"name": "Andrew", "key": "andrew", "aliases": ["安主"], "email": "andrew.wang@dcard.cc", "enabled": true},
+  {"name": "阿根", "key": "agen", "aliases": [], "email": "anthony@dcard.cc", "enabled": true},
+  {"name": "Roy", "key": "roy", "aliases": ["主委", "吳至晟", "蘆洲主委"], "email": "roy.wu@dcard.cc", "enabled": true},
+  {"name": "梅伯", "key": "meber", "aliases": ["meberisgod"], "email": "paul.mei@dcard.cc", "enabled": true},
+  {"name": "YY", "key": "yy", "aliases": [], "email": "yy@dcard.cc", "enabled": true},
+  {"name": "Lauren", "key": "lauren", "aliases": [], "email": "lauren@dcard.cc", "enabled": true},
+  {"name": "Royce", "key": "royce", "aliases": [], "email": "royce@dcard.cc", "enabled": true},
+  {"name": "Ellie", "key": "ellie", "aliases": [], "email": "ellie.yu@dcard.cc", "enabled": true},
+  {"name": "Nakaw", "key": "nakaw", "aliases": [], "email": "nakaw@dcard.cc", "enabled": true},
+  {"name": "Leo", "key": "leo", "aliases": ["Leo道仙人"], "email": "leo.lin@dcard.cc", "enabled": true}
+]
