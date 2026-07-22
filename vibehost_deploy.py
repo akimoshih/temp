@@ -86,17 +86,20 @@ for app in targets:
     results[app] = {"status": status, "url": url, "immutableUrl": cur.get("immutableUrl") or dep.get("immutableUrl")}
     print(f"{app}: {status} {url or ''}", flush=True)
 
-# 權限：成員頁授權給該成員的 email（viewer）；已授權過會回錯誤，忽略即可
+# 權限：成員頁授權給該成員的 email；所有頁面都授權給 EXTRA_VIEWERS（viewer）。已授權過會回錯誤，忽略即可
+EXTRA_VIEWERS = ["jasmine.wang@dcard.cc"]
 members = json.load(open(os.path.join(BASE, "members.json")))
 email_by_app = {f"collab-{m['key']}": m["email"] for m in members}
 for app in targets:
-    email = email_by_app.get(app)
-    if not email or app not in app_ids:
+    if app not in app_ids:
         continue
-    try:
-        call("POST", ws_path(f"apps/{app_ids[app]}/grants/email"), {"email": email, "role": "viewer"})
-        print(f"{app}: granted viewer to {email}", flush=True)
-    except SystemExit as e:
-        print(f"{app}: grant skipped ({str(e)[:120]})", flush=True)
+    emails = [email_by_app[app]] if app in email_by_app else []
+    emails += EXTRA_VIEWERS
+    for email in emails:
+        try:
+            call("POST", ws_path(f"apps/{app_ids[app]}/grants/email"), {"email": email, "role": "viewer"})
+            print(f"{app}: granted viewer to {email}", flush=True)
+        except SystemExit as e:
+            print(f"{app}: grant {email} skipped ({str(e)[:100]})", flush=True)
 
 print(json.dumps(results, ensure_ascii=False, indent=1))
