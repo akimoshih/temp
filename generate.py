@@ -143,6 +143,14 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 .bfill{height:10px;background:var(--grad);border-radius:0 4px 4px 0;min-width:2px;}
 .draftbox{white-space:pre-wrap;background:var(--chip-bg);border:1px dashed var(--line);border-radius:8px;
   padding:12px 14px;margin:10px 0 4px;font-size:13.5px;line-height:1.7;overflow-x:auto;}
+.actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:12px;}
+.abtn{display:inline-block;font-size:14px;font-weight:700;padding:7px 18px;border-radius:99px;
+  text-decoration:none;line-height:1.4;}
+.abtn.ok{background:var(--grad);color:#fff;}
+.abtn.no{border:1.5px solid var(--line);color:var(--muted);}
+.abtn.no:hover{border-color:var(--accent);color:var(--accent);}
+.abtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.ahint{font-size:12px;color:var(--muted);}
 .revwrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin:10px 0;}
 table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;}
 .rev th,.rev td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap;}
@@ -375,6 +383,12 @@ def render_overview_dashboard():
 <div class="dsec">案源</div>{bar_rows(src_pairs)}'''
 
 TASK_STATUS_CLASS = {"待審批": "talk", "已核准": "run", "已完成": "done", "已退回": "off"}
+APPROVAL_FORM = "https://docs.google.com/forms/d/e/1FAIpQLScfgB9cKqva_599cUArRHrL5py7AYXNp_mv9v1IckjtRbkEHw/viewform"
+ENTRY_TASK, ENTRY_DECISION = "entry.867872180", "entry.130383656"
+
+def approval_url(task_id, decision):
+    from urllib.parse import quote
+    return f"{APPROVAL_FORM}?usp=pp_url&{ENTRY_TASK}={quote(task_id)}&{ENTRY_DECISION}={quote(decision)}"
 
 def render_approvals():
     try:
@@ -395,15 +409,21 @@ def render_approvals():
         if d:
             hdr = f'收件人：{html.escape("、".join(d.get("to", [])))}\n主旨：{html.escape(d.get("subject", ""))}\n\n'
             draft_html = f'<div class="draftbox">{hdr}{html.escape(d.get("body", ""))}</div>'
+        actions = ""
+        if t["status"] == "待審批":
+            actions = (f'<div class="actions">'
+                       f'<a class="abtn ok" href="{approval_url(t["task_id"], "核准")}" target="_blank" rel="noopener">✅ 核准</a>'
+                       f'<a class="abtn no" href="{approval_url(t["task_id"], "退回")}" target="_blank" rel="noopener">↩️ 退回修改</a>'
+                       f'<span class="ahint">按下後表單已預填，按「提交」即完成；退回請在表單「修改意見」欄說明。</span></div>')
         cards.append(f'''<article class="card">
   <div class="row1"><span class="status {scls}">{html.escape(t["status"])}</span><span class="chip meet">{html.escape(t["type"])}</span><span class="brand">{html.escape(t["case"])}</span></div>
   <div class="meta">{"".join(meta)}<span>{gmail}</span></div>
   <p class="summary">{html.escape(t.get("note", ""))}</p>
   {draft_html}
-  <div class="subj">✅ 核准方式：到「個人經紀審批表」新增一列，填任務 ID <b>{t["task_id"]}</b> 與「核准」（要修改就填「退回」＋修改意見），下一輪排程會自動在信箱建立草稿。</div>
+  {actions}
 </article>''')
-    intro = ('<div class="privnote">這裡是 AI 產生、等待確認的內容。核准後系統只會建立<b>草稿</b>，不會自動寄出——最後送出永遠由人操作。'
-             '審批表：<a href="https://docs.google.com/spreadsheets/d/18RyaQ65hKPjTe0EH9SjwShv6m5mtURLLiusOTqyU2Bg/edit" target="_blank" rel="noopener">個人經紀審批表</a></div>')
+    intro = ('<div class="privnote">這裡是 AI 產生、等待確認的內容。核准後系統只會在信箱建立<b>草稿</b>（掛在原信底下），不會自動寄出——'
+             '最後送出永遠由人在 Gmail 操作，寄出前也可以在 Gmail 裡直接編輯內容。審批結果每天早上 9:07 處理。</div>')
     return (f"待辦審批（{pending}）" if pending else "待辦審批", intro + "".join(cards))
 
 os.makedirs(os.path.join(BASE, "site"), exist_ok=True)
