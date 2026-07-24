@@ -66,6 +66,9 @@ h1{font-size:clamp(24px,4.5vw,32px);margin:6px 0 4px;text-wrap:balance;}
   background:var(--chip-bg);}
 .status.talk{color:var(--st-talk)} .status.run{color:var(--st-run)}
 .status.admin{color:var(--st-admin)} .status.done{color:var(--st-done)} .status.off{color:var(--st-off)}
+.src{font-size:11.5px;font-weight:600;letter-spacing:.06em;padding:0 8px;border-radius:99px;
+  border:1px solid var(--line);color:var(--muted);background:transparent;}
+.src.biz{border-color:var(--st-admin);color:var(--st-admin);}
 .mchip{font-size:12px;font-weight:600;color:var(--accent);background:var(--chip-bg);
   border-radius:99px;padding:1px 9px;}
 .meta{font-size:13px;color:var(--muted);margin-top:4px;display:flex;flex-wrap:wrap;gap:2px 14px;
@@ -96,8 +99,10 @@ def render_card(r, with_link):
     if r.get("agency"):
         meta.append(f'<span>代理商：{html.escape(r["agency"])}</span>')
     mem_attr = html.escape(",".join(r["members"]))
+    src = r.get("source", "自來")
+    src_chip = f'<span class="src{" biz" if src == "業務" else ""}">{"業務提案" if src == "業務" else "自來案"}</span>'
     return f'''<article class="card" data-members="{mem_attr}">
-  <div class="row1"><span class="status {scls}">{html.escape(r["status"])}</span><span class="brand">{brand}</span>{chips}</div>
+  <div class="row1"><span class="status {scls}">{html.escape(r["status"])}</span>{src_chip}<span class="brand">{brand}</span>{chips}</div>
   <div class="meta">{"".join(meta)}</div>
   <p class="summary">{html.escape(r["summary"])}</p>
   <div class="subj">{html.escape(r["subject"])}</div>
@@ -108,6 +113,9 @@ def render_page(title, subtitle, records, with_link, filters=False, privnote=Non
     records = sorted(records, key=lambda r: (r["date"], r["thread_id"]), reverse=True)
     counts = {s: sum(1 for r in records if r["status"] == s) for s in STATUS_ORDER}
     stats = "".join(f'<span class="stat">{s} <b>{n}</b></span>' for s, n in counts.items() if n)
+    src_counts = {(lbl): sum(1 for r in records if r.get("source", "自來") == key)
+                  for key, lbl in [("自來", "自來案"), ("業務", "業務提案")]}
+    stats += "".join(f'<span class="stat">{lbl} <b>{n}</b></span>' for lbl, n in src_counts.items() if n)
     body = "".join(render_card(r, with_link) for r in records) or '<div class="empty">目前沒有相關邀約。</div>'
     fhtml = ""
     script = ""
@@ -137,7 +145,7 @@ document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click
 <div class="stats">{stats}</div>
 {fhtml}
 {body}
-<footer>只收「成員個人社群合作」邀約（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演）；公司影音業配（Dcard 調查局、中插廣告、節目置入）與內部 AD 出演案不收。本頁由每日排程自動更新；成員名單與狀態修正請編輯 Google Sheet「個人經紀信件網頁後台」。</footer>
+<footer>只收「成員個人社群合作」邀約（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演），含品牌直接來信（自來案）與 Dcard 業務轉介（業務提案）；成員出演公司拍攝的影音（Dcard 調查局、中插廣告、節目置入、AD 影音拍攝）不收。本頁由每日排程自動更新；成員名單與狀態修正請編輯 Google Sheet「個人經紀信件網頁後台」。</footer>
 </div>
 {script}'''
 
