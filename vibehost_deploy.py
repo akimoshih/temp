@@ -22,6 +22,13 @@ PAGES = {
     "collab-leo": "member-leo.html",
 }
 
+# 先讓 CLI 刷新 token（失敗就中止，避免拿過期 token 部署到一半才炸）
+import subprocess
+whoami = subprocess.run(["vibehost", "whoami"], capture_output=True, text=True,
+                        env={**os.environ, "PATH": os.environ["PATH"] + ":" + os.path.expanduser("~/.local/bin")})
+if whoami.returncode != 0:
+    raise SystemExit(f"DEPLOY ABORTED: vibehost 登入失效，請重新 vibehost login（{whoami.stderr.strip()[:200]}）")
+
 cfg = json.load(open(os.path.expanduser("~/.config/vibehost/config.json")))
 TOKEN, WS, WS_SLUG = cfg["token"], cfg["currentWorkspaceId"], cfg["currentWorkspace"]
 
@@ -103,3 +110,7 @@ for app in targets:
             print(f"{app}: grant {email} skipped ({str(e)[:100]})", flush=True)
 
 print(json.dumps(results, ensure_ascii=False, indent=1))
+bad = [a for a, r in results.items() if r["status"] != "healthy"]
+if bad:
+    raise SystemExit(f"DEPLOY FAILED: {', '.join(bad)}")
+print(f"ALL OK {len(results)}/{len(targets)}")
