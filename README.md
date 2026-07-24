@@ -4,7 +4,7 @@
 
 ## 收錄條件
 
-只挑「成員個人社群合作」邀約：品牌邀 Dcard Video 成員做個人社群內容（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演）。公司影音業配（Dcard 調查局、中插廣告、節目置入）不收。
+只挑「成員個人社群合作」邀約：品牌邀 Dcard Video 成員做個人社群內容（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演）。公司影音業配（Dcard 調查局、中插廣告、節目置入）不收；**內部 AD 出演案（Dcard 業務接的廣告案找成員出演，如元大證券 AD 短影音）也不收**。
 
 每件邀約萃取：members（別名正規化成正式名）、brand、agency（代理商公司名，從寄件人網域/署名判斷，直客或無法判斷為 null，不寫進 summary）、date（最初來信日期，既有紀錄不可改）、summary、launch_month（YYYY-MM，未知為 null）、status（洽談中/執行中/行政流程/完成/取消）、subject、thread_id。
 

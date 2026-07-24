@@ -137,7 +137,7 @@ document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click
 <div class="stats">{stats}</div>
 {fhtml}
 {body}
-<footer>只收「成員個人社群合作」邀約（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演）；公司影音業配（Dcard 調查局、中插廣告、節目置入）不收。本頁由每日排程自動更新；成員名單與狀態修正請編輯 Google Sheet「個人經紀信件網頁後台」。</footer>
+<footer>只收「成員個人社群合作」邀約（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演）；公司影音業配（Dcard 調查局、中插廣告、節目置入）與內部 AD 出演案不收。本頁由每日排程自動更新；成員名單與狀態修正請編輯 Google Sheet「個人經紀信件網頁後台」。</footer>
 </div>
 {script}'''
 
