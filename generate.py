@@ -143,6 +143,15 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 .bfill{height:10px;background:var(--grad);border-radius:0 4px 4px 0;min-width:2px;}
 .draftbox{white-space:pre-wrap;background:var(--chip-bg);border:1px dashed var(--line);border-radius:8px;
   padding:12px 14px;margin:10px 0 4px;font-size:13.5px;line-height:1.7;overflow-x:auto;}
+.thr{margin:10px 0 4px;border:1px solid var(--line);border-radius:8px;background:var(--bg);}
+.thr summary{cursor:pointer;padding:9px 14px;font-size:13px;font-weight:600;color:var(--muted);list-style-position:inside;}
+.thr summary:hover{color:var(--accent);}
+.thr[open] summary{border-bottom:1px solid var(--line);color:var(--accent);}
+.tmsg{padding:10px 14px;border-bottom:1px solid var(--line);}
+.tmsg:last-child{border-bottom:none;}
+.tmeta{font-size:12px;font-weight:700;color:var(--accent);display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;}
+.tmeta span{color:var(--muted);font-weight:400;font-variant-numeric:tabular-nums;}
+.tbody{white-space:pre-wrap;font-size:13px;color:var(--ink);margin-top:4px;line-height:1.65;overflow-x:auto;}
 .actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:12px;}
 .abtn{display:inline-block;font-size:14px;font-weight:700;padding:7px 18px;border-radius:99px;
   text-decoration:none;line-height:1.4;}
@@ -412,10 +421,19 @@ def render_approvals():
         meta = [f'<span>任務 {t["task_id"]}</span>', f'<span>負責人 {html.escape(t["assignee"].split("@")[0])}</span>',
                 f'<span>建立 {t["created"]}</span>']
         gmail = f'<a href="https://mail.google.com/mail/u/0/#all/{t["thread_id"]}" target="_blank" rel="noopener">原始信件</a>'
+        thread_html = ""
+        if t.get("thread"):
+            msgs = "".join(
+                f'<div class="tmsg"><div class="tmeta">{html.escape(m["from"])}<span>{html.escape(m["date"])}</span></div>'
+                f'<div class="tbody">{html.escape(m["body"])}</div></div>'
+                for m in t["thread"])
+            thread_html = (f'<details class="thr"><summary>📩 信件往來全文（{len(t["thread"])} 封）</summary>'
+                           f'{msgs}</details>')
         draft_html = ""
         if d:
             hdr = f'收件人：{html.escape("、".join(d.get("to", [])))}\n主旨：{html.escape(d.get("subject", ""))}\n\n'
             draft_html = f'<div class="draftbox">{hdr}{html.escape(d.get("body", ""))}</div>'
+        draft_html = thread_html + draft_html
         actions = ""
         if t["status"] == "待審批":
             actions = (f'<div class="actions">'
