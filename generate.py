@@ -459,7 +459,7 @@ def write(name, content):
 
 write("overview.html", render_page(
     "個人社群合作邀約 – 總覽", "全部成員", RECORDS, with_link=True, filters=True,
-    dashboard=render_overview_dashboard(), approvals=render_approvals()))
+    dashboard=render_overview_dashboard()))
 
 for m in MEMBERS:
     if not m["enabled"]:
