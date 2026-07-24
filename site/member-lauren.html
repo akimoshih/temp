@@ -1,24 +1,28 @@
 <title>個人社群合作邀約 – Lauren</title>
 <style>
 :root{
-  --bg:#F5F8FA; --surface:#FFFFFF; --ink:#182531; --muted:#5B6C79; --line:#DBE4EB;
-  --accent:#0A6FA8; --chip-bg:rgba(10,111,168,.08);
-  --st-talk:#0A6FA8; --st-run:#0E7C66; --st-admin:#6B4FBB; --st-done:#2E7D32; --st-off:#8A97A2;
+  --bg:#FBF6EF; --surface:#FFFFFF; --ink:#2A1E14; --muted:#8A7462; --line:#EDDFCE;
+  --accent:#E4572E; --chip-bg:rgba(228,87,46,.09);
+  --grad:linear-gradient(92deg,#FF5F2E,#FF9E2C);
+  --st-talk:#B96A00; --st-run:#0E7C4A; --st-admin:#8250C8; --st-done:#2E7D32; --st-off:#9A8B7C;
 }
 @media (prefers-color-scheme: dark){:root{
-  --bg:#0E161D; --surface:#161F28; --ink:#DEE8F0; --muted:#93A5B3; --line:#2A3B49;
-  --accent:#63B7E6; --chip-bg:rgba(99,183,230,.12);
-  --st-talk:#63B7E6; --st-run:#4CC2A9; --st-admin:#B39DEB; --st-done:#7CC47F; --st-off:#7C8B97;
+  --bg:#1C140D; --surface:#291E14; --ink:#F6EADC; --muted:#C2A88F; --line:#41321F;
+  --accent:#FF8A50; --chip-bg:rgba(255,138,80,.14);
+  --grad:linear-gradient(92deg,#FF6B3D,#FFB03A);
+  --st-talk:#F0A64E; --st-run:#5CC48F; --st-admin:#B79BEA; --st-done:#7CC47F; --st-off:#A08D77;
 }}
 :root[data-theme="dark"]{
-  --bg:#0E161D; --surface:#161F28; --ink:#DEE8F0; --muted:#93A5B3; --line:#2A3B49;
-  --accent:#63B7E6; --chip-bg:rgba(99,183,230,.12);
-  --st-talk:#63B7E6; --st-run:#4CC2A9; --st-admin:#B39DEB; --st-done:#7CC47F; --st-off:#7C8B97;
+  --bg:#1C140D; --surface:#291E14; --ink:#F6EADC; --muted:#C2A88F; --line:#41321F;
+  --accent:#FF8A50; --chip-bg:rgba(255,138,80,.14);
+  --grad:linear-gradient(92deg,#FF6B3D,#FFB03A);
+  --st-talk:#F0A64E; --st-run:#5CC48F; --st-admin:#B79BEA; --st-done:#7CC47F; --st-off:#A08D77;
 }
 :root[data-theme="light"]{
-  --bg:#F5F8FA; --surface:#FFFFFF; --ink:#182531; --muted:#5B6C79; --line:#DBE4EB;
-  --accent:#0A6FA8; --chip-bg:rgba(10,111,168,.08);
-  --st-talk:#0A6FA8; --st-run:#0E7C66; --st-admin:#6B4FBB; --st-done:#2E7D32; --st-off:#8A97A2;
+  --bg:#FBF6EF; --surface:#FFFFFF; --ink:#2A1E14; --muted:#8A7462; --line:#EDDFCE;
+  --accent:#E4572E; --chip-bg:rgba(228,87,46,.09);
+  --grad:linear-gradient(92deg,#FF5F2E,#FF9E2C);
+  --st-talk:#B96A00; --st-run:#0E7C4A; --st-admin:#8250C8; --st-done:#2E7D32; --st-off:#9A8B7C;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
@@ -71,15 +75,28 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 .tab[aria-selected="true"]{color:var(--accent);border-color:var(--accent);font-weight:700;}
 .tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0;}
-.tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
-.tile .v{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+.tile .v{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;}
 .tile .l{font-size:12.5px;color:var(--muted);margin-top:2px;}
+.hero{background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:22px 24px 18px;margin:16px 0;position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--grad);}
+.hero .hlabel{font-size:12.5px;letter-spacing:.1em;font-weight:700;color:var(--muted);text-transform:uppercase;}
+.hero .big{font-size:clamp(32px,6vw,44px);font-weight:800;line-height:1.15;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  font-variant-numeric:tabular-nums;}
+.unlock{display:inline-block;background:var(--grad);color:#fff;border-radius:99px;
+  padding:3px 14px;font-weight:700;font-size:13px;margin-left:8px;vertical-align:middle;}
+.progress{height:14px;background:var(--chip-bg);border-radius:99px;overflow:hidden;margin:14px 0 8px;}
+.progress>div{height:100%;background:var(--grad);border-radius:99px;min-width:8px;}
+.push{font-size:14px;color:var(--muted);}
+.push b{color:var(--accent);font-variant-numeric:tabular-nums;}
 .dsec{margin:28px 0 10px;font-size:15px;font-weight:700;}
 .dnote{font-size:12.5px;color:var(--muted);margin:-6px 0 10px;}
 .barrow{display:grid;grid-template-columns:96px 1fr 84px;align-items:center;gap:10px;margin:7px 0;font-size:13px;}
 .barrow .lbl{color:var(--muted);text-align:right;}
 .barrow .val{font-variant-numeric:tabular-nums;color:var(--ink);}
-.bfill{height:10px;background:var(--accent);border-radius:0 4px 4px 0;min-width:2px;}
+.bfill{height:10px;background:var(--grad);border-radius:0 4px 4px 0;min-width:2px;}
 .revwrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin:10px 0;}
 table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;}
 .rev th,.rev td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap;}
@@ -92,15 +109,20 @@ table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeri
 <header class="page">
   <div class="eyebrow">Dcard Video・個人經紀</div>
   <h1>個人社群合作邀約 – Lauren</h1>
-  <div class="sub"><span>Lauren 的合作邀約</span><span>共 0 件</span><span>更新於 2026/07/24 13:20（台北時間）</span></div>
+  <div class="sub"><span>Lauren 的合作邀約</span><span>共 0 件</span><span>更新於 2026/07/24 13:25（台北時間）</span></div>
   <div class="privnote">此頁僅整理與你相關的個人社群合作邀約與收入資訊，內容敏感，連結請勿轉發。</div>
 </header>
-<div class="tabs" role="tablist"><button class="tab" role="tab" aria-selected="true" data-tab="list">合作邀約</button><button class="tab" role="tab" aria-selected="false" data-tab="dash">分析儀表板</button></div><section id="tab-list"><div class="stats"></div><div class="empty">目前沒有相關邀約。</div></section><section id="tab-dash" hidden><div class="tiles">
-<div class="tile"><div class="v">NT$0</div><div class="l">2026 年成員收入（O+P）</div></div>
+<div class="tabs" role="tablist"><button class="tab" role="tab" aria-selected="true" data-tab="list">合作邀約</button><button class="tab" role="tab" aria-selected="false" data-tab="dash">分析儀表板</button></div><section id="tab-list"><div class="stats"></div><div class="empty">目前沒有相關邀約。</div></section><section id="tab-dash" hidden><div class="hero">
+<div class="hlabel">2026 年實拿收入</div>
+<div class="big">NT$0</div>
+<div class="progress" role="img" aria-label="年度業績 NT$0，里程碑 NT$800,000"><div style="width:1%"></div></div>
+<div class="push">今年的第一案就是起點——衝向 80 萬業績、解鎖 6/4 拆帳！</div>
+</div><div class="tiles">
 <div class="tile"><div class="v">0</div><div class="l">已進帳合作筆數</div></div>
+<div class="tile"><div class="v">—</div><div class="l">6/4 級距收入</div></div>
 <div class="tile"><div class="v">0</div><div class="l">邀約總數（近 90 天起累計）</div></div>
 <div class="tile"><div class="v">0</div><div class="l">進行中邀約</div></div>
-</div><div class="dnote">目前全數為 5/5 拆分級距（業績 80 萬以下）。</div>
+</div>
 <div class="dsec">2026 年月別收入</div><div class="empty">尚無資料</div>
 <div class="dsec">收入明細（來源：營收大表）</div><div class="empty">今年尚無進帳紀錄。</div>
 <div class="dsec">邀約品牌分類</div><div class="empty">尚無資料</div>

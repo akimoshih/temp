@@ -1,24 +1,28 @@
 <title>個人社群合作邀約 – Ellie</title>
 <style>
 :root{
-  --bg:#F5F8FA; --surface:#FFFFFF; --ink:#182531; --muted:#5B6C79; --line:#DBE4EB;
-  --accent:#0A6FA8; --chip-bg:rgba(10,111,168,.08);
-  --st-talk:#0A6FA8; --st-run:#0E7C66; --st-admin:#6B4FBB; --st-done:#2E7D32; --st-off:#8A97A2;
+  --bg:#FBF6EF; --surface:#FFFFFF; --ink:#2A1E14; --muted:#8A7462; --line:#EDDFCE;
+  --accent:#E4572E; --chip-bg:rgba(228,87,46,.09);
+  --grad:linear-gradient(92deg,#FF5F2E,#FF9E2C);
+  --st-talk:#B96A00; --st-run:#0E7C4A; --st-admin:#8250C8; --st-done:#2E7D32; --st-off:#9A8B7C;
 }
 @media (prefers-color-scheme: dark){:root{
-  --bg:#0E161D; --surface:#161F28; --ink:#DEE8F0; --muted:#93A5B3; --line:#2A3B49;
-  --accent:#63B7E6; --chip-bg:rgba(99,183,230,.12);
-  --st-talk:#63B7E6; --st-run:#4CC2A9; --st-admin:#B39DEB; --st-done:#7CC47F; --st-off:#7C8B97;
+  --bg:#1C140D; --surface:#291E14; --ink:#F6EADC; --muted:#C2A88F; --line:#41321F;
+  --accent:#FF8A50; --chip-bg:rgba(255,138,80,.14);
+  --grad:linear-gradient(92deg,#FF6B3D,#FFB03A);
+  --st-talk:#F0A64E; --st-run:#5CC48F; --st-admin:#B79BEA; --st-done:#7CC47F; --st-off:#A08D77;
 }}
 :root[data-theme="dark"]{
-  --bg:#0E161D; --surface:#161F28; --ink:#DEE8F0; --muted:#93A5B3; --line:#2A3B49;
-  --accent:#63B7E6; --chip-bg:rgba(99,183,230,.12);
-  --st-talk:#63B7E6; --st-run:#4CC2A9; --st-admin:#B39DEB; --st-done:#7CC47F; --st-off:#7C8B97;
+  --bg:#1C140D; --surface:#291E14; --ink:#F6EADC; --muted:#C2A88F; --line:#41321F;
+  --accent:#FF8A50; --chip-bg:rgba(255,138,80,.14);
+  --grad:linear-gradient(92deg,#FF6B3D,#FFB03A);
+  --st-talk:#F0A64E; --st-run:#5CC48F; --st-admin:#B79BEA; --st-done:#7CC47F; --st-off:#A08D77;
 }
 :root[data-theme="light"]{
-  --bg:#F5F8FA; --surface:#FFFFFF; --ink:#182531; --muted:#5B6C79; --line:#DBE4EB;
-  --accent:#0A6FA8; --chip-bg:rgba(10,111,168,.08);
-  --st-talk:#0A6FA8; --st-run:#0E7C66; --st-admin:#6B4FBB; --st-done:#2E7D32; --st-off:#8A97A2;
+  --bg:#FBF6EF; --surface:#FFFFFF; --ink:#2A1E14; --muted:#8A7462; --line:#EDDFCE;
+  --accent:#E4572E; --chip-bg:rgba(228,87,46,.09);
+  --grad:linear-gradient(92deg,#FF5F2E,#FF9E2C);
+  --st-talk:#B96A00; --st-run:#0E7C4A; --st-admin:#8250C8; --st-done:#2E7D32; --st-off:#9A8B7C;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
@@ -71,15 +75,28 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 .tab[aria-selected="true"]{color:var(--accent);border-color:var(--accent);font-weight:700;}
 .tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0;}
-.tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
-.tile .v{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+.tile .v{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;}
 .tile .l{font-size:12.5px;color:var(--muted);margin-top:2px;}
+.hero{background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:22px 24px 18px;margin:16px 0;position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--grad);}
+.hero .hlabel{font-size:12.5px;letter-spacing:.1em;font-weight:700;color:var(--muted);text-transform:uppercase;}
+.hero .big{font-size:clamp(32px,6vw,44px);font-weight:800;line-height:1.15;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  font-variant-numeric:tabular-nums;}
+.unlock{display:inline-block;background:var(--grad);color:#fff;border-radius:99px;
+  padding:3px 14px;font-weight:700;font-size:13px;margin-left:8px;vertical-align:middle;}
+.progress{height:14px;background:var(--chip-bg);border-radius:99px;overflow:hidden;margin:14px 0 8px;}
+.progress>div{height:100%;background:var(--grad);border-radius:99px;min-width:8px;}
+.push{font-size:14px;color:var(--muted);}
+.push b{color:var(--accent);font-variant-numeric:tabular-nums;}
 .dsec{margin:28px 0 10px;font-size:15px;font-weight:700;}
 .dnote{font-size:12.5px;color:var(--muted);margin:-6px 0 10px;}
 .barrow{display:grid;grid-template-columns:96px 1fr 84px;align-items:center;gap:10px;margin:7px 0;font-size:13px;}
 .barrow .lbl{color:var(--muted);text-align:right;}
 .barrow .val{font-variant-numeric:tabular-nums;color:var(--ink);}
-.bfill{height:10px;background:var(--accent);border-radius:0 4px 4px 0;min-width:2px;}
+.bfill{height:10px;background:var(--grad);border-radius:0 4px 4px 0;min-width:2px;}
 .revwrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin:10px 0;}
 table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;}
 .rev th,.rev td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap;}
@@ -92,7 +109,7 @@ table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeri
 <header class="page">
   <div class="eyebrow">Dcard Video・個人經紀</div>
   <h1>個人社群合作邀約 – Ellie</h1>
-  <div class="sub"><span>Ellie 的合作邀約</span><span>共 9 件</span><span>更新於 2026/07/24 13:20（台北時間）</span></div>
+  <div class="sub"><span>Ellie 的合作邀約</span><span>共 9 件</span><span>更新於 2026/07/24 13:25（台北時間）</span></div>
   <div class="privnote">此頁僅整理與你相關的個人社群合作邀約與收入資訊，內容敏感，連結請勿轉發。</div>
 </header>
 <div class="tabs" role="tablist"><button class="tab" role="tab" aria-selected="true" data-tab="list">合作邀約</button><button class="tab" role="tab" aria-selected="false" data-tab="dash">分析儀表板</button></div><section id="tab-list"><div class="stats"><button class="stat" aria-pressed="false" data-fs="執行中">執行中 <b>3</b></button><button class="stat" aria-pressed="false" data-fs="行政流程">行政流程 <b>1</b></button><button class="stat" aria-pressed="false" data-fs="洽談中">洽談中 <b>2</b></button><button class="stat" aria-pressed="false" data-fs="取消">取消 <b>3</b></button><button class="stat" aria-pressed="false" data-fo="自來">自來案 <b>9</b></button></div><article class="card" data-members="ellie" data-status="洽談中" data-source="自來">
@@ -140,12 +157,17 @@ table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeri
   <div class="meta"><span>來信 2026-07-03</span></div>
   <p class="summary">團購邀約先婉拒，改以公關品合作（不保證露出），已提供收件資料。</p>
   <div class="subj">【合作邀約】Ellie x INNERHOWS｜MIT專櫃等級沐浴油</div>
-</article></section><section id="tab-dash" hidden><div class="tiles">
-<div class="tile"><div class="v">NT$232,150</div><div class="l">2026 年成員收入（O+P）</div></div>
+</article></section><section id="tab-dash" hidden><div class="hero">
+<div class="hlabel">2026 年實拿收入</div>
+<div class="big">NT$232,150</div>
+<div class="progress" role="img" aria-label="年度業績 NT$485,000，里程碑 NT$800,000"><div style="width:61%"></div></div>
+<div class="push">年度業績 <b>NT$485,000</b>，已經過半！再 <b>NT$315,000</b> 就能解鎖 6/4 拆帳。</div>
+</div><div class="tiles">
 <div class="tile"><div class="v">12</div><div class="l">已進帳合作筆數</div></div>
+<div class="tile"><div class="v">—</div><div class="l">6/4 級距收入</div></div>
 <div class="tile"><div class="v">9</div><div class="l">邀約總數（近 90 天起累計）</div></div>
 <div class="tile"><div class="v">6</div><div class="l">進行中邀約</div></div>
-</div><div class="dnote">目前全數為 5/5 拆分級距（業績 80 萬以下）。</div>
+</div>
 <div class="dsec">2026 年月別收入</div><div class="barrow"><span class="lbl">1 月</span><div><div class="bfill" style="width:36%"></div></div><span class="val">NT$32,500</span></div><div class="barrow"><span class="lbl">4 月</span><div><div class="bfill" style="width:100%"></div></div><span class="val">NT$90,000</span></div><div class="barrow"><span class="lbl">5 月</span><div><div class="bfill" style="width:75%"></div></div><span class="val">NT$67,150</span></div><div class="barrow"><span class="lbl">6 月</span><div><div class="bfill" style="width:47%"></div></div><span class="val">NT$42,500</span></div>
 <div class="dsec">收入明細（來源：營收大表）</div><div class="revwrap"><table class="rev">
 <thead><tr><th>走期</th><th>合作名稱</th><th>項目</th><th class="n">收入（5/5）</th><th class="n">收入（6/4）</th><th class="n">小計</th></tr></thead>

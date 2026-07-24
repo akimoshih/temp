@@ -45,24 +45,28 @@ STATUS_CLASS = {"洽談中": "talk", "執行中": "run", "行政流程": "admin"
 
 CSS = """
 :root{
-  --bg:#F5F8FA; --surface:#FFFFFF; --ink:#182531; --muted:#5B6C79; --line:#DBE4EB;
-  --accent:#0A6FA8; --chip-bg:rgba(10,111,168,.08);
-  --st-talk:#0A6FA8; --st-run:#0E7C66; --st-admin:#6B4FBB; --st-done:#2E7D32; --st-off:#8A97A2;
+  --bg:#FBF6EF; --surface:#FFFFFF; --ink:#2A1E14; --muted:#8A7462; --line:#EDDFCE;
+  --accent:#E4572E; --chip-bg:rgba(228,87,46,.09);
+  --grad:linear-gradient(92deg,#FF5F2E,#FF9E2C);
+  --st-talk:#B96A00; --st-run:#0E7C4A; --st-admin:#8250C8; --st-done:#2E7D32; --st-off:#9A8B7C;
 }
 @media (prefers-color-scheme: dark){:root{
-  --bg:#0E161D; --surface:#161F28; --ink:#DEE8F0; --muted:#93A5B3; --line:#2A3B49;
-  --accent:#63B7E6; --chip-bg:rgba(99,183,230,.12);
-  --st-talk:#63B7E6; --st-run:#4CC2A9; --st-admin:#B39DEB; --st-done:#7CC47F; --st-off:#7C8B97;
+  --bg:#1C140D; --surface:#291E14; --ink:#F6EADC; --muted:#C2A88F; --line:#41321F;
+  --accent:#FF8A50; --chip-bg:rgba(255,138,80,.14);
+  --grad:linear-gradient(92deg,#FF6B3D,#FFB03A);
+  --st-talk:#F0A64E; --st-run:#5CC48F; --st-admin:#B79BEA; --st-done:#7CC47F; --st-off:#A08D77;
 }}
 :root[data-theme="dark"]{
-  --bg:#0E161D; --surface:#161F28; --ink:#DEE8F0; --muted:#93A5B3; --line:#2A3B49;
-  --accent:#63B7E6; --chip-bg:rgba(99,183,230,.12);
-  --st-talk:#63B7E6; --st-run:#4CC2A9; --st-admin:#B39DEB; --st-done:#7CC47F; --st-off:#7C8B97;
+  --bg:#1C140D; --surface:#291E14; --ink:#F6EADC; --muted:#C2A88F; --line:#41321F;
+  --accent:#FF8A50; --chip-bg:rgba(255,138,80,.14);
+  --grad:linear-gradient(92deg,#FF6B3D,#FFB03A);
+  --st-talk:#F0A64E; --st-run:#5CC48F; --st-admin:#B79BEA; --st-done:#7CC47F; --st-off:#A08D77;
 }
 :root[data-theme="light"]{
-  --bg:#F5F8FA; --surface:#FFFFFF; --ink:#182531; --muted:#5B6C79; --line:#DBE4EB;
-  --accent:#0A6FA8; --chip-bg:rgba(10,111,168,.08);
-  --st-talk:#0A6FA8; --st-run:#0E7C66; --st-admin:#6B4FBB; --st-done:#2E7D32; --st-off:#8A97A2;
+  --bg:#FBF6EF; --surface:#FFFFFF; --ink:#2A1E14; --muted:#8A7462; --line:#EDDFCE;
+  --accent:#E4572E; --chip-bg:rgba(228,87,46,.09);
+  --grad:linear-gradient(92deg,#FF5F2E,#FF9E2C);
+  --st-talk:#B96A00; --st-run:#0E7C4A; --st-admin:#8250C8; --st-done:#2E7D32; --st-off:#9A8B7C;
 }
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
@@ -115,15 +119,28 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 .tab[aria-selected="true"]{color:var(--accent);border-color:var(--accent);font-weight:700;}
 .tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0;}
-.tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
-.tile .v{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px 16px;}
+.tile .v{font-size:22px;font-weight:800;font-variant-numeric:tabular-nums;}
 .tile .l{font-size:12.5px;color:var(--muted);margin-top:2px;}
+.hero{background:var(--surface);border:1px solid var(--line);border-radius:14px;
+  padding:22px 24px 18px;margin:16px 0;position:relative;overflow:hidden;}
+.hero::before{content:"";position:absolute;inset:0 0 auto 0;height:5px;background:var(--grad);}
+.hero .hlabel{font-size:12.5px;letter-spacing:.1em;font-weight:700;color:var(--muted);text-transform:uppercase;}
+.hero .big{font-size:clamp(32px,6vw,44px);font-weight:800;line-height:1.15;
+  background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;
+  font-variant-numeric:tabular-nums;}
+.unlock{display:inline-block;background:var(--grad);color:#fff;border-radius:99px;
+  padding:3px 14px;font-weight:700;font-size:13px;margin-left:8px;vertical-align:middle;}
+.progress{height:14px;background:var(--chip-bg);border-radius:99px;overflow:hidden;margin:14px 0 8px;}
+.progress>div{height:100%;background:var(--grad);border-radius:99px;min-width:8px;}
+.push{font-size:14px;color:var(--muted);}
+.push b{color:var(--accent);font-variant-numeric:tabular-nums;}
 .dsec{margin:28px 0 10px;font-size:15px;font-weight:700;}
 .dnote{font-size:12.5px;color:var(--muted);margin:-6px 0 10px;}
 .barrow{display:grid;grid-template-columns:96px 1fr 84px;align-items:center;gap:10px;margin:7px 0;font-size:13px;}
 .barrow .lbl{color:var(--muted);text-align:right;}
 .barrow .val{font-variant-numeric:tabular-nums;color:var(--ink);}
-.bfill{height:10px;background:var(--accent);border-radius:0 4px 4px 0;min-width:2px;}
+.bfill{height:10px;background:var(--grad);border-radius:0 4px 4px 0;min-width:2px;}
 .revwrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin:10px 0;}
 table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;}
 .rev th,.rev td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap;}
@@ -149,19 +166,44 @@ def bar_rows(pairs, money=False):
                    f'<span class="val">{val}</span></div>')
     return "".join(out)
 
+MILESTONE = 800_000  # 業績 80 萬 → 解鎖 6/4 拆帳
+
 def render_dashboard(m, mine, rev_rows):
     year = REVENUE.get("year", 2026)
     total_o = sum(r["o"] for r in rev_rows)
     total_p = sum(r["p"] for r in rev_rows)
     total = total_o + total_p
+    # 年度業績（J 欄）→ 80 萬里程碑進度
+    perf = sum(t["j"] for t in REVENUE.get("team_rows", []) if t.get("member_key") == m["key"])
+    pct = min(100, perf / MILESTONE * 100)
+    if pct >= 100:
+        badge = '<span class="unlock">🏆 已解鎖 6/4 拆帳</span>'
+        push = f'年度業績 <b>{fmt_money(perf)}</b>，已衝破 80 萬里程碑，之後每一案都是 6/4 拆——繼續衝！'
+    elif pct >= 75:
+        badge = ""
+        push = f'年度業績 <b>{fmt_money(perf)}</b>，距離 80 萬里程碑（解鎖 6/4 拆帳）只差 <b>{fmt_money(MILESTONE - perf)}</b>，就差臨門一腳！'
+    elif pct >= 50:
+        badge = ""
+        push = f'年度業績 <b>{fmt_money(perf)}</b>，已經過半！再 <b>{fmt_money(MILESTONE - perf)}</b> 就能解鎖 6/4 拆帳。'
+    elif perf > 0:
+        badge = ""
+        push = f'年度業績 <b>{fmt_money(perf)}</b>，穩穩累積中——距離 6/4 拆帳里程碑還有 <b>{fmt_money(MILESTONE - perf)}</b>，每一案都算數！'
+    else:
+        badge = ""
+        push = f'今年的第一案就是起點——衝向 80 萬業績、解鎖 6/4 拆帳！'
+    hero = f'''<div class="hero">
+<div class="hlabel">{year} 年實拿收入</div>
+<div class="big">{fmt_money(total)}</div>{badge}
+<div class="progress" role="img" aria-label="年度業績 {fmt_money(perf)}，里程碑 {fmt_money(MILESTONE)}"><div style="width:{max(1, round(pct))}%"></div></div>
+<div class="push">{push}</div>
+</div>'''
     tiles = f'''<div class="tiles">
-<div class="tile"><div class="v">{fmt_money(total)}</div><div class="l">{year} 年成員收入（O+P）</div></div>
 <div class="tile"><div class="v">{len(rev_rows)}</div><div class="l">已進帳合作筆數</div></div>
+<div class="tile"><div class="v">{fmt_money(total_p) if total_p else "—"}</div><div class="l">6/4 級距收入</div></div>
 <div class="tile"><div class="v">{len(mine)}</div><div class="l">邀約總數（近 90 天起累計）</div></div>
 <div class="tile"><div class="v">{sum(1 for r in mine if r["status"] in ("洽談中", "執行中", "行政流程"))}</div><div class="l">進行中邀約</div></div>
 </div>'''
-    tier = f'<div class="dnote">其中 6/4 拆分級距（業績 &gt; 80 萬）收入 {fmt_money(total_p)}。</div>' if total_p > 0 else \
-           '<div class="dnote">目前全數為 5/5 拆分級距（業績 80 萬以下）。</div>'
+    tier = ""
     # 月別收入
     monthly = {}
     for r in rev_rows:
@@ -188,7 +230,7 @@ def render_dashboard(m, mine, rev_rows):
 <tbody>{rows_html}
 <tr class="total"><td colspan="3">合計</td><td class="n">{fmt_money(total_o)}</td><td class="n">{fmt_money(total_p)}</td><td class="n">{fmt_money(total)}</td></tr>
 </tbody></table></div>''' if rev_rows else '<div class="empty">今年尚無進帳紀錄。</div>'
-    return f'''{tiles}{tier}
+    return f'''{hero}{tiles}{tier}
 <div class="dsec">{year} 年月別收入</div>{bar_rows(month_pairs, money=True)}
 <div class="dsec">收入明細（來源：營收大表）</div>{table}
 <div class="dsec">邀約品牌分類</div>{bar_rows(cat_pairs)}
