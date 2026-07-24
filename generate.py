@@ -52,9 +52,12 @@ h1{font-size:clamp(24px,4.5vw,32px);margin:6px 0 4px;text-wrap:balance;}
 .privnote{margin-top:10px;font-size:13px;color:var(--muted);background:var(--chip-bg);
   border-left:3px solid var(--accent);padding:8px 12px;border-radius:0 6px 6px 0;}
 .stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;}
-.stat{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
-  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;}
+.stat{font:inherit;font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
+  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;cursor:pointer;}
 .stat b{color:var(--ink);}
+.stat[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+.stat[aria-pressed="true"] b{color:#fff;}
+.stat:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;
   padding:16px 18px;margin-bottom:12px;}
 .card:hover{border-color:var(--accent);}
@@ -101,7 +104,7 @@ def render_card(r, with_link):
     mem_attr = html.escape(",".join(r["members"]))
     src = r.get("source", "自來")
     src_chip = f'<span class="src{" biz" if src == "業務" else ""}">{"業務提案" if src == "業務" else "自來案"}</span>'
-    return f'''<article class="card" data-members="{mem_attr}">
+    return f'''<article class="card" data-members="{mem_attr}" data-status="{html.escape(r["status"])}" data-source="{src}">
   <div class="row1"><span class="status {scls}">{html.escape(r["status"])}</span>{src_chip}<span class="brand">{brand}</span>{chips}</div>
   <div class="meta">{"".join(meta)}</div>
   <p class="summary">{html.escape(r["summary"])}</p>
@@ -112,25 +115,38 @@ def render_page(title, subtitle, records, with_link, filters=False, privnote=Non
     now = datetime.now(TPE).strftime("%Y/%m/%d %H:%M")
     records = sorted(records, key=lambda r: (r["date"], r["thread_id"]), reverse=True)
     counts = {s: sum(1 for r in records if r["status"] == s) for s in STATUS_ORDER}
-    stats = "".join(f'<span class="stat">{s} <b>{n}</b></span>' for s, n in counts.items() if n)
-    src_counts = {(lbl): sum(1 for r in records if r.get("source", "自來") == key)
-                  for key, lbl in [("自來", "自來案"), ("業務", "業務提案")]}
-    stats += "".join(f'<span class="stat">{lbl} <b>{n}</b></span>' for lbl, n in src_counts.items() if n)
+    stats = "".join(f'<button class="stat" aria-pressed="false" data-fs="{s}">{s} <b>{n}</b></button>'
+                    for s, n in counts.items() if n)
+    stats += "".join(
+        f'<button class="stat" aria-pressed="false" data-fo="{key}">{lbl} <b>{n}</b></button>'
+        for key, lbl in [("自來", "自來案"), ("業務", "業務提案")]
+        if (n := sum(1 for r in records if r.get("source", "自來") == key)))
     body = "".join(render_card(r, with_link) for r in records) or '<div class="empty">目前沒有相關邀約。</div>'
     fhtml = ""
-    script = ""
     if filters:
         btns = ['<button class="fbtn" aria-pressed="true" data-f="">全部</button>'] + [
             f'<button class="fbtn" aria-pressed="false" data-f="{m["key"]}">{html.escape(m["name"])}</button>'
             for m in MEMBERS if m["enabled"]]
         fhtml = '<div class="filters" role="group" aria-label="依成員篩選">' + "".join(btns) + "</div>"
-        script = """<script>
-document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click',function(){
-  document.querySelectorAll('.fbtn').forEach(function(x){x.setAttribute('aria-pressed','false')});
-  b.setAttribute('aria-pressed','true');var f=b.dataset.f;
+    script = """<script>
+var fs='',fo='',fm='';
+function apply(){
   document.querySelectorAll('.card').forEach(function(c){
-    c.style.display=(!f||(c.dataset.members||'').split(',').indexOf(f)>=0)?'':'none';});
-});});
+    var ok=(!fs||c.dataset.status===fs)&&(!fo||c.dataset.source===fo)&&(!fm||(c.dataset.members||'').split(',').indexOf(fm)>=0);
+    c.style.display=ok?'':'none';});
+}
+document.querySelectorAll('.stat[data-fs]').forEach(function(b){b.addEventListener('click',function(){
+  fs=(fs===b.dataset.fs)?'':b.dataset.fs;
+  document.querySelectorAll('.stat[data-fs]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fs===fs&&fs!==''));});
+  apply();});});
+document.querySelectorAll('.stat[data-fo]').forEach(function(b){b.addEventListener('click',function(){
+  fo=(fo===b.dataset.fo)?'':b.dataset.fo;
+  document.querySelectorAll('.stat[data-fo]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fo===fo&&fo!==''));});
+  apply();});});
+document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click',function(){
+  fm=b.dataset.f;
+  document.querySelectorAll('.fbtn').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+  apply();});});
 </script>"""
     pn = f'<div class="privnote">{privnote}</div>' if privnote else ""
     return f'''<title>{html.escape(title)}</title>

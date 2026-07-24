@@ -32,9 +32,12 @@ h1{font-size:clamp(24px,4.5vw,32px);margin:6px 0 4px;text-wrap:balance;}
 .privnote{margin-top:10px;font-size:13px;color:var(--muted);background:var(--chip-bg);
   border-left:3px solid var(--accent);padding:8px 12px;border-radius:0 6px 6px 0;}
 .stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;}
-.stat{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
-  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;}
+.stat{font:inherit;font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
+  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;cursor:pointer;}
 .stat b{color:var(--ink);}
+.stat[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+.stat[aria-pressed="true"] b{color:#fff;}
+.stat:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;
   padding:16px 18px;margin-bottom:12px;}
 .card:hover{border-color:var(--accent);}
@@ -67,82 +70,82 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 <header class="page">
   <div class="eyebrow">Dcard Video・個人經紀</div>
   <h1>個人社群合作邀約 – Rio</h1>
-  <div class="sub"><span>Rio 的合作邀約</span><span>共 15 件</span><span>更新於 2026/07/24 11:07（台北時間）</span></div>
+  <div class="sub"><span>Rio 的合作邀約</span><span>共 15 件</span><span>更新於 2026/07/24 11:19（台北時間）</span></div>
   <div class="privnote">此頁僅整理與你相關的個人社群合作邀約，內容含報價等敏感資訊，連結請勿轉發。</div>
 </header>
-<div class="stats"><span class="stat">執行中 <b>3</b></span><span class="stat">行政流程 <b>2</b></span><span class="stat">洽談中 <b>8</b></span><span class="stat">取消 <b>2</b></span><span class="stat">自來案 <b>13</b></span><span class="stat">業務提案 <b>2</b></span></div>
+<div class="stats"><button class="stat" aria-pressed="false" data-fs="執行中">執行中 <b>3</b></button><button class="stat" aria-pressed="false" data-fs="行政流程">行政流程 <b>2</b></button><button class="stat" aria-pressed="false" data-fs="洽談中">洽談中 <b>8</b></button><button class="stat" aria-pressed="false" data-fs="取消">取消 <b>2</b></button><button class="stat" aria-pressed="false" data-fo="自來">自來案 <b>13</b></button><button class="stat" aria-pressed="false" data-fo="業務">業務提案 <b>2</b></button></div>
 
-<article class="card" data-members="rio">
+<article class="card" data-members="rio" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand">理膚寶水（Effaclar 抗痘系列）</span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：AnyMind Group</span></div>
   <p class="summary">公關品寄送邀約；Rio 近期無痘痘困擾，為不浪費資源婉拒。</p>
   <div class="subj">【公關品寄送】理膚寶水La Roche-Posay_Effaclar抗痘系列_Rio</div>
-</article><article class="card" data-members="rio,leo">
+</article><article class="card" data-members="rio,leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">臺北市青年局（講座講師）</span><span class="mchip">Rio</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：typropose</span></div>
   <p class="summary">講座講師邀約：Rio 8 月拍攝檔期滿先婉拒（9 月中後較充裕）；Leo 三個提議時段皆可安排。</p>
   <div class="subj">【講師邀約】臺北市青年局-講座活動邀請</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">西堤牛排（玩總第二波）</span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：O-DEO</span></div>
   <p class="summary">已報價：1 IG Reel $150,000、1 Story $40,000、廣告主一週 $15,000、素材授權一個月 $60,000(net)；需確認素材使用範圍。</p>
   <div class="subj">【合作邀約】西堤牛排玩總第二波合作</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">SIDIZ（人體工學椅）</span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：koodata</span></div>
   <p class="summary">Rio 最快 11 月上線，待品牌確認時程能否調整。</p>
   <div class="subj">【koodata商案合作】SIDIZ_人體工學椅_合作邀約 / Rio</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">電動牙刷品牌（未公開）</span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：精采公關 Bravo PR</span></div>
   <p class="summary">Rio 最快 11 月後上線；從確認合作到上線需至少 1.5 個月（腳本、拍攝、過片），待品牌確認檔期。</p>
   <div class="subj">&lt;精采公關來信&gt;電動牙刷品牌合作詢問_Rio</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand">亞培 白金安素 EX</span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-21</span><span>代理商：AsiaKOL</span></div>
   <p class="summary">公關禮盒邀約，已回覆公關品不保證露出與形式，並提供收件資料。</p>
   <div class="subj">【AsiaKOL】亞培白金安素 EX 公關禮盒邀約 —— 給長輩的營養守護-壹比零 Rio</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">eufy（C28 掃拖機器人）</span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-21</span><span>代理商：EMC Taipei</span></div>
   <p class="summary">掃拖機器人宣傳邀約；Rio 檔期最快 10 月中後，已提供美食 Vlog 切角的 Reels 範例。</p>
   <div class="subj">【合作邀約】eufy_C28 掃拖機器人宣傳_Rio 壹比零</div>
-</article><article class="card" data-members="rio,roy,leo,andrew">
+</article><article class="card" data-members="rio,roy,leo,andrew" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">Gogoro（百 GO 夜行）</span><span class="mchip">Rio</span><span class="mchip">Roy</span><span class="mchip">Leo</span><span class="mchip">Andrew</span></div>
   <div class="meta"><span>來信 2026-07-20</span><span>預計上線 2026-08</span><span>代理商：BUTYBOX</span></div>
   <p class="summary">活動推廣邀約：Rio、主委風格/形式不合先婉拒；改推薦 Leo、Andrew（各報 1 Story+1 Reel），品牌改要兩則 Reels、等待含廣告主的報價，檔期趕、窗口希望加 LINE 深聊。</p>
   <div class="subj">【Rio x Gogoro 】一年一度盛典「百 GO 夜行」！</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">Samsung（三星）</span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-20</span><span>代理商：Tahoe Entertainment</span></div>
   <p class="summary">社群操作詢問；Rio 最快上線時間為 10 月中後，待品牌確認是否符合期待。</p>
   <div class="subj">【三星】Samsung 社群操作詢問_ Rio</div>
-</article><article class="card" data-members="rio,andrew,leo,roy,meber">
+</article><article class="card" data-members="rio,andrew,leo,roy,meber" data-status="行政流程" data-source="自來">
   <div class="row1"><span class="status admin">行政流程</span><span class="src">自來案</span><span class="brand">台啤 18 天</span><span class="mchip">Rio</span><span class="mchip">Andrew</span><span class="mchip">Leo</span><span class="mchip">Roy</span><span class="mchip">梅伯</span></div>
   <div class="meta"><span>來信 2026-07-15</span></div>
   <p class="summary">社群推廣合作（出演拍攝），肖像同意書送法務修改：再製使用需經我方確認後才可使用。</p>
   <div class="subj">【肖像同意書】台啤18天_社群推廣合作_Rio、Andrew、Leo、主委、梅伯</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">大正製藥 力保美達</span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-14</span><span>代理商：就是廣告 Just AD</span></div>
   <p class="summary">IG 貼文合作，已報價（圖文+限動 $140,000、Reels+限動 $185,000、廣告主另計），品牌評估中。</p>
   <div class="subj">【就是廣告】大正製藥力保美達能量補給飲料_IG貼文合作邀約 / Rio</div>
-</article><article class="card" data-members="rio,yy">
+</article><article class="card" data-members="rio,yy" data-status="行政流程" data-source="業務">
   <div class="row1"><span class="status admin">行政流程</span><span class="src biz">業務提案</span><span class="brand">Richart D 卡聯名野餐組</span><span class="mchip">Rio</span><span class="mchip">YY</span></div>
   <div class="meta"><span>來信 2026-07-14</span></div>
   <p class="summary">聯名野餐組合作請款，委刊單單號 SO2025-002763，依提供連結費用項目請款。</p>
   <div class="subj">【video 合作】Richart D 卡聯名野餐組</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand">遠傳 iPhone18</span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-13</span><span>代理商：Lady Kent Studio</span></div>
   <p class="summary">Rio 最快檔期在 11 月中後，時間無法配合，婉拒。</p>
   <div class="subj">(合作邀請) 遠傳iPhone18 x Rio</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="執行中" data-source="業務">
   <div class="row1"><span class="status run">執行中</span><span class="src biz">業務提案</span><span class="brand">Disney+《殺人者的購物中心2》</span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-08</span><span>預計上線 2026-07</span></div>
   <p class="summary">限動合作已確認：7/22–7/28 上線，Rio 需看完第一集分享心得、Cos 李棟旭；規格表與報價單確認中（內部業務 Zack 對接）。</p>
   <div class="subj">DcardxDisney+『殺人者的購物中心2』限動合作。by_Zack0708。</div>
-</article><article class="card" data-members="rio,andrew">
+</article><article class="card" data-members="rio,andrew" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand">New Balance（26 Summer Campaign）</span><span class="mchip">Rio</span><span class="mchip">Andrew</span></div>
   <div class="meta"><span>來信 2026-06-23</span><span>代理商：EMC Taipei</span></div>
   <p class="summary">Rio 因其他品牌合作先 pass；7/24 最終確認 Andrew 合作 1 IG Story（不過稿）＋1 IG Post $50,000(net)（戶米亦確認合作）。</p>
@@ -150,3 +153,23 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 </article>
 <footer>只收「成員個人社群合作」邀約（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演），含品牌直接來信（自來案）與 Dcard 業務轉介（業務提案）；成員出演公司拍攝的影音（Dcard 調查局、中插廣告、節目置入、AD 影音拍攝）不收。本頁由每日排程自動更新；成員名單與狀態修正請編輯 Google Sheet「個人經紀信件網頁後台」。</footer>
 </div>
+<script>
+var fs='',fo='',fm='';
+function apply(){
+  document.querySelectorAll('.card').forEach(function(c){
+    var ok=(!fs||c.dataset.status===fs)&&(!fo||c.dataset.source===fo)&&(!fm||(c.dataset.members||'').split(',').indexOf(fm)>=0);
+    c.style.display=ok?'':'none';});
+}
+document.querySelectorAll('.stat[data-fs]').forEach(function(b){b.addEventListener('click',function(){
+  fs=(fs===b.dataset.fs)?'':b.dataset.fs;
+  document.querySelectorAll('.stat[data-fs]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fs===fs&&fs!==''));});
+  apply();});});
+document.querySelectorAll('.stat[data-fo]').forEach(function(b){b.addEventListener('click',function(){
+  fo=(fo===b.dataset.fo)?'':b.dataset.fo;
+  document.querySelectorAll('.stat[data-fo]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fo===fo&&fo!==''));});
+  apply();});});
+document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click',function(){
+  fm=b.dataset.f;
+  document.querySelectorAll('.fbtn').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+  apply();});});
+</script>

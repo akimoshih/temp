@@ -32,9 +32,12 @@ h1{font-size:clamp(24px,4.5vw,32px);margin:6px 0 4px;text-wrap:balance;}
 .privnote{margin-top:10px;font-size:13px;color:var(--muted);background:var(--chip-bg);
   border-left:3px solid var(--accent);padding:8px 12px;border-radius:0 6px 6px 0;}
 .stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;}
-.stat{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
-  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;}
+.stat{font:inherit;font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
+  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;cursor:pointer;}
 .stat b{color:var(--ink);}
+.stat[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+.stat[aria-pressed="true"] b{color:#fff;}
+.stat:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;
   padding:16px 18px;margin-bottom:12px;}
 .card:hover{border-color:var(--accent);}
@@ -67,82 +70,82 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 <header class="page">
   <div class="eyebrow">Dcard Video・個人經紀</div>
   <h1>個人社群合作邀約 – Leo</h1>
-  <div class="sub"><span>Leo 的合作邀約</span><span>共 15 件</span><span>更新於 2026/07/24 11:07（台北時間）</span></div>
+  <div class="sub"><span>Leo 的合作邀約</span><span>共 15 件</span><span>更新於 2026/07/24 11:19（台北時間）</span></div>
   <div class="privnote">此頁僅整理與你相關的個人社群合作邀約，內容含報價等敏感資訊，連結請勿轉發。</div>
 </header>
-<div class="stats"><span class="stat">執行中 <b>1</b></span><span class="stat">行政流程 <b>1</b></span><span class="stat">洽談中 <b>12</b></span><span class="stat">取消 <b>1</b></span><span class="stat">自來案 <b>15</b></span></div>
+<div class="stats"><button class="stat" aria-pressed="false" data-fs="執行中">執行中 <b>1</b></button><button class="stat" aria-pressed="false" data-fs="行政流程">行政流程 <b>1</b></button><button class="stat" aria-pressed="false" data-fs="洽談中">洽談中 <b>12</b></button><button class="stat" aria-pressed="false" data-fs="取消">取消 <b>1</b></button><button class="stat" aria-pressed="false" data-fo="自來">自來案 <b>15</b></button></div>
 
-<article class="card" data-members="leo">
+<article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">Emergent</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-24</span></div>
   <p class="summary">付費合作邀約；回覆希望先試用產品，試用後再發想合適的主題切角。</p>
   <div class="subj">付費合作邀約 - Emergent x Leo道仙人</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">Snapdragon（粉絲交流會）</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>預計上線 2026-08</span><span>代理商：達豐公關 Compass PR</span></div>
   <p class="summary">8/14 檔期可安排；報價：交流會 1 小時 $40,000＋2 IG Story $40,000＋1 IG Post $60,000，合計 $140,000(net)，確認合作另有優惠價。</p>
   <div class="subj">達豐公關來信詢問_Leo道仙人_Snapdragon粉絲交流會合作意願及報價</div>
-</article><article class="card" data-members="rio,leo">
+</article><article class="card" data-members="rio,leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">臺北市青年局（講座講師）</span><span class="mchip">Rio</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：typropose</span></div>
   <p class="summary">講座講師邀約：Rio 8 月拍攝檔期滿先婉拒（9 月中後較充裕）；Leo 三個提議時段皆可安排。</p>
   <div class="subj">【講師邀約】臺北市青年局-講座活動邀請</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">三得利 芝麻明 EX</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>預計上線 2026-10</span><span>代理商：CAPSULE</span></div>
   <p class="summary">有合作意願、10 月檔期可配合；報價 YT 置入（90–120 秒）$70,000、影片授權剪輯 $50,000/兩支(net)。</p>
   <div class="subj">【CAPSULE】三得利芝麻明 EX x 這Leo人(Rio想的)｜ 合作意願&amp;報價洽詢</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand">知名 3C 品牌（未公開）</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-21</span><span>代理商：EMC Taipei</span></div>
   <p class="summary">新品發佈直播邀約，因目前以影音、圖文合作為主，婉拒。</p>
   <div class="subj">[合作意願詢問]知名 3C 品牌新品上市發佈直播合作_Leo道仙人</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">未明（診所廣告短影音）</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-21</span></div>
   <p class="summary">廣告短影音邀約，傾向純出演形式；已報價（出演 4 小時內 $60,000，各式投放與授權另計）。</p>
   <div class="subj">【走鐘獎】廣告短影音合作邀請</div>
-</article><article class="card" data-members="rio,roy,leo,andrew">
+</article><article class="card" data-members="rio,roy,leo,andrew" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">Gogoro（百 GO 夜行）</span><span class="mchip">Rio</span><span class="mchip">Roy</span><span class="mchip">Leo</span><span class="mchip">Andrew</span></div>
   <div class="meta"><span>來信 2026-07-20</span><span>預計上線 2026-08</span><span>代理商：BUTYBOX</span></div>
   <p class="summary">活動推廣邀約：Rio、主委風格/形式不合先婉拒；改推薦 Leo、Andrew（各報 1 Story+1 Reel），品牌改要兩則 Reels、等待含廣告主的報價，檔期趕、窗口希望加 LINE 深聊。</p>
   <div class="subj">【Rio x Gogoro 】一年一度盛典「百 GO 夜行」！</div>
-</article><article class="card" data-members="rio,andrew,leo,roy,meber">
+</article><article class="card" data-members="rio,andrew,leo,roy,meber" data-status="行政流程" data-source="自來">
   <div class="row1"><span class="status admin">行政流程</span><span class="src">自來案</span><span class="brand">台啤 18 天</span><span class="mchip">Rio</span><span class="mchip">Andrew</span><span class="mchip">Leo</span><span class="mchip">Roy</span><span class="mchip">梅伯</span></div>
   <div class="meta"><span>來信 2026-07-15</span></div>
   <p class="summary">社群推廣合作（出演拍攝），肖像同意書送法務修改：再製使用需經我方確認後才可使用。</p>
   <div class="subj">【肖像同意書】台啤18天_社群推廣合作_Rio、Andrew、Leo、主委、梅伯</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">必勝客 Pizza Hut</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-14</span><span>代理商：FMTaiwan 星光聲媒體</span></div>
   <p class="summary">品牌推廣合作，已報價：1 IG Reel $80,000(net)、FB+IG 廣告主 $30,000(net)/月；確認以發票請款。</p>
   <div class="subj">【合作邀約】FMTaiwan誠摯邀請『Leo道仙人』 一同參與「必勝客Pizza Hut」品牌推廣合作</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">Projext&amp;Co</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-14</span></div>
   <p class="summary">團購邀約；先婉拒開團，提議先合作圖文或影片觀察觀眾反應，反應熱烈再談開團。</p>
   <div class="subj">Projext＆Co多款熱銷主打單品｜團購合作邀請ＸLeo道仙人</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">巔峰極速（遊戲）</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-13</span><span>代理商：知識糖果</span></div>
   <p class="summary">遊戲推廣，已報價（YT 主題推廣影音 $80,000/90 秒、活動推廣貼文 $60,000），廠商評估中。</p>
   <div class="subj">《巔峰極速》遊戲推廣合作-知識糖果</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">美國知名洗髮精品牌（未公開）</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-09</span><span>預計上線 2026-09</span><span>代理商：新創整合行銷 IAOD</span></div>
   <p class="summary">9 月新品合作，已報價（Reels 含人聲字幕 $100,000），可避開競品；提供公關品試用一週後發想切角，品牌確認中。</p>
   <div class="subj">【美國知名洗髮精品牌】 2026年9月新品上市_合作體驗 邀約信件_Leo道仙人</div>
-</article><article class="card" data-members="leo,meber,roy">
+</article><article class="card" data-members="leo,meber,roy" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">Airwaves x One Piece 聯名</span><span class="mchip">Leo</span><span class="mchip">梅伯</span><span class="mchip">Roy</span></div>
   <div class="meta"><span>來信 2026-07-09</span><span>代理商：陽獅媒體 Publicis</span></div>
   <p class="summary">三人聯名推廣：確認海賊形象出演疑慮（不能 Cosplay）、主委以 IG Story 為主；已報三次過稿 $180,000(net)、FB+IG 雙平台廣告主 $70,000(net)/月，品牌評估中。</p>
   <div class="subj">【合作邀約】陽獅媒體_Airwaves X One Piece 聯名_LEO&amp;梅柏&amp;主委</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">八曜和茶（小雞上工）</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-03</span><span>代理商：只要有人 Humanoid</span></div>
   <p class="summary">短影音合作，已報價（IG / Threads 各 $80,000，FB 加購 $5,000），多平台上架費用細節確認中。</p>
   <div class="subj">【只要有人｜Dcard Leo 】小雞上工 x 八曜和茶_社群專案合作洽詢</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand">台電 瓩設計獎（第 27 屆）</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-05-19</span></div>
   <p class="summary">7/23 正式邀請 Leo 擔任多媒體設計類初審評審；賽程規劃已提供，執行細節與台電持續確認中。</p>
@@ -150,3 +153,23 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 </article>
 <footer>只收「成員個人社群合作」邀約（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演），含品牌直接來信（自來案）與 Dcard 業務轉介（業務提案）；成員出演公司拍攝的影音（Dcard 調查局、中插廣告、節目置入、AD 影音拍攝）不收。本頁由每日排程自動更新；成員名單與狀態修正請編輯 Google Sheet「個人經紀信件網頁後台」。</footer>
 </div>
+<script>
+var fs='',fo='',fm='';
+function apply(){
+  document.querySelectorAll('.card').forEach(function(c){
+    var ok=(!fs||c.dataset.status===fs)&&(!fo||c.dataset.source===fo)&&(!fm||(c.dataset.members||'').split(',').indexOf(fm)>=0);
+    c.style.display=ok?'':'none';});
+}
+document.querySelectorAll('.stat[data-fs]').forEach(function(b){b.addEventListener('click',function(){
+  fs=(fs===b.dataset.fs)?'':b.dataset.fs;
+  document.querySelectorAll('.stat[data-fs]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fs===fs&&fs!==''));});
+  apply();});});
+document.querySelectorAll('.stat[data-fo]').forEach(function(b){b.addEventListener('click',function(){
+  fo=(fo===b.dataset.fo)?'':b.dataset.fo;
+  document.querySelectorAll('.stat[data-fo]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fo===fo&&fo!==''));});
+  apply();});});
+document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click',function(){
+  fm=b.dataset.f;
+  document.querySelectorAll('.fbtn').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+  apply();});});
+</script>

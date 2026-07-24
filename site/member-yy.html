@@ -32,9 +32,12 @@ h1{font-size:clamp(24px,4.5vw,32px);margin:6px 0 4px;text-wrap:balance;}
 .privnote{margin-top:10px;font-size:13px;color:var(--muted);background:var(--chip-bg);
   border-left:3px solid var(--accent);padding:8px 12px;border-radius:0 6px 6px 0;}
 .stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;}
-.stat{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
-  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;}
+.stat{font:inherit;font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
+  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;cursor:pointer;}
 .stat b{color:var(--ink);}
+.stat[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+.stat[aria-pressed="true"] b{color:#fff;}
+.stat:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;
   padding:16px 18px;margin-bottom:12px;}
 .card:hover{border-color:var(--accent);}
@@ -67,37 +70,37 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 <header class="page">
   <div class="eyebrow">Dcard Video・個人經紀</div>
   <h1>個人社群合作邀約 – YY</h1>
-  <div class="sub"><span>YY 的合作邀約</span><span>共 6 件</span><span>更新於 2026/07/24 11:07（台北時間）</span></div>
+  <div class="sub"><span>YY 的合作邀約</span><span>共 6 件</span><span>更新於 2026/07/24 11:19（台北時間）</span></div>
   <div class="privnote">此頁僅整理與你相關的個人社群合作邀約，內容含報價等敏感資訊，連結請勿轉發。</div>
 </header>
-<div class="stats"><span class="stat">執行中 <b>1</b></span><span class="stat">行政流程 <b>2</b></span><span class="stat">洽談中 <b>2</b></span><span class="stat">完成 <b>1</b></span><span class="stat">自來案 <b>5</b></span><span class="stat">業務提案 <b>1</b></span></div>
+<div class="stats"><button class="stat" aria-pressed="false" data-fs="執行中">執行中 <b>1</b></button><button class="stat" aria-pressed="false" data-fs="行政流程">行政流程 <b>2</b></button><button class="stat" aria-pressed="false" data-fs="洽談中">洽談中 <b>2</b></button><button class="stat" aria-pressed="false" data-fs="完成">完成 <b>1</b></button><button class="stat" aria-pressed="false" data-fo="自來">自來案 <b>5</b></button><button class="stat" aria-pressed="false" data-fo="業務">業務提案 <b>1</b></button></div>
 
-<article class="card" data-members="yy">
+<article class="card" data-members="yy" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">遠傳 5G 家用寬頻</span><span class="mchip">YY</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：就是廣告 Just AD</span></div>
   <p class="summary">有合作意願；報價含 YY＆阿鋼共同入鏡（Reels＋不過稿限動帶指定連結組合）。</p>
   <div class="subj">【就是廣告】2026遠傳5G家用寬頻_REELS合作邀約 / YY</div>
-</article><article class="card" data-members="yy">
+</article><article class="card" data-members="yy" data-status="行政流程" data-source="自來">
   <div class="row1"><span class="status admin">行政流程</span><span class="src">自來案</span><span class="brand">媚比琳</span><span class="mchip">YY</span></div>
   <div class="meta"><span>來信 2026-07-15</span></div>
   <p class="summary">社群推廣合作委刊單用印＋發票開立完成。</p>
   <div class="subj">【Video Team】委刊單用印+開立發票_V202606006_媚比琳_社群推廣合作_YY</div>
-</article><article class="card" data-members="rio,yy">
+</article><article class="card" data-members="rio,yy" data-status="行政流程" data-source="業務">
   <div class="row1"><span class="status admin">行政流程</span><span class="src biz">業務提案</span><span class="brand">Richart D 卡聯名野餐組</span><span class="mchip">Rio</span><span class="mchip">YY</span></div>
   <div class="meta"><span>來信 2026-07-14</span></div>
   <p class="summary">聯名野餐組合作請款，委刊單單號 SO2025-002763，依提供連結費用項目請款。</p>
   <div class="subj">【video 合作】Richart D 卡聯名野餐組</div>
-</article><article class="card" data-members="yy">
+</article><article class="card" data-members="yy" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand">媚比琳（眼線液新品 x WeMo）</span><span class="mchip">YY</span></div>
   <div class="meta"><span>來信 2026-06-02</span><span>代理商：艾許 i-shiu</span></div>
   <p class="summary">確認合作 Reels＋限動 $65,000(net)，產品已寄出；拍攝方向為「極線挑戰」結合 WeMo 機車日租；7/24 加購廣告主兩週 $15,000。</p>
   <div class="subj">【IG Reels＋限動合作詢問】媚比琳新品 神角度超穩控激細眼線液＋小黑霸 邀請您 YY</div>
-</article><article class="card" data-members="yy,andrew">
+</article><article class="card" data-members="yy,andrew" data-status="完成" data-source="自來">
   <div class="row1"><span class="status done">完成</span><span class="src">自來案</span><span class="brand">HOLA（MOCHI 麻吉沙發）</span><span class="mchip">YY</span><span class="mchip">Andrew</span></div>
   <div class="meta"><span>來信 2026-04-24</span><span>預計上線 2026-04</span></div>
   <p class="summary">社群推廣合作，兩人影片 4/29 上線；合約經法務修訂後雙方用印，另加購投廣合約亦完成。</p>
   <div class="subj">【合約】HOLA「MOCHI 麻吉沙發」__社群推廣合作_YY+Andrew</div>
-</article><article class="card" data-members="yy">
+</article><article class="card" data-members="yy" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand">7-ELEVEN ibon（行動電源租借）</span><span class="mchip">YY</span></div>
   <div class="meta"><span>來信 2025-09-05</span><span>預計上線 2026-09</span></div>
   <p class="summary">去年案子品牌回頭重啟：報價維持不變，上線希望安排 9 月初；對方想加 LINE 確認合作細節。</p>
@@ -105,3 +108,23 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 </article>
 <footer>只收「成員個人社群合作」邀約（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演），含品牌直接來信（自來案）與 Dcard 業務轉介（業務提案）；成員出演公司拍攝的影音（Dcard 調查局、中插廣告、節目置入、AD 影音拍攝）不收。本頁由每日排程自動更新；成員名單與狀態修正請編輯 Google Sheet「個人經紀信件網頁後台」。</footer>
 </div>
+<script>
+var fs='',fo='',fm='';
+function apply(){
+  document.querySelectorAll('.card').forEach(function(c){
+    var ok=(!fs||c.dataset.status===fs)&&(!fo||c.dataset.source===fo)&&(!fm||(c.dataset.members||'').split(',').indexOf(fm)>=0);
+    c.style.display=ok?'':'none';});
+}
+document.querySelectorAll('.stat[data-fs]').forEach(function(b){b.addEventListener('click',function(){
+  fs=(fs===b.dataset.fs)?'':b.dataset.fs;
+  document.querySelectorAll('.stat[data-fs]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fs===fs&&fs!==''));});
+  apply();});});
+document.querySelectorAll('.stat[data-fo]').forEach(function(b){b.addEventListener('click',function(){
+  fo=(fo===b.dataset.fo)?'':b.dataset.fo;
+  document.querySelectorAll('.stat[data-fo]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fo===fo&&fo!==''));});
+  apply();});});
+document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click',function(){
+  fm=b.dataset.f;
+  document.querySelectorAll('.fbtn').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+  apply();});});
+</script>

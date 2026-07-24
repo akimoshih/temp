@@ -32,9 +32,12 @@ h1{font-size:clamp(24px,4.5vw,32px);margin:6px 0 4px;text-wrap:balance;}
 .privnote{margin-top:10px;font-size:13px;color:var(--muted);background:var(--chip-bg);
   border-left:3px solid var(--accent);padding:8px 12px;border-radius:0 6px 6px 0;}
 .stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;}
-.stat{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
-  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;}
+.stat{font:inherit;font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
+  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;cursor:pointer;}
 .stat b{color:var(--ink);}
+.stat[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+.stat[aria-pressed="true"] b{color:#fff;}
+.stat:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;
   padding:16px 18px;margin-bottom:12px;}
 .card:hover{border-color:var(--accent);}
@@ -67,7 +70,7 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 <header class="page">
   <div class="eyebrow">Dcard Video・個人經紀</div>
   <h1>個人社群合作邀約 – 阿根</h1>
-  <div class="sub"><span>阿根 的合作邀約</span><span>共 0 件</span><span>更新於 2026/07/24 11:07（台北時間）</span></div>
+  <div class="sub"><span>阿根 的合作邀約</span><span>共 0 件</span><span>更新於 2026/07/24 11:19（台北時間）</span></div>
   <div class="privnote">此頁僅整理與你相關的個人社群合作邀約，內容含報價等敏感資訊，連結請勿轉發。</div>
 </header>
 <div class="stats"></div>
@@ -75,3 +78,23 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 <div class="empty">目前沒有相關邀約。</div>
 <footer>只收「成員個人社群合作」邀約（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演），含品牌直接來信（自來案）與 Dcard 業務轉介（業務提案）；成員出演公司拍攝的影音（Dcard 調查局、中插廣告、節目置入、AD 影音拍攝）不收。本頁由每日排程自動更新；成員名單與狀態修正請編輯 Google Sheet「個人經紀信件網頁後台」。</footer>
 </div>
+<script>
+var fs='',fo='',fm='';
+function apply(){
+  document.querySelectorAll('.card').forEach(function(c){
+    var ok=(!fs||c.dataset.status===fs)&&(!fo||c.dataset.source===fo)&&(!fm||(c.dataset.members||'').split(',').indexOf(fm)>=0);
+    c.style.display=ok?'':'none';});
+}
+document.querySelectorAll('.stat[data-fs]').forEach(function(b){b.addEventListener('click',function(){
+  fs=(fs===b.dataset.fs)?'':b.dataset.fs;
+  document.querySelectorAll('.stat[data-fs]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fs===fs&&fs!==''));});
+  apply();});});
+document.querySelectorAll('.stat[data-fo]').forEach(function(b){b.addEventListener('click',function(){
+  fo=(fo===b.dataset.fo)?'':b.dataset.fo;
+  document.querySelectorAll('.stat[data-fo]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fo===fo&&fo!==''));});
+  apply();});});
+document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click',function(){
+  fm=b.dataset.f;
+  document.querySelectorAll('.fbtn').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+  apply();});});
+</script>

@@ -32,9 +32,12 @@ h1{font-size:clamp(24px,4.5vw,32px);margin:6px 0 4px;text-wrap:balance;}
 .privnote{margin-top:10px;font-size:13px;color:var(--muted);background:var(--chip-bg);
   border-left:3px solid var(--accent);padding:8px 12px;border-radius:0 6px 6px 0;}
 .stats{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 8px;}
-.stat{font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
-  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;}
+.stat{font:inherit;font-size:13px;color:var(--muted);background:var(--surface);border:1px solid var(--line);
+  border-radius:99px;padding:3px 12px;font-variant-numeric:tabular-nums;cursor:pointer;}
 .stat b{color:var(--ink);}
+.stat[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff;}
+.stat[aria-pressed="true"] b{color:#fff;}
+.stat:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:10px;
   padding:16px 18px;margin-bottom:12px;}
 .card:hover{border-color:var(--accent);}
@@ -67,317 +70,317 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 <header class="page">
   <div class="eyebrow">Dcard Video・個人經紀</div>
   <h1>個人社群合作邀約 – 總覽</h1>
-  <div class="sub"><span>全部成員</span><span>共 62 件</span><span>更新於 2026/07/24 11:07（台北時間）</span></div>
+  <div class="sub"><span>全部成員</span><span>共 62 件</span><span>更新於 2026/07/24 11:19（台北時間）</span></div>
   
 </header>
-<div class="stats"><span class="stat">執行中 <b>11</b></span><span class="stat">行政流程 <b>7</b></span><span class="stat">洽談中 <b>33</b></span><span class="stat">完成 <b>1</b></span><span class="stat">取消 <b>10</b></span><span class="stat">自來案 <b>60</b></span><span class="stat">業務提案 <b>2</b></span></div>
+<div class="stats"><button class="stat" aria-pressed="false" data-fs="執行中">執行中 <b>11</b></button><button class="stat" aria-pressed="false" data-fs="行政流程">行政流程 <b>7</b></button><button class="stat" aria-pressed="false" data-fs="洽談中">洽談中 <b>33</b></button><button class="stat" aria-pressed="false" data-fs="完成">完成 <b>1</b></button><button class="stat" aria-pressed="false" data-fs="取消">取消 <b>10</b></button><button class="stat" aria-pressed="false" data-fo="自來">自來案 <b>60</b></button><button class="stat" aria-pressed="false" data-fo="業務">業務提案 <b>2</b></button></div>
 <div class="filters" role="group" aria-label="依成員篩選"><button class="fbtn" aria-pressed="true" data-f="">全部</button><button class="fbtn" aria-pressed="false" data-f="rio">Rio</button><button class="fbtn" aria-pressed="false" data-f="andrew">Andrew</button><button class="fbtn" aria-pressed="false" data-f="agen">阿根</button><button class="fbtn" aria-pressed="false" data-f="roy">Roy</button><button class="fbtn" aria-pressed="false" data-f="meber">梅伯</button><button class="fbtn" aria-pressed="false" data-f="yy">YY</button><button class="fbtn" aria-pressed="false" data-f="lauren">Lauren</button><button class="fbtn" aria-pressed="false" data-f="royce">Royce</button><button class="fbtn" aria-pressed="false" data-f="ellie">Ellie</button><button class="fbtn" aria-pressed="false" data-f="nakaw">Nakaw</button><button class="fbtn" aria-pressed="false" data-f="leo">Leo</button></div>
-<article class="card" data-members="ellie">
+<article class="card" data-members="ellie" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916db05e82f6c" target="_blank" rel="noopener">OLIVMEW（A1 耳環）</a></span><span class="mchip">Ellie</span></div>
   <div class="meta"><span>來信 2026-07-24</span></div>
   <p class="summary">Reels 合作邀請，已報價 1 IG Reel $70,000(net)。</p>
   <div class="subj">Reels 合作邀請｜OLIVMEW A1 耳環</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916da7f592d2e" target="_blank" rel="noopener">Emergent</a></span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-24</span></div>
   <p class="summary">付費合作邀約；回覆希望先試用產品，試用後再發想合適的主題切角。</p>
   <div class="subj">付費合作邀約 - Emergent x Leo道仙人</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916da7b50d65a" target="_blank" rel="noopener">Snapdragon（粉絲交流會）</a></span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>預計上線 2026-08</span><span>代理商：達豐公關 Compass PR</span></div>
   <p class="summary">8/14 檔期可安排；報價：交流會 1 小時 $40,000＋2 IG Story $40,000＋1 IG Post $60,000，合計 $140,000(net)，確認合作另有優惠價。</p>
   <div class="subj">達豐公關來信詢問_Leo道仙人_Snapdragon粉絲交流會合作意願及報價</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916d7f056818c" target="_blank" rel="noopener">理膚寶水（Effaclar 抗痘系列）</a></span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：AnyMind Group</span></div>
   <p class="summary">公關品寄送邀約；Rio 近期無痘痘困擾，為不浪費資源婉拒。</p>
   <div class="subj">【公關品寄送】理膚寶水La Roche-Posay_Effaclar抗痘系列_Rio</div>
-</article><article class="card" data-members="rio,leo">
+</article><article class="card" data-members="rio,leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916d2fd92179e" target="_blank" rel="noopener">臺北市青年局（講座講師）</a></span><span class="mchip">Rio</span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：typropose</span></div>
   <p class="summary">講座講師邀約：Rio 8 月拍攝檔期滿先婉拒（9 月中後較充裕）；Leo 三個提議時段皆可安排。</p>
   <div class="subj">【講師邀約】臺北市青年局-講座活動邀請</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916d2e6341c60" target="_blank" rel="noopener">西堤牛排（玩總第二波）</a></span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：O-DEO</span></div>
   <p class="summary">已報價：1 IG Reel $150,000、1 Story $40,000、廣告主一週 $15,000、素材授權一個月 $60,000(net)；需確認素材使用範圍。</p>
   <div class="subj">【合作邀約】西堤牛排玩總第二波合作</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916d0e7680c0a" target="_blank" rel="noopener">三得利 芝麻明 EX</a></span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>預計上線 2026-10</span><span>代理商：CAPSULE</span></div>
   <p class="summary">有合作意願、10 月檔期可配合；報價 YT 置入（90–120 秒）$70,000、影片授權剪輯 $50,000/兩支(net)。</p>
   <div class="subj">【CAPSULE】三得利芝麻明 EX x 這Leo人(Rio想的)｜ 合作意願&amp;報價洽詢</div>
-</article><article class="card" data-members="ellie">
+</article><article class="card" data-members="ellie" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916d0c12a5bde" target="_blank" rel="noopener">未明（中秋甜點公關品）</a></span><span class="mchip">Ellie</span></div>
   <div class="meta"><span>來信 2026-07-24</span></div>
   <p class="summary">中秋甜點公關品；不保證露出與形式，已提供收件資料。</p>
   <div class="subj">✿想要把甜甜的中秋祝福分享給Ellie✿</div>
-</article><article class="card" data-members="">
+</article><article class="card" data-members="" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916cfdb9c921a" target="_blank" rel="noopener">NVIDIA（Q3 筆電推廣）</a></span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：錢滾滾（coins.com.tw）</span></div>
   <p class="summary">已報價：YT 長片中插 90 秒 $60,000、IG Reels $80,000、投廣授權兩週 $15,000(net)；待確認筆電品牌。</p>
   <div class="subj">【NVIDIA Q3】推廣合作邀約</div>
-</article><article class="card" data-members="yy">
+</article><article class="card" data-members="yy" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916ce6e4b13bf" target="_blank" rel="noopener">遠傳 5G 家用寬頻</a></span><span class="mchip">YY</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：就是廣告 Just AD</span></div>
   <p class="summary">有合作意願；報價含 YY＆阿鋼共同入鏡（Reels＋不過稿限動帶指定連結組合）。</p>
   <div class="subj">【就是廣告】2026遠傳5G家用寬頻_REELS合作邀約 / YY</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916cacc1b7bac" target="_blank" rel="noopener">SIDIZ（人體工學椅）</a></span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：koodata</span></div>
   <p class="summary">Rio 最快 11 月上線，待品牌確認時程能否調整。</p>
   <div class="subj">【koodata商案合作】SIDIZ_人體工學椅_合作邀約 / Rio</div>
-</article><article class="card" data-members="roy">
+</article><article class="card" data-members="roy" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916c87435f460" target="_blank" rel="noopener">法絨法式手工甜點（中秋禮盒）</a></span><span class="mchip">Roy</span></div>
   <div class="meta"><span>來信 2026-07-24</span></div>
   <p class="summary">中秋禮盒公關品；不保證露出與形式，已提供收件資料。</p>
   <div class="subj">【法絨法式手工甜點】2026中秋禮盒公關品邀約＿吳至晟</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f916c7f9a051b7" target="_blank" rel="noopener">電動牙刷品牌（未公開）</a></span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-24</span><span>代理商：精采公關 Bravo PR</span></div>
   <p class="summary">Rio 最快 11 月後上線；從確認合作到上線需至少 1.5 個月（腳本、拍攝、過片），待品牌確認檔期。</p>
   <div class="subj">&lt;精采公關來信&gt;電動牙刷品牌合作詢問_Rio</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f843fe1ee444ef" target="_blank" rel="noopener">知名 3C 品牌（未公開）</a></span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-21</span><span>代理商：EMC Taipei</span></div>
   <p class="summary">新品發佈直播邀約，因目前以影音、圖文合作為主，婉拒。</p>
   <div class="subj">[合作意願詢問]知名 3C 品牌新品上市發佈直播合作_Leo道仙人</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f8435af5ce2e9e" target="_blank" rel="noopener">亞培 白金安素 EX</a></span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-21</span><span>代理商：AsiaKOL</span></div>
   <p class="summary">公關禮盒邀約，已回覆公關品不保證露出與形式，並提供收件資料。</p>
   <div class="subj">【AsiaKOL】亞培白金安素 EX 公關禮盒邀約 —— 給長輩的營養守護-壹比零 Rio</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f843270eee8fe3" target="_blank" rel="noopener">eufy（C28 掃拖機器人）</a></span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-21</span><span>代理商：EMC Taipei</span></div>
   <p class="summary">掃拖機器人宣傳邀約；Rio 檔期最快 10 月中後，已提供美食 Vlog 切角的 Reels 範例。</p>
   <div class="subj">【合作邀約】eufy_C28 掃拖機器人宣傳_Rio 壹比零</div>
-</article><article class="card" data-members="andrew">
+</article><article class="card" data-members="andrew" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f84303e1175932" target="_blank" rel="noopener">未明（節目錄影出演）</a></span><span class="mchip">Andrew</span></div>
   <div class="meta"><span>來信 2026-07-21</span></div>
   <p class="summary">節目錄影出演邀約，已報價：基本置入一集（25 分鐘播出）$20,000、投廣一個月 $15,000（FB/IG/YT 三選一）、平台授權一個月 $20,000(net)。</p>
   <div class="subj">你好~Andrew錄影邀約</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f842351b854d62" target="_blank" rel="noopener">未明（診所廣告短影音）</a></span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-21</span></div>
   <p class="summary">廣告短影音邀約，傾向純出演形式；已報價（出演 4 小時內 $60,000，各式投放與授權另計）。</p>
   <div class="subj">【走鐘獎】廣告短影音合作邀請</div>
-</article><article class="card" data-members="rio,roy,leo,andrew">
+</article><article class="card" data-members="rio,roy,leo,andrew" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f7f3bf8132db5d" target="_blank" rel="noopener">Gogoro（百 GO 夜行）</a></span><span class="mchip">Rio</span><span class="mchip">Roy</span><span class="mchip">Leo</span><span class="mchip">Andrew</span></div>
   <div class="meta"><span>來信 2026-07-20</span><span>預計上線 2026-08</span><span>代理商：BUTYBOX</span></div>
   <p class="summary">活動推廣邀約：Rio、主委風格/形式不合先婉拒；改推薦 Leo、Andrew（各報 1 Story+1 Reel），品牌改要兩則 Reels、等待含廣告主的報價，檔期趕、窗口希望加 LINE 深聊。</p>
   <div class="subj">【Rio x Gogoro 】一年一度盛典「百 GO 夜行」！</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f7f29b6d3ea2df" target="_blank" rel="noopener">Samsung（三星）</a></span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-20</span><span>代理商：Tahoe Entertainment</span></div>
   <p class="summary">社群操作詢問；Rio 最快上線時間為 10 月中後，待品牌確認是否符合期待。</p>
   <div class="subj">【三星】Samsung 社群操作詢問_ Rio</div>
-</article><article class="card" data-members="roy">
+</article><article class="card" data-members="roy" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f654d9fe2b7332" target="_blank" rel="noopener">多力多滋</a></span><span class="mchip">Roy</span></div>
   <div class="meta"><span>來信 2026-07-15</span><span>預計上線 2026-08</span><span>代理商：爵嘉 Excellent</span></div>
   <p class="summary">邀請主委於指定 Threads 貼文留言互動（香菜祭）；主委 Threads 尚未開放合作，婉拒並改推薦 Leo 供品牌參考。</p>
   <div class="subj">【Excellent】口碑邀約_多力多滋香菜x南機場夜市香菜祭</div>
-</article><article class="card" data-members="rio,andrew,leo,roy,meber">
+</article><article class="card" data-members="rio,andrew,leo,roy,meber" data-status="行政流程" data-source="自來">
   <div class="row1"><span class="status admin">行政流程</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f63146d4104905" target="_blank" rel="noopener">台啤 18 天</a></span><span class="mchip">Rio</span><span class="mchip">Andrew</span><span class="mchip">Leo</span><span class="mchip">Roy</span><span class="mchip">梅伯</span></div>
   <div class="meta"><span>來信 2026-07-15</span></div>
   <p class="summary">社群推廣合作（出演拍攝），肖像同意書送法務修改：再製使用需經我方確認後才可使用。</p>
   <div class="subj">【肖像同意書】台啤18天_社群推廣合作_Rio、Andrew、Leo、主委、梅伯</div>
-</article><article class="card" data-members="ellie">
+</article><article class="card" data-members="ellie" data-status="行政流程" data-source="自來">
   <div class="row1"><span class="status admin">行政流程</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f6313e232b6216" target="_blank" rel="noopener">統一麵包</a></span><span class="mchip">Ellie</span></div>
   <div class="meta"><span>來信 2026-07-15</span></div>
   <p class="summary">社群推廣合作委刊單用印＋發票開立完成。</p>
   <div class="subj">【Video Team】委刊單用印+開立發票_V202604005_統一麵包__社群推廣合作_Ellie</div>
-</article><article class="card" data-members="yy">
+</article><article class="card" data-members="yy" data-status="行政流程" data-source="自來">
   <div class="row1"><span class="status admin">行政流程</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f6313b1820da7f" target="_blank" rel="noopener">媚比琳</a></span><span class="mchip">YY</span></div>
   <div class="meta"><span>來信 2026-07-15</span></div>
   <p class="summary">社群推廣合作委刊單用印＋發票開立完成。</p>
   <div class="subj">【Video Team】委刊單用印+開立發票_V202606006_媚比琳_社群推廣合作_YY</div>
-</article><article class="card" data-members="nakaw">
+</article><article class="card" data-members="nakaw" data-status="行政流程" data-source="自來">
   <div class="row1"><span class="status admin">行政流程</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f631368ea83d43" target="_blank" rel="noopener">Orion 找零隨手拍</a></span><span class="mchip">Nakaw</span></div>
   <div class="meta"><span>來信 2026-07-15</span></div>
   <p class="summary">合作備忘錄與委刊單送法務；法務 7/23 回覆修訂版與風險提示（建議由對方負擔產品/廣告內容之擔保責任等），待確認後回覆對方。</p>
   <div class="subj">【合約】Orion找零隨手拍_Nakaw</div>
-</article><article class="card" data-members="ellie">
+</article><article class="card" data-members="ellie" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f6070c644f8e1a" target="_blank" rel="noopener">閔簡之研 bymin</a></span><span class="mchip">Ellie</span></div>
   <div class="meta"><span>來信 2026-07-14</span></div>
   <p class="summary">醫美體驗合作，Ellie 目前無醫美需求，婉拒。</p>
   <div class="subj">【合作邀約】閔簡之研 bymin 醫美體驗合作 | Ellie | 0706</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f60433adf1e8ad" target="_blank" rel="noopener">大正製藥 力保美達</a></span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-14</span><span>代理商：就是廣告 Just AD</span></div>
   <p class="summary">IG 貼文合作，已報價（圖文+限動 $140,000、Reels+限動 $185,000、廣告主另計），品牌評估中。</p>
   <div class="subj">【就是廣告】大正製藥力保美達能量補給飲料_IG貼文合作邀約 / Rio</div>
-</article><article class="card" data-members="">
+</article><article class="card" data-members="" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f601f25ab40935" target="_blank" rel="noopener">OPPO</a></span></div>
   <div class="meta"><span>來信 2026-07-14</span></div>
   <p class="summary">手機合作邀約，因既有手機合作競品條款婉拒。</p>
   <div class="subj">OPPO手機合作邀約</div>
-</article><article class="card" data-members="">
+</article><article class="card" data-members="" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f601dcf1040b82" target="_blank" rel="noopener">OHIR（韓國保養品牌）</a></span></div>
   <div class="meta"><span>來信 2026-07-14</span><span>代理商：GMax Global</span></div>
   <p class="summary">公關品合作（不保證露出與形式），已提供收件資料。</p>
   <div class="subj">【公關邀約】韓國全新保養品牌OHIR</div>
-</article><article class="card" data-members="meber">
+</article><article class="card" data-members="meber" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f60197727c9c2d" target="_blank" rel="noopener">必勝客 Pizza Hut</a></span><span class="mchip">梅伯</span></div>
   <div class="meta"><span>來信 2026-07-14</span><span>代理商：FMTaiwan 星光聲媒體</span></div>
   <p class="summary">品牌推廣合作，已報價：1 IG Reel $50,000(net)、FB+IG 廣告主 $20,000(net)/月。</p>
   <div class="subj">【合作邀約】FMTaiwan誠摯邀請『梅伯』 一同參與「必勝客Pizza Hut」品牌推廣合作</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f6018a57cb4cc8" target="_blank" rel="noopener">必勝客 Pizza Hut</a></span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-14</span><span>代理商：FMTaiwan 星光聲媒體</span></div>
   <p class="summary">品牌推廣合作，已報價：1 IG Reel $80,000(net)、FB+IG 廣告主 $30,000(net)/月；確認以發票請款。</p>
   <div class="subj">【合作邀約】FMTaiwan誠摯邀請『Leo道仙人』 一同參與「必勝客Pizza Hut」品牌推廣合作</div>
-</article><article class="card" data-members="roy">
+</article><article class="card" data-members="roy" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f6015d2ecdcb68" target="_blank" rel="noopener">Winning Plus 卡到英</a></span><span class="mchip">Roy</span></div>
   <div class="meta"><span>來信 2026-07-14</span></div>
   <p class="summary">專屬活動邀約，因主委近期拍攝檔期滿婉拒。</p>
   <div class="subj">【合作邀約】蘆洲主委 x Winning Plus 卡到英專屬活動邀約</div>
-</article><article class="card" data-members="roy">
+</article><article class="card" data-members="roy" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f6009172d71899" target="_blank" rel="noopener">特·好喝</a></span><span class="mchip">Roy</span></div>
   <div class="meta"><span>來信 2026-07-14</span></div>
   <p class="summary">合作體驗邀約，因主委近期拍攝檔期滿婉拒。</p>
   <div class="subj">【特·好喝】 合作體驗邀約</div>
-</article><article class="card" data-members="ellie">
+</article><article class="card" data-members="ellie" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f5ff29c126bf08" target="_blank" rel="noopener">大茗 x Kiehl&#x27;s</a></span><span class="mchip">Ellie</span></div>
   <div class="meta"><span>來信 2026-07-14</span></div>
   <p class="summary">聯名發表會邀約，Ellie 檔期繁忙婉拒；另提供團隊成員介紹供未來合作。</p>
   <div class="subj">【活動誠摯邀請】大茗 x Kiehl&#x27;s 聯名新品上市發表會｜邀約您一起搶先體驗！</div>
-</article><article class="card" data-members="rio,yy">
+</article><article class="card" data-members="rio,yy" data-status="行政流程" data-source="業務">
   <div class="row1"><span class="status admin">行政流程</span><span class="src biz">業務提案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f5ff1919dc8fe7" target="_blank" rel="noopener">Richart D 卡聯名野餐組</a></span><span class="mchip">Rio</span><span class="mchip">YY</span></div>
   <div class="meta"><span>來信 2026-07-14</span></div>
   <p class="summary">聯名野餐組合作請款，委刊單單號 SO2025-002763，依提供連結費用項目請款。</p>
   <div class="subj">【video 合作】Richart D 卡聯名野餐組</div>
-</article><article class="card" data-members="meber">
+</article><article class="card" data-members="meber" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f5f8428b434401" target="_blank" rel="noopener">王品莆田</a></span><span class="mchip">梅伯</span></div>
   <div class="meta"><span>來信 2026-07-14</span><span>預計上線 2026-09</span><span>代理商：Have Fun Creative</span></div>
   <p class="summary">餐點推廣，已報價（Reels+限動 $70,000 含台中交通），可配合 9/15 上線；預計 8 月初客戶回覆。</p>
   <div class="subj">【合作邀約】王品莆田餐點推廣@梅伯</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f5f73f62066166" target="_blank" rel="noopener">Projext&amp;Co</a></span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-14</span></div>
   <p class="summary">團購邀約；先婉拒開團，提議先合作圖文或影片觀察觀眾反應，反應熱烈再談開團。</p>
   <div class="subj">Projext＆Co多款熱銷主打單品｜團購合作邀請ＸLeo道仙人</div>
-</article><article class="card" data-members="meber">
+</article><article class="card" data-members="meber" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f5eb098b39400e" target="_blank" rel="noopener">樂事（棒球球隊包裝）</a></span><span class="mchip">梅伯</span></div>
   <div class="meta"><span>來信 2026-07-14</span><span>代理商：爵嘉 Excellent</span></div>
   <p class="summary">體驗＋Reels 影音推薦提案，已報價（Reels+限動 $73,500 含稅、Threads 轉發 $15,570）；客戶希望先看切角，我方回覆需確認合作並收到 Brief 後才提供。</p>
   <div class="subj">【Excellent】口碑邀約_樂事棒球球隊包裝_影音提案</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f5b3cd92ea18ee" target="_blank" rel="noopener">巔峰極速（遊戲）</a></span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-13</span><span>代理商：知識糖果</span></div>
   <p class="summary">遊戲推廣，已報價（YT 主題推廣影音 $80,000/90 秒、活動推廣貼文 $60,000），廠商評估中。</p>
   <div class="subj">《巔峰極速》遊戲推廣合作-知識糖果</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f5b24d137d2a1a" target="_blank" rel="noopener">遠傳 iPhone18</a></span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-13</span><span>代理商：Lady Kent Studio</span></div>
   <p class="summary">Rio 最快檔期在 11 月中後，時間無法配合，婉拒。</p>
   <div class="subj">(合作邀請) 遠傳iPhone18 x Rio</div>
-</article><article class="card" data-members="andrew">
+</article><article class="card" data-members="andrew" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f46470d1d5cf57" target="_blank" rel="noopener">AnD HOUSE 安庭家居</a></span><span class="mchip">Andrew</span></div>
   <div class="meta"><span>來信 2026-07-09</span></div>
   <p class="summary">已報價（Reels $50,000、圖文 $45,000、限動 $12,000、Partnership Ads $15,000）；7/24 回覆先以 IG Reel/Post 優先，YouTube 合作需 10 月中後。</p>
   <div class="subj">合作邀約｜AnD HOUSE 安庭家居</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f463ad5aeb2bd9" target="_blank" rel="noopener">美國知名洗髮精品牌（未公開）</a></span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-09</span><span>預計上線 2026-09</span><span>代理商：新創整合行銷 IAOD</span></div>
   <p class="summary">9 月新品合作，已報價（Reels 含人聲字幕 $100,000），可避開競品；提供公關品試用一週後發想切角，品牌確認中。</p>
   <div class="subj">【美國知名洗髮精品牌】 2026年9月新品上市_合作體驗 邀約信件_Leo道仙人</div>
-</article><article class="card" data-members="leo,meber,roy">
+</article><article class="card" data-members="leo,meber,roy" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f4633befad2a11" target="_blank" rel="noopener">Airwaves x One Piece 聯名</a></span><span class="mchip">Leo</span><span class="mchip">梅伯</span><span class="mchip">Roy</span></div>
   <div class="meta"><span>來信 2026-07-09</span><span>代理商：陽獅媒體 Publicis</span></div>
   <p class="summary">三人聯名推廣：確認海賊形象出演疑慮（不能 Cosplay）、主委以 IG Story 為主；已報三次過稿 $180,000(net)、FB+IG 雙平台廣告主 $70,000(net)/月，品牌評估中。</p>
   <div class="subj">【合作邀約】陽獅媒體_Airwaves X One Piece 聯名_LEO&amp;梅柏&amp;主委</div>
-</article><article class="card" data-members="rio">
+</article><article class="card" data-members="rio" data-status="執行中" data-source="業務">
   <div class="row1"><span class="status run">執行中</span><span class="src biz">業務提案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f41eeee2e35347" target="_blank" rel="noopener">Disney+《殺人者的購物中心2》</a></span><span class="mchip">Rio</span></div>
   <div class="meta"><span>來信 2026-07-08</span><span>預計上線 2026-07</span></div>
   <p class="summary">限動合作已確認：7/22–7/28 上線，Rio 需看完第一集分享心得、Cos 李棟旭；規格表與報價單確認中（內部業務 Zack 對接）。</p>
   <div class="subj">DcardxDisney+『殺人者的購物中心2』限動合作。by_Zack0708。</div>
-</article><article class="card" data-members="meber">
+</article><article class="card" data-members="meber" data-status="行政流程" data-source="自來">
   <div class="row1"><span class="status admin">行政流程</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f377135cade130" target="_blank" rel="noopener">Febreze 風倍清</a></span><span class="mchip">梅伯</span></div>
   <div class="meta"><span>來信 2026-07-06</span></div>
   <p class="summary">社群推廣合作（加購投廣）委刊單用印＋發票開立完成。</p>
   <div class="subj">【Video Team】委刊單用印+開立發票_V202607005_Febreze風倍清_社群推廣合作_梅伯_加購投廣</div>
-</article><article class="card" data-members="ellie">
+</article><article class="card" data-members="ellie" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f36efff3af1cdd" target="_blank" rel="noopener">Neogence 霓淨思</a></span><span class="mchip">Ellie</span></div>
   <div class="meta"><span>來信 2026-07-06</span><span>代理商：麗彤生醫</span></div>
   <p class="summary">下半年新品公關禮（不保證露出，若露出以真實體驗分享），已提供收件資料。</p>
   <div class="subj">【公關禮邀約】Neogence 霓淨思 2026 下半年新品</div>
-</article><article class="card" data-members="roy">
+</article><article class="card" data-members="roy" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f2547ad73960f5" target="_blank" rel="noopener">遠傳 x Samsung S25</a></span><span class="mchip">Roy</span></div>
   <div class="meta"><span>來信 2026-07-03</span><span>代理商：Lady Kent Studio</span></div>
   <p class="summary">空機專案邀約，回覆主委目前以 IG Story 形式為主，待品牌確認是否符合期待。</p>
   <div class="subj">【合作邀請】遠傳 x Samsung S25空機專案 _ 吳至晟</div>
-</article><article class="card" data-members="ellie">
+</article><article class="card" data-members="ellie" data-status="取消" data-source="自來">
   <div class="row1"><span class="status off">取消</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f2547933707ecc" target="_blank" rel="noopener">柏泰牙醫（牙齒美白貼片）</a></span><span class="mchip">Ellie</span></div>
   <div class="meta"><span>來信 2026-07-03</span></div>
   <p class="summary">Ellie 已規劃隱適美，無法同時進行本合作，婉拒。</p>
   <div class="subj">【柏泰牙醫診所_牙齒美白貼片】合作邀約詢問 @Ellie 🐨</div>
-</article><article class="card" data-members="ellie">
+</article><article class="card" data-members="ellie" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f254759b385aa4" target="_blank" rel="noopener">JAI 宅（尊鴻餐飲）</a></span><span class="mchip">Ellie</span></div>
   <div class="meta"><span>來信 2026-07-03</span></div>
   <p class="summary">九週年企劃邀約，已報價 1 IG Story $30,000(net)。</p>
   <div class="subj">尊鴻餐飲 - JAI 宅 九週年企劃合作邀約</div>
-</article><article class="card" data-members="andrew">
+</article><article class="card" data-members="andrew" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f2547541148ea3" target="_blank" rel="noopener">乖乖</a></span><span class="mchip">Andrew</span></div>
   <div class="meta"><span>來信 2026-07-03</span><span>代理商：Good Time</span></div>
   <p class="summary">影音合作邀約，已報價（Reels $50,000、協作貼文 $5,000、廣告主 $15,000/月、限動 $15,000），待 Brief 確認檔期。</p>
   <div class="subj">【乖乖 Kuai Kuai｜影音合作邀約】安主Andrew</div>
-</article><article class="card" data-members="roy">
+</article><article class="card" data-members="roy" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f25472f6220d3a" target="_blank" rel="noopener">八曜和茶（小雞上工）</a></span><span class="mchip">Roy</span></div>
   <div class="meta"><span>來信 2026-07-03</span><span>代理商：只要有人 Humanoid</span></div>
   <p class="summary">社群專案洽詢，主委以 IG Story 為主，已報價 1 Story $50,000(net)。</p>
   <div class="subj">【只要有人｜Dcard 主委吳至晟 】小雞上工 x 八曜和茶_社群專案合作洽詢</div>
-</article><article class="card" data-members="meber">
+</article><article class="card" data-members="meber" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f2546f2b7319b1" target="_blank" rel="noopener">品牌街區推廣（未明）</a></span><span class="mchip">梅伯</span></div>
   <div class="meta"><span>來信 2026-07-03</span><span>代理商：AsiaKOL</span></div>
   <p class="summary">IG 宣傳合作，已報價（Reels $55,000、兩則限動 $25,000）。</p>
   <div class="subj">【AsiaKOL】品牌街區推廣 Instagram 宣傳合作邀約｜梅伯</div>
-</article><article class="card" data-members="ellie">
+</article><article class="card" data-members="ellie" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f2546c636011b1" target="_blank" rel="noopener">INNERHOWS（沐浴油）</a></span><span class="mchip">Ellie</span></div>
   <div class="meta"><span>來信 2026-07-03</span></div>
   <p class="summary">團購邀約先婉拒，改以公關品合作（不保證露出），已提供收件資料。</p>
   <div class="subj">【合作邀約】Ellie x INNERHOWS｜MIT專櫃等級沐浴油</div>
-</article><article class="card" data-members="meber">
+</article><article class="card" data-members="meber" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f25468c72754d2" target="_blank" rel="noopener">嬌娃爽身粉</a></span><span class="mchip">梅伯</span></div>
   <div class="meta"><span>來信 2026-07-03</span></div>
   <p class="summary">已報價：Reels 組合（含 FB 同步＋限動＋廣告主一個月）$90,000、圖文組合 $70,000(net)。</p>
   <div class="subj">嬌娃爽身粉合作邀約_meberisgod</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f254686a62eb19" target="_blank" rel="noopener">八曜和茶（小雞上工）</a></span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-07-03</span><span>代理商：只要有人 Humanoid</span></div>
   <p class="summary">短影音合作，已報價（IG / Threads 各 $80,000，FB 加購 $5,000），多平台上架費用細節確認中。</p>
   <div class="subj">【只要有人｜Dcard Leo 】小雞上工 x 八曜和茶_社群專案合作洽詢</div>
-</article><article class="card" data-members="meber">
+</article><article class="card" data-members="meber" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19f1801646835958" target="_blank" rel="noopener">soundcore（Liberty 5 Pro 耳機）</a></span><span class="mchip">梅伯</span></div>
   <div class="meta"><span>來信 2026-06-30</span><span>預計上線 2026-08</span><span>代理商：EMC Taipei（岳泓）</span></div>
   <p class="summary">確定合作：產品已寄出、Brief 已提供；時程 7/14 交腳本、8/4 交片、8/11 前後上線；委刊單與報價單處理中。</p>
   <div class="subj">【確定合作】soundcore 年度旗艦耳機 Liberty 5 Pro 宣傳_ 梅伯</div>
-</article><article class="card" data-members="rio,andrew">
+</article><article class="card" data-members="rio,andrew" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19ef3e0b4537b796" target="_blank" rel="noopener">New Balance（26 Summer Campaign）</a></span><span class="mchip">Rio</span><span class="mchip">Andrew</span></div>
   <div class="meta"><span>來信 2026-06-23</span><span>代理商：EMC Taipei</span></div>
   <p class="summary">Rio 因其他品牌合作先 pass；7/24 最終確認 Andrew 合作 1 IG Story（不過稿）＋1 IG Post $50,000(net)（戶米亦確認合作）。</p>
   <div class="subj">[EMC] New Balance 26 Summer Campaign_合作邀約_Rio &amp; 安主</div>
-</article><article class="card" data-members="meber">
+</article><article class="card" data-members="meber" data-status="行政流程" data-source="自來">
   <div class="row1"><span class="status admin">行政流程</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19eab6895d9b0753" target="_blank" rel="noopener">蘇格蘭威士忌品牌（全聯常態商品）</a></span><span class="mchip">梅伯</span></div>
   <div class="meta"><span>來信 2026-06-09</span><span>預計上線 2026-08</span><span>代理商：HsiehAD</span></div>
   <p class="summary">品牌確認合作 1 支個人 IG 短影音（$50,000 net，發布於 @meberisgod），上線時間調整至 8/24–8/26（近中元節切角）；對方將出合作協議書，確認後用印。</p>
   <div class="subj">【合作邀約】蘇格蘭威士忌品牌ｘ梅伯｜短影音合作企劃</div>
-</article><article class="card" data-members="yy">
+</article><article class="card" data-members="yy" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19e87637a3e838c6" target="_blank" rel="noopener">媚比琳（眼線液新品 x WeMo）</a></span><span class="mchip">YY</span></div>
   <div class="meta"><span>來信 2026-06-02</span><span>代理商：艾許 i-shiu</span></div>
   <p class="summary">確認合作 Reels＋限動 $65,000(net)，產品已寄出；拍攝方向為「極線挑戰」結合 WeMo 機車日租；7/24 加購廣告主兩週 $15,000。</p>
   <div class="subj">【IG Reels＋限動合作詢問】媚比琳新品 神角度超穩控激細眼線液＋小黑霸 邀請您 YY</div>
-</article><article class="card" data-members="leo">
+</article><article class="card" data-members="leo" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19e3fe85c95718ba" target="_blank" rel="noopener">台電 瓩設計獎（第 27 屆）</a></span><span class="mchip">Leo</span></div>
   <div class="meta"><span>來信 2026-05-19</span></div>
   <p class="summary">7/23 正式邀請 Leo 擔任多媒體設計類初審評審；賽程規劃已提供，執行細節與台電持續確認中。</p>
   <div class="subj">【reels 合作邀約】台電「瓩設計獎」設計競賽</div>
-</article><article class="card" data-members="yy,andrew">
+</article><article class="card" data-members="yy,andrew" data-status="完成" data-source="自來">
   <div class="row1"><span class="status done">完成</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19dbcca5e1ff6ad8" target="_blank" rel="noopener">HOLA（MOCHI 麻吉沙發）</a></span><span class="mchip">YY</span><span class="mchip">Andrew</span></div>
   <div class="meta"><span>來信 2026-04-24</span><span>預計上線 2026-04</span></div>
   <p class="summary">社群推廣合作，兩人影片 4/29 上線；合約經法務修訂後雙方用印，另加購投廣合約亦完成。</p>
   <div class="subj">【合約】HOLA「MOCHI 麻吉沙發」__社群推廣合作_YY+Andrew</div>
-</article><article class="card" data-members="yy">
+</article><article class="card" data-members="yy" data-status="洽談中" data-source="自來">
   <div class="row1"><span class="status talk">洽談中</span><span class="src">自來案</span><span class="brand"><a href="https://mail.google.com/mail/u/0/#all/19919a4fcfe28a2d" target="_blank" rel="noopener">7-ELEVEN ibon（行動電源租借）</a></span><span class="mchip">YY</span></div>
   <div class="meta"><span>來信 2025-09-05</span><span>預計上線 2026-09</span></div>
   <p class="summary">去年案子品牌回頭重啟：報價維持不變，上線希望安排 9 月初；對方想加 LINE 確認合作細節。</p>
@@ -386,10 +389,22 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 <footer>只收「成員個人社群合作」邀約（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演），含品牌直接來信（自來案）與 Dcard 業務轉介（業務提案）；成員出演公司拍攝的影音（Dcard 調查局、中插廣告、節目置入、AD 影音拍攝）不收。本頁由每日排程自動更新；成員名單與狀態修正請編輯 Google Sheet「個人經紀信件網頁後台」。</footer>
 </div>
 <script>
-document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click',function(){
-  document.querySelectorAll('.fbtn').forEach(function(x){x.setAttribute('aria-pressed','false')});
-  b.setAttribute('aria-pressed','true');var f=b.dataset.f;
+var fs='',fo='',fm='';
+function apply(){
   document.querySelectorAll('.card').forEach(function(c){
-    c.style.display=(!f||(c.dataset.members||'').split(',').indexOf(f)>=0)?'':'none';});
-});});
+    var ok=(!fs||c.dataset.status===fs)&&(!fo||c.dataset.source===fo)&&(!fm||(c.dataset.members||'').split(',').indexOf(fm)>=0);
+    c.style.display=ok?'':'none';});
+}
+document.querySelectorAll('.stat[data-fs]').forEach(function(b){b.addEventListener('click',function(){
+  fs=(fs===b.dataset.fs)?'':b.dataset.fs;
+  document.querySelectorAll('.stat[data-fs]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fs===fs&&fs!==''));});
+  apply();});});
+document.querySelectorAll('.stat[data-fo]').forEach(function(b){b.addEventListener('click',function(){
+  fo=(fo===b.dataset.fo)?'':b.dataset.fo;
+  document.querySelectorAll('.stat[data-fo]').forEach(function(x){x.setAttribute('aria-pressed',String(x.dataset.fo===fo&&fo!==''));});
+  apply();});});
+document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click',function(){
+  fm=b.dataset.f;
+  document.querySelectorAll('.fbtn').forEach(function(x){x.setAttribute('aria-pressed',String(x===b));});
+  apply();});});
 </script>
