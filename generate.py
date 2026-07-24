@@ -385,10 +385,17 @@ def render_overview_dashboard():
 TASK_STATUS_CLASS = {"待審批": "talk", "已核准": "run", "已完成": "done", "已退回": "off"}
 APPROVAL_FORM = "https://docs.google.com/forms/d/e/1FAIpQLScfgB9cKqva_599cUArRHrL5py7AYXNp_mv9v1IckjtRbkEHw/viewform"
 ENTRY_TASK, ENTRY_DECISION = "entry.867872180", "entry.130383656"
+ENTRY_BODY, ENTRY_META = "entry.817735139", "entry.1421594967"
 
-def approval_url(task_id, decision):
+def approval_url(t, decision):
     from urllib.parse import quote
-    return f"{APPROVAL_FORM}?usp=pp_url&{ENTRY_TASK}={quote(task_id)}&{ENTRY_DECISION}={quote(decision)}"
+    url = f"{APPROVAL_FORM}?usp=pp_url&{ENTRY_TASK}={quote(t['task_id'])}&{ENTRY_DECISION}={quote(decision)}"
+    d = t.get("draft") or {}
+    if decision == "核准" and d.get("body"):
+        meta = json.dumps({"thread_id": t["thread_id"], "cc": d.get("cc", []), "subject": d.get("subject", "")},
+                          ensure_ascii=False, separators=(",", ":"))
+        url += f"&{ENTRY_BODY}={quote(d['body'])}&{ENTRY_META}={quote(meta)}"
+    return url
 
 def render_approvals():
     try:
@@ -412,9 +419,9 @@ def render_approvals():
         actions = ""
         if t["status"] == "待審批":
             actions = (f'<div class="actions">'
-                       f'<a class="abtn ok" href="{approval_url(t["task_id"], "核准")}" target="_blank" rel="noopener">✅ 核准</a>'
-                       f'<a class="abtn no" href="{approval_url(t["task_id"], "退回")}" target="_blank" rel="noopener">↩️ 退回修改</a>'
-                       f'<span class="ahint">按下後表單已預填，按「提交」即完成；退回請在表單「修改意見」欄說明。</span></div>')
+                       f'<a class="abtn ok" href="{approval_url(t, "核准")}" target="_blank" rel="noopener">✅ 核准</a>'
+                       f'<a class="abtn no" href="{approval_url(t, "退回")}" target="_blank" rel="noopener">↩️ 退回修改</a>'
+                       f'<span class="ahint">核准：表單裡可直接編輯草稿內文，按提交後幾秒內草稿就會出現在 Gmail。退回：請在「修改意見」欄說明。</span></div>')
         cards.append(f'''<article class="card">
   <div class="row1"><span class="status {scls}">{html.escape(t["status"])}</span><span class="chip meet">{html.escape(t["type"])}</span><span class="brand">{html.escape(t["case"])}</span></div>
   <div class="meta">{"".join(meta)}<span>{gmail}</span></div>
