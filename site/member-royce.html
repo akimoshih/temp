@@ -97,6 +97,8 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 .barrow .lbl{color:var(--muted);text-align:right;}
 .barrow .val{font-variant-numeric:tabular-nums;color:var(--ink);}
 .bfill{height:10px;background:var(--grad);border-radius:0 4px 4px 0;min-width:2px;}
+.draftbox{white-space:pre-wrap;background:var(--chip-bg);border:1px dashed var(--line);border-radius:8px;
+  padding:12px 14px;margin:10px 0 4px;font-size:13.5px;line-height:1.7;overflow-x:auto;}
 .revwrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin:10px 0;}
 table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;}
 .rev th,.rev td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap;}
@@ -109,7 +111,7 @@ table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeri
 <header class="page">
   <div class="eyebrow">Dcard Video・個人經紀</div>
   <h1>個人社群合作邀約 – Royce</h1>
-  <div class="sub"><span>Royce 的合作邀約</span><span>共 0 件</span><span>更新於 2026/07/24 13:25（台北時間）</span></div>
+  <div class="sub"><span>Royce 的合作邀約</span><span>共 0 件</span><span>更新於 2026/07/24 14:23（台北時間）</span></div>
   <div class="privnote">此頁僅整理與你相關的個人社群合作邀約與收入資訊，內容敏感，連結請勿轉發。</div>
 </header>
 <div class="tabs" role="tablist"><button class="tab" role="tab" aria-selected="true" data-tab="list">合作邀約</button><button class="tab" role="tab" aria-selected="false" data-tab="dash">分析儀表板</button></div><section id="tab-list"><div class="stats"></div><div class="empty">目前沒有相關邀約。</div></section><section id="tab-dash" hidden><div class="hero">
@@ -137,8 +139,7 @@ table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeri
 <script>
 document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){
   document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected',String(x===b));});
-  document.getElementById('tab-list').hidden=b.dataset.tab!=='list';
-  document.getElementById('tab-dash').hidden=b.dataset.tab!=='dash';
+  document.querySelectorAll('section[id^="tab-"]').forEach(function(s){s.hidden=s.id!=='tab-'+b.dataset.tab;});
 });});
 </script>
 <script>

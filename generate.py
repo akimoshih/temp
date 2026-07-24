@@ -141,6 +141,8 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
 .barrow .lbl{color:var(--muted);text-align:right;}
 .barrow .val{font-variant-numeric:tabular-nums;color:var(--ink);}
 .bfill{height:10px;background:var(--grad);border-radius:0 4px 4px 0;min-width:2px;}
+.draftbox{white-space:pre-wrap;background:var(--chip-bg);border:1px dashed var(--line);border-radius:8px;
+  padding:12px 14px;margin:10px 0 4px;font-size:13.5px;line-height:1.7;overflow-x:auto;}
 .revwrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin:10px 0;}
 table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;}
 .rev th,.rev td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap;}
@@ -261,7 +263,7 @@ def render_card(r, with_link):
   <div class="subj">{html.escape(r["subject"])}</div>
 </article>'''
 
-def render_page(title, subtitle, records, with_link, filters=False, privnote=None, dashboard=None):
+def render_page(title, subtitle, records, with_link, filters=False, privnote=None, dashboard=None, approvals=None):
     now = datetime.now(TPE).strftime("%Y/%m/%d %H:%M")
     records = sorted(records, key=lambda r: (r["date"], r["thread_id"]), reverse=True)
     counts = {s: sum(1 for r in records if r["status"] == s) for s in STATUS_ORDER}
@@ -299,21 +301,26 @@ document.querySelectorAll('.fbtn').forEach(function(b){b.addEventListener('click
   apply();});});
 </script>"""
     pn = f'<div class="privnote">{privnote}</div>' if privnote else ""
+    sections = [("list", "合作邀約", f'<div class="stats">{stats}</div>{fhtml}{body}')]
     if dashboard:
-        tabbar = ('<div class="tabs" role="tablist">'
-                  '<button class="tab" role="tab" aria-selected="true" data-tab="list">合作邀約</button>'
-                  '<button class="tab" role="tab" aria-selected="false" data-tab="dash">分析儀表板</button></div>')
-        content = (f'{tabbar}<section id="tab-list"><div class="stats">{stats}</div>{fhtml}{body}</section>'
-                   f'<section id="tab-dash" hidden>{dashboard}</section>')
+        sections.append(("dash", "分析儀表板", dashboard))
+    if approvals:
+        sections.append(("appr", approvals[0], approvals[1]))
+    if len(sections) > 1:
+        tabbar = '<div class="tabs" role="tablist">' + "".join(
+            f'<button class="tab" role="tab" aria-selected="{"true" if i == 0 else "false"}" data-tab="{sid}">{label}</button>'
+            for i, (sid, label, _) in enumerate(sections)) + "</div>"
+        content = tabbar + "".join(
+            f'<section id="tab-{sid}"{"" if i == 0 else " hidden"}>{shtml}</section>'
+            for i, (sid, _, shtml) in enumerate(sections))
         tabjs = """<script>
 document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){
   document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected',String(x===b));});
-  document.getElementById('tab-list').hidden=b.dataset.tab!=='list';
-  document.getElementById('tab-dash').hidden=b.dataset.tab!=='dash';
+  document.querySelectorAll('section[id^="tab-"]').forEach(function(s){s.hidden=s.id!=='tab-'+b.dataset.tab;});
 });});
 </script>"""
     else:
-        content = f'<div class="stats">{stats}</div>{fhtml}{body}'
+        content = sections[0][2]
         tabjs = ""
     return f'''<title>{html.escape(title)}</title>
 <style>{CSS}</style>
@@ -367,6 +374,38 @@ def render_overview_dashboard():
 <div class="dsec">邀約狀態分佈</div>{bar_rows(stat_pairs)}
 <div class="dsec">案源</div>{bar_rows(src_pairs)}'''
 
+TASK_STATUS_CLASS = {"待審批": "talk", "已核准": "run", "已完成": "done", "已退回": "off"}
+
+def render_approvals():
+    try:
+        queue = load("queue.json")
+    except FileNotFoundError:
+        queue = []
+    if not queue:
+        return ("待辦審批", '<div class="empty">目前沒有待審批項目。</div>')
+    pending = sum(1 for t in queue if t["status"] == "待審批")
+    cards = []
+    for t in sorted(queue, key=lambda x: (x["status"] != "待審批", x["task_id"]), reverse=False):
+        d = t.get("draft", {})
+        scls = TASK_STATUS_CLASS.get(t["status"], "talk")
+        meta = [f'<span>任務 {t["task_id"]}</span>', f'<span>負責人 {html.escape(t["assignee"].split("@")[0])}</span>',
+                f'<span>建立 {t["created"]}</span>']
+        gmail = f'<a href="https://mail.google.com/mail/u/0/#all/{t["thread_id"]}" target="_blank" rel="noopener">原始信件</a>'
+        draft_html = ""
+        if d:
+            hdr = f'收件人：{html.escape("、".join(d.get("to", [])))}\n主旨：{html.escape(d.get("subject", ""))}\n\n'
+            draft_html = f'<div class="draftbox">{hdr}{html.escape(d.get("body", ""))}</div>'
+        cards.append(f'''<article class="card">
+  <div class="row1"><span class="status {scls}">{html.escape(t["status"])}</span><span class="chip meet">{html.escape(t["type"])}</span><span class="brand">{html.escape(t["case"])}</span></div>
+  <div class="meta">{"".join(meta)}<span>{gmail}</span></div>
+  <p class="summary">{html.escape(t.get("note", ""))}</p>
+  {draft_html}
+  <div class="subj">✅ 核准方式：到「個人經紀審批表」新增一列，填任務 ID <b>{t["task_id"]}</b> 與「核准」（要修改就填「退回」＋修改意見），下一輪排程會自動在信箱建立草稿。</div>
+</article>''')
+    intro = ('<div class="privnote">這裡是 AI 產生、等待確認的內容。核准後系統只會建立<b>草稿</b>，不會自動寄出——最後送出永遠由人操作。'
+             '審批表：<a href="https://docs.google.com/spreadsheets/d/18RyaQ65hKPjTe0EH9SjwShv6m5mtURLLiusOTqyU2Bg/edit" target="_blank" rel="noopener">個人經紀審批表</a></div>')
+    return (f"待辦審批（{pending}）" if pending else "待辦審批", intro + "".join(cards))
+
 os.makedirs(os.path.join(BASE, "site"), exist_ok=True)
 
 def write(name, content):
@@ -375,7 +414,7 @@ def write(name, content):
 
 write("overview.html", render_page(
     "個人社群合作邀約 – 總覽", "全部成員", RECORDS, with_link=True, filters=True,
-    dashboard=render_overview_dashboard()))
+    dashboard=render_overview_dashboard(), approvals=render_approvals()))
 
 for m in MEMBERS:
     if not m["enabled"]:
