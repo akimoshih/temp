@@ -65,17 +65,37 @@ h1{font-size:clamp(24px,4.5vw,32px);margin:6px 0 4px;text-wrap:balance;}
 .fbtn:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
 .empty{color:var(--muted);text-align:center;padding:48px 0;}
 footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:14px;}
+.tabs{display:flex;gap:4px;margin:16px 0 4px;border-bottom:1px solid var(--line);}
+.tab{font:inherit;font-size:14.5px;padding:8px 16px;background:none;border:none;color:var(--muted);
+  cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;}
+.tab[aria-selected="true"]{color:var(--accent);border-color:var(--accent);font-weight:700;}
+.tab:focus-visible{outline:2px solid var(--accent);outline-offset:2px;}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:16px 0;}
+.tile{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;}
+.tile .v{font-size:22px;font-weight:700;font-variant-numeric:tabular-nums;}
+.tile .l{font-size:12.5px;color:var(--muted);margin-top:2px;}
+.dsec{margin:28px 0 10px;font-size:15px;font-weight:700;}
+.dnote{font-size:12.5px;color:var(--muted);margin:-6px 0 10px;}
+.barrow{display:grid;grid-template-columns:96px 1fr 84px;align-items:center;gap:10px;margin:7px 0;font-size:13px;}
+.barrow .lbl{color:var(--muted);text-align:right;}
+.barrow .val{font-variant-numeric:tabular-nums;color:var(--ink);}
+.bfill{height:10px;background:var(--accent);border-radius:0 4px 4px 0;min-width:2px;}
+.revwrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:6px 10px;margin:10px 0;}
+table.rev{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums;}
+.rev th,.rev td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap;}
+.rev th{color:var(--muted);font-weight:600;font-size:12.5px;}
+.rev td.n,.rev th.n{text-align:right;}
+.rev td.name{white-space:normal;min-width:220px;}
+.rev tr.total td{font-weight:700;border-top:2px solid var(--accent);border-bottom:none;}
 </style>
 <div class="wrap">
 <header class="page">
   <div class="eyebrow">Dcard Video・個人經紀</div>
   <h1>個人社群合作邀約 – Roy</h1>
-  <div class="sub"><span>Roy 的合作邀約</span><span>共 9 件</span><span>更新於 2026/07/24 11:19（台北時間）</span></div>
-  <div class="privnote">此頁僅整理與你相關的個人社群合作邀約，內容含報價等敏感資訊，連結請勿轉發。</div>
+  <div class="sub"><span>Roy 的合作邀約</span><span>共 9 件</span><span>更新於 2026/07/24 12:45（台北時間）</span></div>
+  <div class="privnote">此頁僅整理與你相關的個人社群合作邀約與收入資訊，內容敏感，連結請勿轉發。</div>
 </header>
-<div class="stats"><button class="stat" aria-pressed="false" data-fs="執行中">執行中 <b>1</b></button><button class="stat" aria-pressed="false" data-fs="行政流程">行政流程 <b>1</b></button><button class="stat" aria-pressed="false" data-fs="洽談中">洽談中 <b>4</b></button><button class="stat" aria-pressed="false" data-fs="取消">取消 <b>3</b></button><button class="stat" aria-pressed="false" data-fo="自來">自來案 <b>9</b></button></div>
-
-<article class="card" data-members="roy" data-status="執行中" data-source="自來">
+<div class="tabs" role="tablist"><button class="tab" role="tab" aria-selected="true" data-tab="list">合作邀約</button><button class="tab" role="tab" aria-selected="false" data-tab="dash">分析儀表板</button></div><section id="tab-list"><div class="stats"><button class="stat" aria-pressed="false" data-fs="執行中">執行中 <b>1</b></button><button class="stat" aria-pressed="false" data-fs="行政流程">行政流程 <b>1</b></button><button class="stat" aria-pressed="false" data-fs="洽談中">洽談中 <b>4</b></button><button class="stat" aria-pressed="false" data-fs="取消">取消 <b>3</b></button><button class="stat" aria-pressed="false" data-fo="自來">自來案 <b>9</b></button></div><article class="card" data-members="roy" data-status="執行中" data-source="自來">
   <div class="row1"><span class="status run">執行中</span><span class="src">自來案</span><span class="brand">法絨法式手工甜點（中秋禮盒）</span><span class="mchip">Roy</span></div>
   <div class="meta"><span>來信 2026-07-24</span></div>
   <p class="summary">中秋禮盒公關品；不保證露出與形式，已提供收件資料。</p>
@@ -120,9 +140,30 @@ footer{margin-top:40px;font-size:12.5px;color:var(--muted);border-top:1px solid 
   <div class="meta"><span>來信 2026-07-03</span><span>代理商：只要有人 Humanoid</span></div>
   <p class="summary">社群專案洽詢，主委以 IG Story 為主，已報價 1 Story $50,000(net)。</p>
   <div class="subj">【只要有人｜Dcard 主委吳至晟 】小雞上工 x 八曜和茶_社群專案合作洽詢</div>
-</article>
+</article></section><section id="tab-dash" hidden><div class="tiles">
+<div class="tile"><div class="v">NT$476,500</div><div class="l">2026 年成員收入（O+P）</div></div>
+<div class="tile"><div class="v">8</div><div class="l">已進帳合作筆數</div></div>
+<div class="tile"><div class="v">9</div><div class="l">邀約總數（近 90 天起累計）</div></div>
+<div class="tile"><div class="v">6</div><div class="l">進行中邀約</div></div>
+</div><div class="dnote">其中 6/4 拆分級距（業績 &gt; 80 萬）收入 NT$12,750。</div>
+<div class="dsec">2026 年月別收入</div><div class="barrow"><span class="lbl">1 月</span><div><div class="bfill" style="width:9%"></div></div><span class="val">NT$30,000</span></div><div class="barrow"><span class="lbl">2 月</span><div><div class="bfill" style="width:2%"></div></div><span class="val">NT$6,250</span></div><div class="barrow"><span class="lbl">4 月</span><div><div class="bfill" style="width:23%"></div></div><span class="val">NT$75,000</span></div><div class="barrow"><span class="lbl">5 月</span><div><div class="bfill" style="width:12%"></div></div><span class="val">NT$40,000</span></div><div class="barrow"><span class="lbl">6 月</span><div><div class="bfill" style="width:100%"></div></div><span class="val">NT$325,250</span></div>
+<div class="dsec">收入明細（來源：營收大表）</div><div class="revwrap"><table class="rev">
+<thead><tr><th>走期</th><th>合作名稱</th><th>項目</th><th class="n">收入（5/5）</th><th class="n">收入（6/4）</th><th class="n">小計</th></tr></thead>
+<tbody><tr><td>01-28</td><td class="name">Laka_影片拍攝_Roy</td><td>拍攝活動</td><td class="n">NT$30,000</td><td class="n">—</td><td class="n">NT$30,000</td></tr><tr><td>02-08</td><td class="name">New Balance_新年檔期社群推廣合作_Rio+Roy</td><td>其他</td><td class="n">NT$6,250</td><td class="n">—</td><td class="n">NT$6,250</td></tr><tr><td>04-11</td><td class="name">芬達_實體活動_Roy</td><td>其他</td><td class="n">NT$75,000</td><td class="n">—</td><td class="n">NT$75,000</td></tr><tr><td>05-01</td><td class="name">原萃_社群推廣合作_主委</td><td>其他</td><td class="n">NT$22,500</td><td class="n">—</td><td class="n">NT$22,500</td></tr><tr><td>05-01</td><td class="name">原萃_社群推廣合作_主委</td><td>IG 限動</td><td class="n">NT$17,500</td><td class="n">—</td><td class="n">NT$17,500</td></tr><tr><td>06-01</td><td class="name">葡萄王 PowerBOMB__推廣合作_Roy</td><td>其他</td><td class="n">NT$175,000</td><td class="n">—</td><td class="n">NT$175,000</td></tr><tr><td>06-01</td><td class="name">Disney 玩具總動員5_社群推廣合作_主委</td><td>IG 限動</td><td class="n">NT$22,500</td><td class="n">—</td><td class="n">NT$22,500</td></tr><tr><td>06-01</td><td class="name">台啤18天_社群推廣合作_主委</td><td>其他</td><td class="n">NT$115,000</td><td class="n">NT$12,750</td><td class="n">NT$127,750</td></tr>
+<tr class="total"><td colspan="3">合計</td><td class="n">NT$463,750</td><td class="n">NT$12,750</td><td class="n">NT$476,500</td></tr>
+</tbody></table></div>
+<div class="dsec">邀約品牌分類</div><div class="barrow"><span class="lbl">食品飲品</span><div><div class="bfill" style="width:100%"></div></div><span class="val">4 件</span></div><div class="barrow"><span class="lbl">其他</span><div><div class="bfill" style="width:50%"></div></div><span class="val">2 件</span></div><div class="barrow"><span class="lbl">交通</span><div><div class="bfill" style="width:25%"></div></div><span class="val">1 件</span></div><div class="barrow"><span class="lbl">活動講座</span><div><div class="bfill" style="width:25%"></div></div><span class="val">1 件</span></div><div class="barrow"><span class="lbl">3C家電</span><div><div class="bfill" style="width:25%"></div></div><span class="val">1 件</span></div>
+<div class="dsec">邀約狀態分佈</div><div class="barrow"><span class="lbl">執行中</span><div><div class="bfill" style="width:25%"></div></div><span class="val">1 件</span></div><div class="barrow"><span class="lbl">行政流程</span><div><div class="bfill" style="width:25%"></div></div><span class="val">1 件</span></div><div class="barrow"><span class="lbl">洽談中</span><div><div class="bfill" style="width:100%"></div></div><span class="val">4 件</span></div><div class="barrow"><span class="lbl">取消</span><div><div class="bfill" style="width:75%"></div></div><span class="val">3 件</span></div>
+<div class="dsec">案源</div><div class="barrow"><span class="lbl">自來案</span><div><div class="bfill" style="width:100%"></div></div><span class="val">9 件</span></div></section>
 <footer>只收「成員個人社群合作」邀約（IG 貼文/Story/Reels、Threads、個人 YT、活動出席、社群推廣出演），含品牌直接來信（自來案）與 Dcard 業務轉介（業務提案）；成員出演公司拍攝的影音（Dcard 調查局、中插廣告、節目置入、AD 影音拍攝）不收。本頁由每日排程自動更新；成員名單與狀態修正請編輯 Google Sheet「個人經紀信件網頁後台」。</footer>
 </div>
+<script>
+document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click',function(){
+  document.querySelectorAll('.tab').forEach(function(x){x.setAttribute('aria-selected',String(x===b));});
+  document.getElementById('tab-list').hidden=b.dataset.tab!=='list';
+  document.getElementById('tab-dash').hidden=b.dataset.tab!=='dash';
+});});
+</script>
 <script>
 var fs='',fo='',fm='';
 function apply(){
