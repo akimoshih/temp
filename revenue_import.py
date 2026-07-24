@@ -35,22 +35,31 @@ hdr_p = str(ws.cell(1, 16).value or "")
 if "成員" not in hdr_d or "成員收入" not in hdr_o or "成員收入" not in hdr_p:
     raise SystemExit(f"IMPORT ABORTED: 欄位不符（D={hdr_d!r} O={hdr_o!r} P={hdr_p!r}），表格結構可能變了，請人工確認")
 
-out, skipped = {}, set()
+hdr_j = str(ws.cell(1, 10).value or "")
+if "成交價" not in hdr_j:
+    raise SystemExit(f"IMPORT ABORTED: J 欄位不符（{hdr_j!r}），表格結構可能變了，請人工確認")
+
+def num(v):
+    return float(v) if isinstance(v, (int, float)) else 0
+
+out, skipped, team_rows = {}, set(), []
 for r in ws.iter_rows(min_row=2):
     d = r[3].value
     if d is None:
         continue
-    key = MAP.get(str(d).strip())
-    if not key:
-        skipped.add(str(d).strip())
-        continue
-    o, p = r[14].value or 0, r[15].value or 0
-    out.setdefault(key, []).append({
+    raw = str(d).strip()
+    key = MAP.get(raw)
+    row = {
         "name": r[2].value, "item": r[4].value,
         "start": str(r[17].value)[:10] if r[17].value else None,
-        "o": float(o) if isinstance(o, (int, float)) else 0,
-        "p": float(p) if isinstance(p, (int, float)) else 0,
-    })
+        "o": num(r[14].value), "p": num(r[15].value),
+    }
+    team_rows.append({"member_raw": raw, "member_key": key,
+                      "start": row["start"], "j": num(r[9].value)})
+    if not key:
+        skipped.add(raw)
+        continue
+    out.setdefault(key, []).append(row)
 for v in out.values():
     v.sort(key=lambda x: x["start"] or "9999")
 
@@ -61,9 +70,10 @@ if total_rows < 50:  # 目前 150+ 筆；掉到 50 以下代表來源異常，�
 from datetime import datetime, timedelta, timezone
 today = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d")
 json.dump({"year": 2026, "updated": today,
-           "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁，O/P 欄",
-           "by_member": out},
+           "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用 O/P 欄（成員收入），總覽頁用 J 欄（成交價未稅）",
+           "by_member": out, "team_rows": team_rows},
           open(os.path.join(BASE, "revenue.json"), "w"), ensure_ascii=False, indent=1)
+print(f"團隊 J 欄合計 {int(sum(t['j'] for t in team_rows)):,}（{len(team_rows)} 列）")
 print(f"OK: {total_rows} 筆、{len(out)} 位成員；未列入成員名單而略過：{sorted(skipped) or '無'}")
 for k in sorted(out):
     print(f"  {k}: {len(out[k])} 筆, 合計 {int(sum(x['o']+x['p'] for x in out[k])):,}")

@@ -288,6 +288,43 @@ document.querySelectorAll('.tab').forEach(function(b){b.addEventListener('click'
 {tabjs}
 {script}'''
 
+def render_overview_dashboard():
+    year = REVENUE.get("year", 2026)
+    team = REVENUE.get("team_rows", [])
+    total_j = sum(t["j"] for t in team)
+    tiles = f'''<div class="tiles">
+<div class="tile"><div class="v">{fmt_money(total_j)}</div><div class="l">{year} 年團隊業績（成交價未稅，J 欄）</div></div>
+<div class="tile"><div class="v">{len(team)}</div><div class="l">進帳項目數</div></div>
+<div class="tile"><div class="v">{len(RECORDS)}</div><div class="l">邀約總數</div></div>
+<div class="tile"><div class="v">{sum(1 for r in RECORDS if r["status"] in ("洽談中", "執行中", "行政流程"))}</div><div class="l">進行中邀約</div></div>
+</div>'''
+    # 成員業績（J 欄；未列入成員名單者以原始名稱顯示）
+    by_m = {}
+    for t in team:
+        label = MEMBER_BY_KEY[t["member_key"]]["name"] if t.get("member_key") in MEMBER_BY_KEY else t["member_raw"]
+        by_m[label] = by_m.get(label, 0) + t["j"]
+    member_pairs = sorted(by_m.items(), key=lambda x: -x[1])
+    # 月別業績
+    monthly = {}
+    for t in team:
+        mth = int(t["start"][5:7]) if t.get("start") else 0
+        if mth:
+            monthly[mth] = monthly.get(mth, 0) + t["j"]
+    month_pairs = [(f"{mm} 月", monthly[mm]) for mm in sorted(monthly)]
+    # 邀約分析（全體）
+    from collections import Counter
+    cats = Counter(categorize(r) for r in RECORDS)
+    cat_pairs = sorted(cats.items(), key=lambda x: -x[1])
+    stat_pairs = [(s, n) for s in STATUS_ORDER if (n := sum(1 for r in RECORDS if r["status"] == s))]
+    src_pairs = [(lbl, n) for key, lbl in [("自來", "自來案"), ("業務", "業務提案")]
+                 if (n := sum(1 for r in RECORDS if r.get("source", "自來") == key))]
+    return f'''{tiles}
+<div class="dsec">{year} 年成員業績（J 欄成交價）</div>{bar_rows(member_pairs, money=True)}
+<div class="dsec">{year} 年月別業績</div>{bar_rows(month_pairs, money=True)}
+<div class="dsec">邀約品牌分類（全體）</div>{bar_rows(cat_pairs)}
+<div class="dsec">邀約狀態分佈</div>{bar_rows(stat_pairs)}
+<div class="dsec">案源</div>{bar_rows(src_pairs)}'''
+
 os.makedirs(os.path.join(BASE, "site"), exist_ok=True)
 
 def write(name, content):
@@ -295,7 +332,8 @@ def write(name, content):
         f.write(content)
 
 write("overview.html", render_page(
-    "個人社群合作邀約 – 總覽", "全部成員", RECORDS, with_link=True, filters=True))
+    "個人社群合作邀約 – 總覽", "全部成員", RECORDS, with_link=True, filters=True,
+    dashboard=render_overview_dashboard()))
 
 for m in MEMBERS:
     if not m["enabled"]:
