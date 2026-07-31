@@ -1,0 +1,15 @@
+{
+  "party_b": {
+    "company": "狄卡科技股份有限公司",
+    "address": "【請確認：乙方地址】",
+    "phone": "【請確認：乙方電話】",
+    "tax_id": "【請確認：乙方統一編號】",
+    "contact": "Jasmine Wang"
+  },
+  "remittance": "【請確認：匯款銀行／分行／戶名／帳號】",
+  "project_contact": {
+    "name": "Jasmine Wang",
+    "mobile": "0970-123965",
+    "email": "jasmine.wang@dcard.cc"
+  }
+}
