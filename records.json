@@ -696,15 +696,14 @@
   "thread_id": "19f916d2fd92179e",
   "date": "2026-07-24",
   "members": [
-   "rio",
    "leo"
   ],
   "brand": "臺北市青年局（講座講師）",
   "agency": "typropose",
-  "status": "洽談中",
-  "launch_month": null,
+  "status": "執行中",
+  "launch_month": "2026-10",
   "subject": "【講師邀約】臺北市青年局-講座活動邀請",
-  "summary": "講座講師邀約：Rio 8 月拍攝檔期滿先婉拒（9 月中後較充裕）；Leo 三個提議時段皆可安排。",
+  "summary": "講座講師確認：品牌 7/29 完成內部確認，正式邀請 Leo 擔任講師，保留 10/19（一）10:10–12:00 檔期；後續再確認講座內容與細節。（Rio 因 8 月檔期滿先婉拒）",
   "source": "自來"
  },
  {
@@ -930,6 +929,32 @@
   "launch_month": null,
   "subject": "【PUMA 商業合作邀約】Monday Sleeping Club 聯名系列",
   "summary": "聯名系列合作議價中；提議 Andrew 圖文＋Rio 出演轉發限動 $65,000(net)，待品牌確認。",
+  "source": "自來"
+ },
+ {
+  "thread_id": "19fa32404b4a88c6",
+  "date": "2026-07-27",
+  "members": [
+   "rio"
+  ],
+  "brand": "和泰汽車（HINO 潮大車短影音競賽）",
+  "agency": null,
+  "status": "行政流程",
+  "launch_month": "2026-08",
+  "subject": "【成員 IG 限動動態 + 線上評審 合作 - Rio】和泰汽車_HINO 潮大車短影音競賽",
+  "summary": "確認合作：Rio 擔任 HINO 短影音競賽線上評審＋個人社群限動（動態）一則宣傳活動與公告擔任評審。委刊單雙方已用印（7/28），客戶 7/30 提供規格表與活動簡介（限動不需出外景拍車款）。時程：8/2 腳本、8/14 限動 AC、8/19 IG 限動上線；Rio 8/3–8/12 國外出差故時程較緊。（經 mark 轉彼得對接）",
+  "source": "業務"
+ },
+ {
+  "thread_id": "19fb26fdd8864f92",
+  "date": "2026-07-30",
+  "members": [],
+  "brand": "新光三越（日本展 KOL 探店）",
+  "agency": "accucrazy",
+  "status": "洽談中",
+  "launch_month": null,
+  "subject": "Jasmine 說 KOL 需求跟你聯絡～～（新光三越 日本展）",
+  "summary": "代理商 accucrazy（Faith）來信詢問：新光三越日本展美食旅遊文化體驗，採探店分享形式、內容不需太業配感、無投廣需求，希望貼近觀眾原本喜歡的內容。客戶提案較趕，希望 7/31 中午前提供報價。彼得對接中，成員待定。",
   "source": "自來"
  }
 ]
