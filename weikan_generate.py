@@ -14,6 +14,10 @@ spec 範例（缺欄位就留白，客戶簽回時手填）：
               "phone": "", "email": "...", "tax_id": "", "representative": ""},
   "period": "2026/08/01 - 2026/08/31",  # 專案期間
   "member": "Rio（壹比零）",             # 合作成員（顯示在合作對象）
+  "member_key": "rio",                  # 選填；用來自動判斷負責經紀人
+  "handler": "oliver",                  # 選填 jasmine/oliver；省略時依 member_key
+                                        # 查 weikan_config.json contacts[].members，
+                                        # 再不然用 default_contact
   "items": [{"desc": "IG 限時動態 ×1", "price": 60000}],
   "publish_date": "2026/08/19",
   "platform": "Instagram",
@@ -70,14 +74,40 @@ def build_b11(spec):
     return "\n".join(lines) + "\n" + B11_TAIL
 
 
+def pick_contact(cfg, spec):
+    """依 spec.handler 或 member_key 的經紀人分工挑專案連絡人。"""
+    contacts = cfg.get("contacts", {})
+    key = spec.get("handler")
+    if not key and spec.get("member_key"):
+        for k, c in contacts.items():
+            if spec["member_key"] in c.get("members", []):
+                key = k
+                break
+    if not key:
+        key = cfg.get("default_contact")
+    return contacts.get(key) or cfg.get("project_contact", {})
+
+
 def fill(spec, out_dir):
     cfg = json.loads(CONFIG.read_text(encoding="utf-8"))
     wb = load_workbook(TEMPLATE)
     ws = wb.active
 
+    # 範本修正（冪等，讓未修過的原始範本也能直接用）：
+    # 乙方簽章欄合併格太窄會截字 → 擴成 M30:Q30；頁尾有頁碼 → 清掉
+    if "O30:Q30" in {str(r) for r in ws.merged_cells.ranges}:
+        v, st = ws["O30"].value, ws["O30"]._style
+        ws.unmerge_cells("O30:Q30")
+        ws.merge_cells("M30:Q30")
+        ws["M30"] = v
+        ws["M30"]._style = st
+    for h in (ws.oddHeader, ws.oddFooter, ws.evenHeader,
+              ws.evenFooter, ws.firstHeader, ws.firstFooter):
+        h.left.text = h.center.text = h.right.text = None
+
     today = spec.get("date") or date.today().isoformat()
     client = spec.get("client", {})
-    contact = cfg.get("project_contact", {})
+    contact = pick_contact(cfg, spec)
     party_b = cfg.get("party_b", {})
 
     def put(coord, value, fmt=None):
@@ -95,11 +125,12 @@ def fill(spec, out_dir):
     put("B4", client.get("address"))
     put("M4", spec.get("version", "V1"))
     put("B5", client.get("contact"))
-    put("M5", contact.get("name"))
     put("B6", client.get("phone"))
-    put("M6", contact.get("mobile"))
     put("B7", client.get("email"))
-    put("M7", contact.get("email"))
+    # 專案連絡人三格永遠覆寫（範本內建 Jasmine 的預設值，負責人不同時要清掉）
+    ws["M5"] = contact.get("name") or None
+    ws["M6"] = contact.get("mobile") or None
+    ws["M7"] = contact.get("email") or None
     put("B8", spec.get("period"))
 
     # B2-B8 右側被隱藏合併格(E2:K8)擋住無法溢出，值太長時縮字避免截斷
@@ -155,6 +186,9 @@ def fill(spec, out_dir):
     put("L35", party_b.get("tax_id"))
     put("L36", party_b.get("contact") or contact.get("name"))
     put("M39", cfg.get("remittance"))
+    if ws["M39"].value and "\n" in str(ws["M39"].value):
+        from openpyxl.styles import Alignment
+        ws["M39"].alignment = Alignment(vertical="center", wrap_text=True)
     put("B42", spec.get("invoice_month"))
 
     # 版面：單頁寬、直式 A4

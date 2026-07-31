@@ -59,9 +59,11 @@
 
 - `weikan_template.xlsx`：委刊單範本（來源：「Dcard Video委刊單」，已修正簽章欄合併格與頁尾頁碼）
 - `weikan_generate.py`：填範本＋轉 PDF（LibreOffice；容器缺 libreoffice-calc 時會自動補裝）
-- `weikan_config.json`：乙方（狄卡）固定資料、匯款資訊、專案連絡人——**內含【請確認】佔位的欄位需人工補一次**，之後所有委刊單自動帶入
+- `weikan_config.json`：乙方（狄卡）固定資料、匯款資訊、經紀人聯絡資料（contacts：jasmine／oliver 各自的名片欄位＋負責成員清單；spec 給 member_key 會自動挑對負責人）
 
 由對方開立委刊單的案子（如和泰 HINO）跳過此流程。
+
+Jasmine／Oliver 各自信箱的委刊單草稿：同一套檔案已上傳 Google Drive 資料夾「委刊單自動化」（folder id `1ZD0zGP6MIVv1vEq9qxaY_ufJUP4Y_mKV`，需分享給兩位），他們的個人排程從 Drive 下載執行，升級指令見 `經紀人自動報價設定包.md`。**repo 內檔案更新後要記得同步重傳 Drive 版本**（fileId 會變，設定包內的 id 也要跟著改）。
 
 ## 分析儀表板與業績資料
 

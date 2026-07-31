@@ -1,15 +1,24 @@
 {
   "party_b": {
     "company": "狄卡科技股份有限公司",
-    "address": "【請確認：乙方地址】",
-    "phone": "【請確認：乙方電話】",
-    "tax_id": "【請確認：乙方統一編號】",
-    "contact": "Jasmine Wang"
+    "address": "臺北市大安區光復南路102號14樓",
+    "phone": "02-27113223",
+    "tax_id": "42656367"
   },
-  "remittance": "【請確認：匯款銀行／分行／戶名／帳號】",
-  "project_contact": {
-    "name": "Jasmine Wang",
-    "mobile": "0970-123965",
-    "email": "jasmine.wang@dcard.cc"
-  }
+  "remittance": "戶名：狄卡科技股份有限公司\n銀行：玉山銀行(808) 大安分行\n帳號：0967-940-008296",
+  "contacts": {
+    "jasmine": {
+      "name": "Jasmine Wang",
+      "mobile": "0970-123965",
+      "email": "jasmine.wang@dcard.cc",
+      "members": ["roy", "leo", "nakaw", "ellie", "royce", "agen"]
+    },
+    "oliver": {
+      "name": "Oliver Zeng",
+      "mobile": "",
+      "email": "oliver.zeng@dcard.cc",
+      "members": ["rio", "meber", "yy", "andrew", "lauren"]
+    }
+  },
+  "default_contact": "jasmine"
 }
