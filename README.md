@@ -63,7 +63,7 @@
 
 由對方開立委刊單的案子（如和泰 HINO）跳過此流程。
 
-Jasmine／Oliver 各自信箱的委刊單草稿：同一套檔案已上傳 Google Drive 資料夾「委刊單自動化」（folder id `1ZD0zGP6MIVv1vEq9qxaY_ufJUP4Y_mKV`，需分享給兩位），他們的個人排程從 Drive 下載執行，升級指令見 `經紀人自動報價設定包.md`。**repo 內檔案更新後要記得同步重傳 Drive 版本**（fileId 會變，設定包內的 id 也要跟著改）。
+Jasmine／Oliver 各自信箱的委刊單草稿：同一套檔案已上傳 Google Drive 資料夾「委刊單自動化」（folder id `1ZD0zGP6MIVv1vEq9qxaY_ufJUP4Y_mKV`，需分享給兩位），他們的個人排程從 Drive 下載執行（依檔名在資料夾內取最新一份），升級指令見 `經紀人自動報價設定包.md`。**repo 內檔案更新後要同步上傳一份新檔到該 Drive 資料夾**（Drive 工具無法覆寫舊檔，直接同名新增即可，排程會抓最新；舊檔可手動清掉）。
 
 ## 分析儀表板與業績資料
 
