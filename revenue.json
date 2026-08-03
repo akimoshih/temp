@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "updated": "2026-08-02",
+ "updated": "2026-08-03",
  "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用 O/P 欄（成員收入），總覽頁用 J 欄（成交價未稅）",
  "by_member": {
   "rio": [
@@ -746,6 +746,20 @@
     "name": "雪碧 _社群推廣合作_Leo",
     "item": "IG 限動",
     "start": "2026-07-10",
+    "o": 15000.0,
+    "p": 3000.0
+   },
+   {
+    "name": "台電「瓩設計獎」設計競賽_社群推廣合作_Leo",
+    "item": "Reels",
+    "start": null,
+    "o": 40000.0,
+    "p": 8000.0
+   },
+   {
+    "name": "台電「瓩設計獎」設計競賽_社群推廣合作_Leo",
+    "item": "其他",
+    "start": null,
     "o": 15000.0,
     "p": 3000.0
    }
@@ -1814,6 +1828,18 @@
    "member_key": "yy",
    "start": null,
    "j": 15000.0
+  },
+  {
+   "member_raw": "Leo",
+   "member_key": "leo",
+   "start": null,
+   "j": 80000.0
+  },
+  {
+   "member_raw": "Leo",
+   "member_key": "leo",
+   "start": null,
+   "j": 30000.0
   }
  ]
 }
