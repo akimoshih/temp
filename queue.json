@@ -105,9 +105,9 @@
   "thread_id": "19fb26fdd8864f92",
   "case": "新光三越 日本展 KOL 探店 × Rio/Andrew/YY",
   "assignee": "oliver.zeng@dcard.cc",
-  "status": "草稿已建立",
+  "status": "已由彼得自行回覆",
   "created": "2026-08-01",
-  "note": "客戶問 Reels 可否 FB/Threads 同步發佈；依價目表「上架至非約定平台」報授權費（Rio $25,000、Andrew/YY $5,000／平台），自然同步情境以【請確認】標示。",
+  "note": "客戶問 Reels 可否 FB/Threads 同步發佈；依價目表「上架至非約定平台」報授權費（Rio $25,000、Andrew/YY $5,000／平台），自然同步情境以【請確認】標示。（8/3 彼得已自行回信報 YY 同步發布 FB $18,000／Threads $35,000，本草稿未使用）",
   "draft": {
    "to": [
     "faith@accucrazy.com"
@@ -118,6 +118,51 @@
    ],
    "subject": "Re: Jasmine 說KOL 需求跟你聯絡～～",
    "draft_id": "r3032522417698176712"
+  }
+ },
+ {
+  "task_id": "T2026-0004",
+  "type": "報價回信",
+  "thread_id": "19f916d2e6341c60",
+  "case": "西堤牛排 玩總第二波 × Rio",
+  "assignee": "jasmine.wang@dcard.cc",
+  "status": "草稿已建立",
+  "created": "2026-08-04",
+  "note": "代理商回覆品牌預算上限 $150,000(net) 含 Reels＋不過稿限動；草稿備兩版（接受預算／維持原報價改單項），需人為決定後刪除未採用版本。",
+  "draft": {
+   "to": [
+    "felix20030326@gmail.com"
+   ],
+   "cc": [
+    "agila@o-deo.com",
+    "akimo@dcard.cc"
+   ],
+   "subject": "Re: 【合作邀約】西堤牛排玩總第二波合作",
+   "draft_id": "r5627828698469296395"
+  }
+ },
+ {
+  "task_id": "T2026-0005",
+  "type": "委刊單",
+  "thread_id": "19fc720deb272941",
+  "case": "Lenor 衣物芳香豆精油系列 × Rio",
+  "assignee": "oliver.zeng@dcard.cc",
+  "status": "草稿已建立",
+  "created": "2026-08-04",
+  "note": "品牌確認合作（Reels $150,000＋雙平台廣告主一週 $25,000，上線 10/20）；已產委刊單 V20260804-01，甲方廠商資料待對方提供。PDF 未上傳 Drive（base64 內嵌會超出 context），改以 SendUserFile 交付 Akimo。",
+  "drive_url": null,
+  "draft": {
+   "to": [
+    "IHuang@devriesglobal.com"
+   ],
+   "cc": [
+    "MLiao@devriesglobal.com",
+    "jasmine.wang@dcard.cc",
+    "oliver.zeng@dcard.cc",
+    "akimo@dcard.cc"
+   ],
+   "subject": "【委刊單】Lenor 衣物芳香豆精油系列_社群推廣合作_Rio",
+   "draft_id": "r-4079398558239284355"
   }
  }
 ]
