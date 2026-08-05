@@ -126,9 +126,9 @@
   "thread_id": "19f916d2e6341c60",
   "case": "西堤牛排 玩總第二波 × Rio",
   "assignee": "jasmine.wang@dcard.cc",
-  "status": "草稿已建立",
+  "status": "已由彼得自行回覆",
   "created": "2026-08-04",
-  "note": "代理商回覆品牌預算上限 $150,000(net) 含 Reels＋不過稿限動；草稿備兩版（接受預算／維持原報價改單項），需人為決定後刪除未採用版本。",
+  "note": "代理商回覆品牌預算上限 $150,000(net) 含 Reels＋不過稿限動；草稿備兩版（接受預算／維持原報價改單項），需人為決定後刪除未採用版本。（8/4 彼得已自行回信，改提議以 IG Story 形式合作，本草稿未使用）",
   "draft": {
    "to": [
     "felix20030326@gmail.com"
@@ -163,6 +163,26 @@
    ],
    "subject": "【委刊單】Lenor 衣物芳香豆精油系列_社群推廣合作_Rio",
    "draft_id": "r-4079398558239284355"
+  }
+ },
+ {
+  "task_id": "T2026-0006",
+  "type": "報價回信",
+  "thread_id": "19fc70ed96cf930f",
+  "case": "督洋 tokuyo 眼部氣壓按摩器 × Leo",
+  "assignee": "jasmine.wang@dcard.cc",
+  "status": "草稿已建立",
+  "created": "2026-08-05",
+  "note": "原婉拒團購後對方改問影音／圖文報價；依價目表 Leo 級距（12–15 萬粉）報 Reels／貼文／限動與授權費。",
+  "draft": {
+   "to": [
+    "Lillian.Meng@tokuyo.com.tw"
+   ],
+   "cc": [
+    "akimo@dcard.cc"
+   ],
+   "subject": "Re: 【合作邀約】督洋《tokuyo》品牌_合作商品_Fun 睛鬆 Quiet 眼部氣壓按摩器 TS-190",
+   "draft_id": "r-3442228834324279999"
   }
  }
 ]
