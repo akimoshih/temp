@@ -184,5 +184,27 @@
    "subject": "Re: 【合作邀約】督洋《tokuyo》品牌_合作商品_Fun 睛鬆 Quiet 眼部氣壓按摩器 TS-190",
    "draft_id": "r-3442228834324279999"
   }
+ },
+ {
+  "task_id": "T2026-0007",
+  "type": "委刊單",
+  "thread_id": "19fcfeac51c791fa",
+  "case": "鶴茶樓 × 褲褲兔 × YY",
+  "assignee": "oliver.zeng@dcard.cc",
+  "status": "草稿已建立",
+  "created": "2026-08-06",
+  "note": "品牌 8/5 確認合作 IG Reels $50,000 自行拍攝並詢問報價單由誰出；已產委刊單 V20260806-01，甲方廠商資料待對方提供。PDF 未上傳 Drive（base64 內嵌會超出 context），改以 SendUserFile 交付 Akimo。",
+  "drive_url": null,
+  "draft": {
+   "to": [
+    "marketing.hechaloutea@gmail.com"
+   ],
+   "cc": [
+    "akimo@dcard.cc",
+    "jasmine.wang@dcard.cc"
+   ],
+   "subject": "Re: 合作邀稿｜鶴茶樓X褲褲兔｜YY",
+   "draft_id": "r6312654696999311956"
+  }
  }
 ]
