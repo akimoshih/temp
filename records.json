@@ -1028,7 +1028,7 @@
   "status": "行政流程",
   "launch_month": "2026-10",
   "subject": "【合作確認】Lenor衣物芳香豆精油系列_Rio",
-  "summary": "品牌確認合作：IG Reels 1 則 $150,000＋雙平台廣告主一週 $25,000（未稅，合計 $175,000）。上線日 10/20；影片切角美食 or 爸爸衣櫃，待品牌 8 月中確認。待向代理商索取廠商資料以開立委刊單。",
+  "summary": "品牌確認合作：IG Reels 1 則 $150,000＋雙平台廣告主一週 $25,000（未稅，合計 $175,000）。上線日 10/20；影片切角美食 or 爸爸衣櫃，待品牌 8 月中確認。彼得 8/6 已寄出委刊單給代理商窗口，待對方確認回簽。",
   "source": "自來"
  },
  {
@@ -1124,10 +1124,10 @@
   ],
   "brand": "臺北市青年局（聯合社團展演評審）",
   "agency": "typropose",
-  "status": "洽談中",
-  "launch_month": null,
+  "status": "行政流程",
+  "launch_month": "2026-08",
   "subject": "評審邀約｜臺北市青年局－聯合社團展演",
-  "summary": "邀請 YY 擔任聯合社團展演評審；彼得已報初賽＋決賽評審 $65,000(net)（線上評選需預留至少 2 個工作天、線下決賽出席以 4 小時計，評審公告或宣傳需求須於合作確認前提出），待回覆。",
+  "summary": "確認合作：YY 擔任初賽＋決賽評審 $65,000(net)。時程：8/10–8/12 線上評選初審、8/14 入選共識會議（20–30 分鐘，暫定）、8/29（六）實體評選於華山劇場（活動 11:00–18:00，評審實際評分約 4 小時＋1 小時頒獎）。待索取廠商資料以開立委刊單。",
   "source": "自來"
  },
  {
@@ -1218,10 +1218,67 @@
   "members": [],
   "brand": "Uber Eats（Campaign）",
   "agency": "Creatip（日本）",
-  "status": "洽談中",
+  "status": "取消",
   "launch_month": null,
   "subject": "【Uber Eats Campaign 合作邀請】",
-  "summary": "短影音 Campaign 合作邀約；彼得詢問交付時間與 B-roll 定義，對方回覆 B-roll 指直式短影片成品的無字幕版本、交付時間 8/14 後可能小幅延後但預計不延至 9 月，將再同步最新時程。",
+  "summary": "短影音 Campaign 合作邀約；釐清 B-roll 定義與交付時間後，因 8 月檔期已滿、趕不及在交付期限內完成拍攝，彼得 8/6 婉拒，對方表示可惜並將於未來有適合機會再聯繫。",
+  "source": "自來"
+ },
+ {
+  "thread_id": "19fd63b8bbf2eed4",
+  "date": "2026-08-06",
+  "members": [
+   "meber"
+  ],
+  "brand": "Hank & Maxwell（MagGO 0.6 快開小長夾）",
+  "agency": null,
+  "status": "洽談中",
+  "launch_month": null,
+  "subject": "【 合作邀約詢價 】MagGO 0.6｜快開小長夾｜Hank Max",
+  "summary": "皮件新品社群合作詢價；彼得已報梅伯：IG Reels $50,000、IG 貼文 $45,000、Reels or 貼文同步發布 FB +$10,000、Meta 投廣一個月 $15,000、銷售頁面上架授權 $15,000、素材再製另計，待回覆。",
+  "source": "自來"
+ },
+ {
+  "thread_id": "19f60076f62f5279",
+  "date": "2026-07-14",
+  "members": [
+   "leo",
+   "rio"
+  ],
+  "brand": "英業達集團（企業內訓課程）",
+  "agency": null,
+  "status": "取消",
+  "launch_month": null,
+  "subject": "英業達集團｜企業內訓課程報價洽詢",
+  "summary": "企業內訓授課邀約，已報 Leo $50,000(net)／1.5 小時、Rio $60,000(net)／1.5 小時；8/6 對方回覆課程目標調整，本次改以內部人員授課為主，未合作。",
+  "source": "自來"
+ },
+ {
+  "thread_id": "19fd65c2782e81d2",
+  "date": "2026-08-06",
+  "members": [
+   "rio"
+  ],
+  "brand": "重慶臻旅旅行社（置換合作）",
+  "agency": null,
+  "status": "取消",
+  "launch_month": null,
+  "subject": "诚邀合作",
+  "summary": "旅遊置換型態合作邀約；因近期工作安排較滿、暫無此類置換合作規劃，彼得已婉拒。",
+  "source": "自來"
+ },
+ {
+  "thread_id": "19fd4f7de10ca591",
+  "date": "2026-08-06",
+  "members": [
+   "andrew"
+  ],
+  "brand": "未明（安主錄影邀約）",
+  "agency": null,
+  "status": "洽談中",
+  "launch_month": null,
+  "subject": "您好 安主錄影邀約",
+  "summary": "節目錄影出演邀約；彼得已加 LINE 與對方窗口聯繫，後續細節改於 LINE 討論。",
   "source": "自來"
  }
 ]

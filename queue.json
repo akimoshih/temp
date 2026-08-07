@@ -147,9 +147,9 @@
   "thread_id": "19fc720deb272941",
   "case": "Lenor 衣物芳香豆精油系列 × Rio",
   "assignee": "oliver.zeng@dcard.cc",
-  "status": "草稿已建立",
+  "status": "已由彼得自行寄出",
   "created": "2026-08-04",
-  "note": "品牌確認合作（Reels $150,000＋雙平台廣告主一週 $25,000，上線 10/20）；已產委刊單 V20260804-01，甲方廠商資料待對方提供。PDF 未上傳 Drive（base64 內嵌會超出 context），改以 SendUserFile 交付 Akimo。",
+  "note": "品牌確認合作（Reels $150,000＋雙平台廣告主一週 $25,000，上線 10/20）；已產委刊單 V20260804-01，甲方廠商資料待對方提供。PDF 未上傳 Drive（base64 內嵌會超出 context），改以 SendUserFile 交付 Akimo。（8/6 彼得已自行寄出委刊單給 Irene，本草稿未使用）",
   "drive_url": null,
   "draft": {
    "to": [
@@ -205,6 +205,28 @@
    ],
    "subject": "Re: 合作邀稿｜鶴茶樓X褲褲兔｜YY",
    "draft_id": "r6312654696999311956"
+  }
+ },
+ {
+  "task_id": "T2026-0008",
+  "type": "委刊單",
+  "thread_id": "19fcbb1027ce0cf5",
+  "case": "臺北市青年局 聯合社團展演評審 × YY",
+  "assignee": "oliver.zeng@dcard.cc",
+  "status": "草稿已建立",
+  "created": "2026-08-07",
+  "note": "對方 8/6 確認合作並提供評審時程（8/10–8/12 線上初審、8/14 共識會議、8/29 華山劇場實體評選）；已產委刊單 V20260807-01 $65,000，甲方廠商資料待對方提供。PDF 未上傳 Drive（base64 內嵌會超出 context），改以 SendUserFile 交付 Akimo。",
+  "drive_url": null,
+  "draft": {
+   "to": [
+    "yelena.jiang@typropose.com"
+   ],
+   "cc": [
+    "akimo@dcard.cc",
+    "jasmine.wang@dcard.cc"
+   ],
+   "subject": "Re: 評審邀約｜臺北市青年局－聯合社團展演",
+   "draft_id": "r-8685603568066440068"
   }
  }
 ]
