@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "updated": "2026-08-07",
+ "updated": "2026-08-08",
  "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用 O/P 欄（成員收入），總覽頁用 J 欄（成交價未稅）",
  "by_member": {
   "rio": [
@@ -99,8 +99,15 @@
     "name": "Puma XMonday Sleeping Club 聯名_社群推廣合作_Rio",
     "item": "IG 貼文",
     "start": "2026-06-23",
-    "o": 42500.0,
-    "p": 8500.0
+    "o": 40000.0,
+    "p": 8000.0
+   },
+   {
+    "name": "全明星運動會",
+    "item": "其他",
+    "start": "2026-08-01",
+    "o": 10000.0,
+    "p": 0.0
    },
    {
     "name": "蘭諾_社群推廣合作_Rio",
@@ -144,13 +151,6 @@
     "item": "投廣",
     "start": "2026-01-21",
     "o": 7500.0,
-    "p": 0.0
-   },
-   {
-    "name": "insta__社群推廣合作_Andrew",
-    "item": "其他",
-    "start": "2026-01-28",
-    "o": 0.0,
     "p": 0.0
    },
    {
@@ -200,6 +200,13 @@
     "item": "IG 貼文",
     "start": "2026-07-14",
     "o": 22500.0,
+    "p": 0.0
+   },
+   {
+    "name": "全明星運動會",
+    "item": "其他",
+    "start": "2026-08-01",
+    "o": 10000.0,
     "p": 0.0
    }
   ],
@@ -286,6 +293,13 @@
     "item": "IG 限動",
     "start": "2026-06-18",
     "o": 7500.0,
+    "p": 0.0
+   },
+   {
+    "name": "plain-me 攜手 SONY _社群推廣合作_Ellie",
+    "item": "IG 貼文",
+    "start": null,
+    "o": 25000.0,
     "p": 0.0
    }
   ],
@@ -480,25 +494,25 @@
     "p": 1500.0
    },
    {
-    "name": "Emma 床墊_年度社群推廣合作_YY",
-    "item": "其他",
-    "start": "2026-09-01",
-    "o": 25000.0,
-    "p": 0.0
-   },
-   {
     "name": "媚比琳_社群推廣合作_YY",
     "item": "投廣",
-    "start": null,
+    "start": "2026-07-24",
     "o": 7500.0,
     "p": 1500.0
    },
    {
     "name": "鶴茶樓_社群推廣合作_YY",
     "item": "Reels",
-    "start": null,
+    "start": "2026-08-05",
     "o": 25000.0,
     "p": 5000.0
+   },
+   {
+    "name": "Emma 床墊_年度社群推廣合作_YY",
+    "item": "其他",
+    "start": "2026-09-01",
+    "o": 25000.0,
+    "p": 0.0
    }
   ],
   "meber": [
@@ -645,8 +659,22 @@
    {
     "name": "英雄聯盟_社群推廣合作_梅伯",
     "item": "其他",
-    "start": null,
+    "start": "2026-07-14",
     "o": 15000.0,
+    "p": 0.0
+   },
+   {
+    "name": "英雄聯盟_社群推廣合作_梅伯",
+    "item": "投廣",
+    "start": "2026-07-14",
+    "o": 6000.0,
+    "p": 0.0
+   },
+   {
+    "name": "全明星運動會",
+    "item": "其他",
+    "start": "2026-08-01",
+    "o": 10000.0,
     "p": 0.0
    }
   ],
@@ -783,6 +811,13 @@
     "start": "2026-08-01",
     "o": 15000.0,
     "p": 3000.0
+   },
+   {
+    "name": "全明星運動會",
+    "item": "其他",
+    "start": "2026-08-01",
+    "o": 10000.0,
+    "p": 0.0
    }
   ],
   "nakaw": [
@@ -848,6 +883,13 @@
     "start": "2026-06-26",
     "o": 10000.0,
     "p": 0.0
+   },
+   {
+    "name": "      DJI_社群推廣合作_Nakaw",
+    "item": "Reels",
+    "start": "2026-08-05",
+    "o": 24222.0,
+    "p": 0.0
    }
   ],
   "roy": [
@@ -906,6 +948,13 @@
     "start": "2026-06-01",
     "o": 115000.0,
     "p": 12750.0
+   },
+   {
+    "name": "全明星運動會",
+    "item": "其他",
+    "start": "2026-08-01",
+    "o": 10000.0,
+    "p": 0.0
    }
   ],
   "royce": [
@@ -1065,12 +1114,6 @@
    "j": 55000.0
   },
   {
-   "member_raw": "Andrew",
-   "member_key": "andrew",
-   "start": "2026-01-28",
-   "j": 0.0
-  },
-  {
    "member_raw": "Rio",
    "member_key": "rio",
    "start": "2026-01-28",
@@ -1164,24 +1207,6 @@
    "member_raw": "Zona",
    "member_key": null,
    "start": "2026-04-01",
-   "j": 0.0
-  },
-  {
-   "member_raw": "Zona",
-   "member_key": null,
-   "start": "2026-01-29",
-   "j": 0.0
-  },
-  {
-   "member_raw": "Zona",
-   "member_key": null,
-   "start": "2026-01-29",
-   "j": 0.0
-  },
-  {
-   "member_raw": "Zona",
-   "member_key": null,
-   "start": "2026-01-29",
    "j": 0.0
   },
   {
@@ -1823,8 +1848,14 @@
   {
    "member_raw": "梅伯",
    "member_key": "meber",
-   "start": null,
+   "start": "2026-07-14",
    "j": 30000.0
+  },
+  {
+   "member_raw": "梅伯",
+   "member_key": "meber",
+   "start": "2026-07-14",
+   "j": 12000.0
   },
   {
    "member_raw": "梅伯",
@@ -1847,7 +1878,7 @@
   {
    "member_raw": "YY",
    "member_key": "yy",
-   "start": null,
+   "start": "2026-07-24",
    "j": 15000.0
   },
   {
@@ -1877,8 +1908,50 @@
   {
    "member_raw": "YY",
    "member_key": "yy",
-   "start": null,
+   "start": "2026-08-05",
    "j": 50000.0
+  },
+  {
+   "member_raw": "Nakaw",
+   "member_key": "nakaw",
+   "start": "2026-08-05",
+   "j": 48444.0
+  },
+  {
+   "member_raw": "Rio",
+   "member_key": "rio",
+   "start": "2026-08-01",
+   "j": 20000.0
+  },
+  {
+   "member_raw": "Leo",
+   "member_key": "leo",
+   "start": "2026-08-01",
+   "j": 20000.0
+  },
+  {
+   "member_raw": "Roy",
+   "member_key": "roy",
+   "start": "2026-08-01",
+   "j": 20000.0
+  },
+  {
+   "member_raw": "Andrew",
+   "member_key": "andrew",
+   "start": "2026-08-01",
+   "j": 20000.0
+  },
+  {
+   "member_raw": "梅伯",
+   "member_key": "meber",
+   "start": "2026-08-01",
+   "j": 20000.0
+  },
+  {
+   "member_raw": "Ellie",
+   "member_key": "ellie",
+   "start": null,
+   "j": 55000.0
   }
  ]
 }
