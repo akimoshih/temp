@@ -22,15 +22,31 @@ PAGES = {
     "collab-leo": "member-leo.html",
 }
 
-# 先讓 CLI 刷新 token（失敗就中止，避免拿過期 token 部署到一半才炸）
+# 認證：優先用 PAT（VIBEHOST_TOKEN 環境變數，或 ~/.config/vibehost/pat）。
+# PAT 不會過期，也不需要 CLI 登入；沒有 PAT 時才回頭用 CLI 的裝置登入 token。
 import subprocess
-whoami = subprocess.run(["vibehost", "whoami"], capture_output=True, text=True,
-                        env={**os.environ, "PATH": os.environ["PATH"] + ":" + os.path.expanduser("~/.local/bin")})
-if whoami.returncode != 0:
-    raise SystemExit(f"DEPLOY ABORTED: vibehost 登入失效，請重新 vibehost login（{whoami.stderr.strip()[:200]}）")
 
-cfg = json.load(open(os.path.expanduser("~/.config/vibehost/config.json")))
-TOKEN, WS, WS_SLUG = cfg["token"], cfg["currentWorkspaceId"], cfg["currentWorkspace"]
+PAT_FILE = os.path.expanduser("~/.config/vibehost/pat")
+TOKEN = os.environ.get("VIBEHOST_TOKEN", "").strip()
+if not TOKEN and os.path.exists(PAT_FILE):
+    TOKEN = open(PAT_FILE).read().strip()
+
+cfg_path = os.path.expanduser("~/.config/vibehost/config.json")
+cfg = json.load(open(cfg_path)) if os.path.exists(cfg_path) else {}
+
+if not TOKEN:
+    # 沒有 PAT：先讓 CLI 刷新 token（失敗就中止，避免拿過期 token 部署到一半才炸）
+    whoami = subprocess.run(["vibehost", "whoami"], capture_output=True, text=True,
+                            env={**os.environ, "PATH": os.environ["PATH"] + ":" + os.path.expanduser("~/.local/bin")})
+    if whoami.returncode != 0:
+        raise SystemExit(f"DEPLOY ABORTED: 無 VIBEHOST_TOKEN 且 vibehost 登入失效，請設定 PAT 或重新 vibehost login（{whoami.stderr.strip()[:200]}）")
+    cfg = json.load(open(cfg_path))
+    TOKEN = cfg["token"]
+
+WS = os.environ.get("VIBEHOST_WORKSPACE_ID") or cfg.get("currentWorkspaceId")
+WS_SLUG = os.environ.get("VIBEHOST_WORKSPACE") or cfg.get("currentWorkspace")
+if not WS or not WS_SLUG:
+    raise SystemExit("DEPLOY ABORTED: 找不到 workspace（設定 VIBEHOST_WORKSPACE_ID / VIBEHOST_WORKSPACE，或保留 ~/.config/vibehost/config.json）")
 
 import ssl, urllib.error
 proxy = os.environ.get("HTTPS_PROXY")

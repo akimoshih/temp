@@ -36,7 +36,15 @@
 
 成員頁不含 Gmail 連結；總覽頁的品牌名可點回 Gmail 原信。
 
-部署方式：`python3 vibehost_deploy.py`（讀 `~/.config/vibehost/config.json` 的登入 token，經由 REST API 上傳；CLI 的串流上傳與這個環境的 proxy 不相容，故不用 `vibehost deploy`）。新成員第一次部署會自動建 app 並授權其 email。
+部署方式：`python3 vibehost_deploy.py`（經由 REST API 上傳；CLI 的串流上傳與這個環境的 proxy 不相容，故不用 `vibehost deploy`）。新成員第一次部署會自動建 app 並授權其 email。
+
+認證優先序（`vibehost_deploy.py` 開頭）：
+
+1. `VIBEHOST_TOKEN` 環境變數（PAT，`vh_pat_*`，不會過期）— **建議設在 CCR 環境變數，容器重建才不會遺失**
+2. `~/.config/vibehost/pat` 檔案（同樣放 PAT；容器重建會消失）
+3. 都沒有時才回頭用 CLI 裝置登入 token（`vibehost login`，約三天過期，排程撞到就會中斷部署）
+
+workspace 預設讀 `~/.config/vibehost/config.json`；該檔不存在時用 `VIBEHOST_WORKSPACE_ID` / `VIBEHOST_WORKSPACE` 環境變數（目前值：`r1igkcoyt2yx0kjt7y91zv21` / `dcard`）。**PAT 本身不進 git。**
 
 ## Google Sheet 後台
 
