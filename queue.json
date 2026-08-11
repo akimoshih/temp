@@ -228,5 +228,25 @@
    "subject": "Re: 評審邀約｜臺北市青年局－聯合社團展演",
    "draft_id": "r-8685603568066440068"
   }
+ },
+ {
+  "task_id": "T2026-0009",
+  "type": "報價回信",
+  "thread_id": "19fee1ff1a739bd9",
+  "case": "羅技活動出席合作 × Leo／Nakaw／YY",
+  "assignee": "jasmine.wang@dcard.cc",
+  "status": "草稿已建立",
+  "created": "2026-08-11",
+  "note": "Ellie 檔期滿婉拒後推薦三位，對方要三人報價；IG 貼文與限動依價目表級距報出，活動出席價與授權兩個月價目表查無、整包優惠須人為決定，皆以【請確認】標示。",
+  "draft": {
+   "to": [
+    "deepblueyin@wenlobong.net"
+   ],
+   "cc": [
+    "akimo@dcard.cc"
+   ],
+   "subject": "Re: 【合作詢問】《羅技活動出席合作》 - Ellie",
+   "draft_id": "r-1673948594661881736"
+  }
  }
 ]

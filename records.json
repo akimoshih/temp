@@ -521,7 +521,7 @@
   "status": "行政流程",
   "launch_month": null,
   "subject": "【合約】Orion找零隨手拍_Nakaw",
-  "summary": "合作備忘錄與委刊單送法務；法務 7/23 回覆修訂版與風險提示（建議由對方負擔產品/廣告內容之擔保責任等），待確認後回覆對方。",
+  "summary": "合作備忘錄與委刊單送法務；法務 7/23 回覆修訂版與風險提示（建議由對方負擔產品/廣告內容之擔保責任等），待確認後回覆對方；委刊單 V202606011 客戶已回簽，8/10 送內部用印＋開立發票。",
   "source": "自來"
  },
  {
@@ -703,7 +703,7 @@
   "status": "行政流程",
   "launch_month": "2026-10",
   "subject": "【講師邀約】臺北市青年局-講座活動邀請",
-  "summary": "確認 Leo 擔任講師，檔期 10/19（一）10:10–12:00；8/3 已回覆檔期可配合並向對方索取廠商資料（公司名稱／地址／電話／統編／簽約代表人／聯絡人）以開立委刊單，待對方提供。",
+  "summary": "確認 Leo 擔任講師，檔期 10/19（一）10:10–12:00；8/3 已向對方索取廠商資料以開立委刊單，8/10 Jasmine 再次去信確認合作是否底定，並說明需簽回委刊單後才會保留檔期，待對方回覆。",
   "source": "自來"
  },
  {
@@ -1294,7 +1294,7 @@
   "status": "行政流程",
   "launch_month": null,
   "subject": "DJI Pocket 4P珠光白 x _nakaw",
-  "summary": "新品社群合作；8/7 已回覆合作內容沒有問題，保密協議（英文版，Jasmine 另譯中文版對照）送法務確認中，確認後回簽。Ellie 後續可能也有同品牌合作、同樣需簽保密條款。合作金額尚未於信件中確認。",
+  "summary": "新品社群合作；合作內容已確認沒有問題。保密協議為 DJI 集團制式 NDA、修改空間有限，法務 8/10 回覆審閱意見：簽署資訊須將接收者公司地址改為「臺北市大安區光復南路102號14樓」、簽署頁 Position 改為 CEO，並提示本 NDA 為單向保密等注意事項。Ellie 後續可能也有同品牌合作、同樣需簽保密條款。合作金額尚未於信件中確認。",
   "source": "自來"
  },
  {
@@ -1390,7 +1390,109 @@
   "status": "行政流程",
   "launch_month": null,
   "subject": "【合約】統一麵包 X 戶米+Ellie",
-  "summary": "案件已上線，代理商臨時要求補簽一份合約；Jasmine 8/7 送法務審閱並附上已簽回的委刊單，希望 8/12（三）前完成。",
+  "summary": "案件已上線，代理商臨時要求補簽一份合約；法務 8/10 已回修訂版，考量合作已上線僅調整重要條款——廣告內容合法性擔保義務改由對方負擔（我方僅擔保所提供素材未侵害第三人權利），待與代理商確認。",
   "source": "自來"
+ },
+ {
+  "thread_id": "19fee1ff1a739bd9",
+  "date": "2026-08-11",
+  "members": [
+   "leo",
+   "nakaw",
+   "yy"
+  ],
+  "brand": "羅技 Logitech（活動出席合作）",
+  "agency": "天神娛樂工作室／玩樂幫",
+  "status": "洽談中",
+  "launch_month": "2026-09",
+  "subject": "【合作詢問】《羅技活動出席合作》",
+  "summary": "9/19（六）雙北活動出席：1 小時講座（分享攝影／剪輯／設計專業並連結羅技高階滑鼠）＋活動前後各一則 IG 貼文與分享限動＋平面素材與廣告主授權兩個月。Ellie 因拍攝檔期已滿婉拒，改推薦 Leo、Nakaw、YY；對方 8/11 回覆請提供三位報價。",
+  "source": "自來"
+ },
+ {
+  "thread_id": "19fee1f5200087e4",
+  "date": "2026-08-11",
+  "members": [
+   "roy"
+  ],
+  "brand": "知名刮鬍刀品牌（未具名）",
+  "agency": "藝珂廣告 Lycklig",
+  "status": "洽談中",
+  "launch_month": null,
+  "subject": "【合作邀約_吳至晟】藝珂廣告_知名刮鬍刀品牌",
+  "summary": "刮鬍刀品牌合作邀約（Rio 之外另詢問主委）；Jasmine 回覆主委的社群合作目前仍以 IG Story 為主，確認是否符合品牌期待，待對方回覆。",
+  "source": "自來"
+ },
+ {
+  "thread_id": "19fee1f6a07b416b",
+  "date": "2026-08-11",
+  "members": [
+   "roy"
+  ],
+  "brand": "瑪奇 Mobile（遊戲合作）",
+  "agency": "安安娛樂",
+  "status": "洽談中",
+  "launch_month": null,
+  "subject": "【安安娛樂】商案邀約-《瑪奇 Moblie》遊戲合作邀約",
+  "summary": "遊戲合作邀約；Jasmine 回覆主委的社群合作目前以 IG Story 為主，提議改以 IG Story 形式合作，待對方確認。",
+  "source": "自來"
+ },
+ {
+  "thread_id": "19fee1f92f93a20f",
+  "date": "2026-08-11",
+  "members": [
+   "ellie"
+  ],
+  "brand": "Crest（香氛鎖白牙膏新品）",
+  "agency": "睿域行銷 DeVries Global",
+  "status": "取消",
+  "launch_month": null,
+  "subject": "【合作邀約】Crest 香氛鎖白牙膏新品上市_Ellie",
+  "summary": "新品上市社群合作邀約；因 Ellie 近期拍攝檔期較滿已婉拒。",
+  "source": "自來"
+ },
+ {
+  "thread_id": "19fee1f6422dc913",
+  "date": "2026-08-11",
+  "members": [
+   "ellie"
+  ],
+  "brand": "belif（Frozen 沁涼系列第二波）",
+  "agency": null,
+  "status": "取消",
+  "launch_month": null,
+  "subject": "belif 新品Frozen 沁涼系列 第二波 合作邀約＿Ellie",
+  "summary": "新品第二波合作邀約；因 Ellie 近期拍攝檔期較滿已婉拒。",
+  "source": "自來"
+ },
+ {
+  "thread_id": "19fee1f2721cc47b",
+  "date": "2026-08-11",
+  "members": [
+   "ellie"
+  ],
+  "brand": "Ping!（交友軟體推廣）",
+  "agency": "Nexa Connect",
+  "status": "取消",
+  "launch_month": null,
+  "subject": "【來自Nexa Connect的付費合作邀約】Ping! 交友軟體推廣邀約信_Ellie",
+  "summary": "交友軟體付費推廣邀約；因 Ellie 近期拍攝檔期較滿已婉拒。",
+  "source": "自來"
+ },
+ {
+  "thread_id": "19fa1a893e0f503f",
+  "date": "2026-07-27",
+  "members": [
+   "leo",
+   "meber",
+   "roy"
+  ],
+  "brand": "Airwaves（超商通路 Reels）",
+  "agency": null,
+  "status": "執行中",
+  "launch_month": "2026-09",
+  "subject": "【成員Reels合作-Leo+梅伯+主委（出演）】Airwaves_Mark_0727",
+  "summary": "確認合作：Leo & 梅伯共同協作發布一則個人社群 IG Reels、主委出演，需於雙北 7-11 門市拍攝（平日 18:00 前，期望 8/21）。品牌 8/10 回覆腳本，Jasmine 8/11 回應會微調（僅調整業配資訊、創意內容不開放品牌更動），8/12 提供調整版；因品牌要抓三次回覆且尚未確認產品寄送時間，最終時程待腳本 Final 後重抓，品牌期望最晚 9/18 上線。",
+  "source": "業務"
  }
 ]
