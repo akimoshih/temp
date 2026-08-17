@@ -1,0 +1,660 @@
+<title>EntryDesk Agent Flow</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  /* ============ Tokens — 深色科技艙單一主題（刻意選擇，非省略） ============ */
+  :root {
+    --bg:      #05070D;
+    --panel:   #0A101C;
+    --panel-2: #0D1626;
+    --line:    #17263F;
+    --line-dim:#101B2E;
+    --ink:     #E9F1FB;
+    --muted:   #7E8CA3;
+    --faint:   #4A5670;
+    --accent:  #33E0FF;
+    --accent-2:#7B8CFF;
+    --ok:      #41E3A6;
+    --warn:    #FFC24D;
+    --glow:    rgba(51, 224, 255, .45);
+    --mono: ui-monospace, "SFMono-Regular", "Cascadia Mono", "JetBrains Mono", Menlo, Consolas, monospace;
+    --sans: system-ui, -apple-system, "Segoe UI", "Noto Sans TC", "PingFang TC", sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background:
+      radial-gradient(1200px 500px at 50% -10%, rgba(51,224,255,.07), transparent 60%),
+      radial-gradient(900px 400px at 85% 110%, rgba(123,140,255,.06), transparent 60%),
+      var(--bg);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+
+  .shell { max-width: 1240px; margin: 0 auto; padding: 40px 24px 64px; }
+
+  /* ============ Header ============ */
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: .28em;
+    color: var(--accent);
+    display: flex; align-items: center; gap: 12px;
+  }
+  .eyebrow::before, .eyebrow::after {
+    content: ""; height: 1px; width: 34px;
+    background: linear-gradient(90deg, transparent, var(--accent));
+  }
+  .eyebrow::after { background: linear-gradient(90deg, var(--accent), transparent); flex: 0 0 34px; }
+  h1 {
+    font-size: clamp(24px, 3.4vw, 40px);
+    font-weight: 650;
+    letter-spacing: .01em;
+    margin: 14px 0 8px;
+    text-wrap: balance;
+  }
+  .sub { color: var(--muted); max-width: 62ch; margin: 0 0 28px; font-size: 15px; }
+  .sub b { color: var(--ink); font-weight: 600; }
+
+  /* ============ Stage ============ */
+  .stage-wrap {
+    border: 1px solid var(--line);
+    background:
+      linear-gradient(rgba(51,224,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(51,224,255,.035) 1px, transparent 1px),
+      linear-gradient(180deg, var(--panel), var(--panel-2));
+    background-size: 40px 40px, 40px 40px, 100% 100%;
+    border-radius: 14px;
+    overflow-x: auto;
+    position: relative;
+  }
+  .stage-hud {
+    position: sticky; left: 0;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 12px 18px 0;
+    font-family: var(--mono); font-size: 11px; color: var(--faint);
+    letter-spacing: .12em;
+  }
+  .stage-hud .live { color: var(--ok); display: inline-flex; align-items: center; gap: 7px; }
+  .stage-hud .live::before {
+    content: ""; width: 7px; height: 7px; border-radius: 50%;
+    background: var(--ok); box-shadow: 0 0 8px var(--ok);
+    animation: blink 1.6s infinite;
+  }
+  @keyframes blink { 50% { opacity: .35; } }
+
+  .stage {
+    position: relative;
+    min-width: 760px;
+    aspect-ratio: 2 / 1;
+    container-type: inline-size;
+  }
+  svg.wires { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+  .wire      { fill: none; stroke: var(--line); stroke-width: 1.6; }
+  .wire.lit  { stroke: var(--accent); stroke-width: 1.8; opacity: 0;
+               filter: url(#wireGlow); transition: opacity .45s ease; }
+  .wire.lit.on { opacity: .85; }
+
+  .ring { fill: none; stroke: var(--accent); opacity: .28;
+          transform-box: fill-box; transform-origin: center; }
+  .ring.r1 { stroke-dasharray: 4 10;  animation: spin 22s linear infinite; }
+  .ring.r2 { stroke-dasharray: 2 14;  animation: spin 30s linear infinite reverse; opacity: .18; }
+  .stage.busy .ring.r1 { animation-duration: 5s; opacity: .6; }
+  .stage.busy .ring.r2 { animation-duration: 8s; opacity: .4; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .pulse { fill: var(--accent); filter: url(#dotGlow); }
+  .pulse.back { fill: var(--ok); }
+
+  /* ---- Nodes (HTML, % 對齊 viewBox 1200×600) ---- */
+  .node {
+    position: absolute;
+    border: 1px solid var(--line);
+    background: linear-gradient(180deg, rgba(13,22,38,.92), rgba(10,16,28,.92));
+    border-radius: 10px;
+    padding: 1.1cqw 1.3cqw;
+    box-shadow: 0 6px 24px rgba(0,0,0,.35);
+    transition: border-color .4s, box-shadow .4s;
+  }
+  .node.active { border-color: rgba(51,224,255,.55); box-shadow: 0 0 0 1px rgba(51,224,255,.2), 0 0 26px rgba(51,224,255,.12); }
+  .node.done   { border-color: rgba(65,227,166,.5); }
+
+  .node-tag {
+    font-family: var(--mono); font-size: .82cqw; letter-spacing: .18em;
+    color: var(--faint); margin-bottom: .55cqw;
+  }
+  .node.active .node-tag { color: var(--accent); }
+
+  .user-card { left: 2.2%; top: 30%; width: 21.5%; }
+  .user-msg {
+    font-family: var(--mono); font-size: 1.02cqw; color: var(--ink);
+    min-height: 3.4cqw; word-break: break-all;
+  }
+  .caret { display: inline-block; width: .55cqw; height: 1.15cqw;
+           background: var(--accent); vertical-align: -0.15cqw;
+           animation: blink 1s steps(1) infinite; }
+  .user-result {
+    margin-top: .8cqw; padding-top: .7cqw; border-top: 1px dashed var(--line);
+    font-family: var(--mono); font-size: .92cqw; color: var(--ok);
+    opacity: 0; transform: translateY(4px); transition: all .5s ease;
+  }
+  .user-result.on { opacity: 1; transform: none; }
+
+  /* core */
+  .core {
+    left: 41.2%; top: 27%; width: 16.4%; aspect-ratio: 1;
+    position: absolute; display: flex; flex-direction: column;
+    align-items: center; justify-content: center; text-align: center;
+    clip-path: polygon(50% 0, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+    background: linear-gradient(160deg, #0E1A30, #0A121F);
+    border: none;
+    outline: 1px solid rgba(51,224,255,.35);
+    outline-offset: -1px;
+    transition: filter .4s;
+  }
+  .stage.busy .core { filter: drop-shadow(0 0 18px rgba(51,224,255,.25)); }
+  .core-name { font-family: var(--mono); font-size: 1.15cqw; letter-spacing: .2em; color: var(--ink); }
+  .core-sub  { font-family: var(--mono); font-size: .78cqw; letter-spacing: .3em; color: var(--accent); margin-top: .3cqw; }
+  .core-status {
+    margin-top: .9cqw; font-family: var(--mono); font-size: .85cqw;
+    color: var(--muted); padding: .25cqw .9cqw;
+    border: 1px solid var(--line); border-radius: 99px;
+    background: rgba(5,7,13,.5);
+  }
+  .stage.busy .core-status { color: var(--accent); border-color: rgba(51,224,255,.4); }
+
+  .plan-chips { position: absolute; left: 59.5%; top: 20.5%; display: flex; flex-direction: column; gap: .5cqw; }
+  .chip {
+    font-family: var(--mono); font-size: .8cqw; color: var(--accent-2);
+    border: 1px solid rgba(123,140,255,.35); border-radius: 6px;
+    padding: .18cqw .6cqw; background: rgba(123,140,255,.07);
+    opacity: 0; transform: translateX(-6px); transition: all .4s ease;
+  }
+  .chip.on { opacity: 1; transform: none; }
+
+  /* tools */
+  .tool { width: 19.5%; left: 78%; display: flex; align-items: center; gap: .9cqw; }
+  .tool .mono-box {
+    width: 2.5cqw; height: 2.5cqw; flex: 0 0 auto;
+    display: grid; place-items: center;
+    font-family: var(--mono); font-size: 1.15cqw; font-weight: 700;
+    color: var(--accent); border: 1px solid var(--line); border-radius: 7px;
+    background: rgba(51,224,255,.06);
+  }
+  .tool.done .mono-box { color: var(--ok); background: rgba(65,227,166,.07); }
+  .tool-body { min-width: 0; flex: 1; }
+  .tool-name { font-family: var(--mono); font-size: .95cqw; letter-spacing: .1em; }
+  .tool-act  { font-size: .88cqw; color: var(--muted); white-space: nowrap; }
+  .tool-state {
+    font-family: var(--mono); font-size: .74cqw; letter-spacing: .1em;
+    color: var(--faint); flex: 0 0 auto;
+  }
+  .tool.run  .tool-state { color: var(--warn); }
+  .tool.done .tool-state { color: var(--ok); }
+  .tool .bar {
+    position: absolute; left: 0; bottom: 0; height: 2px; width: 100%;
+    background: transparent; border-radius: 0 0 10px 10px; overflow: hidden;
+  }
+  .tool .bar i {
+    display: block; height: 100%; width: 0%;
+    background: linear-gradient(90deg, var(--accent), var(--ok));
+  }
+
+  /* ============ Step rail ============ */
+  .rail {
+    display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px;
+    margin: 22px 0 14px;
+  }
+  .step {
+    border: 1px solid var(--line); border-radius: 10px;
+    background: var(--panel);
+    padding: 10px 14px;
+    transition: border-color .35s, background .35s;
+  }
+  .step .n { font-family: var(--mono); font-size: 11px; color: var(--faint); letter-spacing: .2em; }
+  .step .t { font-size: 14px; font-weight: 600; margin-top: 2px; color: var(--muted); }
+  .step.on { border-color: rgba(51,224,255,.55); background: rgba(51,224,255,.05); }
+  .step.on .n { color: var(--accent); }
+  .step.on .t { color: var(--ink); }
+  .step.past { border-color: rgba(65,227,166,.35); }
+  .step.past .n { color: var(--ok); }
+
+  .caption {
+    font-size: 14.5px; color: var(--muted);
+    border-left: 2px solid var(--accent);
+    padding: 2px 0 2px 14px; margin: 0 0 26px; min-height: 24px;
+  }
+  .caption b { color: var(--ink); font-weight: 600; }
+
+  /* ============ Console + stats ============ */
+  .lower { display: grid; grid-template-columns: 1fr 240px; gap: 16px; }
+  @media (max-width: 780px) { .lower { grid-template-columns: 1fr; } }
+
+  .console {
+    border: 1px solid var(--line); border-radius: 12px;
+    background: #060A12;
+    font-family: var(--mono); font-size: 12.5px;
+    overflow: hidden;
+  }
+  .console-head {
+    display: flex; align-items: center; gap: 8px;
+    padding: 9px 14px; border-bottom: 1px solid var(--line-dim);
+    color: var(--faint); font-size: 11px; letter-spacing: .18em;
+  }
+  .console-head::before {
+    content: ""; width: 8px; height: 8px; border-radius: 50%;
+    background: var(--accent); box-shadow: 0 0 8px var(--glow);
+  }
+  .console-body { padding: 12px 16px 14px; min-height: 236px; }
+  .log-line {
+    display: block; padding: 2.5px 0; color: var(--muted);
+    opacity: 0; transform: translateY(5px);
+    transition: opacity .35s ease, transform .35s ease;
+  }
+  .log-line.on { opacity: 1; transform: none; }
+  .log-line .ts { color: var(--faint); }
+  .log-line.hl  { color: var(--accent); }
+  .log-line.okl { color: var(--ok); }
+
+  .stats { display: flex; flex-direction: column; gap: 12px; }
+  .stat {
+    flex: 1; border: 1px solid var(--line); border-radius: 12px;
+    background: var(--panel); padding: 14px 16px;
+  }
+  .stat .v {
+    font-family: var(--mono); font-size: 26px; font-weight: 700;
+    color: var(--accent); font-variant-numeric: tabular-nums;
+  }
+  .stat .k { font-size: 12.5px; color: var(--muted); margin-top: 2px; }
+  .stat.ok .v { color: var(--ok); }
+
+  /* ============ Controls ============ */
+  .controls {
+    display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+    margin-top: 18px; padding: 12px 14px;
+    border: 1px solid var(--line); border-radius: 12px; background: var(--panel);
+  }
+  button, .seg label {
+    font-family: var(--mono); font-size: 12.5px; letter-spacing: .06em;
+    color: var(--ink); background: var(--panel-2);
+    border: 1px solid var(--line); border-radius: 8px;
+    padding: 7px 14px; cursor: pointer;
+  }
+  button:hover { border-color: rgba(51,224,255,.5); }
+  button:focus-visible, input:focus-visible, .seg label:has(:focus-visible) {
+    outline: 2px solid var(--accent); outline-offset: 2px;
+  }
+  button.primary { color: #032530; background: var(--accent); border-color: var(--accent); font-weight: 700; }
+  .seg { display: inline-flex; gap: 0; }
+  .seg label { border-radius: 0; margin-left: -1px; color: var(--muted); }
+  .seg label:first-child { border-radius: 8px 0 0 8px; }
+  .seg label:last-child  { border-radius: 0 8px 8px 0; }
+  .seg input { position: absolute; opacity: 0; width: 0; }
+  .seg label:has(input:checked) { color: var(--accent); background: rgba(51,224,255,.08); border-color: rgba(51,224,255,.5); z-index: 1; position: relative; }
+  .loop-box { display: inline-flex; align-items: center; gap: 7px; font-family: var(--mono); font-size: 12.5px; color: var(--muted); cursor: pointer; }
+  .loop-box input { accent-color: var(--accent); }
+
+  .scrub { flex: 1; min-width: 160px; display: flex; align-items: center; gap: 12px; }
+  input[type="range"] { flex: 1; accent-color: var(--accent); background: transparent; }
+  .clock { font-family: var(--mono); font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+  .clock b { color: var(--accent); font-weight: 600; }
+
+  footer { margin-top: 30px; font-family: var(--mono); font-size: 11.5px; color: var(--faint); letter-spacing: .08em; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ring, .caret, .stage-hud .live::before { animation: none !important; }
+    .log-line, .chip, .user-result, .wire.lit { transition: none; }
+  }
+</style>
+
+<div class="shell">
+  <header>
+    <div class="eyebrow">ENTRYDESK · USE CASE DEMO</div>
+    <h1>一句話，讓 Agent 跑完整條工作流程</h1>
+    <p class="sub">優化後的範例動畫：以<b>訊號流</b>呈現 EntryDesk 從接收自然語言指令、解析規劃，到並行呼叫
+      Notion、GitHub、Gmail、Slack 並回報結果的完整過程。每一步都與下方步驟軌與執行日誌同步。</p>
+  </header>
+
+  <div class="stage-wrap">
+    <div class="stage-hud">
+      <span>AGENT-FLOW / VISUALIZER v2</span>
+      <span class="live">RUNTIME CONNECTED</span>
+    </div>
+    <div class="stage" id="stage">
+      <svg class="wires" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <filter id="wireGlow" x="-30%" y="-30%" width="160%" height="160%">
+            <feGaussianBlur stdDeviation="2.2" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+          <filter id="dotGlow" x="-200%" y="-200%" width="500%" height="500%">
+            <feGaussianBlur stdDeviation="4" result="b"/>
+            <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+
+        <!-- base wires -->
+        <path id="w-user" class="wire" d="M 288 300 L 486 300"/>
+        <path id="w-t0" class="wire" d="M 700 300 C 790 300, 810 96,  930 96"/>
+        <path id="w-t1" class="wire" d="M 700 300 C 790 300, 810 232, 930 232"/>
+        <path id="w-t2" class="wire" d="M 700 300 C 790 300, 810 368, 930 368"/>
+        <path id="w-t3" class="wire" d="M 700 300 C 790 300, 810 504, 930 504"/>
+
+        <!-- lit overlays -->
+        <path id="l-user" class="wire lit" d="M 288 300 L 486 300"/>
+        <path id="l-t0" class="wire lit" d="M 700 300 C 790 300, 810 96,  930 96"/>
+        <path id="l-t1" class="wire lit" d="M 700 300 C 790 300, 810 232, 930 232"/>
+        <path id="l-t2" class="wire lit" d="M 700 300 C 790 300, 810 368, 930 368"/>
+        <path id="l-t3" class="wire lit" d="M 700 300 C 790 300, 810 504, 930 504"/>
+
+        <!-- core rings -->
+        <circle class="ring r1" cx="592" cy="300" r="112"/>
+        <circle class="ring r2" cx="592" cy="300" r="128"/>
+
+        <g id="dots"></g>
+      </svg>
+
+      <div class="node user-card" id="nodeUser">
+        <div class="node-tag">USER · SLACK 指令</div>
+        <div class="user-msg"><span id="typed"></span><span class="caret" id="caret"></span></div>
+        <div class="user-result" id="userResult">✓ 摘要已寄達信箱 · 12 則貼文 · 4 個來源</div>
+      </div>
+
+      <div class="core" id="core">
+        <div class="core-name">ENTRYDESK</div>
+        <div class="core-sub">AGENT CORE</div>
+        <div class="core-status" id="coreStatus">待命中</div>
+      </div>
+
+      <div class="plan-chips" aria-hidden="true">
+        <span class="chip" id="chip0">PLAN 01 · 抓取來源</span>
+        <span class="chip" id="chip1">PLAN 02 · 產生摘要</span>
+        <span class="chip" id="chip2">PLAN 03 · 寄送 + 通知</span>
+      </div>
+
+      <div class="node tool" id="tool0" style="top: 10.5%;">
+        <div class="mono-box">N</div>
+        <div class="tool-body">
+          <div class="tool-name">NOTION</div>
+          <div class="tool-act">讀取競品追蹤資料庫</div>
+        </div>
+        <div class="tool-state">待命</div>
+        <div class="bar"><i></i></div>
+      </div>
+      <div class="node tool" id="tool1" style="top: 33.2%;">
+        <div class="mono-box">G</div>
+        <div class="tool-body">
+          <div class="tool-name">GITHUB</div>
+          <div class="tool-act">執行爬蟲 pipeline</div>
+        </div>
+        <div class="tool-state">待命</div>
+        <div class="bar"><i></i></div>
+      </div>
+      <div class="node tool" id="tool2" style="top: 55.9%;">
+        <div class="mono-box">M</div>
+        <div class="tool-body">
+          <div class="tool-name">GMAIL</div>
+          <div class="tool-act">寄送摘要報告</div>
+        </div>
+        <div class="tool-state">待命</div>
+        <div class="bar"><i></i></div>
+      </div>
+      <div class="node tool" id="tool3" style="top: 78.6%;">
+        <div class="mono-box">S</div>
+        <div class="tool-body">
+          <div class="tool-name">SLACK</div>
+          <div class="tool-act">推播完成通知</div>
+        </div>
+        <div class="tool-state">待命</div>
+        <div class="bar"><i></i></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="rail" id="rail">
+    <div class="step"><div class="n">STEP 01</div><div class="t">接收指令</div></div>
+    <div class="step"><div class="n">STEP 02</div><div class="t">解析與規劃</div></div>
+    <div class="step"><div class="n">STEP 03</div><div class="t">串接工具</div></div>
+    <div class="step"><div class="n">STEP 04</div><div class="t">並行執行</div></div>
+    <div class="step"><div class="n">STEP 05</div><div class="t">回報結果</div></div>
+  </div>
+  <p class="caption" id="caption"></p>
+
+  <div class="lower">
+    <div class="console">
+      <div class="console-head">EXECUTION LOG · RUN #2481</div>
+      <div class="console-body" id="logBody"></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="v">5</div><div class="k">自動化步驟</div></div>
+      <div class="stat"><div class="v">4</div><div class="k">並行串接工具</div></div>
+      <div class="stat ok"><div class="v">0</div><div class="k">人工介入次數</div></div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <button class="primary" id="btnPlay">暫停</button>
+    <button id="btnReplay">重播</button>
+    <span class="seg" role="group" aria-label="播放速度">
+      <label><input type="radio" name="spd" value="0.6">0.6×</label>
+      <label><input type="radio" name="spd" value="1" checked>1×</label>
+      <label><input type="radio" name="spd" value="1.6">1.6×</label>
+    </span>
+    <label class="loop-box"><input type="checkbox" id="loop" checked>循環播放</label>
+    <span class="scrub">
+      <input type="range" id="scrub" min="0" max="1000" value="0" aria-label="時間軸">
+      <span class="clock"><b id="clockNow">0.0s</b> / <span id="clockAll"></span></span>
+    </span>
+  </div>
+
+  <footer>OPTIMIZED DEMO · ENTRYDESK USE-CASES 範例動畫優化版 · DARK-CONSOLE THEME</footer>
+</div>
+
+<script>
+(() => {
+  const $ = (s) => document.querySelector(s);
+  const DUR = 13000;
+
+  /* ---------- 時間軸（所有畫面狀態都是 t 的純函式，可暫停/拖曳/循環） ---------- */
+  const T = {
+    typeEnd: 1800,
+    p1: [1800, 2800],          // user -> core
+    chips: [3100, 3550, 4000],
+    fanStart: 4600, fanStagger: 160, fanDur: 950,
+    runStart: 5600, runStagger: 320, runDur: 2500,
+    backStart: 9700, backStagger: 140, backDur: 850,  // tools -> core
+    p2: [10500, 11250],        // core -> user
+    result: 11300,
+    end: 12200,
+  };
+
+  const MSG = "「每週一 9:00 幫我彙整競品社群貼文，寄摘要給我」";
+
+  const STEPS = [
+    { until: T.p1[0],    cap: "<b>接收指令：</b>使用者在 Slack 用一句自然語言下指令，不需要任何表單或程式。" },
+    { until: T.fanStart, cap: "<b>解析與規劃：</b>Agent Core 解析意圖，自動拆解成「抓取 → 摘要 → 寄送 + 通知」的執行計畫。" },
+    { until: T.runStart, cap: "<b>串接工具：</b>透過連接器同時喚醒 Notion、GitHub、Gmail、Slack 四個工具。" },
+    { until: T.backStart,cap: "<b>並行執行：</b>四個任務並行處理，進度即時回傳，不需人工盯著。" },
+    { until: DUR + 1,    cap: "<b>回報結果：</b>結果彙整驗證後回到使用者手上——全程零人工介入。" },
+  ];
+
+  const CORE_STATUS = [
+    [0, "待命中"], [T.p1[0], "接收訊號"], [T.p1[1], "解析 · 規劃中"],
+    [T.fanStart, "調度連接器"], [T.runStart, "監控並行任務"],
+    [T.backStart, "彙整 · 驗證"], [T.result, "任務完成 ✓"],
+  ];
+
+  const LOGS = [
+    [250,  "hl",  "[09:00:00] 收到排程觸發 · 來源: SLACK · user=@marketing.amy"],
+    [1950, "",    "[09:00:01] NLU 解析 → 意圖: 競品內容彙整 (conf 0.98)"],
+    [3150, "",    "[09:00:01] 產生執行計畫: 抓取 → 摘要 → 寄送 + 通知"],
+    [4750, "",    "[09:00:02] 並行喚醒 4 個工具連接器"],
+    [6300, "",    "[09:00:04] NOTION · 讀取競品追蹤資料庫 → 12 筆更新"],
+    [7150, "",    "[09:00:05] GITHUB · 爬蟲 pipeline 執行完成 ✓"],
+    [8000, "",    "[09:00:06] GMAIL · 摘要報告已寄出 ✓"],
+    [8800, "",    "[09:00:07] SLACK · 已通知 #marketing 頻道 ✓"],
+    [9900, "",    "[09:00:08] 回傳結果 · schema 驗證通過"],
+    [11400,"okl", "[09:00:08] ✅ 工作流程完成 · 總耗時 8.2s · 人工介入 0 次"],
+  ];
+
+  /* ---------- DOM ---------- */
+  const stage = $("#stage"), typed = $("#typed"), caret = $("#caret");
+  const coreStatus = $("#coreStatus"), caption = $("#caption");
+  const nodeUser = $("#nodeUser"), userResult = $("#userResult");
+  const steps = [...document.querySelectorAll(".step")];
+  const tools = [0,1,2,3].map(i => {
+    const el = $("#tool" + i);
+    return { el, state: el.querySelector(".tool-state"), bar: el.querySelector(".bar i") };
+  });
+  const logBody = $("#logBody");
+  const logEls = LOGS.map(([, cls, text]) => {
+    const s = document.createElement("span");
+    s.className = "log-line " + cls;
+    const m = text.match(/^(\[[^\]]+\])(.*)$/);
+    s.innerHTML = `<span class="ts">${m[1]}</span>${m[2].replace(/&/g,"&amp;").replace(/</g,"&lt;")}`;
+    logBody.appendChild(s);
+    return s;
+  });
+
+  const path = (id) => { const p = document.getElementById(id); return { p, len: p.getTotalLength() }; };
+  const wires = { user: path("w-user"), t: [path("w-t0"), path("w-t1"), path("w-t2"), path("w-t3")] };
+  const lits  = { user: $("#l-user"), t: [0,1,2,3].map(i => $("#l-t" + i)) };
+
+  /* 移動光點：宣告式定義，render 時依 t 顯示/定位 */
+  const dotsG = $("#dots");
+  const DOTS = [];
+  const addDot = (wire, t0, t1, rev, back) => {
+    const c = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    c.setAttribute("r", 5);
+    c.setAttribute("class", "pulse" + (back ? " back" : ""));
+    c.style.display = "none";
+    dotsG.appendChild(c);
+    DOTS.push({ c, wire, t0, t1, rev });
+  };
+  addDot(wires.user, T.p1[0], T.p1[1], false, false);
+  wires.t.forEach((w, i) => {
+    const s = T.fanStart + i * T.fanStagger;
+    addDot(w, s, s + T.fanDur, false, false);
+    const b = T.backStart + i * T.backStagger;
+    addDot(w, b, b + T.backDur, true, true);
+  });
+  addDot(wires.user, T.p2[0], T.p2[1], true, true);
+
+  const clamp01 = (x) => Math.max(0, Math.min(1, x));
+  const ease = (x) => x < .5 ? 2*x*x : 1 - Math.pow(-2*x + 2, 2) / 2;
+
+  /* ---------- render(t)：冪等，拖曳與循環都不會壞 ---------- */
+  function render(t) {
+    // 1. typing
+    const n = Math.floor(clamp01(t / T.typeEnd) * MSG.length);
+    if (typed.textContent.length !== n) typed.textContent = MSG.slice(0, n);
+    caret.style.display = (t < T.typeEnd + 600) ? "inline-block" : "none";
+    nodeUser.classList.toggle("active", t < T.p1[1] || t >= T.p2[0]);
+    nodeUser.classList.toggle("done", t >= T.result);
+    userResult.classList.toggle("on", t >= T.result);
+
+    // 2. steps + caption
+    let si = STEPS.findIndex(s => t < s.until);
+    if (si < 0) si = STEPS.length - 1;
+    steps.forEach((el, i) => {
+      el.classList.toggle("on", i === si);
+      el.classList.toggle("past", i < si);
+    });
+    const cap = STEPS[si].cap;
+    if (caption.dataset.cap !== String(si)) { caption.dataset.cap = String(si); caption.innerHTML = `<span style="font-family:var(--mono);color:var(--accent)">0${si+1}</span> ${cap}`; }
+
+    // 3. core
+    let cs = CORE_STATUS[0][1];
+    for (const [at, label] of CORE_STATUS) if (t >= at) cs = label;
+    if (coreStatus.textContent !== cs) coreStatus.textContent = cs;
+    stage.classList.toggle("busy", t >= T.p1[0] && t < T.result);
+
+    // 4. chips
+    T.chips.forEach((at, i) => $("#chip" + i).classList.toggle("on", t >= at && t < T.backStart + 1200));
+
+    // 5. wires lit
+    lits.user.classList.toggle("on", (t >= T.p1[0] && t < T.fanStart) || t >= T.p2[0] && t < T.result + 600);
+    lits.t.forEach((el, i) => {
+      const s = T.fanStart + i * T.fanStagger;
+      el.classList.toggle("on", t >= s && t < T.backStart + i * T.backStagger + T.backDur);
+    });
+
+    // 6. tools
+    tools.forEach((tool, i) => {
+      const s = T.runStart + i * T.runStagger, e = s + T.runDur;
+      const st = t < s ? "idle" : t < e ? "run" : "done";
+      tool.el.classList.toggle("active", st === "run");
+      tool.el.classList.toggle("run",    st === "run");
+      tool.el.classList.toggle("done",   st === "done");
+      const label = st === "idle" ? "待命" : st === "run" ? "執行中" : "完成 ✓";
+      if (tool.state.textContent !== label) tool.state.textContent = label;
+      tool.bar.style.width = (clamp01((t - s) / T.runDur) * 100) + "%";
+    });
+
+    // 7. pulses
+    for (const d of DOTS) {
+      if (t >= d.t0 && t <= d.t1) {
+        let f = ease(clamp01((t - d.t0) / (d.t1 - d.t0)));
+        if (d.rev) f = 1 - f;
+        const pt = d.wire.p.getPointAtLength(f * d.wire.len);
+        d.c.setAttribute("cx", pt.x); d.c.setAttribute("cy", pt.y);
+        d.c.style.display = "";
+      } else d.c.style.display = "none";
+    }
+
+    // 8. logs
+    logEls.forEach((el, i) => el.classList.toggle("on", t >= LOGS[i][0]));
+
+    // 9. clock + scrub
+    clockNow.textContent = (t / 1000).toFixed(1) + "s";
+    if (!scrubbing) scrub.value = Math.round((t / DUR) * 1000);
+  }
+
+  /* ---------- engine ---------- */
+  const btnPlay = $("#btnPlay"), btnReplay = $("#btnReplay");
+  const scrub = $("#scrub"), loop = $("#loop");
+  const clockNow = $("#clockNow");
+  $("#clockAll").textContent = (DUR / 1000).toFixed(1) + "s";
+
+  let t = 0, playing = true, speed = 1, last = null, scrubbing = false;
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (reduced) { t = DUR - 1; playing = false; }
+
+  function frame(now) {
+    if (last == null) last = now;
+    if (playing) {
+      t += (now - last) * speed;
+      if (t >= DUR) {
+        if (loop.checked) t = 0;
+        else { t = DUR - 1; setPlaying(false); }
+      }
+      render(t);
+    }
+    last = now;
+    requestAnimationFrame(frame);
+  }
+
+  function setPlaying(p) {
+    playing = p;
+    btnPlay.textContent = p ? "暫停" : "播放";
+  }
+
+  btnPlay.addEventListener("click", () => {
+    if (!playing && t >= DUR - 1) t = 0;
+    setPlaying(!playing);
+  });
+  btnReplay.addEventListener("click", () => { t = 0; render(t); setPlaying(true); });
+  loop.addEventListener("change", () => { if (loop.checked && !playing && t >= DUR - 1) { t = 0; setPlaying(true); } });
+  document.querySelectorAll('input[name="spd"]').forEach(r =>
+    r.addEventListener("change", () => { speed = parseFloat(r.value); }));
+  scrub.addEventListener("pointerdown", () => scrubbing = true);
+  scrub.addEventListener("pointerup",   () => scrubbing = false);
+  scrub.addEventListener("input", () => { t = (scrub.value / 1000) * DUR; render(t); });
+
+  render(t);
+  requestAnimationFrame(frame);
+})();
+</script>
