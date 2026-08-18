@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "updated": "2026-08-17",
+ "updated": "2026-08-18",
  "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用 O/P 欄（成員收入），總覽頁用 J 欄（成交價未稅）",
  "by_member": {
   "rio": [
@@ -296,7 +296,7 @@
     "p": 0.0
    },
    {
-    "name": "plain-me 攜手 SONY _社群推廣合作_Ellie",
+    "name": "plain-me X SONY _社群推廣合作_Ellie",
     "item": "IG 貼文",
     "start": "2026-08-10",
     "o": 25000.0,
@@ -520,13 +520,6 @@
     "start": "2026-09-01",
     "o": 25000.0,
     "p": 0.0
-   },
-   {
-    "name": "7-11 ibon 行動電源推廣專案_社群推廣合作_YY",
-    "item": "Reels",
-    "start": null,
-    "o": 32500.0,
-    "p": 6500.0
    }
   ],
   "meber": [
@@ -832,6 +825,13 @@
     "start": "2026-08-01",
     "o": 10000.0,
     "p": 0.0
+   },
+   {
+    "name": "臺北市青年局_演講_Leo",
+    "item": "演講",
+    "start": "2026-10-19",
+    "o": 12500.0,
+    "p": 2500.0
    }
   ],
   "nakaw": [
@@ -1968,10 +1968,10 @@
    "j": 55000.0
   },
   {
-   "member_raw": "YY",
-   "member_key": "yy",
-   "start": null,
-   "j": 65000.0
+   "member_raw": "Leo",
+   "member_key": "leo",
+   "start": "2026-10-19",
+   "j": 25000.0
   },
   {
    "member_raw": "YY",

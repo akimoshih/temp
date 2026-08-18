@@ -269,5 +269,29 @@
    "subject": "Re: 【合作邀約_Rio 】藝珂廣告_知名刮鬍刀品牌_Lycklig藝珂廣告0807",
    "draft_id": "r-8627851920360349695"
   }
+ },
+ {
+  "task_id": "T2026-0011",
+  "type": "委刊單",
+  "thread_id": "19fcc6e510ade149",
+  "case": "原萃（太古可口可樂）× Rio",
+  "assignee": "oliver.zeng@dcard.cc",
+  "status": "草稿已建立",
+  "created": "2026-08-18",
+  "note": "代理商 AnyMind 8/17 正式確認合作（IG Reels 60 秒＋帶連結 Story，$200,000 未稅，10/21 上線），已產出委刊單 V20260818-01；甲方統編與簽約代表人對方尚未提供故留空，草稿內同時向窗口索取並協商付款條件（我方 30 日 vs 對方次月 60 日）。",
+  "drive_url": null,
+  "note_drive": "PDF 未上傳 Drive（138KB，base64 內嵌成本過高），改以 SendUserFile 直接交付 Akimo",
+  "draft": {
+   "to": [
+    "dana.lee@anymindgroup.com"
+   ],
+   "cc": [
+    "hsun@anymindgroup.com",
+    "jasmine.wang@dcard.cc",
+    "oliver.zeng@dcard.cc"
+   ],
+   "subject": "Re: 確認合作 & 請協助Booking檔期【原萃_合作邀約】2026.10月 IG REELS_Rio 壹比零",
+   "draft_id": "r-4506729383327216805"
+  }
  }
 ]
