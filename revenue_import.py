@@ -4,8 +4,8 @@
 #   輸入檔可以是：
 #   (a) Google Drive download_file_content 的 JSON 結果檔（content 欄位為 base64 xlsx）
 #   (b) 直接的 .xlsx 檔
-# 解析「營收大表(Video)-2026」分頁：D=成員、C=合作名稱、E=產品項目、R=走期開始、
-# O=成員收入(業績<80萬 5/5分)、P=成員收入(業績>80萬 6/4分)。
+# 解析「營收大表(Video)-2026」分頁：欄位以第一列標題文字定位（來源表曾插入新欄導致欄位位移），
+# 需要成員、合作名稱、產品項目、走期開始、成員收入(<80萬 5/5分)、成員收入(>80萬 6/4分)、成交價(未稅)。
 import base64, json, os, sys, tempfile
 import openpyxl
 
@@ -29,33 +29,40 @@ if SHEET not in wb.sheetnames:
     raise SystemExit(f"IMPORT ABORTED: 找不到分頁「{SHEET}」，實際分頁：{wb.sheetnames[:8]}")
 ws = wb[SHEET]
 
-hdr_d = str(ws.cell(1, 4).value or "")
-hdr_o = str(ws.cell(1, 15).value or "")
-hdr_p = str(ws.cell(1, 16).value or "")
-if "成員" not in hdr_d or "成員收入" not in hdr_o or "成員收入" not in hdr_p:
-    raise SystemExit(f"IMPORT ABORTED: 欄位不符（D={hdr_d!r} O={hdr_o!r} P={hdr_p!r}），表格結構可能變了，請人工確認")
+def find_col(pred, label):
+    """依第一列標題文字找欄位（回傳 0-based index）。找不到就中止，不覆蓋既有資料。"""
+    for c in range(1, ws.max_column + 1):
+        h = str(ws.cell(1, c).value or "").replace("\n", "")
+        if pred(h):
+            return c - 1
+    heads = [str(ws.cell(1, c).value or "").replace("\n", "") for c in range(1, min(ws.max_column, 25) + 1)]
+    raise SystemExit(f"IMPORT ABORTED: 找不到「{label}」欄，表格結構可能變了，請人工確認。實際標題：{heads}")
 
-hdr_j = str(ws.cell(1, 10).value or "")
-if "成交價" not in hdr_j:
-    raise SystemExit(f"IMPORT ABORTED: J 欄位不符（{hdr_j!r}），表格結構可能變了，請人工確認")
+COL_MEMBER = find_col(lambda h: "成員" in h and "成員收入" not in h, "成員")
+COL_NAME   = find_col(lambda h: "合作名稱" in h, "合作名稱")
+COL_ITEM   = find_col(lambda h: "產品項目" in h, "產品項目")
+COL_START  = find_col(lambda h: "走期開始" in h, "走期開始")
+COL_O      = find_col(lambda h: "成員收入" in h and "5/5" in h, "成員收入(業績<80萬 5/5分)")
+COL_P      = find_col(lambda h: "成員收入" in h and "6/4" in h, "成員收入(業績>80萬 6/4分)")
+COL_J      = find_col(lambda h: "成交價" in h and "未稅" in h, "成交價(未稅)")
 
 def num(v):
     return float(v) if isinstance(v, (int, float)) else 0
 
 out, skipped, team_rows = {}, set(), []
 for r in ws.iter_rows(min_row=2):
-    d = r[3].value
+    d = r[COL_MEMBER].value
     if d is None:
         continue
     raw = str(d).strip()
     key = MAP.get(raw)
     row = {
-        "name": r[2].value, "item": r[4].value,
-        "start": str(r[17].value)[:10] if r[17].value else None,
-        "o": num(r[14].value), "p": num(r[15].value),
+        "name": r[COL_NAME].value, "item": r[COL_ITEM].value,
+        "start": str(r[COL_START].value)[:10] if r[COL_START].value else None,
+        "o": num(r[COL_O].value), "p": num(r[COL_P].value),
     }
     team_rows.append({"member_raw": raw, "member_key": key,
-                      "start": row["start"], "j": num(r[9].value)})
+                      "start": row["start"], "j": num(r[COL_J].value)})
     if not key:
         skipped.add(raw)
         continue
@@ -70,7 +77,7 @@ if total_rows < 50:  # 目前 150+ 筆；掉到 50 以下代表來源異常，�
 from datetime import datetime, timedelta, timezone
 today = datetime.now(timezone(timedelta(hours=8))).strftime("%Y-%m-%d")
 json.dump({"year": 2026, "updated": today,
-           "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用 O/P 欄（成員收入），總覽頁用 J 欄（成交價未稅）",
+           "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用「成員收入」兩欄，總覽頁用「成交價(未稅)」欄（欄位以標題文字定位）",
            "by_member": out, "team_rows": team_rows},
           open(os.path.join(BASE, "revenue.json"), "w"), ensure_ascii=False, indent=1)
 print(f"團隊 J 欄合計 {int(sum(t['j'] for t in team_rows)):,}（{len(team_rows)} 列）")
