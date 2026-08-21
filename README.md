@@ -73,6 +73,19 @@ workspace 預設讀 `~/.config/vibehost/config.json`；該檔不存在時用 `VI
 
 Jasmine／Oliver 各自信箱的委刊單草稿：同一套檔案已上傳 Google Drive 資料夾「委刊單自動化」（folder id `1ZD0zGP6MIVv1vEq9qxaY_ufJUP4Y_mKV`，需分享給兩位），他們的個人排程從 Drive 下載執行（依檔名在資料夾內取最新一份），升級指令見 `經紀人自動報價設定包.md`。**repo 內檔案更新後要同步上傳一份新檔到該 Drive 資料夾**（Drive 工具無法覆寫舊檔，直接同名新增即可，排程會抓最新；舊檔可手動清掉）。
 
+## 排程（兩條）
+
+| Routine | cron (UTC) | 台北時間 | 做什麼 |
+|---|---|---|---|
+| 個人社群合作邀約網頁每日更新 | `7 1 * * *` | 每天 09:07 | 完整流程：後台 Sheet、業績重建、Gmail 撈近 3 天、records.json、委刊單草稿、generate.py、部署、commit |
+| 報價草稿快線（上班時間每小時） | `0 1-11 * * 1-5` | 週一～五 09:00–19:00 每小時 | **只做報價草稿**：撈近 3 小時來信，對「最新一封是對方來信且在等報價」的案子建 Gmail 草稿、寫 queue.json、push。不碰 revenue/records/generate/部署 |
+
+為什麼要拆：來信到 Jasmine／彼得自己回覆的落差中位數約 4–5 小時（最快 43 分鐘），一天只跑一次的排程結構上追不上，草稿幾乎都會被搶先。快線把最大延遲壓到 1 小時。
+
+兩條都是「喚回同一個 session」模式（persist_session），這樣才會帶到 Gmail／Google Drive 的 connector 工具；用 create_new_session_on_fire 建的排程不會帶 connector，撈不到信也建不了草稿。
+
+去重靠 queue.json 的 thread_id：快線建完草稿會立刻 commit＋push，每日排程讀到同 thread_id 就會跳過，不會重複建。
+
 ## 分析儀表板與業績資料
 
 總覽頁與每個成員頁都有兩個分頁：「合作邀約」（邀約列表）與「分析儀表板」；成員頁業績用 O+P 欄（成員收入），總覽頁團隊業績用 J 欄（成交價未稅）（業績卡片、月別收入、收入明細、邀約品牌分類、狀態與案源分佈）。
