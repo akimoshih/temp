@@ -92,7 +92,9 @@ Jasmine／Oliver 各自信箱的委刊單草稿：同一套檔案已上傳 Googl
 
 兩條都是「喚回同一個 session」模式（persist_session），這樣才會帶到 Gmail／Google Drive 的 connector 工具；用 create_new_session_on_fire 建的排程不會帶 connector，撈不到信也建不了草稿。
 
-去重靠 queue.json 的 thread_id：快線建完草稿會立刻 commit＋push，每日排程讀到同 thread_id 就會跳過，不會重複建。
+去重靠 queue.json 的 `draft.replied_to_message_id`（**要回覆的那封來信 message id**，不是 thread_id）：快線建完草稿會立刻 commit＋push，每日排程看到同一個來信 id 就跳過。
+
+為什麼不用 thread_id：同一個信件串來回多輪是常態。若以 thread 去重，一個案子只會享有一次草稿服務——舊草稿作廢後，同串再來新的報價需求就會被永久跳過。2026-08-21 發現此漏洞後改掉（羅技活動出席案觸發）。2026-08-21 之前建立的 queue 紀錄沒有這個欄位，已回填為 null 並標註。
 
 ## 分析儀表板與業績資料
 
