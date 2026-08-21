@@ -1,0 +1,227 @@
+{
+ "note": "Jasmine／彼得回信速度觀測記錄。每筆為「對方來信 → 我方回覆」配對，時間為 UTC。confident=false 為 Gmail metadata 回傳 T00:00:00Z 的日期截斷假影，統計時排除。每日排程撈信時 append 新配對；統計執行 python3 response_times.py。",
+ "observations": [
+  {
+   "thread_id": "19fc70ed96cf930f",
+   "responder": "jasmine",
+   "case": "督洋 tokuyo × Leo",
+   "inbound_at": "2026-08-17T06:11:42Z",
+   "replied_at": "2026-08-17T06:54:14Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a00f591ac6cbdac",
+   "responder": "jasmine",
+   "case": "IKEA 戰國策 × Leo",
+   "inbound_at": "2026-08-19T06:39:36Z",
+   "replied_at": "2026-08-19T09:17:35Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19ff3459faaaf0ee",
+   "responder": "jasmine",
+   "case": "SAMSUNG P7 PSSD × Nakaw",
+   "inbound_at": "2026-08-14T07:23:56Z",
+   "replied_at": "2026-08-14T11:09:47Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a007ded973edfb9",
+   "responder": "jasmine",
+   "case": "Pernod Ricard × Leo",
+   "inbound_at": "2026-08-17T02:20:46Z",
+   "replied_at": "2026-08-17T07:12:41Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fdbdfbb117dda2",
+   "responder": "jasmine",
+   "case": "Klook × 主持成員",
+   "inbound_at": "2026-08-12T04:11:43Z",
+   "replied_at": "2026-08-12T18:03:51Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fcc631d0b8c905",
+   "responder": "jasmine",
+   "case": "SONY × plain-me × Ellie",
+   "inbound_at": "2026-08-05T08:54:29Z",
+   "replied_at": "2026-08-05T09:21:49Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fcc631d0b8c905",
+   "responder": "jasmine",
+   "case": "SONY × plain-me × Ellie（第二輪）",
+   "inbound_at": "2026-08-05T10:26:58Z",
+   "replied_at": "2026-08-05T13:51:29Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19ff345d7afa6827",
+   "responder": "jasmine",
+   "case": "Matin Kim × Ellie",
+   "inbound_at": "2026-08-13T03:31:38Z",
+   "replied_at": "2026-08-14T03:18:53Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fdc054a8c679cb",
+   "responder": "jasmine",
+   "case": "知名刮鬍刀 × Rio",
+   "inbound_at": "2026-08-11T11:32:52Z",
+   "replied_at": "2026-08-13T00:00:00Z",
+   "confident": false
+  },
+  {
+   "thread_id": "19ff057a4ecb0bc9",
+   "responder": "jasmine",
+   "case": "MSI 筆電 × Rio",
+   "inbound_at": "2026-08-11T15:12:20Z",
+   "replied_at": "2026-08-13T00:00:00Z",
+   "confident": false
+  },
+  {
+   "thread_id": "19ff346b277ef051",
+   "responder": "jasmine",
+   "case": "SUGO × 富網 × 梅伯",
+   "inbound_at": "2026-08-12T06:32:49Z",
+   "replied_at": "2026-08-13T00:00:00Z",
+   "confident": false
+  },
+  {
+   "thread_id": "19fee1ff1a739bd9",
+   "responder": "jasmine",
+   "case": "羅技活動出席 × Ellie",
+   "inbound_at": "2026-08-11T00:19:41Z",
+   "replied_at": "2026-08-12T00:00:00Z",
+   "confident": false
+  },
+  {
+   "thread_id": "19fee1f6a07b416b",
+   "responder": "jasmine",
+   "case": "瑪奇 Mobile × 主委",
+   "inbound_at": "2026-08-11T03:36:09Z",
+   "replied_at": "2026-08-12T00:00:00Z",
+   "confident": false
+  },
+  {
+   "thread_id": "19fc70ed96cf930f",
+   "responder": "jasmine",
+   "case": "督洋 tokuyo × Leo（第一輪）",
+   "inbound_at": "2026-08-04T03:39:54Z",
+   "replied_at": "2026-08-12T00:00:00Z",
+   "confident": false
+  },
+  {
+   "thread_id": "1a014122591da47b",
+   "responder": "oliver",
+   "case": "Bref 馬桶球 × YY",
+   "inbound_at": "2026-08-19T06:16:40Z",
+   "replied_at": "2026-08-19T11:19:06Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a014122591da47b",
+   "responder": "oliver",
+   "case": "Bref 馬桶球 × YY（前一輪）",
+   "inbound_at": "2026-08-18T09:43:06Z",
+   "replied_at": "2026-08-19T05:27:42Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a00d093181ba176",
+   "responder": "oliver",
+   "case": "月老文化季 × 梅伯",
+   "inbound_at": "2026-08-17T01:04:44Z",
+   "replied_at": "2026-08-20T12:00:59Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fd63b8bbf2eed4",
+   "responder": "oliver",
+   "case": "Hank Max MagGO × 梅伯",
+   "inbound_at": "2026-08-13T02:02:22Z",
+   "replied_at": "2026-08-17T11:02:54Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19ff057a4ecb0bc9",
+   "responder": "oliver",
+   "case": "MSI 筆電 × Rio",
+   "inbound_at": "2026-08-13T09:22:26Z",
+   "replied_at": "2026-08-17T10:41:10Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fcc6e510ade149",
+   "responder": "oliver",
+   "case": "原萃 × Rio",
+   "inbound_at": "2026-08-17T04:51:24Z",
+   "replied_at": "2026-08-17T11:26:51Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fcfeac51c791fa",
+   "responder": "oliver",
+   "case": "鶴茶樓 × 褲褲兔 × YY",
+   "inbound_at": "2026-08-05T08:03:18Z",
+   "replied_at": "2026-08-05T11:07:01Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fcfeac51c791fa",
+   "responder": "oliver",
+   "case": "鶴茶樓 × 褲褲兔 × YY（第二輪）",
+   "inbound_at": "2026-08-07T04:35:11Z",
+   "replied_at": "2026-08-07T06:43:09Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fcbb1027ce0cf5",
+   "responder": "oliver",
+   "case": "臺北市青年局展演 × YY",
+   "inbound_at": "2026-08-06T04:03:42Z",
+   "replied_at": "2026-08-07T06:50:42Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fcbb1027ce0cf5",
+   "responder": "oliver",
+   "case": "臺北市青年局展演 × YY（第二輪）",
+   "inbound_at": "2026-08-10T02:32:13Z",
+   "replied_at": "2026-08-10T10:54:52Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fef8484203f54c",
+   "responder": "oliver",
+   "case": "Liquid Soul 公關禮",
+   "inbound_at": "2026-08-19T10:32:47Z",
+   "replied_at": "2026-08-19T12:12:30Z",
+   "confident": true
+  }
+ ],
+ "pending": [
+  {
+   "thread_id": "1a014f7494f693ea",
+   "case": "虹韻助聽器 × Leo（$70,000 包裹價待決）",
+   "inbound_at": "2026-08-19T02:53:32Z"
+  },
+  {
+   "thread_id": "19ff3459faaaf0ee",
+   "case": "SAMSUNG P7 PSSD × Nakaw（付款條件待決）",
+   "inbound_at": "2026-08-17T03:21:43Z"
+  },
+  {
+   "thread_id": "19ff3468b089027f",
+   "case": "Samsung 社群操作 × Nakaw（$20,000＋Z Fold8 待決）",
+   "inbound_at": "2026-08-17T03:49:52Z"
+  },
+  {
+   "thread_id": "19fdc054a8c679cb",
+   "case": "知名刮鬍刀 × Rio（已有草稿 T2026-0010 未寄）",
+   "inbound_at": "2026-08-14T05:59:58Z"
+  }
+ ]
+}

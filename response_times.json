@@ -1,0 +1,59 @@
+{
+ "updated": "2026-08-21",
+ "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
+ "sample_size": 19,
+ "excluded_low_confidence": 6,
+ "by_person": {
+  "jasmine": {
+   "n": 8,
+   "median_min": 215.2,
+   "mean_min": 401.2,
+   "p90_min": 1010.7,
+   "work_median_min": 187.0,
+   "work_mean_min": 220.5,
+   "within_4h_pct": 62.5,
+   "fastest_min": 27.3,
+   "slowest_min": 1427.2
+  },
+  "oliver": {
+   "n": 11,
+   "median_min": 502.6,
+   "mean_min": 1956.3,
+   "p90_min": 5838.7,
+   "work_median_min": 368.6,
+   "work_mean_min": 728.2,
+   "within_4h_pct": 27.3,
+   "fastest_min": 99.7,
+   "slowest_min": 6300.5
+  }
+ },
+ "overall": {
+  "n": 19,
+  "median_min": 302.4,
+  "mean_min": 1301.5,
+  "work_median_min": 291.9,
+  "within_4h_pct": 42.1
+ },
+ "pending": [
+  {
+   "thread_id": "1a014f7494f693ea",
+   "case": "虹韻助聽器 × Leo（$70,000 包裹價待決）",
+   "inbound_at": "2026-08-19T02:53:32Z"
+  },
+  {
+   "thread_id": "19ff3459faaaf0ee",
+   "case": "SAMSUNG P7 PSSD × Nakaw（付款條件待決）",
+   "inbound_at": "2026-08-17T03:21:43Z"
+  },
+  {
+   "thread_id": "19ff3468b089027f",
+   "case": "Samsung 社群操作 × Nakaw（$20,000＋Z Fold8 待決）",
+   "inbound_at": "2026-08-17T03:49:52Z"
+  },
+  {
+   "thread_id": "19fdc054a8c679cb",
+   "case": "知名刮鬍刀 × Rio（已有草稿 T2026-0010 未寄）",
+   "inbound_at": "2026-08-14T05:59:58Z"
+  }
+ ]
+}

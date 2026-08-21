@@ -73,6 +73,14 @@ workspace 預設讀 `~/.config/vibehost/config.json`；該檔不存在時用 `VI
 
 Jasmine／Oliver 各自信箱的委刊單草稿：同一套檔案已上傳 Google Drive 資料夾「委刊單自動化」（folder id `1ZD0zGP6MIVv1vEq9qxaY_ufJUP4Y_mKV`，需分享給兩位），他們的個人排程從 Drive 下載執行（依檔名在資料夾內取最新一份），升級指令見 `經紀人自動報價設定包.md`。**repo 內檔案更新後要同步上傳一份新檔到該 Drive 資料夾**（Drive 工具無法覆寫舊檔，直接同名新增即可，排程會抓最新；舊檔可手動清掉）。
 
+## 回信速度統計
+
+- `response_log.json`：觀測記錄。每筆是一個「對方來信 → Jasmine／彼得回覆」配對（`thread_id` / `responder` / `case` / `inbound_at` / `replied_at` / `confident`），另有 `pending` 陣列記錄對方來信後我方仍未回覆的案子。每日排程步驟 5b 會 append 新配對。
+- `response_times.py`：統計。`python3 response_times.py`（加 `--list` 逐筆列出）會更新 `response_times.json`。
+- 兩種延遲都算：`raw` 是實際經過時間，`work` 只計台北週一～五 09:00–19:00 的上班時間 —— 晚上來信隔天早上回，raw 看起來很久，work 才是真正的反應速度。
+
+**注意 Gmail 的日期截斷假影**：部分訊息的 metadata 時間戳會回傳 `T00:00:00Z`（只有日期、時間被截掉）。這類配對必須標 `confident: false`，統計時會自動排除，否則會嚴重高估回信時間。
+
 ## 排程（兩條）
 
 | Routine | cron (UTC) | 台北時間 | 做什麼 |
