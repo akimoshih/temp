@@ -200,14 +200,25 @@
    "inbound_at": "2026-08-19T10:32:47Z",
    "replied_at": "2026-08-19T12:12:30Z",
    "confident": true
+  },
+  {
+   "thread_id": "1a01f25bd0971e89",
+   "responder": "oliver",
+   "case": "Jamikuki KUKI² × 梅伯",
+   "inbound_at": "2026-08-21T06:36:02Z",
+   "replied_at": "2026-08-21T06:48:25Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a014f7494f693ea",
+   "responder": "jasmine",
+   "case": "虹韻助聽器 × Leo",
+   "inbound_at": "2026-08-19T02:53:32Z",
+   "replied_at": "2026-08-21T00:00:00Z",
+   "confident": false
   }
  ],
  "pending": [
-  {
-   "thread_id": "1a014f7494f693ea",
-   "case": "虹韻助聽器 × Leo（$70,000 包裹價待決）",
-   "inbound_at": "2026-08-19T02:53:32Z"
-  },
   {
    "thread_id": "19ff3459faaaf0ee",
    "case": "SAMSUNG P7 PSSD × Nakaw（付款條件待決）",
@@ -222,6 +233,11 @@
    "thread_id": "19fdc054a8c679cb",
    "case": "知名刮鬍刀 × Rio（已有草稿 T2026-0010 未寄）",
    "inbound_at": "2026-08-14T05:59:58Z"
+  },
+  {
+   "thread_id": "1a01f1849a92c8bc",
+   "case": "miraDry 清新微波 × 梅伯（2 萬預算讓價待決）",
+   "inbound_at": "2026-08-21T02:44:36Z"
   }
  ]
 }

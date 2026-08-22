@@ -43,10 +43,11 @@ if not TOKEN:
     cfg = json.load(open(cfg_path))
     TOKEN = cfg["token"]
 
-WS = os.environ.get("VIBEHOST_WORKSPACE_ID") or cfg.get("currentWorkspaceId")
-WS_SLUG = os.environ.get("VIBEHOST_WORKSPACE") or cfg.get("currentWorkspace")
-if not WS or not WS_SLUG:
-    raise SystemExit("DEPLOY ABORTED: 找不到 workspace（設定 VIBEHOST_WORKSPACE_ID / VIBEHOST_WORKSPACE，或保留 ~/.config/vibehost/config.json）")
+# workspace 不是機密（README 已記載），容器重建後 config.json 與環境變數都可能不在，
+# 所以最後退回這組已知常數，避免每次重建都要重設才能部署。
+WS_DEFAULT, WS_SLUG_DEFAULT = "r1igkcoyt2yx0kjt7y91zv21", "dcard"
+WS = os.environ.get("VIBEHOST_WORKSPACE_ID") or cfg.get("currentWorkspaceId") or WS_DEFAULT
+WS_SLUG = os.environ.get("VIBEHOST_WORKSPACE") or cfg.get("currentWorkspace") or WS_SLUG_DEFAULT
 
 import ssl, urllib.error
 proxy = os.environ.get("HTTPS_PROXY")

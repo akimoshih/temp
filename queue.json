@@ -335,5 +335,28 @@
    "draft_id": "r7640285705565084463",
    "replied_to_message_id": "1a00d4072ecf9782"
   }
+ },
+ {
+  "task_id": "T2026-0013",
+  "type": "委刊單",
+  "thread_id": "1a014f7494f693ea",
+  "case": "虹韻助聽器 睡眠檢測（koodata）× Leo",
+  "assignee": "jasmine.wang@dcard.cc",
+  "status": "草稿已建立",
+  "created": "2026-08-22",
+  "note": "Jasmine 8/21 確認以 $70,000（未稅）成交，已產出委刊單 V20260822-01；甲方公司名稱／地址／電話／統編／簽約代表人對方尚未提供故留空，草稿內文一併索取。",
+  "drive_url": null,
+  "note_drive": "PDF 未上傳 Drive（base64 內嵌成本過高），改以 SendUserFile 直接交付 Akimo",
+  "draft": {
+   "to": [
+    "angelachang@koodata.com.tw"
+   ],
+   "cc": [
+    "jasmine.wang@dcard.cc"
+   ],
+   "subject": "Re: 【koodata 商案合作】虹韻助聽器 睡眠檢測_合作邀約 / Leo",
+   "draft_id": "r-4225160100230126942",
+   "replied_to_message_id": "1a0219e9460cdf45"
+  }
  }
 ]
