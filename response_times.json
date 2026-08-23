@@ -1,5 +1,5 @@
 {
- "updated": "2026-08-22",
+ "updated": "2026-08-23",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
  "sample_size": 20,
  "excluded_low_confidence": 7,
@@ -54,6 +54,11 @@
    "thread_id": "1a01f1849a92c8bc",
    "case": "miraDry 清新微波 × 梅伯（2 萬預算讓價待決）",
    "inbound_at": "2026-08-21T02:44:36Z"
+  },
+  {
+   "thread_id": "1a0230f23c73ce89",
+   "case": "Uber Eats 品牌好友計畫 × Rio（抵用券換限動，待決）",
+   "inbound_at": "2026-08-22T05:22:08Z"
   }
  ]
 }
