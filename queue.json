@@ -403,5 +403,27 @@
    "draft_id": "r432481498511284474",
    "replied_to_message_id": "1a036eed7569d709"
   }
+ },
+ {
+  "task_id": "T2026-0016",
+  "type": "報價回信",
+  "thread_id": "19eab6895d9b0753",
+  "case": "蘇格蘭威士忌品牌 × 梅伯（加購限動詢價）",
+  "assignee": "oliver",
+  "status": "草稿已建立",
+  "created": "2026-08-25",
+  "note": "言射 Elsie 8/25 確認 Final 版無問題、影片今日上線，詢問上線時間並問是否能同步發一則限動。限動屬原委刊項目（IG Reels ×1）外的加購，依官方價目表梅伯級距（50,001-80,000）報靜態 $12,000／動態 $20,000；上線時間以【請確認】標示。",
+  "draft": {
+   "to": [
+    "social@hsiehad.com"
+   ],
+   "cc": [
+    "jasmine.wang@dcard.cc",
+    "akimo@dcard.cc"
+   ],
+   "subject": "Re: 【合作邀約】蘇格蘭威士忌品牌ｘ梅伯｜短影音合作企劃",
+   "draft_id": "r-3736313521619670728",
+   "replied_to_message_id": "1a03747f99f9886e"
+  }
  }
 ]
