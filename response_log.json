@@ -216,6 +216,30 @@
    "inbound_at": "2026-08-19T02:53:32Z",
    "replied_at": "2026-08-21T00:00:00Z",
    "confident": false
+  },
+  {
+   "thread_id": "1a01f1849a92c8bc",
+   "responder": "oliver",
+   "case": "miraDry 清新微波 × 梅伯",
+   "inbound_at": "2026-08-21T02:44:36Z",
+   "replied_at": "2026-08-24T09:34:14Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19fcbb1027ce0cf5",
+   "responder": "oliver",
+   "case": "臺北市青年局聯合社團展演 × YY",
+   "inbound_at": "2026-08-17T08:35:39Z",
+   "replied_at": "2026-08-24T06:07:59Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19eab6895d9b0753",
+   "responder": "oliver",
+   "case": "蘇格蘭威士忌 × 梅伯",
+   "inbound_at": "2026-08-21T11:38:45Z",
+   "replied_at": "2026-08-24T05:37:38Z",
+   "confident": true
   }
  ],
  "pending": [
@@ -235,14 +259,34 @@
    "inbound_at": "2026-08-14T05:59:58Z"
   },
   {
-   "thread_id": "1a01f1849a92c8bc",
-   "case": "miraDry 清新微波 × 梅伯（2 萬預算讓價待決）",
-   "inbound_at": "2026-08-21T02:44:36Z"
-  },
-  {
    "thread_id": "1a0230f23c73ce89",
    "case": "Uber Eats 品牌好友計畫 × Rio（抵用券換限動，待決）",
    "inbound_at": "2026-08-22T05:22:08Z"
+  },
+  {
+   "thread_id": "19fcfeac51c791fa",
+   "case": "鶴茶樓×褲褲兔 × YY（回簽委刊單＋開發票，已轉 Alina）",
+   "inbound_at": "2026-08-24T02:54:23Z"
+  },
+  {
+   "thread_id": "19f654d9fe2b7332",
+   "case": "多力多滋香菜祭 × Leo（對方催委刊單）",
+   "inbound_at": "2026-08-24T06:24:39Z"
+  },
+  {
+   "thread_id": "19eab6895d9b0753",
+   "case": "蘇格蘭威士忌 × 梅伯（普渡片段通過，待改 logo）",
+   "inbound_at": "2026-08-24T06:47:24Z"
+  },
+  {
+   "thread_id": "1a0336f4bc1fee4a",
+   "case": "瓩設計獎 × Leo（8/26 前要評審照片／Title／評分標準／合約確認）",
+   "inbound_at": "2026-08-24T11:01:53Z"
+  },
+  {
+   "thread_id": "1a01f25bd0971e89",
+   "case": "Jamikuki KUKI² × 梅伯（禮盒寄出前告知，無需回覆）",
+   "inbound_at": "2026-08-24T06:22:26Z"
   }
  ]
 }

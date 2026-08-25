@@ -358,5 +358,28 @@
    "draft_id": "r-4225160100230126942",
    "replied_to_message_id": "1a0219e9460cdf45"
   }
+ },
+ {
+  "task_id": "T2026-0014",
+  "type": "委刊單",
+  "thread_id": "19f654d9fe2b7332",
+  "case": "多力多滋香菜 x 南機場夜市香菜祭 口碑留言 × Leo",
+  "assignee": "jasmine",
+  "status": "草稿已建立",
+  "created": "2026-08-25",
+  "note": "爵嘉 8/20 確認成交（Threads 指定貼文留言 ×1，$15,750 發票含稅／未稅 $15,000），8/24 來信催我方委刊單；已產出 V20260825-01 並建立回信草稿。",
+  "drive_url": null,
+  "drive_url_note": "PDF 137KB（base64 約 183K 字元），無法可靠內嵌上傳 Drive，改以 SendUserFile 直接交付 Akimo；草稿內部備註已說明。",
+  "draft": {
+   "to": [
+    "chien@excttw.com"
+   ],
+   "cc": [
+    "akimo@dcard.cc"
+   ],
+   "subject": "Re: 回覆: 【Excellent】口碑邀約_多力多滋香菜x南機場夜市香菜祭",
+   "draft_id": "r-1931837030360264602",
+   "replied_to_message_id": "1a03271533a8bc95"
+  }
  }
 ]

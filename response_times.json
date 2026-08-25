@@ -1,7 +1,7 @@
 {
- "updated": "2026-08-23",
+ "updated": "2026-08-25",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 20,
+ "sample_size": 23,
  "excluded_low_confidence": 7,
  "by_person": {
   "jasmine": {
@@ -16,23 +16,23 @@
    "slowest_min": 1427.2
   },
   "oliver": {
-   "n": 12,
-   "median_min": 449.0,
-   "mean_min": 1794.3,
-   "p90_min": 5752.5,
-   "work_median_min": 356.6,
-   "work_mean_min": 668.5,
-   "within_4h_pct": 33.3,
+   "n": 15,
+   "median_min": 1184.6,
+   "mean_min": 2676.8,
+   "p90_min": 6115.8,
+   "work_median_min": 368.6,
+   "work_mean_min": 810.8,
+   "within_4h_pct": 26.7,
    "fastest_min": 12.4,
-   "slowest_min": 6300.5
+   "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 20,
-  "median_min": 297.2,
-  "mean_min": 1237.0,
-  "work_median_min": 287.6,
-  "within_4h_pct": 45.0
+  "n": 23,
+  "median_min": 395.4,
+  "mean_min": 1885.3,
+  "work_median_min": 291.9,
+  "within_4h_pct": 39.1
  },
  "pending": [
   {
@@ -51,14 +51,34 @@
    "inbound_at": "2026-08-14T05:59:58Z"
   },
   {
-   "thread_id": "1a01f1849a92c8bc",
-   "case": "miraDry 清新微波 × 梅伯（2 萬預算讓價待決）",
-   "inbound_at": "2026-08-21T02:44:36Z"
-  },
-  {
    "thread_id": "1a0230f23c73ce89",
    "case": "Uber Eats 品牌好友計畫 × Rio（抵用券換限動，待決）",
    "inbound_at": "2026-08-22T05:22:08Z"
+  },
+  {
+   "thread_id": "19fcfeac51c791fa",
+   "case": "鶴茶樓×褲褲兔 × YY（回簽委刊單＋開發票，已轉 Alina）",
+   "inbound_at": "2026-08-24T02:54:23Z"
+  },
+  {
+   "thread_id": "19f654d9fe2b7332",
+   "case": "多力多滋香菜祭 × Leo（對方催委刊單）",
+   "inbound_at": "2026-08-24T06:24:39Z"
+  },
+  {
+   "thread_id": "19eab6895d9b0753",
+   "case": "蘇格蘭威士忌 × 梅伯（普渡片段通過，待改 logo）",
+   "inbound_at": "2026-08-24T06:47:24Z"
+  },
+  {
+   "thread_id": "1a0336f4bc1fee4a",
+   "case": "瓩設計獎 × Leo（8/26 前要評審照片／Title／評分標準／合約確認）",
+   "inbound_at": "2026-08-24T11:01:53Z"
+  },
+  {
+   "thread_id": "1a01f25bd0971e89",
+   "case": "Jamikuki KUKI² × 梅伯（禮盒寄出前告知，無需回覆）",
+   "inbound_at": "2026-08-24T06:22:26Z"
   }
  ]
 }
