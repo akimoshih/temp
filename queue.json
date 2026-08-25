@@ -425,5 +425,30 @@
    "draft_id": "r-3736313521619670728",
    "replied_to_message_id": "1a03747f99f9886e"
   }
+ },
+ {
+  "task_id": "T2026-0017",
+  "type": "報價回信",
+  "thread_id": "19ff86ca3d75a293",
+  "case": "Disney+ 聯盟式 Influencer 合作計畫 × YY",
+  "assignee": "jasmine",
+  "status": "草稿已建立",
+  "created": "2026-08-25",
+  "note": "WPP Media 8/25 回覆接受我方 8/13 報價中的 1* IG Post $45,000(net)，並提出三組待確認事項：9 月初上線檔期、改用 Impact 平台註冊與收款、內容方向與草稿審閱。草稿確認項目與金額（沿用我方原報價），檔期與 Impact 收款方式以【請確認】標示——付款改走 Impact 而非委刊單／發票屬財務流程決策，需人工拍板；另指出追蹤連結放 Link in Bio 屬原項目外露出。",
+  "draft": {
+   "to": [
+    "eepeng.wong@wppmedia.com"
+   ],
+   "cc": [
+    "Vinci.Cho@disney.com",
+    "nurhuda.ramle@wppmedia.com",
+    "jasmine.tsai@disney.com",
+    "akimo@dcard.cc",
+    "oliver.zeng@dcard.cc"
+   ],
+   "subject": "Re: 【合作詢問】Disney+ 聯盟式 Influencer 合作計畫",
+   "draft_id": "r7695007788749413641",
+   "replied_to_message_id": "1a03804c9082e0a0"
+  }
  }
 ]
