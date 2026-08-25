@@ -381,5 +381,27 @@
    "draft_id": "r-1931837030360264602",
    "replied_to_message_id": "1a03271533a8bc95"
   }
+ },
+ {
+  "task_id": "T2026-0015",
+  "type": "報價回信",
+  "thread_id": "1a036ee24538f6cf",
+  "case": "DJI Osmo Pocket 3S × Ellie",
+  "assignee": "jasmine",
+  "status": "草稿已建立",
+  "created": "2026-08-25",
+  "note": "DJI 8/25 連發兩封確認合作細節（後一封 11:20 追加報酬 USD 2,500 含稅，以後者為準），要求我方確認條件並回覆收件人姓名／地址／電話。條件係雙方在 WhatsApp 議定、非價目表可查，草稿內以【請確認】標示報酬與收件資訊，並同步詢問保密協議進度。",
+  "draft": {
+   "to": [
+    "rainy.li@dji.com"
+   ],
+   "cc": [
+    "miguel.ji@dji.com",
+    "akimo@dcard.cc"
+   ],
+   "subject": "Re: 答复: ▰▰ EXTERNAL ▰▰ Re: 【DJI】合作邀约 | yuhsuan.ee | Osmo Pocket 3S",
+   "draft_id": "r432481498511284474",
+   "replied_to_message_id": "1a036eed7569d709"
+  }
  }
 ]
