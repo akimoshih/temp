@@ -240,6 +240,22 @@
    "inbound_at": "2026-08-21T11:38:45Z",
    "replied_at": "2026-08-24T05:37:38Z",
    "confident": true
+  },
+  {
+   "thread_id": "19eab6895d9b0753",
+   "responder": "oliver",
+   "case": "蘇格蘭威士忌 × 梅伯",
+   "inbound_at": "2026-08-24T06:47:24Z",
+   "replied_at": "2026-08-24T10:42:31Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19eab6895d9b0753",
+   "responder": "oliver",
+   "case": "蘇格蘭威士忌 × 梅伯",
+   "inbound_at": "2026-08-25T04:57:05Z",
+   "replied_at": "2026-08-25T07:03:38Z",
+   "confident": true
   }
  ],
  "pending": [
@@ -274,11 +290,6 @@
    "inbound_at": "2026-08-24T06:24:39Z"
   },
   {
-   "thread_id": "19eab6895d9b0753",
-   "case": "蘇格蘭威士忌 × 梅伯（普渡片段通過，待改 logo）",
-   "inbound_at": "2026-08-24T06:47:24Z"
-  },
-  {
    "thread_id": "1a0336f4bc1fee4a",
    "case": "瓩設計獎 × Leo（8/26 前要評審照片／Title／評分標準／合約確認）",
    "inbound_at": "2026-08-24T11:01:53Z"
@@ -287,6 +298,21 @@
    "thread_id": "1a01f25bd0971e89",
    "case": "Jamikuki KUKI² × 梅伯（禮盒寄出前告知，無需回覆）",
    "inbound_at": "2026-08-24T06:22:26Z"
+  },
+  {
+   "thread_id": "1a036ee24538f6cf",
+   "case": "DJI Osmo Pocket 3S × Ellie（確認條件＋收件資訊，草稿 T2026-0015 未寄）",
+   "inbound_at": "2026-08-25T03:20:14Z"
+  },
+  {
+   "thread_id": "19ff86ca3d75a293",
+   "case": "Disney+ × YY（Impact 收款方式待決，草稿 T2026-0017 未寄）",
+   "inbound_at": "2026-08-25T08:23:43Z"
+  },
+  {
+   "thread_id": "1a0385d7b359969a",
+   "case": "米其林 PS4S × Andrew（非付費體驗交換，待我方評估）",
+   "inbound_at": "2026-08-25T12:04:17Z"
   }
  ]
 }

@@ -1,7 +1,7 @@
 {
- "updated": "2026-08-25",
+ "updated": "2026-08-26",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 23,
+ "sample_size": 25,
  "excluded_low_confidence": 7,
  "by_person": {
   "jasmine": {
@@ -16,23 +16,23 @@
    "slowest_min": 1427.2
   },
   "oliver": {
-   "n": 15,
-   "median_min": 1184.6,
-   "mean_min": 2676.8,
-   "p90_min": 6115.8,
-   "work_median_min": 368.6,
-   "work_mean_min": 810.8,
-   "within_4h_pct": 26.7,
+   "n": 17,
+   "median_min": 502.6,
+   "mean_min": 2383.2,
+   "p90_min": 6023.5,
+   "work_median_min": 344.6,
+   "work_mean_min": 736.7,
+   "within_4h_pct": 35.3,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 23,
-  "median_min": 395.4,
-  "mean_min": 1885.3,
-  "work_median_min": 291.9,
-  "within_4h_pct": 39.1
+  "n": 25,
+  "median_min": 302.4,
+  "mean_min": 1748.9,
+  "work_median_min": 283.3,
+  "within_4h_pct": 44.0
  },
  "pending": [
   {
@@ -66,11 +66,6 @@
    "inbound_at": "2026-08-24T06:24:39Z"
   },
   {
-   "thread_id": "19eab6895d9b0753",
-   "case": "蘇格蘭威士忌 × 梅伯（普渡片段通過，待改 logo）",
-   "inbound_at": "2026-08-24T06:47:24Z"
-  },
-  {
    "thread_id": "1a0336f4bc1fee4a",
    "case": "瓩設計獎 × Leo（8/26 前要評審照片／Title／評分標準／合約確認）",
    "inbound_at": "2026-08-24T11:01:53Z"
@@ -79,6 +74,21 @@
    "thread_id": "1a01f25bd0971e89",
    "case": "Jamikuki KUKI² × 梅伯（禮盒寄出前告知，無需回覆）",
    "inbound_at": "2026-08-24T06:22:26Z"
+  },
+  {
+   "thread_id": "1a036ee24538f6cf",
+   "case": "DJI Osmo Pocket 3S × Ellie（確認條件＋收件資訊，草稿 T2026-0015 未寄）",
+   "inbound_at": "2026-08-25T03:20:14Z"
+  },
+  {
+   "thread_id": "19ff86ca3d75a293",
+   "case": "Disney+ × YY（Impact 收款方式待決，草稿 T2026-0017 未寄）",
+   "inbound_at": "2026-08-25T08:23:43Z"
+  },
+  {
+   "thread_id": "1a0385d7b359969a",
+   "case": "米其林 PS4S × Andrew（非付費體驗交換，待我方評估）",
+   "inbound_at": "2026-08-25T12:04:17Z"
   }
  ]
 }
