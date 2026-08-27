@@ -1,45 +1,40 @@
 {
- "updated": "2026-08-26",
+ "updated": "2026-08-27",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 25,
+ "sample_size": 28,
  "excluded_low_confidence": 7,
  "by_person": {
   "jasmine": {
-   "n": 8,
-   "median_min": 215.2,
-   "mean_min": 401.2,
-   "p90_min": 1010.7,
-   "work_median_min": 187.0,
-   "work_mean_min": 220.5,
-   "within_4h_pct": 62.5,
+   "n": 10,
+   "median_min": 207.7,
+   "mean_min": 359.7,
+   "p90_min": 891.6,
+   "work_median_min": 193.6,
+   "work_mean_min": 215.2,
+   "within_4h_pct": 70.0,
    "fastest_min": 27.3,
    "slowest_min": 1427.2
   },
   "oliver": {
-   "n": 17,
-   "median_min": 502.6,
-   "mean_min": 2383.2,
-   "p90_min": 6023.5,
-   "work_median_min": 344.6,
-   "work_mean_min": 736.7,
-   "within_4h_pct": 35.3,
+   "n": 18,
+   "median_min": 843.6,
+   "mean_min": 2574.9,
+   "p90_min": 5977.3,
+   "work_median_min": 356.6,
+   "work_mean_min": 781.1,
+   "within_4h_pct": 33.3,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 25,
-  "median_min": 302.4,
-  "mean_min": 1748.9,
-  "work_median_min": 283.3,
-  "within_4h_pct": 44.0
+  "n": 28,
+  "median_min": 297.2,
+  "mean_min": 1783.8,
+  "work_median_min": 280.5,
+  "within_4h_pct": 46.4
  },
  "pending": [
-  {
-   "thread_id": "19ff3459faaaf0ee",
-   "case": "SAMSUNG P7 PSSD × Nakaw（付款條件待決）",
-   "inbound_at": "2026-08-17T03:21:43Z"
-  },
   {
    "thread_id": "19ff3468b089027f",
    "case": "Samsung 社群操作 × Nakaw（$20,000＋Z Fold8 待決）",
@@ -49,11 +44,6 @@
    "thread_id": "19fdc054a8c679cb",
    "case": "知名刮鬍刀 × Rio（已有草稿 T2026-0010 未寄）",
    "inbound_at": "2026-08-14T05:59:58Z"
-  },
-  {
-   "thread_id": "1a0230f23c73ce89",
-   "case": "Uber Eats 品牌好友計畫 × Rio（抵用券換限動，待決）",
-   "inbound_at": "2026-08-22T05:22:08Z"
   },
   {
    "thread_id": "19fcfeac51c791fa",
@@ -89,6 +79,31 @@
    "thread_id": "1a0385d7b359969a",
    "case": "米其林 PS4S × Andrew（非付費體驗交換，待我方評估）",
    "inbound_at": "2026-08-25T12:04:17Z"
+  },
+  {
+   "thread_id": "19ff3459faaaf0ee",
+   "case": "SAMSUNG P7 PSSD × Nakaw（對方 9/7 前回覆，球在對方）",
+   "inbound_at": "2026-08-26T02:33:18Z"
+  },
+  {
+   "thread_id": "19ef320c649eab52",
+   "case": "soundcore Space 2 × YY（8/28 前要交結案後台數據）",
+   "inbound_at": "2026-08-26T05:09:19Z"
+  },
+  {
+   "thread_id": "1a014122591da47b",
+   "case": "德國漢高 Bref 馬桶球（對方請我方稍等，無需回覆）",
+   "inbound_at": "2026-08-26T04:38:17Z"
+  },
+  {
+   "thread_id": "1a00f591ac6cbdac",
+   "case": "IKEA×XBOX YXSTABY × Leo（產品照同步，無需回覆）",
+   "inbound_at": "2026-08-26T01:34:45Z"
+  },
+  {
+   "thread_id": "1a0230f23c73ce89",
+   "case": "Uber Eats 品牌好友計畫 × Rio（10–12 月、免數據，待我方決定）",
+   "inbound_at": "2026-08-26T08:47:38Z"
   }
  ]
 }

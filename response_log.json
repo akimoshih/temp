@@ -256,14 +256,33 @@
    "inbound_at": "2026-08-25T04:57:05Z",
    "replied_at": "2026-08-25T07:03:38Z",
    "confident": true
+  },
+  {
+   "thread_id": "19ff3459faaaf0ee",
+   "responder": "jasmine",
+   "case": "SAMSUNG P7 PSSD × Nakaw",
+   "inbound_at": "2026-08-17T03:21:43Z",
+   "replied_at": "2026-08-17T06:52:30Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a03b39002d36778",
+   "responder": "jasmine",
+   "case": "美研社（統一數網）× Ellie",
+   "inbound_at": "2026-08-26T01:44:01Z",
+   "replied_at": "2026-08-26T04:40:20Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a0230f23c73ce89",
+   "responder": "oliver",
+   "case": "Uber Eats 品牌好友計畫 × Rio",
+   "inbound_at": "2026-08-22T05:22:08Z",
+   "replied_at": "2026-08-26T06:37:07Z",
+   "confident": true
   }
  ],
  "pending": [
-  {
-   "thread_id": "19ff3459faaaf0ee",
-   "case": "SAMSUNG P7 PSSD × Nakaw（付款條件待決）",
-   "inbound_at": "2026-08-17T03:21:43Z"
-  },
   {
    "thread_id": "19ff3468b089027f",
    "case": "Samsung 社群操作 × Nakaw（$20,000＋Z Fold8 待決）",
@@ -273,11 +292,6 @@
    "thread_id": "19fdc054a8c679cb",
    "case": "知名刮鬍刀 × Rio（已有草稿 T2026-0010 未寄）",
    "inbound_at": "2026-08-14T05:59:58Z"
-  },
-  {
-   "thread_id": "1a0230f23c73ce89",
-   "case": "Uber Eats 品牌好友計畫 × Rio（抵用券換限動，待決）",
-   "inbound_at": "2026-08-22T05:22:08Z"
   },
   {
    "thread_id": "19fcfeac51c791fa",
@@ -313,6 +327,31 @@
    "thread_id": "1a0385d7b359969a",
    "case": "米其林 PS4S × Andrew（非付費體驗交換，待我方評估）",
    "inbound_at": "2026-08-25T12:04:17Z"
+  },
+  {
+   "thread_id": "19ff3459faaaf0ee",
+   "case": "SAMSUNG P7 PSSD × Nakaw（對方 9/7 前回覆，球在對方）",
+   "inbound_at": "2026-08-26T02:33:18Z"
+  },
+  {
+   "thread_id": "19ef320c649eab52",
+   "case": "soundcore Space 2 × YY（8/28 前要交結案後台數據）",
+   "inbound_at": "2026-08-26T05:09:19Z"
+  },
+  {
+   "thread_id": "1a014122591da47b",
+   "case": "德國漢高 Bref 馬桶球（對方請我方稍等，無需回覆）",
+   "inbound_at": "2026-08-26T04:38:17Z"
+  },
+  {
+   "thread_id": "1a00f591ac6cbdac",
+   "case": "IKEA×XBOX YXSTABY × Leo（產品照同步，無需回覆）",
+   "inbound_at": "2026-08-26T01:34:45Z"
+  },
+  {
+   "thread_id": "1a0230f23c73ce89",
+   "case": "Uber Eats 品牌好友計畫 × Rio（10–12 月、免數據，待我方決定）",
+   "inbound_at": "2026-08-26T08:47:38Z"
   }
  ]
 }
