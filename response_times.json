@@ -1,8 +1,8 @@
 {
- "updated": "2026-08-27",
+ "updated": "2026-08-28",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 28,
- "excluded_low_confidence": 7,
+ "sample_size": 34,
+ "excluded_low_confidence": 8,
  "by_person": {
   "jasmine": {
    "n": 10,
@@ -16,23 +16,23 @@
    "slowest_min": 1427.2
   },
   "oliver": {
-   "n": 18,
+   "n": 24,
    "median_min": 843.6,
-   "mean_min": 2574.9,
-   "p90_min": 5977.3,
-   "work_median_min": 356.6,
-   "work_mean_min": 781.1,
+   "mean_min": 2227.7,
+   "p90_min": 5837.6,
+   "work_median_min": 375.2,
+   "work_mean_min": 705.5,
    "within_4h_pct": 33.3,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 28,
-  "median_min": 297.2,
-  "mean_min": 1783.8,
-  "work_median_min": 280.5,
-  "within_4h_pct": 46.4
+  "n": 34,
+  "median_min": 348.9,
+  "mean_min": 1678.3,
+  "work_median_min": 287.6,
+  "within_4h_pct": 44.1
  },
  "pending": [
   {
@@ -71,16 +71,6 @@
    "inbound_at": "2026-08-25T03:20:14Z"
   },
   {
-   "thread_id": "19ff86ca3d75a293",
-   "case": "Disney+ × YY（Impact 收款方式待決，草稿 T2026-0017 未寄）",
-   "inbound_at": "2026-08-25T08:23:43Z"
-  },
-  {
-   "thread_id": "1a0385d7b359969a",
-   "case": "米其林 PS4S × Andrew（非付費體驗交換，待我方評估）",
-   "inbound_at": "2026-08-25T12:04:17Z"
-  },
-  {
    "thread_id": "19ff3459faaaf0ee",
    "case": "SAMSUNG P7 PSSD × Nakaw（對方 9/7 前回覆，球在對方）",
    "inbound_at": "2026-08-26T02:33:18Z"
@@ -91,11 +81,6 @@
    "inbound_at": "2026-08-26T05:09:19Z"
   },
   {
-   "thread_id": "1a014122591da47b",
-   "case": "德國漢高 Bref 馬桶球（對方請我方稍等，無需回覆）",
-   "inbound_at": "2026-08-26T04:38:17Z"
-  },
-  {
    "thread_id": "1a00f591ac6cbdac",
    "case": "IKEA×XBOX YXSTABY × Leo（產品照同步，無需回覆）",
    "inbound_at": "2026-08-26T01:34:45Z"
@@ -104,6 +89,31 @@
    "thread_id": "1a0230f23c73ce89",
    "case": "Uber Eats 品牌好友計畫 × Rio（10–12 月、免數據，待我方決定）",
    "inbound_at": "2026-08-26T08:47:38Z"
+  },
+  {
+   "thread_id": "19ff86ca3d75a293",
+   "case": "Disney+ × YY（9 月中檔期／Impact 開戶收款／Link in Bio 置放，三項待人工決策）",
+   "inbound_at": "2026-08-27T10:15:18Z"
+  },
+  {
+   "thread_id": "1a0385d7b359969a",
+   "case": "米其林 PS4S × Andrew（對方接受 YT 長影音交換、請預留 10/7，後續改走 LINE）",
+   "inbound_at": "2026-08-27T10:30:14Z"
+  },
+  {
+   "thread_id": "1a014122591da47b",
+   "case": "德國漢高 Bref 馬桶球 × YY（合約用印＋存摺影本待法務／彼得處理）",
+   "inbound_at": "2026-08-27T08:19:10Z"
+  },
+  {
+   "thread_id": "19f916d0e7680c0a",
+   "case": "三得利芝麻明 EX × Leo（品牌選擇他人，PASS 通知，無需回覆）",
+   "inbound_at": "2026-08-27T06:47:11Z"
+  },
+  {
+   "thread_id": "1a03e00d104f94e6",
+   "case": "Mercari Q4 廣告短片 × 梅伯（對方回報客戶中，球在對方）",
+   "inbound_at": "2026-08-27T02:43:41Z"
   }
  ]
 }
