@@ -1,38 +1,38 @@
 {
- "updated": "2026-08-28",
+ "updated": "2026-08-29",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 34,
+ "sample_size": 41,
  "excluded_low_confidence": 8,
  "by_person": {
   "jasmine": {
-   "n": 10,
-   "median_min": 207.7,
-   "mean_min": 359.7,
-   "p90_min": 891.6,
-   "work_median_min": 193.6,
-   "work_mean_min": 215.2,
-   "within_4h_pct": 70.0,
+   "n": 14,
+   "median_min": 258.9,
+   "mean_min": 1452.5,
+   "p90_min": 3846.3,
+   "work_median_min": 254.0,
+   "work_mean_min": 603.5,
+   "within_4h_pct": 50.0,
    "fastest_min": 27.3,
-   "slowest_min": 1427.2
+   "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 24,
-   "median_min": 843.6,
-   "mean_min": 2227.7,
-   "p90_min": 5837.6,
-   "work_median_min": 375.2,
-   "work_mean_min": 705.5,
-   "within_4h_pct": 33.3,
+   "n": 27,
+   "median_min": 1358.6,
+   "mean_min": 2186.1,
+   "p90_min": 5836.5,
+   "work_median_min": 502.6,
+   "work_mean_min": 708.6,
+   "within_4h_pct": 29.6,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 34,
-  "median_min": 348.9,
-  "mean_min": 1678.3,
-  "work_median_min": 287.6,
-  "within_4h_pct": 44.1
+  "n": 41,
+  "median_min": 502.6,
+  "mean_min": 1935.6,
+  "work_median_min": 368.6,
+  "within_4h_pct": 36.6
  },
  "pending": [
   {
@@ -66,11 +66,6 @@
    "inbound_at": "2026-08-24T06:22:26Z"
   },
   {
-   "thread_id": "1a036ee24538f6cf",
-   "case": "DJI Osmo Pocket 3S × Ellie（確認條件＋收件資訊，草稿 T2026-0015 未寄）",
-   "inbound_at": "2026-08-25T03:20:14Z"
-  },
-  {
    "thread_id": "19ff3459faaaf0ee",
    "case": "SAMSUNG P7 PSSD × Nakaw（對方 9/7 前回覆，球在對方）",
    "inbound_at": "2026-08-26T02:33:18Z"
@@ -86,11 +81,6 @@
    "inbound_at": "2026-08-26T01:34:45Z"
   },
   {
-   "thread_id": "1a0230f23c73ce89",
-   "case": "Uber Eats 品牌好友計畫 × Rio（10–12 月、免數據，待我方決定）",
-   "inbound_at": "2026-08-26T08:47:38Z"
-  },
-  {
    "thread_id": "19ff86ca3d75a293",
    "case": "Disney+ × YY（9 月中檔期／Impact 開戶收款／Link in Bio 置放，三項待人工決策）",
    "inbound_at": "2026-08-27T10:15:18Z"
@@ -101,19 +91,14 @@
    "inbound_at": "2026-08-27T10:30:14Z"
   },
   {
-   "thread_id": "1a014122591da47b",
-   "case": "德國漢高 Bref 馬桶球 × YY（合約用印＋存摺影本待法務／彼得處理）",
-   "inbound_at": "2026-08-27T08:19:10Z"
-  },
-  {
-   "thread_id": "19f916d0e7680c0a",
-   "case": "三得利芝麻明 EX × Leo（品牌選擇他人，PASS 通知，無需回覆）",
-   "inbound_at": "2026-08-27T06:47:11Z"
-  },
-  {
    "thread_id": "1a03e00d104f94e6",
    "case": "Mercari Q4 廣告短片 × 梅伯（對方回報客戶中，球在對方）",
    "inbound_at": "2026-08-27T02:43:41Z"
+  },
+  {
+   "thread_id": "1a014122591da47b",
+   "case": "德國漢高 Bref 馬桶球 × YY（對方已用印委刊單，待我方回印）",
+   "inbound_at": "2026-08-28T07:10:01Z"
   }
  ]
 }

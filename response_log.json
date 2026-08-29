@@ -336,6 +336,62 @@
       "inbound_at": "2026-08-27T10:31:16Z",
       "replied_at": "2026-08-28T00:00:00Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a03b4548ce9472f",
+      "responder": "jasmine",
+      "case": "LARMI 樂米 Ai7 全能智慧手錶 × Leo",
+      "inbound_at": "2026-08-28T04:38:15Z",
+      "replied_at": "2026-08-28T10:13:07Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19f916d0e7680c0a",
+      "responder": "jasmine",
+      "case": "三得利 芝麻明 EX × Leo",
+      "inbound_at": "2026-08-27T06:47:11Z",
+      "replied_at": "2026-08-28T10:35:26Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fee1ff1a739bd9",
+      "responder": "jasmine",
+      "case": "羅技活動出席合作 × Leo／Nakaw／YY",
+      "inbound_at": "2026-08-21T09:34:08Z",
+      "replied_at": "2026-08-28T07:29:26Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0230f23c73ce89",
+      "responder": "oliver",
+      "case": "Uber Eats 品牌好友計畫 × Rio",
+      "inbound_at": "2026-08-26T08:47:38Z",
+      "replied_at": "2026-08-28T07:39:33Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "德國漢高 Bref 馬桶球 × YY",
+      "inbound_at": "2026-08-27T07:47:54Z",
+      "replied_at": "2026-08-28T06:57:46Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "德國漢高 Bref 馬桶球 × YY",
+      "inbound_at": "2026-08-27T08:19:10Z",
+      "replied_at": "2026-08-28T06:57:46Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a036ee24538f6cf",
+      "responder": "jasmine",
+      "case": "DJI Osmo Pocket 3S × Ellie",
+      "inbound_at": "2026-08-25T03:20:14Z",
+      "replied_at": "2026-08-28T10:59:56Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -370,11 +426,6 @@
       "inbound_at": "2026-08-24T06:22:26Z"
     },
     {
-      "thread_id": "1a036ee24538f6cf",
-      "case": "DJI Osmo Pocket 3S × Ellie（確認條件＋收件資訊，草稿 T2026-0015 未寄）",
-      "inbound_at": "2026-08-25T03:20:14Z"
-    },
-    {
       "thread_id": "19ff3459faaaf0ee",
       "case": "SAMSUNG P7 PSSD × Nakaw（對方 9/7 前回覆，球在對方）",
       "inbound_at": "2026-08-26T02:33:18Z"
@@ -390,11 +441,6 @@
       "inbound_at": "2026-08-26T01:34:45Z"
     },
     {
-      "thread_id": "1a0230f23c73ce89",
-      "case": "Uber Eats 品牌好友計畫 × Rio（10–12 月、免數據，待我方決定）",
-      "inbound_at": "2026-08-26T08:47:38Z"
-    },
-    {
       "thread_id": "19ff86ca3d75a293",
       "case": "Disney+ × YY（9 月中檔期／Impact 開戶收款／Link in Bio 置放，三項待人工決策）",
       "inbound_at": "2026-08-27T10:15:18Z"
@@ -405,19 +451,14 @@
       "inbound_at": "2026-08-27T10:30:14Z"
     },
     {
-      "thread_id": "1a014122591da47b",
-      "case": "德國漢高 Bref 馬桶球 × YY（合約用印＋存摺影本待法務／彼得處理）",
-      "inbound_at": "2026-08-27T08:19:10Z"
-    },
-    {
-      "thread_id": "19f916d0e7680c0a",
-      "case": "三得利芝麻明 EX × Leo（品牌選擇他人，PASS 通知，無需回覆）",
-      "inbound_at": "2026-08-27T06:47:11Z"
-    },
-    {
       "thread_id": "1a03e00d104f94e6",
       "case": "Mercari Q4 廣告短片 × 梅伯（對方回報客戶中，球在對方）",
       "inbound_at": "2026-08-27T02:43:41Z"
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "case": "德國漢高 Bref 馬桶球 × YY（對方已用印委刊單，待我方回印）",
+      "inbound_at": "2026-08-28T07:10:01Z"
     }
   ]
 }
