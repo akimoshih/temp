@@ -473,5 +473,27 @@
       "draft_id": "r7119466557468767140",
       "replied_to_message_id": "1a042c6d2ffc0990"
     }
+  },
+  {
+    "task_id": "T2026-0019",
+    "type": "報價回信",
+    "thread_id": "1a0477c36bc9e898",
+    "case": "Dr.Douxi 朵璽 Reels 商業合作 × 梅伯",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-08-31",
+    "note": "朵璽 8/31 改口不談團購、改詢問 Reels 報價（含廣告主授權費用與粉絲受眾輪廓）。依官方價目表（8/31 讀取線上表確認）梅伯級距 50,001–80,000：Reels $50,000(net)、授權兩週內 $8,000(net)、兩週至一個月內 $15,000(net)，並附授權僅限原檔／最長三個月等規範。兩項需人工補：粉絲受眾輪廓數據（價目表無、須自 IG 後台匯出），以及彼得前一封曾以檔期為由婉拒團購，實際可配合上線檔期需再與梅伯確認。",
+    "draft": {
+      "to": [
+        "allen589601@gmail.com"
+      ],
+      "cc": [
+        "akimo@dcard.cc",
+        "jasmine.wang@dcard.cc"
+      ],
+      "subject": "Re: Dr.Douxi 明星商品合作邀約｜熬夜後也能透亮發光的秘密✨",
+      "draft_id": "r-5103885274835665678",
+      "replied_to_message_id": "1a055bf10f04a628"
+    }
   }
 ]
