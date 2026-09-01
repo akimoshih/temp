@@ -517,5 +517,29 @@
       "draft_id": "r8077514312526251175",
       "replied_to_message_id": "1a056511959d7861"
     }
+  },
+  {
+    "task_id": "T2026-0021",
+    "type": "報價回信",
+    "thread_id": "1a0481869d962c5f",
+    "case": "Whoscall《簽到禮自由選》社群宣傳 × Rio／Leo",
+    "assignee": "jasmine",
+    "status": "草稿已建立",
+    "created": "2026-09-01",
+    "note": "Whoscall Kelly 8/31 回覆：以 Gen Z 粉絲年齡輪廓為選人依據，團隊更傾向 Rio，請提供 Rio 與 Leo 的短影音＋一個月廣告主投放授權報價，以及兩位最新後台年齡受眾截圖。依官方價目表：Rio（250,001–300,000）Reels $150,000(net)、授權兩週至一個月內 $45,000(net)；Leo（120,001–150,000）Reels $80,000(net)、授權兩週至一個月內 $25,000(net)。一項【請確認】：兩位最新 IG 後台年齡受眾截圖需人工自後台匯出附上。另草稿已把 10/1–10/2 發布與 9/14 初稿確認的檔期列為待與成員確認事項。",
+    "draft": {
+      "to": [
+        "kelly.chen@gogolook.com"
+      ],
+      "cc": [
+        "marco.tsai@gogolook.com",
+        "elena.huang@gogolook.com",
+        "sharon.syue@gogolook.com",
+        "akimo@dcard.cc"
+      ],
+      "subject": "Re: 【Whoscall x 吳至晟合作邀約詢價】十月《簽到禮自由選》社群宣傳合作",
+      "draft_id": "r7934881484112632959",
+      "replied_to_message_id": "1a057ab3a5b20011"
+    }
   }
 ]

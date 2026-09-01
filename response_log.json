@@ -392,6 +392,14 @@
       "inbound_at": "2026-08-25T03:20:14Z",
       "replied_at": "2026-08-28T10:59:56Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a045aa993205eb1",
+      "responder": "jasmine",
+      "case": "New Balance 1906X／2002R × Nakaw",
+      "inbound_at": "2026-08-31T02:12:43Z",
+      "replied_at": "2026-08-31T03:26:17Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -459,6 +467,21 @@
       "thread_id": "19f654d9fe2b7332",
       "case": "多力多滋香菜祭 × Leo（8/28–8/29 內要完成 Threads 留言並回傳截圖＋委刊單）",
       "inbound_at": "2026-08-28T12:52:37Z"
+    },
+    {
+      "thread_id": "1a0477c36bc9e898",
+      "case": "Dr.Douxi 朵璽 Reels × 梅伯（草稿 T2026-0019 未寄，待補受眾數據與檔期）",
+      "inbound_at": "2026-08-31T02:55:41Z"
+    },
+    {
+      "thread_id": "1a01f2f549472f34",
+      "case": "寒霜啟示錄 × 梅伯（草稿 T2026-0020 未寄，待拍板口播加價與 9/17 檔期）",
+      "inbound_at": "2026-08-31T05:35:36Z"
+    },
+    {
+      "thread_id": "1a0481869d962c5f",
+      "case": "Whoscall《簽到禮自由選》× Rio／Leo（草稿 T2026-0021 未寄，待補受眾截圖）",
+      "inbound_at": "2026-08-31T11:53:15Z"
     }
   ]
 }

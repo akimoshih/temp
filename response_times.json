@@ -1,17 +1,17 @@
 {
- "updated": "2026-08-31",
+ "updated": "2026-09-01",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 41,
+ "sample_size": 42,
  "excluded_low_confidence": 8,
  "by_person": {
   "jasmine": {
-   "n": 14,
-   "median_min": 258.9,
-   "mean_min": 1452.5,
-   "p90_min": 3846.3,
-   "work_median_min": 254.0,
-   "work_mean_min": 603.5,
-   "within_4h_pct": 50.0,
+   "n": 15,
+   "median_min": 225.8,
+   "mean_min": 1360.6,
+   "p90_min": 3535.1,
+   "work_median_min": 216.1,
+   "work_mean_min": 568.2,
+   "within_4h_pct": 53.3,
    "fastest_min": 27.3,
    "slowest_min": 9955.3
   },
@@ -28,11 +28,11 @@
   }
  },
  "overall": {
-  "n": 41,
-  "median_min": 502.6,
-  "mean_min": 1935.6,
-  "work_median_min": 368.6,
-  "within_4h_pct": 36.6
+  "n": 42,
+  "median_min": 459.4,
+  "mean_min": 1891.3,
+  "work_median_min": 356.6,
+  "within_4h_pct": 38.1
  },
  "pending": [
   {
@@ -99,6 +99,21 @@
    "thread_id": "19f654d9fe2b7332",
    "case": "多力多滋香菜祭 × Leo（8/28–8/29 內要完成 Threads 留言並回傳截圖＋委刊單）",
    "inbound_at": "2026-08-28T12:52:37Z"
+  },
+  {
+   "thread_id": "1a0477c36bc9e898",
+   "case": "Dr.Douxi 朵璽 Reels × 梅伯（草稿 T2026-0019 未寄，待補受眾數據與檔期）",
+   "inbound_at": "2026-08-31T02:55:41Z"
+  },
+  {
+   "thread_id": "1a01f2f549472f34",
+   "case": "寒霜啟示錄 × 梅伯（草稿 T2026-0020 未寄，待拍板口播加價與 9/17 檔期）",
+   "inbound_at": "2026-08-31T05:35:36Z"
+  },
+  {
+   "thread_id": "1a0481869d962c5f",
+   "case": "Whoscall《簽到禮自由選》× Rio／Leo（草稿 T2026-0021 未寄，待補受眾截圖）",
+   "inbound_at": "2026-08-31T11:53:15Z"
   }
  ]
 }
