@@ -1,38 +1,38 @@
 {
- "updated": "2026-09-01",
+ "updated": "2026-09-02",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 42,
- "excluded_low_confidence": 8,
+ "sample_size": 48,
+ "excluded_low_confidence": 9,
  "by_person": {
   "jasmine": {
-   "n": 15,
-   "median_min": 225.8,
-   "mean_min": 1360.6,
-   "p90_min": 3535.1,
-   "work_median_min": 216.1,
-   "work_mean_min": 568.2,
-   "within_4h_pct": 53.3,
+   "n": 16,
+   "median_min": 258.9,
+   "mean_min": 1294.6,
+   "p90_min": 3224.0,
+   "work_median_min": 213.4,
+   "work_mean_min": 532.7,
+   "within_4h_pct": 50.0,
    "fastest_min": 27.3,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 27,
-   "median_min": 1358.6,
-   "mean_min": 2186.1,
-   "p90_min": 5836.5,
-   "work_median_min": 502.6,
-   "work_mean_min": 708.6,
-   "within_4h_pct": 29.6,
+   "n": 32,
+   "median_min": 1374.8,
+   "mean_min": 2142.4,
+   "p90_min": 5778.6,
+   "work_median_min": 521.4,
+   "work_mean_min": 672.8,
+   "within_4h_pct": 28.1,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 42,
-  "median_min": 459.4,
-  "mean_min": 1891.3,
-  "work_median_min": 356.6,
-  "within_4h_pct": 38.1
+  "n": 48,
+  "median_min": 667.4,
+  "mean_min": 1859.8,
+  "work_median_min": 375.2,
+  "within_4h_pct": 35.4
  },
  "pending": [
   {
@@ -76,11 +76,6 @@
    "inbound_at": "2026-08-26T01:34:45Z"
   },
   {
-   "thread_id": "19ff86ca3d75a293",
-   "case": "Disney+ × YY（9 月中檔期／Impact 開戶收款／Link in Bio 置放，三項待人工決策）",
-   "inbound_at": "2026-08-27T10:15:18Z"
-  },
-  {
    "thread_id": "1a0385d7b359969a",
    "case": "米其林 PS4S × Andrew（對方接受 YT 長影音交換、請預留 10/7，後續改走 LINE）",
    "inbound_at": "2026-08-27T10:30:14Z"
@@ -101,19 +96,24 @@
    "inbound_at": "2026-08-28T12:52:37Z"
   },
   {
-   "thread_id": "1a0477c36bc9e898",
-   "case": "Dr.Douxi 朵璽 Reels × 梅伯（草稿 T2026-0019 未寄，待補受眾數據與檔期）",
-   "inbound_at": "2026-08-31T02:55:41Z"
-  },
-  {
    "thread_id": "1a01f2f549472f34",
    "case": "寒霜啟示錄 × 梅伯（草稿 T2026-0020 未寄，待拍板口播加價與 9/17 檔期）",
    "inbound_at": "2026-08-31T05:35:36Z"
   },
   {
-   "thread_id": "1a0481869d962c5f",
-   "case": "Whoscall《簽到禮自由選》× Rio／Leo（草稿 T2026-0021 未寄，待補受眾截圖）",
-   "inbound_at": "2026-08-31T11:53:15Z"
+   "thread_id": "19ff86ca3d75a293",
+   "case": "Disney+ × YY（委刊單資料已到，待我方開單；新加坡公司＋走 Impact 收款需人工確認）",
+   "inbound_at": "2026-09-01T10:16:47Z"
+  },
+  {
+   "thread_id": "1a0477c36bc9e898",
+   "case": "Dr.Douxi 朵璽 × 梅伯（追問粉絲男女比，需自後台提供）",
+   "inbound_at": "2026-09-01T02:50:36Z"
+  },
+  {
+   "thread_id": "19eab6895d9b0753",
+   "case": "蘇格蘭威士忌 × 梅伯（對方追問導流限動是否已發布）",
+   "inbound_at": "2026-09-01T03:32:16Z"
   }
  ]
 }

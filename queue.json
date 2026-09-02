@@ -541,5 +541,32 @@
       "draft_id": "r7934881484112632959",
       "replied_to_message_id": "1a057ab3a5b20011"
     }
+  },
+  {
+    "task_id": "T2026-0022",
+    "type": "委刊單",
+    "thread_id": "19ff86ca3d75a293",
+    "case": "Disney+ 聯盟式 Influencer 合作計畫 × YY",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-09-02",
+    "note": "WPP Media 9/1 確認時程並提供廠商資料，本案成案由我方開立委刊單 V20260902-01：IG Post ×1 $45,000(net)、預計 9/20 上線、追蹤連結置放 Link in Bio 先兩週。三項需人工確認並已寫進草稿內部備註：(1) 對方為新加坡公司，統編欄填公司註冊號 200605870G、簽約代表人對方回 NA 故留空；(2) 費用走 Impact 平台而非我方發票流程，請款方式需拍板；(3) 專案期間 2026/09/02-10/04 為依上線日推估，需確認。",
+    "drive_url": null,
+    "drive_url_note": "PDF 142,531 bytes（base64 約 19 萬字元）過大，無法內嵌上傳 Drive，改以 SendUserFile 直接交付 Akimo。",
+    "draft": {
+      "to": [
+        "eepeng.wong@wppmedia.com"
+      ],
+      "cc": [
+        "jasmine.wang@dcard.cc",
+        "Vinci.Cho@disney.com",
+        "nurhuda.ramle@wppmedia.com",
+        "akimo@dcard.cc",
+        "jasmine.tsai@disney.com"
+      ],
+      "subject": "Re: 【合作詢問】Disney+ 聯盟式 Influencer 合作計畫",
+      "draft_id": "r-7112888740198034930",
+      "replied_to_message_id": "1a05c78ddfa4805f"
+    }
   }
 ]

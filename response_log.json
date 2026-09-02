@@ -400,6 +400,62 @@
       "inbound_at": "2026-08-31T02:12:43Z",
       "replied_at": "2026-08-31T03:26:17Z",
       "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ 聯盟式 Influencer 合作計畫 × YY",
+      "inbound_at": "2026-08-27T10:15:18Z",
+      "replied_at": "2026-08-31T02:06:07Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ 聯盟式 Influencer 合作計畫 × YY",
+      "inbound_at": "2026-08-31T06:16:46Z",
+      "replied_at": "2026-09-01T05:01:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0477c36bc9e898",
+      "responder": "oliver",
+      "case": "Dr.Douxi 朵璽 Reels × 梅伯",
+      "inbound_at": "2026-08-31T02:55:05Z",
+      "replied_at": "2026-09-01T02:01:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0477c36bc9e898",
+      "responder": "oliver",
+      "case": "Dr.Douxi 朵璽 Reels × 梅伯",
+      "inbound_at": "2026-08-31T02:55:41Z",
+      "replied_at": "2026-09-01T02:01:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19f932ffdac502c7",
+      "responder": "jasmine",
+      "case": "MUJI 無印良品秋冬新品展示會 × Ellie",
+      "inbound_at": "2026-09-01T12:09:36Z",
+      "replied_at": "2026-09-01T17:14:48Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0481869d962c5f",
+      "responder": "jasmine",
+      "case": "Whoscall《簽到禮自由選》× Rio／Leo",
+      "inbound_at": "2026-08-31T11:53:15Z",
+      "replied_at": "2026-09-02T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "responder": "oliver",
+      "case": "蘇格蘭威士忌品牌 × 梅伯",
+      "inbound_at": "2026-08-25T09:49:15Z",
+      "replied_at": "2026-08-25T11:54:58Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -444,11 +500,6 @@
       "inbound_at": "2026-08-26T01:34:45Z"
     },
     {
-      "thread_id": "19ff86ca3d75a293",
-      "case": "Disney+ × YY（9 月中檔期／Impact 開戶收款／Link in Bio 置放，三項待人工決策）",
-      "inbound_at": "2026-08-27T10:15:18Z"
-    },
-    {
       "thread_id": "1a0385d7b359969a",
       "case": "米其林 PS4S × Andrew（對方接受 YT 長影音交換、請預留 10/7，後續改走 LINE）",
       "inbound_at": "2026-08-27T10:30:14Z"
@@ -469,19 +520,24 @@
       "inbound_at": "2026-08-28T12:52:37Z"
     },
     {
-      "thread_id": "1a0477c36bc9e898",
-      "case": "Dr.Douxi 朵璽 Reels × 梅伯（草稿 T2026-0019 未寄，待補受眾數據與檔期）",
-      "inbound_at": "2026-08-31T02:55:41Z"
-    },
-    {
       "thread_id": "1a01f2f549472f34",
       "case": "寒霜啟示錄 × 梅伯（草稿 T2026-0020 未寄，待拍板口播加價與 9/17 檔期）",
       "inbound_at": "2026-08-31T05:35:36Z"
     },
     {
-      "thread_id": "1a0481869d962c5f",
-      "case": "Whoscall《簽到禮自由選》× Rio／Leo（草稿 T2026-0021 未寄，待補受眾截圖）",
-      "inbound_at": "2026-08-31T11:53:15Z"
+      "thread_id": "19ff86ca3d75a293",
+      "case": "Disney+ × YY（委刊單資料已到，待我方開單；新加坡公司＋走 Impact 收款需人工確認）",
+      "inbound_at": "2026-09-01T10:16:47Z"
+    },
+    {
+      "thread_id": "1a0477c36bc9e898",
+      "case": "Dr.Douxi 朵璽 × 梅伯（追問粉絲男女比，需自後台提供）",
+      "inbound_at": "2026-09-01T02:50:36Z"
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "case": "蘇格蘭威士忌 × 梅伯（對方追問導流限動是否已發布）",
+      "inbound_at": "2026-09-01T03:32:16Z"
     }
   ]
 }
