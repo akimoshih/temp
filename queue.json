@@ -568,5 +568,29 @@
       "draft_id": "r-7112888740198034930",
       "replied_to_message_id": "1a05c78ddfa4805f"
     }
+  },
+  {
+    "task_id": "T2026-0023",
+    "type": "報價回信",
+    "thread_id": "1a05ff5b71691e30",
+    "case": "澳門威尼斯人（NBA 相關活動）× Rio",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-09-02",
+    "note": "CAPSULE Ally 8/26 邀 Rio 出席澳門威尼斯人 NBA 相關活動（10 月中–10 月底，活動後兩週上線，品牌負擔住宿三天兩夜與機票），原信要求 23 項報價與資料；彼得 9/2 提議以 Instagram 為主，Ally 同日回覆品牌對合作項目都有討論空間。草稿依官方價目表 Rio 級距 250,001–300,000 報：IG 60–90s Reels ×1（含贈送限動）$150,000(net)、Meta 廣告主含全平台投廣授權一個月 $45,000(net)。四項【請確認】：(1)「全媒體」投廣授權範圍超出約定平台，需先確認平台清單；(2) 素材永久買斷不在價目表、且違反授權最長三個月規範，需內部評估；(3) Rio 出國檔期與上線時程、隨行人數與機票估價；(4) IG 後台受眾截圖與過往運動／飯店案例。",
+    "draft": {
+      "to": [
+        "ally@capsulecorporation.cc"
+      ],
+      "cc": [
+        "bpu@capsulecorporation.cc",
+        "popo.chiang@capsulecorporation.cc",
+        "akimo@dcard.cc",
+        "jasmine.wang@dcard.cc"
+      ],
+      "subject": "Re: 【CAPSULE】澳門威尼斯人（ NBA相關活動） x Rio 壹比零｜ 合作意願&報價洽詢",
+      "draft_id": "r4306150665425002462",
+      "replied_to_message_id": "1a0600b08d77d85a"
+    }
   }
 ]
