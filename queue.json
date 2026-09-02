@@ -592,5 +592,30 @@
       "draft_id": "r4306150665425002462",
       "replied_to_message_id": "1a0600b08d77d85a"
     }
+  },
+  {
+    "task_id": "T2026-0024",
+    "type": "報價回信",
+    "thread_id": "1a0481869d962c5f",
+    "case": "Whoscall《簽到禮自由選》× Rio（Rio 報價）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-09-02",
+    "note": "Jasmine 9/2 已回覆 Leo 部分並說明 Rio 由彼得接手；Whoscall Kelly 同日 12:20 因專案時程趕，追問今天能否一併拿到 Rio 的報價與粉絲輪廓。草稿依官方價目表 Rio 級距 250,001–300,000 報：IG Reels ×1 $150,000(net)、廣告主投放授權一個月 $45,000(net)，以彼得名義回覆。一項【請確認】：Rio 最新 IG 後台年齡受眾截圖需人工附上；另 10/1–10/2 發布與 9/14 初稿確認的檔期需與 Rio 確認。",
+    "draft": {
+      "to": [
+        "kelly.chen@gogolook.com"
+      ],
+      "cc": [
+        "marco.tsai@gogolook.com",
+        "elena.huang@gogolook.com",
+        "sharon.syue@gogolook.com",
+        "jasmine.wang@dcard.cc",
+        "akimo@dcard.cc"
+      ],
+      "subject": "Re: 【Whoscall x 吳至晟合作邀約詢價】十月《簽到禮自由選》社群宣傳合作",
+      "draft_id": "r-3784034880192526442",
+      "replied_to_message_id": "1a06059284d4e05b"
+    }
   }
 ]
