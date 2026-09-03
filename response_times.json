@@ -1,18 +1,18 @@
 {
- "updated": "2026-09-02",
+ "updated": "2026-09-03",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 48,
- "excluded_low_confidence": 9,
+ "sample_size": 50,
+ "excluded_low_confidence": 10,
  "by_person": {
   "jasmine": {
-   "n": 16,
+   "n": 18,
    "median_min": 258.9,
-   "mean_min": 1294.6,
-   "p90_min": 3224.0,
+   "mean_min": 1173.5,
+   "p90_min": 2601.7,
    "work_median_min": 213.4,
-   "work_mean_min": 532.7,
+   "work_mean_min": 496.2,
    "within_4h_pct": 50.0,
-   "fastest_min": 27.3,
+   "fastest_min": 8.0,
    "slowest_min": 9955.3
   },
   "oliver": {
@@ -28,11 +28,11 @@
   }
  },
  "overall": {
-  "n": 48,
-  "median_min": 667.4,
-  "mean_min": 1859.8,
+  "n": 50,
+  "median_min": 459.4,
+  "mean_min": 1793.6,
   "work_median_min": 375.2,
-  "within_4h_pct": 35.4
+  "within_4h_pct": 36.0
  },
  "pending": [
   {
@@ -101,11 +101,6 @@
    "inbound_at": "2026-08-31T05:35:36Z"
   },
   {
-   "thread_id": "19ff86ca3d75a293",
-   "case": "Disney+ × YY（委刊單資料已到，待我方開單；新加坡公司＋走 Impact 收款需人工確認）",
-   "inbound_at": "2026-09-01T10:16:47Z"
-  },
-  {
    "thread_id": "1a0477c36bc9e898",
    "case": "Dr.Douxi 朵璽 × 梅伯（追問粉絲男女比，需自後台提供）",
    "inbound_at": "2026-09-01T02:50:36Z"
@@ -114,6 +109,26 @@
    "thread_id": "19eab6895d9b0753",
    "case": "蘇格蘭威士忌 × 梅伯（對方追問導流限動是否已發布）",
    "inbound_at": "2026-09-01T03:32:16Z"
+  },
+  {
+   "thread_id": "1a045aa993205eb1",
+   "case": "New Balance × Nakaw（改 1906A 鞋款的合作意願待與 Nakaw 確認）",
+   "inbound_at": "2026-09-02T03:28:25Z"
+  },
+  {
+   "thread_id": "1a05ff5b71691e30",
+   "case": "澳門威尼斯人 × Rio（草稿 T2026-0023 未寄，待確認全媒體授權範圍／素材買斷／出國檔期）",
+   "inbound_at": "2026-09-02T02:54:51Z"
+  },
+  {
+   "thread_id": "19f916d2fd92179e",
+   "case": "青年局學生社團營隊講師 × Rio（10/3 或 10/17 檔期待確認）＋Leo 講座主題名稱",
+   "inbound_at": "2026-09-02T06:13:13Z"
+  },
+  {
+   "thread_id": "19ff86ca3d75a293",
+   "case": "Disney+ × YY（委刊單草稿 T2026-0022 未寄）",
+   "inbound_at": "2026-09-02T10:10:51Z"
   }
  ]
 }
