@@ -617,5 +617,28 @@
       "draft_id": "r-3784034880192526442",
       "replied_to_message_id": "1a06059284d4e05b"
     }
+  },
+  {
+    "task_id": "T2026-0025",
+    "type": "報價回信",
+    "thread_id": "19ff346b277ef051",
+    "case": "三國 SLG 遊戲合作＿YT 推廣 × 梅伯",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-09-03",
+    "note": "富網 小丁 9/3 06:41 來信詢問三國 SLG 遊戲合作＿YT 推廣：YT 長影片中插廣告（依廠商 Brief＋素材，剪輯製作 15s 中插廣告並發布），預計 2026/9/19–9/27 發布，要求兩項報價：(1) YT 長影片中插 15s 廣告、(2) 二剪素材投廣授權一個月（用途包含但不限於 Meta、TikTok、Google、DSP 等渠道）。草稿只沿用 Oliver 8/12 於同一 thread 已提供、且與官方價目表相符的數字：素材二次剪輯（重製剪輯片段）$8,000(net)/一款、投廣授權一個月 $15,000(net)。兩項【請確認】：(1)「YT 長影片中插 15s 廣告」規格不在價目表內（價目表 YT 僅有 90 秒置入與全片，梅伯 90 秒 $50,000(net)），Jasmine 8/13 亦曾向同一窗口說明我方標準為 90 秒置入，需人工定價；(2) 投廣授權平台範圍涵蓋 Meta／TikTok／Google／DSP，超出一般約定的品牌 FB／IG／YouTube，需確認授權平台清單與是否加價。另需與梅伯確認 9/19–9/27 檔期。",
+    "draft": {
+      "to": [
+        "tracyding@fncpi.com"
+      ],
+      "cc": [
+        "oliver.zeng@dcard.cc",
+        "jasmine.wang@dcard.cc",
+        "akimo@dcard.cc"
+      ],
+      "subject": "Re: 【SUGO】Ｘ富網 合作邀請：梅伯",
+      "draft_id": "r7723392304115533432",
+      "replied_to_message_id": "1a0660127076800c"
+    }
   }
 ]
