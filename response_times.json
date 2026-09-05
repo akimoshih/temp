@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-04",
+ "updated": "2026-09-05",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 54,
+ "sample_size": 57,
  "excluded_low_confidence": 10,
  "by_person": {
   "jasmine": {
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 35,
-   "median_min": 1385.3,
-   "mean_min": 2190.8,
-   "p90_min": 5609.3,
-   "work_median_min": 524.2,
-   "work_mean_min": 726.4,
-   "within_4h_pct": 28.6,
+   "n": 38,
+   "median_min": 1374.8,
+   "mean_min": 2163.5,
+   "p90_min": 5440.1,
+   "work_median_min": 521.4,
+   "work_mean_min": 731.3,
+   "within_4h_pct": 26.3,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 54,
-  "median_min": 459.4,
-  "mean_min": 1812.4,
-  "work_median_min": 375.2,
-  "within_4h_pct": 37.0
+  "n": 57,
+  "median_min": 832.1,
+  "mean_min": 1814.2,
+  "work_median_min": 381.7,
+  "within_4h_pct": 35.1
  },
  "pending": [
   {
@@ -67,7 +67,7 @@
   },
   {
    "thread_id": "19ef320c649eab52",
-   "case": "soundcore Space 2 × YY（8/28 前要交結案後台數據）",
+   "case": "soundcore Space 2 × YY（8/28 前要交結案後台數據；EMC 換窗口 Kyla 9/4 再次來催）",
    "inbound_at": "2026-08-26T05:09:19Z"
   },
   {
@@ -101,19 +101,14 @@
    "inbound_at": "2026-09-02T03:28:25Z"
   },
   {
-   "thread_id": "1a05ff5b71691e30",
-   "case": "澳門威尼斯人 × Rio（草稿 T2026-0023 未寄，待確認全媒體授權範圍／素材買斷／出國檔期）",
-   "inbound_at": "2026-09-02T02:54:51Z"
-  },
-  {
    "thread_id": "19ff86ca3d75a293",
    "case": "Disney+ × YY（委刊單草稿 T2026-0022 未寄）",
    "inbound_at": "2026-09-02T10:10:51Z"
   },
   {
-   "thread_id": "19ff346b277ef051",
-   "case": "三國 SLG YT 推廣 × 梅伯（草稿 T2026-0025 未寄，15s 中插與投廣平台範圍待人工定價）",
-   "inbound_at": "2026-09-03T06:41:48Z"
+   "thread_id": "1a06a0c18fd5792f",
+   "case": "GU 雙十活動 × YY（草稿 T2026-0026 未寄，對方回覆期限 9/7 11:00）",
+   "inbound_at": "2026-09-04T09:25:45Z"
   }
  ]
 }

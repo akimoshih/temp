@@ -512,6 +512,30 @@
       "inbound_at": "2026-09-01T03:32:16Z",
       "replied_at": "2026-09-03T11:24:37Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a05ff5b71691e30",
+      "responder": "oliver",
+      "case": "澳門威尼斯人（NBA 相關活動）× Rio",
+      "inbound_at": "2026-09-02T02:54:51Z",
+      "replied_at": "2026-09-04T12:45:33Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff346b277ef051",
+      "responder": "oliver",
+      "case": "三國 SLG YT 推廣 × 梅伯",
+      "inbound_at": "2026-09-03T06:41:48Z",
+      "replied_at": "2026-09-04T01:31:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a061e6ea6b480e5",
+      "responder": "oliver",
+      "case": "Sodastream 氣泡水機 × YY",
+      "inbound_at": "2026-09-03T15:53:00Z",
+      "replied_at": "2026-09-04T07:29:08Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -547,7 +571,7 @@
     },
     {
       "thread_id": "19ef320c649eab52",
-      "case": "soundcore Space 2 × YY（8/28 前要交結案後台數據）",
+      "case": "soundcore Space 2 × YY（8/28 前要交結案後台數據；EMC 換窗口 Kyla 9/4 再次來催）",
       "inbound_at": "2026-08-26T05:09:19Z"
     },
     {
@@ -581,19 +605,14 @@
       "inbound_at": "2026-09-02T03:28:25Z"
     },
     {
-      "thread_id": "1a05ff5b71691e30",
-      "case": "澳門威尼斯人 × Rio（草稿 T2026-0023 未寄，待確認全媒體授權範圍／素材買斷／出國檔期）",
-      "inbound_at": "2026-09-02T02:54:51Z"
-    },
-    {
       "thread_id": "19ff86ca3d75a293",
       "case": "Disney+ × YY（委刊單草稿 T2026-0022 未寄）",
       "inbound_at": "2026-09-02T10:10:51Z"
     },
     {
-      "thread_id": "19ff346b277ef051",
-      "case": "三國 SLG YT 推廣 × 梅伯（草稿 T2026-0025 未寄，15s 中插與投廣平台範圍待人工定價）",
-      "inbound_at": "2026-09-03T06:41:48Z"
+      "thread_id": "1a06a0c18fd5792f",
+      "case": "GU 雙十活動 × YY（草稿 T2026-0026 未寄，對方回覆期限 9/7 11:00）",
+      "inbound_at": "2026-09-04T09:25:45Z"
     }
   ]
 }
