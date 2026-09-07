@@ -664,5 +664,27 @@
       "draft_id": "r-7096953573349891434",
       "replied_to_message_id": "1a06bbd4b4733a95"
     }
+  },
+  {
+    "task_id": "T2026-0027",
+    "type": "報價回信",
+    "thread_id": "1a07b14c973f35b9",
+    "case": "Suntory VARON × Leo",
+    "assignee": "jasmine",
+    "status": "草稿已建立",
+    "created": "2026-09-07",
+    "note": "台灣 DAC 6/25 代 Suntory VARON 邀 Leo 拍 YT 置入影片；Jasmine 6/28–6/29 報過總價 $250,000(net)（YT 置入影片 ×1 含 FB 同步 $80,000、YT 再製素材 ×3 $60,000、Meta 廣告主一個月 $30,000、品牌握手廣告一個月 $30,000、Google Ads 一個月 $50,000）後案子停了兩個多月。DAC Joy 9/7 回覆客戶確認要合作，詢問報價是否需調整、檔期能否安排 10 月底～11 月初，並確認試用／過稿／出稿名義與可投遞素材。草稿沿用 Jasmine 自己在同一 thread 給過的整組數字（其中 YT 再製素材 3 支 $60,000 與價目表 Leo 級距「重製（剪輯片段）$20,000／款」完全相符），並重申試用至少兩週、腳本與影片各過稿兩次、置入不少於 120 秒、授權自實際開始投廣日起算等既有條件。兩項【請確認】：(1) 合作商品由「兩款擇一」改為「主推一款＋順帶提到另一款」，露出方式是否影響報價，且報價已是 6 月底提供、需人工確認是否維持原價；(2) Leo 10 月底～11 月初檔期需與成員確認。",
+    "draft": {
+      "to": [
+        "joy-e-hsiao@dactp.com.tw"
+      ],
+      "cc": [
+        "dac_AE12@dactp.com.tw",
+        "akimo@dcard.cc"
+      ],
+      "subject": "RE: 【品牌合作邀約】Suntory_VARON _LEO合作邀約_260907",
+      "draft_id": "r-4015475376128280238",
+      "replied_to_message_id": "1a07b14c973f35b9"
+    }
   }
 ]
