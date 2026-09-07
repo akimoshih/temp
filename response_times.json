@@ -1,8 +1,8 @@
 {
- "updated": "2026-09-06",
+ "updated": "2026-09-07",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
  "sample_size": 57,
- "excluded_low_confidence": 10,
+ "excluded_low_confidence": 12,
  "by_person": {
   "jasmine": {
    "n": 19,
@@ -64,11 +64,6 @@
    "thread_id": "19ff3459faaaf0ee",
    "case": "SAMSUNG P7 PSSD × Nakaw（對方 9/7 前回覆，球在對方）",
    "inbound_at": "2026-08-26T02:33:18Z"
-  },
-  {
-   "thread_id": "19ef320c649eab52",
-   "case": "soundcore Space 2 × YY（8/28 前要交結案後台數據；EMC 換窗口 Kyla 9/4 再次來催）",
-   "inbound_at": "2026-08-26T05:09:19Z"
   },
   {
    "thread_id": "1a00f591ac6cbdac",

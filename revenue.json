@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "updated": "2026-09-06",
+ "updated": "2026-09-07",
  "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用「成員收入」兩欄，總覽頁用「成交價(未稅)」欄（欄位以標題文字定位）",
  "by_member": {
   "rio": [
@@ -966,6 +966,20 @@
     "item": "Reels",
     "start": "2026-08-05",
     "o": 24222.0,
+    "p": 0.0
+   },
+   {
+    "name": "NB GTX鞋款_社群推廣合作_Nakaw",
+    "item": "IG 貼文",
+    "start": null,
+    "o": 20000.0,
+    "p": 0.0
+   },
+   {
+    "name": "NB GTX鞋款_社群推廣合作_Nakaw",
+    "item": "投廣",
+    "start": null,
+    "o": 0,
     "p": 0.0
    }
   ],
@@ -2108,6 +2122,18 @@
    "member_key": "ellie",
    "start": "2026-10-05",
    "j": 15000.0
+  },
+  {
+   "member_raw": "Nakaw",
+   "member_key": "nakaw",
+   "start": null,
+   "j": 40000.0
+  },
+  {
+   "member_raw": "Nakaw",
+   "member_key": "nakaw",
+   "start": null,
+   "j": 0
   }
  ]
 }

@@ -536,6 +536,22 @@
       "inbound_at": "2026-09-03T15:53:00Z",
       "replied_at": "2026-09-04T07:29:08Z",
       "confident": true
+    },
+    {
+      "thread_id": "19ef320c649eab52",
+      "responder": "jasmine",
+      "case": "soundcore Space 2 × YY",
+      "inbound_at": "2026-08-26T05:09:19Z",
+      "replied_at": "2026-09-07T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19ef320c649eab52",
+      "responder": "jasmine",
+      "case": "soundcore Space 2 × YY（Kyla 接手催數據）",
+      "inbound_at": "2026-09-04T07:08:55Z",
+      "replied_at": "2026-09-07T00:00:00Z",
+      "confident": false
     }
   ],
   "pending": [
@@ -568,11 +584,6 @@
       "thread_id": "19ff3459faaaf0ee",
       "case": "SAMSUNG P7 PSSD × Nakaw（對方 9/7 前回覆，球在對方）",
       "inbound_at": "2026-08-26T02:33:18Z"
-    },
-    {
-      "thread_id": "19ef320c649eab52",
-      "case": "soundcore Space 2 × YY（8/28 前要交結案後台數據；EMC 換窗口 Kyla 9/4 再次來催）",
-      "inbound_at": "2026-08-26T05:09:19Z"
     },
     {
       "thread_id": "1a00f591ac6cbdac",
