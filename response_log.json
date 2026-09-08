@@ -552,6 +552,38 @@
       "inbound_at": "2026-09-04T07:08:55Z",
       "replied_at": "2026-09-07T00:00:00Z",
       "confident": false
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ × YY（委刊單公司資料確認）",
+      "inbound_at": "2026-09-07T01:51:58Z",
+      "replied_at": "2026-09-07T04:01:07Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a061e6ea6b480e5",
+      "responder": "oliver",
+      "case": "Sodastream 氣泡水機 × YY（結案）",
+      "inbound_at": "2026-09-07T10:23:26Z",
+      "replied_at": "2026-09-07T10:59:12Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19e3fe85c95718ba",
+      "responder": "jasmine",
+      "case": "台電瓩設計獎 × Leo（評審照片與 Title）",
+      "inbound_at": "2026-09-07T06:47:31Z",
+      "replied_at": "2026-09-07T06:53:39Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff3459faaaf0ee",
+      "responder": "jasmine",
+      "case": "SAMSUNG P7 PSSD × Nakaw",
+      "inbound_at": "2026-09-07T11:58:52Z",
+      "replied_at": "2026-09-07T14:11:48Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -571,19 +603,9 @@
       "inbound_at": "2026-08-24T02:54:23Z"
     },
     {
-      "thread_id": "1a0336f4bc1fee4a",
-      "case": "瓩設計獎 × Leo（8/26 前要評審照片／Title／評分標準／合約確認）",
-      "inbound_at": "2026-08-24T11:01:53Z"
-    },
-    {
       "thread_id": "1a01f25bd0971e89",
       "case": "Jamikuki KUKI² × 梅伯（禮盒寄出前告知，無需回覆）",
       "inbound_at": "2026-08-24T06:22:26Z"
-    },
-    {
-      "thread_id": "19ff3459faaaf0ee",
-      "case": "SAMSUNG P7 PSSD × Nakaw（對方 9/7 前回覆，球在對方）",
-      "inbound_at": "2026-08-26T02:33:18Z"
     },
     {
       "thread_id": "1a00f591ac6cbdac",
@@ -601,11 +623,6 @@
       "inbound_at": "2026-08-27T02:43:41Z"
     },
     {
-      "thread_id": "1a014122591da47b",
-      "case": "德國漢高 Bref 馬桶球 × YY（對方已用印委刊單，待我方回印）",
-      "inbound_at": "2026-08-28T07:10:01Z"
-    },
-    {
       "thread_id": "19f654d9fe2b7332",
       "case": "多力多滋香菜祭 × Leo（8/28–8/29 內要完成 Threads 留言並回傳截圖＋委刊單）",
       "inbound_at": "2026-08-28T12:52:37Z"
@@ -617,13 +634,18 @@
     },
     {
       "thread_id": "19ff86ca3d75a293",
-      "case": "Disney+ × YY（委刊單草稿 T2026-0022 未寄）",
-      "inbound_at": "2026-09-02T10:10:51Z"
+      "case": "Disney+ × YY（彼得已寄委刊單，對方要求移除 CPA／分潤項目後重開，並待完成 YY 的 Impact 註冊）",
+      "inbound_at": "2026-09-07T10:00:05Z"
     },
     {
       "thread_id": "1a06a0c18fd5792f",
       "case": "GU 雙十活動 × YY（草稿 T2026-0026 未寄，對方回覆期限 9/7 11:00）",
       "inbound_at": "2026-09-04T09:25:45Z"
+    },
+    {
+      "thread_id": "1a07b14c973f35b9",
+      "case": "Suntory VARON × Leo（草稿 T2026-0027 未寄，待確認報價是否維持與 Leo 10 月底～11 月初檔期）",
+      "inbound_at": "2026-09-07T08:55:42Z"
     }
   ]
 }
