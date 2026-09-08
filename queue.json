@@ -647,9 +647,9 @@
     "thread_id": "1a06a0c18fd5792f",
     "case": "GU 雙十活動 × YY",
     "assignee": "oliver",
-    "status": "草稿已建立",
+    "status": "作廢（由 T2026-0028 取代）",
     "created": "2026-09-04",
-    "note": "CAPSULE Coco 9/3 邀 YY 合作 GU 雙十活動（原案為 YouTube 主題影片＋YT 廣告主授權一週，上線 10/8，回覆期限 9/7 11:00）；彼得 9/4 回覆 YY 檔期以 IG Reels 為主、上線落在 10 月中～10 月底，Coco 同日改請提供 IG 版本報價（IG Reels 60 秒內 ×1、IG 圖文 ×1 至少 6 張圖、Meta 廣告主含 FB／IG／Threads 一週），並詢問品牌協作貼文、三套穿搭、A copy 規格、戶外拍攝、導流連結／Hashtag／Tag／過稿次數／付款條件與請款方式。草稿依官方價目表 YY 級距 50,001–80,000 報：IG Reels ×1（含贈限動）$50,000(net)、IG 圖文 ×1（含贈限動）$40,000(net)、廣告主投放授權（品牌 FB／IG）一週 $8,000(net)。八項【請確認】：Threads 投廣授權費用（價目表授權範圍僅涵蓋品牌 FB／IG／YouTube，非約定平台需另計並經成員同意）、與 GU 官方 IG 協作貼文是否可行及是否加價、YY 是否可配合三套以上穿搭、A copy 交付規格、戶外拍攝可行性與費用、貼文是否可帶導流連結（我方標準為文案不放連結）、付款條件（對方為上線後次月月底）、請款方式（發票或勞報）。",
+    "note": "CAPSULE Coco 9/3 邀 YY 合作 GU 雙十活動（原案為 YouTube 主題影片＋YT 廣告主授權一週，上線 10/8，回覆期限 9/7 11:00）；彼得 9/4 回覆 YY 檔期以 IG Reels 為主、上線落在 10 月中～10 月底，Coco 同日改請提供 IG 版本報價（IG Reels 60 秒內 ×1、IG 圖文 ×1 至少 6 張圖、Meta 廣告主含 FB／IG／Threads 一週），並詢問品牌協作貼文、三套穿搭、A copy 規格、戶外拍攝、導流連結／Hashtag／Tag／過稿次數／付款條件與請款方式。草稿依官方價目表 YY 級距 50,001–80,000 報：IG Reels ×1（含贈限動）$50,000(net)、IG 圖文 ×1（含贈限動）$40,000(net)、廣告主投放授權（品牌 FB／IG）一週 $8,000(net)。八項【請確認】：Threads 投廣授權費用（價目表授權範圍僅涵蓋品牌 FB／IG／YouTube，非約定平台需另計並經成員同意）、與 GU 官方 IG 協作貼文是否可行及是否加價、YY 是否可配合三套以上穿搭、A copy 交付規格、戶外拍攝可行性與費用、貼文是否可帶導流連結（我方標準為文案不放連結）、付款條件（對方為上線後次月月底）、請款方式（發票或勞報）。 ※ 此草稿未寄出，CAPSULE 9/8 因擔心漏信重寄同一組問題，已改由 T2026-0028 回覆最新那封來信，請改寄 T2026-0028、勿寄本則。",
     "draft": {
       "to": [
         "coco.tsai@capsulecorporation.cc"
@@ -685,6 +685,30 @@
       "subject": "RE: 【品牌合作邀約】Suntory_VARON _LEO合作邀約_260907",
       "draft_id": "r-4015475376128280238",
       "replied_to_message_id": "1a07b14c973f35b9"
+    }
+  },
+  {
+    "task_id": "T2026-0028",
+    "type": "報價回信",
+    "thread_id": "1a06a0c18fd5792f",
+    "case": "GU 雙十活動 × YY（重寄版）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-09-08",
+    "note": "CAPSULE Coco 9/8 11:36 因擔心漏信，重寄與 9/4 完全相同的一組報價問題（IG Reels 60 秒內 ×1、IG 圖文 ×1 至少 6 張圖、Meta 廣告主含 FB／IG／Threads 一週，及協作貼文、三套穿搭、A copy 規格、戶外拍攝、導流連結／Hashtag／Tag／過稿次數／付款條件、請款方式）。內容與 T2026-0026 相同，但改以最新這封來信為回覆對象，確保回覆落在正確的信件節點；T2026-0026 已標記作廢。報價依官方價目表 YY 級距 50,001–80,000：IG Reels ×1（含贈限動）$50,000(net)、IG 圖文 ×1（含贈限動）$40,000(net)、廣告主投放授權（品牌 FB／IG）一週 $8,000(net)。八項【請確認】同前：Threads 投廣授權費用、協作貼文是否可行與加價、三套穿搭、A copy 交付規格、戶外拍攝、貼文導流連結、付款條件、請款方式。",
+    "draft": {
+      "to": [
+        "coco.tsai@capsulecorporation.cc"
+      ],
+      "cc": [
+        "bpu@capsulecorporation.cc",
+        "shirly@capsulecorporation.cc",
+        "jasmine.wang@dcard.cc",
+        "akimo@dcard.cc"
+      ],
+      "subject": "Re: 【CAPSULE】GU 雙十活動 X YYの少女日記 ｜合作意願＆報價洽詢",
+      "draft_id": "r-985560913054796444",
+      "replied_to_message_id": "1a07f1731edbedb6"
     }
   }
 ]
