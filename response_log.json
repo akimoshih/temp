@@ -584,6 +584,46 @@
       "inbound_at": "2026-09-07T11:58:52Z",
       "replied_at": "2026-09-07T14:11:48Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a07b14c973f35b9",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo",
+      "inbound_at": "2026-09-07T08:55:42Z",
+      "replied_at": "2026-09-08T07:23:42Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a05ff5b71691e30",
+      "responder": "oliver",
+      "case": "澳門威尼斯人（NBA 相關活動）× Rio",
+      "inbound_at": "2026-09-08T03:13:29Z",
+      "replied_at": "2026-09-08T11:39:26Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a06a0c18fd5792f",
+      "responder": "oliver",
+      "case": "GU 雙十活動 × YY",
+      "inbound_at": "2026-09-08T03:36:39Z",
+      "replied_at": "2026-09-08T06:45:41Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a066fe60146dbdb",
+      "responder": "oliver",
+      "case": "玩的夥信義 A11 新櫃開幕 × YY（婉拒回覆）",
+      "inbound_at": "2026-09-08T07:03:40Z",
+      "replied_at": "2026-09-08T11:42:06Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a06a0b82a1e8153",
+      "responder": "oliver",
+      "case": "楽玩多 WAYTOFUN × YY（婉拒回覆）",
+      "inbound_at": "2026-09-04T08:25:25Z",
+      "replied_at": "2026-09-08T12:20:40Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -601,11 +641,6 @@
       "thread_id": "19fcfeac51c791fa",
       "case": "鶴茶樓×褲褲兔 × YY（回簽委刊單＋開發票，已轉 Alina）",
       "inbound_at": "2026-08-24T02:54:23Z"
-    },
-    {
-      "thread_id": "1a01f25bd0971e89",
-      "case": "Jamikuki KUKI² × 梅伯（禮盒寄出前告知，無需回覆）",
-      "inbound_at": "2026-08-24T06:22:26Z"
     },
     {
       "thread_id": "1a00f591ac6cbdac",
@@ -629,23 +664,13 @@
     },
     {
       "thread_id": "1a045aa993205eb1",
-      "case": "New Balance × Nakaw（改 1906A 鞋款的合作意願待與 Nakaw 確認）",
-      "inbound_at": "2026-09-02T03:28:25Z"
+      "case": "New Balance 1906A × Nakaw（成案但金額少 $5,000 待拍板；收件資訊／鞋款顏色／預計上線時間未回）",
+      "inbound_at": "2026-09-04T11:42:10Z"
     },
     {
       "thread_id": "19ff86ca3d75a293",
       "case": "Disney+ × YY（彼得已寄委刊單，對方要求移除 CPA／分潤項目後重開，並待完成 YY 的 Impact 註冊）",
       "inbound_at": "2026-09-07T10:00:05Z"
-    },
-    {
-      "thread_id": "1a06a0c18fd5792f",
-      "case": "GU 雙十活動 × YY（草稿 T2026-0026 未寄，對方回覆期限 9/7 11:00）",
-      "inbound_at": "2026-09-04T09:25:45Z"
-    },
-    {
-      "thread_id": "1a07b14c973f35b9",
-      "case": "Suntory VARON × Leo（草稿 T2026-0027 未寄，待確認報價是否維持與 Leo 10 月底～11 月初檔期）",
-      "inbound_at": "2026-09-07T08:55:42Z"
     }
   ]
 }

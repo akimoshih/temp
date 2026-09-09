@@ -1,38 +1,38 @@
 {
- "updated": "2026-09-08",
+ "updated": "2026-09-09",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 61,
+ "sample_size": 66,
  "excluded_low_confidence": 12,
  "by_person": {
   "jasmine": {
-   "n": 21,
-   "median_min": 210.8,
-   "mean_min": 1015.9,
-   "p90_min": 1668.2,
-   "work_median_min": 176.3,
-   "work_mean_min": 429.0,
-   "within_4h_pct": 57.1,
+   "n": 22,
+   "median_min": 218.3,
+   "mean_min": 1031.0,
+   "p90_min": 1644.1,
+   "work_median_min": 193.6,
+   "work_mean_min": 432.6,
+   "within_4h_pct": 54.5,
    "fastest_min": 6.1,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 40,
-   "median_min": 1361.4,
-   "mean_min": 2059.4,
-   "p90_min": 5327.2,
-   "work_median_min": 510.6,
-   "work_mean_min": 698.8,
-   "within_4h_pct": 30.0,
+   "n": 44,
+   "median_min": 1271.6,
+   "mean_min": 2030.6,
+   "p90_min": 5665.7,
+   "work_median_min": 484.6,
+   "work_mean_min": 686.4,
+   "within_4h_pct": 29.5,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 61,
-  "median_min": 416.2,
-  "mean_min": 1700.2,
-  "work_median_min": 344.6,
-  "within_4h_pct": 39.3
+  "n": 66,
+  "median_min": 459.4,
+  "mean_min": 1697.4,
+  "work_median_min": 356.6,
+  "within_4h_pct": 37.9
  },
  "pending": [
   {
@@ -49,11 +49,6 @@
    "thread_id": "19fcfeac51c791fa",
    "case": "鶴茶樓×褲褲兔 × YY（回簽委刊單＋開發票，已轉 Alina）",
    "inbound_at": "2026-08-24T02:54:23Z"
-  },
-  {
-   "thread_id": "1a01f25bd0971e89",
-   "case": "Jamikuki KUKI² × 梅伯（禮盒寄出前告知，無需回覆）",
-   "inbound_at": "2026-08-24T06:22:26Z"
   },
   {
    "thread_id": "1a00f591ac6cbdac",
@@ -77,23 +72,13 @@
   },
   {
    "thread_id": "1a045aa993205eb1",
-   "case": "New Balance × Nakaw（改 1906A 鞋款的合作意願待與 Nakaw 確認）",
-   "inbound_at": "2026-09-02T03:28:25Z"
+   "case": "New Balance 1906A × Nakaw（成案但金額少 $5,000 待拍板；收件資訊／鞋款顏色／預計上線時間未回）",
+   "inbound_at": "2026-09-04T11:42:10Z"
   },
   {
    "thread_id": "19ff86ca3d75a293",
    "case": "Disney+ × YY（彼得已寄委刊單，對方要求移除 CPA／分潤項目後重開，並待完成 YY 的 Impact 註冊）",
    "inbound_at": "2026-09-07T10:00:05Z"
-  },
-  {
-   "thread_id": "1a06a0c18fd5792f",
-   "case": "GU 雙十活動 × YY（草稿 T2026-0026 未寄，對方回覆期限 9/7 11:00）",
-   "inbound_at": "2026-09-04T09:25:45Z"
-  },
-  {
-   "thread_id": "1a07b14c973f35b9",
-   "case": "Suntory VARON × Leo（草稿 T2026-0027 未寄，待確認報價是否維持與 Leo 10 月底～11 月初檔期）",
-   "inbound_at": "2026-09-07T08:55:42Z"
   }
  ]
 }
