@@ -1,8 +1,8 @@
 {
- "updated": "2026-09-09",
+ "updated": "2026-09-10",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
  "sample_size": 66,
- "excluded_low_confidence": 12,
+ "excluded_low_confidence": 14,
  "by_person": {
   "jasmine": {
    "n": 22,

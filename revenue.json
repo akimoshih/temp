@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "updated": "2026-09-09",
+ "updated": "2026-09-10",
  "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用「成員收入」兩欄，總覽頁用「成交價(未稅)」欄（欄位以標題文字定位）",
  "by_member": {
   "rio": [
@@ -122,6 +122,20 @@
     "start": "2026-08-03",
     "o": 12500.0,
     "p": 2500.0
+   },
+   {
+    "name": "原萃_社群推廣合作_Rio",
+    "item": "Reels",
+    "start": null,
+    "o": 82500.0,
+    "p": 16500.0
+   },
+   {
+    "name": "原萃_社群推廣合作_Rio",
+    "item": "IG 限動",
+    "start": null,
+    "o": 17500.0,
+    "p": 3500.0
    }
   ],
   "andrew": [
@@ -2134,6 +2148,18 @@
    "member_key": "nakaw",
    "start": null,
    "j": 0
+  },
+  {
+   "member_raw": "Rio",
+   "member_key": "rio",
+   "start": null,
+   "j": 165000.0
+  },
+  {
+   "member_raw": "Rio",
+   "member_key": "rio",
+   "start": null,
+   "j": 35000.0
   }
  ]
 }

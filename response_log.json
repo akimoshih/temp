@@ -624,6 +624,22 @@
       "inbound_at": "2026-09-04T08:25:25Z",
       "replied_at": "2026-09-08T12:20:40Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a07b14c973f35b9",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo（置入片段定義澄清）",
+      "inbound_at": "2026-09-09T08:52:53Z",
+      "replied_at": "2026-09-10T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0889dcca1c4535",
+      "responder": "jasmine",
+      "case": "Logitech 羅技校園大使短影音工作坊講師 × Leo",
+      "inbound_at": "2026-09-09T02:01:00Z",
+      "replied_at": "2026-09-10T00:00:00Z",
+      "confident": false
     }
   ],
   "pending": [
