@@ -710,5 +710,22 @@
       "draft_id": "r-985560913054796444",
       "replied_to_message_id": "1a07f1731edbedb6"
     }
+  },
+  {
+    "task_id": "T2026-0029",
+    "type": "報價回信",
+    "thread_id": "1a08a43ea6f3081d",
+    "case": "TOZO AR 智慧眼鏡顯示器 × 梅伯（授權計價確認）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-09-11T10:20:00Z",
+    "note": "為你創意 Sam 9/11 來信確認素材授權不上架、僅供官方投暗廣是否即為贈送 2 週，以及 $15,000 是否為上架才收且按月計。草稿回覆：投廣授權 2 週已含在 $75,000(net) 內並可再贈 META 廣告主 2 週；$15,000(net) 為官網上架單次費用非按月；延長至一個月 $15,000(net)，超過一個月的費用價目表查無、以【請確認】標示。",
+    "draft": {
+      "to": "sam@wns-idea.com",
+      "cc": "winnie@wns-idea.com, service@wns-idea.com, jasmine.wang@dcard.cc, akimo@dcard.cc",
+      "subject": "Re: <為你創意邀約｜梅伯>【TOZO AR智慧眼鏡顯示器】新品合作",
+      "draft_id": "r-1000310620248474478",
+      "replied_to_message_id": "1a08fed69b769859"
+    }
   }
 ]
