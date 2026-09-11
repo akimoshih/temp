@@ -1,17 +1,17 @@
 {
- "updated": "2026-09-10",
+ "updated": "2026-09-11",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 66,
+ "sample_size": 68,
  "excluded_low_confidence": 14,
  "by_person": {
   "jasmine": {
-   "n": 22,
+   "n": 24,
    "median_min": 218.3,
-   "mean_min": 1031.0,
-   "p90_min": 1644.1,
+   "mean_min": 1064.4,
+   "p90_min": 2496.3,
    "work_median_min": 193.6,
-   "work_mean_min": 432.6,
-   "within_4h_pct": 54.5,
+   "work_mean_min": 445.9,
+   "within_4h_pct": 54.2,
    "fastest_min": 6.1,
    "slowest_min": 9955.3
   },
@@ -28,11 +28,11 @@
   }
  },
  "overall": {
-  "n": 66,
+  "n": 68,
   "median_min": 459.4,
-  "mean_min": 1697.4,
+  "mean_min": 1689.6,
   "work_median_min": 356.6,
-  "within_4h_pct": 37.9
+  "within_4h_pct": 38.2
  },
  "pending": [
   {
@@ -69,11 +69,6 @@
    "thread_id": "19f654d9fe2b7332",
    "case": "多力多滋香菜祭 × Leo（8/28–8/29 內要完成 Threads 留言並回傳截圖＋委刊單）",
    "inbound_at": "2026-08-28T12:52:37Z"
-  },
-  {
-   "thread_id": "1a045aa993205eb1",
-   "case": "New Balance 1906A × Nakaw（成案但金額少 $5,000 待拍板；收件資訊／鞋款顏色／預計上線時間未回）",
-   "inbound_at": "2026-09-04T11:42:10Z"
   },
   {
    "thread_id": "19ff86ca3d75a293",

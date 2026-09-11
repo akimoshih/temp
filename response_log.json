@@ -640,6 +640,22 @@
       "inbound_at": "2026-09-09T02:01:00Z",
       "replied_at": "2026-09-10T00:00:00Z",
       "confident": false
+    },
+    {
+      "thread_id": "19ff3459faaaf0ee",
+      "responder": "jasmine",
+      "case": "SAMSUNG P7 PSSD 移動固態硬碟 × Nakaw（結案通知）",
+      "inbound_at": "2026-09-10T04:18:51Z",
+      "replied_at": "2026-09-10T04:32:15Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a045aa993205eb1",
+      "responder": "jasmine",
+      "case": "New Balance 1906A × Nakaw（收件確認與時程調整）",
+      "inbound_at": "2026-09-08T10:36:36Z",
+      "replied_at": "2026-09-10T10:07:48Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -677,11 +693,6 @@
       "thread_id": "19f654d9fe2b7332",
       "case": "多力多滋香菜祭 × Leo（8/28–8/29 內要完成 Threads 留言並回傳截圖＋委刊單）",
       "inbound_at": "2026-08-28T12:52:37Z"
-    },
-    {
-      "thread_id": "1a045aa993205eb1",
-      "case": "New Balance 1906A × Nakaw（成案但金額少 $5,000 待拍板；收件資訊／鞋款顏色／預計上線時間未回）",
-      "inbound_at": "2026-09-04T11:42:10Z"
     },
     {
       "thread_id": "19ff86ca3d75a293",
