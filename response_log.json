@@ -656,6 +656,22 @@
       "inbound_at": "2026-09-08T10:36:36Z",
       "replied_at": "2026-09-10T10:07:48Z",
       "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ 聯盟式 Influencer × YY（委刊單調整）",
+      "inbound_at": "2026-09-07T10:00:05Z",
+      "replied_at": "2026-09-08T03:56:22Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ 聯盟式 Influencer × YY（貼文切角提案）",
+      "inbound_at": "2026-09-09T02:05:16Z",
+      "replied_at": "2026-09-09T12:24:32Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -696,8 +712,18 @@
     },
     {
       "thread_id": "19ff86ca3d75a293",
-      "case": "Disney+ × YY（彼得已寄委刊單，對方要求移除 CPA／分潤項目後重開，並待完成 YY 的 Impact 註冊）",
-      "inbound_at": "2026-09-07T10:00:05Z"
+      "case": "Disney+ × YY（對方已回簽委刊單並提供貼文切角建議，待我方回覆確認）",
+      "inbound_at": "2026-09-11T04:19:50Z"
+    },
+    {
+      "thread_id": "1a07b14c973f35b9",
+      "case": "Suntory VARON × Leo（對方已給委刊單廠商資料，待我方開立委刊單）",
+      "inbound_at": "2026-09-11T08:57:50Z"
+    },
+    {
+      "thread_id": "1a08a43ea6f3081d",
+      "case": "TOZO AR 智慧眼鏡顯示器 × 梅伯（授權計價確認，草稿 T2026-0029 未寄）",
+      "inbound_at": "2026-09-11T10:04:17Z"
     }
   ]
 }

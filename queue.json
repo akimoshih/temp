@@ -727,5 +727,24 @@
       "draft_id": "r-1000310620248474478",
       "replied_to_message_id": "1a08fed69b769859"
     }
+  },
+  {
+    "task_id": "T2026-0030",
+    "type": "委刊單",
+    "thread_id": "1a07b14c973f35b9",
+    "case": "Suntory VARON 紳士多效活顏精華 × Leo",
+    "assignee": "jasmine",
+    "status": "草稿已建立",
+    "created": "2026-09-12T01:15:00Z",
+    "note": "DAC 9/11 提供廠商資料後開立委刊單 V20260912-01，合計 $250,000(net)（YT 置入 $80,000＋再製素材 ×3 $60,000＋Meta 廣告主一個月 $30,000＋品牌握手廣告一個月 $30,000＋Google Ads 一個月 $50,000）。專案期間／上線日期／請款月份留白待檔期確認。",
+    "drive_url": null,
+    "drive_note": "PDF base64 約 196KB 過大未上傳 Drive，改以 SendUserFile 直接交付（file_uuid 6f7272d4-8f2e-4a81-97e1-660c93241fb5）。",
+    "draft": {
+      "to": "joy-e-hsiao@dactp.com.tw",
+      "cc": "dac_AE12@dactp.com.tw, akimo@dcard.cc",
+      "subject": "Re: 【品牌合作邀約】Suntory_VARON _LEO合作邀約_260907",
+      "draft_id": "r-191346483197717628",
+      "replied_to_message_id": "1a08fb018f6e097c"
+    }
   }
 ]

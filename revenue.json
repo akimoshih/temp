@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "updated": "2026-09-11",
+ "updated": "2026-09-12",
  "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用「成員收入」兩欄，總覽頁用「成交價(未稅)」欄（欄位以標題文字定位）",
  "by_member": {
   "rio": [
@@ -317,21 +317,21 @@
     "p": 0.0
    },
    {
-    "name": "ampm_史努比聯名款_社群推廣合作_Ellie",
+    "name": "ampm_神經醯胺x史努比聯名系列_社群推廣合作_Ellie",
     "item": "Reels",
     "start": "2026-10-05",
     "o": 35000.0,
     "p": 0.0
    },
    {
-    "name": "ampm_史努比聯名款_社群推廣合作_Ellie",
+    "name": "ampm_神經醯胺x史努比聯名系列_社群推廣合作_Ellie",
     "item": "IG 限動",
     "start": "2026-10-05",
     "o": 7500.0,
     "p": 0.0
    },
    {
-    "name": "ampm_史努比聯名款_社群推廣合作_Ellie",
+    "name": "ampm_神經醯胺x史努比聯名系列_社群推廣合作_Ellie",
     "item": "投廣",
     "start": "2026-10-05",
     "o": 7500.0,
@@ -909,6 +909,34 @@
     "start": "2026-10-19",
     "o": 12500.0,
     "p": 2500.0
+   },
+   {
+    "name": "VARON_社群推廣合作_Leo",
+    "item": "其他",
+    "start": null,
+    "o": 40000.0,
+    "p": 8000.0
+   },
+   {
+    "name": "VARON_社群推廣合作_Leo",
+    "item": "其他",
+    "start": null,
+    "o": 15000.0,
+    "p": 3000.0
+   },
+   {
+    "name": "VARON_社群推廣合作_Leo",
+    "item": "其他",
+    "start": null,
+    "o": 15000.0,
+    "p": 3000.0
+   },
+   {
+    "name": "VARON_社群推廣合作_Leo",
+    "item": "其他",
+    "start": null,
+    "o": 25000.0,
+    "p": 5000.0
    }
   ],
   "nakaw": [
@@ -2160,6 +2188,30 @@
    "member_key": "rio",
    "start": null,
    "j": 35000.0
+  },
+  {
+   "member_raw": "Leo",
+   "member_key": "leo",
+   "start": null,
+   "j": 80000.0
+  },
+  {
+   "member_raw": "Leo",
+   "member_key": "leo",
+   "start": null,
+   "j": 30000.0
+  },
+  {
+   "member_raw": "Leo",
+   "member_key": "leo",
+   "start": null,
+   "j": 30000.0
+  },
+  {
+   "member_raw": "Leo",
+   "member_key": "leo",
+   "start": null,
+   "j": 50000.0
   }
  ]
 }

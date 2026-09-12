@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-11",
+ "updated": "2026-09-12",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 68,
+ "sample_size": 70,
  "excluded_low_confidence": 14,
  "by_person": {
   "jasmine": {
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 44,
-   "median_min": 1271.6,
-   "mean_min": 2030.6,
-   "p90_min": 5665.7,
+   "n": 46,
+   "median_min": 1156.9,
+   "mean_min": 1979.2,
+   "p90_min": 5552.9,
    "work_median_min": 484.6,
-   "work_mean_min": 686.4,
-   "within_4h_pct": 29.5,
+   "work_mean_min": 673.3,
+   "within_4h_pct": 28.3,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 68,
-  "median_min": 459.4,
-  "mean_min": 1689.6,
+  "n": 70,
+  "median_min": 504.3,
+  "mean_min": 1665.5,
   "work_median_min": 356.6,
-  "within_4h_pct": 38.2
+  "within_4h_pct": 37.1
  },
  "pending": [
   {
@@ -72,8 +72,18 @@
   },
   {
    "thread_id": "19ff86ca3d75a293",
-   "case": "Disney+ × YY（彼得已寄委刊單，對方要求移除 CPA／分潤項目後重開，並待完成 YY 的 Impact 註冊）",
-   "inbound_at": "2026-09-07T10:00:05Z"
+   "case": "Disney+ × YY（對方已回簽委刊單並提供貼文切角建議，待我方回覆確認）",
+   "inbound_at": "2026-09-11T04:19:50Z"
+  },
+  {
+   "thread_id": "1a07b14c973f35b9",
+   "case": "Suntory VARON × Leo（對方已給委刊單廠商資料，待我方開立委刊單）",
+   "inbound_at": "2026-09-11T08:57:50Z"
+  },
+  {
+   "thread_id": "1a08a43ea6f3081d",
+   "case": "TOZO AR 智慧眼鏡顯示器 × 梅伯（授權計價確認，草稿 T2026-0029 未寄）",
+   "inbound_at": "2026-09-11T10:04:17Z"
   }
  ]
 }
