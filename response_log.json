@@ -672,6 +672,14 @@
       "inbound_at": "2026-09-09T02:05:16Z",
       "replied_at": "2026-09-09T12:24:32Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a08a43ea6f3081d",
+      "responder": "oliver",
+      "case": "TOZO AR 智慧眼鏡顯示器 × 梅伯（授權計價確認）",
+      "inbound_at": "2026-09-11T10:04:17Z",
+      "replied_at": "2026-09-12T03:01:00Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -719,11 +727,6 @@
       "thread_id": "1a07b14c973f35b9",
       "case": "Suntory VARON × Leo（對方已給委刊單廠商資料，待我方開立委刊單）",
       "inbound_at": "2026-09-11T08:57:50Z"
-    },
-    {
-      "thread_id": "1a08a43ea6f3081d",
-      "case": "TOZO AR 智慧眼鏡顯示器 × 梅伯（授權計價確認，草稿 T2026-0029 未寄）",
-      "inbound_at": "2026-09-11T10:04:17Z"
     }
   ]
 }

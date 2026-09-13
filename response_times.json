@@ -1,7 +1,7 @@
 {
- "updated": "2026-09-12",
+ "updated": "2026-09-13",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 70,
+ "sample_size": 71,
  "excluded_low_confidence": 14,
  "by_person": {
   "jasmine": {
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 46,
-   "median_min": 1156.9,
-   "mean_min": 1979.2,
-   "p90_min": 5552.9,
-   "work_median_min": 484.6,
-   "work_mean_min": 673.3,
-   "within_4h_pct": 28.3,
+   "n": 47,
+   "median_min": 1129.2,
+   "mean_min": 1958.7,
+   "p90_min": 5496.5,
+   "work_median_min": 466.5,
+   "work_mean_min": 660.1,
+   "within_4h_pct": 27.7,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 70,
-  "median_min": 504.3,
-  "mean_min": 1665.5,
-  "work_median_min": 356.6,
-  "within_4h_pct": 37.1
+  "n": 71,
+  "median_min": 505.9,
+  "mean_min": 1656.4,
+  "work_median_min": 344.6,
+  "within_4h_pct": 36.6
  },
  "pending": [
   {
@@ -79,11 +79,6 @@
    "thread_id": "1a07b14c973f35b9",
    "case": "Suntory VARON × Leo（對方已給委刊單廠商資料，待我方開立委刊單）",
    "inbound_at": "2026-09-11T08:57:50Z"
-  },
-  {
-   "thread_id": "1a08a43ea6f3081d",
-   "case": "TOZO AR 智慧眼鏡顯示器 × 梅伯（授權計價確認，草稿 T2026-0029 未寄）",
-   "inbound_at": "2026-09-11T10:04:17Z"
   }
  ]
 }
