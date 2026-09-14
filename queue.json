@@ -763,5 +763,22 @@
       "draft_id": "r-5154399774534128974",
       "replied_to_message_id": "1a09dc8eab26bde9"
     }
+  },
+  {
+    "task_id": "T2026-0032",
+    "type": "報價回信",
+    "thread_id": "1a08fb73fbab85b3",
+    "case": "Sony ZV-E10 II × Nakaw（機種確認與合作細節）",
+    "assignee": "jasmine",
+    "status": "草稿已建立",
+    "created": "2026-09-14T04:15:00Z",
+    "note": "影領國際 Jenny 9/14 澄清機種確實是 ZV-E10 II（APS-C，先前需求文件誤寫全片幅），並問我方在此前提下是否配合、個人稅或公司稅、合作檔期、合作備註能否配合與我方合作規範。草稿沿用 9/11 已報的優惠價 $180,000(net)、答覆公司稅開發票與各項規範，Nakaw 的配合意願與檔期留【請確認】；另在內部備註提醒「授權 Sony Taiwan 不下架 $60,000」與價目表授權上限三個月的規則不一致。",
+    "draft": {
+      "to": "jenny_0302@dotmore.com.tw",
+      "cc": "akimo@dcard.cc",
+      "subject": "Re: 【影領國際｜原達摩媒體】Sony ZV-E10M2 _IG/threads合作_意願詢問_Nakaw",
+      "draft_id": "r7514720914552124506",
+      "replied_to_message_id": "1a09e0ffb5db6cbe"
+    }
   }
 ]
