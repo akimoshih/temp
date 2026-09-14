@@ -746,5 +746,22 @@
       "draft_id": "r-191346483197717628",
       "replied_to_message_id": "1a08fb018f6e097c"
     }
+  },
+  {
+    "task_id": "T2026-0031",
+    "type": "報價回信",
+    "thread_id": "1a0939020a546d39",
+    "case": "UNIQLO 旅遊穿搭短影音演出 × Rio",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-09-14T03:15:00Z",
+    "note": "SuperMedia 9/14 回覆影片將上架自家媒體「台灣達人秀」，球回到我方報價。本案為純演出、影片由對方製作且不上架 Rio 社群，不屬價目表既有品項，演出費與一個月投廣授權費皆以【請確認】標示未自行填數字；草稿內部備註附上 Rio 級距可對照的參考值（上架至非約定平台 $25,000、授權兩週至一個月 $45,000），並補問其他上架平台、拍攝地點時數、是否露出 Rio 帳號或需同步發社群、請款方式。",
+    "draft": {
+      "to": "joannahuang@supermedia.cool",
+      "cc": "sharonchung@supermedia.cool, anguschen@supermedia.cool, jasmine.wang@dcard.cc, akimo@dcard.cc",
+      "subject": "Re: 【短影音演出合作邀約】UNIQLO 旅遊穿搭企劃",
+      "draft_id": "r-5154399774534128974",
+      "replied_to_message_id": "1a09dc8eab26bde9"
+    }
   }
 ]
