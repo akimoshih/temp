@@ -680,6 +680,46 @@
       "inbound_at": "2026-09-11T10:04:17Z",
       "replied_at": "2026-09-12T03:01:00Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a0939020a546d39",
+      "responder": "oliver",
+      "case": "UNIQLO 旅遊穿搭短影音演出 × Rio（上架平台確認後報價）",
+      "inbound_at": "2026-09-14T02:39:09Z",
+      "replied_at": "2026-09-14T09:05:55Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a09e6eb4f363ef5",
+      "responder": "oliver",
+      "case": "台新全家 Richart 聯名卡 × 梅伯（報價）",
+      "inbound_at": "2026-09-11T04:10:00Z",
+      "replied_at": "2026-09-14T05:40:13Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a007ded973edfb9",
+      "responder": "jasmine",
+      "case": "Pernod Ricard 保樂力加 × Rio（品牌暫緩專案）",
+      "inbound_at": "2026-09-14T06:21:57Z",
+      "replied_at": "2026-09-14T06:27:36Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a09ebdb9c2c6613",
+      "responder": "jasmine",
+      "case": "TOPONE CFD 投資 APP YouTube 置入 × Leo（婉拒）",
+      "inbound_at": "2026-09-09T08:47:00Z",
+      "replied_at": "2026-09-14T07:06:56Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a09eb6724f0eedd",
+      "responder": "jasmine",
+      "case": "福容大飯店桃園店 × 桃知道 二週年活動（詢問合作對象）",
+      "inbound_at": "2026-09-14T03:36:00Z",
+      "replied_at": "2026-09-14T06:59:00Z",
+      "confident": false
     }
   ],
   "pending": [
@@ -714,19 +754,29 @@
       "inbound_at": "2026-08-27T02:43:41Z"
     },
     {
-      "thread_id": "19f654d9fe2b7332",
-      "case": "多力多滋香菜祭 × Leo（8/28–8/29 內要完成 Threads 留言並回傳截圖＋委刊單）",
-      "inbound_at": "2026-08-28T12:52:37Z"
-    },
-    {
-      "thread_id": "19ff86ca3d75a293",
-      "case": "Disney+ × YY（對方已回簽委刊單並提供貼文切角建議，待我方回覆確認）",
-      "inbound_at": "2026-09-11T04:19:50Z"
-    },
-    {
       "thread_id": "1a07b14c973f35b9",
       "case": "Suntory VARON × Leo（對方已給委刊單廠商資料，待我方開立委刊單）",
       "inbound_at": "2026-09-11T08:57:50Z"
+    },
+    {
+      "thread_id": "19f654d9fe2b7332",
+      "case": "多力多滋香菜祭 × Leo（對方已回傳用印委刊單，待我方用印回傳＋開發票）",
+      "inbound_at": "2026-09-14T06:53:02Z"
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "case": "Disney+ × YY（對方追問 YY 的 Impact 註冊是否完成，我方待辦）",
+      "inbound_at": "2026-09-14T07:46:57Z"
+    },
+    {
+      "thread_id": "1a093fe53aa3ed5c",
+      "case": "知名手機品牌（安卓）× YY（對方請我方評估並報價，草稿 T2026-0033 未寄）",
+      "inbound_at": "2026-09-14T10:00:01Z"
+    },
+    {
+      "thread_id": "1a08fb73fbab85b3",
+      "case": "Sony ZV-E10 II × Nakaw（機種確認後待我方回覆意願與檔期，草稿 T2026-0032 未寄）",
+      "inbound_at": "2026-09-14T03:57:09Z"
     }
   ]
 }
