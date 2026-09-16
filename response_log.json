@@ -720,6 +720,54 @@
       "inbound_at": "2026-09-14T03:36:00Z",
       "replied_at": "2026-09-14T06:59:00Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a093fe53aa3ed5c",
+      "responder": "oliver",
+      "case": "知名手機品牌（安卓）Reels × YY（分項報價）",
+      "inbound_at": "2026-09-14T10:00:01Z",
+      "replied_at": "2026-09-15T09:22:47Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ × YY（Impact 註冊追問與貼文 AC）",
+      "inbound_at": "2026-09-14T07:46:57Z",
+      "replied_at": "2026-09-15T08:43:35Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a07b14c973f35b9",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo（委刊單廠商資料與試用品）",
+      "inbound_at": "2026-09-11T08:57:50Z",
+      "replied_at": "2026-09-14T06:43:49Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a417faf467267",
+      "responder": "jasmine",
+      "case": "Bitget Wallet × Leo（詢問期待的合作方式）",
+      "inbound_at": "2026-09-05T06:12:00Z",
+      "replied_at": "2026-09-15T08:03:36Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0a4daf30f733b1",
+      "responder": "oliver",
+      "case": "Story Wear 臺北時裝週 SS27 品牌秀 × Rio（詢問宣傳規劃與報價方式）",
+      "inbound_at": "2026-09-14T08:22:00Z",
+      "replied_at": "2026-09-15T11:36:08Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0a40b03425121c",
+      "responder": "jasmine",
+      "case": "plain-me 21 週年預覽會 × Ellie（確認出席）",
+      "inbound_at": "2026-09-11T01:42:00Z",
+      "replied_at": "2026-09-15T07:49:27Z",
+      "confident": false
     }
   ],
   "pending": [
@@ -754,29 +802,29 @@
       "inbound_at": "2026-08-27T02:43:41Z"
     },
     {
-      "thread_id": "1a07b14c973f35b9",
-      "case": "Suntory VARON × Leo（對方已給委刊單廠商資料，待我方開立委刊單）",
-      "inbound_at": "2026-09-11T08:57:50Z"
-    },
-    {
       "thread_id": "19f654d9fe2b7332",
       "case": "多力多滋香菜祭 × Leo（對方已回傳用印委刊單，待我方用印回傳＋開發票）",
       "inbound_at": "2026-09-14T06:53:02Z"
     },
     {
-      "thread_id": "19ff86ca3d75a293",
-      "case": "Disney+ × YY（對方追問 YY 的 Impact 註冊是否完成，我方待辦）",
-      "inbound_at": "2026-09-14T07:46:57Z"
-    },
-    {
-      "thread_id": "1a093fe53aa3ed5c",
-      "case": "知名手機品牌（安卓）× YY（對方請我方評估並報價，草稿 T2026-0033 未寄）",
-      "inbound_at": "2026-09-14T10:00:01Z"
-    },
-    {
       "thread_id": "1a08fb73fbab85b3",
-      "case": "Sony ZV-E10 II × Nakaw（機種確認後待我方回覆意願與檔期，草稿 T2026-0032 未寄）",
-      "inbound_at": "2026-09-14T03:57:09Z"
+      "case": "Sony ZV-E10 II × Nakaw（對方 9/15 再次追問，草稿 T2026-0034 未寄）",
+      "inbound_at": "2026-09-15T09:04:31Z"
+    },
+    {
+      "thread_id": "1a0a3f95713d12a0",
+      "case": "Suntory VARON × Leo（試用品已寄出，委刊單草稿 T2026-0030 未寄）",
+      "inbound_at": "2026-09-15T07:30:08Z"
+    },
+    {
+      "thread_id": "1a09f96b21859653",
+      "case": "SIDIZ T50 二代 × Rio（對方要 9/17 前回報價，草稿 T2026-0035 未寄）",
+      "inbound_at": "2026-09-15T12:48:54Z"
+    },
+    {
+      "thread_id": "1a0a3c94e47f4e3f",
+      "case": "百靈佳 Hold 好腎 × Leo（CAPSULE 要求改以 Google 表單回覆，待人工填表）",
+      "inbound_at": "2026-09-15T06:50:48Z"
     }
   ]
 }

@@ -1,38 +1,38 @@
 {
- "updated": "2026-09-15",
+ "updated": "2026-09-16",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 73,
- "excluded_low_confidence": 17,
+ "sample_size": 76,
+ "excluded_low_confidence": 20,
  "by_person": {
   "jasmine": {
-   "n": 25,
-   "median_min": 210.8,
-   "mean_min": 1022.1,
-   "p90_min": 2378.0,
-   "work_median_min": 176.3,
-   "work_mean_min": 428.3,
-   "within_4h_pct": 56.0,
+   "n": 26,
+   "median_min": 218.3,
+   "mean_min": 1143.8,
+   "p90_min": 3518.6,
+   "work_median_min": 193.6,
+   "work_mean_min": 429.7,
+   "within_4h_pct": 53.8,
    "fastest_min": 5.7,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 48,
-   "median_min": 1102.7,
-   "mean_min": 1926.0,
-   "p90_min": 5440.1,
-   "work_median_min": 427.8,
-   "work_mean_min": 654.4,
-   "within_4h_pct": 27.1,
+   "n": 50,
+   "median_min": 1156.9,
+   "mean_min": 1906.9,
+   "p90_min": 5327.2,
+   "work_median_min": 484.6,
+   "work_mean_min": 652.7,
+   "within_4h_pct": 26.0,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 73,
-  "median_min": 502.6,
-  "mean_min": 1616.4,
-  "work_median_min": 344.6,
-  "within_4h_pct": 37.0
+  "n": 76,
+  "median_min": 562.6,
+  "mean_min": 1645.8,
+  "work_median_min": 375.2,
+  "within_4h_pct": 35.5
  },
  "pending": [
   {
@@ -66,29 +66,29 @@
    "inbound_at": "2026-08-27T02:43:41Z"
   },
   {
-   "thread_id": "1a07b14c973f35b9",
-   "case": "Suntory VARON × Leo（對方已給委刊單廠商資料，待我方開立委刊單）",
-   "inbound_at": "2026-09-11T08:57:50Z"
-  },
-  {
    "thread_id": "19f654d9fe2b7332",
    "case": "多力多滋香菜祭 × Leo（對方已回傳用印委刊單，待我方用印回傳＋開發票）",
    "inbound_at": "2026-09-14T06:53:02Z"
   },
   {
-   "thread_id": "19ff86ca3d75a293",
-   "case": "Disney+ × YY（對方追問 YY 的 Impact 註冊是否完成，我方待辦）",
-   "inbound_at": "2026-09-14T07:46:57Z"
-  },
-  {
-   "thread_id": "1a093fe53aa3ed5c",
-   "case": "知名手機品牌（安卓）× YY（對方請我方評估並報價，草稿 T2026-0033 未寄）",
-   "inbound_at": "2026-09-14T10:00:01Z"
-  },
-  {
    "thread_id": "1a08fb73fbab85b3",
-   "case": "Sony ZV-E10 II × Nakaw（機種確認後待我方回覆意願與檔期，草稿 T2026-0032 未寄）",
-   "inbound_at": "2026-09-14T03:57:09Z"
+   "case": "Sony ZV-E10 II × Nakaw（對方 9/15 再次追問，草稿 T2026-0034 未寄）",
+   "inbound_at": "2026-09-15T09:04:31Z"
+  },
+  {
+   "thread_id": "1a0a3f95713d12a0",
+   "case": "Suntory VARON × Leo（試用品已寄出，委刊單草稿 T2026-0030 未寄）",
+   "inbound_at": "2026-09-15T07:30:08Z"
+  },
+  {
+   "thread_id": "1a09f96b21859653",
+   "case": "SIDIZ T50 二代 × Rio（對方要 9/17 前回報價，草稿 T2026-0035 未寄）",
+   "inbound_at": "2026-09-15T12:48:54Z"
+  },
+  {
+   "thread_id": "1a0a3c94e47f4e3f",
+   "case": "百靈佳 Hold 好腎 × Leo（CAPSULE 要求改以 Google 表單回覆，待人工填表）",
+   "inbound_at": "2026-09-15T06:50:48Z"
   }
  ]
 }
