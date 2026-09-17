@@ -1,38 +1,38 @@
 {
- "updated": "2026-09-16",
+ "updated": "2026-09-17",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 76,
- "excluded_low_confidence": 20,
+ "sample_size": 78,
+ "excluded_low_confidence": 25,
  "by_person": {
   "jasmine": {
-   "n": 26,
-   "median_min": 218.3,
-   "mean_min": 1143.8,
-   "p90_min": 3518.6,
-   "work_median_min": 193.6,
-   "work_mean_min": 429.7,
-   "within_4h_pct": 53.8,
+   "n": 27,
+   "median_min": 225.8,
+   "mean_min": 1148.6,
+   "p90_min": 3385.1,
+   "work_median_min": 210.8,
+   "work_mean_min": 429.9,
+   "within_4h_pct": 51.9,
    "fastest_min": 5.7,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 50,
-   "median_min": 1156.9,
-   "mean_min": 1906.9,
-   "p90_min": 5327.2,
-   "work_median_min": 484.6,
-   "work_mean_min": 652.7,
-   "within_4h_pct": 26.0,
+   "n": 51,
+   "median_min": 1129.2,
+   "mean_min": 1888.6,
+   "p90_min": 5270.8,
+   "work_median_min": 466.5,
+   "work_mean_min": 644.6,
+   "within_4h_pct": 25.5,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 76,
-  "median_min": 562.6,
-  "mean_min": 1645.8,
+  "n": 78,
+  "median_min": 725.7,
+  "mean_min": 1632.4,
   "work_median_min": 375.2,
-  "within_4h_pct": 35.5
+  "within_4h_pct": 34.6
  },
  "pending": [
   {
@@ -71,24 +71,34 @@
    "inbound_at": "2026-09-14T06:53:02Z"
   },
   {
-   "thread_id": "1a08fb73fbab85b3",
-   "case": "Sony ZV-E10 II × Nakaw（對方 9/15 再次追問，草稿 T2026-0034 未寄）",
-   "inbound_at": "2026-09-15T09:04:31Z"
-  },
-  {
    "thread_id": "1a0a3f95713d12a0",
    "case": "Suntory VARON × Leo（試用品已寄出，委刊單草稿 T2026-0030 未寄）",
    "inbound_at": "2026-09-15T07:30:08Z"
   },
   {
-   "thread_id": "1a09f96b21859653",
-   "case": "SIDIZ T50 二代 × Rio（對方要 9/17 前回報價，草稿 T2026-0035 未寄）",
-   "inbound_at": "2026-09-15T12:48:54Z"
-  },
-  {
    "thread_id": "1a0a3c94e47f4e3f",
    "case": "百靈佳 Hold 好腎 × Leo（CAPSULE 要求改以 Google 表單回覆，待人工填表）",
    "inbound_at": "2026-09-15T06:50:48Z"
+  },
+  {
+   "thread_id": "19ff86ca3d75a293",
+   "case": "Disney+ × YY（對方請我方更換第 8 張舊版品牌形象配圖後回報）",
+   "inbound_at": "2026-09-16T07:33:46Z"
+  },
+  {
+   "thread_id": "1a0a4daf30f733b1",
+   "case": "Story Wear 臺北時裝週 SS27 × Rio（純公關看秀邀請，待確認 Rio 10/18 是否出席）",
+   "inbound_at": "2026-09-16T03:07:05Z"
+  },
+  {
+   "thread_id": "1a014122591da47b",
+   "case": "德國漢高 Bref 馬桶球（對方已用印合約，待我方用印留存）",
+   "inbound_at": "2026-09-16T04:11:17Z"
+  },
+  {
+   "thread_id": "1a0a9035e0a61c59",
+   "case": "Saily eSIM × YY（對方追問 YY 近期是否與其他 eSIM 廠商合作）",
+   "inbound_at": "2026-09-16T07:51:26Z"
   }
  ]
 }
