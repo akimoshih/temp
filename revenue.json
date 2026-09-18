@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "updated": "2026-09-17",
+ "updated": "2026-09-18",
  "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用「成員收入」兩欄，總覽頁用「成交價(未稅)」欄（欄位以標題文字定位）",
  "by_member": {
   "rio": [
@@ -136,6 +136,13 @@
     "start": null,
     "o": 17500.0,
     "p": 3500.0
+   },
+   {
+    "name": "臺北市青年局_演講_Rio",
+    "item": "演講",
+    "start": null,
+    "o": 25000.0,
+    "p": 5000.0
    }
   ],
   "andrew": [
@@ -2184,6 +2191,12 @@
   {
    "member_raw": "Leo",
    "member_key": "leo",
+   "start": null,
+   "j": 50000.0
+  },
+  {
+   "member_raw": "Rio",
+   "member_key": "rio",
    "start": null,
    "j": 50000.0
   }

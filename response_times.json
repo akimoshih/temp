@@ -1,38 +1,38 @@
 {
- "updated": "2026-09-17",
+ "updated": "2026-09-18",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 78,
+ "sample_size": 81,
  "excluded_low_confidence": 25,
  "by_person": {
   "jasmine": {
-   "n": 27,
-   "median_min": 225.8,
-   "mean_min": 1148.6,
-   "p90_min": 3385.1,
-   "work_median_min": 210.8,
-   "work_mean_min": 429.9,
-   "within_4h_pct": 51.9,
+   "n": 29,
+   "median_min": 291.9,
+   "mean_min": 1227.3,
+   "p90_min": 4194.4,
+   "work_median_min": 216.1,
+   "work_mean_min": 471.2,
+   "within_4h_pct": 48.3,
    "fastest_min": 5.7,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 51,
-   "median_min": 1129.2,
-   "mean_min": 1888.6,
-   "p90_min": 5270.8,
-   "work_median_min": 466.5,
-   "work_mean_min": 644.6,
-   "within_4h_pct": 25.5,
+   "n": 52,
+   "median_min": 1156.9,
+   "mean_min": 1880.5,
+   "p90_min": 5241.4,
+   "work_median_min": 484.6,
+   "work_mean_min": 644.3,
+   "within_4h_pct": 25.0,
    "fastest_min": 12.4,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 78,
-  "median_min": 725.7,
-  "mean_min": 1632.4,
-  "work_median_min": 375.2,
-  "within_4h_pct": 34.6
+  "n": 81,
+  "median_min": 832.1,
+  "mean_min": 1646.6,
+  "work_median_min": 381.7,
+  "within_4h_pct": 33.3
  },
  "pending": [
   {
@@ -66,11 +66,6 @@
    "inbound_at": "2026-08-27T02:43:41Z"
   },
   {
-   "thread_id": "19f654d9fe2b7332",
-   "case": "多力多滋香菜祭 × Leo（對方已回傳用印委刊單，待我方用印回傳＋開發票）",
-   "inbound_at": "2026-09-14T06:53:02Z"
-  },
-  {
    "thread_id": "1a0a3f95713d12a0",
    "case": "Suntory VARON × Leo（試用品已寄出，委刊單草稿 T2026-0030 未寄）",
    "inbound_at": "2026-09-15T07:30:08Z"
@@ -91,14 +86,19 @@
    "inbound_at": "2026-09-16T03:07:05Z"
   },
   {
-   "thread_id": "1a014122591da47b",
-   "case": "德國漢高 Bref 馬桶球（對方已用印合約，待我方用印留存）",
-   "inbound_at": "2026-09-16T04:11:17Z"
-  },
-  {
    "thread_id": "1a0a9035e0a61c59",
    "case": "Saily eSIM × YY（對方追問 YY 近期是否與其他 eSIM 廠商合作）",
    "inbound_at": "2026-09-16T07:51:26Z"
+  },
+  {
+   "thread_id": "1a014122591da47b",
+   "case": "德國漢高 Bref 馬桶球（對方寄回重簽版合約，待我方確認並用印留存）",
+   "inbound_at": "2026-09-17T08:40:22Z"
+  },
+  {
+   "thread_id": "19f1801646835958",
+   "case": "soundcore Liberty 5 Pro × 梅伯（EMC 請 9/18 前提供限動截圖與 Reels 後台數據）",
+   "inbound_at": "2026-09-16T10:00:06Z"
   }
  ]
 }

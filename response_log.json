@@ -824,6 +824,30 @@
       "inbound_at": "2026-09-14T09:52:00Z",
       "replied_at": "2026-09-16T05:01:00Z",
       "confident": false
+    },
+    {
+      "thread_id": "19f654d9fe2b7332",
+      "responder": "jasmine",
+      "case": "多力多滋香菜祭 × Leo（用印委刊單與發票）",
+      "inbound_at": "2026-09-14T06:53:02Z",
+      "replied_at": "2026-09-17T05:20:51Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a9a7d9ef97f4b",
+      "responder": "jasmine",
+      "case": "喜鴻假期 創作者旅遊企劃 × Leo（會議時段）",
+      "inbound_at": "2026-09-17T03:09:00Z",
+      "replied_at": "2026-09-17T09:01:09Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "德國漢高 Bref 馬桶球（合約條款更正）",
+      "inbound_at": "2026-09-16T04:11:17Z",
+      "replied_at": "2026-09-17T04:39:48Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -858,11 +882,6 @@
       "inbound_at": "2026-08-27T02:43:41Z"
     },
     {
-      "thread_id": "19f654d9fe2b7332",
-      "case": "多力多滋香菜祭 × Leo（對方已回傳用印委刊單，待我方用印回傳＋開發票）",
-      "inbound_at": "2026-09-14T06:53:02Z"
-    },
-    {
       "thread_id": "1a0a3f95713d12a0",
       "case": "Suntory VARON × Leo（試用品已寄出，委刊單草稿 T2026-0030 未寄）",
       "inbound_at": "2026-09-15T07:30:08Z"
@@ -883,14 +902,19 @@
       "inbound_at": "2026-09-16T03:07:05Z"
     },
     {
-      "thread_id": "1a014122591da47b",
-      "case": "德國漢高 Bref 馬桶球（對方已用印合約，待我方用印留存）",
-      "inbound_at": "2026-09-16T04:11:17Z"
-    },
-    {
       "thread_id": "1a0a9035e0a61c59",
       "case": "Saily eSIM × YY（對方追問 YY 近期是否與其他 eSIM 廠商合作）",
       "inbound_at": "2026-09-16T07:51:26Z"
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "case": "德國漢高 Bref 馬桶球（對方寄回重簽版合約，待我方確認並用印留存）",
+      "inbound_at": "2026-09-17T08:40:22Z"
+    },
+    {
+      "thread_id": "19f1801646835958",
+      "case": "soundcore Liberty 5 Pro × 梅伯（EMC 請 9/18 前提供限動截圖與 Reels 後台數據）",
+      "inbound_at": "2026-09-16T10:00:06Z"
     }
   ]
 }
