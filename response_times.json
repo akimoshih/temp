@@ -1,37 +1,37 @@
 {
- "updated": "2026-09-18",
+ "updated": "2026-09-19",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 81,
+ "sample_size": 90,
  "excluded_low_confidence": 25,
  "by_person": {
   "jasmine": {
-   "n": 29,
-   "median_min": 291.9,
-   "mean_min": 1227.3,
-   "p90_min": 4194.4,
-   "work_median_min": 216.1,
-   "work_mean_min": 471.2,
-   "within_4h_pct": 48.3,
-   "fastest_min": 5.7,
+   "n": 32,
+   "median_min": 258.9,
+   "mean_min": 1125.6,
+   "p90_min": 4052.5,
+   "work_median_min": 213.4,
+   "work_mean_min": 439.6,
+   "within_4h_pct": 50.0,
+   "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 52,
-   "median_min": 1156.9,
-   "mean_min": 1880.5,
-   "p90_min": 5241.4,
-   "work_median_min": 484.6,
-   "work_mean_min": 644.3,
-   "within_4h_pct": 25.0,
-   "fastest_min": 12.4,
+   "n": 58,
+   "median_min": 1271.6,
+   "mean_min": 1904.4,
+   "p90_min": 5064.6,
+   "work_median_min": 510.6,
+   "work_mean_min": 679.4,
+   "within_4h_pct": 24.1,
+   "fastest_min": 7.8,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 81,
-  "median_min": 832.1,
-  "mean_min": 1646.6,
-  "work_median_min": 381.7,
+  "n": 90,
+  "median_min": 725.7,
+  "mean_min": 1627.5,
+  "work_median_min": 384.2,
   "within_4h_pct": 33.3
  },
  "pending": [
@@ -76,29 +76,19 @@
    "inbound_at": "2026-09-15T06:50:48Z"
   },
   {
-   "thread_id": "19ff86ca3d75a293",
-   "case": "Disney+ × YY（對方請我方更換第 8 張舊版品牌形象配圖後回報）",
-   "inbound_at": "2026-09-16T07:33:46Z"
-  },
-  {
-   "thread_id": "1a0a4daf30f733b1",
-   "case": "Story Wear 臺北時裝週 SS27 × Rio（純公關看秀邀請，待確認 Rio 10/18 是否出席）",
-   "inbound_at": "2026-09-16T03:07:05Z"
-  },
-  {
-   "thread_id": "1a0a9035e0a61c59",
-   "case": "Saily eSIM × YY（對方追問 YY 近期是否與其他 eSIM 廠商合作）",
-   "inbound_at": "2026-09-16T07:51:26Z"
-  },
-  {
    "thread_id": "1a014122591da47b",
    "case": "德國漢高 Bref 馬桶球（對方寄回重簽版合約，待我方確認並用印留存）",
    "inbound_at": "2026-09-17T08:40:22Z"
   },
   {
-   "thread_id": "19f1801646835958",
-   "case": "soundcore Liberty 5 Pro × 梅伯（EMC 請 9/18 前提供限動截圖與 Reels 後台數據）",
-   "inbound_at": "2026-09-16T10:00:06Z"
+   "thread_id": "1a0af2b1fd2004af",
+   "case": "Sony ULT FIELD 藍牙喇叭 × Rio（對方請補貼文與廣告主授權報價，草稿 T2026-0037 未寄）",
+   "inbound_at": "2026-09-18T11:48:52Z"
+  },
+  {
+   "thread_id": "1a09f96b21859653",
+   "case": "SIDIZ T50 × Rio（對方問檔期能否 11/9 前上線搭雙 11）",
+   "inbound_at": "2026-09-18T06:11:24Z"
   }
  ]
 }

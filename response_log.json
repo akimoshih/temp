@@ -848,6 +848,78 @@
       "inbound_at": "2026-09-16T04:11:17Z",
       "replied_at": "2026-09-17T04:39:48Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a0af2b1fd2004af",
+      "responder": "oliver",
+      "case": "Sony ULT FIELD 藍牙喇叭 × Rio（場地與主打產品確認）",
+      "inbound_at": "2026-09-18T03:23:30Z",
+      "replied_at": "2026-09-18T11:37:08Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a08a43ea6f3081d",
+      "responder": "oliver",
+      "case": "TOZO AR 智慧眼鏡 × 梅伯（客戶告知未選上、結案）",
+      "inbound_at": "2026-09-18T06:17:03Z",
+      "replied_at": "2026-09-18T06:24:52Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a9a7d9ef97f4b",
+      "responder": "jasmine",
+      "case": "喜鴻假期 創作者旅遊企劃 × Leo（會議連結確認）",
+      "inbound_at": "2026-09-18T00:38:18Z",
+      "replied_at": "2026-09-18T07:09:58Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a9a7d9ef97f4b",
+      "responder": "jasmine",
+      "case": "喜鴻假期 創作者旅遊企劃 × Leo（會後補寄行程表）",
+      "inbound_at": "2026-09-18T09:56:25Z",
+      "replied_at": "2026-09-18T10:26:32Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a4daf30f733b1",
+      "responder": "oliver",
+      "case": "Story Wear 臺北時裝週 SS27 × Rio（純公關看秀，婉謝出席）",
+      "inbound_at": "2026-09-16T03:07:05Z",
+      "replied_at": "2026-09-18T08:06:55Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a9035e0a61c59",
+      "responder": "oliver",
+      "case": "Saily eSIM × YY（確認無其他 eSIM 合作、地點改馬來西亞）",
+      "inbound_at": "2026-09-16T07:51:26Z",
+      "replied_at": "2026-09-18T10:10:33Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ × YY（更換第 8 張配圖並回報 Impact 進度）",
+      "inbound_at": "2026-09-16T07:33:46Z",
+      "replied_at": "2026-09-18T09:51:44Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19f1801646835958",
+      "responder": "oliver",
+      "case": "soundcore Liberty 5 Pro × 梅伯（提供後台數據）",
+      "inbound_at": "2026-09-16T10:00:06Z",
+      "replied_at": "2026-09-18T11:11:13Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19f654d9fe2b7332",
+      "responder": "jasmine",
+      "case": "多力多滋 × Leo（對方回覆休假後跑用印）",
+      "inbound_at": "2026-09-17T18:23:11Z",
+      "replied_at": "2026-09-17T18:28:11Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -892,29 +964,19 @@
       "inbound_at": "2026-09-15T06:50:48Z"
     },
     {
-      "thread_id": "19ff86ca3d75a293",
-      "case": "Disney+ × YY（對方請我方更換第 8 張舊版品牌形象配圖後回報）",
-      "inbound_at": "2026-09-16T07:33:46Z"
-    },
-    {
-      "thread_id": "1a0a4daf30f733b1",
-      "case": "Story Wear 臺北時裝週 SS27 × Rio（純公關看秀邀請，待確認 Rio 10/18 是否出席）",
-      "inbound_at": "2026-09-16T03:07:05Z"
-    },
-    {
-      "thread_id": "1a0a9035e0a61c59",
-      "case": "Saily eSIM × YY（對方追問 YY 近期是否與其他 eSIM 廠商合作）",
-      "inbound_at": "2026-09-16T07:51:26Z"
-    },
-    {
       "thread_id": "1a014122591da47b",
       "case": "德國漢高 Bref 馬桶球（對方寄回重簽版合約，待我方確認並用印留存）",
       "inbound_at": "2026-09-17T08:40:22Z"
     },
     {
-      "thread_id": "19f1801646835958",
-      "case": "soundcore Liberty 5 Pro × 梅伯（EMC 請 9/18 前提供限動截圖與 Reels 後台數據）",
-      "inbound_at": "2026-09-16T10:00:06Z"
+      "thread_id": "1a0af2b1fd2004af",
+      "case": "Sony ULT FIELD 藍牙喇叭 × Rio（對方請補貼文與廣告主授權報價，草稿 T2026-0037 未寄）",
+      "inbound_at": "2026-09-18T11:48:52Z"
+    },
+    {
+      "thread_id": "1a09f96b21859653",
+      "case": "SIDIZ T50 × Rio（對方問檔期能否 11/9 前上線搭雙 11）",
+      "inbound_at": "2026-09-18T06:11:24Z"
     }
   ]
 }
