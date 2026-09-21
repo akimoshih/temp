@@ -859,7 +859,7 @@
     "thread_id": "1a0af2b1fd2004af",
     "case": "Sony ULT FIELD 系列藍牙喇叭 露營企劃 × Rio（補貼文與廣告主授權報價）",
     "assignee": "oliver",
-    "status": "草稿已建立",
+    "status": "作廢（對方 9/21 再次來信，改由 T2026-0038 回覆最新一封，請勿誤送）",
     "created": "2026-09-19",
     "note": "影領國際 Jenny 9/18 19:48 回覆請補「IG 圖文＋IGS」報價與廣告主授權報價。依價目表 Rio 級距：IG 貼文 90,000＋限動靜態 35,000＝125,000、廣告主授權兩週 25,000。Threads 轉發、Embed 嵌入分享、露營場地與場佈費用價目表查無，仍以【請確認】標示。內部備註已提醒彼得 Reels 報 205,000 高於表定 185,000，貼文是否同步加成由人工決定；草稿開頭內部備註寄出前請刪除。",
     "draft": {
@@ -872,6 +872,27 @@
       "subject": "Re: 【影領國際｜原達摩媒體】SonyULT FIELD 系列藍牙喇叭_IG合作_意願詢問_Rio 壹比零",
       "draft_id": "r-3813013806185921309",
       "replied_to_message_id": "1a0b4594896c4531"
+    }
+  },
+  {
+    "task_id": "T2026-0038",
+    "type": "報價回信",
+    "thread_id": "1a0af2b1fd2004af",
+    "case": "Sony ULT FIELD 系列藍牙喇叭 露營企劃 × Rio（檔期＋規範＋貼文與廣告主報價）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-09-21",
+    "note": "影領國際 Jenny 9/21 11:30 再次來信，要求一次提供合作檔期、合作規範、貼文報價、廣告主報價與後台截圖。依價目表 Rio 級距：IG 圖文＋IGS 125,000、廣告主授權兩週 25,000，並重述彼得已報的 Reels＋IGS 205,000；檔期、Threads 轉發、Embed 嵌入分享、場地場佈費用以【請確認】標示。取代未寄出的 T2026-0037。草稿開頭內部備註寄出前請刪除。",
+    "draft": {
+      "to": "jenny_0302@dotmore.com.tw",
+      "cc": [
+        "jasmine.wang@dcard.cc",
+        "akimo@dcard.cc",
+        "rio@dcard.cc"
+      ],
+      "subject": "Re: 【影領國際｜原達摩媒體】SonyULT FIELD 系列藍牙喇叭_IG合作_意願詢問_Rio 壹比零",
+      "draft_id": "r-1035943134800434989",
+      "replied_to_message_id": "1a0c20446c292259"
     }
   }
 ]
