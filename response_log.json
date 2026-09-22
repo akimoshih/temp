@@ -920,6 +920,22 @@
       "inbound_at": "2026-09-17T18:23:11Z",
       "replied_at": "2026-09-17T18:28:11Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a0a9a7d9ef97f4b",
+      "responder": "jasmine",
+      "case": "喜鴻假期 創作者旅遊企劃 × Leo（婉拒合作）",
+      "inbound_at": "2026-09-18T09:15:24Z",
+      "replied_at": "2026-09-21T06:49:22Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a09f96b21859653",
+      "responder": "oliver",
+      "case": "SIDIZ T50 × Rio（檔期回覆 12 月上線）",
+      "inbound_at": "2026-09-20T02:27:38Z",
+      "replied_at": "2026-09-21T06:52:15Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -970,13 +986,8 @@
     },
     {
       "thread_id": "1a0af2b1fd2004af",
-      "case": "Sony ULT FIELD 藍牙喇叭 × Rio（對方請補貼文與廣告主授權報價，草稿 T2026-0037 未寄）",
-      "inbound_at": "2026-09-18T11:48:52Z"
-    },
-    {
-      "thread_id": "1a09f96b21859653",
-      "case": "SIDIZ T50 × Rio（對方問檔期能否 11/9 前上線搭雙 11，9/22 中午前需回覆）",
-      "inbound_at": "2026-09-18T06:11:24Z"
+      "case": "Sony ULT FIELD 藍牙喇叭 × Rio（對方請補檔期／規範／貼文與廣告主報價，草稿 T2026-0038 未寄）",
+      "inbound_at": "2026-09-21T03:30:42Z"
     }
   ]
 }

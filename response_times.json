@@ -1,38 +1,38 @@
 {
- "updated": "2026-09-21",
+ "updated": "2026-09-22",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 90,
+ "sample_size": 92,
  "excluded_low_confidence": 25,
  "by_person": {
   "jasmine": {
-   "n": 32,
-   "median_min": 258.9,
-   "mean_min": 1125.6,
-   "p90_min": 4052.5,
-   "work_median_min": 213.4,
-   "work_mean_min": 439.6,
-   "within_4h_pct": 50.0,
+   "n": 33,
+   "median_min": 291.9,
+   "mean_min": 1217.9,
+   "p90_min": 4183.6,
+   "work_median_min": 216.1,
+   "work_mean_min": 440.0,
+   "within_4h_pct": 48.5,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 58,
-   "median_min": 1271.6,
-   "mean_min": 1904.4,
-   "p90_min": 5064.6,
-   "work_median_min": 510.6,
-   "work_mean_min": 679.4,
-   "within_4h_pct": 24.1,
+   "n": 59,
+   "median_min": 1358.6,
+   "mean_min": 1901.0,
+   "p90_min": 5035.2,
+   "work_median_min": 502.6,
+   "work_mean_min": 673.8,
+   "within_4h_pct": 23.7,
    "fastest_min": 7.8,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 90,
-  "median_min": 725.7,
-  "mean_min": 1627.5,
+  "n": 92,
+  "median_min": 884.1,
+  "mean_min": 1656.0,
   "work_median_min": 384.2,
-  "within_4h_pct": 33.3
+  "within_4h_pct": 32.6
  },
  "pending": [
   {
@@ -82,13 +82,8 @@
   },
   {
    "thread_id": "1a0af2b1fd2004af",
-   "case": "Sony ULT FIELD 藍牙喇叭 × Rio（對方請補貼文與廣告主授權報價，草稿 T2026-0037 未寄）",
-   "inbound_at": "2026-09-18T11:48:52Z"
-  },
-  {
-   "thread_id": "1a09f96b21859653",
-   "case": "SIDIZ T50 × Rio（對方問檔期能否 11/9 前上線搭雙 11，9/22 中午前需回覆）",
-   "inbound_at": "2026-09-18T06:11:24Z"
+   "case": "Sony ULT FIELD 藍牙喇叭 × Rio（對方請補檔期／規範／貼文與廣告主報價，草稿 T2026-0038 未寄）",
+   "inbound_at": "2026-09-21T03:30:42Z"
   }
  ]
 }
