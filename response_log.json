@@ -936,6 +936,14 @@
       "inbound_at": "2026-09-20T02:27:38Z",
       "replied_at": "2026-09-21T06:52:15Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a0a9a7d9ef97f4b",
+      "responder": "jasmine",
+      "case": "喜鴻假期 創作者旅遊企劃 × Leo（結案致謝）",
+      "inbound_at": "2026-09-21T07:54:55Z",
+      "replied_at": "2026-09-22T05:42:01Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -988,6 +996,11 @@
       "thread_id": "1a0af2b1fd2004af",
       "case": "Sony ULT FIELD 藍牙喇叭 × Rio（對方請補檔期／規範／貼文與廣告主報價，草稿 T2026-0038 未寄）",
       "inbound_at": "2026-09-21T03:30:42Z"
+    },
+    {
+      "thread_id": "1a0b46043f9e7af4",
+      "case": "Hair Rituel by Sisley × 梅伯（對方加價至現金 30,000＋產品 30,000，待我方讓價決策）",
+      "inbound_at": "2026-09-22T08:47:08Z"
     }
   ]
 }
