@@ -944,6 +944,38 @@
       "inbound_at": "2026-09-21T07:54:55Z",
       "replied_at": "2026-09-22T05:42:01Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a0b46043f9e7af4",
+      "responder": "oliver",
+      "case": "Hair Rituel by Sisley × 梅伯（婉拒產品交換折抵）",
+      "inbound_at": "2026-09-22T08:47:08Z",
+      "replied_at": "2026-09-23T02:01:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "responder": "oliver",
+      "case": "蘇格蘭威士忌 × 梅伯（回傳匯款資料表）",
+      "inbound_at": "2026-09-23T06:59:26Z",
+      "replied_at": "2026-09-23T10:05:25Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0939020a546d39",
+      "responder": "oliver",
+      "case": "UNIQLO 旅遊穿搭短影音 × Rio（專案取消致謝）",
+      "inbound_at": "2026-09-23T02:35:00Z",
+      "replied_at": "2026-09-23T03:12:04Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "德國漢高 Bref × YY（回傳用印合約與委刊單）",
+      "inbound_at": "2026-09-17T08:40:22Z",
+      "replied_at": "2026-09-23T03:05:36Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -988,19 +1020,24 @@
       "inbound_at": "2026-09-15T06:50:48Z"
     },
     {
-      "thread_id": "1a014122591da47b",
-      "case": "德國漢高 Bref 馬桶球（對方寄回重簽版合約，待我方確認並用印留存）",
-      "inbound_at": "2026-09-17T08:40:22Z"
-    },
-    {
       "thread_id": "1a0af2b1fd2004af",
       "case": "Sony ULT FIELD 藍牙喇叭 × Rio（對方請補檔期／規範／貼文與廣告主報價，草稿 T2026-0038 未寄）",
       "inbound_at": "2026-09-21T03:30:42Z"
     },
     {
-      "thread_id": "1a0b46043f9e7af4",
-      "case": "Hair Rituel by Sisley × 梅伯（對方加價至現金 30,000＋產品 30,000，待我方讓價決策）",
-      "inbound_at": "2026-09-22T08:47:08Z"
+      "thread_id": "1a0889dcca1c4535",
+      "case": "Logitech 校園大使工作坊 × Leo（對方確認 10/21 檔期與企劃，待我方回覆）",
+      "inbound_at": "2026-09-23T08:10:25Z"
+    },
+    {
+      "thread_id": "19bb0fd09afde6f6",
+      "case": "iHerb × Andrew（VGV 重啟舊案問檔期，並引導改走 LINE）",
+      "inbound_at": "2026-09-23T10:44:32Z"
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "case": "德國漢高 Bref × YY（對方請補提供存摺影本）",
+      "inbound_at": "2026-09-23T14:53:43Z"
     }
   ]
 }
