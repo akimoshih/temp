@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "updated": "2026-09-24",
+ "updated": "2026-09-25",
  "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用「成員收入」兩欄，總覽頁用「成交價(未稅)」欄（欄位以標題文字定位）",
  "by_member": {
   "rio": [
@@ -911,30 +911,37 @@
     "p": 2500.0
    },
    {
+    "name": "Logitech 羅技校園大使_Leo",
+    "item": "演講",
+    "start": "2026-10-21",
+    "o": 30000.0,
+    "p": 6000.0
+   },
+   {
     "name": "VARON_社群推廣合作_Leo",
     "item": "其他",
-    "start": null,
+    "start": "2026-11-08",
     "o": 40000.0,
     "p": 8000.0
    },
    {
     "name": "VARON_社群推廣合作_Leo",
     "item": "其他",
-    "start": null,
+    "start": "2026-11-08",
     "o": 15000.0,
     "p": 3000.0
    },
    {
     "name": "VARON_社群推廣合作_Leo",
     "item": "其他",
-    "start": null,
+    "start": "2026-11-08",
     "o": 15000.0,
     "p": 3000.0
    },
    {
     "name": "VARON_社群推廣合作_Leo",
     "item": "其他",
-    "start": null,
+    "start": "2026-11-08",
     "o": 25000.0,
     "p": 5000.0
    }
@@ -2186,25 +2193,25 @@
   {
    "member_raw": "Leo",
    "member_key": "leo",
-   "start": null,
+   "start": "2026-11-08",
    "j": 80000.0
   },
   {
    "member_raw": "Leo",
    "member_key": "leo",
-   "start": null,
+   "start": "2026-11-08",
    "j": 30000.0
   },
   {
    "member_raw": "Leo",
    "member_key": "leo",
-   "start": null,
+   "start": "2026-11-08",
    "j": 30000.0
   },
   {
    "member_raw": "Leo",
    "member_key": "leo",
-   "start": null,
+   "start": "2026-11-08",
    "j": 50000.0
   },
   {
@@ -2212,6 +2219,12 @@
    "member_key": "rio",
    "start": null,
    "j": 50000.0
+  },
+  {
+   "member_raw": "Leo",
+   "member_key": "leo",
+   "start": "2026-10-21",
+   "j": 60000.0
   }
  ]
 }

@@ -976,6 +976,14 @@
       "inbound_at": "2026-09-17T08:40:22Z",
       "replied_at": "2026-09-23T03:05:36Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a0d1a141cee46ac",
+      "responder": "oliver",
+      "case": "饗泰多 × YY（表達合作意願並提交表單）",
+      "inbound_at": "2026-09-23T12:27:00Z",
+      "replied_at": "2026-09-24T04:16:03Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -1038,6 +1046,11 @@
       "thread_id": "1a014122591da47b",
       "case": "德國漢高 Bref × YY（對方請補提供存摺影本）",
       "inbound_at": "2026-09-23T14:53:43Z"
+    },
+    {
+      "thread_id": "1a045aa993205eb1",
+      "case": "New Balance 1906A × Nakaw（稿件 FA 已到、9/24 上線，$5,000 落差未解）",
+      "inbound_at": "2026-09-24T03:42:23Z"
     }
   ]
 }
