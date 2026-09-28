@@ -1,38 +1,38 @@
 {
- "updated": "2026-09-22",
+ "updated": "2026-09-28",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 92,
+ "sample_size": 98,
  "excluded_low_confidence": 25,
  "by_person": {
   "jasmine": {
-   "n": 33,
-   "median_min": 291.9,
-   "mean_min": 1217.9,
-   "p90_min": 4183.6,
-   "work_median_min": 216.1,
-   "work_mean_min": 440.0,
-   "within_4h_pct": 48.5,
+   "n": 34,
+   "median_min": 298.6,
+   "mean_min": 1220.6,
+   "p90_min": 4182.4,
+   "work_median_min": 254.0,
+   "work_mean_min": 440.8,
+   "within_4h_pct": 47.1,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 59,
-   "median_min": 1358.6,
-   "mean_min": 1901.0,
-   "p90_min": 5035.2,
-   "work_median_min": 502.6,
-   "work_mean_min": 673.8,
-   "within_4h_pct": 23.7,
+   "n": 64,
+   "median_min": 1156.9,
+   "mean_min": 1916.7,
+   "p90_min": 5182.4,
+   "work_median_min": 461.5,
+   "work_mean_min": 663.0,
+   "within_4h_pct": 25.0,
    "fastest_min": 7.8,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 92,
-  "median_min": 884.1,
-  "mean_min": 1656.0,
-  "work_median_min": 384.2,
-  "within_4h_pct": 32.6
+  "n": 98,
+  "median_min": 942.6,
+  "mean_min": 1675.2,
+  "work_median_min": 375.8,
+  "within_4h_pct": 32.7
  },
  "pending": [
   {
@@ -76,14 +76,29 @@
    "inbound_at": "2026-09-15T06:50:48Z"
   },
   {
-   "thread_id": "1a014122591da47b",
-   "case": "德國漢高 Bref 馬桶球（對方寄回重簽版合約，待我方確認並用印留存）",
-   "inbound_at": "2026-09-17T08:40:22Z"
-  },
-  {
    "thread_id": "1a0af2b1fd2004af",
    "case": "Sony ULT FIELD 藍牙喇叭 × Rio（對方請補檔期／規範／貼文與廣告主報價，草稿 T2026-0038 未寄）",
    "inbound_at": "2026-09-21T03:30:42Z"
+  },
+  {
+   "thread_id": "1a0889dcca1c4535",
+   "case": "Logitech 校園大使工作坊 × Leo（對方確認 10/21 檔期與企劃，待我方回覆）",
+   "inbound_at": "2026-09-23T08:10:25Z"
+  },
+  {
+   "thread_id": "19bb0fd09afde6f6",
+   "case": "iHerb × Andrew（VGV 重啟舊案問檔期，並引導改走 LINE）",
+   "inbound_at": "2026-09-23T10:44:32Z"
+  },
+  {
+   "thread_id": "1a014122591da47b",
+   "case": "德國漢高 Bref × YY（對方請補提供存摺影本）",
+   "inbound_at": "2026-09-23T14:53:43Z"
+  },
+  {
+   "thread_id": "1a045aa993205eb1",
+   "case": "New Balance 1906A × Nakaw（稿件 FA 已到、9/24 上線，$5,000 落差未解）",
+   "inbound_at": "2026-09-24T03:42:23Z"
   }
  ]
 }
