@@ -894,5 +894,22 @@
       "draft_id": "r-1035943134800434989",
       "replied_to_message_id": "1a0c20446c292259"
     }
+  },
+  {
+    "task_id": "T2026-0039",
+    "type": "報價回信",
+    "thread_id": "1a0d28f66f2bb6e1",
+    "case": "Panasonic 空清機 F-P90MH × Andrew（DAC）",
+    "assignee": "andrew",
+    "status": "草稿已建立",
+    "created": "2026-09-29",
+    "note": "DAC 海莉追問 META 廣告主一個月報價，依價目表 Andrew 級距授權（兩週至一個月）$15,000(net) 回覆，並以【請確認】標示是否另計上架至非約定平台 $5,000。",
+    "draft": {
+      "to": "hailey-lai@dactp.com.tw",
+      "cc": "dac_kol@dactp.com.tw, oliver.zeng@dcard.cc, jasmine.wang@dcard.cc, akimo@dcard.cc",
+      "subject": "Re: 【Panasonic X 空清機(產品贈送)_商案邀約】安主Andrew｜DAC 合作諮詢 ✨",
+      "draft_id": "r3999778229560283337",
+      "replied_to_message_id": "1a0eb00f30c85684"
+    }
   }
 ]
