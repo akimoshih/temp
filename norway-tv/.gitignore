@@ -1,0 +1,8 @@
+# regenerable / large intermediates
+assets/raw/
+tmp/
+renders/**/*.jpg
+renders/**/*.png
+comp/frames/
+*.tif
+*.npy
