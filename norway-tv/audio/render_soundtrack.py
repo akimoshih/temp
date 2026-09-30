@@ -61,7 +61,8 @@ CONFIG = {
         "counter_ticks": {"start": 336, "end": 364, "step": 1},
         "ding": [364],
         "pops": {"start": 400, "count": 10, "step": 4},
-        "stamp": [476],
+        "stamp": [476, 756],
+        "slam_extra": [742],
         "paper_slap": [504, 518, 532, 546],
         "downlifter": [560],
         "typewriter": {"start": 560, "end": 600, "count": 15},    # 15 glyphs of the question
@@ -735,7 +736,10 @@ class Sfx:
             f = pp["start"] + i * pp["step"]
             self.put("pops", SFX.pop(mtof(scale[i % len(scale)] - 12), 1.0, p=-0.6 + 1.2 * i / max(1, pp["count"] - 1),
                                      seed=200 + i), f, detail={"index": i + 1})
-        self.put("stamp", SFX.stamp_thunk(), C["stamp"][0])
+        for i, f in enumerate(C["stamp"]):
+            self.put("stamp", SFX.stamp_thunk(seed=5 + i), f)
+        for i, f in enumerate(C.get("slam_extra", [])):
+            self.put("paper_slap", SFX.paper_slap(seed=340 + i, p=0.1), f)
         for i, f in enumerate(C["paper_slap"]):
             self.put("paper_slap", SFX.paper_slap(seed=300 + i, p=[-0.3, 0.3, -0.15, 0.15][i % 4]), f,
                      detail={"with": "music stab"})

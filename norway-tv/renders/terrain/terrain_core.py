@@ -155,6 +155,10 @@ def prepare(name, exag, pad, tex_file=None, detail_amp=0.0, seed=1):
     tw, th = tim.size
     tim = tim.resize((tw * 2, th * 2), Image.LANCZOS)
     t0 = srgb_to_lin(np.asarray(tim).astype(np.float32) / 255.0).astype(np.float32)
+    # compensate the softness of the 2x upsample (mild unsharp mask on level 0 only)
+    bl = np.stack([ndimage.gaussian_filter(t0[..., c], 1.6) for c in range(3)], -1)
+    t0 = np.maximum(t0 + 0.45 * (t0 - bl), 0.0).astype(np.float32)
+    del bl
     tl = [t0]
     while min(tl[-1].shape[:2]) > 8:
         a = tl[-1]

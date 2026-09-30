@@ -240,7 +240,7 @@
         const s = C.film(frame, o.seed || 'film');
         if (lastG) lastG.style.visibility = 'hidden';
         const g = grains[s.grainIndex]; g.style.visibility = 'visible'; g.style.opacity = r.grain ?? o.grain ?? 0.2;
-        g.style.transform = `translate(${s.grainOffset.x}px,${s.grainOffset.y}px) scale(1.07)`; lastG = g;
+        g.style.transform = `translate(${s.grainOffset.x}px,${s.grainOffset.y}px) scale(1.14)`; lastG = g;
         if (lastD) lastD.style.visibility = 'hidden'; lastD = null;
         if (s.dust && (r.dust ?? o.dust ?? 0.75) > 0) {
           const d = dusts[+s.dust.match(/dust_(\d)/)[1]]; d.style.visibility = 'visible'; d.style.opacity = r.dust ?? o.dust ?? 0.75;

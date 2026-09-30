@@ -68,37 +68,33 @@ def arc_of_col(col):
 
 
 # ---------------- camera ----------------
-S0 = arc_of_col(875)          # start (m along centreline)
-DIST = 1350.0                 # metres travelled over 70 frames
+# Flight up the NE-running reach of Geirangerfjord (towards the Seven Sisters wall), ~1.2 km above
+# the water, walls of 1000-1300 m on both sides; slow push with a gentle rise, pan and bank.
+# control points in DEM 20 m pixels (col, row) + altitude (m)
+P0 = np.array([974.0, 850.0, 1320.0])
+P1 = np.array([989.0, 823.0, 1345.0])
+P2 = np.array([1006.0, 797.0, 1390.0])
 
 
 def ease(u):
-    # decelerating push: v(0)=1.45, v(1)=0.55 (relative); monotonic, smooth
+    # decelerating push: velocity 1.45 -> 0.55 (relative), smooth, never stops
     return 1.45 * u - 0.45 * u * u
 
 
+def smooth(u):
+    return u * u * (3 - 2 * u)
+
+
 def camera(fr):
-    """fr: float frame. returns pos(3), yaw(deg, cw from N), pitch(deg), roll(deg)"""
+    """fr: float frame. returns pos(3) world m, yaw(deg, cw from N), pitch(deg), roll(deg)"""
     u = fr / (NF - 1)
-    s = S0 + DIST * ease(u)
-    x, y = path_at(s)
-    # lateral offset: slightly toward the north wall, drifting to the centre
-    xa, ya = path_at(s + 30)
-    tx, ty = xa - x, ya - y
-    tl = math.hypot(tx, ty)
-    nxl, nyl = ty / tl, -tx / tl        # left normal (for X east / Y south)
-    off = -60.0 + 40.0 * u
-    x += nxl * off * -1
-    y += nyl * off * -1
-    z = 250.0 + 70.0 * u
-    # look toward a point further along the fjord
-    lx, ly = path_at(s + 2600.0)
-    yaw = math.degrees(math.atan2(lx - x, -(ly - y)))
-    # pitch: look slightly down
-    pitch = -6.5 + 1.0 * u
-    # bank into the left-hand bend (slow roll)
-    roll = -1.0 - 4.0 * (0.5 - 0.5 * math.cos(math.pi * min(1.0, u * 1.1)))
-    return np.array([x, y, z]), yaw, pitch, roll
+    e = ease(u)
+    b = (1 - e) ** 2 * P0 + 2 * (1 - e) * e * P1 + e * e * P2       # quadratic Bezier
+    pos = np.array([(b[0] + 0.5) * 20.0, (b[1] + 0.5) * 20.0, b[2]])
+    yaw = 28.0 + 12.0 * smooth(min(u * 1.05, 1.0))
+    pitch = -19.0 + 6.5 * smooth(u)
+    roll = 3.5 * math.sin(math.pi * 0.5 * min(u * 1.1, 1.0))
+    return pos, yaw, pitch, roll
 
 
 def cam_basis(pos, yaw, pitch, roll, hfov):
@@ -121,9 +117,17 @@ HFOV = 62.0
 RGSS4 = np.array([[0.125, 0.625], [0.375, 0.125], [0.625, 0.875], [0.875, 0.375]])
 
 
+# 6-sample rook pattern (one sample per row & column of a 6x6 grid)
+ROOK6 = (np.array([[0, 3], [1, 0], [2, 4], [3, 1], [4, 5], [5, 2]]) + 0.5) / 6.0
+# shutter-time order for the samples (decorrelated from the spatial position)
+TORDER = {1: [0], 4: [0, 2, 1, 3], 6: [0, 3, 1, 4, 2, 5]}
+
+
 def sample_pattern(spp):
     if spp == 1:
         return np.array([[0.5, 0.5]])
+    if spp == 6:
+        return ROOK6.copy()
     if spp == 4:
         return RGSS4.copy()
     n = int(round(math.sqrt(spp)))
@@ -138,8 +142,8 @@ def params(sun, t, pix_angle):
     PR = np.zeros(32)
     PR[0:3] = sun
     PR[3] = 1.0
-    PR[4] = 3.0e-5          # haze extinction at sea level (1/m)
-    PR[5] = 1400.0          # haze scale height (m)
+    PR[4] = 5.0e-5          # haze extinction at sea level (1/m)
+    PR[5] = 2000.0          # haze scale height (m)
     PR[6:9] = tc.srgb_to_lin(np.array([62, 118, 196]) / 255.0)    # zenith
     PR[9:12] = tc.srgb_to_lin(np.array([184, 206, 228]) / 255.0)   # horizon
     PR[12] = 0.45           # relief strength
@@ -152,10 +156,10 @@ def params(sun, t, pix_angle):
     PR[19] = 2600.0         # cloud altitude
     PR[20] = 0.22           # sun glow
     PR[21] = 0.10           # haze sun tint
-    PR[22] = 0.6            # sub-texel detail
+    PR[22] = 1.0            # sub-texel detail
     PR[23] = 0.6            # steep-face projection
     PR[24] = 1.0            # terrain exposure
-    PR[25] = 1.0            # texture saturation
+    PR[25] = 0.92           # texture saturation
     PR[26:29] = WATER_RGB   # water body colour (lin)
     return PR
 
@@ -183,8 +187,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--frames', default='0-69')
     ap.add_argument('--scale', type=float, default=1.0)
-    ap.add_argument('--spp', type=int, default=4)
-    ap.add_argument('--shutter', type=float, default=0.5)
+    ap.add_argument('--spp', type=int, default=6)
+    ap.add_argument('--shutter', type=float, default=0.4)
     ap.add_argument('--out', default=OUT)
     ap.add_argument('--raw', action='store_true')
     a = ap.parse_args()
@@ -208,7 +212,8 @@ def main():
         cams = np.zeros((ns, 13))
         for k in range(ns):
             # shutter time for this sample (stratified, centred on the frame)
-            ts = fr + ((k + 0.5) / ns - 0.5) * a.shutter
+            ti = TORDER.get(ns, list(range(ns)))[k]
+            ts = fr + ((ti + 0.5) / ns - 0.5) * a.shutter
             pos, yaw, pitch, roll = camera(ts)
             cams[k] = cam_basis(pos, yaw, pitch, roll, HFOV)
         pix = 2 * math.tan(math.radians(HFOV) / 2) / W / sub

@@ -126,21 +126,21 @@ Bar 14 is C (not F) so the second drop ends on the "epic" ♭VI–♭VII–i cad
 | sample peak | -1.26 dBFS |
 | true peak, 4x oversampled (polyphase) | **-1.25 dBTP** |
 | true peak, 8x oversampled (cross-check) | -1.21 dBTP |
-| max momentary / short-term | -8.8 / -11.5 LUFS |
+| max momentary / short-term | -8.8 / -11.4 LUFS |
 | loudness range (approx. EBU R128 LRA) | 5.9 LU |
 | PLR (TP - integrated) | 12.8 dB |
-| DC offset L / R | 2.2e-05 / 2.2e-05 |
-| stereo correlation (full band / < 120 Hz) | 0.88 / 0.980 |
-| mono fold-down loudness change | -0.40 LU |
+| DC offset L / R | 2.2e-05 / 2.3e-05 |
+| stereo correlation (full band / < 120 Hz) | 0.88 / 0.979 |
+| mono fold-down loudness change | -0.41 LU |
 | clipped samples (>= 0 dBFS) | 0 |
 | silence f220-223 | digital zero |
 | silence f664-671 | digital zero |
-| tail f890-899 peak / last sample | -54.2 dBFS / 0.0e+00 |
+| tail f890-899 peak / last sample | -54.1 dBFS / 0.0e+00 |
 | hit prominence (momentary peak over median) | f224 +5.4 dB, f672 +5.1 dB, f840 +5.0 dB |
-| section loudness | intro f0-111: -17.5, build f112-219: -15.3, drop1 f224-559: -13.7, breakdown f560-663: -16.7, drop2 f672-839: -12.5, final f840-899: -13.8 |
-| spectral balance (dB re. total) | sub: -5.8, bass: -3.9, low-mid: -9.1, mid: -13.1, presence 2-5k: -14.5, brilliance: -17.8, air: -22.8 |
+| section loudness | intro f0-111: -17.4, build f112-219: -15.2, drop1 f224-559: -13.6, breakdown f560-663: -16.6, drop2 f672-839: -12.7, final f840-899: -13.7 |
+| spectral balance (dB re. total) | sub: -5.9, bass: -3.8, low-mid: -9.2, mid: -13.1, presence 2-5k: -14.4, brilliance: -17.7, air: -22.7 |
 | click scan (isolated discontinuities; tonal buses solo + summed) | 1 flagged (see QC notes) |
-| stems | music.wav -25.2 LUFS, sfx.wav -24.4 LUFS (pre-master, sum = pre-master mix) |
+| stems | music.wav -25.3 LUFS, sfx.wav -24.4 LUFS (pre-master, sum = pre-master mix) |
 
 <!-- QC:END -->
 

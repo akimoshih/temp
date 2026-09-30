@@ -1,0 +1,19 @@
+{
+ "W": 1920,
+ "H": 1080,
+ "BX": 120,
+ "BY": 90,
+ "lat0": 64.5,
+ "lon0": 17.0,
+ "R": 3290.0,
+ "CX": 1236.0,
+ "CY": 470.0,
+ "projection": "orthographic",
+ "note": "x = CX + R cos(lat) sin(lon-lon0); y = CY - R (cos(lat0) sin(lat) - sin(lat0) cos(lat) cos(lon-lon0)); image px = (x+BX, y+BY)",
+ "sources": [
+  "assets/geo/scandinavia_mosaic.jpg",
+  "assets/geo/scandinavia_wide_lowres.jpg",
+  "assets/geo/globe_texture_8k.jpg"
+ ],
+ "attribution": "Contains modified Copernicus Sentinel data 2023-2025. Earth imagery: NASA Blue Marble (via three-globe)."
+}

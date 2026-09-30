@@ -1,0 +1,43 @@
+{
+ "norway": {
+  "lon0": 15.0,
+  "lat0": 65.0,
+  "x0": -558.303,
+  "flipY": 726.955,
+  "w": 1169.525,
+  "h": 1477.679,
+  "ppk": 1.0,
+  "src": "scandinavia_mosaic.jpg"
+ },
+ "svalbard": {
+  "lon0": 19.0,
+  "lat0": 78.4,
+  "x0": -182.597,
+  "flipY": 263.946,
+  "w": 456.2,
+  "h": 714.532,
+  "ppk": 1.0,
+  "src": "globe_texture_8k.jpg"
+ },
+ "janmayen": {
+  "lon0": -8.5,
+  "lat0": 71.0,
+  "x0": -22.48,
+  "flipY": 20.188,
+  "w": 42.617,
+  "h": 41.68,
+  "ppk": 2.0,
+  "src": "globe_texture_8k.jpg"
+ },
+ "taiwan": {
+  "lon0": 120.97,
+  "lat0": 23.7,
+  "x0": -93.544,
+  "flipY": 176.219,
+  "w": 198.055,
+  "h": 375.825,
+  "ppk": 2.0,
+  "src": "earth-topology.png",
+  "relief": "earth-topology.png"
+ }
+}

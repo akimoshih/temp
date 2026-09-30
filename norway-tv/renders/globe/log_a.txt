@@ -11,3 +11,6 @@ frame 80 h=3.334
 frame 90 h=3.307
 frame 100 h=3.280
 frame 110 h=3.253
+frame 120 h=3.283
+frame 130 h=3.612
+frame 139 h=4.097

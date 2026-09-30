@@ -203,9 +203,9 @@ def terrain_col(D_h, D_sea, D_lake, D_nrm, D_nb, D_cav, D_zref, D_shd, tex, tx_o
     ndlb = max(tmp2[0] * lx + tmp2[1] * ly + tmp2[2] * lz, 0.0)
     shd = grid_bilerp(D_shd, gx, gy)
     cav = grid_bilerp(D_cav, gx, gy)
-    ao = 1.0 + cav * 0.004
-    if ao < 0.7:
-        ao = 0.7
+    ao = 1.0 + cav * 0.0028
+    if ao < 0.78:
+        ao = 0.78
     if ao > 1.08:
         ao = 1.08
     # ---- (1) satellite texture with sub-texel relief (sun already baked in)
@@ -226,7 +226,7 @@ def terrain_col(D_h, D_sea, D_lake, D_nrm, D_nb, D_cav, D_zref, D_shd, tex, tx_o
         # vertical stains / gullies + fine grain (triplanar, footprint-filtered)
         streak = tri_fbm(X, Y, Z, nx, ny, 0.03, 0.004, 5, footw, 3.0)
         grain = tri_fbm(X, Y, Z, nx, ny, 0.2, 0.12, 3, footw, 29.0)
-        lt = 0.165 * (1.0 + 0.30 * streak + 0.10 * grain)
+        lt = 0.135 * (1.0 + 0.38 * streak + 0.12 * grain)
         if lt < 0.04:
             lt = 0.04
         sun = 1.05 * ndl * (0.12 + 0.88 * shd)

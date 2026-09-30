@@ -1164,6 +1164,20 @@
    "len_s": 0.16
   },
   {
+   "frame": 742,
+   "time_s": 24.7333,
+   "sample": 1187200,
+   "name": "paper_slap",
+   "len_s": 0.522
+  },
+  {
+   "frame": 756,
+   "time_s": 25.2,
+   "sample": 1209600,
+   "name": "stamp",
+   "len_s": 1.014
+  },
+  {
    "frame": 784,
    "time_s": 26.1333,
    "sample": 1254400,
