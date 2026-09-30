@@ -1,38 +1,38 @@
 {
- "updated": "2026-09-29",
+ "updated": "2026-09-30",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 98,
+ "sample_size": 102,
  "excluded_low_confidence": 25,
  "by_person": {
   "jasmine": {
-   "n": 34,
-   "median_min": 298.6,
-   "mean_min": 1220.6,
-   "p90_min": 4182.4,
-   "work_median_min": 254.0,
-   "work_mean_min": 440.8,
-   "within_4h_pct": 47.1,
+   "n": 36,
+   "median_min": 320.0,
+   "mean_min": 1368.4,
+   "p90_min": 4206.9,
+   "work_median_min": 313.4,
+   "work_mean_min": 481.9,
+   "within_4h_pct": 44.4,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 64,
+   "n": 66,
    "median_min": 1156.9,
-   "mean_min": 1916.7,
-   "p90_min": 5182.4,
+   "mean_min": 1990.4,
+   "p90_min": 5552.9,
    "work_median_min": 461.5,
-   "work_mean_min": 663.0,
-   "within_4h_pct": 25.0,
+   "work_mean_min": 680.1,
+   "within_4h_pct": 25.8,
    "fastest_min": 7.8,
    "slowest_min": 9932.3
   }
  },
  "overall": {
-  "n": 98,
+  "n": 102,
   "median_min": 942.6,
-  "mean_min": 1675.2,
+  "mean_min": 1770.9,
   "work_median_min": 375.8,
-  "within_4h_pct": 32.7
+  "within_4h_pct": 32.4
  },
  "pending": [
   {
@@ -81,24 +81,19 @@
    "inbound_at": "2026-09-21T03:30:42Z"
   },
   {
-   "thread_id": "1a0889dcca1c4535",
-   "case": "Logitech 校園大使工作坊 × Leo（對方確認 10/21 檔期與企劃，待我方回覆）",
-   "inbound_at": "2026-09-23T08:10:25Z"
-  },
-  {
-   "thread_id": "19bb0fd09afde6f6",
-   "case": "iHerb × Andrew（VGV 重啟舊案問檔期，並引導改走 LINE）",
-   "inbound_at": "2026-09-23T10:44:32Z"
-  },
-  {
    "thread_id": "1a014122591da47b",
    "case": "德國漢高 Bref × YY（對方請補提供存摺影本）",
    "inbound_at": "2026-09-23T14:53:43Z"
   },
   {
-   "thread_id": "1a045aa993205eb1",
-   "case": "New Balance 1906A × Nakaw（稿件 FA 已到、9/24 上線，$5,000 落差未解）",
-   "inbound_at": "2026-09-24T03:42:23Z"
+   "thread_id": "1a0d28f66f2bb6e1",
+   "case": "Panasonic 空清機 × Andrew（DAC 追問 META 廣告主報價，草稿 T2026-0039 未寄）",
+   "inbound_at": "2026-09-29T02:31:40Z"
+  },
+  {
+   "thread_id": "19f932ffdac502c7",
+   "case": "MUJI 秋冬展示會 × Ellie（butybox 請填品牌回饋問卷，10/2 前）",
+   "inbound_at": "2026-09-29T06:04:59Z"
   }
  ]
 }
