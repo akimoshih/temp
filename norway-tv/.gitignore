@@ -4,6 +4,7 @@ tmp/
 renders/**/*.jpg
 renders/**/*.png
 comp/frames/
+tmp/
 *.tif
 *.npy
 # large regenerable imagery / stems (scripts to rebuild are committed)

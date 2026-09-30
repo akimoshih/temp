@@ -9,7 +9,7 @@ mkdir -p out
 $FF -y -hide_banner -loglevel warning \
   -framerate 30 -i comp/frames/f%04d.jpg -i audio/mix.wav \
   -map 0:v -map 1:a \
-  -c:v libx264 -preset slow -crf 16 -profile:v high -pix_fmt yuv420p -tune film \
+  -c:v libx264 -preset slow -crf 18 -maxrate 16M -bufsize 32M -profile:v high -pix_fmt yuv420p -tune film \
   -x264-params keyint=60:min-keyint=30 \
   -color_primaries bt709 -color_trc bt709 -colorspace bt709 \
   -c:a aac -b:a 320k -ar 48000 \
