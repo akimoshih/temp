@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>挪威概況動畫</title>
+<style>
+  :root {
+    --night: #071426;
+    --deep: #0d2a4a;
+    --aurora1: #3cf2b0;
+    --aurora2: #7b6cff;
+    --snow: #f4f8ff;
+    --red: #ba0c2f;
+    --blue: #00205b;
+    --gold: #ffd166;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1920px; height: 1080px; overflow: hidden; background: var(--night); }
+  body { font-family: "WenQuanYi Zen Hei", "Noto Sans TC", sans-serif; color: var(--snow); }
+  #stage { position: absolute; inset: 0; overflow: hidden;
+    background: radial-gradient(ellipse at 50% 120%, #1b4a70 0%, var(--deep) 40%, var(--night) 80%); }
+  .layer { position: absolute; inset: 0; }
+  .aurora { position: absolute; left: -20%; width: 140%; height: 520px; filter: blur(40px); mix-blend-mode: screen; }
+  .star { position: absolute; width: 3px; height: 3px; border-radius: 50%; background: #fff; }
+  .scene { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; opacity: 0; }
+  .kicker { font-size: 38px; letter-spacing: 18px; color: var(--aurora1); }
+  .title { font-size: 220px; font-weight: bold; letter-spacing: 30px; text-shadow: 0 10px 40px rgba(0,0,0,.5); }
+  .subtitle { font-size: 64px; letter-spacing: 40px; opacity: .85; }
+  .h2 { font-size: 84px; font-weight: bold; margin-bottom: 50px; }
+  .cards { display: flex; gap: 48px; }
+  .card { width: 480px; padding: 44px 40px; border-radius: 28px; background: rgba(7,20,38,.62);
+    border: 2px solid rgba(255,255,255,.18); backdrop-filter: blur(6px); text-align: center; }
+  .card .label { font-size: 36px; opacity: .8; margin-bottom: 18px; }
+  .card .value { font-size: 88px; font-weight: bold; color: var(--gold); line-height: 1.1; }
+  .card .unit { font-size: 40px; color: var(--snow); }
+  .card .note { font-size: 30px; opacity: .75; margin-top: 18px; }
+  .tag { display: inline-block; font-size: 44px; padding: 18px 40px; margin: 14px; border-radius: 60px;
+    background: rgba(60,242,176,.15); border: 2px solid var(--aurora1); }
+  .big-num { font-size: 260px; font-weight: bold; color: var(--gold); line-height: 1; text-shadow: 0 0 60px rgba(255,209,102,.35); }
+  .source { position: absolute; bottom: 36px; right: 56px; font-size: 24px; opacity: .55; text-align: right; }
+  .dots { display: grid; grid-template-columns: repeat(50, 18px); gap: 8px; margin-top: 40px; }
+  .dot { width: 18px; height: 18px; border-radius: 50%; background: rgba(255,255,255,.18); }
+</style>
+</head>
+<body>
+<div id="stage">
+  <div class="layer" id="stars"></div>
+  <div class="aurora" id="au1" style="top:40px;background:linear-gradient(90deg,transparent,var(--aurora1),transparent)"></div>
+  <div class="aurora" id="au2" style="top:160px;background:linear-gradient(90deg,transparent,var(--aurora2),var(--aurora1),transparent)"></div>
+
+  <!-- 峽灣山景 -->
+  <svg class="layer" id="mountains" viewBox="0 0 1920 1080" preserveAspectRatio="none">
+    <path id="mBack" fill="#12324f" d="M0 760 L180 560 L330 690 L520 470 L700 650 L880 500 L1060 700 L1240 520 L1420 660 L1600 480 L1760 620 L1920 540 L1920 1080 L0 1080 Z"/>
+    <path fill="#e8f1ff" opacity=".85" d="M520 470 L470 525 L500 520 L520 540 L545 515 L575 525 Z M1600 480 L1550 535 L1580 530 L1600 548 L1625 525 L1650 532 Z M880 500 L840 545 L870 540 L885 555 L905 537 L925 545 Z"/>
+    <path id="mFront" fill="#0a2238" d="M0 860 L140 700 L300 820 L420 740 L600 880 L0 1080 Z M1920 860 L1760 690 L1600 800 L1460 740 L1300 880 L1920 1080 Z"/>
+    <path id="water" fill="#0e3a5c" d="M0 900 Q960 840 1920 900 L1920 1080 L0 1080 Z"/>
+  </svg>
+
+  <!-- 1. 片頭 -->
+  <div class="scene" id="s1">
+    <svg id="flag" width="220" height="160" viewBox="0 0 22 16" style="margin-bottom:40px;border-radius:6px;box-shadow:0 8px 30px rgba(0,0,0,.4)">
+      <rect width="22" height="16" fill="#ba0c2f"/>
+      <rect x="6" width="4" height="16" fill="#fff"/><rect y="6" width="22" height="4" fill="#fff"/>
+      <rect x="7" width="2" height="16" fill="#00205b"/><rect y="7" width="22" height="2" fill="#00205b"/>
+    </svg>
+    <div class="kicker" id="s1k">北歐・斯堪地那維亞</div>
+    <div class="title" id="s1t">挪威</div>
+    <div class="subtitle" id="s1s">NORWAY</div>
+  </div>
+
+  <!-- 2. 基本資料 -->
+  <div class="scene" id="s2">
+    <div class="h2">國家概況</div>
+    <div class="cards">
+      <div class="card" id="c1"><div class="label">首都</div><div class="value">奧斯陸</div><div class="note">Oslo</div></div>
+      <div class="card" id="c2"><div class="label">人口</div><div class="value"><span id="popNum">0</span><span class="unit"> 萬</span></div><div class="note">2026 年初統計</div></div>
+      <div class="card" id="c3"><div class="label">面積</div><div class="value"><span id="areaNum">0</span><span class="unit"> 萬 km²</span></div><div class="note">約台灣的 10 倍大</div></div>
+    </div>
+  </div>
+
+  <!-- 3. 特色 -->
+  <div class="scene" id="s3">
+    <div class="h2">你可能想知道</div>
+    <div style="max-width:1500px;text-align:center">
+      <span class="tag" id="t1">🗣️ 語言：挪威語</span>
+      <span class="tag" id="t2">💰 貨幣：挪威克朗 NOK</span>
+      <span class="tag" id="t3">🏔️ 世界知名峽灣</span>
+      <span class="tag" id="t4">🌌 冬季極光</span>
+      <span class="tag" id="t5">☀️ 夏季午夜太陽</span>
+      <span class="tag" id="t6">🐟 鮭魚出口大國</span>
+    </div>
+  </div>
+
+  <!-- 4. 台灣人 -->
+  <div class="scene" id="s4">
+    <div class="kicker" style="color:var(--gold);letter-spacing:10px">那麼，在挪威的台灣人有多少？</div>
+    <div style="display:flex;align-items:baseline;gap:20px;margin-top:30px">
+      <div style="font-size:90px">約</div>
+      <div class="big-num" id="twNum">0</div>
+      <div style="font-size:90px">人</div>
+    </div>
+    <div style="font-size:46px;margin-top:20px;opacity:.9" id="s4n">平均每 5 萬位居民中，大約只有 1 位台灣人 🇹🇼</div>
+    <div class="dots" id="dots"></div>
+  </div>
+
+  <!-- 5. 結尾 -->
+  <div class="scene" id="s5">
+    <div class="title" id="s5t" style="font-size:150px;letter-spacing:12px">Velkommen til Norge</div>
+    <div class="subtitle" id="s5s" style="font-size:60px;letter-spacing:16px;margin-top:20px">歡迎來到挪威，一起出發吧！</div>
+  </div>
+
+  <div class="source" id="src">資料來源：挪威統計局 SSB（2026/1/1 人口 5,627,400）；中華民國外交部國情資料（旅居台灣人數為估計值）</div>
+</div>
+
+<script>
+// 以時間 t（秒）決定每一格畫面，讓錄製可逐格、結果可重現
+const $ = id => document.getElementById(id);
+const clamp = (x, a = 0, b = 1) => Math.min(b, Math.max(a, x));
+const ease = x => { x = clamp(x); return 1 - Math.pow(1 - x, 3); };
+const prog = (t, a, b) => clamp((t - a) / (b - a));
+
+// 星星（固定亂數種子）
+let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+const stars = [];
+for (let i = 0; i < 140; i++) {
+  const s = document.createElement('div'); s.className = 'star';
+  s.style.left = rnd() * 1920 + 'px'; s.style.top = rnd() * 620 + 'px';
+  $('stars').appendChild(s); stars.push({ el: s, ph: rnd() * 6.28, sp: 1 + rnd() * 2 });
+}
+// 50 x 2 = 100 個點，代表約百位台灣人（其中亮起的為台灣人象徵）
+const dots = [];
+for (let i = 0; i < 100; i++) { const d = document.createElement('div'); d.className = 'dot'; $('dots').appendChild(d); dots.push(d); }
+
+// 場景時間軸：[開始, 結束]
+const SCENES = { s1: [0, 5], s2: [5, 12.5], s3: [12.5, 19], s4: [19, 26.5], s5: [26.5, 30] };
+
+function sceneAlpha(t, [a, b]) {
+  const fin = 0.6, fout = 0.6;
+  if (t < a || t > b) return 0;
+  const inA = a === 0 ? 1 : ease((t - a) / fin);
+  const outA = b >= 30 ? 1 : ease((b - t) / fout);
+  return Math.min(inA, outA);
+}
+
+function render(t) {
+  // 背景
+  $('au1').style.transform = `translateX(${Math.sin(t * 0.35) * 160}px) skewY(${Math.sin(t * 0.5) * 6}deg)`;
+  $('au1').style.opacity = 0.35 + 0.25 * Math.sin(t * 0.8);
+  $('au2').style.transform = `translateX(${Math.cos(t * 0.28) * 200}px) skewY(${Math.cos(t * 0.4) * -8}deg)`;
+  $('au2').style.opacity = 0.3 + 0.2 * Math.cos(t * 0.6);
+  stars.forEach(s => s.el.style.opacity = 0.35 + 0.65 * Math.abs(Math.sin(t * s.sp + s.ph)));
+  $('mountains').style.transform = `translateY(${(1 - ease(t / 2.5)) * 200}px) scale(${1.08 - t * 0.002})`;
+
+  for (const id in SCENES) $(id).style.opacity = sceneAlpha(t, SCENES[id]);
+
+  // 1. 片頭
+  const p1 = t;
+  $('flag').style.transform = `scale(${ease(prog(p1, 0.2, 1.2))}) rotate(${(1 - ease(prog(p1, 0.2, 1.2))) * -20}deg)`;
+  $('s1k').style.opacity = ease(prog(p1, 0.6, 1.4));
+  $('s1t').style.opacity = ease(prog(p1, 0.9, 1.9));
+  $('s1t').style.transform = `translateY(${(1 - ease(prog(p1, 0.9, 1.9))) * 60}px)`;
+  $('s1t').style.letterSpacing = (30 + (1 - ease(prog(p1, 0.9, 2.4))) * 60) + 'px';
+  $('s1s').style.opacity = ease(prog(p1, 1.6, 2.6)) * 0.85;
+  $('s1s').style.letterSpacing = (40 + (1 - ease(prog(p1, 1.6, 3))) * 40) + 'px';
+
+  // 2. 基本資料
+  ['c1', 'c2', 'c3'].forEach((id, i) => {
+    const q = ease(prog(t, 5.3 + i * 0.35, 6.1 + i * 0.35));
+    $(id).style.opacity = q; $(id).style.transform = `translateY(${(1 - q) * 80}px)`;
+  });
+  $('popNum').textContent = Math.round(562.7 * ease(prog(t, 6, 8.2)));
+  $('areaNum').textContent = (38.5 * ease(prog(t, 6.4, 8.6))).toFixed(1);
+
+  // 3. 特色
+  ['t1', 't2', 't3', 't4', 't5', 't6'].forEach((id, i) => {
+    const q = ease(prog(t, 13 + i * 0.4, 13.6 + i * 0.4));
+    $(id).style.opacity = q; $(id).style.transform = `scale(${0.6 + 0.4 * q})`;
+  });
+
+  // 4. 台灣人
+  const cnt = ease(prog(t, 20, 22.2));
+  $('twNum').textContent = Math.round(100 * cnt) + (cnt >= 1 ? '+' : '');
+  $('twNum').style.transform = `scale(${1 + 0.08 * Math.sin(prog(t, 22.2, 23) * Math.PI)})`;
+  $('s4n').style.opacity = ease(prog(t, 22.6, 23.4));
+  dots.forEach((d, i) => {
+    const on = prog(t, 20 + i * 0.022, 20.3 + i * 0.022);
+    d.style.background = `rgba(255,209,102,${0.18 + 0.82 * on})`;
+    d.style.boxShadow = on > 0.5 ? '0 0 10px rgba(255,209,102,.7)' : 'none';
+  });
+
+  // 5. 結尾
+  $('s5t').style.transform = `scale(${0.9 + 0.1 * ease(prog(t, 26.6, 27.8))})`;
+  $('s5s').style.opacity = ease(prog(t, 27.3, 28.2)) * 0.85;
+  $('src').style.opacity = t > 5 ? 0.55 * ease(prog(t, 5.2, 6)) : 0;
+  $('stage').style.opacity = 1 - ease(prog(t, 29.3, 30));
+}
+window.render = render;
+
+// 直接用瀏覽器打開時自動播放
+if (!location.search.includes('record')) {
+  const t0 = performance.now();
+  const loop = () => { render(((performance.now() - t0) / 1000) % 30); requestAnimationFrame(loop); };
+  loop();
+} else render(0);
+</script>
+</body>
+</html>
