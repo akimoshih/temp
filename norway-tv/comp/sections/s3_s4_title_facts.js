@@ -245,7 +245,7 @@
       // Norway flag sticker (kit SVG: exact flag geometry)
       this.flag = img(this.cam, KIT('svg/sticker_flag_no.svg'), { left: (1128 - 125) + 'px', top: (222 - 96) + 'px', width: '250px', zIndex: 5, transformOrigin: '50% 50%', visibility: 'hidden' });
       // series kicker (callback to S1): 30 秒認識一個國家 — bottom right, under the underline
-      this.kicker = div(this.cam, 'tape-label', { left: '1276px', top: '872px', fontSize: '46px', height: '94px', padding: '0 52px', zIndex: 6, transformOrigin: '30% 50%', visibility: 'hidden' }, X.facts.copy.kicker);
+      this.kicker = div(this.cam, 'tape-label', { left: '1150px', top: '872px', fontSize: '46px', height: '94px', padding: '0 52px', zIndex: 6, transformOrigin: '30% 50%', visibility: 'hidden' }, X.facts.copy.kicker);
       // marker canvas (moves with the collage)
       this.ocv = cv(this.cam, W, H, { zIndex: 7 }); this.og = this.ocv.getContext('2d');
       // paper scraps knocked loose by the slam (drawn on twos, f224–235)
