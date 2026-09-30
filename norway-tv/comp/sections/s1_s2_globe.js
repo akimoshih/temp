@@ -374,7 +374,7 @@
       // drop (f224+): share section B's camera shake so plate, border and title collage move as one frame
       let camX = 0, camY = 0;
       if (f >= K.drop) {
-        const sh = C.shake('B-drop', f, K.drop, { amp: 30, decay: 6.5, freq: 1.1 });
+        const sh = X.C.shake('B-drop', f, K.drop, { amp: 30, decay: 6.5, freq: 1.1 });
         camX = sh.x; camY = sh.y; camR += sh.r;
         camS = Math.max(camS, 1 + 0.045 * Math.exp(-(f - K.drop) / 8)); // overscan so shaken edges never show
       }
