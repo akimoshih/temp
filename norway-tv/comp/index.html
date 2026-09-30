@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>NORWAY in 30s: compositor</title>
+<link rel="stylesheet" href="../assets/kit/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/kit/kit.css">
+<style>
+  html, body { margin: 0; width: 1920px; height: 1080px; overflow: hidden; background: #000; }
+  #stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #05070d; }
+</style>
+<script src="../assets/kit/collage.js"></script>
+</head>
+<body>
+<div id="stage" class="stage"></div>
+<script src="core.js"></script>
+<!-- one file per section owner; each calls COMP.section({...}) -->
+<script src="sections/s1_s2_globe.js"></script>
+<script src="sections/s3_s4_title_facts.js"></script>
+<script src="sections/s5_s8_quickfire_outro.js"></script>
+<script src="sections/s6_s7_taiwan.js"></script>
+</body>
+</html>

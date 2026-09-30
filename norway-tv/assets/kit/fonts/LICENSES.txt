@@ -1,0 +1,13 @@
+Fonts in this folder were downloaded from Google Fonts (fonts.googleapis.com / fonts.gstatic.com)
+and subset locally with fontTools (tools/build_fonts.py). Subsetting is a permitted modification.
+
+Noto Sans TC (500/700/900)  (c) 2014-2021 Adobe, Reserved Font Name 'Source'.  SIL OFL 1.1
+Noto Serif TC (900)         (c) 2017-2024 Adobe.                              SIL OFL 1.1
+LXGW WenKai TC (400/700)    Copyright 2024 The LXGW WenKai Project Authors.   SIL OFL 1.1
+Anton (400)                 Copyright 2020 The Anton Project Authors.         SIL OFL 1.1
+Space Mono (400/700)        Copyright 2016 The Space Mono Project Authors.    SIL OFL 1.1
+Permanent Marker (400)      Copyright (c) 2010 Font Diner, Inc.               Apache License 2.0
+
+SIL Open Font License 1.1: https://openfontlicense.org
+Apache License 2.0:        https://www.apache.org/licenses/LICENSE-2.0
+Using these fonts to render video frames imposes no attribution requirement on the video.

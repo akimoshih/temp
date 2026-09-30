@@ -1,0 +1,106 @@
+{
+ "format": {
+  "samplerate": 48000,
+  "channels": 2,
+  "subtype": "PCM_24",
+  "frames": 1440000,
+  "duration_s": 30.0
+ },
+ "integrated_lufs": -14.02,
+ "sample_peak_dbfs": -1.26,
+ "true_peak_dbtp_4x": -1.25,
+ "true_peak_dbtp_8x": -1.21,
+ "dc_offset": [
+  2.2e-05,
+  2.22e-05
+ ],
+ "max_short_term_lufs": -11.48,
+ "lra_lu": 5.89,
+ "max_momentary_lufs": -8.82,
+ "plr_db": 12.77,
+ "mono_fold_lufs_delta": -0.4,
+ "stereo_correlation": 0.878,
+ "low_end_<120Hz_correlation": 0.98,
+ "clipped_samples": 0,
+ "stem_sum_vs_premaster_note": "music.wav + sfx.wav = pre-master sum (post-duck), peak -3 dBFS",
+ "silences": {
+  "f220-223": "digital zero",
+  "f664-671": "digital zero"
+ },
+ "last_sample_abs": 0.0,
+ "tail_f890_899_peak_dbfs": -54.2,
+ "hit_prominence_db_over_median_momentary": {
+  "f224": 5.4,
+  "f672": 5.1,
+  "f840": 5.0
+ },
+ "section_lufs": {
+  "intro f0-111": -17.49,
+  "build f112-219": -15.33,
+  "drop1 f224-559": -13.68,
+  "breakdown f560-663": -16.67,
+  "drop2 f672-839": -12.49,
+  "final f840-899": -13.78
+ },
+ "click_scan": {
+  "pad": [],
+  "bass": [
+   [
+    25.4628,
+    20.6
+   ]
+  ],
+  "lead": [],
+  "drone": [],
+  "chords": [],
+  "pluck": [],
+  "bells": [],
+  "arp": [],
+  "stabs": [],
+  "all tonal buses summed": []
+ },
+ "band_energy_db_rel_total": {
+  "sub": -5.83,
+  "bass": -3.88,
+  "low-mid": -9.09,
+  "mid": -13.14,
+  "presence 2-5k": -14.5,
+  "brilliance": -17.75,
+  "air": -22.78
+ },
+ "third_octave_db_rel_max": {
+  "20": -27.9,
+  "25": -27.2,
+  "31": -24.7,
+  "39": -7.7,
+  "50": -0.6,
+  "62": 0.0,
+  "79": -0.5,
+  "99": -3.9,
+  "125": -8.9,
+  "157": -7.2,
+  "198": -6.2,
+  "250": -10.0,
+  "315": -9.4,
+  "397": -9.1,
+  "500": -11.5,
+  "630": -7.9,
+  "794": -10.4,
+  "1000": -10.8,
+  "1260": -9.3,
+  "1587": -11.7,
+  "2000": -13.5,
+  "2520": -11.9,
+  "3175": -13.5,
+  "4000": -15.1,
+  "5040": -14.6,
+  "6350": -15.1,
+  "8000": -15.7,
+  "10079": -16.6,
+  "12699": -19.2,
+  "16000": -24.6,
+  "20159": -32.7
+ },
+ "music_lufs": -25.16,
+ "sfx_lufs": -24.43
+}

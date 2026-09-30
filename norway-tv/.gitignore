@@ -6,3 +6,9 @@ renders/**/*.png
 comp/frames/
 *.tif
 *.npy
+# large regenerable imagery / stems (scripts to rebuild are committed)
+assets/geo/**/*.jpg
+assets/geo/**/*.png
+assets/geo/**/*.f32
+audio/music.wav
+audio/sfx.wav

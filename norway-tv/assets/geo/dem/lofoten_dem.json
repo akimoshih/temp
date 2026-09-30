@@ -1,0 +1,182 @@
+{
+ "name": "lofoten_dem",
+ "label": "Lofoten: Moskenesoya / Reine / Flakstadoya (3D terrain)",
+ "crs": "EPSG:32633",
+ "utm_zone": "33N",
+ "centre_latlon": [
+  67.959975,
+  13.049972
+ ],
+ "bbox_utm": {
+  "xmin": 400350.0,
+  "ymin": 7527690.0,
+  "xmax": 436350.0,
+  "ymax": 7551690.0
+ },
+ "bbox_latlon": {
+  "west": 12.60942,
+  "east": 13.486661,
+  "south": 67.846782,
+  "north": 68.072101
+ },
+ "corners_latlon": {
+  "nw": [
+   68.061861,
+   12.60942
+  ],
+  "ne": [
+   68.072101,
+   13.472563
+  ],
+  "sw": [
+   67.846782,
+   12.63147
+  ],
+  "se": [
+   67.856912,
+   13.486661
+  ]
+ },
+ "size_km": [
+  36.0,
+  24.0
+ ],
+ "pixel_convention": "pixel-is-area; row 0 = north edge; pixel (r,c) centre at x=xmin+(c+0.5)*res, y=ymax-(r+0.5)*res",
+ "dem": {
+  "file": "lofoten_dem.npy",
+  "raw_file": "lofoten_dem.f32",
+  "raw_format": "little-endian float32, row-major, H*W values, no header (same data as .npy)",
+  "dtype": "float32",
+  "shape": [
+   1200,
+   1800
+  ],
+  "width": 1800,
+  "height": 1200,
+  "pixel_size_m": 20.0,
+  "units": "metres",
+  "vertical_datum": "EGM2008 geoid (Copernicus DEM native)",
+  "horizontal_resampling": "cubic from 1 arcsec (~30 m) GLO-30",
+  "geotransform_gdal": [
+   400350.0,
+   20.0,
+   0.0,
+   7551690.0,
+   0.0,
+   -20.0
+  ],
+  "min_m": 0.0,
+  "max_m": 1018.38,
+  "mean_m": 58.7,
+  "water_level_m": 0.0,
+  "sea_pixels_fraction": 0.7509,
+  "water_treatment": "WBM ocean (incl. fjords) set to exactly 0.0 m; land clamped >= 0; lakes flat at their Copernicus level",
+  "source_tiles": [
+   "Copernicus_DSM_COG_10_N67_00_E012_00_DEM.tif",
+   "Copernicus_DSM_COG_10_N67_00_E013_00_DEM.tif",
+   "Copernicus_DSM_COG_10_N68_00_E012_00_DEM.tif",
+   "Copernicus_DSM_COG_10_N68_00_E013_00_DEM.tif"
+  ]
+ },
+ "texture": {
+  "file": "lofoten_tex.jpg",
+  "width": 3600,
+  "height": 2400,
+  "pixel_size_m": 10.0,
+  "scale_vs_dem": 2,
+  "geotransform_gdal": [
+   400350.0,
+   10.0,
+   0.0,
+   7551690.0,
+   0.0,
+   -10.0
+  ],
+  "date": "2024-08-05",
+  "platform": "Sentinel-2B",
+  "scenes": [
+   {
+    "id": "S2B_33WVR_20240805_0_L2A",
+    "tile": "33WVR",
+    "box_coverage": 1.0,
+    "product": "S2B_MSIL2A_20240805T105619_N0511_R094_T33WVR_20240805T143427.SAFE",
+    "datetime": "2024-08-05T11:02:00.612000Z",
+    "tile_cloud_cover_pct": 0.18,
+    "sun_azimuth_deg": 177.46,
+    "sun_elevation_deg": 38.73,
+    "processing_baseline": "05.11",
+    "href_tci": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/33/W/VR/2024/8/S2B_33WVR_20240805_0_L2A/TCI.tif"
+   }
+  ],
+  "grade": "identical grade (same stats) as crops/lofoten.jpg",
+  "baked_sun": {
+   "azimuth_deg": 177.46,
+   "elevation_deg": 38.73,
+   "note": "shadows are baked into the texture; put the key light near this azimuth/elevation (azimuth clockwise from north)"
+  }
+ },
+ "water_mask": {
+  "file": "lofoten_water.png",
+  "grid": "same as DEM",
+  "values": {
+   "255": "sea/fjord (0 m)",
+   "128": "lake/river",
+   "0": "land"
+  }
+ },
+ "previews": {
+  "hillshade": "lofoten_hillshade.png",
+  "alignment": "lofoten_align.jpg"
+ },
+ "alignment_check": {
+  "method": "IoU of Sentinel-2 SCL water vs DEM WBM water on the 20 m grid, integer shifts +-4 px",
+  "iou_at_zero_shift": 0.9782,
+  "best_iou": 0.9782,
+  "best_shift_px_dy_dx": [
+   0,
+   0
+  ]
+ },
+ "uv_mapping": "texture covers exactly the DEM extent: u = (c+0.5)/W, v = (r+0.5)/H for DEM pixel (r,c); both north-up",
+ "attribution": [
+  "Contains modified Copernicus Sentinel data 2023, 2024",
+  "Copernicus DEM GLO-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA"
+ ],
+ "texture_winter": {
+  "file": "lofoten_tex_winter.jpg",
+  "width": 3600,
+  "height": 2400,
+  "pixel_size_m": 10.0,
+  "geotransform_gdal": [
+   400350.0,
+   10.0,
+   0.0,
+   7551690.0,
+   0.0,
+   -10.0
+  ],
+  "date": "2023-04-10",
+  "platform": "Sentinel-2B",
+  "scenes": [
+   {
+    "id": "S2B_33WVR_20230410_0_L2A",
+    "tile": "33WVR",
+    "box_coverage": 1.0,
+    "product": "S2B_MSIL2A_20230410T104619_N0509_R051_T33WVR_20230410T122439.SAFE",
+    "datetime": "2023-04-10T10:52:02.040000Z",
+    "tile_cloud_cover_pct": 0.01,
+    "sun_azimuth_deg": 176.1,
+    "sun_elevation_deg": 29.88,
+    "processing_baseline": "05.09",
+    "href_tci": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/33/W/VR/2023/4/S2B_33WVR_20230410_0_L2A/TCI.tif"
+   }
+  ],
+  "note": "snow-covered mountains (clear April scene) on the identical grid; suggested for the night aurora render. Some inner lakes are frozen (look white/pale green) - the DEM keeps them flat at lake level.",
+  "grade": "same grade + same exposure stats as the summer texture",
+  "sea_iou_vs_dem": 0.986,
+  "baked_sun": {
+   "azimuth_deg": 176.1,
+   "elevation_deg": 29.88
+  }
+ }
+}

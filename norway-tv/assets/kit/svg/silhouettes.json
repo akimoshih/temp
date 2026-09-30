@@ -1,0 +1,16 @@
+{
+ "norway": {
+  "width_km": 1169.53,
+  "height_km": 1477.68,
+  "area_km2_polygon": 315761,
+  "projection": "Lambert azimuthal equal-area centred 15.0,65.0; 1 SVG unit = 1 km",
+  "source": "assets/geo/norway_outline_simplified.geojson part=mainland"
+ },
+ "taiwan": {
+  "width_km": 198.05,
+  "height_km": 375.82,
+  "area_km2_polygon": 35931,
+  "projection": "Lambert azimuthal equal-area centred 120.97,23.7; 1 SVG unit = 1 km",
+  "source": "assets/geo/taiwan_outline_simplified.geojson part=main_island"
+ }
+}

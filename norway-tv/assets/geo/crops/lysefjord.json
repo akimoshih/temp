@@ -1,0 +1,145 @@
+{
+ "name": "lysefjord",
+ "label": "Lysefjord / Preikestolen",
+ "file": "lysefjord.jpg",
+ "date": "2025-07-11",
+ "platform": "Sentinel-2B",
+ "scenes": [
+  {
+   "id": "S2B_32VLL_20250711_0_L2A",
+   "tile": "32VLL",
+   "box_coverage": 1.0,
+   "product": "S2B_MSIL2A_20250711T105619_N0511_R094_T32VLL_20250711T132409.SAFE",
+   "datetime": "2025-07-11T11:04:40.940000Z",
+   "tile_cloud_cover_pct": 12.97,
+   "sun_azimuth_deg": 166.62,
+   "sun_elevation_deg": 52.49,
+   "processing_baseline": "05.11",
+   "href_tci": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/V/LL/2025/7/S2B_32VLL_20250711_0_L2A/TCI.tif"
+  }
+ ],
+ "mosaic": "single tile",
+ "crs": "EPSG:32632",
+ "utm_zone": "32N",
+ "centre_latlon": [
+  59.019985,
+  6.189948
+ ],
+ "bbox_utm": {
+  "xmin": 326680.0,
+  "ymin": 6538920.0,
+  "xmax": 350680.0,
+  "ymax": 6552420.0
+ },
+ "bbox_latlon": {
+  "west": 5.975925,
+  "east": 6.403284,
+  "south": 58.954752,
+  "north": 59.084903
+ },
+ "corners_latlon": {
+  "nw": [
+   59.075822,
+   5.975925
+  ],
+  "ne": [
+   59.084903,
+   6.394134
+  ],
+  "sw": [
+   58.954752,
+   5.986539
+  ],
+  "se": [
+   58.963789,
+   6.403284
+  ]
+ },
+ "size_km": [
+  24.0,
+  13.5
+ ],
+ "width_px": 2400,
+ "height_px": 1350,
+ "m_per_px": 10.0,
+ "geotransform_gdal": [
+  326680.0,
+  10.0,
+  0.0,
+  6552420.0,
+  0.0,
+  -10.0
+ ],
+ "pixel_convention": "pixel-is-area; row 0 = north edge; pixel (r,c) centre at x=xmin+(c+0.5)*res, y=ymax-(r+0.5)*res",
+ "source_bands": "L2A B04/B03/B02 10 m reflectance (16-bit) from the same scene as TCI.tif; scene chosen by TCI preview + SCL cloud stats",
+ "grade": {
+  "params": {
+   "dehaze": 0.85,
+   "dehaze_pct": 0.1,
+   "mid_out": 0.4,
+   "sat": 1.1,
+   "vib": 0.3,
+   "clarity": 0.22,
+   "clarity_sigma": 28.0,
+   "sharpen": 0.35,
+   "sharpen_sigma": 0.9,
+   "toe_lift": 0.01,
+   "warm": 0.0,
+   "shadow_tint": [
+    -0.006,
+    -0.022
+   ],
+   "shadow_range": 0.42,
+   "hi_tint": [
+    0.0,
+    0.006
+   ],
+   "cloud_desat": 0.9,
+   "shadow_blue_damp": 0.65,
+   "shadow_neutral": 0.9,
+   "shadow_neutral_keep": 0.55
+  },
+  "stats": {
+   "offset": [
+    8.499999967170879e-05,
+    8.499999967170879e-05,
+    0.0012750000460073352
+   ],
+   "gain": 2.3374850749969482,
+   "land_median": 0.044472433626651764
+  },
+  "description": "dark-offset dehaze, land-median exposure, ACES filmic curve, Oklab chroma x1.10 + vibrance, clarity (local contrast), navy tint on water, blue-shadow damping, topographic-shadow (SCL dark-area) re-colouring toward surrounding terrain chroma, SCL-cloud fringe neutralisation, fine sharpen"
+ },
+ "attribution": "Contains modified Copernicus Sentinel data 2025",
+ "landmarks": {
+  "Preikestolen": {
+   "latlon": [
+    58.9864,
+    6.1904
+   ],
+   "px": [
+    1186.9,
+    1048.9
+   ],
+   "uv": [
+    0.49453,
+    0.77694
+   ]
+  },
+  "Jorpeland": {
+   "latlon": [
+    59.0187,
+    6.0457
+   ],
+   "px": [
+    371.6,
+    653.6
+   ],
+   "uv": [
+    0.15483,
+    0.48412
+   ]
+  }
+ },
+ "landmarks_note": "px = [x, y] in this JPEG (origin top-left); uv normalised; coordinates approximate (+-50 m)"
+}

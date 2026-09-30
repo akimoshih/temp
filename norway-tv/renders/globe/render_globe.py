@@ -258,17 +258,25 @@ def main():
         args = [a for a in args if a != sys.argv[sys.argv.index('--ss') + 1]]
     first, last = (int(args[0]), int(args[1])) if len(args) >= 2 else (0, 279)
     os.makedirs(OUT, exist_ok=True)
-    sc = Scene()
     camp = os.path.join(OUT, 'camera.json')
-    cams = json.load(open(camp)) if os.path.exists(camp) else {}
+    if '--camera-only' in sys.argv:
+        cams = {}
+        for f in range(0, 900):
+            u, h, roll = camera(min(f, 279))
+            fwd, right, up = basis(u, roll)
+            ty = math.tan(FOVY / 2)
+            cams[str(f)] = {'f': f, 'C': ((1.0 + h) * u).tolist(), 'fwd': fwd.tolist(), 'right': right.tolist(),
+                            'up': up.tolist(), 'tanx': ty * W / H, 'tany': ty, 'h': h}
+        json.dump(cams, open(camp, 'w'))
+        return
+    sc = Scene()
+    cams = {}
     for f in range(first, last + 1):
         img, cam = sc.render(f, ss)
         img.save(os.path.join(OUT, f'f{f:04d}.jpg'), quality=94)
         cams[str(f)] = cam
         if f % 10 == 0 or f == last:
             print('frame', f, 'h=%.3f' % cam['h'], flush=True)
-            json.dump(cams, open(camp, 'w'))
-    json.dump(cams, open(camp, 'w'))
 
 
 if __name__ == '__main__':

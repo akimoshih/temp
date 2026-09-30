@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<title>Collage Kit Preview</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="kit.css">
+<style>
+  html, body { margin: 0; background: #0c0c0c; }
+  .board-label { position: absolute; right: 18px; top: 12px; font: 700 16px/1 var(--f-mono); color: rgba(255,255,255,.6); z-index: 99; letter-spacing: .1em; }
+  .sil { -webkit-mask: var(--m) center / 100% 100% no-repeat; mask: var(--m) center / 100% 100% no-repeat; }
+  .spec-row { display: flex; align-items: baseline; gap: 28px; white-space: nowrap; }
+  .spec-tag { font: 700 16px/1 var(--f-mono); color: var(--no-red); width: 250px; flex: none; letter-spacing: .06em; }
+</style>
+</head>
+<body>
+<div id="stage" class="stage"></div>
+<script src="collage.js"></script>
+<script>
+/* preview.html?board=title|fact|kit|type|reveal     window.render(frame) is deterministic. */
+window.kitReady = false;
+(async () => {
+  const C = Collage;
+  const Q = new URLSearchParams(location.search);
+  const BOARD = Q.get('board') || 'title';
+  const stage = document.getElementById('stage');
+  const GEO = '../geo/crops/';
+  await C.ready({ lofoten: GEO + 'lofoten.jpg', oslo: GEO + 'oslo.jpg', geiranger: GEO + 'geiranger.jpg', tromso: GEO + 'tromso.jpg',
+    flagNo: 'svg/sticker_flag_no.svg', flagRoc: 'svg/sticker_flag_roc.svg', pin: 'svg/pin.svg', aurora: 'svg/sticker_aurora.svg',
+    msun: 'svg/sticker_midnight_sun.svg', coin: 'svg/coin_nok.svg', tw: 'svg/taiwan_silhouette.svg', no: 'svg/norway_silhouette.svg', plane: 'svg/airplane.svg' });
+
+  const el = (tag, cls, css = {}, parent = stage, html) => { const e = document.createElement(tag); if (cls) e.className = cls; Object.assign(e.style, css); if (html !== undefined) e.innerHTML = html; parent.appendChild(e); return e; };
+  const cv = (w, h, css = {}, parent = stage) => { const c = C.canvas(w, h); Object.assign(c.style, { position: 'absolute', left: '0px', top: '0px' }, css); parent.appendChild(c); return c; };
+  const px = (v) => v + 'px';
+  const img = (src, css, parent = stage, cls = 'abs') => { const i = el('img', cls, css, parent); i.src = C.asset(src); return i; };
+  el('div', 'board-label', {}, stage, 'KIT PREVIEW · ' + BOARD.toUpperCase());
+
+  // film overlays shared by all boards (pre-decoded, toggled per frame)
+  let FILM = null;
+  const filmLayer = () => (f) => FILM && FILM.render(f);
+
+  const boards = {};
+
+  // =================================================================== TITLE (S3 look test)
+  boards.title = () => {
+    const cam = el('div', 'layer');
+    const bg = cv(1920, 1080, {}, cam);
+    const bgc = bg.getContext('2d');
+    // satellite plate: slow drift, slight grade
+    const drawBg = (f) => {
+      bgc.save(); const z = 1.12 + f * 0.0006;
+      bgc.translate(960, 540); bgc.scale(z, z); bgc.translate(-960, -540);
+      C.drawCover(bgc, C.images.lofoten, 0, 0, 1920, 1080, { focus: { x: 0.45, y: 0.5 } });
+      bgc.restore();
+      bgc.fillStyle = 'rgba(0,20,60,0.28)'; bgc.fillRect(0, 0, 1920, 1080);
+    };
+    // halftone strip of satellite (collage "print" on the left)
+    const print = C.printCutout(C.images.geiranger, { width: 560, height: 380, dot: 6, angle: 45, ink: '#00205B', paper: '#E4E0D6', paperTexture: 'newsprint', contrast: 1.1, brightness: 0.12, focus: { x: 0.55, y: 0.5 }, zoom: 1.6, torn: { seed: 'print1', edges: 'all', rim: 6, roughness: 0.8 } });
+    const printEl = el('div', 'abs', { left: '120px', top: '96px' }, cam); printEl.appendChild(print);
+    const tape1 = el('div', 'tape tape--white', { left: px(120 + 40 + 400), top: px(96 + 40 - 30), transform: 'rotate(28deg)' }, printEl.parentNode);
+
+    // red plate "挪威"
+    const plateA = el('div', 'abs', { left: '520px', top: '250px', width: '900px', height: '380px', transformOrigin: '50% 50%' }, cam);
+    const pa = el('div', 'torn paper paper--red crumple center', { left: '0', top: '0', width: '900px', height: '380px' }, plateA);
+    pa.dataset.seed = 'plateA'; pa.dataset.edges = 'tb'; pa.dataset.rim = '8';
+    el('div', 'f-sans c-white', { fontSize: '300px', lineHeight: '1', letterSpacing: '.02em', marginTop: '-28px', textShadow: '0 4px 0 rgba(0,0,0,.18)' }, pa, '挪威');
+    // cream plate "NORWAY"
+    const plateB = el('div', 'abs', { left: '640px', top: '600px', width: '760px', height: '230px' }, cam);
+    const pb = el('div', 'torn paper crumple center', { left: '0', top: '0', width: '760px', height: '230px' }, plateB);
+    pb.dataset.seed = 'plateB'; pb.dataset.edges = 'lrb'; pb.dataset.rim = '6';
+    el('div', 'f-anton c-ink', { fontSize: '210px', lineHeight: '1', letterSpacing: '.04em', marginTop: '8px' }, pb, 'NORWAY');
+    C.tornAll(cam);
+    const wrapA = plateA.firstElementChild, wrapB = plateB.firstElementChild;
+    el('div', 'tape tape--beige tape--sm', { left: '-70px', top: '-14px', transform: 'rotate(-36deg)' }, wrapB);
+    el('div', 'tape tape--beige tape--sm', { right: '-64px', bottom: '-6px', transform: 'rotate(-32deg)' }, wrapB);
+
+    // flag sticker
+    const flag = img('svg/sticker_flag_no.svg', { left: '1330px', top: '150px', width: '330px', transformOrigin: '50% 50%' }, cam);
+    // stamp + markers on an overlay canvas
+    const ov = cv(1920, 1080, {}, cam), og = ov.getContext('2d');
+    const stampNorge = C.makeStamp('norge', { color: '#FFFFFF', ink: 0.92 });
+    // kicker + coordinates
+    const kick = el('div', 'abs dymo dymo--navy', { left: '130px', top: '560px' }, cam, 'EP.01 · 30 SEC');
+    const coord = el('div', 'abs f-mono c-cream', { left: '132px', top: '650px', fontSize: '26px', letterSpacing: '.12em', lineHeight: '1.5' }, cam, '59.91°N<br>10.75°E');
+    const tapeLabel = el('div', 'tape-label', { left: '1260px', top: '880px', transform: 'rotate(-3deg)' }, cam, '30 秒認識一個國家');
+    const foot = el('div', 'footnote', {}, cam, 'Contains modified Copernicus Sentinel data 2024–2025');
+    const film = filmLayer();
+
+    return (f) => {
+      const T = 0; // drop at f0 of this mock
+      drawBg(f);
+      const shk = C.shake('drop', f, T + 3, { amp: 22, decay: 5 });
+      cam.style.transform = shk.css;
+      C.place(wrapA, {}, C.slamAt(f, T, { dur: 5 }), C.jitter('A', f, 2));
+      C.place(wrapB, { rotate: -2.5 }, C.snapInAt(f, T + 4, { dur: 4, seed: 'B' }), C.jitter('B', f, 2));
+      C.place(tapeLabel, { rotate: -3 }, C.snapInAt(f, T + 16, { dur: 4, seed: 'tl' }), C.jitter('tl', f, 1.5));
+      C.place(flag, { rotate: 8 }, C.snapInAt(f, T + 8, { dur: 4, seed: 'flag' }), C.jitter('flag', f, 2));
+      C.place(printEl, { rotate: -4 }, C.snapInAt(f, T + 10, { dur: 4, seed: 'print' }), C.jitter('pr', f, 1.5));
+      C.place(tape1, { rotate: 28 }, C.snapInAt(f, T + 11, { dur: 3, seed: 't1' }));
+      C.place(kick, { rotate: -2 }, C.snapInAt(f, T + 13, { dur: 4 }), C.jitter('k', f, 1));
+      C.place(coord, {}, C.snapInAt(f, T + 14, { dur: 3 }));
+      og.clearRect(0, 0, 1920, 1080);
+      const j = C.jitter('mk', f, 1.2);
+      og.save(); og.translate(j.x, j.y);
+      C.marker.underline(og, { x1: 700, x2: 1340, y: 845, seed: 'ul', width: 16, color: C.colors.yellow, progress: C.prog(f, T + 12, 7), double: true, gap: 16, frame: f, boil: 0.8 });
+      C.marker.circle(og, { cx: 1495, cy: 285, rx: 215, ry: 160, seed: 'circ', width: 9, color: C.colors.white, progress: C.prog(f, T + 18, 8), frame: f, boil: 0.8 });
+      C.marker.arrow(og, { x1: 330, y1: 760, x2: 590, y2: 560, seed: 'arr', width: 9, color: C.colors.yellow, progress: C.prog(f, T + 20, 8), bend: -0.25, frame: f, boil: 0.6 });
+      og.restore();
+      C.drawStamp(og, stampNorge, 1560, 690, C.progRaw(f, T + 14, 6), { rot: -12, scale: 0.6, composite: 'source-over' });
+      film(f);
+    };
+  };
+
+  // =================================================================== FACT (S4 F2 look test)
+  boards.fact = () => {
+    const back = el('div', 'layer paper paper--kraft crumple');
+    // Oslo halftone print with torn edges + tape
+    const print = C.printCutout(C.images.oslo, { width: 860, height: 640, dot: 8, angle: 45, ink: '#00205B', paper: '#F1E9D8', paperTexture: true, contrast: 1.35, brightness: 0.02, focus: { x: 0.5, y: 0.45 }, torn: { seed: 'oslo', edges: 'all', rim: 7 } });
+    const pr = el('div', 'abs', { left: '96px', top: '150px' }); pr.appendChild(print);
+    el('div', 'tape tape--beige', { left: '60px', top: '10px', transform: 'rotate(-30deg)' }, pr);
+    el('div', 'tape tape--beige', { right: '40px', bottom: '40px', transform: 'rotate(-24deg)' }, pr);
+    const pin = img('svg/pin.svg', { left: '540px', top: '420px', width: '120px', transformOrigin: '50% 100%' });
+    const lbl = el('div', 'marker-label marker-label--cjk sticker', { left: '650px', top: '360px', fontSize: '60px', color: '#BA0C2F' }, stage, '奧斯陸 Oslo');
+    // right column: label + number
+    const kick = el('div', 'abs kicker kicker--red', { left: '1060px', top: '170px' }, stage, 'FACT 02 / POPULATION');
+    const title = el('div', 'abs f-sans c-ink', { left: '1060px', top: '240px', fontSize: '112px', lineHeight: '1' }, stage, '人口');
+    const numWrap = el('div', 'abs', { left: '1052px', top: '370px', width: '780px', height: '250px' });
+    const np = el('div', 'torn paper center', { left: '0', top: '0', width: '780px', height: '250px', justifyContent: 'flex-start', paddingLeft: '40px' }, numWrap);
+    np.dataset.seed = 'num'; np.dataset.edges = 'tb';
+    const yue = el('span', 'f-sans c-ink', { fontSize: '80px', marginRight: '18px', marginTop: '40px' }, np, '約');
+    const num = el('span', 'f-anton c-red num', { fontSize: '230px', lineHeight: '1' }, np, '0');
+    const wan = el('span', 'f-sans c-ink', { fontSize: '120px', marginLeft: '16px', marginTop: '30px' }, np, '萬');
+    C.tornAll(numWrap);
+    const nw = numWrap.firstElementChild;
+    // crowd dot-grid
+    const crowd = cv(820, 300, { left: '1060px', top: '660px' }), cg = crowd.getContext('2d');
+    const foot = el('div', 'footnote', { left: '1060px', bottom: '60px' }, stage, '<span class="zh">資料來源：</span>SSB 挪威統計局 2026.1.1');
+    const ov = cv(1920, 1080), og = ov.getContext('2d');
+    const film = filmLayer();
+    return (f) => {
+      C.place(pr, { rotate: -3 }, C.snapInAt(f, 0, { seed: 'pr' }), C.jitter('pr', f, 1.5));
+      C.place(pin, {}, C.snapInAt(f, 8, { from: 1.6, rot0: 0 }), C.jitter('pin', f, 1));
+      C.place(lbl, { rotate: -4 }, C.snapInAt(f, 12, {}), C.jitter('lbl', f, 1.2));
+      C.place(kick, { rotate: -1.5 }, C.snapInAt(f, 2, {}), C.jitter('k', f, 1));
+      C.place(title, {}, C.snapInAt(f, 3, {}), C.jitter('t', f, 1.5));
+      C.place(nw, { rotate: 1.5 }, C.snapInAt(f, 4, { seed: 'n' }), C.jitter('n', f, 2));
+      num.textContent = C.countUpAt(563, f, 6, 34);
+      cg.clearRect(0, 0, 820, 300);
+      C.drawCrowd(cg, { x: 4, y: 4, cols: 24, rows: 7, size: 34, gap: 7, progress: C.prog(f, 6, 28), color: '#141414',
+        highlight: (i) => (i === 24 * 7 - 1 ? C.colors.red : null) });
+      og.clearRect(0, 0, 1920, 1080);
+      C.marker.circle(og, { cx: 600, cy: 470, rx: 150, ry: 110, seed: 'oc', width: 10, color: C.colors.red, progress: C.prog(f, 10, 8), frame: f, boil: 0.8 });
+      C.marker.underline(og, { x1: 1066, x2: 1330, y: 360, seed: 'u2', width: 12, color: C.colors.red, progress: C.prog(f, 8, 6) });
+      film(f);
+    };
+  };
+
+  // =================================================================== REVEAL (S7 look test, placeholder number)
+  boards.reveal = () => {
+    const back = el('div', 'layer paper paper--navy');
+    const dots = el('div', 'layer halftone-dots', { color: 'rgba(0,0,0,.35)' });
+    const rocWrap = el('div', 'abs', { left: '140px', top: '140px', width: '420px' });
+    const roc = img('svg/sticker_flag_roc.svg', { width: '420px', position: 'relative' }, rocWrap, '');
+    const big = el('div', 'abs', { left: '600px', top: '170px', width: '1180px', height: '420px' });
+    const bp = el('div', 'torn paper center crumple', { left: '0', top: '0', width: '1180px', height: '420px' }, big);
+    bp.dataset.seed = 'big'; bp.dataset.edges = 'all'; bp.dataset.rim = '9';
+    el('span', 'f-sans c-ink', { fontSize: '120px', marginTop: '60px' }, bp, '約');
+    const nn = el('span', 'f-anton c-red num', { fontSize: '330px', lineHeight: '1', margin: '0 20px' }, bp, '???');
+    el('span', 'f-sans c-ink', { fontSize: '120px', marginTop: '60px' }, bp, '人');
+    C.tornAll(big); const bw = big.firstElementChild;
+    const ratio = el('div', 'abs', { left: '140px', top: '690px', width: '1100px' });
+    el('div', 'f-sans c-white', { fontSize: '64px', lineHeight: '1.2' }, ratio, '平均每 <span class="c-yellow f-anton" style="font-size:96px">???</span> 位挪威居民');
+    el('div', 'f-sans c-white', { fontSize: '64px', lineHeight: '1.2' }, ratio, '才 <span class="c-yellow">1</span> 位台灣人');
+    const ov = cv(1920, 1080), og = ov.getContext('2d');
+    const ssr = C.makeStamp('ssr', { color: '#FFE14D' });
+    const foot = el('div', 'footnote', {}, stage, '<span class="zh">估計值　資料來源：</span>(facts.json) · PREVIEW PLACEHOLDER');
+    const film = filmLayer();
+    return (f) => {
+      C.place(bw, { rotate: -1.5 }, C.slamAt(f, 0, { dur: 5 }), C.jitter('bw', f, 2));
+      C.place(rocWrap, { rotate: -10 }, C.snapInAt(f, 5, { seed: 'roc' }), C.jitter('roc', f, 2));
+      C.place(ratio, {}, C.snapInAt(f, 10, {}), C.jitter('ra', f, 1));
+      og.clearRect(0, 0, 1920, 1080);
+      C.marker.starburst(og, { cx: 1500, cy: 250, r1: 150, r2: 230, rays: 9, from: -150, to: -30, seed: 'sb', width: 10, color: C.colors.yellow, progress: C.prog(f, 6, 6) });
+      C.marker.underline(og, { x1: 140, x2: 820, y: 895, seed: 'ulr', width: 12, color: C.colors.yellow, progress: C.prog(f, 14, 6) });
+      C.drawCrowd(og, { x: 1290, y: 700, cols: 16, rows: 6, size: 26, gap: 8, mode: 'dots', progress: C.prog(f, 12, 10), color: 'rgba(255,255,255,.85)', highlight: (i) => (i === 95 ? C.colors.rocRed : null) });
+      C.drawStamp(og, ssr, 1590, 560, C.progRaw(f, 16, 6), { rot: 10, scale: 0.8, composite: 'source-over' });
+      film(f);
+    };
+  };
+
+  // =================================================================== KIT sheet (components)
+  boards.kit = () => {
+    el('div', 'layer paper crumple');
+    // row 1: papers as torn swatches
+    const sw = [['paper_cream', '#F1E9D8'], ['newsprint', '#E4E0D6'], ['kraft', '#C8A27A'], ['cardboard', null]];
+    sw.forEach(([t, col], i) => {
+      const c = C.tornPaper(null, { width: 250, height: 170, seed: 'sw' + i, edges: i % 2 ? 'all' : 'tb', texture: t === 'cardboard' ? null : (t === 'paper_cream' ? 'paper' : t), fill: col || '#B98E5F', pad: 30 });
+      c.style.cssText = `position:absolute;left:${40 + i * 240}px;top:20px;transform:rotate(${(i - 1.5) * 3}deg)`; stage.appendChild(c);
+      el('div', 'abs f-mono', { left: px(80 + i * 240), top: '215px', fontSize: '15px', color: '#555' }, stage, t.toUpperCase());
+    });
+    // tapes
+    ['beige', 'white', 'kraft'].forEach((t, i) => el('div', 'tape tape--' + t, { left: px(1020 + i * 290), top: '60px', transform: `rotate(${[-8, 5, -3][i]}deg)` }));
+    // clipping
+    const clip = el('div', 'clipping', { left: '1010px', top: '150px', width: '520px' }, stage,
+      '<div class="clipping__kicker"><span>NORDIC TIMES</span><span>No. 30</span></div><h1 class="clipping__headline">峽灣之國</h1>' +
+      '<div class="clipping__body">挪威海岸線曲折，冰河切割出深邃峽灣。這段文字只是版面示意，用來檢查剪報的字級與行距。</div>' +
+      '<div class="clipping__meta">OSLO · 59.91°N 10.75°E</div>');
+    clip.classList.add('torn'); clip.dataset.seed = 'clip'; clip.dataset.edges = 'lrb';
+    // stickers row
+    img('svg/sticker_flag_no.svg', { left: '30px', top: '250px', width: '250px', transform: 'rotate(-6deg)' });
+    img('svg/sticker_flag_roc.svg', { left: '270px', top: '250px', width: '260px', transform: 'rotate(5deg)' });
+    img('svg/sticker_aurora.svg', { left: '530px', top: '240px', width: '210px' });
+    img('svg/sticker_midnight_sun.svg', { left: '740px', top: '240px', width: '210px', transform: 'rotate(8deg)' });
+    img('svg/coin_nok.svg', { left: '1560px', top: '130px', width: '220px' });
+    // text sticker + labels
+    el('div', 'abs sticker f-sans c-red', { left: '1580px', top: '380px', fontSize: '84px', transform: 'rotate(-6deg)' }, stage, '挪威！');
+    el('div', 'abs dymo dymo--red', { left: '1570px', top: '520px', transform: 'rotate(3deg)' }, stage, 'TPE → OSL');
+    el('div', 'abs kicker kicker--yellow', { left: '1590px', top: '600px' }, stage, 'FACT 03');
+    el('div', 'marker-label marker-label--hl', { left: '1580px', top: '660px', fontSize: '48px', transform: 'rotate(-4deg)' }, stage, 'so cool!');
+    el('div', 'marker-label marker-label--cjk marker-label--red', { left: '1590px', top: '730px', fontSize: '52px', transform: 'rotate(-3deg)' }, stage, '真的假的？');
+    const cut = el('div', 'abs', { left: '1560px', top: '810px', fontSize: '76px' }, stage, 'NORGE');
+    C.cutLetters(cut, { seed: 'cut' });
+    el('div', 'sticker-pill', { left: '1590px', top: '930px', position: 'absolute' }, stage, '★ SSR');
+    // silhouettes: Norway vs 10 Taiwans (same km scale)
+    const s = 0.42; // px per km
+    const no = el('div', 'abs sil paper--navy', { '--m': `url(${C.asset('svg/norway_silhouette.svg')})`, left: '40px', top: '470px', width: px(1169.53 * s), height: px(1477.68 * s) });
+    no.style.setProperty('--m', `url(${C.asset('svg/norway_silhouette.svg')})`);
+    const twBox = el('div', 'abs shadow-flat', { left: '560px', top: '480px' });
+    for (let i = 0; i < 10; i++) {
+      const t = el('div', 'abs sil paper--red', { left: px((i % 5) * 88), top: px(Math.floor(i / 5) * 165), width: px(198.05 * s), height: px(375.82 * s) }, twBox);
+      t.style.setProperty('--m', `url(${C.asset('svg/taiwan_silhouette.svg')})`);
+    }
+    el('div', 'abs f-mono', { left: '560px', top: '820px', fontSize: '17px', color: '#444', width: '420px', lineHeight: '1.4' }, stage, 'svg/*_silhouette.svg · 1 unit = 1 km (equal-area)<br>10 × Taiwan main island vs Norway mainland');
+    // marker strokes & stamps & boarding pass on a canvas
+    const ov = cv(1920, 1080), og = ov.getContext('2d');
+    const bp = C.boardingPass();
+    const stamps = ['heritage', 'norge', 'ssr', 'oslo'].map((k) => C.makeStamp(k));
+    C.tornAll(stage);
+    return (f) => {
+      og.clearRect(0, 0, 1920, 1080);
+      const p = C.prog(f, 0, 24);
+      C.marker.circle(og, { cx: 1668, cy: 238, rx: 150, ry: 128, seed: 1, color: C.colors.red, progress: p, width: 9 });
+      C.marker.arrow(og, { x1: 1340, y1: 1010, x2: 1180, y2: 900, seed: 2, color: C.colors.red, progress: p, bend: -0.3, width: 9 });
+      og.save(); og.translate(1000, 610); og.scale(0.33, 0.33); og.rotate(-0.025); og.drawImage(bp, 0, 0); og.restore();
+      C.drawStamp(og, stamps[0], 250 + 0, 1000, C.progRaw(f, 4, 6), { rot: -6, scale: 0.4 });
+      C.drawStamp(og, stamps[1], 520, 990, C.progRaw(f, 7, 6), { rot: 10, scale: 0.3 });
+      C.drawStamp(og, stamps[2], 760, 1000, C.progRaw(f, 10, 6), { rot: -9, scale: 0.36 });
+      C.drawStamp(og, stamps[3], 830, 700, C.progRaw(f, 13, 6), { rot: 4, scale: 0.36 });
+      C.drawPlane(og, 1470, 900, 60, 90, C.colors.navy);
+      og.drawImage(C.images.pin, 1380, 860, 70, 72);
+    };
+  };
+
+  // =================================================================== MARKER strokes (big, paper vs satellite)
+  boards.marker = () => {
+    el('div', 'abs paper crumple', { left: '0', top: '0', width: '960px', height: '1080px' });
+    const sat = cv(960, 1080, { left: '960px' }); C.drawCover(sat.getContext('2d'), C.images.tromso, 0, 0, 960, 1080);
+    el('div', 'abs', { left: '960px', top: '0', width: '960px', height: '1080px', background: 'rgba(0,20,60,.25)' });
+    el('div', 'abs f-sans c-ink', { left: '120px', top: '150px', fontSize: '110px' }, stage, '首都');
+    el('div', 'abs f-anton c-white', { left: '1130px', top: '160px', fontSize: '120px' }, stage, 'OSLO');
+    el('div', 'abs f-sans c-ink', { left: '110px', top: '770px', fontSize: '64px' }, stage, '約 563 萬人');
+    const ov = cv(1920, 1080), og = ov.getContext('2d');
+    return (f) => {
+      og.clearRect(0, 0, 1920, 1080);
+      const p = C.prog(f, 0, 30);
+      [[0, C.colors.red, C.colors.ink], [960, C.colors.yellow, C.colors.white]].forEach(([dx, c1, c2], k) => {
+        const S = 's' + k;
+        C.marker.circle(og, { cx: dx + 240, cy: 215, rx: 170, ry: 95, seed: S + 'c', color: c1, width: 12, progress: p, frame: f, boil: 0.7 });
+        C.marker.arrow(og, { x1: dx + 520, y1: 470, x2: dx + 330, y2: 290, seed: S + 'a', color: c1, width: 11, progress: p, bend: 0.3, frame: f, boil: 0.6 });
+        C.marker.underline(og, { x1: dx + 110, x2: dx + 560, y: 360, seed: S + 'u', color: c2, width: 10, progress: p, double: true });
+        C.marker.starburst(og, { cx: dx + 760, cy: 230, r1: 60, r2: 120, rays: 9, from: -170, to: 10, seed: S + 'b', color: c1, width: 9, progress: p });
+        C.marker.burst(og, { cx: dx + 750, cy: 560, r1: 90, r2: 140, points: 13, seed: S + 'z', color: c2, width: 8, progress: p });
+        C.marker.highlight(og, { x: dx + 100, y: 780, w: 420, h: 72, seed: S + 'h', progress: p, color: C.colors.yellow, composite: k ? 'source-over' : 'multiply', alpha: k ? 1.4 : 1 });
+        C.marker.scribble(og, { x: dx + 110, y: 900, w: 380, h: 90, seed: S + 's', progress: p, color: k ? C.colors.aurora : C.colors.yellow, composite: k ? 'source-over' : 'multiply' });
+        C.marker.cross(og, { cx: dx + 700, cy: 900, size: 50, seed: S + 'x', color: c1, progress: p });
+        C.marker.check(og, { cx: dx + 840, cy: 890, size: 50, seed: S + 'k', color: c1, progress: p });
+      });
+    };
+  };
+
+  // =================================================================== EXPORT (prerendered PNGs, used by tools/export_png.js)
+  boards.export = () => {
+    const X = {};
+    X.stamp_heritage = C.makeStamp('heritage');
+    X.stamp_heritage_white = C.makeStamp('heritage', { color: '#FFFFFF' });
+    X.stamp_norge = C.makeStamp('norge');
+    X.stamp_norge_white = C.makeStamp('norge', { color: '#FFFFFF' });
+    X.stamp_ssr = C.makeStamp('ssr');
+    X.stamp_ssr_yellow = C.makeStamp('ssr', { color: '#FFE14D' });
+    X.stamp_oslo = C.makeStamp('oslo');
+    X.stamp_taiwan = C.makeStamp('taiwan');
+    X.boarding_pass = C.boardingPass();
+    X.torn_red_plate = C.tornPaper(null, { width: 900, height: 360, seed: 'exA', edges: 'tb', fill: '#BA0C2F', texture: 'paper', rim: 8 });
+    X.torn_cream_plate = C.tornPaper(null, { width: 900, height: 360, seed: 'exB', edges: 'all', fill: '#F1E9D8', texture: 'paper', rim: 7 });
+    X.torn_newsprint_plate = C.tornPaper(null, { width: 900, height: 360, seed: 'exC', edges: 'lrb', fill: '#E4E0D6', texture: 'newsprint', rim: 6 });
+    X.torn_kraft_plate = C.tornPaper(null, { width: 900, height: 360, seed: 'exD', edges: 'all', fill: '#C8A27A', texture: 'kraft', rim: 7 });
+    X.sticker_taiwan_red = C.sticker((() => { const c = C.canvas(198 * 1.2, 376 * 1.2); const g = c.getContext('2d'); g.drawImage(C.images.tw, 0, 0, c.width, c.height); g.globalCompositeOperation = 'source-in'; g.fillStyle = '#BA0C2F'; g.fillRect(0, 0, c.width, c.height); return c; })(), { border: 10 });
+    X.sticker_plane = C.sticker((() => { const c = C.canvas(300, 300); C.drawPlane(c.getContext('2d'), 150, 150, 45, 290, '#00205B'); return c; })(), { border: 12 });
+    window.exportCanvases = X;
+    let y = 0; Object.values(X).slice(0, 6).forEach((c, i) => { c.style.cssText = `position:absolute;left:${(i % 3) * 640}px;top:${Math.floor(i / 3) * 400}px;width:600px`; stage.appendChild(c); });
+    return () => {};
+  };
+
+  // =================================================================== TYPE specimen (glyph check)
+  boards.type = () => {
+    el('div', 'layer paper');
+    const box = el('div', 'safe', { display: 'flex', flexDirection: 'column', gap: '14px', paddingTop: '6px' });
+    const row = (tag, cls, css, html) => { const r = el('div', 'spec-row', {}, box); el('div', 'spec-tag', {}, r, tag); el('div', cls, css, r, html); };
+    row('NOTO SANS TC 900', 'f-sans', { fontSize: '96px', lineHeight: '1' }, '挪威 那麼在挪威的台灣人有多少？');
+    row('NOTO SANS TC 700', 'f-sans-b', { fontSize: '56px' }, '首都：奧斯陸　人口：約 563 萬　面積：約 38.5 萬 km²');
+    row('NOTO SANS TC 500', 'f-sans-m', { fontSize: '36px' }, '資料來源：挪威統計局 SSB 2026.1.1　估計值　下一站，出發！');
+    row('NOTO SERIF TC 900', 'f-serif', { fontSize: '96px', lineHeight: '1' }, '世界遺產 峽灣 FJORDS');
+    row('LXGW WENKAI TC 700', 'f-hand', { fontSize: '64px' }, '歡迎來到挪威 冬季極光 夏季午夜太陽');
+    row('ANTON', 'f-anton', { fontSize: '120px', lineHeight: '1' }, 'NORWAY 8,694 KM · Æ Ø Å');
+    row('SPACE MONO 700', 'f-mono', { fontSize: '48px' }, 'TPE → OSL  59.91°N 10.75°E  NOK kr');
+    row('PERMANENT MARKER', 'f-marker', { fontSize: '64px' }, 'Velkommen til Norge!');
+    row('SCALE', 'f-sans', { fontSize: '40px' }, '<span class="t-s">t-s 56</span> <span class="t-xs">t-xs 40</span> <span class="t-body">t-body 32</span> <span class="t-cap">t-cap 24</span> <span class="t-foot">t-foot 19</span>');
+    row('MIXED', 'f-sans', { fontSize: '48px' }, '<span class="c-red">平均每</span> <span class="f-anton c-navy" style="font-size:64px">1,234</span> 位 · 稀有度 <span class="c-red">★★★★★</span>');
+    const fallback = el('div', 'abs f-mono', { left: '96px', top: '14px', fontSize: '15px', color: '#555', width: '1500px' });
+    const ok = C.FONT_FACES.map(([w, f]) => `${f} ${w}: ${document.fonts.check(`${w} 40px "${f}"`, '挪威') ? 'OK' : 'MISSING'}`);
+    fallback.innerHTML = ok.join(' · ');
+    return () => {};
+  };
+
+  const render = (boards[BOARD] || boards.title)();
+  if (BOARD !== 'type' && BOARD !== 'export') FILM = await C.createFilmLayer(stage, { grain: 0.2, dust: 0.7 });
+  window.render = (f) => render(f | 0);
+  window.renderFrame = window.render;
+  render(Number(Q.get('frame') || 40));
+  window.kitReady = true;
+})().catch((e) => { console.error(e); document.body.insertAdjacentHTML('beforeend', `<pre style="color:#f55;position:absolute;z-index:999">${e.stack}</pre>`); window.kitReady = true; });
+</script>
+</body>
+</html>

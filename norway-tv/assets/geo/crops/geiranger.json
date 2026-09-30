@@ -1,0 +1,171 @@
+{
+ "name": "geiranger",
+ "label": "Geirangerfjord & Sunnylvsfjorden",
+ "file": "geiranger.jpg",
+ "date": "2025-07-18",
+ "platform": "Sentinel-2A",
+ "scenes": [
+  {
+   "id": "S2A_32VLP_20250718_1_L2A",
+   "tile": "32VLP",
+   "box_coverage": 0.8,
+   "product": "S2A_MSIL2A_20250718T105711_N0511_R094_T32VLP_20250718T150813.SAFE",
+   "datetime": "2025-07-18T11:04:14.902000Z",
+   "tile_cloud_cover_pct": 6.54,
+   "sun_azimuth_deg": 166.85,
+   "sun_elevation_deg": 48.71,
+   "processing_baseline": "05.11",
+   "href_tci": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/V/LP/2025/7/S2A_32VLP_20250718_1_L2A/TCI.tif"
+  },
+  {
+   "id": "S2A_32VMP_20250718_1_L2A",
+   "tile": "32VMP",
+   "box_coverage": 0.52,
+   "product": "S2A_MSIL2A_20250718T105711_N0511_R094_T32VMP_20250718T150813.SAFE",
+   "datetime": "2025-07-18T11:04:09.647000Z",
+   "tile_cloud_cover_pct": 12.08,
+   "sun_azimuth_deg": 169.49,
+   "sun_elevation_deg": 48.87,
+   "processing_baseline": "05.11",
+   "href_tci": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/V/MP/2025/7/S2A_32VMP_20250718_1_L2A/TCI.tif"
+  }
+ ],
+ "mosaic": "same-datatake tiles, 3 km feathered blend in overlap",
+ "crs": "EPSG:32632",
+ "utm_zone": "32N",
+ "centre_latlon": [
+  62.110022,
+  7.099954
+ ],
+ "bbox_utm": {
+  "xmin": 385650.0,
+  "ymin": 6879340.0,
+  "xmax": 416050.0,
+  "ymax": 6896440.0
+ },
+ "bbox_latlon": {
+  "west": 6.803356,
+  "east": 7.395142,
+  "south": 62.029024,
+  "north": 62.190432
+ },
+ "corners_latlon": {
+  "nw": [
+   62.182409,
+   6.803356
+  ],
+  "ne": [
+   62.190432,
+   7.38701
+  ],
+  "sw": [
+   62.029024,
+   6.814426
+  ],
+  "se": [
+   62.036995,
+   7.395142
+  ]
+ },
+ "size_km": [
+  30.4,
+  17.1
+ ],
+ "width_px": 3040,
+ "height_px": 1710,
+ "m_per_px": 10.0,
+ "geotransform_gdal": [
+  385650.0,
+  10.0,
+  0.0,
+  6896440.0,
+  0.0,
+  -10.0
+ ],
+ "pixel_convention": "pixel-is-area; row 0 = north edge; pixel (r,c) centre at x=xmin+(c+0.5)*res, y=ymax-(r+0.5)*res",
+ "source_bands": "L2A B04/B03/B02 10 m reflectance (16-bit) from the same scene as TCI.tif; scene chosen by TCI preview + SCL cloud stats",
+ "grade": {
+  "params": {
+   "dehaze": 0.85,
+   "dehaze_pct": 0.1,
+   "mid_out": 0.4,
+   "sat": 1.1,
+   "vib": 0.3,
+   "clarity": 0.22,
+   "clarity_sigma": 28.0,
+   "sharpen": 0.35,
+   "sharpen_sigma": 0.9,
+   "toe_lift": 0.01,
+   "warm": 0.0,
+   "shadow_tint": [
+    -0.006,
+    -0.022
+   ],
+   "shadow_range": 0.42,
+   "hi_tint": [
+    0.0,
+    0.006
+   ],
+   "cloud_desat": 0.9,
+   "shadow_blue_damp": 0.65,
+   "shadow_neutral": 0.9,
+   "shadow_neutral_keep": 0.55
+  },
+  "stats": {
+   "offset": [
+    8.499999967170879e-05,
+    8.499999967170879e-05,
+    8.499999967170879e-05
+   ],
+   "gain": 1.6459884643554688,
+   "land_median": 0.06315575540065765
+  },
+  "description": "dark-offset dehaze, land-median exposure, ACES filmic curve, Oklab chroma x1.10 + vibrance, clarity (local contrast), navy tint on water, blue-shadow damping, topographic-shadow (SCL dark-area) re-colouring toward surrounding terrain chroma, SCL-cloud fringe neutralisation, fine sharpen"
+ },
+ "attribution": "Contains modified Copernicus Sentinel data 2025",
+ "landmarks": {
+  "Geiranger": {
+   "latlon": [
+    62.1009,
+    7.206
+   ],
+   "px": [
+    2070.5,
+    972.4
+   ],
+   "uv": [
+    0.68107,
+    0.56863
+   ]
+  },
+  "Hellesylt": {
+   "latlon": [
+    62.0846,
+    6.871
+   ],
+   "px": [
+    316.2,
+    1101.0
+   ],
+   "uv": [
+    0.10403,
+    0.64384
+   ]
+  },
+  "Seven Sisters waterfall": {
+   "latlon": [
+    62.106,
+    7.0946
+   ],
+   "px": [
+    1490.8,
+    899.0
+   ],
+   "uv": [
+    0.49038,
+    0.52571
+   ]
+  }
+ },
+ "landmarks_note": "px = [x, y] in this JPEG (origin top-left); uv normalised; coordinates approximate (+-50 m)"
+}

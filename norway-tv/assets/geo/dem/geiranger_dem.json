@@ -1,0 +1,179 @@
+{
+ "name": "geiranger_dem",
+ "label": "Geirangerfjord & Sunnylvsfjorden (3D terrain)",
+ "crs": "EPSG:32632",
+ "utm_zone": "32N",
+ "centre_latlon": [
+  62.130017,
+  7.04001
+ ],
+ "bbox_utm": {
+  "xmin": 379790.0,
+  "ymin": 6878210.0,
+  "xmax": 415790.0,
+  "ymax": 6902210.0
+ },
+ "bbox_latlon": {
+  "west": 6.686935,
+  "east": 7.39071,
+  "south": 62.017072,
+  "north": 62.242146
+ },
+ "corners_latlon": {
+  "nw": [
+   62.232331,
+   6.686935
+  ],
+  "ne": [
+   62.242146,
+   7.379243
+  ],
+  "sw": [
+   62.017072,
+   6.703292
+  ],
+  "se": [
+   62.026798,
+   7.39071
+  ]
+ },
+ "size_km": [
+  36.0,
+  24.0
+ ],
+ "pixel_convention": "pixel-is-area; row 0 = north edge; pixel (r,c) centre at x=xmin+(c+0.5)*res, y=ymax-(r+0.5)*res",
+ "dem": {
+  "file": "geiranger_dem.npy",
+  "raw_file": "geiranger_dem.f32",
+  "raw_format": "little-endian float32, row-major, H*W values, no header (same data as .npy)",
+  "dtype": "float32",
+  "shape": [
+   1200,
+   1800
+  ],
+  "width": 1800,
+  "height": 1200,
+  "pixel_size_m": 20.0,
+  "units": "metres",
+  "vertical_datum": "EGM2008 geoid (Copernicus DEM native)",
+  "horizontal_resampling": "cubic from 1 arcsec (~30 m) GLO-30",
+  "geotransform_gdal": [
+   379790.0,
+   20.0,
+   0.0,
+   6902210.0,
+   0.0,
+   -20.0
+  ],
+  "min_m": 0.0,
+  "max_m": 1847.43,
+  "mean_m": 859.26,
+  "water_level_m": 0.0,
+  "sea_pixels_fraction": 0.0538,
+  "water_treatment": "WBM ocean (incl. fjords) set to exactly 0.0 m; land clamped >= 0; lakes flat at their Copernicus level",
+  "source_tiles": [
+   "Copernicus_DSM_COG_10_N62_00_E006_00_DEM.tif",
+   "Copernicus_DSM_COG_10_N62_00_E007_00_DEM.tif"
+  ]
+ },
+ "texture": {
+  "file": "geiranger_tex.jpg",
+  "width": 3600,
+  "height": 2400,
+  "pixel_size_m": 10.0,
+  "scale_vs_dem": 2,
+  "geotransform_gdal": [
+   379790.0,
+   10.0,
+   0.0,
+   6902210.0,
+   0.0,
+   -10.0
+  ],
+  "date": "2025-07-18",
+  "platform": "Sentinel-2A",
+  "scenes": [
+   {
+    "id": "S2A_32VLP_20250718_1_L2A",
+    "tile": "32VLP",
+    "box_coverage": 0.728,
+    "product": "S2A_MSIL2A_20250718T105711_N0511_R094_T32VLP_20250718T150813.SAFE",
+    "datetime": "2025-07-18T11:04:14.902000Z",
+    "tile_cloud_cover_pct": 6.54,
+    "sun_azimuth_deg": 166.85,
+    "sun_elevation_deg": 48.71,
+    "processing_baseline": "05.11",
+    "href_tci": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/V/LP/2025/7/S2A_32VLP_20250718_1_L2A/TCI.tif"
+   },
+   {
+    "id": "S2A_32VLQ_20250718_0_L2A",
+    "tile": "32VLQ",
+    "box_coverage": 0.427,
+    "product": "S2A_MSIL2A_20250718T105711_N0511_R094_T32VLQ_20250718T150813.SAFE",
+    "datetime": "2025-07-18T11:04:01.901000Z",
+    "tile_cloud_cover_pct": 44.91,
+    "sun_azimuth_deg": 166.88,
+    "sun_elevation_deg": 47.83,
+    "processing_baseline": "05.11",
+    "href_tci": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/V/LQ/2025/7/S2A_32VLQ_20250718_0_L2A/TCI.tif"
+   },
+   {
+    "id": "S2A_32VMP_20250718_1_L2A",
+    "tile": "32VMP",
+    "box_coverage": 0.381,
+    "product": "S2A_MSIL2A_20250718T105711_N0511_R094_T32VMP_20250718T150813.SAFE",
+    "datetime": "2025-07-18T11:04:09.647000Z",
+    "tile_cloud_cover_pct": 12.08,
+    "sun_azimuth_deg": 169.49,
+    "sun_elevation_deg": 48.87,
+    "processing_baseline": "05.11",
+    "href_tci": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/V/MP/2025/7/S2A_32VMP_20250718_1_L2A/TCI.tif"
+   },
+   {
+    "id": "S2A_32VMQ_20250718_1_L2A",
+    "tile": "32VMQ",
+    "box_coverage": 0.235,
+    "product": "S2A_MSIL2A_20250718T105711_N0511_R094_T32VMQ_20250718T150813.SAFE",
+    "datetime": "2025-07-18T11:03:58.740000Z",
+    "tile_cloud_cover_pct": 2.99,
+    "sun_azimuth_deg": 169.56,
+    "sun_elevation_deg": 47.98,
+    "processing_baseline": "05.11",
+    "href_tci": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/32/V/MQ/2025/7/S2A_32VMQ_20250718_1_L2A/TCI.tif"
+   }
+  ],
+  "grade": "identical grade (same stats) as crops/geiranger.jpg",
+  "baked_sun": {
+   "azimuth_deg": 166.85,
+   "elevation_deg": 48.71,
+   "note": "shadows are baked into the texture; put the key light near this azimuth/elevation (azimuth clockwise from north)"
+  }
+ },
+ "water_mask": {
+  "file": "geiranger_water.png",
+  "grid": "same as DEM",
+  "values": {
+   "255": "sea/fjord (0 m)",
+   "128": "lake/river",
+   "0": "land"
+  }
+ },
+ "previews": {
+  "hillshade": "geiranger_hillshade.png",
+  "alignment": "geiranger_align.jpg"
+ },
+ "alignment_check": {
+  "method": "IoU of Sentinel-2 SCL water vs DEM WBM water on the 20 m grid, integer shifts +-4 px",
+  "iou_at_zero_shift": 0.7922,
+  "best_iou": 0.7922,
+  "best_shift_px_dy_dx": [
+   0,
+   0
+  ]
+ },
+ "uv_mapping": "texture covers exactly the DEM extent: u = (c+0.5)/W, v = (r+0.5)/H for DEM pixel (r,c); both north-up",
+ "attribution": [
+  "Contains modified Copernicus Sentinel data 2025",
+  "Copernicus DEM GLO-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA"
+ ]
+}

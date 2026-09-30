@@ -1,0 +1,173 @@
+{
+ "name": "tromso",
+ "label": "Tromso (Tromsoya + Kvaloya + mainland)",
+ "file": "tromso.jpg",
+ "date": "2024-08-14",
+ "platform": "Sentinel-2A",
+ "scenes": [
+  {
+   "id": "S2A_34WDC_20240814_0_L2A",
+   "tile": "34WDC",
+   "box_coverage": 1.0,
+   "product": "S2A_MSIL2A_20240814T104021_N0511_R008_T34WDC_20240814T150456.SAFE",
+   "datetime": "2024-08-14T10:41:21.821000Z",
+   "tile_cloud_cover_pct": 0.01,
+   "sun_azimuth_deg": 178.85,
+   "sun_elevation_deg": 34.31,
+   "processing_baseline": "05.11",
+   "href_tci": "https://sentinel-cogs.s3.us-west-2.amazonaws.com/sentinel-s2-l2a-cogs/34/W/DC/2024/8/S2A_34WDC_20240814_0_L2A/TCI.tif"
+  }
+ ],
+ "mosaic": "single tile",
+ "crs": "EPSG:32634",
+ "utm_zone": "34N",
+ "centre_latlon": [
+  69.649962,
+  18.960032
+ ],
+ "bbox_utm": {
+  "xmin": 408840.0,
+  "ymin": 7721410.0,
+  "xmax": 432840.0,
+  "ymax": 7734910.0
+ },
+ "bbox_latlon": {
+  "west": 18.644392,
+  "east": 19.273993,
+  "south": 69.585618,
+  "north": 69.713785
+ },
+ "corners_latlon": {
+  "nw": [
+   69.706578,
+   18.644392
+  ],
+  "ne": [
+   69.713785,
+   19.26414
+  ],
+  "sw": [
+   69.585618,
+   18.657755
+  ],
+  "se": [
+   69.592778,
+   19.273993
+  ]
+ },
+ "size_km": [
+  24.0,
+  13.5
+ ],
+ "width_px": 2400,
+ "height_px": 1350,
+ "m_per_px": 10.0,
+ "geotransform_gdal": [
+  408840.0,
+  10.0,
+  0.0,
+  7734910.0,
+  0.0,
+  -10.0
+ ],
+ "pixel_convention": "pixel-is-area; row 0 = north edge; pixel (r,c) centre at x=xmin+(c+0.5)*res, y=ymax-(r+0.5)*res",
+ "source_bands": "L2A B04/B03/B02 10 m reflectance (16-bit) from the same scene as TCI.tif; scene chosen by TCI preview + SCL cloud stats",
+ "grade": {
+  "params": {
+   "dehaze": 0.85,
+   "dehaze_pct": 0.1,
+   "mid_out": 0.4,
+   "sat": 1.1,
+   "vib": 0.3,
+   "clarity": 0.22,
+   "clarity_sigma": 28.0,
+   "sharpen": 0.35,
+   "sharpen_sigma": 0.9,
+   "toe_lift": 0.01,
+   "warm": 0.0,
+   "shadow_tint": [
+    -0.006,
+    -0.022
+   ],
+   "shadow_range": 0.42,
+   "hi_tint": [
+    0.0,
+    0.006
+   ],
+   "cloud_desat": 0.9,
+   "shadow_blue_damp": 0.65,
+   "shadow_neutral": 0.9,
+   "shadow_neutral_keep": 0.55
+  },
+  "stats": {
+   "offset": [
+    8.499999967170879e-05,
+    0.0021250001154839993,
+    8.499999967170879e-05
+   ],
+   "gain": 1.9684711694717407,
+   "land_median": 0.05280933156609535
+  },
+  "description": "dark-offset dehaze, land-median exposure, ACES filmic curve, Oklab chroma x1.10 + vibrance, clarity (local contrast), navy tint on water, blue-shadow damping, topographic-shadow (SCL dark-area) re-colouring toward surrounding terrain chroma, SCL-cloud fringe neutralisation, fine sharpen"
+ },
+ "attribution": "Contains modified Copernicus Sentinel data 2024",
+ "landmarks": {
+  "Tromso centre": {
+   "latlon": [
+    69.6492,
+    18.9553
+   ],
+   "px": [
+    1181.4,
+    682.9
+   ],
+   "uv": [
+    0.49223,
+    0.50584
+   ]
+  },
+  "Arctic Cathedral": {
+   "latlon": [
+    69.6479,
+    18.9873
+   ],
+   "px": [
+    1305.0,
+    701.5
+   ],
+   "uv": [
+    0.54376,
+    0.51962
+   ]
+  },
+  "Tromso Airport": {
+   "latlon": [
+    69.6833,
+    18.9189
+   ],
+   "px": [
+    1053.1,
+    298.0
+   ],
+   "uv": [
+    0.43879,
+    0.22077
+   ]
+  },
+  "Storsteinen (Fjellheisen)": {
+   "latlon": [
+    69.6333,
+    19.0046
+   ],
+   "px": [
+    1366.8,
+    866.4
+   ],
+   "uv": [
+    0.56951,
+    0.6418
+   ]
+  }
+ },
+ "landmarks_note": "px = [x, y] in this JPEG (origin top-left); uv normalised; coordinates approximate (+-50 m)"
+}

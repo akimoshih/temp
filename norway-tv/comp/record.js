@@ -23,7 +23,7 @@ fs.mkdirSync(outDir, { recursive: true });
     while (next < frames.length) {
       const f = frames[next++];
       await page.evaluate(f => window.renderFrame(f), f);
-      await page.screenshot({ path: path.join(outDir, `f${String(f).padStart(4, '0')}.png`) });
+      await page.screenshot({ path: path.join(outDir, `f${String(f).padStart(4, '0')}.jpg`), type: 'jpeg', quality: 95 });
       if (++done % 50 === 0) console.log(`${done}/${frames.length} frames, ${((Date.now() - t0) / 1000).toFixed(0)}s`);
     }
     await page.close();
