@@ -911,5 +911,22 @@
       "draft_id": "r3999778229560283337",
       "replied_to_message_id": "1a0eb00f30c85684"
     }
+  },
+  {
+    "task_id": "T2026-0040",
+    "type": "報價回信",
+    "thread_id": "1a0f0f2cc2e9bb35",
+    "case": "小獅王辛巴 SIMBA 好瓶 × Leo（直客）",
+    "assignee": "leo",
+    "status": "草稿已建立",
+    "created": "2026-09-30",
+    "note": "品牌 Lina 確認要影音形式（IG Reels＋2 則限動、品牌標籤與協作者、廣告授權一個月）並詢問影片授權與再製費用，依 Leo 級距價目表報價，三項表上查無的以【請確認】標示。",
+    "draft": {
+      "to": "service@simba.com.tw",
+      "cc": "jasmine.wang@dcard.cc, akimo@dcard.cc",
+      "subject": "Re: 小獅王辛巴｜好瓶合作邀請",
+      "draft_id": "r7855594404681400545",
+      "replied_to_message_id": "1a0f117cba34a996"
+    }
   }
 ]
