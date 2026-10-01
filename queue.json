@@ -962,5 +962,22 @@
       "draft_id": "r-2877199949473734679",
       "replied_to_message_id": "1a0f5ab57024c998"
     }
+  },
+  {
+    "task_id": "T2026-0043",
+    "type": "報價回信",
+    "thread_id": "1a0f5fa27dcbc84c",
+    "case": "NAVY × 進擊的巨人系列新品 × YY（加州椰子 CACO）",
+    "assignee": "yy",
+    "status": "草稿已建立",
+    "created": "2026-10-01",
+    "note": "Yuki 10/1 請我方依規劃的合作方式報價（Reels 30–40 秒 ×1、服飾 3 件、線上線下與投廣授權、品牌可自由剪輯），依 YY 級距報 Reels $50,000＋授權分級與再製費用，授權期間與線下使用以【請確認】標示，並點出品牌「自由剪輯」與我方僅限原檔規範的衝突。",
+    "draft": {
+      "to": "yukiwang@caco.com.tw",
+      "cc": "oliver.zeng@dcard.cc, jasmine.wang@dcard.cc, akimo@dcard.cc",
+      "subject": "Re: 【合作邀約】服飾品牌NAVY X 進擊的巨人",
+      "draft_id": "r-1211738687554641137",
+      "replied_to_message_id": "1a0f642b12874c7f"
+    }
   }
 ]
