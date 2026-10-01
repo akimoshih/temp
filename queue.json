@@ -928,5 +928,22 @@
       "draft_id": "r7855594404681400545",
       "replied_to_message_id": "1a0f117cba34a996"
     }
+  },
+  {
+    "task_id": "T2026-0041",
+    "type": "報價回信",
+    "thread_id": "1a093fdb3dadceea",
+    "case": "Glad2Glow 水光小銀盒／定妝噴霧／潤色護唇膏 × Rio（Universo Group）",
+    "assignee": "rio",
+    "status": "草稿已建立",
+    "created": "2026-10-01",
+    "note": "Hana 10/1 提出 POV 直男化妝切角並詢問 Rio 12 月檔期與報價，依 Rio 級距報 Reels $150,000＋限動 $45,000＋廣告主一個月 $45,000，檔期、Threads 同步、非約定平台三項以【請確認】標示。",
+    "draft": {
+      "to": "hana_hsu@universogroup.com",
+      "cc": "della_ju@universogroup.com, hazel_tsai@universogroup.com, oliver.zeng@dcard.cc, jasmine.wang@dcard.cc, akimo@dcard.cc",
+      "subject": "Re: 【合作邀約】Glad2Glow _ Rio",
+      "draft_id": "r2367489201580352372",
+      "replied_to_message_id": "1a0f57fad43cdbb2"
+    }
   }
 ]
