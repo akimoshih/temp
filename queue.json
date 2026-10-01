@@ -945,5 +945,22 @@
       "draft_id": "r2367489201580352372",
       "replied_to_message_id": "1a0f57fad43cdbb2"
     }
+  },
+  {
+    "task_id": "T2026-0042",
+    "type": "報價回信",
+    "thread_id": "1a0f0f2cc2e9bb35",
+    "case": "小獅王辛巴 SIMBA 好瓶 × Leo（素材授權計價確認）",
+    "assignee": "leo",
+    "status": "草稿已建立",
+    "created": "2026-10-01",
+    "note": "Lina 10/1 詢問再製與投廣是否相加計價，草稿確認再製 $20,000(net)/款逐款計算、投廣授權 $25,000(net)/月一筆，並列出一版／兩版的試算與原檔、授權三個月上限規範。",
+    "draft": {
+      "to": "service@simba.com.tw",
+      "cc": "jasmine.wang@dcard.cc, akimo@dcard.cc",
+      "subject": "Re: 小獅王辛巴｜好瓶合作邀請",
+      "draft_id": "r-2877199949473734679",
+      "replied_to_message_id": "1a0f5ab57024c998"
+    }
   }
 ]
