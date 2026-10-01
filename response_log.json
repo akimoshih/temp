@@ -1016,6 +1016,30 @@
    "inbound_at": "2026-09-24T03:42:23Z",
    "replied_at": "2026-09-29T07:25:22Z",
    "confident": true
+  },
+  {
+   "thread_id": "1a0d28f66f2bb6e1",
+   "responder": "oliver",
+   "case": "Panasonic 空清機 × Andrew（DAC 追問 META 廣告主報價）",
+   "inbound_at": "2026-09-29T02:31:40Z",
+   "replied_at": "2026-09-30T02:25:30Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a0f0f2cc2e9bb35",
+   "responder": "jasmine",
+   "case": "SIMBA 好瓶 × Leo（影音規格報價）",
+   "inbound_at": "2026-09-30T06:54:16Z",
+   "replied_at": "2026-09-30T10:09:14Z",
+   "confident": true
+  },
+  {
+   "thread_id": "19eab6895d9b0753",
+   "responder": "oliver",
+   "case": "蘇格蘭威士忌（全聯常態商品）× 梅伯",
+   "inbound_at": "2026-09-23T10:06:27Z",
+   "replied_at": "2026-09-30T09:56:14Z",
+   "confident": true
   }
  ],
  "pending": [
@@ -1070,14 +1094,14 @@
    "inbound_at": "2026-09-23T14:53:43Z"
   },
   {
-   "thread_id": "1a0d28f66f2bb6e1",
-   "case": "Panasonic 空清機 × Andrew（DAC 追問 META 廣告主報價，草稿 T2026-0039 未寄）",
-   "inbound_at": "2026-09-29T02:31:40Z"
-  },
-  {
    "thread_id": "19f932ffdac502c7",
    "case": "MUJI 秋冬展示會 × Ellie（butybox 請填品牌回饋問卷，10/2 前）",
    "inbound_at": "2026-09-29T06:04:59Z"
+  },
+  {
+   "thread_id": "19ff86ca3d75a293",
+   "case": "Disney+ × YY（WPP 索取合作成效回饋與數據比較）",
+   "inbound_at": "2026-09-30T08:03:39Z"
   }
  ]
 }

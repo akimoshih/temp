@@ -1,37 +1,37 @@
 {
- "updated": "2026-09-30",
+ "updated": "2026-10-01",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 102,
+ "sample_size": 105,
  "excluded_low_confidence": 25,
  "by_person": {
   "jasmine": {
-   "n": 36,
-   "median_min": 320.0,
-   "mean_min": 1368.4,
-   "p90_min": 4206.9,
-   "work_median_min": 313.4,
-   "work_mean_min": 481.9,
-   "within_4h_pct": 44.4,
+   "n": 37,
+   "median_min": 305.2,
+   "mean_min": 1336.7,
+   "p90_min": 4202.7,
+   "work_median_min": 291.9,
+   "work_mean_min": 474.2,
+   "within_4h_pct": 45.9,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 66,
-   "median_min": 1156.9,
-   "mean_min": 1990.4,
-   "p90_min": 5552.9,
-   "work_median_min": 461.5,
-   "work_mean_min": 680.1,
-   "within_4h_pct": 25.8,
+   "n": 68,
+   "median_min": 1271.6,
+   "mean_min": 2101.0,
+   "p90_min": 5836.1,
+   "work_median_min": 484.6,
+   "work_mean_min": 712.8,
+   "within_4h_pct": 25.0,
    "fastest_min": 7.8,
-   "slowest_min": 9932.3
+   "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 102,
-  "median_min": 942.6,
-  "mean_min": 1770.9,
-  "work_median_min": 375.8,
+  "n": 105,
+  "median_min": 949.0,
+  "mean_min": 1831.7,
+  "work_median_min": 381.7,
   "within_4h_pct": 32.4
  },
  "pending": [
@@ -86,14 +86,14 @@
    "inbound_at": "2026-09-23T14:53:43Z"
   },
   {
-   "thread_id": "1a0d28f66f2bb6e1",
-   "case": "Panasonic 空清機 × Andrew（DAC 追問 META 廣告主報價，草稿 T2026-0039 未寄）",
-   "inbound_at": "2026-09-29T02:31:40Z"
-  },
-  {
    "thread_id": "19f932ffdac502c7",
    "case": "MUJI 秋冬展示會 × Ellie（butybox 請填品牌回饋問卷，10/2 前）",
    "inbound_at": "2026-09-29T06:04:59Z"
+  },
+  {
+   "thread_id": "19ff86ca3d75a293",
+   "case": "Disney+ × YY（WPP 索取合作成效回饋與數據比較）",
+   "inbound_at": "2026-09-30T08:03:39Z"
   }
  ]
 }
