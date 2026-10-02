@@ -1,1107 +1,1179 @@
 {
- "note": "Jasmine／彼得回信速度觀測記錄。每筆為「對方來信 → 我方回覆」配對，時間為 UTC。confident=false 為 Gmail metadata 回傳 T00:00:00Z 的日期截斷假影，統計時排除。每日排程撈信時 append 新配對；統計執行 python3 response_times.py。",
- "observations": [
-  {
-   "thread_id": "19fc70ed96cf930f",
-   "responder": "jasmine",
-   "case": "督洋 tokuyo × Leo",
-   "inbound_at": "2026-08-17T06:11:42Z",
-   "replied_at": "2026-08-17T06:54:14Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a00f591ac6cbdac",
-   "responder": "jasmine",
-   "case": "IKEA 戰國策 × Leo",
-   "inbound_at": "2026-08-19T06:39:36Z",
-   "replied_at": "2026-08-19T09:17:35Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff3459faaaf0ee",
-   "responder": "jasmine",
-   "case": "SAMSUNG P7 PSSD × Nakaw",
-   "inbound_at": "2026-08-14T07:23:56Z",
-   "replied_at": "2026-08-14T11:09:47Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a007ded973edfb9",
-   "responder": "jasmine",
-   "case": "Pernod Ricard × Leo",
-   "inbound_at": "2026-08-17T02:20:46Z",
-   "replied_at": "2026-08-17T07:12:41Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fdbdfbb117dda2",
-   "responder": "jasmine",
-   "case": "Klook × 主持成員",
-   "inbound_at": "2026-08-12T04:11:43Z",
-   "replied_at": "2026-08-12T18:03:51Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fcc631d0b8c905",
-   "responder": "jasmine",
-   "case": "SONY × plain-me × Ellie",
-   "inbound_at": "2026-08-05T08:54:29Z",
-   "replied_at": "2026-08-05T09:21:49Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fcc631d0b8c905",
-   "responder": "jasmine",
-   "case": "SONY × plain-me × Ellie（第二輪）",
-   "inbound_at": "2026-08-05T10:26:58Z",
-   "replied_at": "2026-08-05T13:51:29Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff345d7afa6827",
-   "responder": "jasmine",
-   "case": "Matin Kim × Ellie",
-   "inbound_at": "2026-08-13T03:31:38Z",
-   "replied_at": "2026-08-14T03:18:53Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fdc054a8c679cb",
-   "responder": "jasmine",
-   "case": "知名刮鬍刀 × Rio",
-   "inbound_at": "2026-08-11T11:32:52Z",
-   "replied_at": "2026-08-13T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "19ff057a4ecb0bc9",
-   "responder": "jasmine",
-   "case": "MSI 筆電 × Rio",
-   "inbound_at": "2026-08-11T15:12:20Z",
-   "replied_at": "2026-08-13T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "19ff346b277ef051",
-   "responder": "jasmine",
-   "case": "SUGO × 富網 × 梅伯",
-   "inbound_at": "2026-08-12T06:32:49Z",
-   "replied_at": "2026-08-13T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "19fee1ff1a739bd9",
-   "responder": "jasmine",
-   "case": "羅技活動出席 × Ellie",
-   "inbound_at": "2026-08-11T00:19:41Z",
-   "replied_at": "2026-08-12T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "19fee1f6a07b416b",
-   "responder": "jasmine",
-   "case": "瑪奇 Mobile × 主委",
-   "inbound_at": "2026-08-11T03:36:09Z",
-   "replied_at": "2026-08-12T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "19fc70ed96cf930f",
-   "responder": "jasmine",
-   "case": "督洋 tokuyo × Leo（第一輪）",
-   "inbound_at": "2026-08-04T03:39:54Z",
-   "replied_at": "2026-08-12T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a014122591da47b",
-   "responder": "oliver",
-   "case": "Bref 馬桶球 × YY",
-   "inbound_at": "2026-08-19T06:16:40Z",
-   "replied_at": "2026-08-19T11:19:06Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a014122591da47b",
-   "responder": "oliver",
-   "case": "Bref 馬桶球 × YY（前一輪）",
-   "inbound_at": "2026-08-18T09:43:06Z",
-   "replied_at": "2026-08-19T05:27:42Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a00d093181ba176",
-   "responder": "oliver",
-   "case": "月老文化季 × 梅伯",
-   "inbound_at": "2026-08-17T01:04:44Z",
-   "replied_at": "2026-08-20T12:00:59Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fd63b8bbf2eed4",
-   "responder": "oliver",
-   "case": "Hank Max MagGO × 梅伯",
-   "inbound_at": "2026-08-13T02:02:22Z",
-   "replied_at": "2026-08-17T11:02:54Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff057a4ecb0bc9",
-   "responder": "oliver",
-   "case": "MSI 筆電 × Rio",
-   "inbound_at": "2026-08-13T09:22:26Z",
-   "replied_at": "2026-08-17T10:41:10Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fcc6e510ade149",
-   "responder": "oliver",
-   "case": "原萃 × Rio",
-   "inbound_at": "2026-08-17T04:51:24Z",
-   "replied_at": "2026-08-17T11:26:51Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fcfeac51c791fa",
-   "responder": "oliver",
-   "case": "鶴茶樓 × 褲褲兔 × YY",
-   "inbound_at": "2026-08-05T08:03:18Z",
-   "replied_at": "2026-08-05T11:07:01Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fcfeac51c791fa",
-   "responder": "oliver",
-   "case": "鶴茶樓 × 褲褲兔 × YY（第二輪）",
-   "inbound_at": "2026-08-07T04:35:11Z",
-   "replied_at": "2026-08-07T06:43:09Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fcbb1027ce0cf5",
-   "responder": "oliver",
-   "case": "臺北市青年局展演 × YY",
-   "inbound_at": "2026-08-06T04:03:42Z",
-   "replied_at": "2026-08-07T06:50:42Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fcbb1027ce0cf5",
-   "responder": "oliver",
-   "case": "臺北市青年局展演 × YY（第二輪）",
-   "inbound_at": "2026-08-10T02:32:13Z",
-   "replied_at": "2026-08-10T10:54:52Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fef8484203f54c",
-   "responder": "oliver",
-   "case": "Liquid Soul 公關禮",
-   "inbound_at": "2026-08-19T10:32:47Z",
-   "replied_at": "2026-08-19T12:12:30Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a01f25bd0971e89",
-   "responder": "oliver",
-   "case": "Jamikuki KUKI² × 梅伯",
-   "inbound_at": "2026-08-21T06:36:02Z",
-   "replied_at": "2026-08-21T06:48:25Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a014f7494f693ea",
-   "responder": "jasmine",
-   "case": "虹韻助聽器 × Leo",
-   "inbound_at": "2026-08-19T02:53:32Z",
-   "replied_at": "2026-08-21T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a01f1849a92c8bc",
-   "responder": "oliver",
-   "case": "miraDry 清新微波 × 梅伯",
-   "inbound_at": "2026-08-21T02:44:36Z",
-   "replied_at": "2026-08-24T09:34:14Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fcbb1027ce0cf5",
-   "responder": "oliver",
-   "case": "臺北市青年局聯合社團展演 × YY",
-   "inbound_at": "2026-08-17T08:35:39Z",
-   "replied_at": "2026-08-24T06:07:59Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19eab6895d9b0753",
-   "responder": "oliver",
-   "case": "蘇格蘭威士忌 × 梅伯",
-   "inbound_at": "2026-08-21T11:38:45Z",
-   "replied_at": "2026-08-24T05:37:38Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19eab6895d9b0753",
-   "responder": "oliver",
-   "case": "蘇格蘭威士忌 × 梅伯",
-   "inbound_at": "2026-08-24T06:47:24Z",
-   "replied_at": "2026-08-24T10:42:31Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19eab6895d9b0753",
-   "responder": "oliver",
-   "case": "蘇格蘭威士忌 × 梅伯",
-   "inbound_at": "2026-08-25T04:57:05Z",
-   "replied_at": "2026-08-25T07:03:38Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff3459faaaf0ee",
-   "responder": "jasmine",
-   "case": "SAMSUNG P7 PSSD × Nakaw",
-   "inbound_at": "2026-08-17T03:21:43Z",
-   "replied_at": "2026-08-17T06:52:30Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a03b39002d36778",
-   "responder": "jasmine",
-   "case": "美研社（統一數網）× Ellie",
-   "inbound_at": "2026-08-26T01:44:01Z",
-   "replied_at": "2026-08-26T04:40:20Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0230f23c73ce89",
-   "responder": "oliver",
-   "case": "Uber Eats 品牌好友計畫 × Rio",
-   "inbound_at": "2026-08-22T05:22:08Z",
-   "replied_at": "2026-08-26T06:37:07Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fcbb1027ce0cf5",
-   "responder": "oliver",
-   "case": "臺北市青年局聯合社團展演評審 × YY",
-   "inbound_at": "2026-08-27T03:12:44Z",
-   "replied_at": "2026-08-27T03:39:46Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff86ca3d75a293",
-   "responder": "oliver",
-   "case": "Disney+ 聯盟式 Influencer 合作計畫 × YY",
-   "inbound_at": "2026-08-25T08:23:43Z",
-   "replied_at": "2026-08-27T02:46:45Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0385d7b359969a",
-   "responder": "oliver",
-   "case": "米其林 PILOT SPORT 4S 保時捷 On-road 體驗 × Andrew",
-   "inbound_at": "2026-08-25T12:04:17Z",
-   "replied_at": "2026-08-27T02:58:59Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a014122591da47b",
-   "responder": "oliver",
-   "case": "德國漢高 Bref 馬桶球 × YY",
-   "inbound_at": "2026-08-20T07:39:17Z",
-   "replied_at": "2026-08-21T11:39:33Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a014122591da47b",
-   "responder": "oliver",
-   "case": "德國漢高 Bref 馬桶球 × YY",
-   "inbound_at": "2026-08-26T04:38:17Z",
-   "replied_at": "2026-08-26T11:34:28Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a014122591da47b",
-   "responder": "oliver",
-   "case": "德國漢高 Bref 馬桶球 × YY",
-   "inbound_at": "2026-08-26T09:39:01Z",
-   "replied_at": "2026-08-26T11:34:28Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fd460189799f32",
-   "responder": "jasmine",
-   "case": "Panasonic 秋季發表會出席＋IG 貼文 × Ellie",
-   "inbound_at": "2026-08-27T10:31:16Z",
-   "replied_at": "2026-08-28T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a03b4548ce9472f",
-   "responder": "jasmine",
-   "case": "LARMI 樂米 Ai7 全能智慧手錶 × Leo",
-   "inbound_at": "2026-08-28T04:38:15Z",
-   "replied_at": "2026-08-28T10:13:07Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19f916d0e7680c0a",
-   "responder": "jasmine",
-   "case": "三得利 芝麻明 EX × Leo",
-   "inbound_at": "2026-08-27T06:47:11Z",
-   "replied_at": "2026-08-28T10:35:26Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19fee1ff1a739bd9",
-   "responder": "jasmine",
-   "case": "羅技活動出席合作 × Leo／Nakaw／YY",
-   "inbound_at": "2026-08-21T09:34:08Z",
-   "replied_at": "2026-08-28T07:29:26Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0230f23c73ce89",
-   "responder": "oliver",
-   "case": "Uber Eats 品牌好友計畫 × Rio",
-   "inbound_at": "2026-08-26T08:47:38Z",
-   "replied_at": "2026-08-28T07:39:33Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a014122591da47b",
-   "responder": "oliver",
-   "case": "德國漢高 Bref 馬桶球 × YY",
-   "inbound_at": "2026-08-27T07:47:54Z",
-   "replied_at": "2026-08-28T06:57:46Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a014122591da47b",
-   "responder": "oliver",
-   "case": "德國漢高 Bref 馬桶球 × YY",
-   "inbound_at": "2026-08-27T08:19:10Z",
-   "replied_at": "2026-08-28T06:57:46Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a036ee24538f6cf",
-   "responder": "jasmine",
-   "case": "DJI Osmo Pocket 3S × Ellie",
-   "inbound_at": "2026-08-25T03:20:14Z",
-   "replied_at": "2026-08-28T10:59:56Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a045aa993205eb1",
-   "responder": "jasmine",
-   "case": "New Balance 1906X／2002R × Nakaw",
-   "inbound_at": "2026-08-31T02:12:43Z",
-   "replied_at": "2026-08-31T03:26:17Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff86ca3d75a293",
-   "responder": "oliver",
-   "case": "Disney+ 聯盟式 Influencer 合作計畫 × YY",
-   "inbound_at": "2026-08-27T10:15:18Z",
-   "replied_at": "2026-08-31T02:06:07Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff86ca3d75a293",
-   "responder": "oliver",
-   "case": "Disney+ 聯盟式 Influencer 合作計畫 × YY",
-   "inbound_at": "2026-08-31T06:16:46Z",
-   "replied_at": "2026-09-01T05:01:00Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0477c36bc9e898",
-   "responder": "oliver",
-   "case": "Dr.Douxi 朵璽 Reels × 梅伯",
-   "inbound_at": "2026-08-31T02:55:05Z",
-   "replied_at": "2026-09-01T02:01:00Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0477c36bc9e898",
-   "responder": "oliver",
-   "case": "Dr.Douxi 朵璽 Reels × 梅伯",
-   "inbound_at": "2026-08-31T02:55:41Z",
-   "replied_at": "2026-09-01T02:01:00Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19f932ffdac502c7",
-   "responder": "jasmine",
-   "case": "MUJI 無印良品秋冬新品展示會 × Ellie",
-   "inbound_at": "2026-09-01T12:09:36Z",
-   "replied_at": "2026-09-01T17:14:48Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0481869d962c5f",
-   "responder": "jasmine",
-   "case": "Whoscall《簽到禮自由選》× Rio／Leo",
-   "inbound_at": "2026-08-31T11:53:15Z",
-   "replied_at": "2026-09-02T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "19eab6895d9b0753",
-   "responder": "oliver",
-   "case": "蘇格蘭威士忌品牌 × 梅伯",
-   "inbound_at": "2026-08-25T09:49:15Z",
-   "replied_at": "2026-08-25T11:54:58Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0481869d962c5f",
-   "responder": "jasmine",
-   "case": "Whoscall《簽到禮自由選》× Rio／Leo",
-   "inbound_at": "2026-09-02T04:20:11Z",
-   "replied_at": "2026-09-02T11:02:11Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a05cdaf4a29c45e",
-   "responder": "jasmine",
-   "case": "汀士頓波本桶 12 年 × Leo",
-   "inbound_at": "2026-09-02T07:06:58Z",
-   "replied_at": "2026-09-02T07:14:56Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a05f6bcf9382eee",
-   "responder": "jasmine",
-   "case": "Netflix《黑白清道夫》體驗活動 × 主委",
-   "inbound_at": "2026-08-27T06:26:00Z",
-   "replied_at": "2026-09-02T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a0477c36bc9e898",
-   "responder": "oliver",
-   "case": "Dr.Douxi 朵璽 × 梅伯",
-   "inbound_at": "2026-09-01T02:50:36Z",
-   "replied_at": "2026-09-01T05:01:53Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19f916d2fd92179e",
-   "responder": "jasmine",
-   "case": "臺北市青年局講座講師 × Leo／Rio",
-   "inbound_at": "2026-09-02T06:13:13Z",
-   "replied_at": "2026-09-02T07:24:16Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a01f2f549472f34",
-   "responder": "oliver",
-   "case": "寒霜啟示錄 × 梅伯",
-   "inbound_at": "2026-08-31T05:35:36Z",
-   "replied_at": "2026-09-03T10:51:01Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19eab6895d9b0753",
-   "responder": "oliver",
-   "case": "蘇格蘭威士忌 × 梅伯",
-   "inbound_at": "2026-09-01T03:32:16Z",
-   "replied_at": "2026-09-03T11:24:37Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a05ff5b71691e30",
-   "responder": "oliver",
-   "case": "澳門威尼斯人（NBA 相關活動）× Rio",
-   "inbound_at": "2026-09-02T02:54:51Z",
-   "replied_at": "2026-09-04T12:45:33Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff346b277ef051",
-   "responder": "oliver",
-   "case": "三國 SLG YT 推廣 × 梅伯",
-   "inbound_at": "2026-09-03T06:41:48Z",
-   "replied_at": "2026-09-04T01:31:00Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a061e6ea6b480e5",
-   "responder": "oliver",
-   "case": "Sodastream 氣泡水機 × YY",
-   "inbound_at": "2026-09-03T15:53:00Z",
-   "replied_at": "2026-09-04T07:29:08Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ef320c649eab52",
-   "responder": "jasmine",
-   "case": "soundcore Space 2 × YY",
-   "inbound_at": "2026-08-26T05:09:19Z",
-   "replied_at": "2026-09-07T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "19ef320c649eab52",
-   "responder": "jasmine",
-   "case": "soundcore Space 2 × YY（Kyla 接手催數據）",
-   "inbound_at": "2026-09-04T07:08:55Z",
-   "replied_at": "2026-09-07T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "19ff86ca3d75a293",
-   "responder": "oliver",
-   "case": "Disney+ × YY（委刊單公司資料確認）",
-   "inbound_at": "2026-09-07T01:51:58Z",
-   "replied_at": "2026-09-07T04:01:07Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a061e6ea6b480e5",
-   "responder": "oliver",
-   "case": "Sodastream 氣泡水機 × YY（結案）",
-   "inbound_at": "2026-09-07T10:23:26Z",
-   "replied_at": "2026-09-07T10:59:12Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19e3fe85c95718ba",
-   "responder": "jasmine",
-   "case": "台電瓩設計獎 × Leo（評審照片與 Title）",
-   "inbound_at": "2026-09-07T06:47:31Z",
-   "replied_at": "2026-09-07T06:53:39Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff3459faaaf0ee",
-   "responder": "jasmine",
-   "case": "SAMSUNG P7 PSSD × Nakaw",
-   "inbound_at": "2026-09-07T11:58:52Z",
-   "replied_at": "2026-09-07T14:11:48Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a07b14c973f35b9",
-   "responder": "jasmine",
-   "case": "Suntory VARON × Leo",
-   "inbound_at": "2026-09-07T08:55:42Z",
-   "replied_at": "2026-09-08T07:23:42Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a05ff5b71691e30",
-   "responder": "oliver",
-   "case": "澳門威尼斯人（NBA 相關活動）× Rio",
-   "inbound_at": "2026-09-08T03:13:29Z",
-   "replied_at": "2026-09-08T11:39:26Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a06a0c18fd5792f",
-   "responder": "oliver",
-   "case": "GU 雙十活動 × YY",
-   "inbound_at": "2026-09-08T03:36:39Z",
-   "replied_at": "2026-09-08T06:45:41Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a066fe60146dbdb",
-   "responder": "oliver",
-   "case": "玩的夥信義 A11 新櫃開幕 × YY（婉拒回覆）",
-   "inbound_at": "2026-09-08T07:03:40Z",
-   "replied_at": "2026-09-08T11:42:06Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a06a0b82a1e8153",
-   "responder": "oliver",
-   "case": "楽玩多 WAYTOFUN × YY（婉拒回覆）",
-   "inbound_at": "2026-09-04T08:25:25Z",
-   "replied_at": "2026-09-08T12:20:40Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a07b14c973f35b9",
-   "responder": "jasmine",
-   "case": "Suntory VARON × Leo（置入片段定義澄清）",
-   "inbound_at": "2026-09-09T08:52:53Z",
-   "replied_at": "2026-09-10T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a0889dcca1c4535",
-   "responder": "jasmine",
-   "case": "Logitech 羅技校園大使短影音工作坊講師 × Leo",
-   "inbound_at": "2026-09-09T02:01:00Z",
-   "replied_at": "2026-09-10T00:00:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "19ff3459faaaf0ee",
-   "responder": "jasmine",
-   "case": "SAMSUNG P7 PSSD 移動固態硬碟 × Nakaw（結案通知）",
-   "inbound_at": "2026-09-10T04:18:51Z",
-   "replied_at": "2026-09-10T04:32:15Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a045aa993205eb1",
-   "responder": "jasmine",
-   "case": "New Balance 1906A × Nakaw（收件確認與時程調整）",
-   "inbound_at": "2026-09-08T10:36:36Z",
-   "replied_at": "2026-09-10T10:07:48Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff86ca3d75a293",
-   "responder": "oliver",
-   "case": "Disney+ 聯盟式 Influencer × YY（委刊單調整）",
-   "inbound_at": "2026-09-07T10:00:05Z",
-   "replied_at": "2026-09-08T03:56:22Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff86ca3d75a293",
-   "responder": "oliver",
-   "case": "Disney+ 聯盟式 Influencer × YY（貼文切角提案）",
-   "inbound_at": "2026-09-09T02:05:16Z",
-   "replied_at": "2026-09-09T12:24:32Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a08a43ea6f3081d",
-   "responder": "oliver",
-   "case": "TOZO AR 智慧眼鏡顯示器 × 梅伯（授權計價確認）",
-   "inbound_at": "2026-09-11T10:04:17Z",
-   "replied_at": "2026-09-12T03:01:00Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0939020a546d39",
-   "responder": "oliver",
-   "case": "UNIQLO 旅遊穿搭短影音演出 × Rio（上架平台確認後報價）",
-   "inbound_at": "2026-09-14T02:39:09Z",
-   "replied_at": "2026-09-14T09:05:55Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a09e6eb4f363ef5",
-   "responder": "oliver",
-   "case": "台新全家 Richart 聯名卡 × 梅伯（報價）",
-   "inbound_at": "2026-09-11T04:10:00Z",
-   "replied_at": "2026-09-14T05:40:13Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a007ded973edfb9",
-   "responder": "jasmine",
-   "case": "Pernod Ricard 保樂力加 × Rio（品牌暫緩專案）",
-   "inbound_at": "2026-09-14T06:21:57Z",
-   "replied_at": "2026-09-14T06:27:36Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a09ebdb9c2c6613",
-   "responder": "jasmine",
-   "case": "TOPONE CFD 投資 APP YouTube 置入 × Leo（婉拒）",
-   "inbound_at": "2026-09-09T08:47:00Z",
-   "replied_at": "2026-09-14T07:06:56Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a09eb6724f0eedd",
-   "responder": "jasmine",
-   "case": "福容大飯店桃園店 × 桃知道 二週年活動（詢問合作對象）",
-   "inbound_at": "2026-09-14T03:36:00Z",
-   "replied_at": "2026-09-14T06:59:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a093fe53aa3ed5c",
-   "responder": "oliver",
-   "case": "知名手機品牌（安卓）Reels × YY（分項報價）",
-   "inbound_at": "2026-09-14T10:00:01Z",
-   "replied_at": "2026-09-15T09:22:47Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff86ca3d75a293",
-   "responder": "oliver",
-   "case": "Disney+ × YY（Impact 註冊追問與貼文 AC）",
-   "inbound_at": "2026-09-14T07:46:57Z",
-   "replied_at": "2026-09-15T08:43:35Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a07b14c973f35b9",
-   "responder": "jasmine",
-   "case": "Suntory VARON × Leo（委刊單廠商資料與試用品）",
-   "inbound_at": "2026-09-11T08:57:50Z",
-   "replied_at": "2026-09-14T06:43:49Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0a417faf467267",
-   "responder": "jasmine",
-   "case": "Bitget Wallet × Leo（詢問期待的合作方式）",
-   "inbound_at": "2026-09-05T06:12:00Z",
-   "replied_at": "2026-09-15T08:03:36Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a0a4daf30f733b1",
-   "responder": "oliver",
-   "case": "Story Wear 臺北時裝週 SS27 品牌秀 × Rio（詢問宣傳規劃與報價方式）",
-   "inbound_at": "2026-09-14T08:22:00Z",
-   "replied_at": "2026-09-15T11:36:08Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a0a40b03425121c",
-   "responder": "jasmine",
-   "case": "plain-me 21 週年預覽會 × Ellie（確認出席）",
-   "inbound_at": "2026-09-11T01:42:00Z",
-   "replied_at": "2026-09-15T07:49:27Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a09f96b21859653",
-   "responder": "oliver",
-   "case": "SIDIZ T50 二代 × Rio（整包報價）",
-   "inbound_at": "2026-09-15T12:48:54Z",
-   "replied_at": "2026-09-16T05:01:00Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a08fb73fbab85b3",
-   "responder": "jasmine",
-   "case": "Sony ZV-E10 II × Nakaw（合作細節確認）",
-   "inbound_at": "2026-09-15T09:04:31Z",
-   "replied_at": "2026-09-16T06:18:18Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0a94f5dd2d9bca",
-   "responder": "oliver",
-   "case": "全支付 × Rio（婉拒）",
-   "inbound_at": "2026-09-14T07:30:00Z",
-   "replied_at": "2026-09-16T08:21:47Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a0a9035e0a61c59",
-   "responder": "oliver",
-   "case": "Saily eSIM × YY（報價）",
-   "inbound_at": "2026-09-10T10:06:00Z",
-   "replied_at": "2026-09-16T06:58:48Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a0a9a7d9ef97f4b",
-   "responder": "jasmine",
-   "case": "喜鴻假期 創作者旅遊企劃 × Leo（詢問拍攝地點）",
-   "inbound_at": "2026-09-16T04:19:00Z",
-   "replied_at": "2026-09-16T09:58:52Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a0a9acd0c284e2a",
-   "responder": "jasmine",
-   "case": "《猜心武林》桌遊募資 × Leo（報價）",
-   "inbound_at": "2026-09-15T13:48:00Z",
-   "replied_at": "2026-09-16T10:04:16Z",
-   "confident": false
-  },
-  {
-   "thread_id": "1a0a8983926f7eae",
-   "responder": "oliver",
-   "case": "Casual 開久 台中 Pre-Opening Night × 梅伯（婉拒）",
-   "inbound_at": "2026-09-14T09:52:00Z",
-   "replied_at": "2026-09-16T05:01:00Z",
-   "confident": false
-  },
-  {
-   "thread_id": "19f654d9fe2b7332",
-   "responder": "jasmine",
-   "case": "多力多滋香菜祭 × Leo（用印委刊單與發票）",
-   "inbound_at": "2026-09-14T06:53:02Z",
-   "replied_at": "2026-09-17T05:20:51Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0a9a7d9ef97f4b",
-   "responder": "jasmine",
-   "case": "喜鴻假期 創作者旅遊企劃 × Leo（會議時段）",
-   "inbound_at": "2026-09-17T03:09:00Z",
-   "replied_at": "2026-09-17T09:01:09Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a014122591da47b",
-   "responder": "oliver",
-   "case": "德國漢高 Bref 馬桶球（合約條款更正）",
-   "inbound_at": "2026-09-16T04:11:17Z",
-   "replied_at": "2026-09-17T04:39:48Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0af2b1fd2004af",
-   "responder": "oliver",
-   "case": "Sony ULT FIELD 藍牙喇叭 × Rio（場地與主打產品確認）",
-   "inbound_at": "2026-09-18T03:23:30Z",
-   "replied_at": "2026-09-18T11:37:08Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a08a43ea6f3081d",
-   "responder": "oliver",
-   "case": "TOZO AR 智慧眼鏡 × 梅伯（客戶告知未選上、結案）",
-   "inbound_at": "2026-09-18T06:17:03Z",
-   "replied_at": "2026-09-18T06:24:52Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0a9a7d9ef97f4b",
-   "responder": "jasmine",
-   "case": "喜鴻假期 創作者旅遊企劃 × Leo（會議連結確認）",
-   "inbound_at": "2026-09-18T00:38:18Z",
-   "replied_at": "2026-09-18T07:09:58Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0a9a7d9ef97f4b",
-   "responder": "jasmine",
-   "case": "喜鴻假期 創作者旅遊企劃 × Leo（會後補寄行程表）",
-   "inbound_at": "2026-09-18T09:56:25Z",
-   "replied_at": "2026-09-18T10:26:32Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0a4daf30f733b1",
-   "responder": "oliver",
-   "case": "Story Wear 臺北時裝週 SS27 × Rio（純公關看秀，婉謝出席）",
-   "inbound_at": "2026-09-16T03:07:05Z",
-   "replied_at": "2026-09-18T08:06:55Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0a9035e0a61c59",
-   "responder": "oliver",
-   "case": "Saily eSIM × YY（確認無其他 eSIM 合作、地點改馬來西亞）",
-   "inbound_at": "2026-09-16T07:51:26Z",
-   "replied_at": "2026-09-18T10:10:33Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19ff86ca3d75a293",
-   "responder": "oliver",
-   "case": "Disney+ × YY（更換第 8 張配圖並回報 Impact 進度）",
-   "inbound_at": "2026-09-16T07:33:46Z",
-   "replied_at": "2026-09-18T09:51:44Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19f1801646835958",
-   "responder": "oliver",
-   "case": "soundcore Liberty 5 Pro × 梅伯（提供後台數據）",
-   "inbound_at": "2026-09-16T10:00:06Z",
-   "replied_at": "2026-09-18T11:11:13Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19f654d9fe2b7332",
-   "responder": "jasmine",
-   "case": "多力多滋 × Leo（對方回覆休假後跑用印）",
-   "inbound_at": "2026-09-17T18:23:11Z",
-   "replied_at": "2026-09-17T18:28:11Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0a9a7d9ef97f4b",
-   "responder": "jasmine",
-   "case": "喜鴻假期 創作者旅遊企劃 × Leo（婉拒合作）",
-   "inbound_at": "2026-09-18T09:15:24Z",
-   "replied_at": "2026-09-21T06:49:22Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a09f96b21859653",
-   "responder": "oliver",
-   "case": "SIDIZ T50 × Rio（檔期回覆 12 月上線）",
-   "inbound_at": "2026-09-20T02:27:38Z",
-   "replied_at": "2026-09-21T06:52:15Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0a9a7d9ef97f4b",
-   "responder": "jasmine",
-   "case": "喜鴻假期 創作者旅遊企劃 × Leo（結案致謝）",
-   "inbound_at": "2026-09-21T07:54:55Z",
-   "replied_at": "2026-09-22T05:42:01Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0b46043f9e7af4",
-   "responder": "oliver",
-   "case": "Hair Rituel by Sisley × 梅伯（婉拒產品交換折抵）",
-   "inbound_at": "2026-09-22T08:47:08Z",
-   "replied_at": "2026-09-23T02:01:00Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19eab6895d9b0753",
-   "responder": "oliver",
-   "case": "蘇格蘭威士忌 × 梅伯（回傳匯款資料表）",
-   "inbound_at": "2026-09-23T06:59:26Z",
-   "replied_at": "2026-09-23T10:05:25Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0939020a546d39",
-   "responder": "oliver",
-   "case": "UNIQLO 旅遊穿搭短影音 × Rio（專案取消致謝）",
-   "inbound_at": "2026-09-23T02:35:00Z",
-   "replied_at": "2026-09-23T03:12:04Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a014122591da47b",
-   "responder": "oliver",
-   "case": "德國漢高 Bref × YY（回傳用印合約與委刊單）",
-   "inbound_at": "2026-09-17T08:40:22Z",
-   "replied_at": "2026-09-23T03:05:36Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0d1a141cee46ac",
-   "responder": "oliver",
-   "case": "饗泰多 × YY（表達合作意願並提交表單）",
-   "inbound_at": "2026-09-23T12:27:00Z",
-   "replied_at": "2026-09-24T04:16:03Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19bb0fd09afde6f6",
-   "responder": "oliver",
-   "case": "iHerb × Andrew（VGV 重啟舊案）",
-   "inbound_at": "2026-09-23T10:44:32Z",
-   "replied_at": "2026-09-29T10:31:53Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a06a0c18fd5792f",
-   "responder": "oliver",
-   "case": "GU 雙十活動 × YY（CAPSULE 告知結案）",
-   "inbound_at": "2026-09-29T08:12:17Z",
-   "replied_at": "2026-09-29T09:19:42Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0889dcca1c4535",
-   "responder": "jasmine",
-   "case": "Logitech 校園大使工作坊 × Leo（廠商資料→開委刊單）",
-   "inbound_at": "2026-09-29T01:42:17Z",
-   "replied_at": "2026-09-29T07:21:04Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a045aa993205eb1",
-   "responder": "jasmine",
-   "case": "New Balance 1906A × Nakaw（稿件 FA→寄委刊單）",
-   "inbound_at": "2026-09-24T03:42:23Z",
-   "replied_at": "2026-09-29T07:25:22Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0d28f66f2bb6e1",
-   "responder": "oliver",
-   "case": "Panasonic 空清機 × Andrew（DAC 追問 META 廣告主報價）",
-   "inbound_at": "2026-09-29T02:31:40Z",
-   "replied_at": "2026-09-30T02:25:30Z",
-   "confident": true
-  },
-  {
-   "thread_id": "1a0f0f2cc2e9bb35",
-   "responder": "jasmine",
-   "case": "SIMBA 好瓶 × Leo（影音規格報價）",
-   "inbound_at": "2026-09-30T06:54:16Z",
-   "replied_at": "2026-09-30T10:09:14Z",
-   "confident": true
-  },
-  {
-   "thread_id": "19eab6895d9b0753",
-   "responder": "oliver",
-   "case": "蘇格蘭威士忌（全聯常態商品）× 梅伯",
-   "inbound_at": "2026-09-23T10:06:27Z",
-   "replied_at": "2026-09-30T09:56:14Z",
-   "confident": true
-  }
- ],
- "pending": [
-  {
-   "thread_id": "19ff3468b089027f",
-   "case": "Samsung 社群操作 × Nakaw（$20,000＋Z Fold8 待決）",
-   "inbound_at": "2026-08-17T03:49:52Z"
-  },
-  {
-   "thread_id": "19fdc054a8c679cb",
-   "case": "知名刮鬍刀 × Rio（已有草稿 T2026-0010 未寄）",
-   "inbound_at": "2026-08-14T05:59:58Z"
-  },
-  {
-   "thread_id": "19fcfeac51c791fa",
-   "case": "鶴茶樓×褲褲兔 × YY（回簽委刊單＋開發票，已轉 Alina）",
-   "inbound_at": "2026-08-24T02:54:23Z"
-  },
-  {
-   "thread_id": "1a00f591ac6cbdac",
-   "case": "IKEA×XBOX YXSTABY × Leo（產品照同步，無需回覆）",
-   "inbound_at": "2026-08-26T01:34:45Z"
-  },
-  {
-   "thread_id": "1a0385d7b359969a",
-   "case": "米其林 PS4S × Andrew（對方接受 YT 長影音交換、請預留 10/7，後續改走 LINE）",
-   "inbound_at": "2026-08-27T10:30:14Z"
-  },
-  {
-   "thread_id": "1a03e00d104f94e6",
-   "case": "Mercari Q4 廣告短片 × 梅伯（對方回報客戶中，球在對方）",
-   "inbound_at": "2026-08-27T02:43:41Z"
-  },
-  {
-   "thread_id": "1a0a3f95713d12a0",
-   "case": "Suntory VARON × Leo（試用品已寄出，委刊單草稿 T2026-0030 未寄）",
-   "inbound_at": "2026-09-15T07:30:08Z"
-  },
-  {
-   "thread_id": "1a0a3c94e47f4e3f",
-   "case": "百靈佳 Hold 好腎 × Leo（CAPSULE 要求改以 Google 表單回覆，待人工填表）",
-   "inbound_at": "2026-09-15T06:50:48Z"
-  },
-  {
-   "thread_id": "1a0af2b1fd2004af",
-   "case": "Sony ULT FIELD 藍牙喇叭 × Rio（對方請補檔期／規範／貼文與廣告主報價，草稿 T2026-0038 未寄）",
-   "inbound_at": "2026-09-21T03:30:42Z"
-  },
-  {
-   "thread_id": "1a014122591da47b",
-   "case": "德國漢高 Bref × YY（對方請補提供存摺影本）",
-   "inbound_at": "2026-09-23T14:53:43Z"
-  },
-  {
-   "thread_id": "19f932ffdac502c7",
-   "case": "MUJI 秋冬展示會 × Ellie（butybox 請填品牌回饋問卷，10/2 前）",
-   "inbound_at": "2026-09-29T06:04:59Z"
-  },
-  {
-   "thread_id": "19ff86ca3d75a293",
-   "case": "Disney+ × YY（WPP 索取合作成效回饋與數據比較）",
-   "inbound_at": "2026-09-30T08:03:39Z"
-  }
- ]
+  "note": "Jasmine／彼得回信速度觀測記錄。每筆為「對方來信 → 我方回覆」配對，時間為 UTC。confident=false 為 Gmail metadata 回傳 T00:00:00Z 的日期截斷假影，統計時排除。每日排程撈信時 append 新配對；統計執行 python3 response_times.py。",
+  "observations": [
+    {
+      "thread_id": "19fc70ed96cf930f",
+      "responder": "jasmine",
+      "case": "督洋 tokuyo × Leo",
+      "inbound_at": "2026-08-17T06:11:42Z",
+      "replied_at": "2026-08-17T06:54:14Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a00f591ac6cbdac",
+      "responder": "jasmine",
+      "case": "IKEA 戰國策 × Leo",
+      "inbound_at": "2026-08-19T06:39:36Z",
+      "replied_at": "2026-08-19T09:17:35Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff3459faaaf0ee",
+      "responder": "jasmine",
+      "case": "SAMSUNG P7 PSSD × Nakaw",
+      "inbound_at": "2026-08-14T07:23:56Z",
+      "replied_at": "2026-08-14T11:09:47Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a007ded973edfb9",
+      "responder": "jasmine",
+      "case": "Pernod Ricard × Leo",
+      "inbound_at": "2026-08-17T02:20:46Z",
+      "replied_at": "2026-08-17T07:12:41Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fdbdfbb117dda2",
+      "responder": "jasmine",
+      "case": "Klook × 主持成員",
+      "inbound_at": "2026-08-12T04:11:43Z",
+      "replied_at": "2026-08-12T18:03:51Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fcc631d0b8c905",
+      "responder": "jasmine",
+      "case": "SONY × plain-me × Ellie",
+      "inbound_at": "2026-08-05T08:54:29Z",
+      "replied_at": "2026-08-05T09:21:49Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fcc631d0b8c905",
+      "responder": "jasmine",
+      "case": "SONY × plain-me × Ellie（第二輪）",
+      "inbound_at": "2026-08-05T10:26:58Z",
+      "replied_at": "2026-08-05T13:51:29Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff345d7afa6827",
+      "responder": "jasmine",
+      "case": "Matin Kim × Ellie",
+      "inbound_at": "2026-08-13T03:31:38Z",
+      "replied_at": "2026-08-14T03:18:53Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fdc054a8c679cb",
+      "responder": "jasmine",
+      "case": "知名刮鬍刀 × Rio",
+      "inbound_at": "2026-08-11T11:32:52Z",
+      "replied_at": "2026-08-13T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19ff057a4ecb0bc9",
+      "responder": "jasmine",
+      "case": "MSI 筆電 × Rio",
+      "inbound_at": "2026-08-11T15:12:20Z",
+      "replied_at": "2026-08-13T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19ff346b277ef051",
+      "responder": "jasmine",
+      "case": "SUGO × 富網 × 梅伯",
+      "inbound_at": "2026-08-12T06:32:49Z",
+      "replied_at": "2026-08-13T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19fee1ff1a739bd9",
+      "responder": "jasmine",
+      "case": "羅技活動出席 × Ellie",
+      "inbound_at": "2026-08-11T00:19:41Z",
+      "replied_at": "2026-08-12T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19fee1f6a07b416b",
+      "responder": "jasmine",
+      "case": "瑪奇 Mobile × 主委",
+      "inbound_at": "2026-08-11T03:36:09Z",
+      "replied_at": "2026-08-12T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19fc70ed96cf930f",
+      "responder": "jasmine",
+      "case": "督洋 tokuyo × Leo（第一輪）",
+      "inbound_at": "2026-08-04T03:39:54Z",
+      "replied_at": "2026-08-12T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "Bref 馬桶球 × YY",
+      "inbound_at": "2026-08-19T06:16:40Z",
+      "replied_at": "2026-08-19T11:19:06Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "Bref 馬桶球 × YY（前一輪）",
+      "inbound_at": "2026-08-18T09:43:06Z",
+      "replied_at": "2026-08-19T05:27:42Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a00d093181ba176",
+      "responder": "oliver",
+      "case": "月老文化季 × 梅伯",
+      "inbound_at": "2026-08-17T01:04:44Z",
+      "replied_at": "2026-08-20T12:00:59Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fd63b8bbf2eed4",
+      "responder": "oliver",
+      "case": "Hank Max MagGO × 梅伯",
+      "inbound_at": "2026-08-13T02:02:22Z",
+      "replied_at": "2026-08-17T11:02:54Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff057a4ecb0bc9",
+      "responder": "oliver",
+      "case": "MSI 筆電 × Rio",
+      "inbound_at": "2026-08-13T09:22:26Z",
+      "replied_at": "2026-08-17T10:41:10Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fcc6e510ade149",
+      "responder": "oliver",
+      "case": "原萃 × Rio",
+      "inbound_at": "2026-08-17T04:51:24Z",
+      "replied_at": "2026-08-17T11:26:51Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fcfeac51c791fa",
+      "responder": "oliver",
+      "case": "鶴茶樓 × 褲褲兔 × YY",
+      "inbound_at": "2026-08-05T08:03:18Z",
+      "replied_at": "2026-08-05T11:07:01Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fcfeac51c791fa",
+      "responder": "oliver",
+      "case": "鶴茶樓 × 褲褲兔 × YY（第二輪）",
+      "inbound_at": "2026-08-07T04:35:11Z",
+      "replied_at": "2026-08-07T06:43:09Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fcbb1027ce0cf5",
+      "responder": "oliver",
+      "case": "臺北市青年局展演 × YY",
+      "inbound_at": "2026-08-06T04:03:42Z",
+      "replied_at": "2026-08-07T06:50:42Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fcbb1027ce0cf5",
+      "responder": "oliver",
+      "case": "臺北市青年局展演 × YY（第二輪）",
+      "inbound_at": "2026-08-10T02:32:13Z",
+      "replied_at": "2026-08-10T10:54:52Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fef8484203f54c",
+      "responder": "oliver",
+      "case": "Liquid Soul 公關禮",
+      "inbound_at": "2026-08-19T10:32:47Z",
+      "replied_at": "2026-08-19T12:12:30Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a01f25bd0971e89",
+      "responder": "oliver",
+      "case": "Jamikuki KUKI² × 梅伯",
+      "inbound_at": "2026-08-21T06:36:02Z",
+      "replied_at": "2026-08-21T06:48:25Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014f7494f693ea",
+      "responder": "jasmine",
+      "case": "虹韻助聽器 × Leo",
+      "inbound_at": "2026-08-19T02:53:32Z",
+      "replied_at": "2026-08-21T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a01f1849a92c8bc",
+      "responder": "oliver",
+      "case": "miraDry 清新微波 × 梅伯",
+      "inbound_at": "2026-08-21T02:44:36Z",
+      "replied_at": "2026-08-24T09:34:14Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fcbb1027ce0cf5",
+      "responder": "oliver",
+      "case": "臺北市青年局聯合社團展演 × YY",
+      "inbound_at": "2026-08-17T08:35:39Z",
+      "replied_at": "2026-08-24T06:07:59Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "responder": "oliver",
+      "case": "蘇格蘭威士忌 × 梅伯",
+      "inbound_at": "2026-08-21T11:38:45Z",
+      "replied_at": "2026-08-24T05:37:38Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "responder": "oliver",
+      "case": "蘇格蘭威士忌 × 梅伯",
+      "inbound_at": "2026-08-24T06:47:24Z",
+      "replied_at": "2026-08-24T10:42:31Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "responder": "oliver",
+      "case": "蘇格蘭威士忌 × 梅伯",
+      "inbound_at": "2026-08-25T04:57:05Z",
+      "replied_at": "2026-08-25T07:03:38Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff3459faaaf0ee",
+      "responder": "jasmine",
+      "case": "SAMSUNG P7 PSSD × Nakaw",
+      "inbound_at": "2026-08-17T03:21:43Z",
+      "replied_at": "2026-08-17T06:52:30Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a03b39002d36778",
+      "responder": "jasmine",
+      "case": "美研社（統一數網）× Ellie",
+      "inbound_at": "2026-08-26T01:44:01Z",
+      "replied_at": "2026-08-26T04:40:20Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0230f23c73ce89",
+      "responder": "oliver",
+      "case": "Uber Eats 品牌好友計畫 × Rio",
+      "inbound_at": "2026-08-22T05:22:08Z",
+      "replied_at": "2026-08-26T06:37:07Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fcbb1027ce0cf5",
+      "responder": "oliver",
+      "case": "臺北市青年局聯合社團展演評審 × YY",
+      "inbound_at": "2026-08-27T03:12:44Z",
+      "replied_at": "2026-08-27T03:39:46Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ 聯盟式 Influencer 合作計畫 × YY",
+      "inbound_at": "2026-08-25T08:23:43Z",
+      "replied_at": "2026-08-27T02:46:45Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0385d7b359969a",
+      "responder": "oliver",
+      "case": "米其林 PILOT SPORT 4S 保時捷 On-road 體驗 × Andrew",
+      "inbound_at": "2026-08-25T12:04:17Z",
+      "replied_at": "2026-08-27T02:58:59Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "德國漢高 Bref 馬桶球 × YY",
+      "inbound_at": "2026-08-20T07:39:17Z",
+      "replied_at": "2026-08-21T11:39:33Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "德國漢高 Bref 馬桶球 × YY",
+      "inbound_at": "2026-08-26T04:38:17Z",
+      "replied_at": "2026-08-26T11:34:28Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "德國漢高 Bref 馬桶球 × YY",
+      "inbound_at": "2026-08-26T09:39:01Z",
+      "replied_at": "2026-08-26T11:34:28Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fd460189799f32",
+      "responder": "jasmine",
+      "case": "Panasonic 秋季發表會出席＋IG 貼文 × Ellie",
+      "inbound_at": "2026-08-27T10:31:16Z",
+      "replied_at": "2026-08-28T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a03b4548ce9472f",
+      "responder": "jasmine",
+      "case": "LARMI 樂米 Ai7 全能智慧手錶 × Leo",
+      "inbound_at": "2026-08-28T04:38:15Z",
+      "replied_at": "2026-08-28T10:13:07Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19f916d0e7680c0a",
+      "responder": "jasmine",
+      "case": "三得利 芝麻明 EX × Leo",
+      "inbound_at": "2026-08-27T06:47:11Z",
+      "replied_at": "2026-08-28T10:35:26Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19fee1ff1a739bd9",
+      "responder": "jasmine",
+      "case": "羅技活動出席合作 × Leo／Nakaw／YY",
+      "inbound_at": "2026-08-21T09:34:08Z",
+      "replied_at": "2026-08-28T07:29:26Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0230f23c73ce89",
+      "responder": "oliver",
+      "case": "Uber Eats 品牌好友計畫 × Rio",
+      "inbound_at": "2026-08-26T08:47:38Z",
+      "replied_at": "2026-08-28T07:39:33Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "德國漢高 Bref 馬桶球 × YY",
+      "inbound_at": "2026-08-27T07:47:54Z",
+      "replied_at": "2026-08-28T06:57:46Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "德國漢高 Bref 馬桶球 × YY",
+      "inbound_at": "2026-08-27T08:19:10Z",
+      "replied_at": "2026-08-28T06:57:46Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a036ee24538f6cf",
+      "responder": "jasmine",
+      "case": "DJI Osmo Pocket 3S × Ellie",
+      "inbound_at": "2026-08-25T03:20:14Z",
+      "replied_at": "2026-08-28T10:59:56Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a045aa993205eb1",
+      "responder": "jasmine",
+      "case": "New Balance 1906X／2002R × Nakaw",
+      "inbound_at": "2026-08-31T02:12:43Z",
+      "replied_at": "2026-08-31T03:26:17Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ 聯盟式 Influencer 合作計畫 × YY",
+      "inbound_at": "2026-08-27T10:15:18Z",
+      "replied_at": "2026-08-31T02:06:07Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ 聯盟式 Influencer 合作計畫 × YY",
+      "inbound_at": "2026-08-31T06:16:46Z",
+      "replied_at": "2026-09-01T05:01:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0477c36bc9e898",
+      "responder": "oliver",
+      "case": "Dr.Douxi 朵璽 Reels × 梅伯",
+      "inbound_at": "2026-08-31T02:55:05Z",
+      "replied_at": "2026-09-01T02:01:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0477c36bc9e898",
+      "responder": "oliver",
+      "case": "Dr.Douxi 朵璽 Reels × 梅伯",
+      "inbound_at": "2026-08-31T02:55:41Z",
+      "replied_at": "2026-09-01T02:01:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19f932ffdac502c7",
+      "responder": "jasmine",
+      "case": "MUJI 無印良品秋冬新品展示會 × Ellie",
+      "inbound_at": "2026-09-01T12:09:36Z",
+      "replied_at": "2026-09-01T17:14:48Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0481869d962c5f",
+      "responder": "jasmine",
+      "case": "Whoscall《簽到禮自由選》× Rio／Leo",
+      "inbound_at": "2026-08-31T11:53:15Z",
+      "replied_at": "2026-09-02T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "responder": "oliver",
+      "case": "蘇格蘭威士忌品牌 × 梅伯",
+      "inbound_at": "2026-08-25T09:49:15Z",
+      "replied_at": "2026-08-25T11:54:58Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0481869d962c5f",
+      "responder": "jasmine",
+      "case": "Whoscall《簽到禮自由選》× Rio／Leo",
+      "inbound_at": "2026-09-02T04:20:11Z",
+      "replied_at": "2026-09-02T11:02:11Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a05cdaf4a29c45e",
+      "responder": "jasmine",
+      "case": "汀士頓波本桶 12 年 × Leo",
+      "inbound_at": "2026-09-02T07:06:58Z",
+      "replied_at": "2026-09-02T07:14:56Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a05f6bcf9382eee",
+      "responder": "jasmine",
+      "case": "Netflix《黑白清道夫》體驗活動 × 主委",
+      "inbound_at": "2026-08-27T06:26:00Z",
+      "replied_at": "2026-09-02T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0477c36bc9e898",
+      "responder": "oliver",
+      "case": "Dr.Douxi 朵璽 × 梅伯",
+      "inbound_at": "2026-09-01T02:50:36Z",
+      "replied_at": "2026-09-01T05:01:53Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19f916d2fd92179e",
+      "responder": "jasmine",
+      "case": "臺北市青年局講座講師 × Leo／Rio",
+      "inbound_at": "2026-09-02T06:13:13Z",
+      "replied_at": "2026-09-02T07:24:16Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a01f2f549472f34",
+      "responder": "oliver",
+      "case": "寒霜啟示錄 × 梅伯",
+      "inbound_at": "2026-08-31T05:35:36Z",
+      "replied_at": "2026-09-03T10:51:01Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "responder": "oliver",
+      "case": "蘇格蘭威士忌 × 梅伯",
+      "inbound_at": "2026-09-01T03:32:16Z",
+      "replied_at": "2026-09-03T11:24:37Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a05ff5b71691e30",
+      "responder": "oliver",
+      "case": "澳門威尼斯人（NBA 相關活動）× Rio",
+      "inbound_at": "2026-09-02T02:54:51Z",
+      "replied_at": "2026-09-04T12:45:33Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff346b277ef051",
+      "responder": "oliver",
+      "case": "三國 SLG YT 推廣 × 梅伯",
+      "inbound_at": "2026-09-03T06:41:48Z",
+      "replied_at": "2026-09-04T01:31:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a061e6ea6b480e5",
+      "responder": "oliver",
+      "case": "Sodastream 氣泡水機 × YY",
+      "inbound_at": "2026-09-03T15:53:00Z",
+      "replied_at": "2026-09-04T07:29:08Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ef320c649eab52",
+      "responder": "jasmine",
+      "case": "soundcore Space 2 × YY",
+      "inbound_at": "2026-08-26T05:09:19Z",
+      "replied_at": "2026-09-07T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19ef320c649eab52",
+      "responder": "jasmine",
+      "case": "soundcore Space 2 × YY（Kyla 接手催數據）",
+      "inbound_at": "2026-09-04T07:08:55Z",
+      "replied_at": "2026-09-07T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ × YY（委刊單公司資料確認）",
+      "inbound_at": "2026-09-07T01:51:58Z",
+      "replied_at": "2026-09-07T04:01:07Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a061e6ea6b480e5",
+      "responder": "oliver",
+      "case": "Sodastream 氣泡水機 × YY（結案）",
+      "inbound_at": "2026-09-07T10:23:26Z",
+      "replied_at": "2026-09-07T10:59:12Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19e3fe85c95718ba",
+      "responder": "jasmine",
+      "case": "台電瓩設計獎 × Leo（評審照片與 Title）",
+      "inbound_at": "2026-09-07T06:47:31Z",
+      "replied_at": "2026-09-07T06:53:39Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff3459faaaf0ee",
+      "responder": "jasmine",
+      "case": "SAMSUNG P7 PSSD × Nakaw",
+      "inbound_at": "2026-09-07T11:58:52Z",
+      "replied_at": "2026-09-07T14:11:48Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a07b14c973f35b9",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo",
+      "inbound_at": "2026-09-07T08:55:42Z",
+      "replied_at": "2026-09-08T07:23:42Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a05ff5b71691e30",
+      "responder": "oliver",
+      "case": "澳門威尼斯人（NBA 相關活動）× Rio",
+      "inbound_at": "2026-09-08T03:13:29Z",
+      "replied_at": "2026-09-08T11:39:26Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a06a0c18fd5792f",
+      "responder": "oliver",
+      "case": "GU 雙十活動 × YY",
+      "inbound_at": "2026-09-08T03:36:39Z",
+      "replied_at": "2026-09-08T06:45:41Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a066fe60146dbdb",
+      "responder": "oliver",
+      "case": "玩的夥信義 A11 新櫃開幕 × YY（婉拒回覆）",
+      "inbound_at": "2026-09-08T07:03:40Z",
+      "replied_at": "2026-09-08T11:42:06Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a06a0b82a1e8153",
+      "responder": "oliver",
+      "case": "楽玩多 WAYTOFUN × YY（婉拒回覆）",
+      "inbound_at": "2026-09-04T08:25:25Z",
+      "replied_at": "2026-09-08T12:20:40Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a07b14c973f35b9",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo（置入片段定義澄清）",
+      "inbound_at": "2026-09-09T08:52:53Z",
+      "replied_at": "2026-09-10T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0889dcca1c4535",
+      "responder": "jasmine",
+      "case": "Logitech 羅技校園大使短影音工作坊講師 × Leo",
+      "inbound_at": "2026-09-09T02:01:00Z",
+      "replied_at": "2026-09-10T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19ff3459faaaf0ee",
+      "responder": "jasmine",
+      "case": "SAMSUNG P7 PSSD 移動固態硬碟 × Nakaw（結案通知）",
+      "inbound_at": "2026-09-10T04:18:51Z",
+      "replied_at": "2026-09-10T04:32:15Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a045aa993205eb1",
+      "responder": "jasmine",
+      "case": "New Balance 1906A × Nakaw（收件確認與時程調整）",
+      "inbound_at": "2026-09-08T10:36:36Z",
+      "replied_at": "2026-09-10T10:07:48Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ 聯盟式 Influencer × YY（委刊單調整）",
+      "inbound_at": "2026-09-07T10:00:05Z",
+      "replied_at": "2026-09-08T03:56:22Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ 聯盟式 Influencer × YY（貼文切角提案）",
+      "inbound_at": "2026-09-09T02:05:16Z",
+      "replied_at": "2026-09-09T12:24:32Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a08a43ea6f3081d",
+      "responder": "oliver",
+      "case": "TOZO AR 智慧眼鏡顯示器 × 梅伯（授權計價確認）",
+      "inbound_at": "2026-09-11T10:04:17Z",
+      "replied_at": "2026-09-12T03:01:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0939020a546d39",
+      "responder": "oliver",
+      "case": "UNIQLO 旅遊穿搭短影音演出 × Rio（上架平台確認後報價）",
+      "inbound_at": "2026-09-14T02:39:09Z",
+      "replied_at": "2026-09-14T09:05:55Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a09e6eb4f363ef5",
+      "responder": "oliver",
+      "case": "台新全家 Richart 聯名卡 × 梅伯（報價）",
+      "inbound_at": "2026-09-11T04:10:00Z",
+      "replied_at": "2026-09-14T05:40:13Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a007ded973edfb9",
+      "responder": "jasmine",
+      "case": "Pernod Ricard 保樂力加 × Rio（品牌暫緩專案）",
+      "inbound_at": "2026-09-14T06:21:57Z",
+      "replied_at": "2026-09-14T06:27:36Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a09ebdb9c2c6613",
+      "responder": "jasmine",
+      "case": "TOPONE CFD 投資 APP YouTube 置入 × Leo（婉拒）",
+      "inbound_at": "2026-09-09T08:47:00Z",
+      "replied_at": "2026-09-14T07:06:56Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a09eb6724f0eedd",
+      "responder": "jasmine",
+      "case": "福容大飯店桃園店 × 桃知道 二週年活動（詢問合作對象）",
+      "inbound_at": "2026-09-14T03:36:00Z",
+      "replied_at": "2026-09-14T06:59:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a093fe53aa3ed5c",
+      "responder": "oliver",
+      "case": "知名手機品牌（安卓）Reels × YY（分項報價）",
+      "inbound_at": "2026-09-14T10:00:01Z",
+      "replied_at": "2026-09-15T09:22:47Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ × YY（Impact 註冊追問與貼文 AC）",
+      "inbound_at": "2026-09-14T07:46:57Z",
+      "replied_at": "2026-09-15T08:43:35Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a07b14c973f35b9",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo（委刊單廠商資料與試用品）",
+      "inbound_at": "2026-09-11T08:57:50Z",
+      "replied_at": "2026-09-14T06:43:49Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a417faf467267",
+      "responder": "jasmine",
+      "case": "Bitget Wallet × Leo（詢問期待的合作方式）",
+      "inbound_at": "2026-09-05T06:12:00Z",
+      "replied_at": "2026-09-15T08:03:36Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0a4daf30f733b1",
+      "responder": "oliver",
+      "case": "Story Wear 臺北時裝週 SS27 品牌秀 × Rio（詢問宣傳規劃與報價方式）",
+      "inbound_at": "2026-09-14T08:22:00Z",
+      "replied_at": "2026-09-15T11:36:08Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0a40b03425121c",
+      "responder": "jasmine",
+      "case": "plain-me 21 週年預覽會 × Ellie（確認出席）",
+      "inbound_at": "2026-09-11T01:42:00Z",
+      "replied_at": "2026-09-15T07:49:27Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a09f96b21859653",
+      "responder": "oliver",
+      "case": "SIDIZ T50 二代 × Rio（整包報價）",
+      "inbound_at": "2026-09-15T12:48:54Z",
+      "replied_at": "2026-09-16T05:01:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a08fb73fbab85b3",
+      "responder": "jasmine",
+      "case": "Sony ZV-E10 II × Nakaw（合作細節確認）",
+      "inbound_at": "2026-09-15T09:04:31Z",
+      "replied_at": "2026-09-16T06:18:18Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a94f5dd2d9bca",
+      "responder": "oliver",
+      "case": "全支付 × Rio（婉拒）",
+      "inbound_at": "2026-09-14T07:30:00Z",
+      "replied_at": "2026-09-16T08:21:47Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0a9035e0a61c59",
+      "responder": "oliver",
+      "case": "Saily eSIM × YY（報價）",
+      "inbound_at": "2026-09-10T10:06:00Z",
+      "replied_at": "2026-09-16T06:58:48Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0a9a7d9ef97f4b",
+      "responder": "jasmine",
+      "case": "喜鴻假期 創作者旅遊企劃 × Leo（詢問拍攝地點）",
+      "inbound_at": "2026-09-16T04:19:00Z",
+      "replied_at": "2026-09-16T09:58:52Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0a9acd0c284e2a",
+      "responder": "jasmine",
+      "case": "《猜心武林》桌遊募資 × Leo（報價）",
+      "inbound_at": "2026-09-15T13:48:00Z",
+      "replied_at": "2026-09-16T10:04:16Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0a8983926f7eae",
+      "responder": "oliver",
+      "case": "Casual 開久 台中 Pre-Opening Night × 梅伯（婉拒）",
+      "inbound_at": "2026-09-14T09:52:00Z",
+      "replied_at": "2026-09-16T05:01:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19f654d9fe2b7332",
+      "responder": "jasmine",
+      "case": "多力多滋香菜祭 × Leo（用印委刊單與發票）",
+      "inbound_at": "2026-09-14T06:53:02Z",
+      "replied_at": "2026-09-17T05:20:51Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a9a7d9ef97f4b",
+      "responder": "jasmine",
+      "case": "喜鴻假期 創作者旅遊企劃 × Leo（會議時段）",
+      "inbound_at": "2026-09-17T03:09:00Z",
+      "replied_at": "2026-09-17T09:01:09Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "德國漢高 Bref 馬桶球（合約條款更正）",
+      "inbound_at": "2026-09-16T04:11:17Z",
+      "replied_at": "2026-09-17T04:39:48Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0af2b1fd2004af",
+      "responder": "oliver",
+      "case": "Sony ULT FIELD 藍牙喇叭 × Rio（場地與主打產品確認）",
+      "inbound_at": "2026-09-18T03:23:30Z",
+      "replied_at": "2026-09-18T11:37:08Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a08a43ea6f3081d",
+      "responder": "oliver",
+      "case": "TOZO AR 智慧眼鏡 × 梅伯（客戶告知未選上、結案）",
+      "inbound_at": "2026-09-18T06:17:03Z",
+      "replied_at": "2026-09-18T06:24:52Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a9a7d9ef97f4b",
+      "responder": "jasmine",
+      "case": "喜鴻假期 創作者旅遊企劃 × Leo（會議連結確認）",
+      "inbound_at": "2026-09-18T00:38:18Z",
+      "replied_at": "2026-09-18T07:09:58Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a9a7d9ef97f4b",
+      "responder": "jasmine",
+      "case": "喜鴻假期 創作者旅遊企劃 × Leo（會後補寄行程表）",
+      "inbound_at": "2026-09-18T09:56:25Z",
+      "replied_at": "2026-09-18T10:26:32Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a4daf30f733b1",
+      "responder": "oliver",
+      "case": "Story Wear 臺北時裝週 SS27 × Rio（純公關看秀，婉謝出席）",
+      "inbound_at": "2026-09-16T03:07:05Z",
+      "replied_at": "2026-09-18T08:06:55Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a9035e0a61c59",
+      "responder": "oliver",
+      "case": "Saily eSIM × YY（確認無其他 eSIM 合作、地點改馬來西亞）",
+      "inbound_at": "2026-09-16T07:51:26Z",
+      "replied_at": "2026-09-18T10:10:33Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ × YY（更換第 8 張配圖並回報 Impact 進度）",
+      "inbound_at": "2026-09-16T07:33:46Z",
+      "replied_at": "2026-09-18T09:51:44Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19f1801646835958",
+      "responder": "oliver",
+      "case": "soundcore Liberty 5 Pro × 梅伯（提供後台數據）",
+      "inbound_at": "2026-09-16T10:00:06Z",
+      "replied_at": "2026-09-18T11:11:13Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19f654d9fe2b7332",
+      "responder": "jasmine",
+      "case": "多力多滋 × Leo（對方回覆休假後跑用印）",
+      "inbound_at": "2026-09-17T18:23:11Z",
+      "replied_at": "2026-09-17T18:28:11Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a9a7d9ef97f4b",
+      "responder": "jasmine",
+      "case": "喜鴻假期 創作者旅遊企劃 × Leo（婉拒合作）",
+      "inbound_at": "2026-09-18T09:15:24Z",
+      "replied_at": "2026-09-21T06:49:22Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a09f96b21859653",
+      "responder": "oliver",
+      "case": "SIDIZ T50 × Rio（檔期回覆 12 月上線）",
+      "inbound_at": "2026-09-20T02:27:38Z",
+      "replied_at": "2026-09-21T06:52:15Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0a9a7d9ef97f4b",
+      "responder": "jasmine",
+      "case": "喜鴻假期 創作者旅遊企劃 × Leo（結案致謝）",
+      "inbound_at": "2026-09-21T07:54:55Z",
+      "replied_at": "2026-09-22T05:42:01Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0b46043f9e7af4",
+      "responder": "oliver",
+      "case": "Hair Rituel by Sisley × 梅伯（婉拒產品交換折抵）",
+      "inbound_at": "2026-09-22T08:47:08Z",
+      "replied_at": "2026-09-23T02:01:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "responder": "oliver",
+      "case": "蘇格蘭威士忌 × 梅伯（回傳匯款資料表）",
+      "inbound_at": "2026-09-23T06:59:26Z",
+      "replied_at": "2026-09-23T10:05:25Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0939020a546d39",
+      "responder": "oliver",
+      "case": "UNIQLO 旅遊穿搭短影音 × Rio（專案取消致謝）",
+      "inbound_at": "2026-09-23T02:35:00Z",
+      "replied_at": "2026-09-23T03:12:04Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "responder": "oliver",
+      "case": "德國漢高 Bref × YY（回傳用印合約與委刊單）",
+      "inbound_at": "2026-09-17T08:40:22Z",
+      "replied_at": "2026-09-23T03:05:36Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0d1a141cee46ac",
+      "responder": "oliver",
+      "case": "饗泰多 × YY（表達合作意願並提交表單）",
+      "inbound_at": "2026-09-23T12:27:00Z",
+      "replied_at": "2026-09-24T04:16:03Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19bb0fd09afde6f6",
+      "responder": "oliver",
+      "case": "iHerb × Andrew（VGV 重啟舊案）",
+      "inbound_at": "2026-09-23T10:44:32Z",
+      "replied_at": "2026-09-29T10:31:53Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a06a0c18fd5792f",
+      "responder": "oliver",
+      "case": "GU 雙十活動 × YY（CAPSULE 告知結案）",
+      "inbound_at": "2026-09-29T08:12:17Z",
+      "replied_at": "2026-09-29T09:19:42Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0889dcca1c4535",
+      "responder": "jasmine",
+      "case": "Logitech 校園大使工作坊 × Leo（廠商資料→開委刊單）",
+      "inbound_at": "2026-09-29T01:42:17Z",
+      "replied_at": "2026-09-29T07:21:04Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a045aa993205eb1",
+      "responder": "jasmine",
+      "case": "New Balance 1906A × Nakaw（稿件 FA→寄委刊單）",
+      "inbound_at": "2026-09-24T03:42:23Z",
+      "replied_at": "2026-09-29T07:25:22Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0d28f66f2bb6e1",
+      "responder": "oliver",
+      "case": "Panasonic 空清機 × Andrew（DAC 追問 META 廣告主報價）",
+      "inbound_at": "2026-09-29T02:31:40Z",
+      "replied_at": "2026-09-30T02:25:30Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0f0f2cc2e9bb35",
+      "responder": "jasmine",
+      "case": "SIMBA 好瓶 × Leo（影音規格報價）",
+      "inbound_at": "2026-09-30T06:54:16Z",
+      "replied_at": "2026-09-30T10:09:14Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "responder": "oliver",
+      "case": "蘇格蘭威士忌（全聯常態商品）× 梅伯",
+      "inbound_at": "2026-09-23T10:06:27Z",
+      "replied_at": "2026-09-30T09:56:14Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0f6d13e0111483",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo（DAC 詢問試用狀況）",
+      "inbound_at": "2026-10-01T09:34:42Z",
+      "replied_at": "2026-10-01T10:09:42Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0af2b1fd2004af",
+      "responder": "oliver",
+      "case": "Sony ULT FIELD 藍牙喇叭 × Rio（品牌確認合作、詢問檔期）",
+      "inbound_at": "2026-10-01T06:20:41Z",
+      "replied_at": "2026-10-01T06:52:06Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff86ca3d75a293",
+      "responder": "oliver",
+      "case": "Disney+ × YY（WPP 索取成效回饋與數據比較）",
+      "inbound_at": "2026-09-30T08:03:39Z",
+      "replied_at": "2026-10-01T11:55:32Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0f0f2cc2e9bb35",
+      "responder": "jasmine",
+      "case": "SIMBA 好瓶 × Leo（素材授權與投廣計價確認）",
+      "inbound_at": "2026-10-01T04:13:56Z",
+      "replied_at": "2026-10-01T09:07:56Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0f5fa27dcbc84c",
+      "responder": "oliver",
+      "case": "NAVY × 進擊的巨人 × YY（互惠邀約首覆）",
+      "inbound_at": "2026-09-30T12:55:00Z",
+      "replied_at": "2026-10-01T05:39:30Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0f6ef7075bbce5",
+      "responder": "jasmine",
+      "case": "NIKE TECH × Nakaw（報價與時程回覆）",
+      "inbound_at": "2026-10-01T04:01:00Z",
+      "replied_at": "2026-10-01T10:07:45Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0f61c8b4f5c6b3",
+      "responder": "oliver",
+      "case": "膽大黨 Animation Works 展 × YY（報價回覆）",
+      "inbound_at": "2026-09-30T04:26:00Z",
+      "replied_at": "2026-10-01T06:17:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0f65fdec27acf3",
+      "responder": "oliver",
+      "case": "中國信託 uniopen 聯名卡 × Rio（報價回覆）",
+      "inbound_at": "2026-09-29T06:44:00Z",
+      "replied_at": "2026-10-01T07:30:36Z",
+      "confident": false
+    },
+    {
+      "thread_id": "19de0d76b7b1a325",
+      "responder": "oliver",
+      "case": "三商美邦「夢想起飛」講座 × Rio（改期至 2027/6 後的回覆）",
+      "inbound_at": "2026-09-21T05:01:00Z",
+      "replied_at": "2026-10-01T10:24:08Z",
+      "confident": false
+    }
+  ],
+  "pending": [
+    {
+      "thread_id": "19ff3468b089027f",
+      "case": "Samsung 社群操作 × Nakaw（$20,000＋Z Fold8 待決）",
+      "inbound_at": "2026-08-17T03:49:52Z"
+    },
+    {
+      "thread_id": "19fdc054a8c679cb",
+      "case": "知名刮鬍刀 × Rio（已有草稿 T2026-0010 未寄）",
+      "inbound_at": "2026-08-14T05:59:58Z"
+    },
+    {
+      "thread_id": "19fcfeac51c791fa",
+      "case": "鶴茶樓×褲褲兔 × YY（回簽委刊單＋開發票，已轉 Alina）",
+      "inbound_at": "2026-08-24T02:54:23Z"
+    },
+    {
+      "thread_id": "1a00f591ac6cbdac",
+      "case": "IKEA×XBOX YXSTABY × Leo（產品照同步，無需回覆）",
+      "inbound_at": "2026-08-26T01:34:45Z"
+    },
+    {
+      "thread_id": "1a0385d7b359969a",
+      "case": "米其林 PS4S × Andrew（對方接受 YT 長影音交換、請預留 10/7，後續改走 LINE）",
+      "inbound_at": "2026-08-27T10:30:14Z"
+    },
+    {
+      "thread_id": "1a03e00d104f94e6",
+      "case": "Mercari Q4 廣告短片 × 梅伯（對方回報客戶中，球在對方）",
+      "inbound_at": "2026-08-27T02:43:41Z"
+    },
+    {
+      "thread_id": "1a0a3c94e47f4e3f",
+      "case": "百靈佳 Hold 好腎 × Leo（CAPSULE 要求改以 Google 表單回覆，待人工填表）",
+      "inbound_at": "2026-09-15T06:50:48Z"
+    },
+    {
+      "thread_id": "1a014122591da47b",
+      "case": "德國漢高 Bref × YY（對方請補提供存摺影本）",
+      "inbound_at": "2026-09-23T14:53:43Z"
+    },
+    {
+      "thread_id": "19f932ffdac502c7",
+      "case": "MUJI 秋冬展示會 × Ellie（butybox 請填品牌回饋問卷，10/2 前）",
+      "inbound_at": "2026-09-29T06:04:59Z"
+    },
+    {
+      "thread_id": "1a0f5fa27dcbc84c",
+      "case": "NAVY × 進擊的巨人 × YY（對方請依預計合作方式報價，草稿 T2026-0043 未寄）",
+      "inbound_at": "2026-10-01T06:59:14Z"
+    },
+    {
+      "thread_id": "1a093fdb3dadceea",
+      "case": "Glad2Glow × Rio（對方詢問 12 月檔期與報價，草稿 T2026-0041 未寄）",
+      "inbound_at": "2026-10-01T03:30:59Z"
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "case": "蘇格蘭威士忌 × 梅伯（對方索取影片成效截圖）",
+      "inbound_at": "2026-10-01T07:23:22Z"
+    }
+  ]
 }
