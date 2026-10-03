@@ -1,38 +1,38 @@
 {
- "updated": "2026-10-02",
+ "updated": "2026-10-03",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 109,
- "excluded_low_confidence": 30,
+ "sample_size": 113,
+ "excluded_low_confidence": 32,
  "by_person": {
   "jasmine": {
-   "n": 39,
-   "median_min": 294.0,
-   "mean_min": 1276.5,
-   "p90_min": 4194.4,
-   "work_median_min": 291.9,
-   "work_mean_min": 458.3,
-   "within_4h_pct": 46.2,
+   "n": 41,
+   "median_min": 291.9,
+   "mean_min": 1217.2,
+   "p90_min": 4186.0,
+   "work_median_min": 216.1,
+   "work_mean_min": 438.8,
+   "within_4h_pct": 48.8,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 70,
-   "median_min": 1271.6,
-   "mean_min": 2065.3,
-   "p90_min": 5835.4,
-   "work_median_min": 484.6,
-   "work_mean_min": 704.0,
-   "within_4h_pct": 25.7,
+   "n": 72,
+   "median_min": 1361.4,
+   "mean_min": 2048.5,
+   "p90_min": 5778.6,
+   "work_median_min": 510.6,
+   "work_mean_min": 701.7,
+   "within_4h_pct": 25.0,
    "fastest_min": 7.8,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 109,
+  "n": 113,
   "median_min": 936.1,
-  "mean_min": 1783.1,
+  "mean_min": 1746.9,
   "work_median_min": 370.0,
-  "within_4h_pct": 33.0
+  "within_4h_pct": 33.6
  },
  "pending": [
   {
@@ -81,19 +81,14 @@
    "inbound_at": "2026-09-29T06:04:59Z"
   },
   {
-   "thread_id": "1a0f5fa27dcbc84c",
-   "case": "NAVY × 進擊的巨人 × YY（對方請依預計合作方式報價，草稿 T2026-0043 未寄）",
-   "inbound_at": "2026-10-01T06:59:14Z"
-  },
-  {
    "thread_id": "1a093fdb3dadceea",
    "case": "Glad2Glow × Rio（對方詢問 12 月檔期與報價，草稿 T2026-0041 未寄）",
    "inbound_at": "2026-10-01T03:30:59Z"
   },
   {
-   "thread_id": "19eab6895d9b0753",
-   "case": "蘇格蘭威士忌 × 梅伯（對方索取影片成效截圖）",
-   "inbound_at": "2026-10-01T07:23:22Z"
+   "thread_id": "1a0f6d13e0111483",
+   "case": "Suntory VARON × Leo（對方確認上線日與投廣走期中，暫無待辦）",
+   "inbound_at": "2026-10-02T09:24:06Z"
   }
  ]
 }

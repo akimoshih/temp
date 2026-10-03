@@ -1112,6 +1112,54 @@
       "inbound_at": "2026-09-21T05:01:00Z",
       "replied_at": "2026-10-01T10:24:08Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a0f5fa27dcbc84c",
+      "responder": "oliver",
+      "case": "NAVY × 進擊的巨人 × YY（依規劃報價）",
+      "inbound_at": "2026-10-01T06:59:14Z",
+      "replied_at": "2026-10-02T07:41:32Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0f0f2cc2e9bb35",
+      "responder": "jasmine",
+      "case": "SIMBA 好瓶 × Leo（對方表示內部討論後回覆）",
+      "inbound_at": "2026-10-02T09:13:02Z",
+      "replied_at": "2026-10-02T09:31:48Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0f6ef7075bbce5",
+      "responder": "jasmine",
+      "case": "NIKE TECH × Nakaw（上線檔期協調）",
+      "inbound_at": "2026-10-02T07:50:17Z",
+      "replied_at": "2026-10-02T09:31:11Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19eab6895d9b0753",
+      "responder": "oliver",
+      "case": "蘇格蘭威士忌 × 梅伯（提供成效截圖）",
+      "inbound_at": "2026-10-01T07:23:22Z",
+      "replied_at": "2026-10-02T07:21:26Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0fba1751476d1f",
+      "responder": "oliver",
+      "case": "NIKE Pegasus 跑鞋 × 梅伯（報價回覆）",
+      "inbound_at": "2026-10-01T10:33:00Z",
+      "replied_at": "2026-10-02T08:00:19Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a0fb780e419d559",
+      "responder": "oliver",
+      "case": "Mercari Japan × Andrew（婉拒）",
+      "inbound_at": "2026-09-30T11:28:00Z",
+      "replied_at": "2026-10-02T07:15:07Z",
+      "confident": false
     }
   ],
   "pending": [
@@ -1161,19 +1209,14 @@
       "inbound_at": "2026-09-29T06:04:59Z"
     },
     {
-      "thread_id": "1a0f5fa27dcbc84c",
-      "case": "NAVY × 進擊的巨人 × YY（對方請依預計合作方式報價，草稿 T2026-0043 未寄）",
-      "inbound_at": "2026-10-01T06:59:14Z"
-    },
-    {
       "thread_id": "1a093fdb3dadceea",
       "case": "Glad2Glow × Rio（對方詢問 12 月檔期與報價，草稿 T2026-0041 未寄）",
       "inbound_at": "2026-10-01T03:30:59Z"
     },
     {
-      "thread_id": "19eab6895d9b0753",
-      "case": "蘇格蘭威士忌 × 梅伯（對方索取影片成效截圖）",
-      "inbound_at": "2026-10-01T07:23:22Z"
+      "thread_id": "1a0f6d13e0111483",
+      "case": "Suntory VARON × Leo（對方確認上線日與投廣走期中，暫無待辦）",
+      "inbound_at": "2026-10-02T09:24:06Z"
     }
   ]
 }
