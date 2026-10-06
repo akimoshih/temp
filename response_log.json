@@ -1160,6 +1160,22 @@
       "inbound_at": "2026-09-30T11:28:00Z",
       "replied_at": "2026-10-02T07:15:07Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a093fdb3dadceea",
+      "responder": "oliver",
+      "case": "Glad2Glow × Rio（12 月檔期與報價）",
+      "inbound_at": "2026-10-01T03:30:59Z",
+      "replied_at": "2026-10-05T07:28:42Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a10c59eff541850",
+      "responder": "jasmine",
+      "case": "肯德基 × 復仇者聯盟聯名套餐 × Leo／主委／Rio／梅伯（四人報價）",
+      "inbound_at": "2026-10-05T03:24:00Z",
+      "replied_at": "2026-10-05T13:56:10Z",
+      "confident": false
     }
   ],
   "pending": [
@@ -1209,14 +1225,14 @@
       "inbound_at": "2026-09-29T06:04:59Z"
     },
     {
-      "thread_id": "1a093fdb3dadceea",
-      "case": "Glad2Glow × Rio（對方詢問 12 月檔期與報價，草稿 T2026-0041 未寄）",
-      "inbound_at": "2026-10-01T03:30:59Z"
-    },
-    {
       "thread_id": "1a0f6d13e0111483",
       "case": "Suntory VARON × Leo（對方確認上線日與投廣走期中，暫無待辦）",
       "inbound_at": "2026-10-02T09:24:06Z"
+    },
+    {
+      "thread_id": "1a0f6ef7075bbce5",
+      "case": "NIKE TECH × Nakaw（對方請提供 Nakaw 鞋碼與上衣下身尺寸）",
+      "inbound_at": "2026-10-05T09:27:03Z"
     }
   ]
 }

@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-05",
+ "updated": "2026-10-06",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 113,
- "excluded_low_confidence": 32,
+ "sample_size": 114,
+ "excluded_low_confidence": 33,
  "by_person": {
   "jasmine": {
    "n": 41,
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 72,
-   "median_min": 1361.4,
-   "mean_min": 2048.5,
-   "p90_min": 5778.6,
-   "work_median_min": 510.6,
-   "work_mean_min": 701.7,
-   "within_4h_pct": 25.0,
+   "n": 73,
+   "median_min": 1364.2,
+   "mean_min": 2102.6,
+   "p90_min": 5838.0,
+   "work_median_min": 518.6,
+   "work_mean_min": 711.8,
+   "within_4h_pct": 24.7,
    "fastest_min": 7.8,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 113,
-  "median_min": 936.1,
-  "mean_min": 1746.9,
-  "work_median_min": 370.0,
-  "within_4h_pct": 33.6
+  "n": 114,
+  "median_min": 942.6,
+  "mean_min": 1784.2,
+  "work_median_min": 375.8,
+  "within_4h_pct": 33.3
  },
  "pending": [
   {
@@ -81,14 +81,14 @@
    "inbound_at": "2026-09-29T06:04:59Z"
   },
   {
-   "thread_id": "1a093fdb3dadceea",
-   "case": "Glad2Glow × Rio（對方詢問 12 月檔期與報價，草稿 T2026-0041 未寄）",
-   "inbound_at": "2026-10-01T03:30:59Z"
-  },
-  {
    "thread_id": "1a0f6d13e0111483",
    "case": "Suntory VARON × Leo（對方確認上線日與投廣走期中，暫無待辦）",
    "inbound_at": "2026-10-02T09:24:06Z"
+  },
+  {
+   "thread_id": "1a0f6ef7075bbce5",
+   "case": "NIKE TECH × Nakaw（對方請提供 Nakaw 鞋碼與上衣下身尺寸）",
+   "inbound_at": "2026-10-05T09:27:03Z"
   }
  ]
 }
