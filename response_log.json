@@ -1176,6 +1176,30 @@
       "inbound_at": "2026-10-05T03:24:00Z",
       "replied_at": "2026-10-05T13:56:10Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a11372c9467a055",
+      "responder": "jasmine",
+      "case": "《灼眼的夏娜 烈焰之刃》× Leo（短影音素材報價）",
+      "inbound_at": "2026-10-02T04:33:00Z",
+      "replied_at": "2026-10-06T23:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a1108f6ad6a733b",
+      "responder": "oliver",
+      "case": "肯德基 11 月限定蛋撻 × Rio（細節確認）",
+      "inbound_at": "2026-10-05T03:56:00Z",
+      "replied_at": "2026-10-06T09:32:40Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a10f0834754afe3",
+      "responder": "oliver",
+      "case": "Kappa × 郭泓志聯名 × Rio（婉拒）",
+      "inbound_at": "2026-09-30T10:26:00Z",
+      "replied_at": "2026-10-06T02:25:20Z",
+      "confident": false
     }
   ],
   "pending": [
