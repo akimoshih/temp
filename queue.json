@@ -979,5 +979,22 @@
       "draft_id": "r-1211738687554641137",
       "replied_to_message_id": "1a0f642b12874c7f"
     }
+  },
+  {
+    "task_id": "T2026-0044",
+    "type": "報價回信",
+    "thread_id": "1a1108f6ad6a733b",
+    "case": "肯德基 11 月限定口味蛋撻 × Rio（春樹科技）",
+    "assignee": "rio",
+    "status": "草稿已建立",
+    "created": "2026-10-07",
+    "note": "寧寧 10/7 確認限動為 Reels 轉分享、並請同時報 IG 單平台與 Meta 雙平台廣告主授權；依 Rio 級距報 Reels $150,000＋限動 $45,000＋IG 單平台授權兩週 $25,000，雙平台授權與取餐車馬費以【請確認】標示。",
+    "draft": {
+      "to": "ningning.ho@spring-trees.com",
+      "cc": "rio@dcard.cc, akimo@dcard.cc, jasmine.wang@dcard.cc",
+      "subject": "Re: 【肯德基合作邀約】11月限定口味蛋撻合作_RIO｜春樹科技",
+      "draft_id": "r-2310890928448421588",
+      "replied_to_message_id": "1a11403acf2b17e0"
+    }
   }
 ]
