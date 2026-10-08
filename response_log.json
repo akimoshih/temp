@@ -1232,6 +1232,22 @@
       "inbound_at": "2026-10-07T10:26:17Z",
       "replied_at": "2026-10-07T12:00:06Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a0d28f66f2bb6e1",
+      "responder": "oliver",
+      "case": "Panasonic 空清機 × Andrew（成案條件確認）",
+      "inbound_at": "2026-10-08T01:26:55Z",
+      "replied_at": "2026-10-08T08:37:40Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a119fe4d841c163",
+      "responder": "oliver",
+      "case": "mercari × YY（YouTube 置入報價）",
+      "inbound_at": "2026-10-06T11:42:00Z",
+      "replied_at": "2026-10-08T05:30:21Z",
+      "confident": false
     }
   ],
   "pending": [
@@ -1284,6 +1300,11 @@
       "thread_id": "1a1108f6ad6a733b",
       "case": "肯德基 11 月限定蛋撻 × Rio（草稿 T2026-0044 已建立未寄）",
       "inbound_at": "2026-10-07T01:38:55Z"
+    },
+    {
+      "thread_id": "1a0f0f2cc2e9bb35",
+      "case": "SIMBA 好瓶 × Leo（對方詢問合約由哪一方出具）",
+      "inbound_at": "2026-10-08T01:34:30Z"
     }
   ]
 }

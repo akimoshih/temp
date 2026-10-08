@@ -1,8 +1,8 @@
 {
  "updated": "2026-10-08",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 118,
- "excluded_low_confidence": 36,
+ "sample_size": 119,
+ "excluded_low_confidence": 37,
  "by_person": {
   "jasmine": {
    "n": 44,
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 74,
-   "median_min": 1361.4,
-   "mean_min": 2075.5,
-   "p90_min": 5837.6,
-   "work_median_min": 510.6,
-   "work_mean_min": 702.6,
-   "within_4h_pct": 25.7,
+   "n": 75,
+   "median_min": 1358.6,
+   "mean_min": 2053.5,
+   "p90_min": 5837.2,
+   "work_median_min": 502.6,
+   "work_mean_min": 699.0,
+   "within_4h_pct": 25.3,
    "fastest_min": 7.8,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 118,
-  "median_min": 884.1,
-  "mean_min": 1749.9,
-  "work_median_min": 369.3,
-  "within_4h_pct": 34.7
+  "n": 119,
+  "median_min": 832.1,
+  "mean_min": 1738.8,
+  "work_median_min": 370.0,
+  "within_4h_pct": 34.5
  },
  "pending": [
   {
@@ -84,6 +84,11 @@
    "thread_id": "1a1108f6ad6a733b",
    "case": "肯德基 11 月限定蛋撻 × Rio（草稿 T2026-0044 已建立未寄）",
    "inbound_at": "2026-10-07T01:38:55Z"
+  },
+  {
+   "thread_id": "1a0f0f2cc2e9bb35",
+   "case": "SIMBA 好瓶 × Leo（對方詢問合約由哪一方出具）",
+   "inbound_at": "2026-10-08T01:34:30Z"
   }
  ]
 }
