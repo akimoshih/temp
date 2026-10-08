@@ -1,45 +1,40 @@
 {
- "updated": "2026-10-07",
+ "updated": "2026-10-08",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 114,
+ "sample_size": 118,
  "excluded_low_confidence": 36,
  "by_person": {
   "jasmine": {
-   "n": 41,
-   "median_min": 291.9,
-   "mean_min": 1217.2,
-   "p90_min": 4186.0,
-   "work_median_min": 216.1,
-   "work_mean_min": 438.8,
-   "within_4h_pct": 48.8,
+   "n": 44,
+   "median_min": 258.9,
+   "mean_min": 1202.4,
+   "p90_min": 4182.4,
+   "work_median_min": 213.4,
+   "work_mean_min": 438.9,
+   "within_4h_pct": 50.0,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 73,
-   "median_min": 1364.2,
-   "mean_min": 2102.6,
-   "p90_min": 5838.0,
-   "work_median_min": 518.6,
-   "work_mean_min": 711.8,
-   "within_4h_pct": 24.7,
+   "n": 74,
+   "median_min": 1361.4,
+   "mean_min": 2075.5,
+   "p90_min": 5837.6,
+   "work_median_min": 510.6,
+   "work_mean_min": 702.6,
+   "within_4h_pct": 25.7,
    "fastest_min": 7.8,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 114,
-  "median_min": 942.6,
-  "mean_min": 1784.2,
-  "work_median_min": 375.8,
-  "within_4h_pct": 33.3
+  "n": 118,
+  "median_min": 884.1,
+  "mean_min": 1749.9,
+  "work_median_min": 369.3,
+  "within_4h_pct": 34.7
  },
  "pending": [
-  {
-   "thread_id": "19ff3468b089027f",
-   "case": "Samsung 社群操作 × Nakaw（$20,000＋Z Fold8 待決）",
-   "inbound_at": "2026-08-17T03:49:52Z"
-  },
   {
    "thread_id": "19fdc054a8c679cb",
    "case": "知名刮鬍刀 × Rio（已有草稿 T2026-0010 未寄）",
@@ -86,9 +81,9 @@
    "inbound_at": "2026-10-02T09:24:06Z"
   },
   {
-   "thread_id": "1a0f6ef7075bbce5",
-   "case": "NIKE TECH × Nakaw（對方請提供 Nakaw 鞋碼與上衣下身尺寸）",
-   "inbound_at": "2026-10-05T09:27:03Z"
+   "thread_id": "1a1108f6ad6a733b",
+   "case": "肯德基 11 月限定蛋撻 × Rio（草稿 T2026-0044 已建立未寄）",
+   "inbound_at": "2026-10-07T01:38:55Z"
   }
  ]
 }

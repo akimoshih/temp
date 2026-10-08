@@ -1200,14 +1200,41 @@
       "inbound_at": "2026-09-30T10:26:00Z",
       "replied_at": "2026-10-06T02:25:20Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a0f6ef7075bbce5",
+      "responder": "jasmine",
+      "case": "NIKE TECH × Nakaw（提供鞋碼與衣著尺寸）",
+      "inbound_at": "2026-10-05T09:27:03Z",
+      "replied_at": "2026-10-07T08:37:48Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0f0f2cc2e9bb35",
+      "responder": "jasmine",
+      "case": "SIMBA 好瓶 × Leo（$100,000 預算下的項目調整）",
+      "inbound_at": "2026-10-07T04:39:12Z",
+      "replied_at": "2026-10-07T06:41:52Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19ff3468b089027f",
+      "responder": "jasmine",
+      "case": "Samsung 社群操作 × Nakaw（新一輪合作方向確認）",
+      "inbound_at": "2026-10-07T08:14:01Z",
+      "replied_at": "2026-10-07T09:01:37Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0d1a141cee46ac",
+      "responder": "oliver",
+      "case": "饗泰多 × YY（客戶 PASS 結案回覆）",
+      "inbound_at": "2026-10-07T10:26:17Z",
+      "replied_at": "2026-10-07T12:00:06Z",
+      "confident": true
     }
   ],
   "pending": [
-    {
-      "thread_id": "19ff3468b089027f",
-      "case": "Samsung 社群操作 × Nakaw（$20,000＋Z Fold8 待決）",
-      "inbound_at": "2026-08-17T03:49:52Z"
-    },
     {
       "thread_id": "19fdc054a8c679cb",
       "case": "知名刮鬍刀 × Rio（已有草稿 T2026-0010 未寄）",
@@ -1254,9 +1281,9 @@
       "inbound_at": "2026-10-02T09:24:06Z"
     },
     {
-      "thread_id": "1a0f6ef7075bbce5",
-      "case": "NIKE TECH × Nakaw（對方請提供 Nakaw 鞋碼與上衣下身尺寸）",
-      "inbound_at": "2026-10-05T09:27:03Z"
+      "thread_id": "1a1108f6ad6a733b",
+      "case": "肯德基 11 月限定蛋撻 × Rio（草稿 T2026-0044 已建立未寄）",
+      "inbound_at": "2026-10-07T01:38:55Z"
     }
   ]
 }
