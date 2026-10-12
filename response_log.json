@@ -1256,6 +1256,14 @@
       "inbound_at": "2026-10-07T01:38:55Z",
       "replied_at": "2026-10-08T10:40:51Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a0f0f2cc2e9bb35",
+      "responder": "jasmine",
+      "case": "SIMBA 好瓶 × Leo（合約由我方出具＋索取用印資料）",
+      "inbound_at": "2026-10-08T01:34:30Z",
+      "replied_at": "2026-10-12T00:00:00Z",
+      "confident": false
     }
   ],
   "pending": [
@@ -1303,11 +1311,6 @@
       "thread_id": "1a0f6d13e0111483",
       "case": "Suntory VARON × Leo（對方確認上線日與投廣走期中，暫無待辦）",
       "inbound_at": "2026-10-02T09:24:06Z"
-    },
-    {
-      "thread_id": "1a0f0f2cc2e9bb35",
-      "case": "SIMBA 好瓶 × Leo（對方詢問合約由哪一方出具）",
-      "inbound_at": "2026-10-08T01:34:30Z"
     }
   ]
 }
