@@ -1264,6 +1264,30 @@
       "inbound_at": "2026-10-08T01:34:30Z",
       "replied_at": "2026-10-12T00:00:00Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a12f85095c7b58b",
+      "responder": "jasmine",
+      "case": "禾聯家電新品發表暨空調體驗 × Leo／Rio／主委（三人合體與個人報價）",
+      "inbound_at": "2026-10-07T08:16:00Z",
+      "replied_at": "2026-10-12T09:49:58Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a12f568c575b00d",
+      "responder": "oliver",
+      "case": "虛擬向量計畫 VTuber 合跳宣傳 × YY（兩種方案報價）",
+      "inbound_at": "2026-10-03T05:33:00Z",
+      "replied_at": "2026-10-12T08:58:46Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a12fb0d476b9255",
+      "responder": "oliver",
+      "case": "上友 7-11 博多丼／棉芯蛋 × 梅伯（先確認上線檔期）",
+      "inbound_at": "2026-10-12T09:24:00Z",
+      "replied_at": "2026-10-12T10:37:23Z",
+      "confident": false
     }
   ],
   "pending": [
@@ -1311,6 +1335,11 @@
       "thread_id": "1a0f6d13e0111483",
       "case": "Suntory VARON × Leo（對方確認上線日與投廣走期中，暫無待辦）",
       "inbound_at": "2026-10-02T09:24:06Z"
+    },
+    {
+      "thread_id": "1a0f0f2cc2e9bb35",
+      "case": "SIMBA 好瓶 × Leo（已成案並提供用印資料，詢問上線日可否排 11/1–11/7，待我方回覆檔期）",
+      "inbound_at": "2026-10-12T09:39:34Z"
     }
   ]
 }
