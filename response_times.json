@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-13",
+ "updated": "2026-10-14",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 120,
- "excluded_low_confidence": 41,
+ "sample_size": 122,
+ "excluded_low_confidence": 48,
  "by_person": {
   "jasmine": {
-   "n": 44,
+   "n": 46,
    "median_min": 258.9,
-   "mean_min": 1202.4,
-   "p90_min": 4182.4,
+   "mean_min": 1185.4,
+   "p90_min": 4180.0,
    "work_median_min": 213.4,
-   "work_mean_min": 438.9,
+   "work_mean_min": 436.8,
    "within_4h_pct": 50.0,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
@@ -28,11 +28,11 @@
   }
  },
  "overall": {
-  "n": 120,
+  "n": 122,
   "median_min": 884.1,
-  "mean_min": 1740.9,
+  "mean_min": 1725.6,
   "work_median_min": 375.8,
-  "within_4h_pct": 34.2
+  "within_4h_pct": 34.4
  },
  "pending": [
   {
@@ -79,11 +79,6 @@
    "thread_id": "1a0f6d13e0111483",
    "case": "Suntory VARON × Leo（對方確認上線日與投廣走期中，暫無待辦）",
    "inbound_at": "2026-10-02T09:24:06Z"
-  },
-  {
-   "thread_id": "1a0f0f2cc2e9bb35",
-   "case": "SIMBA 好瓶 × Leo（已成案並提供用印資料，詢問上線日可否排 11/1–11/7，待我方回覆檔期）",
-   "inbound_at": "2026-10-12T09:39:34Z"
   }
  ]
 }

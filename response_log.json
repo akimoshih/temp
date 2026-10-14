@@ -1288,6 +1288,78 @@
       "inbound_at": "2026-10-12T09:24:00Z",
       "replied_at": "2026-10-12T10:37:23Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a1349094a22613c",
+      "responder": "oliver",
+      "case": "CASETiFY × 梅伯（Leo 出演，分項報價）",
+      "inbound_at": "2026-10-08T11:22:00Z",
+      "replied_at": "2026-10-13T09:20:15Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a134d650ba50aae",
+      "responder": "oliver",
+      "case": "KATE NANA 聯名睫毛膏 × YY（分項報價）",
+      "inbound_at": "2026-10-12T08:28:00Z",
+      "replied_at": "2026-10-13T10:36:25Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a134293ad33177b",
+      "responder": "jasmine",
+      "case": "上友 7-11 × 主委（提議改 IG Story）",
+      "inbound_at": "2026-10-12T09:25:00Z",
+      "replied_at": "2026-10-13T07:27:47Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a133e681723136b",
+      "responder": "jasmine",
+      "case": "DJI Pocket 4P × Leo（確認合作細節）",
+      "inbound_at": "2026-10-13T06:11:00Z",
+      "replied_at": "2026-10-13T06:14:54Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a12ec49de7ebcff",
+      "responder": "oliver",
+      "case": "Johnnie Walker Black Ruby × Andrew（婉拒）",
+      "inbound_at": "2026-10-13T00:00:00Z",
+      "replied_at": "2026-10-13T09:45:18Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a134a164859e366",
+      "responder": "oliver",
+      "case": "PRORANCE × 梅伯（婉拒）",
+      "inbound_at": "2026-10-08T20:09:00Z",
+      "replied_at": "2026-10-13T09:38:37Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a1349135b52eee0",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo（合作模式與腳本流程確認）",
+      "inbound_at": "2026-10-13T09:21:22Z",
+      "replied_at": "2026-10-13T11:06:49Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0f0f2cc2e9bb35",
+      "responder": "jasmine",
+      "case": "SIMBA 好瓶 × Leo（收到廠商資料、詢問 Brief 與產品時程）",
+      "inbound_at": "2026-10-12T09:39:34Z",
+      "replied_at": "2026-10-13T10:58:52Z",
+      "confident": true
+    },
+    {
+      "thread_id": "19f8435af5ce2e9e",
+      "responder": "oliver",
+      "case": "亞培白金安素 EX 公關禮盒 × Rio（確認收到禮盒）",
+      "inbound_at": "2026-10-12T07:34:00Z",
+      "replied_at": "2026-10-13T09:48:56Z",
+      "confident": false
     }
   ],
   "pending": [
@@ -1335,11 +1407,6 @@
       "thread_id": "1a0f6d13e0111483",
       "case": "Suntory VARON × Leo（對方確認上線日與投廣走期中，暫無待辦）",
       "inbound_at": "2026-10-02T09:24:06Z"
-    },
-    {
-      "thread_id": "1a0f0f2cc2e9bb35",
-      "case": "SIMBA 好瓶 × Leo（已成案並提供用印資料，詢問上線日可否排 11/1–11/7，待我方回覆檔期）",
-      "inbound_at": "2026-10-12T09:39:34Z"
     }
   ]
 }
