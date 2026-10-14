@@ -1032,5 +1032,22 @@
       "draft_id": "r-7724663248021639553",
       "replied_to_message_id": "1a12f7b7311d3efe"
     }
+  },
+  {
+    "task_id": "T2026-0047",
+    "type": "報價回信",
+    "thread_id": "1a1387b95e66d982",
+    "case": "UNIQLO PUFFTECH 輕暖科技外套 × Rio（十分好創意）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-10-14T06:25:00Z",
+    "note": "十分好創意 Sunny 10/14 14:11 回覆細節（TV 為電視新聞置入短訪、廣告僅線上數位投放一週、Threads 可改 IG 限動）並請提供報價。草稿依價目表報 Reels $150,000(net)＋IG 限動 $45,000(net)＋授權一週 $25,000(net)＝$220,000(net)；TV 媒體採訪出席費與 Reels 協作者加價價目表查無，以【請確認】標示待人工補。",
+    "draft": {
+      "to": "sunny.tseng@goodinc.com.tw",
+      "cc": "zoey.tsai@goodinc.com.tw, rou.huang@goodinc.com.tw, rio@dcard.cc, akimo@dcard.cc, jasmine.wang@dcard.cc",
+      "subject": "Re: 【合作檔期與費用詢問】UNIQLO TW PUFFTECH 輕暖科技外套",
+      "draft_id": "r-5884985627011201225",
+      "replied_to_message_id": "1a139096bc538014"
+    }
   }
 ]
