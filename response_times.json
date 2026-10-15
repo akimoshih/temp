@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-14",
+ "updated": "2026-10-15",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
  "sample_size": 122,
- "excluded_low_confidence": 48,
+ "excluded_low_confidence": 50,
  "by_person": {
   "jasmine": {
    "n": 46,
@@ -79,6 +79,21 @@
    "thread_id": "1a0f6d13e0111483",
    "case": "Suntory VARON × Leo（對方確認上線日與投廣走期中，暫無待辦）",
    "inbound_at": "2026-10-02T09:24:06Z"
+  },
+  {
+   "thread_id": "1a0f6ef7075bbce5",
+   "case": "NIKE TECH HO26 × Nakaw（客戶已成案 $70,000，待回覆選品與紅字項目）",
+   "inbound_at": "2026-10-14T08:25:55Z"
+  },
+  {
+   "thread_id": "1a0f0f2cc2e9bb35",
+   "case": "SIMBA 好瓶 × Leo（已提供拍攝資料與寄送品項，待回覆並寄出委刊單 T2026-0046）",
+   "inbound_at": "2026-10-14T01:53:56Z"
+  },
+  {
+   "thread_id": "1a1387b95e66d982",
+   "case": "UNIQLO PUFFTECH × Rio（報價草稿 T2026-0047 待人工補 TV 採訪與協作者費用後寄出）",
+   "inbound_at": "2026-10-14T06:11:15Z"
   }
  ]
 }
