@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用「成員收入」兩欄，總覽頁用「成交價(未稅)」欄（欄位以標題文字定位）",
  "by_member": {
   "rio": [
@@ -124,23 +124,16 @@
     "p": 2500.0
    },
    {
-    "name": "原萃_社群推廣合作_Rio",
-    "item": null,
-    "start": null,
-    "o": 0.0,
-    "p": 0.0
-   },
-   {
-    "name": "原萃_社群推廣合作_Rio",
-    "item": "IG 限動",
-    "start": null,
+    "name": "臺北市青年局_演講_Rio",
+    "item": "演講",
+    "start": "2026-10-03",
     "o": 25000.0,
     "p": 5000.0
    },
    {
-    "name": "臺北市青年局_演講_Rio",
-    "item": "演講",
-    "start": null,
+    "name": "原萃_社群推廣合作_Rio",
+    "item": "IG 限動",
+    "start": "2026-10-21",
     "o": 25000.0,
     "p": 5000.0
    }
@@ -608,7 +601,7 @@
    {
     "name": "IPPIN 逸品杯麵_社群推廣合作_YY",
     "item": "Reels",
-    "start": null,
+    "start": "2026-10-18",
     "o": 25000.0,
     "p": 5000.0
    }
@@ -1078,6 +1071,20 @@
     "item": "投廣",
     "start": "2026-09-24",
     "o": 5000.0,
+    "p": 0.0
+   },
+   {
+    "name": "HO26 DS ANNIVERSARY_社群推廣合作_Nakaw",
+    "item": "Reels",
+    "start": "2026-11-16",
+    "o": 29000.0,
+    "p": 0.0
+   },
+   {
+    "name": "HO26 DS ANNIVERSARY_社群推廣合作_Nakaw",
+    "item": "IG 限動",
+    "start": "2026-11-16",
+    "o": 6000.0,
     "p": 0.0
    }
   ],
@@ -2230,13 +2237,7 @@
   {
    "member_raw": "Rio",
    "member_key": "rio",
-   "start": null,
-   "j": 0.0
-  },
-  {
-   "member_raw": "Rio",
-   "member_key": "rio",
-   "start": null,
+   "start": "2026-10-21",
    "j": 50000.0
   },
   {
@@ -2266,7 +2267,7 @@
   {
    "member_raw": "Rio",
    "member_key": "rio",
-   "start": null,
+   "start": "2026-10-03",
    "j": 50000.0
   },
   {
@@ -2278,7 +2279,7 @@
   {
    "member_raw": "YY",
    "member_key": "yy",
-   "start": null,
+   "start": "2026-10-18",
    "j": 55000.0
   },
   {
@@ -2316,6 +2317,18 @@
    "member_key": "ellie",
    "start": "2026-10-15",
    "j": 10000.0
+  },
+  {
+   "member_raw": "Nakaw",
+   "member_key": "nakaw",
+   "start": "2026-11-16",
+   "j": 58000.0
+  },
+  {
+   "member_raw": "Nakaw",
+   "member_key": "nakaw",
+   "start": "2026-11-16",
+   "j": 12000.0
   }
  ]
 }

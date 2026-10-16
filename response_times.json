@@ -1,17 +1,17 @@
 {
- "updated": "2026-10-15",
+ "updated": "2026-10-16",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 122,
- "excluded_low_confidence": 50,
+ "sample_size": 123,
+ "excluded_low_confidence": 51,
  "by_person": {
   "jasmine": {
-   "n": 46,
-   "median_min": 258.9,
-   "mean_min": 1185.4,
-   "p90_min": 4180.0,
-   "work_median_min": 213.4,
-   "work_mean_min": 436.8,
-   "within_4h_pct": 50.0,
+   "n": 47,
+   "median_min": 291.9,
+   "mean_min": 1200.6,
+   "p90_min": 4178.8,
+   "work_median_min": 216.1,
+   "work_mean_min": 450.0,
+   "within_4h_pct": 48.9,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
@@ -28,11 +28,11 @@
   }
  },
  "overall": {
-  "n": 122,
-  "median_min": 884.1,
-  "mean_min": 1725.6,
-  "work_median_min": 375.8,
-  "within_4h_pct": 34.4
+  "n": 123,
+  "median_min": 936.1,
+  "mean_min": 1727.1,
+  "work_median_min": 381.7,
+  "within_4h_pct": 34.1
  },
  "pending": [
   {
@@ -86,14 +86,24 @@
    "inbound_at": "2026-10-14T08:25:55Z"
   },
   {
-   "thread_id": "1a0f0f2cc2e9bb35",
-   "case": "SIMBA 好瓶 × Leo（已提供拍攝資料與寄送品項，待回覆並寄出委刊單 T2026-0046）",
-   "inbound_at": "2026-10-14T01:53:56Z"
-  },
-  {
    "thread_id": "1a1387b95e66d982",
    "case": "UNIQLO PUFFTECH × Rio（報價草稿 T2026-0047 待人工補 TV 採訪與協作者費用後寄出）",
    "inbound_at": "2026-10-14T06:11:15Z"
+  },
+  {
+   "thread_id": "1a0fba1751476d1f",
+   "case": "NIKE Pegasus 跑鞋 × 梅伯（客戶成案，待確認時程表）",
+   "inbound_at": "2026-10-15T09:36:39Z"
+  },
+  {
+   "thread_id": "1a1108f6ad6a733b",
+   "case": "肯德基北海道牛奶蛋撻 × Rio（待評估 A／B 創意方向）",
+   "inbound_at": "2026-10-15T02:49:06Z"
+  },
+  {
+   "thread_id": "1a13daca9021e039",
+   "case": "金星文創《一村喜事》× Rio（待確認場次與訪談配合）",
+   "inbound_at": "2026-10-15T05:08:51Z"
   }
  ]
 }
