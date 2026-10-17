@@ -1,38 +1,38 @@
 {
- "updated": "2026-10-16",
+ "updated": "2026-10-17",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 123,
+ "sample_size": 129,
  "excluded_low_confidence": 51,
  "by_person": {
   "jasmine": {
-   "n": 47,
-   "median_min": 291.9,
-   "mean_min": 1200.6,
-   "p90_min": 4178.8,
-   "work_median_min": 216.1,
-   "work_mean_min": 450.0,
-   "within_4h_pct": 48.9,
+   "n": 50,
+   "median_min": 221.6,
+   "mean_min": 1135.9,
+   "p90_min": 4175.2,
+   "work_median_min": 213.4,
+   "work_mean_min": 430.4,
+   "within_4h_pct": 52.0,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 76,
-   "median_min": 1361.4,
-   "mean_min": 2052.6,
-   "p90_min": 5836.9,
-   "work_median_min": 510.6,
-   "work_mean_min": 704.8,
-   "within_4h_pct": 25.0,
+   "n": 79,
+   "median_min": 1358.6,
+   "mean_min": 2030.5,
+   "p90_min": 5835.7,
+   "work_median_min": 502.6,
+   "work_mean_min": 701.2,
+   "within_4h_pct": 25.3,
    "fastest_min": 7.8,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 123,
-  "median_min": 936.1,
-  "mean_min": 1727.1,
-  "work_median_min": 381.7,
-  "within_4h_pct": 34.1
+  "n": 129,
+  "median_min": 832.1,
+  "mean_min": 1683.8,
+  "work_median_min": 370.0,
+  "within_4h_pct": 35.7
  },
  "pending": [
   {
@@ -87,13 +87,8 @@
   },
   {
    "thread_id": "1a1387b95e66d982",
-   "case": "UNIQLO PUFFTECH × Rio（報價草稿 T2026-0047 待人工補 TV 採訪與協作者費用後寄出）",
-   "inbound_at": "2026-10-14T06:11:15Z"
-  },
-  {
-   "thread_id": "1a0fba1751476d1f",
-   "case": "NIKE Pegasus 跑鞋 × 梅伯（客戶成案，待確認時程表）",
-   "inbound_at": "2026-10-15T09:36:39Z"
+   "case": "UNIQLO PUFFTECH × Rio（委刊單草稿 T2026-0048 待人工夾帶 PDF 後寄出）",
+   "inbound_at": "2026-10-16T11:07:43Z"
   },
   {
    "thread_id": "1a1108f6ad6a733b",

@@ -1020,9 +1020,9 @@
     "thread_id": "1a0f0f2cc2e9bb35",
     "case": "SIMBA 好瓶 × Leo（美弗實業）",
     "assignee": "jasmine",
-    "status": "草稿已建立",
+    "status": "作廢（已被人工搶先回覆）",
     "created": "2026-10-13T01:15:00Z",
-    "note": "Lina 10/12 確認成案（IG Reels ×1＋限動 ×2＋品牌標籤協作者＋廣告主授權 1 個月，$100,000(net)）並提供用印資料，依此開立委刊單 V20261013-01。專案期間／上線日期／請款月份留白：對方提議上線日 11/1–11/7，待與 Leo 確認檔期後補上再寄出。（Jasmine 10/13 18:58 已就同一封來信先行回覆、向 Lina 索取合作 Brief 與產品時程，但尚未寄出委刊單，本草稿仍有效；寄出前請確認上線日並夾帶 PDF。）",
+    "note": "Lina 10/12 確認成案（IG Reels ×1＋限動 ×2＋品牌標籤協作者＋廣告主授權 1 個月，$100,000(net)）並提供用印資料，依此開立委刊單 V20261013-01。專案期間／上線日期／請款月份留白：對方提議上線日 11/1–11/7，待與 Leo 確認檔期後補上再寄出。（Jasmine 10/13 18:58 已就同一封來信先行回覆、向 Lina 索取合作 Brief 與產品時程，但尚未寄出委刊單，本草稿仍有效；寄出前請確認上線日並夾帶 PDF。） ／ Jasmine 10/16 17:11 已自行提供委刊單附件，本草稿作廢，請勿誤送。",
     "drive_url": null,
     "drive_note": "PDF base64 約 188KB 過大未上傳 Drive，改以 SendUserFile 直接交付（file_uuid b1fd3054-94b8-424a-b6ab-74dcf89bf88f）。",
     "draft": {
@@ -1039,15 +1039,34 @@
     "thread_id": "1a1387b95e66d982",
     "case": "UNIQLO PUFFTECH 輕暖科技外套 × Rio（十分好創意）",
     "assignee": "oliver",
-    "status": "草稿已建立",
+    "status": "作廢（已被人工搶先回覆）",
     "created": "2026-10-14T06:25:00Z",
-    "note": "十分好創意 Sunny 10/14 14:11 回覆細節（TV 為電視新聞置入短訪、廣告僅線上數位投放一週、Threads 可改 IG 限動）並請提供報價。草稿依價目表報 Reels $150,000(net)＋IG 限動 $45,000(net)＋授權一週 $25,000(net)＝$220,000(net)；TV 媒體採訪出席費與 Reels 協作者加價價目表查無，以【請確認】標示待人工補。",
+    "note": "十分好創意 Sunny 10/14 14:11 回覆細節（TV 為電視新聞置入短訪、廣告僅線上數位投放一週、Threads 可改 IG 限動）並請提供報價。草稿依價目表報 Reels $150,000(net)＋IG 限動 $45,000(net)＋授權一週 $25,000(net)＝$220,000(net)；TV 媒體採訪出席費與 Reels 協作者加價價目表查無，以【請確認】標示待人工補。 ／ 彼得 10/16 15:57 已自行回覆報價，本草稿作廢，請勿誤送。",
     "draft": {
       "to": "sunny.tseng@goodinc.com.tw",
       "cc": "zoey.tsai@goodinc.com.tw, rou.huang@goodinc.com.tw, rio@dcard.cc, akimo@dcard.cc, jasmine.wang@dcard.cc",
       "subject": "Re: 【合作檔期與費用詢問】UNIQLO TW PUFFTECH 輕暖科技外套",
       "draft_id": "r-5884985627011201225",
       "replied_to_message_id": "1a139096bc538014"
+    }
+  },
+  {
+    "task_id": "T2026-0048",
+    "type": "委刊單",
+    "thread_id": "1a1387b95e66d982",
+    "case": "UNIQLO TW PUFFTECH 輕暖科技外套 × Rio（十分好創意）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-10-17T01:15:00Z",
+    "note": "對方 10/16 確認先合作 IG Story 並請我方開委刊單；單號 V20261017-01，項目 IG Story ×1 $50,000(net)，專案期間／上線日期／請款月份留空待確認。TV 媒體採訪 $105,000(net) 與授權投放 1 週 $25,000(net) 是否納入須人工確認。",
+    "drive_url": null,
+    "drive_note": "PDF 138KB、base64 約 184KB 過大無法內嵌上傳 Drive，改以 SendUserFile 直接交付（file_uuid 9fe7401e-82a7-4648-b542-6ecea4c21c81），草稿內部備註已註明。",
+    "draft": {
+      "to": "sunny.tseng@goodinc.com.tw",
+      "cc": "zoey.tsai@goodinc.com.tw, rou.huang@goodinc.com.tw, rio@dcard.cc, akimo@dcard.cc, jasmine.wang@dcard.cc",
+      "subject": "Re: 【合作檔期與費用詢問】UNIQLO TW PUFFTECH 輕暖科技外套",
+      "draft_id": "r-917827201911645702",
+      "replied_to_message_id": "1a144658a84cdef1"
     }
   }
 ]

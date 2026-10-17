@@ -1392,6 +1392,54 @@
       "inbound_at": "2026-10-14T01:53:56Z",
       "replied_at": "2026-10-15T09:33:47Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a0fba1751476d1f",
+      "responder": "oliver",
+      "case": "NIKE Pegasus 跑鞋 × 梅伯（確認時程並索取用印資料）",
+      "inbound_at": "2026-10-15T09:36:39Z",
+      "replied_at": "2026-10-16T06:26:08Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0fba1751476d1f",
+      "responder": "oliver",
+      "case": "NIKE Pegasus 跑鞋 × 梅伯（合作說明與委刊單）",
+      "inbound_at": "2026-10-16T09:07:56Z",
+      "replied_at": "2026-10-16T12:02:39Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1387b95e66d982",
+      "responder": "oliver",
+      "case": "UNIQLO PUFFTECH × Rio（提供報價）",
+      "inbound_at": "2026-10-14T06:11:15Z",
+      "replied_at": "2026-10-16T07:57:56Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1349135b52eee0",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo（腳本呈現方式）",
+      "inbound_at": "2026-10-16T05:56:39Z",
+      "replied_at": "2026-10-16T07:32:22Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1349135b52eee0",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo（腳本架構確認）",
+      "inbound_at": "2026-10-16T09:24:52Z",
+      "replied_at": "2026-10-16T10:18:55Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0f0f2cc2e9bb35",
+      "responder": "jasmine",
+      "case": "SIMBA 好瓶 × Leo（延後上線與委刊單）",
+      "inbound_at": "2026-10-16T05:34:33Z",
+      "replied_at": "2026-10-16T09:11:48Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -1447,13 +1495,8 @@
     },
     {
       "thread_id": "1a1387b95e66d982",
-      "case": "UNIQLO PUFFTECH × Rio（報價草稿 T2026-0047 待人工補 TV 採訪與協作者費用後寄出）",
-      "inbound_at": "2026-10-14T06:11:15Z"
-    },
-    {
-      "thread_id": "1a0fba1751476d1f",
-      "case": "NIKE Pegasus 跑鞋 × 梅伯（客戶成案，待確認時程表）",
-      "inbound_at": "2026-10-15T09:36:39Z"
+      "case": "UNIQLO PUFFTECH × Rio（委刊單草稿 T2026-0048 待人工夾帶 PDF 後寄出）",
+      "inbound_at": "2026-10-16T11:07:43Z"
     },
     {
       "thread_id": "1a1108f6ad6a733b",
