@@ -1068,5 +1068,22 @@
       "draft_id": "r-917827201911645702",
       "replied_to_message_id": "1a144658a84cdef1"
     }
+  },
+  {
+    "task_id": "T2026-0049",
+    "type": "報價回信",
+    "thread_id": "1a152971b6968429",
+    "case": "多喝水 2027 續約評估 × Rio（奧美 Ogilvy）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-10-19T06:15:00Z",
+    "note": "奧美 Andy 10/19 14:00 補充實體活動與社群貼文規劃並希望當天拿到報價；草稿已填入可查得的 IG 貼文 $90,000(net)，肖像授權續約（六個月全媒體影片／平面）、錄音出席 2 小時、實體活動出席 4 小時與整包優惠價價目表皆查無，以【請確認】標示待人工核定。",
+    "draft": {
+      "to": "andysh.hsu@ogilvy.com",
+      "cc": "jennycy.lin@ogilvy.com, lipinglp.shih@ogilvy.com, akimo@dcard.cc, jasmine.wang@dcard.cc",
+      "subject": "Re: 1015【多喝水】續約合作評估",
+      "draft_id": "r6308108172091247836",
+      "replied_to_message_id": "1a152bfa3c75e99f"
+    }
   }
 ]
