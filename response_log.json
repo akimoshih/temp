@@ -1440,6 +1440,14 @@
       "inbound_at": "2026-10-16T05:34:33Z",
       "replied_at": "2026-10-16T09:11:48Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a15177b91c2cb55",
+      "responder": "oliver",
+      "case": "亞培安素 EX × Rio（提供報價）",
+      "inbound_at": "2026-10-14T03:45:00Z",
+      "replied_at": "2026-10-19T00:01:00Z",
+      "confident": false
     }
   ],
   "pending": [
