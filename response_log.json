@@ -1448,6 +1448,46 @@
       "inbound_at": "2026-10-14T03:45:00Z",
       "replied_at": "2026-10-19T00:01:00Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a1108f6ad6a733b",
+      "responder": "oliver",
+      "case": "肯德基北海道牛奶蛋撻 × Rio（創意方向回覆）",
+      "inbound_at": "2026-10-15T02:49:06Z",
+      "replied_at": "2026-10-19T11:58:48Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a152971b6968429",
+      "responder": "oliver",
+      "case": "多喝水 2027 續約 × Rio（提供報價）",
+      "inbound_at": "2026-10-19T06:00:25Z",
+      "replied_at": "2026-10-19T12:21:19Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0f0f2cc2e9bb35",
+      "responder": "jasmine",
+      "case": "SIMBA 好瓶 × Leo（委刊單條款與腳本）",
+      "inbound_at": "2026-10-19T01:53:41Z",
+      "replied_at": "2026-10-19T10:47:16Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a153aeeb78f7700",
+      "responder": "jasmine",
+      "case": "逢甲大學主持達人培訓營 × Leo（檔期與費用）",
+      "inbound_at": "2026-10-19T09:04:00Z",
+      "replied_at": "2026-10-19T10:22:01Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a1569c94dc59f0a",
+      "responder": "jasmine",
+      "case": "PURPLE.ins 團購 × Ellie（婉拒）",
+      "inbound_at": "2026-10-13T06:57:00Z",
+      "replied_at": "2026-10-20T00:00:00Z",
+      "confident": false
     }
   ],
   "pending": [
@@ -1505,11 +1545,6 @@
       "thread_id": "1a1387b95e66d982",
       "case": "UNIQLO PUFFTECH × Rio（委刊單草稿 T2026-0048 待人工夾帶 PDF 後寄出）",
       "inbound_at": "2026-10-16T11:07:43Z"
-    },
-    {
-      "thread_id": "1a1108f6ad6a733b",
-      "case": "肯德基北海道牛奶蛋撻 × Rio（待評估 A／B 創意方向）",
-      "inbound_at": "2026-10-15T02:49:06Z"
     },
     {
       "thread_id": "1a13daca9021e039",

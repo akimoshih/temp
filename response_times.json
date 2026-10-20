@@ -1,38 +1,38 @@
 {
- "updated": "2026-10-19",
+ "updated": "2026-10-20",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 129,
- "excluded_low_confidence": 52,
+ "sample_size": 132,
+ "excluded_low_confidence": 54,
  "by_person": {
   "jasmine": {
-   "n": 50,
-   "median_min": 221.6,
-   "mean_min": 1135.9,
-   "p90_min": 4175.2,
-   "work_median_min": 213.4,
-   "work_mean_min": 430.4,
-   "within_4h_pct": 52.0,
+   "n": 51,
+   "median_min": 225.8,
+   "mean_min": 1124.1,
+   "p90_min": 4174.0,
+   "work_median_min": 216.1,
+   "work_mean_min": 432.4,
+   "within_4h_pct": 51.0,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 79,
+   "n": 81,
    "median_min": 1358.6,
-   "mean_min": 2030.5,
-   "p90_min": 5835.7,
+   "mean_min": 2062.9,
+   "p90_min": 5838.7,
    "work_median_min": 502.6,
-   "work_mean_min": 701.2,
-   "within_4h_pct": 25.3,
+   "work_mean_min": 708.4,
+   "within_4h_pct": 24.7,
    "fastest_min": 7.8,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 129,
-  "median_min": 832.1,
-  "mean_min": 1683.8,
-  "work_median_min": 370.0,
-  "within_4h_pct": 35.7
+  "n": 132,
+  "median_min": 725.7,
+  "mean_min": 1700.2,
+  "work_median_min": 375.8,
+  "within_4h_pct": 34.8
  },
  "pending": [
   {
@@ -89,11 +89,6 @@
    "thread_id": "1a1387b95e66d982",
    "case": "UNIQLO PUFFTECH × Rio（委刊單草稿 T2026-0048 待人工夾帶 PDF 後寄出）",
    "inbound_at": "2026-10-16T11:07:43Z"
-  },
-  {
-   "thread_id": "1a1108f6ad6a733b",
-   "case": "肯德基北海道牛奶蛋撻 × Rio（待評估 A／B 創意方向）",
-   "inbound_at": "2026-10-15T02:49:06Z"
   },
   {
    "thread_id": "1a13daca9021e039",
