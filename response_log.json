@@ -1488,6 +1488,54 @@
       "inbound_at": "2026-10-13T06:57:00Z",
       "replied_at": "2026-10-20T00:00:00Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a134d650ba50aae",
+      "responder": "oliver",
+      "case": "KATE NANA 聯名睫毛膏 × YY（成案確認）",
+      "inbound_at": "2026-10-20T05:32:46Z",
+      "replied_at": "2026-10-20T08:01:24Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0fba1751476d1f",
+      "responder": "oliver",
+      "case": "NIKE Pegasus × 梅伯（委刊單條款討論）",
+      "inbound_at": "2026-10-20T09:32:54Z",
+      "replied_at": "2026-10-20T11:55:42Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a157f278161ba6e",
+      "responder": "oliver",
+      "case": "DJI 大疆 × YY（提供報價）",
+      "inbound_at": "2026-10-16T06:13:00Z",
+      "replied_at": "2026-10-20T06:13:54Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a15824d183f5b8a",
+      "responder": "oliver",
+      "case": "肯德基電影欣賞會 × YY／Andrew（提供報價）",
+      "inbound_at": "2026-10-19T10:13:00Z",
+      "replied_at": "2026-10-20T07:08:52Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a158f69d3ba8434",
+      "responder": "jasmine",
+      "case": "Whoscall × Draft Land × Leo（提供報價）",
+      "inbound_at": "2026-10-19T00:01:00Z",
+      "replied_at": "2026-10-20T10:58:26Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a158372a3dc6d67",
+      "responder": "oliver",
+      "case": "EezyCollab AI 產品影片 × YY（婉拒）",
+      "inbound_at": "2026-10-09T13:33:00Z",
+      "replied_at": "2026-10-20T07:28:56Z",
+      "confident": false
     }
   ],
   "pending": [

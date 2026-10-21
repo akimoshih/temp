@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-20",
+ "updated": "2026-10-21",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 132,
- "excluded_low_confidence": 54,
+ "sample_size": 134,
+ "excluded_low_confidence": 58,
  "by_person": {
   "jasmine": {
    "n": 51,
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 81,
-   "median_min": 1358.6,
-   "mean_min": 2062.9,
-   "p90_min": 5838.7,
-   "work_median_min": 502.6,
-   "work_mean_min": 708.4,
-   "within_4h_pct": 24.7,
+   "n": 83,
+   "median_min": 1249.5,
+   "mean_min": 2016.7,
+   "p90_min": 5838.0,
+   "work_median_min": 466.5,
+   "work_mean_min": 694.2,
+   "within_4h_pct": 26.5,
    "fastest_min": 7.8,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 132,
-  "median_min": 725.7,
-  "mean_min": 1700.2,
-  "work_median_min": 375.8,
-  "within_4h_pct": 34.8
+  "n": 134,
+  "median_min": 576.4,
+  "mean_min": 1677.0,
+  "work_median_min": 369.3,
+  "within_4h_pct": 35.8
  },
  "pending": [
   {
