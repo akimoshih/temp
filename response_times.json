@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-21",
+ "updated": "2026-10-22",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 134,
- "excluded_low_confidence": 58,
+ "sample_size": 136,
+ "excluded_low_confidence": 62,
  "by_person": {
   "jasmine": {
    "n": 51,
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 83,
-   "median_min": 1249.5,
-   "mean_min": 2016.7,
-   "p90_min": 5838.0,
+   "n": 85,
+   "median_min": 1184.6,
+   "mean_min": 1977.9,
+   "p90_min": 5837.2,
    "work_median_min": 466.5,
-   "work_mean_min": 694.2,
-   "within_4h_pct": 26.5,
+   "work_mean_min": 685.8,
+   "within_4h_pct": 27.1,
    "fastest_min": 7.8,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 134,
+  "n": 136,
   "median_min": 576.4,
-  "mean_min": 1677.0,
+  "mean_min": 1657.8,
   "work_median_min": 369.3,
-  "within_4h_pct": 35.8
+  "within_4h_pct": 36.0
  },
  "pending": [
   {
@@ -94,6 +94,21 @@
    "thread_id": "1a13daca9021e039",
    "case": "金星文創《一村喜事》× Rio（待確認場次與訪談配合）",
    "inbound_at": "2026-10-15T05:08:51Z"
+  },
+  {
+   "thread_id": "1a0f0f2cc2e9bb35",
+   "case": "SIMBA 好瓶 × Leo（品牌要求調整腳本故事主軸，待我方提供新版）",
+   "inbound_at": "2026-10-21T06:26:18Z"
+  },
+  {
+   "thread_id": "19fc720deb272941",
+   "case": "Lenor 蘭諾 × Rio（對方已回簽委刊單，待我方確認）",
+   "inbound_at": "2026-10-21T08:57:39Z"
+  },
+  {
+   "thread_id": "1a0fba1751476d1f",
+   "case": "NIKE Pegasus × 梅伯（腳本初稿 10/22 18:00 前需交付）",
+   "inbound_at": "2026-10-21T07:26:03Z"
   }
  ]
 }

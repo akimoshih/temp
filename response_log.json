@@ -1536,6 +1536,54 @@
       "inbound_at": "2026-10-09T13:33:00Z",
       "replied_at": "2026-10-20T07:28:56Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a0fba1751476d1f",
+      "responder": "oliver",
+      "case": "NIKE Pegasus × 梅伯（委刊單條款逐點回覆）",
+      "inbound_at": "2026-10-20T01:32:54Z",
+      "replied_at": "2026-10-20T11:55:42Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0fba1751476d1f",
+      "responder": "oliver",
+      "case": "NIKE Pegasus × 梅伯（腳本時程與第二雙鞋尺寸）",
+      "inbound_at": "2026-10-21T03:24:51Z",
+      "replied_at": "2026-10-21T05:15:02Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a15c6254d4e4660",
+      "responder": "oliver",
+      "case": "DJI 大疆 × Andrew（詢問主打產品）",
+      "inbound_at": "2026-10-15T22:29:00Z",
+      "replied_at": "2026-10-21T02:54:34Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a15d92243249204",
+      "responder": "oliver",
+      "case": "台北 101 社群聯盟夥伴 × Rio（詢問合作條件）",
+      "inbound_at": "2026-10-19T01:08:00Z",
+      "replied_at": "2026-10-21T08:26:22Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a15da3d78c9339a",
+      "responder": "oliver",
+      "case": "foodpanda × 大苑子 × 甄嬛傳 × Rio（詢問現場安排與時段）",
+      "inbound_at": "2026-10-19T03:02:00Z",
+      "replied_at": "2026-10-21T08:45:42Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a15e08ba8cf1330",
+      "responder": "oliver",
+      "case": "Whoscall × Draft Land × 梅伯（提供報價）",
+      "inbound_at": "2026-10-20T10:39:00Z",
+      "replied_at": "2026-10-21T10:35:55Z",
+      "confident": false
     }
   ],
   "pending": [
@@ -1598,6 +1646,21 @@
       "thread_id": "1a13daca9021e039",
       "case": "金星文創《一村喜事》× Rio（待確認場次與訪談配合）",
       "inbound_at": "2026-10-15T05:08:51Z"
+    },
+    {
+      "thread_id": "1a0f0f2cc2e9bb35",
+      "case": "SIMBA 好瓶 × Leo（品牌要求調整腳本故事主軸，待我方提供新版）",
+      "inbound_at": "2026-10-21T06:26:18Z"
+    },
+    {
+      "thread_id": "19fc720deb272941",
+      "case": "Lenor 蘭諾 × Rio（對方已回簽委刊單，待我方確認）",
+      "inbound_at": "2026-10-21T08:57:39Z"
+    },
+    {
+      "thread_id": "1a0fba1751476d1f",
+      "case": "NIKE Pegasus × 梅伯（腳本初稿 10/22 18:00 前需交付）",
+      "inbound_at": "2026-10-21T07:26:03Z"
     }
   ]
 }
