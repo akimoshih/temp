@@ -1085,5 +1085,22 @@
       "draft_id": "r6308108172091247836",
       "replied_to_message_id": "1a152bfa3c75e99f"
     }
+  },
+  {
+    "task_id": "T2026-0050",
+    "type": "報價回信",
+    "thread_id": "1a15d92243249204",
+    "case": "台北 101 社群聯盟夥伴（玩轉故宮 101）× Rio",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-10-22T03:12:00Z",
+    "note": "體驗與短影音以互惠進行，官方渠道上架與付費投廣另計授權費；三個月期授權費率與 Rio 個人半年授權費用價目表查無，已標【請確認】待人工補。",
+    "draft": {
+      "to": "sophie.wang@tfc101.com.tw",
+      "cc": "saleisha.hung@tfc101.com.tw, 005.vanguard@gmail.com, vanguardmedia001@gmail.com, rio@dcard.cc, akimo@dcard.cc, jasmine.wang@dcard.cc",
+      "subject": "Re: 台北101｜社群聯盟夥伴合作邀請｜玩轉故宮101體驗",
+      "draft_id": "r-1158091187822963659",
+      "replied_to_message_id": "1a16181a3269743c"
+    }
   }
 ]
