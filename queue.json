@@ -1119,5 +1119,22 @@
       "draft_id": "r-2827808007236646846",
       "replied_to_message_id": "1a162a069c89ad49"
     }
+  },
+  {
+    "task_id": "T2026-0052",
+    "type": "報價回信",
+    "thread_id": "1a15e08ba8cf1330",
+    "case": "Whoscall × Draft Land × 梅伯｜不含 Meta 廣告主權限的版本報價",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-10-22T11:15:00Z",
+    "note": "Gogolook Kelly 10/22 18:30 要求比較不含 Meta 廣告主權限 1 個月的整包報價，10/27(二) 前回覆。草稿列出版本 A 10,000(net)（原報價）與版本 B；版本 B 總價因原價為整包優惠價、無法由價目表直接推算，已標【請確認】，並附上梅伯投廣授權單項一個月 5,000(net) 供人工換算。",
+    "draft": {
+      "to": "kelly.chen@gogolook.com",
+      "cc": "marco.tsai@gogolook.com, elena.huang@gogolook.com, sharon.syue@gogolook.com, willy.lo@gogolook.com.tw, akimo@dcard.cc, jasmine.wang@dcard.cc",
+      "subject": "Re: 【合作邀請】Whoscall × Draft Land｜12/11「IT'S YOUR CALL 接下來，由你做主」創作者邀請",
+      "draft_id": "r-4038475849579758837",
+      "replied_to_message_id": "1a163299c52801c7"
+    }
   }
 ]
