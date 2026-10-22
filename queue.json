@@ -1102,5 +1102,22 @@
       "draft_id": "r-1158091187822963659",
       "replied_to_message_id": "1a16181a3269743c"
     }
+  },
+  {
+    "task_id": "T2026-0051",
+    "type": "報價回信",
+    "thread_id": "1a0fba1751476d1f",
+    "case": "NIKE Pegasus × 梅伯｜加購 Leo 限動曝光（凱曜網路）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-10-22T08:10:00Z",
+    "note": "凱曜 Eric 10/22 16:00 詢問 Leo 是否能為第二雙鞋做限動曝光或轉發。草稿提供 Leo 限動報價（靜態 20,000／動態 30,000 net），是否改以搭配第二雙鞋的互惠方式提供需人工決定，已標【請確認】。",
+    "draft": {
+      "to": "eric.tsai@emctaipei.com",
+      "cc": "poppy.hsieh@emctaipei.com, akimo@dcard.cc, jasmine.wang@dcard.cc",
+      "subject": "Re: [NIKE跑鞋]合作邀約_梅伯",
+      "draft_id": "r-2827808007236646846",
+      "replied_to_message_id": "1a162a069c89ad49"
+    }
   }
 ]
