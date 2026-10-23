@@ -8,7 +8,7 @@
     "meta": "node render.mjs meta",
     "video": "node render.mjs video 30",
     "audio": "python3 audio.py",
-    "mux": "ffmpeg -y -i out/video.mp4 -i out/audio.wav -c:v copy -c:a aac -b:a 192k -shortest dock-promo-30s.mp4",
+    "mux": "ffmpeg -y -i out/video.mp4 -i out/audio.wav -c:v libx264 -preset slow -crf 21 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest -movflags +faststart dock-promo-30s.mp4",
     "build": "npm run meta && npm run video && npm run audio && npm run mux"
   },
   "dependencies": {
