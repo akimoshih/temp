@@ -78,8 +78,8 @@ html,body{margin:0;background:#000}
 .hk .zh{font-family:'Archivo Black','Inter';font-weight:400;line-height:1.02;letter-spacing:-.02em;color:var(--blk)}
 .hk .enl{font:700 42px/1 'Space Grotesk';color:var(--blk);margin-top:10px;letter-spacing:.01em}
 .ch{display:inline-block}
-#hk2 .slab{display:inline-block;background:var(--blk);color:var(--lime);padding:14px 38px 24px 30px}
-#hk3 .zh .trash{color:var(--pink);-webkit-text-stroke:7px var(--blk);paint-order:stroke fill;text-shadow:12px 12px 0 var(--blk)}
+.hk .slab{display:inline-block;background:var(--blk);color:var(--lime);padding:14px 38px 24px 30px}
+.hk .zh .trash{color:var(--pink);-webkit-text-stroke:7px var(--blk);paint-order:stroke fill;text-shadow:12px 12px 0 var(--blk)}
 .fly{position:absolute;width:46px;height:46px;margin:-23px 0 0 -23px}
 .xmark{position:absolute;width:90px;height:90px;margin:-45px 0 0 -45px}
 .bigcur{position:absolute;width:150px;height:240px;transform-origin:0 0}
@@ -279,14 +279,14 @@ html,body{margin:0;background:#000}
   <section class="scene" id="hook">
     <div id="hookIn" class="abs" style="inset:0">
       <div class="halftone"></div>
-      <div class="hk" id="hk1" style="top:92px;left:110px">
-        <div class="zh boil" style="font-size:196px">Can't edit</div>
+      <div class="hk" id="hk1" style="top:122px;left:110px">
+        <div class="zh boil" style="font-size:190px">Your AI deck</div>
       </div>
-      <div class="hk" id="hk2" style="top:350px;left:470px">
-        <div class="zh" style="font-size:150px"><span class="slab boil">your AI deck?</span></div>
+      <div class="hk" id="hk2" style="top:360px;left:90px">
+        <div class="zh" style="font-size:240px"><span class="boil">is </span><span class="trash boil">GARBAGE</span></div>
       </div>
-      <div class="hk" id="hk3" style="top:618px;left:90px">
-        <div class="zh" style="font-size:210px"><span class="boil">It's </span><span class="trash boil">GARBAGE.</span></div>
+      <div class="hk" id="hk3" style="top:690px;left:300px">
+        <div class="zh" style="font-size:118px"><span class="slab boil">if you can't edit it.</span></div>
       </div>
       <div id="hkX"></div>
       <svg class="bigcur" id="hkCur" viewBox="-6 -6 84 134"><path d="M0 0 L0 100 L24 78 L40 116 L58 108 L42 72 L74 72 Z" fill="#0B0B0B" stroke="#fff" stroke-width="5" stroke-linejoin="round"/></svg>
@@ -404,7 +404,7 @@ html,body{margin:0;background:#000}
     <div id="wipe"></div>
     <div id="endIn">
       <div id="ring"></div>
-      <div id="slogan"><span class="m"><span id="sg1">The presentation</span></span> <span class="m"><span id="sg2">lifesaver.</span></span></div>
+      <div id="slogan"><span class="m"><span id="sg1">Your deck's</span></span> <span class="m"><span id="sg2">lifesaver.</span></span></div>
       <div id="endLogo">
         <svg id="endMark" viewBox="0 0 250 242">
           <g id="eCyan"><polygon points="3,36 33,40 33,202 3,205" fill="#00D2FF" stroke="#00D2FF" stroke-width="4" stroke-linejoin="round"/></g>
@@ -736,8 +736,8 @@ const P=T.pain, R=T.turn, A=T.app, G=T.grid, X=T.ex, L0=T.logo, K=T.kpi, E=T.end
 let tl;
 function buildTL(){
 // measure the fitted hook words before any tween transforms them
-const sr=$('#hk2 .slab').getBoundingClientRect(), gr=$('#hk3 .trash').getBoundingClientRect();
-[[sr.right-30,sr.top+4],[sr.right+40,sr.top+sr.height*.55],[sr.right-250,sr.bottom+18]].forEach(([x,y],i)=>{ hkX[i].style.left=x+'px'; hkX[i].style.top=y+'px'; });
+const sr=$('#hk3 .slab').getBoundingClientRect(), gr=$('#hk2 .trash').getBoundingClientRect();
+[[sr.right-60,sr.top-6],[sr.right-10,sr.top+sr.height*.6],[sr.right-300,sr.bottom+20]].forEach(([x,y],i)=>{ hkX[i].style.left=x+'px'; hkX[i].style.top=y+'px'; });
 HF=[(gr.left+gr.right)/2, (gr.top+gr.bottom)/2+10, gr.width*.55, gr.height*.42];
 tl=gsap.timeline({paused:true,defaults:{ease:'power3.out',duration:.4,lazy:false}});
 const show=(sel,a,b)=>{ tl.set(sel,{visibility:'visible'},a); if(b!=null) tl.set(sel,{visibility:'hidden'},b); };
@@ -745,16 +745,17 @@ show('#hook',0,T.pain); show('#pain',T.pain,T.turn); show('#turn',T.turn,T.app+.
 
 /* ---- HOOK ---- */
 tl.fromTo('#hk1',{scale:1.18,rotation:-3},{scale:1,rotation:0,duration:.35,ease:'back.out(3)'},0);
-tl.fromTo('#hk2',{opacity:0,scale:2.6,rotation:-12},{opacity:1,scale:1,rotation:-2.5,duration:.28,ease:'power4.in'},.5);
-tl.fromTo('#hkCur',{x:1500,y:1000,rotation:-10},{x:sr.right-200,y:sr.top+sr.height*.62,rotation:0,duration:.25,ease:'power2.out'},.62);
-[.9,1.04,1.18].forEach((t0,i)=>{ tl.fromTo('#hkCur',{scale:.86},{scale:1,duration:.12,ease:'back.out(4)'},t0);
+// "Your AI deck" → "is GARBAGE" (the big slam) → "if you can't edit it." (clicked to no avail)
+tl.fromTo('#hk2',{opacity:0,scale:3.2,rotation:8},{opacity:1,scale:1,rotation:0,duration:.28,ease:'power4.in'},.45);
+tl.fromTo('#hk3',{opacity:0,scale:2.6,rotation:-12},{opacity:1,scale:1,rotation:-2.5,duration:.26,ease:'power4.in'},1.3);
+tl.fromTo('#hkCur',{x:1500,y:1150,rotation:-10},{x:sr.right-220,y:sr.top+sr.height*.62,rotation:0,duration:.22,ease:'power2.out'},1.5);
+[1.7,1.86,2.02].forEach((t0,i)=>{ tl.fromTo('#hkCur',{scale:.86},{scale:1,duration:.12,ease:'back.out(4)'},t0);
   tl.fromTo(hkX[i],{scale:0,rotation:-60,opacity:1},{scale:1,rotation:0,duration:.18,ease:'back.out(3)'},t0); });
-tl.to('#hkCur',{x:1700,y:1150,rotation:20,duration:.3,ease:'power2.in'},1.36);
-tl.to(hkX,{scale:0,duration:.15,ease:'power2.in',stagger:.03},1.4);
-tl.fromTo('#hk3',{opacity:0,scale:3.2,rotation:8},{opacity:1,scale:1,rotation:0,duration:.26,ease:'power4.in'},1.38);
-tl.set('#hkFlies',{opacity:0},0); tl.set('#hkFlies',{opacity:1},1.7);
-tl.set('#hkCur',{opacity:0},0); tl.set('#hkCur',{opacity:1},.62);
-tl.to(['#hk1','#hk2'],{x:-40,duration:1.2,ease:'none'},1.6);
+tl.to('#hkCur',{x:1750,y:1250,rotation:20,duration:.3,ease:'power2.in'},2.3);
+tl.to(hkX,{scale:0,duration:.15,ease:'power2.in',stagger:.03},2.34);
+tl.set('#hkFlies',{opacity:0},0); tl.set('#hkFlies',{opacity:1},.8);
+tl.set('#hkCur',{opacity:0},0); tl.set('#hkCur',{opacity:1},1.5);
+tl.to(['#hk1','#hk2'],{x:-40,duration:2,ease:'none'},.8);
 // hard glitch exit
 tl.fromTo('#hookIn',{skewX:0},{skewX:-25,x:-300,duration:.08,ease:'none'},2.84);
 
@@ -917,7 +918,7 @@ function updSubs(t){
 /* =====================================================================
    procedural per-frame updates
    ===================================================================== */
-const SHAKES=[[.5,16,.35],[1.38,34,.5],[P+.92,9,.2],[P+1.1,9,.2],[P+1.27,9,.2],[P+1.42,9,.2],[P+2.32,18,.4],[P+3.33,14,.35],[P+4.86,30,.45]];
+const SHAKES=[[.45,34,.5],[1.3,16,.35],[P+.92,9,.2],[P+1.1,9,.2],[P+1.27,9,.2],[P+1.42,9,.2],[P+2.32,18,.4],[P+3.33,14,.35],[P+4.86,30,.45]];
 function shake(t,seed){ let x=0,y=0; for(const [t0,a,d] of SHAKES){ if(t>=t0&&t<t0+d){ const k=a*Math.pow(1-(t-t0)/d,2); const f=Math.floor(t*30); x+=k*(hash(f*7+seed)*2-1); y+=k*(hash(f*13+seed+1)*2-1);} } return [x,y]; }
 function flyPos(t,i,cx,cy,rx,ry){ const s=i*1.7+.3; const x=cx+rx*Math.sin(t*(2.1+i*.37)+s)+22*wob(t,i); const y=cy+ry*Math.sin(t*(3.3+i*.29)+s*2)+18*wob(t,i+9); return [x,y]; }
 function placeFlies(arr,t,cx,cy,rx,ry){
@@ -1015,7 +1016,8 @@ function update(t){
    public API for the renderer
    ===================================================================== */
 window.DURATION=30;
-window.META={T, counts:grid.map(g=>g.sl._els.length), ptxtLen:ptxtFull.length, ops:OPS_TOTAL};
+window.META={T, counts:grid.map(g=>g.sl._els.length), ptxtLen:ptxtFull.length, ops:OPS_TOTAL,
+  hook:{big:[.45,.73], slab:[1.3,1.56], clicks:[1.7,1.86,2.02], flies:.8}};   // [whoosh start, landing] for audio.py
 window.seek=(t)=>{ tl.seek(t,false); update(t); updSubs(t); };
 window.ready=(async()=>{
   // warm every glyph used anywhere (typing / swapped text), then wait for fonts
@@ -1025,7 +1027,7 @@ window.ready=(async()=>{
   await document.fonts.ready;
   await new Promise(r=>setTimeout(r,200));
   await document.fonts.ready;
-  [['#hk1',1560],['#hk2',1400],['#hk3',1740]].forEach(([sel,maxW])=>{ const z=$(sel+' .zh'); const w=$(sel).getBoundingClientRect().width;
+  [['#hk1',1560],['#hk2',1740],['#hk3',1540]].forEach(([sel,maxW])=>{ const z=$(sel+' .zh'); const w=$(sel).getBoundingClientRect().width;
     if(w>maxW) z.style.fontSize=(parseFloat(getComputedStyle(z).fontSize)*maxW/w)+'px'; });
   buildTL();
   for(let t=0;t<30;t+=.25) window.seek(t);

@@ -296,17 +296,19 @@ P, Rr, A, G, X, L0, K, E = T['pain'], T['turn'], T['app'], T['grid'], T['ex'], T
 g0 = T['gen']
 
 # ---- HOOK (0 – 2.9): slams, error bonks, flies
+# a page may publish its own hook beats in META['hook'] ([whoosh start, landing] per slam)
+H = META.get('hook', {'slab': [.5, .78], 'clicks': [.9, 1.04, 1.18], 'big': [1.38, 1.64], 'flies': 1.7})
 add(impact(55, 1.0, 3.0), 0.0, .7)
 add(boing(.5, 140), 0.02, .35)
-add(whoosh(.3, 400, 6000, .9), 0.5, .35)
-add(impact(70, .8, 3.5), 0.78, .6)
-for i, t0 in enumerate((.9, 1.04, 1.18)):
+add(whoosh(.3, 400, 6000, .9), H['slab'][0], .35)
+add(impact(70, .8, 3.5), H['slab'][1], .6)
+for i, t0 in enumerate(H['clicks']):
     add(buzz_err(190 - 18 * i), t0, .55, -.2 + .2 * i)
-add(whoosh(.28, 300, 8000, .92), 1.38, .45)
-add(impact(45, 1.6, 4.0), 1.64, .75)
-add(crash(1.4), 1.64, .5)
+add(whoosh(.28, 300, 8000, .92), H['big'][0], .45)
+add(impact(45, 1.6, 4.0), H['big'][1], .75)
+add(crash(1.4), H['big'][1], .5)
 for i in range(3):
-    add(fly(1.15, i), 1.7, .5, [-.6, .1, .7][i])
+    add(fly(round(2.85 - H['flies'], 4), i), H['flies'], .5, [-.6, .1, .7][i])
 add(glitch(.1, 1), 2.82, .9)
 
 # ---- PAIN (2.9 – 8.1): wonky carnival loop + cartoon SFX

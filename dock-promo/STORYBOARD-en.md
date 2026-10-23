@@ -8,7 +8,7 @@ English subtitles only, no voice-over; music and SFX are synthesized and timed t
 
 | Time | Beat | Picture | Subtitle |
 |---|---|---|---|
-| 0.0–2.9 | Hook | Lime background; giant type slams in: “Can't edit / your AI deck? / It's GARBAGE.” A huge cursor clicks the slab, and flies buzz around “GARBAGE” | (the hook type is the caption) |
+| 0.0–2.9 | Hook | Lime background; giant type slams in: “Your AI deck / is GARBAGE / if you can't edit it.” Flies buzz around “GARBAGE”, and a huge cursor clicks the last line to no avail | (the hook type is the caption) |
 | 2.9–4.4 | Pain | Image viewer “Pitch_FINAL_final_v12_REALLY-FINAL.png” on a transparency checkerboard. The client pings at 2:47 AM: “Can you make the logo bigger?” One click selects the whole slide as a single image | 2 AM. The client just wants a bigger logo… |
 | 4.4–6.0 | Pain | Dragging a corner stretches the whole picture like rubber, then it snaps back. The can grows googly eyes: “Stop clicking. I'm a PNG. Not a deck. Never was.” | But your AI gave you an image. Nothing's editable. |
 | 6.0–8.1 | Pain | “↻ Regenerate” flips through five wrong layouts while messages flood the screen (“Make it pop”, “BIGGER”, “Logo??”…). The window is crumpled into a trash can, then the screen shuts off like an old CRT | Regenerate? Now everything's different. |
@@ -19,7 +19,7 @@ English subtitles only, no voice-over; music and SFX are synthesized and timed t
 | 17.0–20.1 | Unpack | The cover explodes in 3D into Background / Shapes / Illustration / Text / Logo, with a counter for the 13 editable components | Then instantly unpacked into editable components. |
 | 20.1–22.8 | Unpack | The client asks for a bigger logo again. The logo is selected and resized by dragging a corner, and the client replies “Perfect. Ship it!” | Bigger logo? Just drag the corner. |
 | 22.8–26.0 | Unpack | KPI slide: 4.8% is retyped as 5.6%, then the bar chart is recolored from the properties panel | Edit text, colors, data — no regenerating. |
-| 26.0–30.0 | End card | White background: the Dock logo, “The presentation lifesaver.” and “AI decks you can actually edit.” | — |
+| 26.0–30.0 | End card | White background: the Dock logo, “Your deck's lifesaver.” and “AI decks you can actually edit.” | — |
 
 ## Sample deck: DAILY FIZZ × Good Day Creative (fictional brand and agency)
 
