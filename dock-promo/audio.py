@@ -1,17 +1,21 @@
 """Procedural soundtrack + SFX for the Dock promo, synced to the timeline in index.html.
 
-    python3 audio.py            -> out/audio.wav (48 kHz stereo, 30 s)
+    python3 audio.py                                  -> out/audio.wav (48 kHz stereo, 30 s)
+    python3 audio.py out/meta-en.json out/audio-en.wav  (international cut)
 
 Reads out/meta.json (written by `node render.mjs meta`) for scene times and element counts.
 """
 import json
+import sys
 import wave
 from pathlib import Path
 
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent
-META = json.loads((ROOT / 'out' / 'meta.json').read_text())
+META_PATH = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / 'out' / 'meta.json'
+OUT_PATH = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / 'out' / 'audio.wav'
+META = json.loads(META_PATH.read_text())
 T = META['T']
 SR = 48000
 DUR = 30.0
@@ -477,7 +481,7 @@ fade[-nf:] = np.linspace(1, 0, nf) ** 1.5
 mix *= fade[:, None]
 mix = np.tanh(mix * 1.1) / np.tanh(1.1)
 mix = mix / (np.max(np.abs(mix)) + 1e-9) * .89
-out = ROOT / 'out' / 'audio.wav'
+out = OUT_PATH
 with wave.open(str(out), 'wb') as w:
     w.setnchannels(2)
     w.setsampwidth(2)

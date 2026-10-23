@@ -9,9 +9,17 @@
     "video": "node render.mjs video 30",
     "audio": "python3 audio.py",
     "mux": "ffmpeg -y -i out/video.mp4 -i out/audio.wav -c:v libx264 -preset slow -crf 21 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest -movflags +faststart dock-promo-30s.mp4",
-    "build": "npm run meta && npm run video && npm run audio && npm run mux"
+    "build": "npm run meta && npm run video && npm run audio && npm run mux",
+    "preview:en": "PAGE=index-en.html TAG=en node render.mjs preview",
+    "meta:en": "PAGE=index-en.html TAG=en node render.mjs meta",
+    "video:en": "PAGE=index-en.html TAG=en node render.mjs video 30",
+    "audio:en": "python3 audio.py out/meta-en.json out/audio-en.wav",
+    "mux:en": "ffmpeg -y -i out/video-en.mp4 -i out/audio-en.wav -c:v libx264 -preset slow -crf 21 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest -movflags +faststart dock-promo-30s-en.mp4",
+    "build:en": "npm run meta:en && npm run video:en && npm run audio:en && npm run mux:en"
   },
   "dependencies": {
+    "@fontsource/archivo-black": "^5.1.0",
+    "@fontsource/inter": "^5.1.0",
     "@fontsource/jetbrains-mono": "^5.1.0",
     "@fontsource/noto-sans-tc": "^5.1.0",
     "@fontsource/noto-serif-tc": "^5.1.0",
