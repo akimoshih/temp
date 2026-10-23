@@ -3,6 +3,7 @@
 //   node render.mjs meta                  -> out/meta.json (scene times + counts for audio.py)
 //   node render.mjs video [fps]           -> out/video.mp4 (no audio)
 // PAGE=index-en.html TAG=en node render.mjs ...  renders another page; outputs get a "-en" suffix
+// PAGE=index-en-9x16.html TAG=en-9x16 ...     the 9:16 pages render at 1080x1920
 import http from 'node:http';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -29,7 +30,9 @@ await new Promise(r => server.listen(0, '127.0.0.1', r));
 const url = `http://127.0.0.1:${server.address().port}/${PAGE}`;
 
 const browser = await chromium.launch({ args: ['--font-render-hinting=none', '--disable-lcd-text'] });
-const page = await browser.newPage({ viewport: { width: 1920, height: 1080 }, deviceScaleFactor: 1 });
+// 16:9 pages are 1920x1080, 9:16 pages 1080x1920; #stage is screenshotted as an element, so the viewport only has to fit it
+const VIEW = PAGE.includes('9x16') ? { width: 1080, height: 1920 } : { width: 1920, height: 1080 };
+const page = await browser.newPage({ viewport: VIEW, deviceScaleFactor: 1 });
 page.on('console', m => { if (m.type() === 'error') console.error('[page]', m.text()); });
 page.on('pageerror', e => console.error('[pageerror]', e.message));
 await page.goto(url);

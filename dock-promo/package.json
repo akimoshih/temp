@@ -15,7 +15,16 @@
     "video:en": "PAGE=index-en.html TAG=en node render.mjs video 30",
     "audio:en": "python3 audio.py out/meta-en.json out/audio-en.wav",
     "mux:en": "ffmpeg -y -i out/video-en.mp4 -i out/audio-en.wav -c:v libx264 -preset slow -crf 21 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest -movflags +faststart dock-promo-30s-en.mp4",
-    "build:en": "npm run meta:en && npm run video:en && npm run audio:en && npm run mux:en"
+    "build:en": "npm run meta:en && npm run video:en && npm run audio:en && npm run mux:en",
+    "vertical": "python3 make_vertical.py",
+    "preview:9x16": "PAGE=index-9x16.html TAG=9x16 node render.mjs preview",
+    "preview:en:9x16": "PAGE=index-en-9x16.html TAG=en-9x16 node render.mjs preview",
+    "video:9x16": "PAGE=index-9x16.html TAG=9x16 node render.mjs video 30",
+    "video:en:9x16": "PAGE=index-en-9x16.html TAG=en-9x16 node render.mjs video 30",
+    "mux:9x16": "ffmpeg -y -i out/video-9x16.mp4 -i out/audio.wav -c:v libx264 -preset slow -crf 21 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest -movflags +faststart dock-promo-30s-9x16.mp4",
+    "mux:en:9x16": "ffmpeg -y -i out/video-en-9x16.mp4 -i out/audio-en.wav -c:v libx264 -preset slow -crf 21 -pix_fmt yuv420p -c:a aac -b:a 192k -shortest -movflags +faststart dock-promo-30s-en-9x16.mp4",
+    "build:9x16": "npm run vertical && npm run meta && npm run audio && npm run video:9x16 && npm run mux:9x16",
+    "build:en:9x16": "npm run vertical && npm run meta:en && npm run audio:en && npm run video:en:9x16 && npm run mux:en:9x16"
   },
   "dependencies": {
     "@fontsource/archivo-black": "^5.1.0",
