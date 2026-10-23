@@ -1,38 +1,38 @@
 {
- "updated": "2026-10-22",
+ "updated": "2026-10-23",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 136,
+ "sample_size": 140,
  "excluded_low_confidence": 62,
  "by_person": {
   "jasmine": {
-   "n": 51,
-   "median_min": 225.8,
-   "mean_min": 1124.1,
-   "p90_min": 4174.0,
-   "work_median_min": 216.1,
-   "work_mean_min": 432.4,
-   "within_4h_pct": 51.0,
+   "n": 52,
+   "median_min": 258.9,
+   "mean_min": 1132.3,
+   "p90_min": 4041.7,
+   "work_median_min": 216.7,
+   "work_mean_min": 437.7,
+   "within_4h_pct": 50.0,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 85,
-   "median_min": 1184.6,
-   "mean_min": 1977.9,
-   "p90_min": 5837.2,
-   "work_median_min": 466.5,
-   "work_mean_min": 685.8,
-   "within_4h_pct": 27.1,
+   "n": 88,
+   "median_min": 1102.7,
+   "mean_min": 1915.9,
+   "p90_min": 5836.1,
+   "work_median_min": 443.6,
+   "work_mean_min": 667.8,
+   "within_4h_pct": 28.4,
    "fastest_min": 7.8,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 136,
-  "median_min": 576.4,
-  "mean_min": 1657.8,
-  "work_median_min": 369.3,
-  "within_4h_pct": 36.0
+  "n": 140,
+  "median_min": 519.8,
+  "mean_min": 1624.9,
+  "work_median_min": 360.4,
+  "within_4h_pct": 36.4
  },
  "pending": [
   {
@@ -96,19 +96,34 @@
    "inbound_at": "2026-10-15T05:08:51Z"
   },
   {
-   "thread_id": "1a0f0f2cc2e9bb35",
-   "case": "SIMBA 好瓶 × Leo（品牌要求調整腳本故事主軸，待我方提供新版）",
-   "inbound_at": "2026-10-21T06:26:18Z"
-  },
-  {
    "thread_id": "19fc720deb272941",
    "case": "Lenor 蘭諾 × Rio（對方已回簽委刊單，待我方確認）",
    "inbound_at": "2026-10-21T08:57:39Z"
   },
   {
+   "thread_id": "1a15e08ba8cf1330",
+   "case": "Whoscall × Draft Land × 梅伯（草稿 T2026-0052 待人工補版本 B 價格，對方要 10/27 前回覆）",
+   "inbound_at": "2026-10-22T10:30:31Z"
+  },
+  {
+   "thread_id": "1a15d92243249204",
+   "case": "台北 101 社群聯盟夥伴 × Rio（草稿 T2026-0050 待人工補授權費率）",
+   "inbound_at": "2026-10-22T02:47:22Z"
+  },
+  {
+   "thread_id": "1a0d28f66f2bb6e1",
+   "case": "Panasonic 空清機 × Andrew（對方已回簽委刊單，待我方用印回傳）",
+   "inbound_at": "2026-10-22T02:07:54Z"
+  },
+  {
+   "thread_id": "1a1349135b52eee0",
+   "case": "Suntory VARON × Leo（待 10/28 客戶 Brief 後評估走期）",
+   "inbound_at": "2026-10-22T06:40:09Z"
+  },
+  {
    "thread_id": "1a0fba1751476d1f",
-   "case": "NIKE Pegasus × 梅伯（腳本初稿 10/22 18:00 前需交付）",
-   "inbound_at": "2026-10-21T07:26:03Z"
+   "case": "NIKE Pegasus × 梅伯（草稿 T2026-0051 待人工決定 Leo 限動互惠或收費；腳本初稿死線 10/22 18:00）",
+   "inbound_at": "2026-10-22T08:00:28Z"
   }
  ]
 }
