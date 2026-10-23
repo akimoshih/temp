@@ -1,0 +1,21 @@
+{
+  "name": "dock-promo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Dock 30s product promo video (HTML/GSAP animation rendered frame-by-frame with Playwright + ffmpeg)",
+  "scripts": {
+    "preview": "node render.mjs preview",
+    "meta": "node render.mjs meta",
+    "video": "node render.mjs video 30",
+    "audio": "python3 audio.py",
+    "mux": "ffmpeg -y -i out/video.mp4 -i out/audio.wav -c:v copy -c:a aac -b:a 192k -shortest dock-promo-30s.mp4",
+    "build": "npm run meta && npm run video && npm run audio && npm run mux"
+  },
+  "dependencies": {
+    "@fontsource/jetbrains-mono": "^5.1.0",
+    "@fontsource/noto-sans-tc": "^5.1.0",
+    "@fontsource/noto-serif-tc": "^5.1.0",
+    "@fontsource/space-grotesk": "^5.1.0",
+    "gsap": "^3.12.5"
+  }
+}
