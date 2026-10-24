@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 140,
- "excluded_low_confidence": 62,
+ "sample_size": 149,
+ "excluded_low_confidence": 63,
  "by_person": {
   "jasmine": {
    "n": 52,
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 88,
-   "median_min": 1102.7,
-   "mean_min": 1915.9,
-   "p90_min": 5836.1,
-   "work_median_min": 443.6,
-   "work_mean_min": 667.8,
-   "within_4h_pct": 28.4,
-   "fastest_min": 7.8,
+   "n": 97,
+   "median_min": 1249.5,
+   "mean_min": 2005.2,
+   "p90_min": 5836.5,
+   "work_median_min": 502.6,
+   "work_mean_min": 703.8,
+   "within_4h_pct": 26.8,
+   "fastest_min": 6.1,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 140,
-  "median_min": 519.8,
-  "mean_min": 1624.9,
-  "work_median_min": 360.4,
-  "within_4h_pct": 36.4
+  "n": 149,
+  "median_min": 832.1,
+  "mean_min": 1700.6,
+  "work_median_min": 381.7,
+  "within_4h_pct": 34.9
  },
  "pending": [
   {
@@ -86,11 +86,6 @@
    "inbound_at": "2026-10-14T08:25:55Z"
   },
   {
-   "thread_id": "1a1387b95e66d982",
-   "case": "UNIQLO PUFFTECH × Rio（委刊單草稿 T2026-0048 待人工夾帶 PDF 後寄出）",
-   "inbound_at": "2026-10-16T11:07:43Z"
-  },
-  {
    "thread_id": "1a13daca9021e039",
    "case": "金星文創《一村喜事》× Rio（待確認場次與訪談配合）",
    "inbound_at": "2026-10-15T05:08:51Z"
@@ -99,16 +94,6 @@
    "thread_id": "19fc720deb272941",
    "case": "Lenor 蘭諾 × Rio（對方已回簽委刊單，待我方確認）",
    "inbound_at": "2026-10-21T08:57:39Z"
-  },
-  {
-   "thread_id": "1a15e08ba8cf1330",
-   "case": "Whoscall × Draft Land × 梅伯（草稿 T2026-0052 待人工補版本 B 價格，對方要 10/27 前回覆）",
-   "inbound_at": "2026-10-22T10:30:31Z"
-  },
-  {
-   "thread_id": "1a15d92243249204",
-   "case": "台北 101 社群聯盟夥伴 × Rio（草稿 T2026-0050 待人工補授權費率）",
-   "inbound_at": "2026-10-22T02:47:22Z"
   },
   {
    "thread_id": "1a0d28f66f2bb6e1",
@@ -122,8 +107,8 @@
   },
   {
    "thread_id": "1a0fba1751476d1f",
-   "case": "NIKE Pegasus × 梅伯（草稿 T2026-0051 待人工決定 Leo 限動互惠或收費；腳本初稿死線 10/22 18:00）",
-   "inbound_at": "2026-10-22T08:00:28Z"
+   "case": "NIKE Pegasus × 梅伯（凱曜 Eric 10/23 提供客戶腳本調整建議，待我方確認）",
+   "inbound_at": "2026-10-23T06:27:43Z"
   }
  ]
 }

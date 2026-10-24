@@ -1624,6 +1624,78 @@
       "inbound_at": "2026-10-16T11:07:43Z",
       "replied_at": "2026-10-22T03:05:21Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a1688be76e9fa80",
+      "responder": "oliver",
+      "case": "瓦城集團歲末歡聚 × 梅伯（請求延至下週二回覆檔期）",
+      "inbound_at": "2026-10-21T09:50:00Z",
+      "replied_at": "2026-10-23T11:35:24Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1686a3f5df08ff",
+      "responder": "oliver",
+      "case": "KlassiC. 9 週年慶 × Rio（詢問拍攝形式）",
+      "inbound_at": "2026-10-19T09:50:00Z",
+      "replied_at": "2026-10-23T10:58:38Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a166bd3c77aec2e",
+      "responder": "oliver",
+      "case": "INNISFREE Holiday Set × YY（報價 $65,000）",
+      "inbound_at": "2026-10-22T02:39:00Z",
+      "replied_at": "2026-10-23T03:10:01Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a166b62e4222d3a",
+      "responder": "oliver",
+      "case": "沃爾司 輕植蛋白 × YY（YouTube 兩方案報價）",
+      "inbound_at": "2026-10-21T09:42:00Z",
+      "replied_at": "2026-10-23T03:01:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a15824d183f5b8a",
+      "responder": "oliver",
+      "case": "肯德基電影欣賞會 × YY（客戶成案通知、轉 LINE）",
+      "inbound_at": "2026-10-23T03:22:00Z",
+      "replied_at": "2026-10-23T03:28:05Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a15d92243249204",
+      "responder": "oliver",
+      "case": "台北 101 社群聯盟夥伴 × Rio（授權報價回覆）",
+      "inbound_at": "2026-10-22T02:47:22Z",
+      "replied_at": "2026-10-23T11:21:48Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a15e08ba8cf1330",
+      "responder": "oliver",
+      "case": "Whoscall × Draft Land × 梅伯（版本 B 報價 $95,000）",
+      "inbound_at": "2026-10-22T10:30:31Z",
+      "replied_at": "2026-10-23T03:23:46Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a153aeeb78f7700",
+      "responder": "jasmine",
+      "case": "逢甲大學主持達人培訓營 × Leo（選定 11/22 上午場並議未稅價）",
+      "inbound_at": "2026-10-21T06:56:00Z",
+      "replied_at": "2026-10-24T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a16891435c1f545",
+      "responder": "oliver",
+      "case": "e心通 eSIM 分潤合作（詢問單趟旅遊方案，成員待確認）",
+      "inbound_at": "2026-10-22T02:09:00Z",
+      "replied_at": "2026-10-23T11:41:16Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -1688,16 +1760,6 @@
       "inbound_at": "2026-10-21T08:57:39Z"
     },
     {
-      "thread_id": "1a15e08ba8cf1330",
-      "case": "Whoscall × Draft Land × 梅伯（草稿 T2026-0052 待人工補版本 B 價格，對方要 10/27 前回覆）",
-      "inbound_at": "2026-10-22T10:30:31Z"
-    },
-    {
-      "thread_id": "1a15d92243249204",
-      "case": "台北 101 社群聯盟夥伴 × Rio（草稿 T2026-0050 待人工補授權費率）",
-      "inbound_at": "2026-10-22T02:47:22Z"
-    },
-    {
       "thread_id": "1a0d28f66f2bb6e1",
       "case": "Panasonic 空清機 × Andrew（對方已回簽委刊單，待我方用印回傳）",
       "inbound_at": "2026-10-22T02:07:54Z"
@@ -1709,8 +1771,8 @@
     },
     {
       "thread_id": "1a0fba1751476d1f",
-      "case": "NIKE Pegasus × 梅伯（草稿 T2026-0051 待人工決定 Leo 限動互惠或收費；腳本初稿死線 10/22 18:00）",
-      "inbound_at": "2026-10-22T08:00:28Z"
+      "case": "NIKE Pegasus × 梅伯（凱曜 Eric 10/23 提供客戶腳本調整建議，待我方確認）",
+      "inbound_at": "2026-10-23T06:27:43Z"
     }
   ]
 }

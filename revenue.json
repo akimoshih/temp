@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "updated": "2026-10-23",
+ "updated": "2026-10-24",
  "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用「成員收入」兩欄，總覽頁用「成交價(未稅)」欄（欄位以標題文字定位）",
  "by_member": {
   "rio": [
@@ -625,6 +625,48 @@
     "start": "2026-10-18",
     "o": 25000.0,
     "p": 5000.0
+   },
+   {
+    "name": "肯德基_社群推廣合作_YY",
+    "item": "Reels",
+    "start": null,
+    "o": 25000.0,
+    "p": 5000.0
+   },
+   {
+    "name": "肯德基_社群推廣合作_YY",
+    "item": "IG 限動",
+    "start": null,
+    "o": 6000.0,
+    "p": 1200.0
+   },
+   {
+    "name": "肯德基_社群推廣合作_YY",
+    "item": "其他",
+    "start": null,
+    "o": 9000.0,
+    "p": 1800.0
+   },
+   {
+    "name": "KATE NANA 聯名_社群推廣合作_YY",
+    "item": "Reels",
+    "start": null,
+    "o": 29000.0,
+    "p": 5800.0
+   },
+   {
+    "name": "KATE NANA 聯名_社群推廣合作_YY",
+    "item": "IG 限動",
+    "start": null,
+    "o": 6000.0,
+    "p": 1200.0
+   },
+   {
+    "name": "KATE NANA 聯名_社群推廣合作_YY",
+    "item": "投廣",
+    "start": null,
+    "o": 4000.0,
+    "p": 800.0
    }
   ],
   "meber": [
@@ -2381,6 +2423,42 @@
    "member_key": "rio",
    "start": "2026-10-28",
    "j": 50000.0
+  },
+  {
+   "member_raw": "YY",
+   "member_key": "yy",
+   "start": null,
+   "j": 50000.0
+  },
+  {
+   "member_raw": "YY",
+   "member_key": "yy",
+   "start": null,
+   "j": 12000.0
+  },
+  {
+   "member_raw": "YY",
+   "member_key": "yy",
+   "start": null,
+   "j": 18000.0
+  },
+  {
+   "member_raw": "YY",
+   "member_key": "yy",
+   "start": null,
+   "j": 58000.0
+  },
+  {
+   "member_raw": "YY",
+   "member_key": "yy",
+   "start": null,
+   "j": 12000.0
+  },
+  {
+   "member_raw": "YY",
+   "member_key": "yy",
+   "start": null,
+   "j": 8000.0
   }
  ]
 }
