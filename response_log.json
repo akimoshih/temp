@@ -1696,6 +1696,38 @@
       "inbound_at": "2026-10-22T02:09:00Z",
       "replied_at": "2026-10-23T11:41:16Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a17c1b59c035e3c",
+      "responder": "jasmine",
+      "case": "OLENS 2026 聖誕節檔 Reels × Ellie（報價 $105,000 含稅＋授權 $21,000）",
+      "inbound_at": "2026-10-23T09:13:00Z",
+      "replied_at": "2026-10-27T06:45:16Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a181efbdfb7eca5",
+      "responder": "jasmine",
+      "case": "Disney《歡迎光臨魔法秘境》× Ellie（報價 IG Story＋Threads $30,000 net）",
+      "inbound_at": "2026-10-27T09:08:00Z",
+      "replied_at": "2026-10-28T09:55:22Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a181f2fc7172aa0",
+      "responder": "jasmine",
+      "case": "BOTANIST 團購 × Ellie（婉拒，Ellie 無團購規劃）",
+      "inbound_at": "2026-10-22T09:51:00Z",
+      "replied_at": "2026-10-28T09:58:52Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0d28f66f2bb6e1",
+      "responder": "oliver",
+      "case": "Panasonic 空清機 × Andrew（寄出雙方用印委刊單）",
+      "inbound_at": "2026-10-22T02:07:54Z",
+      "replied_at": "2026-10-28T07:04:17Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -1760,19 +1792,14 @@
       "inbound_at": "2026-10-21T08:57:39Z"
     },
     {
-      "thread_id": "1a0d28f66f2bb6e1",
-      "case": "Panasonic 空清機 × Andrew（對方已回簽委刊單，待我方用印回傳）",
-      "inbound_at": "2026-10-22T02:07:54Z"
-    },
-    {
       "thread_id": "1a1349135b52eee0",
-      "case": "Suntory VARON × Leo（待 10/28 客戶 Brief 後評估走期）",
-      "inbound_at": "2026-10-22T06:40:09Z"
+      "case": "Suntory VARON × Leo（DAC 10/28 提供 Brief，待評估拍攝與走期）",
+      "inbound_at": "2026-10-28T07:03:00Z"
     },
     {
       "thread_id": "1a0fba1751476d1f",
-      "case": "NIKE Pegasus × 梅伯（凱曜 Eric 10/23 提供客戶腳本調整建議，待我方確認）",
-      "inbound_at": "2026-10-23T06:27:43Z"
+      "case": "NIKE Pegasus × 梅伯（凱曜 Eric 10/28 回傳客戶腳本意見，待我方確認）",
+      "inbound_at": "2026-10-28T04:24:54Z"
     }
   ]
 }
