@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-29",
+ "updated": "2026-10-30",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 153,
+ "sample_size": 156,
  "excluded_low_confidence": 63,
  "by_person": {
   "jasmine": {
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 98,
-   "median_min": 1304.0,
-   "mean_min": 2076.0,
-   "p90_min": 5885.7,
-   "work_median_min": 510.6,
-   "work_mean_min": 724.1,
-   "within_4h_pct": 26.5,
+   "n": 101,
+   "median_min": 1358.6,
+   "mean_min": 2075.5,
+   "p90_min": 5838.7,
+   "work_median_min": 524.2,
+   "work_mean_min": 732.7,
+   "within_4h_pct": 25.7,
    "fastest_min": 6.1,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 153,
-  "median_min": 949.0,
-  "mean_min": 1817.5,
-  "work_median_min": 389.1,
-  "within_4h_pct": 34.0
+  "n": 156,
+  "median_min": 992.7,
+  "mean_min": 1822.1,
+  "work_median_min": 404.1,
+  "within_4h_pct": 33.3
  },
  "pending": [
   {
@@ -101,9 +101,9 @@
    "inbound_at": "2026-10-28T07:03:00Z"
   },
   {
-   "thread_id": "1a0fba1751476d1f",
-   "case": "NIKE Pegasus × 梅伯（凱曜 Eric 10/28 回傳客戶腳本意見，待我方確認）",
-   "inbound_at": "2026-10-28T04:24:54Z"
+   "thread_id": "1a1387b95e66d982",
+   "case": "UNIQLO PUFFTECH × Rio（Good Inc. 10/29 對委刊單條款與權責劃分提出疑慮，待我方與法務回覆）",
+   "inbound_at": "2026-10-29T10:03:00Z"
   }
  ]
 }

@@ -1728,6 +1728,30 @@
       "inbound_at": "2026-10-22T02:07:54Z",
       "replied_at": "2026-10-28T07:04:17Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a18756429fcd8ad",
+      "responder": "oliver",
+      "case": "Philips 萬用鍋 歐in萬 PRO × Andrew（婉拒，年底拍攝檔期緊湊）",
+      "inbound_at": "2026-10-28T14:42:00Z",
+      "replied_at": "2026-10-29T11:05:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a16891435c1f545",
+      "responder": "oliver",
+      "case": "e心通 eSIM 分潤合作（方案留存，未成案；成員未指明）",
+      "inbound_at": "2026-10-27T02:26:00Z",
+      "replied_at": "2026-10-29T10:27:55Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0fba1751476d1f",
+      "responder": "oliver",
+      "case": "NIKE Pegasus × 梅伯（回傳雙方用印委刊單、確認收到鞋與腳本回饋）",
+      "inbound_at": "2026-10-28T04:24:54Z",
+      "replied_at": "2026-10-29T07:02:00Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -1797,9 +1821,9 @@
       "inbound_at": "2026-10-28T07:03:00Z"
     },
     {
-      "thread_id": "1a0fba1751476d1f",
-      "case": "NIKE Pegasus × 梅伯（凱曜 Eric 10/28 回傳客戶腳本意見，待我方確認）",
-      "inbound_at": "2026-10-28T04:24:54Z"
+      "thread_id": "1a1387b95e66d982",
+      "case": "UNIQLO PUFFTECH × Rio（Good Inc. 10/29 對委刊單條款與權責劃分提出疑慮，待我方與法務回覆）",
+      "inbound_at": "2026-10-29T10:03:00Z"
     }
   ]
 }
