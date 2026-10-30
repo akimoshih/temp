@@ -1136,5 +1136,22 @@
       "draft_id": "r-4038475849579758837",
       "replied_to_message_id": "1a163299c52801c7"
     }
+  },
+  {
+    "task_id": "T2026-0053",
+    "type": "報價回信",
+    "thread_id": "1a12f85095c7b58b",
+    "case": "禾聯家電「Hi 美好生活」新品發表暨空調體驗 × Leo／Rio／主委｜單月授權報價",
+    "assignee": "jasmine",
+    "status": "草稿已建立",
+    "created": "2026-10-30T04:10:00Z",
+    "note": "翠克 Alina 10/30 11:34 回覆品牌有意願，因預算考量改詢問「Leo 個人」與「Leo 主發＋Rio＋主委」的廣告主授權／素材授權單月報價。草稿沿用 10/12 的合作內容報價（Leo $100,000(net)、三人 $170,000(net)），Leo 單月廣告主授權依價目表為 $25,000(net)；素材授權單月與三人合體兩項授權因原報價為整包優惠價、價目表無對應項目，已標【請確認】並附上 10/12 的 3 個月原報價供人工換算，總價亦待人工補上。",
+    "draft": {
+      "to": "alina@ad-tracker.com.tw",
+      "cc": "akimo@dcard.cc, oliver.zeng@dcard.cc",
+      "subject": "Re: 【合作邀約】翠克數位行銷_禾聯家電「Hi 美好生活」新品發表暨空調體驗",
+      "draft_id": "r-7683525412836246465",
+      "replied_to_message_id": "1a18adfbbbc2b809"
+    }
   }
 ]
