@@ -1153,5 +1153,22 @@
       "draft_id": "r-7683525412836246465",
       "replied_to_message_id": "1a18adfbbbc2b809"
     }
+  },
+  {
+    "task_id": "T2026-0054",
+    "type": "報價回信",
+    "thread_id": "1a18b48c3dff8207",
+    "case": "星萬達 2027 新年運動品牌 KOL 社群合作 × Andrew｜初步報價",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-10-30T07:20:00Z",
+    "note": "星萬達 Lesley 10/30 14:42 回覆品牌資訊仍需保密，請我方先依現有合作內容提供初步報價。草稿依價目表 Andrew 級距（50,001-80,000）報 IG 貼文 $40,000(net)＋IG 限動（靜態，帶連結）$12,000(net)＝$52,000(net)，並註明動態限動 $20,000(net)；Meta 廣告授權 2 週（IG＋FB）$8,000(net)。粉絲輪廓與近期貼文成效數據需人工補上，已標【請確認】；另在信中保留「品牌確定後再確認競品迴避」的但書。",
+    "draft": {
+      "to": "lesley@wonderstar.tw",
+      "cc": "akimo@dcard.cc, jasmine.wang@dcard.cc",
+      "subject": "Re: 【合作邀約洽詢】2027新年運動品牌KOL社群合作_安主Andrew",
+      "draft_id": "r-6336447654927675569",
+      "replied_to_message_id": "1a18b8c5f57a7ecb"
+    }
   }
 ]
