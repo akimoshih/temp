@@ -1,38 +1,38 @@
 {
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 156,
+ "sample_size": 165,
  "excluded_low_confidence": 63,
  "by_person": {
   "jasmine": {
-   "n": 55,
-   "median_min": 294.0,
-   "mean_min": 1356.9,
-   "p90_min": 4211.1,
-   "work_median_min": 291.9,
-   "work_mean_min": 488.5,
-   "within_4h_pct": 47.3,
+   "n": 56,
+   "median_min": 299.6,
+   "mean_min": 1339.7,
+   "p90_min": 4206.9,
+   "work_median_min": 293.0,
+   "work_mean_min": 486.8,
+   "within_4h_pct": 46.4,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 101,
-   "median_min": 1358.6,
-   "mean_min": 2075.5,
-   "p90_min": 5838.7,
-   "work_median_min": 524.2,
-   "work_mean_min": 732.7,
-   "within_4h_pct": 25.7,
+   "n": 109,
+   "median_min": 1364.2,
+   "mean_min": 2084.3,
+   "p90_min": 5835.7,
+   "work_median_min": 534.7,
+   "work_mean_min": 739.9,
+   "within_4h_pct": 24.8,
    "fastest_min": 6.1,
    "slowest_min": 10069.8
   }
  },
  "overall": {
-  "n": 156,
-  "median_min": 992.7,
-  "mean_min": 1822.1,
-  "work_median_min": 404.1,
-  "within_4h_pct": 33.3
+  "n": 165,
+  "median_min": 1016.7,
+  "mean_min": 1831.6,
+  "work_median_min": 409.5,
+  "within_4h_pct": 32.1
  },
  "pending": [
   {
@@ -66,11 +66,6 @@
    "inbound_at": "2026-09-15T06:50:48Z"
   },
   {
-   "thread_id": "1a014122591da47b",
-   "case": "德國漢高 Bref × YY（對方請補提供存摺影本）",
-   "inbound_at": "2026-09-23T14:53:43Z"
-  },
-  {
    "thread_id": "19f932ffdac502c7",
    "case": "MUJI 秋冬展示會 × Ellie（butybox 請填品牌回饋問卷，10/2 前）",
    "inbound_at": "2026-09-29T06:04:59Z"
@@ -101,9 +96,9 @@
    "inbound_at": "2026-10-28T07:03:00Z"
   },
   {
-   "thread_id": "1a1387b95e66d982",
-   "case": "UNIQLO PUFFTECH × Rio（Good Inc. 10/29 對委刊單條款與權責劃分提出疑慮，待我方與法務回覆）",
-   "inbound_at": "2026-10-29T10:03:00Z"
+   "thread_id": "1a18b48c3dff8207",
+   "case": "星萬達 2027 新年運動品牌 × Andrew（對方 10/30 請我方先提供初步報價，草稿 T2026-0054 待人工補數據寄出）",
+   "inbound_at": "2026-10-30T06:42:47Z"
   }
  ]
 }

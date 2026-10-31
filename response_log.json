@@ -1752,6 +1752,78 @@
       "inbound_at": "2026-10-28T04:24:54Z",
       "replied_at": "2026-10-29T07:02:00Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a12f85095c7b58b",
+      "responder": "jasmine",
+      "case": "禾聯家電新品發表暨空調體驗 × Leo／Rio／主委（單月授權報價）",
+      "inbound_at": "2026-10-30T03:34:28Z",
+      "replied_at": "2026-10-30T10:07:17Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1387b95e66d982",
+      "responder": "oliver",
+      "case": "UNIQLO PUFFTECH × Rio（回應委刊單條款疑慮並彙整 Brief）",
+      "inbound_at": "2026-10-29T10:03:00Z",
+      "replied_at": "2026-10-30T02:12:18Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a18a8c1e61206e2",
+      "responder": "oliver",
+      "case": "UNIQLO FLEECE 系列 × Rio（兩案分項報價與組合價）",
+      "inbound_at": "2026-10-27T03:14:00Z",
+      "replied_at": "2026-10-30T02:02:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a18aac3dfc6e002",
+      "responder": "oliver",
+      "case": "WOORI 加拿大遊學體驗 × Rio（報價 $220,000(net)＋授權 $25,000(net)）",
+      "inbound_at": "2026-10-27T09:45:00Z",
+      "replied_at": "2026-10-30T02:37:48Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a18b5a6a37673f0",
+      "responder": "oliver",
+      "case": "Disney《歡迎光臨魔法秘境》特映會 × YY（IG Story $20,000(net)）",
+      "inbound_at": "2026-10-28T10:26:00Z",
+      "replied_at": "2026-10-30T05:48:04Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a18b35c7bd95855",
+      "responder": "oliver",
+      "case": "Audi RS 5 上市發表會出席 × Andrew（填妥表單並詢問現場拍攝）",
+      "inbound_at": "2026-10-29T05:44:00Z",
+      "replied_at": "2026-10-30T05:08:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a18b48c3dff8207",
+      "responder": "oliver",
+      "case": "星萬達 2027 新年運動品牌 × Andrew（先詢問品牌以確認競品）",
+      "inbound_at": "2026-10-29T06:56:00Z",
+      "replied_at": "2026-10-30T05:29:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a18ca688e669aa1",
+      "responder": "oliver",
+      "case": "Advil 安舒疼捷運主題車廂 × Rio（先釐清拍攝許可／指定畫面／排競）",
+      "inbound_at": "2026-10-28T11:51:00Z",
+      "replied_at": "2026-10-30T11:50:49Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a166bd3c77aec2e",
+      "responder": "oliver",
+      "case": "INNISFREE 牛奶水 Holiday Set × YY（確認成案 8 萬未稅、12/3 上線並索取委刊單資料）",
+      "inbound_at": "2026-10-30T07:04:14Z",
+      "replied_at": "2026-10-30T10:39:41Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -1786,11 +1858,6 @@
       "inbound_at": "2026-09-15T06:50:48Z"
     },
     {
-      "thread_id": "1a014122591da47b",
-      "case": "德國漢高 Bref × YY（對方請補提供存摺影本）",
-      "inbound_at": "2026-09-23T14:53:43Z"
-    },
-    {
       "thread_id": "19f932ffdac502c7",
       "case": "MUJI 秋冬展示會 × Ellie（butybox 請填品牌回饋問卷，10/2 前）",
       "inbound_at": "2026-09-29T06:04:59Z"
@@ -1821,9 +1888,9 @@
       "inbound_at": "2026-10-28T07:03:00Z"
     },
     {
-      "thread_id": "1a1387b95e66d982",
-      "case": "UNIQLO PUFFTECH × Rio（Good Inc. 10/29 對委刊單條款與權責劃分提出疑慮，待我方與法務回覆）",
-      "inbound_at": "2026-10-29T10:03:00Z"
+      "thread_id": "1a18b48c3dff8207",
+      "case": "星萬達 2027 新年運動品牌 × Andrew（對方 10/30 請我方先提供初步報價，草稿 T2026-0054 待人工補數據寄出）",
+      "inbound_at": "2026-10-30T06:42:47Z"
     }
   ]
 }
