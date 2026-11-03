@@ -1824,6 +1824,30 @@
       "inbound_at": "2026-10-30T07:04:14Z",
       "replied_at": "2026-10-30T10:39:41Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a19c5c232d0ff9b",
+      "responder": "oliver",
+      "case": "Philips 萬用鍋 歐in萬 PRO × YY（IG+FB $95,000／單 IG $80,000(net) 等分項報價）",
+      "inbound_at": "2026-10-28T14:38:00Z",
+      "replied_at": "2026-11-02T13:03:27Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a19c63b7a7145e8",
+      "responder": "oliver",
+      "case": "臺北市體育局射擊選手生涯論壇 × YY（詢問改期與出席費區間）",
+      "inbound_at": "2026-10-29T13:57:00Z",
+      "replied_at": "2026-11-02T13:11:45Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1387b95e66d982",
+      "responder": "oliver",
+      "case": "UNIQLO PUFFTECH × Rio（通話後確認 11/2–11/8 時程與補拍衍生費用）",
+      "inbound_at": "2026-11-02T03:11:12Z",
+      "replied_at": "2026-11-02T07:28:28Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -1891,6 +1915,16 @@
       "thread_id": "1a18b48c3dff8207",
       "case": "星萬達 2027 新年運動品牌 × Andrew（對方 10/30 請我方先提供初步報價，草稿 T2026-0054 待人工補數據寄出）",
       "inbound_at": "2026-10-30T06:42:47Z"
+    },
+    {
+      "thread_id": "1a19b45da35f88fd",
+      "case": "Mastercard 星展 eco 永續卡 × Rio（爵嘉 11/02 請報價，草稿 T2026-0055 待人工補含稅金額後寄出）",
+      "inbound_at": "2026-11-02T07:59:54Z"
+    },
+    {
+      "thread_id": "1a166bd3c77aec2e",
+      "case": "INNISFREE 牛奶水 Holiday Set × YY（AnyMind 11/02 提供用印資料，委刊單草稿 T2026-0056 待夾帶 PDF 寄出）",
+      "inbound_at": "2026-11-02T07:12:16Z"
     }
   ]
 }
