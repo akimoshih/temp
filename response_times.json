@@ -1,8 +1,8 @@
 {
- "updated": "2026-10-31",
+ "updated": "2026-11-04",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 165,
- "excluded_low_confidence": 63,
+ "sample_size": 178,
+ "excluded_low_confidence": 64,
  "by_person": {
   "jasmine": {
    "n": 56,
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 109,
-   "median_min": 1364.2,
-   "mean_min": 2084.3,
-   "p90_min": 5835.7,
-   "work_median_min": 534.7,
-   "work_mean_min": 739.9,
-   "within_4h_pct": 24.8,
+   "n": 122,
+   "median_min": 1418.9,
+   "mean_min": 2675.9,
+   "p90_min": 8052.4,
+   "work_median_min": 565.5,
+   "work_mean_min": 886.3,
+   "within_4h_pct": 22.1,
    "fastest_min": 6.1,
-   "slowest_min": 10069.8
+   "slowest_min": 12746.1
   }
  },
  "overall": {
-  "n": 165,
-  "median_min": 1016.7,
-  "mean_min": 1831.6,
-  "work_median_min": 409.5,
-  "within_4h_pct": 32.1
+  "n": 178,
+  "median_min": 1236.2,
+  "mean_min": 2255.5,
+  "work_median_min": 466.2,
+  "within_4h_pct": 29.8
  },
  "pending": [
   {
@@ -96,9 +96,19 @@
    "inbound_at": "2026-10-28T07:03:00Z"
   },
   {
-   "thread_id": "1a18b48c3dff8207",
-   "case": "星萬達 2027 新年運動品牌 × Andrew（對方 10/30 請我方先提供初步報價，草稿 T2026-0054 待人工補數據寄出）",
-   "inbound_at": "2026-10-30T06:42:47Z"
+   "thread_id": "1a19b45da35f88fd",
+   "case": "Mastercard 星展 eco 永續卡 × Rio（爵嘉 11/02 請報價，草稿 T2026-0055 待人工補含稅金額後寄出）",
+   "inbound_at": "2026-11-02T07:59:54Z"
+  },
+  {
+   "thread_id": "1a18aac3dfc6e002",
+   "case": "WOORI × Rio（對方提出 NT$180,000(net) 並加 1 則 IG 貼文，待我方讓價決策）",
+   "inbound_at": "2026-11-03T04:06:15Z"
+  },
+  {
+   "thread_id": "1a0f0f2cc2e9bb35",
+   "case": "SIMBA 好瓶 × Leo（品牌回覆 AC 影片與文案調整建議，待我方確認修改）",
+   "inbound_at": "2026-11-03T09:39:28Z"
   }
  ]
 }
