@@ -1936,6 +1936,78 @@
       "inbound_at": "2026-11-03T09:04:00Z",
       "replied_at": "2026-11-04T00:00:00Z",
       "confident": false
+    },
+    {
+      "thread_id": "1a1a902da4c8516c",
+      "responder": "jasmine",
+      "case": "HARMOON 韓國訂製香氛 × Ellie（婉拒，拍攝檔期滿）",
+      "inbound_at": "2026-10-27T07:46:00Z",
+      "replied_at": "2026-11-05T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a1a9022e1985644",
+      "responder": "jasmine",
+      "case": "Let's slim 加絨魔塑褲團購 × Ellie（婉拒，無開團規劃）",
+      "inbound_at": "2026-10-29T07:00:00Z",
+      "replied_at": "2026-11-05T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a1a903173c850d8",
+      "responder": "jasmine",
+      "case": "UNOVE × Standard Bread 聯名活動 × Ellie（婉拒，檔期撞期）",
+      "inbound_at": "2026-11-04T09:48:00Z",
+      "replied_at": "2026-11-05T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a1a59bf82409fe4",
+      "responder": "jasmine",
+      "case": "PowerBOMB × 主委／Leo／Rio（先討論合作形式）",
+      "inbound_at": "2026-11-02T10:37:00Z",
+      "replied_at": "2026-11-04T08:10:13Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a12f85095c7b58b",
+      "responder": "jasmine",
+      "case": "禾聯家電新品發表會 × Rio／Leo／主委（回覆對方結案通知）",
+      "inbound_at": "2026-11-04T03:14:56Z",
+      "replied_at": "2026-11-04T08:12:38Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1a58f420c1ccbc",
+      "responder": "oliver",
+      "case": "LINE WEBTOON 勇者之歌 × 梅伯（分項報價 $55,000 等）",
+      "inbound_at": "2026-11-02T08:17:00Z",
+      "replied_at": "2026-11-04T07:55:54Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1a647f663b5e01",
+      "responder": "oliver",
+      "case": "香港迪士尼 & 香港旅遊推廣 × YY（寄出委刊單請回簽）",
+      "inbound_at": "2026-11-03T10:23:00Z",
+      "replied_at": "2026-11-04T11:17:36Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1a66d57136b9ec",
+      "responder": "oliver",
+      "case": "EOG 無味艙 × Andrew（先確認檔期與授權平台）",
+      "inbound_at": "2026-11-02T05:56:00Z",
+      "replied_at": "2026-11-04T11:58:27Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1a6aaf81374270",
+      "responder": "oliver",
+      "case": "Samsung Odyssey G5 × 梅伯（改付費合作，報 $50,000）",
+      "inbound_at": "2026-11-02T03:46:00Z",
+      "replied_at": "2026-11-04T13:05:44Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -2013,6 +2085,11 @@
       "thread_id": "1a0f0f2cc2e9bb35",
       "case": "SIMBA 好瓶 × Leo（品牌回覆 AC 影片與文案調整建議，待我方確認修改）",
       "inbound_at": "2026-11-03T09:39:28Z"
+    },
+    {
+      "thread_id": "1a1a59bf82409fe4",
+      "case": "PowerBOMB × 主委／Leo／Rio（對方 11/04 回覆調整方案，草稿 T2026-0058 待人工確認方向與補金額）",
+      "inbound_at": "2026-11-04T10:51:31Z"
     }
   ]
 }

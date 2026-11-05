@@ -1,38 +1,38 @@
 {
- "updated": "2026-11-04",
+ "updated": "2026-11-05",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 178,
- "excluded_low_confidence": 64,
+ "sample_size": 184,
+ "excluded_low_confidence": 67,
  "by_person": {
   "jasmine": {
-   "n": 56,
-   "median_min": 299.6,
-   "mean_min": 1339.7,
-   "p90_min": 4206.9,
-   "work_median_min": 293.0,
-   "work_mean_min": 486.8,
-   "within_4h_pct": 46.4,
+   "n": 58,
+   "median_min": 301.4,
+   "mean_min": 1345.7,
+   "p90_min": 4198.5,
+   "work_median_min": 295.9,
+   "work_mean_min": 493.3,
+   "within_4h_pct": 44.8,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 122,
-   "median_min": 1418.9,
-   "mean_min": 2675.9,
-   "p90_min": 8052.4,
-   "work_median_min": 565.5,
-   "work_mean_min": 886.3,
-   "within_4h_pct": 22.1,
+   "n": 126,
+   "median_min": 1453.3,
+   "mean_min": 2678.6,
+   "p90_min": 7631.5,
+   "work_median_min": 595.9,
+   "work_mean_min": 897.4,
+   "within_4h_pct": 21.4,
    "fastest_min": 6.1,
    "slowest_min": 12746.1
   }
  },
  "overall": {
-  "n": 178,
-  "median_min": 1236.2,
-  "mean_min": 2255.5,
-  "work_median_min": 466.2,
-  "within_4h_pct": 29.8
+  "n": 184,
+  "median_min": 1290.4,
+  "mean_min": 2258.4,
+  "work_median_min": 484.9,
+  "within_4h_pct": 28.8
  },
  "pending": [
   {
@@ -109,6 +109,11 @@
    "thread_id": "1a0f0f2cc2e9bb35",
    "case": "SIMBA 好瓶 × Leo（品牌回覆 AC 影片與文案調整建議，待我方確認修改）",
    "inbound_at": "2026-11-03T09:39:28Z"
+  },
+  {
+   "thread_id": "1a1a59bf82409fe4",
+   "case": "PowerBOMB × 主委／Leo／Rio（對方 11/04 回覆調整方案，草稿 T2026-0058 待人工確認方向與補金額）",
+   "inbound_at": "2026-11-04T10:51:31Z"
   }
  ]
 }
