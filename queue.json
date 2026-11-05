@@ -1223,5 +1223,22 @@
       "draft_id": "r2190355768600973776",
       "replied_to_message_id": "1a1a4d0dffb5227f"
     }
+  },
+  {
+    "task_id": "T2026-0058",
+    "type": "報價回信",
+    "thread_id": "1a1a59bf82409fe4",
+    "case": "PowerBOMB「沒能量，真不帥…」Social Campaign × 主委／Leo／Rio｜分項報價",
+    "assignee": "jasmine",
+    "status": "草稿已建立",
+    "created": "2026-11-04T11:20:00Z",
+    "note": "只要有人社群顧問 Luke 11/02 18:37 來信邀約第二波 PowerBOMB Social Campaign（三位互相偷拍短影音各 1 支、醜照授權品牌製作 1 篇貼文並投廣 2 週、三則品牌活動貼文留言＋三則限動宣傳），請於 11/04 前回覆意願與報價；Jasmine 11/04 16:10 先回覆討論形式但未報價，Luke 11/04 18:51 回覆希望改以 Rio 社群影音為主、主委與 Leo 及品牌協作發布，平面照片仍走互相偷拍授權，請我方評估。草稿依價目表報 Rio IG Reels（60–90 秒，IG＋FB）$150,000(net)、Meta 廣告主授權 2 週 $25,000(net)、三則限動宣傳（靜態 主委 $45,000／Leo $20,000／Rio $35,000；動態 $50,000／$30,000／$45,000，皆 net）。價目表查無而標【請確認】者：協作發布加價與主委／Leo 出演費、平面照片授權報價、品牌貼文留言配合報價；另在信首標【請確認】請人工先與成員確認是否同意改以 Rio 影音為主、以及平面照片不走棚拍的方向。",
+    "draft": {
+      "to": "luke.mei@humanoid.com.tw",
+      "cc": "akimo@dcard.cc",
+      "subject": "Re: 【只要有人｜Dcard Video】PowerBOMB 社群合作洽詢",
+      "draft_id": "r-5105428408669071468",
+      "replied_to_message_id": "1a1a62fa8e53124b"
+    }
   }
 ]
