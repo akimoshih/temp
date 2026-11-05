@@ -1213,9 +1213,9 @@
     "thread_id": "1a19b45da35f88fd",
     "case": "Mastercard 星展 eco 永續卡 × Rio｜IG Reels＋限動＋Threads 報價（第二次來信）",
     "assignee": "jasmine",
-    "status": "草稿已建立",
+    "status": "已由 T2026-0059 取代",
     "created": "2026-11-04T05:10:00Z",
-    "note": "爵嘉互動 Bonnie 11/04 12:28 再次來信（收件人含 rio@dcard.cc），內容與 11/02 那封相同，仍在等我方分項報價。依價目表 Rio 級距（250,001-300,000）報 IG Reels $150,000(net)、上線轉發不過稿 IG 限動（帶連結）$45,000(net)、FB＋IG 廣告主投廣 1 週 $25,000(net)；Threads 同步曝光價目表查無、對方要求的含稅金額換算、最晚確認合作日期與檔期異動費規則均以【請確認】標示待人工補。草稿同時回覆影音規範（封面可校稿、提供詳細腳本、各項修改兩次、Hashtag 最多三個、可配合街訪切角）、可本人簽署正本聲明書、以發票請款，並載明授權最長三個月與投廣僅限原檔。取代先前的 T2026-0055。",
+    "note": "爵嘉互動 Bonnie 11/04 12:28 再次來信（收件人含 rio@dcard.cc），內容與 11/02 那封相同，仍在等我方分項報價。依價目表 Rio 級距（250,001-300,000）報 IG Reels $150,000(net)、上線轉發不過稿 IG 限動（帶連結）$45,000(net)、FB＋IG 廣告主投廣 1 週 $25,000(net)；Threads 同步曝光價目表查無、對方要求的含稅金額換算、最晚確認合作日期與檔期異動費規則均以【請確認】標示待人工補。草稿同時回覆影音規範（封面可校稿、提供詳細腳本、各項修改兩次、Hashtag 最多三個、可配合街訪切角）、可本人簽署正本聲明書、以發票請款，並載明授權最長三個月與投廣僅限原檔。取代先前的 T2026-0055。 【2026-11-05 更新】爵嘉 Bonnie 11/05 16:21 第三次寄出同一份邀約（message id 1a1aaccf0da4b523），已改建 T2026-0059 回覆最新那封，本草稿（r2190355768600973776）請勿重複寄出，建議直接刪除。",
     "draft": {
       "to": "chien@excttw.com",
       "cc": "akimo@dcard.cc, rio@dcard.cc",
@@ -1239,6 +1239,23 @@
       "subject": "Re: 【只要有人｜Dcard Video】PowerBOMB 社群合作洽詢",
       "draft_id": "r-5105428408669071468",
       "replied_to_message_id": "1a1a62fa8e53124b"
+    }
+  },
+  {
+    "task_id": "T2026-0059",
+    "type": "報價回信",
+    "thread_id": "1a19b45da35f88fd",
+    "case": "Mastercard 星展 eco 永續卡 × Rio｜IG Reels＋限動＋Threads 報價（第三次來信）",
+    "assignee": "jasmine",
+    "status": "草稿已建立",
+    "created": "2026-11-05T09:10:00Z",
+    "note": "爵嘉互動 Bonnie 11/05 16:21 第三次寄出同一份邀約（收件人含 rio@dcard.cc），內容與 11/02、11/04 兩封相同，仍在等我方分項報價。報價內容同前：依價目表 Rio 級距（250,001-300,000）報 IG Reels $150,000(net)、上線轉發不過稿 IG 限動（帶連結）$45,000(net)、FB＋IG 廣告主投廣 1 週 $25,000(net)；Threads 同步曝光價目表查無、對方要求的含稅換算、最晚確認合作日期與檔期異動費規則均以【請確認】標示待人工補。取代 T2026-0057（連帶更早的 T2026-0055），全 thread 只留這一份草稿待寄。對方已連催三次，建議優先處理。",
+    "draft": {
+      "to": "chien@excttw.com",
+      "cc": "akimo@dcard.cc, rio@dcard.cc",
+      "subject": "Re: 【Excellent】口碑邀約_Mastercard星展eco永續卡",
+      "draft_id": "r3777836654149373041",
+      "replied_to_message_id": "1a1aaccf0da4b523"
     }
   }
 ]
