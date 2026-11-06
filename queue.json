@@ -1257,5 +1257,50 @@
       "draft_id": "r3777836654149373041",
       "replied_to_message_id": "1a1aaccf0da4b523"
     }
+  },
+  {
+    "task_id": "T2026-0060",
+    "type": "報價回信",
+    "thread_id": "1a1abd9b5246ad42",
+    "case": "Pampers 奢寵黑金幫 新生禮盒 × Rio（達睿思國際傳播諮詢）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-11-06T04:06:00Z",
+    "note": "對方 11/6 確認維持 IG Reels 形式、上線日可排 1 月中下旬，轉為等我方報價。依價目表 Rio 級距（250,001-300,000）報 Reels $150,000、IG 限動靜態 $35,000／動態 $45,000。FB+IG 雙平台廣告主 1 週授權價目表無對應級距（單平台兩週內為 $25,000），以【請確認】標示；Rio 1 月中下旬確切上線日亦待人工確認。",
+    "draft": {
+      "to": [
+        "renee.lin@omc.com"
+      ],
+      "cc": [
+        "maggie.liao@omc.com",
+        "akimo@dcard.cc",
+        "jasmine.wang@dcard.cc"
+      ],
+      "subject": "Re: 【合作邀約】陪好友迎接新生命的祝福時刻 | Pampers奢寵黑金幫 新生禮盒",
+      "draft_id": "r8386693834756138786",
+      "replied_to_message_id": "1a1aefbed09eda92"
+    }
+  },
+  {
+    "task_id": "T2026-0061",
+    "type": "報價回信",
+    "thread_id": "1a1a66d57136b9ec",
+    "case": "EOG 無味艙 × Andrew（小行星視覺整合行銷）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-11-06T04:06:00Z",
+    "note": "對方 11/6 回覆彼得的提問：產品 1 月中寄出、希望 12 月底前上線（可討論改 1 月），廣告主需 Meta 雙平台並希望兩種報價都提供。依 Andrew 級距（50,001-80,000）報 Reels $50,000／IG 貼文 $40,000、IG 單平台兩週授權 $8,000。Meta 雙平台兩週授權價目表無對應項目，以【請確認】標示；並提醒 1 月中才寄出產品無法 12 月底上線，建議改 1 月，確切上線日待人工確認。",
+    "draft": {
+      "to": [
+        "whiteholeee@gmail.com"
+      ],
+      "cc": [
+        "akimo@dcard.cc",
+        "jasmine.wang@dcard.cc"
+      ],
+      "subject": "Re: 【 寵物、菸味、霉味救星！台灣唯一專為「車內環境」設計，EOG 無味艙 】合作邀請",
+      "draft_id": "r5594488681606748649",
+      "replied_to_message_id": "1a1aeef12fe3d846"
+    }
   }
 ]
