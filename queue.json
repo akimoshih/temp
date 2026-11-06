@@ -1302,5 +1302,26 @@
       "draft_id": "r5594488681606748649",
       "replied_to_message_id": "1a1aeef12fe3d846"
     }
+  },
+  {
+    "task_id": "T2026-0062",
+    "type": "報價回信",
+    "thread_id": "1a1a59bf82409fe4",
+    "case": "PowerBOMB Social Campaign × 主委／Leo／Rio（只要有人社群顧問）— 方案一／方案二追加報價",
+    "assignee": "jasmine",
+    "status": "草稿已建立",
+    "created": "2026-11-06T06:12:00Z",
+    "note": "Luke 11/6 追加詢問兩個方案：影片改放在 Dcard Video 公司社群（由 Dcard Video 主發、邀 PowerBOMB 協作、開放 2 週廣告主），3 位成員以 IG 限動轉發為主（方案一 1 支影片、方案二 2 支影片皆轉發），照片授權投廣與活動留言限動維持原規格。草稿沿用 Jasmine 11/5 已報的照片授權+投廣 $210,000、活動限動分享+留言 $150,000；成員限動轉發依價目表動態限動計價（主委 $50,000／Rio $45,000／Leo $30,000，方案一合計 $125,000、方案二 $250,000）。Dcard Video 公司社群帳號主發影音不在個人價目表範圍，以【請確認】標示，兩方案總價亦待人工決定。",
+    "draft": {
+      "to": [
+        "luke.mei@humanoid.com.tw"
+      ],
+      "cc": [
+        "akimo@dcard.cc"
+      ],
+      "subject": "Re: 【只要有人｜Dcard Video】PowerBOMB 社群合作洽詢",
+      "draft_id": "r2338796213674473469",
+      "replied_to_message_id": "1a1af5bbd1fcc352"
+    }
   }
 ]
