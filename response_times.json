@@ -1,38 +1,38 @@
 {
- "updated": "2026-11-05",
+ "updated": "2026-11-06",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 184,
- "excluded_low_confidence": 67,
+ "sample_size": 190,
+ "excluded_low_confidence": 68,
  "by_person": {
   "jasmine": {
-   "n": 58,
-   "median_min": 301.4,
+   "n": 59,
+   "median_min": 305.2,
    "mean_min": 1345.7,
-   "p90_min": 4198.5,
-   "work_median_min": 295.9,
-   "work_mean_min": 493.3,
-   "within_4h_pct": 44.8,
+   "p90_min": 4194.4,
+   "work_median_min": 297.7,
+   "work_mean_min": 493.5,
+   "within_4h_pct": 44.1,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 126,
-   "median_min": 1453.3,
-   "mean_min": 2678.6,
-   "p90_min": 7631.5,
-   "work_median_min": 595.9,
-   "work_mean_min": 897.4,
-   "within_4h_pct": 21.4,
+   "n": 131,
+   "median_min": 1471.0,
+   "mean_min": 2703.5,
+   "p90_min": 7105.4,
+   "work_median_min": 600.0,
+   "work_mean_min": 917.9,
+   "within_4h_pct": 20.6,
    "fastest_min": 6.1,
    "slowest_min": 12746.1
   }
  },
  "overall": {
-  "n": 184,
-  "median_min": 1290.4,
-  "mean_min": 2258.4,
-  "work_median_min": 484.9,
-  "within_4h_pct": 28.8
+  "n": 190,
+  "median_min": 1345.5,
+  "mean_min": 2281.9,
+  "work_median_min": 505.5,
+  "within_4h_pct": 27.9
  },
  "pending": [
   {
@@ -96,24 +96,14 @@
    "inbound_at": "2026-10-28T07:03:00Z"
   },
   {
-   "thread_id": "1a19b45da35f88fd",
-   "case": "Mastercard 星展 eco 永續卡 × Rio（爵嘉 11/02 請報價，草稿 T2026-0055 待人工補含稅金額後寄出）",
-   "inbound_at": "2026-11-02T07:59:54Z"
-  },
-  {
    "thread_id": "1a18aac3dfc6e002",
    "case": "WOORI × Rio（對方提出 NT$180,000(net) 並加 1 則 IG 貼文，待我方讓價決策）",
    "inbound_at": "2026-11-03T04:06:15Z"
   },
   {
    "thread_id": "1a0f0f2cc2e9bb35",
-   "case": "SIMBA 好瓶 × Leo（品牌回覆 AC 影片與文案調整建議，待我方確認修改）",
-   "inbound_at": "2026-11-03T09:39:28Z"
-  },
-  {
-   "thread_id": "1a1a59bf82409fe4",
-   "case": "PowerBOMB × 主委／Leo／Rio（對方 11/04 回覆調整方案，草稿 T2026-0058 待人工確認方向與補金額）",
-   "inbound_at": "2026-11-04T10:51:31Z"
+   "case": "SIMBA 好瓶 × Leo（品牌已確認影片與文案，指定 11/9 20:00 發布、11/13 刪除優惠訊息）",
+   "inbound_at": "2026-11-05T02:34:05Z"
   }
  ]
 }

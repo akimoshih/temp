@@ -2008,6 +2008,62 @@
       "inbound_at": "2026-11-02T03:46:00Z",
       "replied_at": "2026-11-04T13:05:44Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a1abcb5b7794841",
+      "responder": "oliver",
+      "case": "中華電信 行動 母親節推廣 × Rio（cacaFly，逐項報價 Reels $155,000／限動 $45,000）",
+      "inbound_at": "2026-11-02T07:24:00Z",
+      "replied_at": "2026-11-05T12:59:13Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1abd9b5246ad42",
+      "responder": "oliver",
+      "case": "Pampers 奢寵黑金幫 新生禮盒 × Rio（回問形式與上線檔期）",
+      "inbound_at": "2026-11-03T09:01:00Z",
+      "replied_at": "2026-11-05T13:14:55Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a19b45da35f88fd",
+      "responder": "oliver",
+      "case": "Mastercard 星展 eco 永續卡 × Rio（婉拒，年底檔期緊湊）",
+      "inbound_at": "2026-11-02T07:59:54Z",
+      "replied_at": "2026-11-05T09:25:56Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1a59bf82409fe4",
+      "responder": "jasmine",
+      "case": "PowerBOMB × 主委／Leo／Rio（報價合計 $610,000 net）",
+      "inbound_at": "2026-11-04T10:51:31Z",
+      "replied_at": "2026-11-05T09:14:30Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a181521a7cab56e",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo（確認 DAC 排程，要求商品 11/11 前送達）",
+      "inbound_at": "2026-11-05T06:44:55Z",
+      "replied_at": "2026-11-06T00:00:00Z",
+      "confident": false
+    },
+    {
+      "thread_id": "1a185cf0d2a5219d",
+      "responder": "oliver",
+      "case": "肯德基 KFC 電影欣賞會 × YY（回覆法務：客戶同意委刊單修訂）",
+      "inbound_at": "2026-11-02T06:50:00Z",
+      "replied_at": "2026-11-05T05:13:57Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a0af2b1fd2004af",
+      "responder": "oliver",
+      "case": "Sony ULT FIELD 5+1 × Rio（回寄法務審閱後委刊單請回簽）",
+      "inbound_at": "2026-11-05T06:18:00Z",
+      "replied_at": "2026-11-05T10:19:47Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -2072,24 +2128,14 @@
       "inbound_at": "2026-10-28T07:03:00Z"
     },
     {
-      "thread_id": "1a19b45da35f88fd",
-      "case": "Mastercard 星展 eco 永續卡 × Rio（爵嘉 11/02 請報價，草稿 T2026-0055 待人工補含稅金額後寄出）",
-      "inbound_at": "2026-11-02T07:59:54Z"
-    },
-    {
       "thread_id": "1a18aac3dfc6e002",
       "case": "WOORI × Rio（對方提出 NT$180,000(net) 並加 1 則 IG 貼文，待我方讓價決策）",
       "inbound_at": "2026-11-03T04:06:15Z"
     },
     {
       "thread_id": "1a0f0f2cc2e9bb35",
-      "case": "SIMBA 好瓶 × Leo（品牌回覆 AC 影片與文案調整建議，待我方確認修改）",
-      "inbound_at": "2026-11-03T09:39:28Z"
-    },
-    {
-      "thread_id": "1a1a59bf82409fe4",
-      "case": "PowerBOMB × 主委／Leo／Rio（對方 11/04 回覆調整方案，草稿 T2026-0058 待人工確認方向與補金額）",
-      "inbound_at": "2026-11-04T10:51:31Z"
+      "case": "SIMBA 好瓶 × Leo（品牌已確認影片與文案，指定 11/9 20:00 發布、11/13 刪除優惠訊息）",
+      "inbound_at": "2026-11-05T02:34:05Z"
     }
   ]
 }
