@@ -2064,6 +2064,102 @@
       "inbound_at": "2026-11-05T06:18:00Z",
       "replied_at": "2026-11-05T10:19:47Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a1b093b9a214807",
+      "responder": "oliver",
+      "case": "POPPY21 髮品團購 × YY（婉拒，暫無團購規劃）",
+      "inbound_at": "2026-11-06T05:53:00Z",
+      "replied_at": "2026-11-06T11:16:36Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1b09198b76347f",
+      "responder": "oliver",
+      "case": "大學眼科近視雷射 × YY（婉拒，目前無相關需求）",
+      "inbound_at": "2026-11-03T07:52:00Z",
+      "replied_at": "2026-11-06T11:14:16Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1b0994d2107883",
+      "responder": "oliver",
+      "case": "MIO CLINIC 美奧皮膚科 × YY（婉拒，無赴韓行程）",
+      "inbound_at": "2026-10-30T03:42:00Z",
+      "replied_at": "2026-11-06T11:22:42Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1b0970e681d52d",
+      "responder": "oliver",
+      "case": "NEOK Aesthetic × YY（婉拒，無赴韓行程）",
+      "inbound_at": "2026-11-02T07:35:00Z",
+      "replied_at": "2026-11-06T11:20:15Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1b09dfc0f6f793",
+      "responder": "oliver",
+      "case": "Tokyo Revengers 快閃店公關場 × YY（婉拒，當天有行程）",
+      "inbound_at": "2026-11-04T08:24:00Z",
+      "replied_at": "2026-11-06T11:27:48Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1b08df8ddff25c",
+      "responder": "oliver",
+      "case": "木棉花《來自深淵》特映會 × YY（婉拒，當天有行程）",
+      "inbound_at": "2026-11-03T08:19:00Z",
+      "replied_at": "2026-11-06T11:10:18Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1b0ab0083d6b82",
+      "responder": "oliver",
+      "case": "《超時空輝耀姬！》聯名咖啡廳公關場（婉拒，當天有行程）",
+      "inbound_at": "2026-11-03T12:16:00Z",
+      "replied_at": "2026-11-06T11:42:02Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1afe48b7b6e5a8",
+      "responder": "oliver",
+      "case": "王品和牛涮 × 梅伯（已改由 LINE OA 回覆報價）",
+      "inbound_at": "2026-11-05T07:11:00Z",
+      "replied_at": "2026-11-06T08:05:15Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1b0759cf57e9f6",
+      "responder": "oliver",
+      "case": "SM CLASSICS LIVE × YY（回問合作形式與檔期）",
+      "inbound_at": "2026-11-06T03:19:00Z",
+      "replied_at": "2026-11-06T10:43:42Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1a59bf82409fe4",
+      "responder": "jasmine",
+      "case": "PowerBOMB × 主委／Leo／Rio（新版報價 $510,000＋$210,000＋$150,000）",
+      "inbound_at": "2026-11-06T05:36:15Z",
+      "replied_at": "2026-11-06T13:43:51Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a181521a7cab56e",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo（確認已收到拍攝商品）",
+      "inbound_at": "2026-11-06T07:05:41Z",
+      "replied_at": "2026-11-06T11:10:37Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1a66d57136b9ec",
+      "responder": "oliver",
+      "case": "EOG 無味艙 × Andrew（報 IG 貼文 $45,000／Reels $55,000／廣告主 2 週 $8,000）",
+      "inbound_at": "2026-11-06T03:37:08Z",
+      "replied_at": "2026-11-06T08:25:21Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -2136,6 +2232,21 @@
       "thread_id": "1a0f0f2cc2e9bb35",
       "case": "SIMBA 好瓶 × Leo（品牌已確認影片與文案，指定 11/9 20:00 發布、11/13 刪除優惠訊息）",
       "inbound_at": "2026-11-05T02:34:05Z"
+    },
+    {
+      "thread_id": "1a18ca688e669aa1",
+      "case": "Advil 安舒疼 × Rio（已婉拒，對方再問可否改以捷運車廂開箱為主，待評估內容角度）",
+      "inbound_at": "2026-11-06T08:35:44Z"
+    },
+    {
+      "thread_id": "1a1b0759cf57e9f6",
+      "case": "SM CLASSICS LIVE × YY（對方希望改 LINE 聯繫、Reels 下週二前上線或改票券交換）",
+      "inbound_at": "2026-11-06T11:07:07Z"
+    },
+    {
+      "thread_id": "1a1abd9b5246ad42",
+      "case": "Pampers 奢寵黑金幫 × Rio（已備妥報價草稿 T2026-0060 待寄出）",
+      "inbound_at": "2026-11-06T03:51:42Z"
     }
   ]
 }

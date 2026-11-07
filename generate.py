@@ -185,7 +185,7 @@ def bar_rows(pairs, money=False):
                    f'<span class="val">{val}</span></div>')
     return "".join(out)
 
-MILESTONE = 800_000  # 業績 80 萬 → 解鎖 6/4 拆帳
+MILESTONE = 800_000  # 年度業績里程碑（拆帳比例自 2026/11 起改為全面 7/3，不再與此門檻連動）
 
 def render_dashboard(m, mine, rev_rows):
     year = REVENUE.get("year", 2026)
@@ -196,20 +196,20 @@ def render_dashboard(m, mine, rev_rows):
     perf = sum(t["j"] for t in REVENUE.get("team_rows", []) if t.get("member_key") == m["key"])
     pct = min(100, perf / MILESTONE * 100)
     if pct >= 100:
-        badge = '<span class="unlock">🏆 已解鎖 6/4 拆帳</span>'
-        push = f'年度業績 <b>{fmt_money(perf)}</b>，已衝破 80 萬里程碑，之後每一案都是 6/4 拆——繼續衝！'
+        badge = '<span class="unlock">🏆 已衝破 80 萬里程碑</span>'
+        push = f'年度業績 <b>{fmt_money(perf)}</b>，已衝破 80 萬里程碑——繼續衝！'
     elif pct >= 75:
         badge = ""
-        push = f'年度業績 <b>{fmt_money(perf)}</b>，距離 80 萬里程碑（解鎖 6/4 拆帳）只差 <b>{fmt_money(MILESTONE - perf)}</b>，就差臨門一腳！'
+        push = f'年度業績 <b>{fmt_money(perf)}</b>，距離 80 萬里程碑只差 <b>{fmt_money(MILESTONE - perf)}</b>，就差臨門一腳！'
     elif pct >= 50:
         badge = ""
-        push = f'年度業績 <b>{fmt_money(perf)}</b>，已經過半！再 <b>{fmt_money(MILESTONE - perf)}</b> 就能解鎖 6/4 拆帳。'
+        push = f'年度業績 <b>{fmt_money(perf)}</b>，已經過半！再 <b>{fmt_money(MILESTONE - perf)}</b> 就達成 80 萬里程碑。'
     elif perf > 0:
         badge = ""
-        push = f'年度業績 <b>{fmt_money(perf)}</b>，穩穩累積中——距離 6/4 拆帳里程碑還有 <b>{fmt_money(MILESTONE - perf)}</b>，每一案都算數！'
+        push = f'年度業績 <b>{fmt_money(perf)}</b>，穩穩累積中——距離 80 萬里程碑還有 <b>{fmt_money(MILESTONE - perf)}</b>，每一案都算數！'
     else:
         badge = ""
-        push = f'今年的第一案就是起點——衝向 80 萬業績、解鎖 6/4 拆帳！'
+        push = f'今年的第一案就是起點——衝向 80 萬年度業績！'
     hero = f'''<div class="hero">
 <div class="hlabel">{year} 年實拿收入</div>
 <div class="big">{fmt_money(total)}</div>{badge}
@@ -218,7 +218,7 @@ def render_dashboard(m, mine, rev_rows):
 </div>'''
     tiles = f'''<div class="tiles">
 <div class="tile"><div class="v">{len(rev_rows)}</div><div class="l">已進帳合作筆數</div></div>
-<div class="tile"><div class="v">{fmt_money(total_p) if total_p else "—"}</div><div class="l">6/4 級距收入</div></div>
+<div class="tile"><div class="v">{fmt_money(total_p) if total_p else "—"}</div><div class="l">7/3 級距收入</div></div>
 <div class="tile"><div class="v">{len(mine)}</div><div class="l">邀約總數（近 90 天起累計）</div></div>
 <div class="tile"><div class="v">{sum(1 for r in mine if r["status"] in ("洽談中", "執行中", "行政流程"))}</div><div class="l">進行中邀約</div></div>
 </div>'''
@@ -245,7 +245,7 @@ def render_dashboard(m, mine, rev_rows):
         f'<td class="n">{fmt_money(r["o"] + r["p"])}</td></tr>'
         for r in rev_rows)
     table = f'''<div class="revwrap"><table class="rev">
-<thead><tr><th>走期</th><th>合作名稱</th><th>項目</th><th class="n">收入（5/5）</th><th class="n">收入（6/4）</th><th class="n">小計</th></tr></thead>
+<thead><tr><th>走期</th><th>合作名稱</th><th>項目</th><th class="n">收入（5/5）</th><th class="n">收入（7/3）</th><th class="n">小計</th></tr></thead>
 <tbody>{rows_html}
 <tr class="total"><td colspan="3">合計</td><td class="n">{fmt_money(total_o)}</td><td class="n">{fmt_money(total_p)}</td><td class="n">{fmt_money(total)}</td></tr>
 </tbody></table></div>''' if rev_rows else '<div class="empty">今年尚無進帳紀錄。</div>'

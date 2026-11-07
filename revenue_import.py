@@ -5,7 +5,7 @@
 #   (a) Google Drive download_file_content 的 JSON 結果檔（content 欄位為 base64 xlsx）
 #   (b) 直接的 .xlsx 檔
 # 解析「營收大表(Video)-2026」分頁：欄位以第一列標題文字定位（來源表曾插入新欄導致欄位位移），
-# 需要成員、合作名稱、產品項目、走期開始、成員收入(<80萬 5/5分)、成員收入(>80萬 6/4分)、成交價(未稅)。
+# 需要成員、合作名稱、產品項目、走期開始、成員收入(5/5分，2026/11 起不適用)、成員收入(7/3分)、成交價(未稅)。
 import base64, json, os, sys, tempfile
 import openpyxl
 
@@ -43,7 +43,7 @@ COL_NAME   = find_col(lambda h: "合作名稱" in h, "合作名稱")
 COL_ITEM   = find_col(lambda h: "產品項目" in h, "產品項目")
 COL_START  = find_col(lambda h: "走期開始" in h, "走期開始")
 COL_O      = find_col(lambda h: "成員收入" in h and "5/5" in h, "成員收入(業績<80萬 5/5分)")
-COL_P      = find_col(lambda h: "成員收入" in h and "6/4" in h, "成員收入(業績>80萬 6/4分)")
+COL_P      = find_col(lambda h: "成員收入" in h and "7/3" in h, "成員收入(7/3分)")
 COL_J      = find_col(lambda h: "成交價" in h and "未稅" in h, "成交價(未稅)")
 
 def num(v):

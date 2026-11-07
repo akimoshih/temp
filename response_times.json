@@ -1,38 +1,38 @@
 {
- "updated": "2026-11-06",
+ "updated": "2026-11-07",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 190,
+ "sample_size": 202,
  "excluded_low_confidence": 68,
  "by_person": {
   "jasmine": {
-   "n": 59,
+   "n": 61,
    "median_min": 305.2,
-   "mean_min": 1345.7,
-   "p90_min": 4194.4,
+   "mean_min": 1313.6,
+   "p90_min": 4186.0,
    "work_median_min": 297.7,
-   "work_mean_min": 493.5,
-   "within_4h_pct": 44.1,
+   "work_mean_min": 486.5,
+   "within_4h_pct": 42.6,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 131,
-   "median_min": 1471.0,
-   "mean_min": 2703.5,
+   "n": 141,
+   "median_min": 1494.2,
+   "mean_min": 2763.1,
    "p90_min": 7105.4,
-   "work_median_min": 600.0,
-   "work_mean_min": 917.9,
-   "within_4h_pct": 20.6,
+   "work_median_min": 631.0,
+   "work_mean_min": 958.1,
+   "within_4h_pct": 19.1,
    "fastest_min": 6.1,
    "slowest_min": 12746.1
   }
  },
  "overall": {
-  "n": 190,
-  "median_min": 1345.5,
-  "mean_min": 2281.9,
-  "work_median_min": 505.5,
-  "within_4h_pct": 27.9
+  "n": 202,
+  "median_min": 1350.5,
+  "mean_min": 2325.4,
+  "work_median_min": 510.5,
+  "within_4h_pct": 26.2
  },
  "pending": [
   {
@@ -104,6 +104,21 @@
    "thread_id": "1a0f0f2cc2e9bb35",
    "case": "SIMBA 好瓶 × Leo（品牌已確認影片與文案，指定 11/9 20:00 發布、11/13 刪除優惠訊息）",
    "inbound_at": "2026-11-05T02:34:05Z"
+  },
+  {
+   "thread_id": "1a18ca688e669aa1",
+   "case": "Advil 安舒疼 × Rio（已婉拒，對方再問可否改以捷運車廂開箱為主，待評估內容角度）",
+   "inbound_at": "2026-11-06T08:35:44Z"
+  },
+  {
+   "thread_id": "1a1b0759cf57e9f6",
+   "case": "SM CLASSICS LIVE × YY（對方希望改 LINE 聯繫、Reels 下週二前上線或改票券交換）",
+   "inbound_at": "2026-11-06T11:07:07Z"
+  },
+  {
+   "thread_id": "1a1abd9b5246ad42",
+   "case": "Pampers 奢寵黑金幫 × Rio（已備妥報價草稿 T2026-0060 待寄出）",
+   "inbound_at": "2026-11-06T03:51:42Z"
   }
  ]
 }
