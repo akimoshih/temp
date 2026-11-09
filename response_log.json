@@ -2160,6 +2160,14 @@
       "inbound_at": "2026-11-06T03:37:08Z",
       "replied_at": "2026-11-06T08:25:21Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a18aac3dfc6e002",
+      "responder": "oliver",
+      "case": "WOORI × Rio（接受 NT$180,000(net)，限動改 2 則、詢問改排二月）",
+      "inbound_at": "2026-11-03T04:06:15Z",
+      "replied_at": "2026-11-08T05:21:27Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -2222,11 +2230,6 @@
       "thread_id": "1a1349135b52eee0",
       "case": "Suntory VARON × Leo（DAC 10/28 提供 Brief，待評估拍攝與走期）",
       "inbound_at": "2026-10-28T07:03:00Z"
-    },
-    {
-      "thread_id": "1a18aac3dfc6e002",
-      "case": "WOORI × Rio（對方提出 NT$180,000(net) 並加 1 則 IG 貼文，待我方讓價決策）",
-      "inbound_at": "2026-11-03T04:06:15Z"
     },
     {
       "thread_id": "1a0f0f2cc2e9bb35",
