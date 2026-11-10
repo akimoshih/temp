@@ -2168,6 +2168,62 @@
       "inbound_at": "2026-11-03T04:06:15Z",
       "replied_at": "2026-11-08T05:21:27Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a1c04410814148d",
+      "responder": "jasmine",
+      "case": "神來也麻將 × 主委（婉拒並改推薦 Leo 主發）",
+      "inbound_at": "2026-11-05T03:09:00Z",
+      "replied_at": "2026-11-09T12:23:55Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1c03ea91f1694b",
+      "responder": "jasmine",
+      "case": "Google Taiwan 聖誕交換禮物企劃（回問合作對象與人選）",
+      "inbound_at": "2026-11-06T02:34:00Z",
+      "replied_at": "2026-11-09T12:18:02Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1c02c16494a6a8",
+      "responder": "jasmine",
+      "case": "OWNDAYS 限量禮盒 × 主委（婉拒，款式無法確認）",
+      "inbound_at": "2026-11-05T18:50:00Z",
+      "replied_at": "2026-11-09T11:57:44Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1c02a6966b2fa5",
+      "responder": "jasmine",
+      "case": "寶島眼鏡 K-Design × 主委（婉拒，檔期較滿）",
+      "inbound_at": "2026-11-06T08:04:00Z",
+      "replied_at": "2026-11-09T11:55:53Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1a6aaf81374270",
+      "responder": "oliver",
+      "case": "Samsung Odyssey G5 × 梅伯（說明已是專案優惠價、尺寸確認中）",
+      "inbound_at": "2026-11-09T03:38:52Z",
+      "replied_at": "2026-11-09T06:57:08Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a166bd3c77aec2e",
+      "responder": "oliver",
+      "case": "INNISFREE × YY（催 brief 與本週四前回簽委刊單）",
+      "inbound_at": "2026-11-09T02:40:40Z",
+      "replied_at": "2026-11-09T04:34:27Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a18ca688e669aa1",
+      "responder": "oliver",
+      "case": "Advil 安舒疼 × Rio（提案改以霖腹評美食 Vlog 風格帶捷運車廂）",
+      "inbound_at": "2026-11-06T08:35:44Z",
+      "replied_at": "2026-11-09T04:16:42Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -2237,11 +2293,6 @@
       "inbound_at": "2026-11-05T02:34:05Z"
     },
     {
-      "thread_id": "1a18ca688e669aa1",
-      "case": "Advil 安舒疼 × Rio（已婉拒，對方再問可否改以捷運車廂開箱為主，待評估內容角度）",
-      "inbound_at": "2026-11-06T08:35:44Z"
-    },
-    {
       "thread_id": "1a1b0759cf57e9f6",
       "case": "SM CLASSICS LIVE × YY（對方希望改 LINE 聯繫、Reels 下週二前上線或改票券交換）",
       "inbound_at": "2026-11-06T11:07:07Z"
@@ -2250,6 +2301,16 @@
       "thread_id": "1a1abd9b5246ad42",
       "case": "Pampers 奢寵黑金幫 × Rio（已備妥報價草稿 T2026-0060 待寄出）",
       "inbound_at": "2026-11-06T03:51:42Z"
+    },
+    {
+      "thread_id": "1a18b5a6a37673f0",
+      "case": "Disney 歡迎光臨魔法秘境特映會 × YY（對方要求開立委刊單並回覆參與者資料）",
+      "inbound_at": "2026-11-09T10:14:01Z"
+    },
+    {
+      "thread_id": "1a1a6aaf81374270",
+      "case": "Samsung Odyssey G5 × 梅伯（對方補問 12 月底前上線與最早可排檔期）",
+      "inbound_at": "2026-11-09T09:32:10Z"
     }
   ]
 }

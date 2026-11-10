@@ -1323,5 +1323,33 @@
       "draft_id": "r2338796213674473469",
       "replied_to_message_id": "1a1af5bbd1fcc352"
     }
+  },
+  {
+    "task_id": "T2026-0063",
+    "type": "委刊單",
+    "thread_id": "1a18b5a6a37673f0",
+    "case": "Disney《歡迎光臨魔法秘境》特映會社群推廣合作 × YY（陽獅媒體）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-11-10T01:13:00Z",
+    "note": "陽獅 Ariel 11/9 確認品牌成案並要求由我方開立委刊單、提供完整廠商資料。已產出委刊單 V20261110-01（IG 限動 ×1 $20,000 net、曝光 11/25-27、特映會 11/25 信義松仁威秀）並上傳 Drive。草稿內另以【請確認】標示特映會參與人數、參與者證件姓名與聯繫電話，須補齊後再寄出。",
+    "drive_url": "https://drive.google.com/file/d/16aXADHDYtH-UR-CdRxU1yyxjIoS1juAo/view?usp=drivesdk",
+    "draft": {
+      "to": [
+        "ariel.chang@publicismedia.com"
+      ],
+      "cc": [
+        "sophia.su@publicismedia.com",
+        "paula.cheng@publicismedia.com",
+        "tiffany.yang@publicismedia.com",
+        "lilian.chen@publicismedia.com",
+        "kk.chen@publicismedia.com",
+        "akimo@dcard.cc",
+        "jasmine.wang@dcard.cc"
+      ],
+      "subject": "Re: 【電影合作邀約】陽獅媒體 X Disney 歡迎光臨魔法秘境 X YY☁️逸筠",
+      "draft_id": "r6676690082205773137",
+      "replied_to_message_id": "1a1bfcd008df127e"
+    }
   }
 ]
