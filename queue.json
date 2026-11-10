@@ -1351,5 +1351,29 @@
       "draft_id": "r6676690082205773137",
       "replied_to_message_id": "1a1bfcd008df127e"
     }
+  },
+  {
+    "task_id": "T2026-0064",
+    "type": "報價回信",
+    "thread_id": "1a152971b6968429",
+    "case": "多喝水 2027 年度續約 × Rio（奧美）— 追加組合報價",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-11-10T09:08:00Z",
+    "note": "奧美 Andy 11/10 追加詢問「影片／平面貼文產製與上線（Rio IG+FB 雙平台）＋與品牌協作上線＋媒體投廣（IG+FB 雙平台）2 週」的費用。草稿依 Rio 級距（250,001-300,000）報 IG Reels $150,000、IG 貼文 $90,000；與品牌協作上線及 IG+FB 雙平台 2 週投廣授權價目表均無對應項目（單平台兩週內為 $25,000），以【請確認】標示，並提醒 Rio 目前以不開放協作為原則。",
+    "draft": {
+      "to": [
+        "andysh.hsu@ogilvy.com"
+      ],
+      "cc": [
+        "akimo@dcard.cc",
+        "jasmine.wang@dcard.cc",
+        "lipinglp.shih@ogilvy.com",
+        "jennycy.lin@ogilvy.com"
+      ],
+      "subject": "Re: 1015【多喝水】續約合作評估",
+      "draft_id": "r1823267195837652578",
+      "replied_to_message_id": "1a1c4a85e39adf10"
+    }
   }
 ]
