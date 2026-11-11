@@ -2224,6 +2224,38 @@
       "inbound_at": "2026-11-06T08:35:44Z",
       "replied_at": "2026-11-09T04:16:42Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a1c54dce8900873",
+      "responder": "oliver",
+      "case": "中華電信網路門市促案 × 梅伯＋YY（cacaFly，逐項報價）",
+      "inbound_at": "2026-11-09T09:34:00Z",
+      "replied_at": "2026-11-10T11:52:14Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1c4f132ee70056",
+      "responder": "jasmine",
+      "case": "台灣大哥大 Apple 專案 × Leo（Reels 設協作 $90,000／Story $15,000）",
+      "inbound_at": "2026-11-10T02:00:00Z",
+      "replied_at": "2026-11-10T10:11:31Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1c4817a274c0e2",
+      "responder": "jasmine",
+      "case": "Uber Eats 金U獎 × Leo＋Rio（Reels $120,000／限動 $55,000／出席 $60,000）",
+      "inbound_at": "2026-11-10T01:30:00Z",
+      "replied_at": "2026-11-10T08:09:30Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a152971b6968429",
+      "responder": "oliver",
+      "case": "多喝水 2027 續約 × Rio（追加組合報價，已建草稿 T2026-0064）",
+      "inbound_at": "2026-11-10T08:51:59Z",
+      "replied_at": "2026-11-10T09:08:00Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -2304,13 +2336,23 @@
     },
     {
       "thread_id": "1a18b5a6a37673f0",
-      "case": "Disney 歡迎光臨魔法秘境特映會 × YY（對方要求開立委刊單並回覆參與者資料）",
-      "inbound_at": "2026-11-09T10:14:01Z"
+      "case": "Disney 歡迎光臨魔法秘境特映會 × YY（對方催本週完成委刊單與發票、並補特映會出席資料）",
+      "inbound_at": "2026-11-10T11:17:50Z"
     },
     {
       "thread_id": "1a1a6aaf81374270",
       "case": "Samsung Odyssey G5 × 梅伯（對方補問 12 月底前上線與最早可排檔期）",
       "inbound_at": "2026-11-09T09:32:10Z"
+    },
+    {
+      "thread_id": "1a1aea875c6d13f9",
+      "case": "Jameson 調酒組合 × Andrew（品牌已成案 $70,000 未稅，待回覆是否贈送不過稿限動並開立委刊單）",
+      "inbound_at": "2026-11-10T11:08:52Z"
+    },
+    {
+      "thread_id": "1a18ca688e669aa1",
+      "case": "Advil 安舒疼 × Rio（對方堅持以美國經驗為 Hook，待我方評估內容方向）",
+      "inbound_at": "2026-11-10T09:10:35Z"
     }
   ]
 }
