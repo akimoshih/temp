@@ -1,38 +1,38 @@
 {
- "updated": "2026-11-07",
+ "updated": "2026-11-12",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 202,
+ "sample_size": 220,
  "excluded_low_confidence": 68,
  "by_person": {
   "jasmine": {
-   "n": 61,
-   "median_min": 305.2,
-   "mean_min": 1313.6,
-   "p90_min": 4186.0,
-   "work_median_min": 297.7,
-   "work_mean_min": 486.5,
-   "within_4h_pct": 42.6,
+   "n": 68,
+   "median_min": 345.5,
+   "mean_min": 1505.0,
+   "p90_min": 4817.0,
+   "work_median_min": 336.8,
+   "work_mean_min": 522.4,
+   "within_4h_pct": 39.7,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 141,
-   "median_min": 1494.2,
-   "mean_min": 2763.1,
-   "p90_min": 7105.4,
-   "work_median_min": 631.0,
-   "work_mean_min": 958.1,
-   "within_4h_pct": 19.1,
+   "n": 152,
+   "median_min": 1476.7,
+   "mean_min": 2690.5,
+   "p90_min": 7087.6,
+   "work_median_min": 599.0,
+   "work_mean_min": 929.7,
+   "within_4h_pct": 20.4,
    "fastest_min": 6.1,
    "slowest_min": 12746.1
   }
  },
  "overall": {
-  "n": 202,
+  "n": 220,
   "median_min": 1350.5,
-  "mean_min": 2325.4,
-  "work_median_min": 510.5,
-  "within_4h_pct": 26.2
+  "mean_min": 2324.1,
+  "work_median_min": 505.5,
+  "within_4h_pct": 26.4
  },
  "pending": [
   {
@@ -96,19 +96,9 @@
    "inbound_at": "2026-10-28T07:03:00Z"
   },
   {
-   "thread_id": "1a18aac3dfc6e002",
-   "case": "WOORI × Rio（對方提出 NT$180,000(net) 並加 1 則 IG 貼文，待我方讓價決策）",
-   "inbound_at": "2026-11-03T04:06:15Z"
-  },
-  {
    "thread_id": "1a0f0f2cc2e9bb35",
    "case": "SIMBA 好瓶 × Leo（品牌已確認影片與文案，指定 11/9 20:00 發布、11/13 刪除優惠訊息）",
    "inbound_at": "2026-11-05T02:34:05Z"
-  },
-  {
-   "thread_id": "1a18ca688e669aa1",
-   "case": "Advil 安舒疼 × Rio（已婉拒，對方再問可否改以捷運車廂開箱為主，待評估內容角度）",
-   "inbound_at": "2026-11-06T08:35:44Z"
   },
   {
    "thread_id": "1a1b0759cf57e9f6",
@@ -116,9 +106,19 @@
    "inbound_at": "2026-11-06T11:07:07Z"
   },
   {
-   "thread_id": "1a1abd9b5246ad42",
-   "case": "Pampers 奢寵黑金幫 × Rio（已備妥報價草稿 T2026-0060 待寄出）",
-   "inbound_at": "2026-11-06T03:51:42Z"
+   "thread_id": "1a1c4f132ee70056",
+   "case": "台灣大哥大 Apple 專案 × Leo（對方要求 105,000 折為 100,000 未稅，待我方裁示）",
+   "inbound_at": "2026-11-11T09:47:29Z"
+  },
+  {
+   "thread_id": "1a1c8d29527045d5",
+   "case": "多喝水 2027 續約 × Rio（新信件串追加需求，報價草稿 T2026-0065 待寄）",
+   "inbound_at": "2026-11-11T04:16:27Z"
+  },
+  {
+   "thread_id": "1a1caa3cc10cc1c7",
+   "case": "Honeymoon 陶陶杯 × 梅伯（已回問改單則 IG Post／Reels，待對方回覆）",
+   "inbound_at": "2026-11-11T12:44:17Z"
   }
  ]
 }

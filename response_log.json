@@ -2256,6 +2256,54 @@
       "inbound_at": "2026-11-10T08:51:59Z",
       "replied_at": "2026-11-10T09:08:00Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a18ca688e669aa1",
+      "responder": "oliver",
+      "case": "Advil 安舒疼 × Rio",
+      "inbound_at": "2026-11-10T09:10:35Z",
+      "replied_at": "2026-11-11T07:16:41Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1a6aaf81374270",
+      "responder": "oliver",
+      "case": "Samsung Odyssey G5 × 梅伯",
+      "inbound_at": "2026-11-09T09:32:10Z",
+      "replied_at": "2026-11-11T10:52:49Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a18b5a6a37673f0",
+      "responder": "oliver",
+      "case": "Disney 歡迎光臨魔法秘境特映會 × YY",
+      "inbound_at": "2026-11-10T11:17:50Z",
+      "replied_at": "2026-11-11T10:35:12Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1aea875c6d13f9",
+      "responder": "oliver",
+      "case": "Jameson 調酒組合 × Andrew",
+      "inbound_at": "2026-11-11T07:52:11Z",
+      "replied_at": "2026-11-11T08:02:18Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1abd9b5246ad42",
+      "responder": "oliver",
+      "case": "Pampers 奢寵黑金幫 × Rio",
+      "inbound_at": "2026-11-11T05:51:53Z",
+      "replied_at": "2026-11-11T12:50:49Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a181521a7cab56e",
+      "responder": "jasmine",
+      "case": "Suntory VARON × Leo（腳本與排程）",
+      "inbound_at": "2026-11-11T07:05:04Z",
+      "replied_at": "2026-11-11T10:29:34Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -2330,29 +2378,19 @@
       "inbound_at": "2026-11-06T11:07:07Z"
     },
     {
-      "thread_id": "1a1abd9b5246ad42",
-      "case": "Pampers 奢寵黑金幫 × Rio（已備妥報價草稿 T2026-0060 待寄出）",
-      "inbound_at": "2026-11-06T03:51:42Z"
+      "thread_id": "1a1c4f132ee70056",
+      "case": "台灣大哥大 Apple 專案 × Leo（對方要求 105,000 折為 100,000 未稅，待我方裁示）",
+      "inbound_at": "2026-11-11T09:47:29Z"
     },
     {
-      "thread_id": "1a18b5a6a37673f0",
-      "case": "Disney 歡迎光臨魔法秘境特映會 × YY（對方催本週完成委刊單與發票、並補特映會出席資料）",
-      "inbound_at": "2026-11-10T11:17:50Z"
+      "thread_id": "1a1c8d29527045d5",
+      "case": "多喝水 2027 續約 × Rio（新信件串追加需求，報價草稿 T2026-0065 待寄）",
+      "inbound_at": "2026-11-11T04:16:27Z"
     },
     {
-      "thread_id": "1a1a6aaf81374270",
-      "case": "Samsung Odyssey G5 × 梅伯（對方補問 12 月底前上線與最早可排檔期）",
-      "inbound_at": "2026-11-09T09:32:10Z"
-    },
-    {
-      "thread_id": "1a1aea875c6d13f9",
-      "case": "Jameson 調酒組合 × Andrew（品牌已成案 $70,000 未稅，待回覆是否贈送不過稿限動並開立委刊單）",
-      "inbound_at": "2026-11-10T11:08:52Z"
-    },
-    {
-      "thread_id": "1a18ca688e669aa1",
-      "case": "Advil 安舒疼 × Rio（對方堅持以美國經驗為 Hook，待我方評估內容方向）",
-      "inbound_at": "2026-11-10T09:10:35Z"
+      "thread_id": "1a1caa3cc10cc1c7",
+      "case": "Honeymoon 陶陶杯 × 梅伯（已回問改單則 IG Post／Reels，待對方回覆）",
+      "inbound_at": "2026-11-11T12:44:17Z"
     }
   ]
 }
