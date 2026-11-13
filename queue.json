@@ -1399,5 +1399,26 @@
       "draft_id": "r5066759630647844270",
       "replied_to_message_id": "1a1c8d29527045d5"
     }
+  },
+  {
+    "task_id": "T2026-0066",
+    "type": "報價回信",
+    "thread_id": "1a1c04410814148d",
+    "case": "神來也麻將 貓貓角色推廣 × Leo（主委出演）（koodata）",
+    "assignee": "jasmine",
+    "status": "草稿已建立",
+    "created": "2026-11-13T04:10:00Z",
+    "note": "主委檔期婉拒後，koodata Angela 11/13 回問 2027/1 檔期並索取「Leo 合作、主委出演」版本報價。草稿依 Leo 級距報 IG Reels（90 秒）$80,000(net)，另列 FB 授權兩週內 $15,000／兩週至一個月 $25,000、重製一刀剪 $15,000／剪輯片段 $20,000；主委出演加價、寵物入鏡、請款方式以【請確認】標示待人工補。",
+    "draft": {
+      "to": [
+        "angelachang@koodata.com.tw"
+      ],
+      "cc": [
+        "akimo@dcard.cc"
+      ],
+      "subject": "Re: 【koodata商案合作】神來也麻將_IG REELS合作邀約 / 吳至晟",
+      "draft_id": "r-761385184975317569",
+      "replied_to_message_id": "1a1d30d37bfd1ba4"
+    }
   }
 ]
