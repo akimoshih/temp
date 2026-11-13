@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-12",
+ "updated": "2026-11-13",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 220,
+ "sample_size": 221,
  "excluded_low_confidence": 68,
  "by_person": {
   "jasmine": {
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 152,
-   "median_min": 1476.7,
-   "mean_min": 2690.5,
-   "p90_min": 7087.6,
-   "work_median_min": 599.0,
-   "work_mean_min": 929.7,
-   "within_4h_pct": 20.4,
+   "n": 153,
+   "median_min": 1471.0,
+   "mean_min": 2673.1,
+   "p90_min": 7069.7,
+   "work_median_min": 598.1,
+   "work_mean_min": 923.8,
+   "within_4h_pct": 20.9,
    "fastest_min": 6.1,
    "slowest_min": 12746.1
   }
  },
  "overall": {
-  "n": 220,
-  "median_min": 1350.5,
-  "mean_min": 2324.1,
-  "work_median_min": 505.5,
-  "within_4h_pct": 26.4
+  "n": 221,
+  "median_min": 1348.0,
+  "mean_min": 2313.7,
+  "work_median_min": 503.0,
+  "within_4h_pct": 26.7
  },
  "pending": [
   {
@@ -119,6 +119,26 @@
    "thread_id": "1a1caa3cc10cc1c7",
    "case": "Honeymoon 陶陶杯 × 梅伯（已回問改單則 IG Post／Reels，待對方回覆）",
    "inbound_at": "2026-11-11T12:44:17Z"
+  },
+  {
+   "thread_id": "1a18b5a6a37673f0",
+   "case": "Disney 歡迎光臨魔法秘境特映會 × YY（對方要求委刊單補法務條款後用印，Legal 審閱中）",
+   "inbound_at": "2026-11-12T03:24:28Z"
+  },
+  {
+   "thread_id": "1a1aea875c6d13f9",
+   "case": "Jameson 調酒組合 × Andrew（iKala 已送手簽委刊單，待確認回覆並交腳本）",
+   "inbound_at": "2026-11-12T11:40:10Z"
+  },
+  {
+   "thread_id": "1a1cf2a689a87322",
+   "case": "迪士尼《歡迎光臨魔法秘境》× YY（ODOT 確認可並行，待確認是否成案）",
+   "inbound_at": "2026-11-12T12:49:40Z"
+  },
+  {
+   "thread_id": "1a181521a7cab56e",
+   "case": "Suntory VARON × Leo（DAC 詢問上線日能否改 12/3）",
+   "inbound_at": "2026-11-12T07:28:13Z"
   }
  ]
 }
