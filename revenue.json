@@ -1,6 +1,6 @@
 {
  "year": 2026,
- "updated": "2026-11-13",
+ "updated": "2026-11-14",
  "note": "來源：Google 試算表「Video 營收大表」營收大表(Video)-2026 分頁；成員頁用「成員收入」兩欄，總覽頁用「成交價(未稅)」欄（欄位以標題文字定位）",
  "by_member": {
   "rio": [
@@ -138,13 +138,6 @@
     "p": 35000.0
    },
    {
-    "name": "UNIQLO PUFFTECH_社群推廣合作_Rio",
-    "item": "IG 限動",
-    "start": "2026-10-28",
-    "o": 0,
-    "p": 35000.0
-   },
-   {
     "name": "Sony ULT FIELD 5+1_社群推廣合作_Rio",
     "item": "Reels",
     "start": "2026-11-30",
@@ -164,6 +157,13 @@
     "start": "2026-11-30",
     "o": 0,
     "p": 17500.0
+   },
+   {
+    "name": "UNIQLO PUFFTECH_社群推廣合作_Rio",
+    "item": "IG 限動",
+    "start": null,
+    "o": 0,
+    "p": 0.0
    }
   ],
   "andrew": [
@@ -1147,6 +1147,20 @@
     "start": "2026-11-22",
     "o": 0,
     "p": 8400.0
+   },
+   {
+    "name": "台灣大哥大_Apple專案_社群推廣合作_Leo",
+    "item": "Reels",
+    "start": "2026-12-18",
+    "o": 0,
+    "p": 56000.0
+   },
+   {
+    "name": "台灣大哥大_Apple專案_社群推廣合作_Leo",
+    "item": "IG 限動",
+    "start": "2026-12-18",
+    "o": 0,
+    "p": 14000.0
    }
   ],
   "nakaw": [
@@ -2512,8 +2526,8 @@
   {
    "member_raw": "Rio",
    "member_key": "rio",
-   "start": "2026-10-28",
-   "j": 50000.0
+   "start": null,
+   "j": 0.0
   },
   {
    "member_raw": "YY",
@@ -2628,6 +2642,18 @@
    "member_key": "andrew",
    "start": "2026-12-14",
    "j": 10000.0
+  },
+  {
+   "member_raw": "Leo",
+   "member_key": "leo",
+   "start": "2026-12-18",
+   "j": 80000.0
+  },
+  {
+   "member_raw": "Leo",
+   "member_key": "leo",
+   "start": "2026-12-18",
+   "j": 20000.0
   }
  ]
 }

@@ -1420,5 +1420,30 @@
       "draft_id": "r-761385184975317569",
       "replied_to_message_id": "1a1d30d37bfd1ba4"
     }
+  },
+  {
+    "task_id": "T2026-0067",
+    "type": "委刊單",
+    "thread_id": "1a1a6aaf81374270",
+    "case": "Samsung Odyssey G5 曲面電競顯示器 社群推廣合作 × 梅伯（名象數位整合營銷）",
+    "assignee": "oliver",
+    "status": "草稿已建立",
+    "created": "2026-11-14T01:10:00Z",
+    "note": "名象提供廠商資料並同意用我方委刊單版本後產出 V20261114-01（IG Reels ×1 $50,000 net、預計 2026/12/18 上線，品牌另贈 32 吋 Odyssey G5）。甲方簽約代表人欄位留空，草稿內部備註已提醒寄出前確認。",
+    "drive_url": "https://drive.google.com/file/d/1IvVG_bmvu6H49Evi2XViVRM4j2otenju/view?usp=drivesdk",
+    "draft": {
+      "to": [
+        "alicia@design-ebg.com"
+      ],
+      "cc": [
+        "sky@design-edg.com",
+        "alantsai@design-edg.com",
+        "akimo@dcard.cc",
+        "jasmine.wang@dcard.cc"
+      ],
+      "subject": "Re: 【梅伯】Samsung 電競顯示器 影片_品牌合作邀約 1102",
+      "draft_id": "r7628512182336430671",
+      "replied_to_message_id": "1a1d483a04c4d839"
+    }
   }
 ]
