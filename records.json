@@ -4316,10 +4316,10 @@
     ],
     "brand": "Kingshot",
     "agency": "ContentLab",
-    "status": "洽談中",
+    "status": "取消",
     "launch_month": null,
     "subject": "【快速交件】meberisgod × Kingshot UGC 影片合作邀請",
-    "summary": "對方來信邀約梅伯拍攝 Kingshot UGC 影片並強調快速交件，但原始合作內容信未送達。彼得 11/11 回信請對方重新寄送完整合作內容後再評估。",
+    "summary": "對方 11/13 重新寄出合作內容後，彼得同日回覆因年底拍攝檔期緊湊婉拒本次 Kingshot UGC 影片合作。",
     "source": "自來"
   },
   {
@@ -4602,6 +4602,46 @@
     "launch_month": null,
     "subject": "BEOM GLOBAL_韓國藥局參訪介紹合作提案",
     "summary": "韓國藥局參訪介紹合作提案（群發，成員待確認）。彼得 11/13 以近期無赴韓行程婉拒。",
+    "source": "自來"
+  },
+  {
+    "thread_id": "1a1d4c102152a84b",
+    "date": "2026-11-13",
+    "members": [
+      "yy"
+    ],
+    "brand": "爭鮮 × 知名日本動畫聯名推廣",
+    "agency": "春樹科技",
+    "status": "洽談中",
+    "launch_month": null,
+    "subject": "【合作邀約】爭鮮 X 知名日本動畫聯名推廣－IG REELS合作詢問_YY",
+    "summary": "彼得 11/13 報價：IG Reels 影片＋限動 ×1 $75,000（未稅）；廣告主權限 2 週 $8,000（未稅，IG 單平台、以原檔投放，包框或重製另計）。另詢問是否可協助上線前後各一週避開競品。待對方確認。",
+    "source": "自來"
+  },
+  {
+    "thread_id": "1a1d4c795722fa4f",
+    "date": "2026-11-13",
+    "members": [
+      "yy"
+    ],
+    "brand": "《迪士尼探險號：駛向新程》紀錄片搶先放映會",
+    "agency": "達睿思國際傳播諮詢",
+    "status": "洽談中",
+    "launch_month": "2026-11",
+    "subject": "【搶先放映會活動邀約】誠摯邀請您出席《迪士尼探險號：駛向新程》紀錄片獨家搶先放映會",
+    "summary": "活動出席邀約。彼得 11/13 回覆 YY 檔期沒問題並已填妥報名表單送出，待主辦確認出席名單。",
+    "source": "自來"
+  },
+  {
+    "thread_id": "1a1d4ca3aa1c2032",
+    "date": "2026-11-13",
+    "members": [],
+    "brand": "NIJISANJI EN POP UP STORE 台北公關場",
+    "agency": "CAPSULE",
+    "status": "取消",
+    "launch_month": null,
+    "subject": "【NIJISANJI EN Welcome home, boys! POP UP STORE in 台北!】公關場邀約",
+    "summary": "公關場出席邀約（成員待確認）。彼得 11/13 因當天已有排定行程婉拒。",
     "source": "自來"
   }
 ]
