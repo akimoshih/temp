@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15",
+ "updated": "2026-11-17",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
  "sample_size": 227,
  "excluded_low_confidence": 68,
@@ -129,6 +129,11 @@
    "thread_id": "1a1cf2a689a87322",
    "case": "迪士尼《歡迎光臨魔法秘境》× YY（ODOT 確認可並行，待確認是否成案）",
    "inbound_at": "2026-11-12T12:49:40Z"
+  },
+  {
+   "thread_id": "1a181521a7cab56e",
+   "case": "Suntory VARON × Leo（DAC 請補委刊單發布日期欄位後用印）",
+   "inbound_at": "2026-11-16T08:55:47Z"
   }
  ]
 }
