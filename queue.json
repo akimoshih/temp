@@ -1445,5 +1445,22 @@
       "draft_id": "r7628512182336430671",
       "replied_to_message_id": "1a1d483a04c4d839"
     }
+  },
+  {
+    "task_id": "T2026-0068",
+    "type": "報價回信",
+    "thread_id": "19f18ab805cc76ca",
+    "case": "技嘉筆電新款宣傳 × YY",
+    "assignee": "jasmine",
+    "status": "草稿已建立",
+    "created": "2026-11-17",
+    "note": "對方 11/17 回覆客戶確認與 YY 合作、請保留 12 月檔期並確認費用是否不變。草稿沿用 2026/06/30 Jasmine 報價（YT Shorts 40,000／IG Reels 55,000／Threads 同步 10,000，net）。官方價目表無 YT Shorts 與 Threads 同步單項，且 YY tier 之 Reels 為 50,000，三項均以【請確認】標示待人工定案。另已詢問實際執行項目、支數、上線日期，以及 Leo 是否不再進行。",
+    "draft": {
+      "to": "lulu@coins.com.tw",
+      "cc": "akimo@dcard.cc",
+      "subject": "Re: 【商案洽詢】技嘉筆電新款宣傳_YY、Leo",
+      "draft_id": "r4400001243150329851",
+      "replied_to_message_id": "1a1e8bb0c7d611a8"
+    }
   }
 ]
