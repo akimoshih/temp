@@ -2360,6 +2360,30 @@
       "inbound_at": "2026-11-12T07:28:13Z",
       "replied_at": "2026-11-13T07:21:48Z",
       "confident": true
+    },
+    {
+      "thread_id": "1a1c97f8543c1a6b",
+      "responder": "oliver",
+      "case": "OWNDAYS 限量韓星代言禮盒 × Rio（互惠露出回報）",
+      "inbound_at": "2026-11-11T11:13:38Z",
+      "replied_at": "2026-11-17T06:21:32Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a18b5a6a37673f0",
+      "responder": "oliver",
+      "case": "Disney 歡迎光臨魔法秘境特映會 × YY（法務修訂版委刊單）",
+      "inbound_at": "2026-11-12T03:24:28Z",
+      "replied_at": "2026-11-17T11:31:00Z",
+      "confident": true
+    },
+    {
+      "thread_id": "1a1aea875c6d13f9",
+      "responder": "oliver",
+      "case": "Jameson 調酒組合 × Andrew（回寄雙方用印委刊單）",
+      "inbound_at": "2026-11-12T11:40:10Z",
+      "replied_at": "2026-11-17T05:42:22Z",
+      "confident": true
     }
   ],
   "pending": [
@@ -2444,16 +2468,6 @@
       "inbound_at": "2026-11-11T04:16:27Z"
     },
     {
-      "thread_id": "1a18b5a6a37673f0",
-      "case": "Disney 歡迎光臨魔法秘境特映會 × YY（對方要求委刊單補法務條款後用印，Legal 審閱中）",
-      "inbound_at": "2026-11-12T03:24:28Z"
-    },
-    {
-      "thread_id": "1a1aea875c6d13f9",
-      "case": "Jameson 調酒組合 × Andrew（iKala 已送手簽委刊單，待確認回覆並交腳本）",
-      "inbound_at": "2026-11-12T11:40:10Z"
-    },
-    {
       "thread_id": "1a1cf2a689a87322",
       "case": "迪士尼《歡迎光臨魔法秘境》× YY（ODOT 確認可並行，待確認是否成案）",
       "inbound_at": "2026-11-12T12:49:40Z"
@@ -2462,6 +2476,11 @@
       "thread_id": "1a181521a7cab56e",
       "case": "Suntory VARON × Leo（DAC 請補委刊單發布日期欄位後用印）",
       "inbound_at": "2026-11-16T08:55:47Z"
+    },
+    {
+      "thread_id": "19f18ab805cc76ca",
+      "case": "技嘉筆電新款宣傳 × YY（客戶確認合作、請保留 12 月檔期並確認費用，草稿 T2026-0068 未寄）",
+      "inbound_at": "2026-11-17T08:58:37Z"
     }
   ]
 }
