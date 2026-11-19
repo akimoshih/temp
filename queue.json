@@ -1462,5 +1462,22 @@
       "draft_id": "r4400001243150329851",
       "replied_to_message_id": "1a1e8bb0c7d611a8"
     }
+  },
+  {
+    "task_id": "T2026-0069",
+    "type": "報價回信",
+    "thread_id": "19f7f29b6d3ea2df",
+    "case": "三星 Galaxy Z Fold8 × Rio",
+    "assignee": "jasmine",
+    "status": "草稿已建立",
+    "created": "2026-11-19",
+    "note": "大浩娛樂 Jessie 11/19 代三星邀 Rio 推廣 Galaxy Z Fold8（7 月平板案未成），需 IG Reels 60-90 秒 ×1（三星字體字卡、協作三星台灣、腳本過稿）、競品條款一個月、Meta 廣告主與素材投廣授權一個月（含三星 YT 官方平台），預計 12 月上線。草稿依 Rio 級距報 Reels 50,000＋授權兩週至一個月 5,000＋上架至非約定平台 5,000，合計 20,000(net)；競品條款價目表無對應項目，以【請確認】標示。另已詢問上線日期與交稿時程、並回覆可安排電話討論。",
+    "draft": {
+      "to": "jessie.ho@tahoe-ent.com",
+      "cc": "nancy.chen@tahoe-ent.com, akimo@dcard.cc",
+      "subject": "Re: 【三星】Samsung 社群操作詢問_ Rio",
+      "draft_id": "r-2073296493549879479",
+      "replied_to_message_id": "1a1f31da655b180e"
+    }
   }
 ]
