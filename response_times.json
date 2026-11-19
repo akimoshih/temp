@@ -1,8 +1,8 @@
 {
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 230,
- "excluded_low_confidence": 68,
+ "sample_size": 231,
+ "excluded_low_confidence": 69,
  "by_person": {
   "jasmine": {
    "n": 70,
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 160,
-   "median_min": 1476.7,
-   "mean_min": 2717.3,
-   "p90_min": 7316.3,
-   "work_median_min": 599.0,
-   "work_mean_min": 927.7,
-   "within_4h_pct": 21.2,
+   "n": 161,
+   "median_min": 1471.0,
+   "mean_min": 2700.9,
+   "p90_min": 7275.2,
+   "work_median_min": 598.1,
+   "work_mean_min": 922.4,
+   "within_4h_pct": 21.7,
    "fastest_min": 6.1,
    "slowest_min": 12746.1
   }
  },
  "overall": {
-  "n": 230,
-  "median_min": 1350.5,
-  "mean_min": 2342.9,
-  "work_median_min": 505.5,
-  "within_4h_pct": 26.5
+  "n": 231,
+  "median_min": 1348.0,
+  "mean_min": 2333.1,
+  "work_median_min": 503.0,
+  "within_4h_pct": 26.8
  },
  "pending": [
   {
@@ -121,14 +121,19 @@
    "inbound_at": "2026-11-12T12:49:40Z"
   },
   {
-   "thread_id": "1a181521a7cab56e",
-   "case": "Suntory VARON × Leo（DAC 請補委刊單發布日期欄位後用印）",
-   "inbound_at": "2026-11-16T08:55:47Z"
-  },
-  {
    "thread_id": "19f18ab805cc76ca",
    "case": "技嘉筆電新款宣傳 × YY（客戶確認合作、請保留 12 月檔期並確認費用，草稿 T2026-0068 未寄）",
    "inbound_at": "2026-11-17T08:58:37Z"
+  },
+  {
+   "thread_id": "1a166bd3c77aec2e",
+   "case": "INNISFREE × YY（品牌請先提供腳本或呈現範例，11/20 交腳本）",
+   "inbound_at": "2026-11-18T10:23:15Z"
+  },
+  {
+   "thread_id": "1a18b5a6a37673f0",
+   "case": "Disney 歡迎光臨魔法秘境 × YY（陽獅已回傳用印委刊單，待回傳雙方用印版）",
+   "inbound_at": "2026-11-18T07:37:45Z"
   }
  ]
 }
