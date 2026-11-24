@@ -1,38 +1,38 @@
 {
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 231,
+ "sample_size": 238,
  "excluded_low_confidence": 69,
  "by_person": {
   "jasmine": {
-   "n": 70,
-   "median_min": 345.5,
-   "mean_min": 1487.1,
-   "p90_min": 4792.1,
-   "work_median_min": 336.8,
-   "work_mean_min": 520.5,
-   "within_4h_pct": 38.6,
+   "n": 72,
+   "median_min": 336.8,
+   "mean_min": 1452.1,
+   "p90_min": 4756.9,
+   "work_median_min": 329.3,
+   "work_mean_min": 511.0,
+   "within_4h_pct": 38.9,
    "fastest_min": 5.0,
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 161,
-   "median_min": 1471.0,
-   "mean_min": 2700.9,
-   "p90_min": 7275.2,
-   "work_median_min": 598.1,
-   "work_mean_min": 922.4,
-   "within_4h_pct": 21.7,
+   "n": 166,
+   "median_min": 1476.7,
+   "mean_min": 2711.1,
+   "p90_min": 7190.3,
+   "work_median_min": 599.0,
+   "work_mean_min": 913.9,
+   "within_4h_pct": 22.3,
    "fastest_min": 6.1,
    "slowest_min": 12746.1
   }
  },
  "overall": {
-  "n": 231,
-  "median_min": 1348.0,
-  "mean_min": 2333.1,
-  "work_median_min": 503.0,
-  "within_4h_pct": 26.8
+  "n": 238,
+  "median_min": 1345.5,
+  "mean_min": 2330.2,
+  "work_median_min": 502.8,
+  "within_4h_pct": 27.3
  },
  "pending": [
   {
@@ -126,11 +126,6 @@
    "inbound_at": "2026-11-17T08:58:37Z"
   },
   {
-   "thread_id": "1a166bd3c77aec2e",
-   "case": "INNISFREE × YY（品牌請先提供腳本或呈現範例，11/20 交腳本）",
-   "inbound_at": "2026-11-18T10:23:15Z"
-  },
-  {
    "thread_id": "1a18b5a6a37673f0",
    "case": "Disney 歡迎光臨魔法秘境 × YY（陽獅已回傳用印委刊單，待回傳雙方用印版）",
    "inbound_at": "2026-11-18T07:37:45Z"
@@ -139,6 +134,11 @@
    "thread_id": "19f7f29b6d3ea2df",
    "case": "三星 Galaxy Z Fold8 × Rio（報價草稿 T2026-0069 未寄）",
    "inbound_at": "2026-11-19T09:22:43Z"
+  },
+  {
+   "thread_id": "1a181521a7cab56e",
+   "case": "Suntory VARON × Leo（DAC 請補社群貼文文案）",
+   "inbound_at": "2026-11-23T10:47:04Z"
   }
  ]
 }
