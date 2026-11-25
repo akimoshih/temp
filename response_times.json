@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-24",
+ "updated": "2026-11-25",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 238,
+ "sample_size": 239,
  "excluded_low_confidence": 69,
  "by_person": {
   "jasmine": {
@@ -16,23 +16,23 @@
    "slowest_min": 9955.3
   },
   "oliver": {
-   "n": 166,
-   "median_min": 1476.7,
-   "mean_min": 2711.1,
-   "p90_min": 7190.3,
-   "work_median_min": 599.0,
-   "work_mean_min": 913.9,
-   "within_4h_pct": 22.3,
+   "n": 167,
+   "median_min": 1471.0,
+   "mean_min": 2694.9,
+   "p90_min": 7173.4,
+   "work_median_min": 598.1,
+   "work_mean_min": 908.5,
+   "within_4h_pct": 22.8,
    "fastest_min": 6.1,
    "slowest_min": 12746.1
   }
  },
  "overall": {
-  "n": 238,
-  "median_min": 1345.5,
-  "mean_min": 2330.2,
-  "work_median_min": 502.8,
-  "within_4h_pct": 27.3
+  "n": 239,
+  "median_min": 1343.0,
+  "mean_min": 2320.5,
+  "work_median_min": 502.6,
+  "within_4h_pct": 27.6
  },
  "pending": [
   {
@@ -96,11 +96,6 @@
    "inbound_at": "2026-10-28T07:03:00Z"
   },
   {
-   "thread_id": "1a0f0f2cc2e9bb35",
-   "case": "SIMBA 好瓶 × Leo（品牌已確認影片與文案，指定 11/9 20:00 發布、11/13 刪除優惠訊息）",
-   "inbound_at": "2026-11-05T02:34:05Z"
-  },
-  {
    "thread_id": "1a1b0759cf57e9f6",
    "case": "SM CLASSICS LIVE × YY（對方希望改 LINE 聯繫、Reels 下週二前上線或改票券交換）",
    "inbound_at": "2026-11-06T11:07:07Z"
@@ -126,11 +121,6 @@
    "inbound_at": "2026-11-17T08:58:37Z"
   },
   {
-   "thread_id": "1a18b5a6a37673f0",
-   "case": "Disney 歡迎光臨魔法秘境 × YY（陽獅已回傳用印委刊單，待回傳雙方用印版）",
-   "inbound_at": "2026-11-18T07:37:45Z"
-  },
-  {
    "thread_id": "19f7f29b6d3ea2df",
    "case": "三星 Galaxy Z Fold8 × Rio（報價草稿 T2026-0069 未寄）",
    "inbound_at": "2026-11-19T09:22:43Z"
@@ -139,6 +129,16 @@
    "thread_id": "1a181521a7cab56e",
    "case": "Suntory VARON × Leo（DAC 請補社群貼文文案）",
    "inbound_at": "2026-11-23T10:47:04Z"
+  },
+  {
+   "thread_id": "1a1c4817a274c0e2",
+   "case": "Uber Eats 2026 金U獎 × Leo＋Rio（對方 11/24 確認成案 $180,000，草稿 T2026-0070 未寄）",
+   "inbound_at": "2026-11-24T03:21:27Z"
+  },
+  {
+   "thread_id": "1a1a6aaf81374270",
+   "case": "Samsung Odyssey G5 × 梅伯（名象追補充條款修訂版委刊單，已送法務）",
+   "inbound_at": "2026-11-24T08:05:55Z"
   }
  ]
 }

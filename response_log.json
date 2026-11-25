@@ -2456,6 +2456,14 @@
    "inbound_at": "2026-11-23T06:20:00Z",
    "replied_at": "2026-11-23T10:25:00Z",
    "confident": true
+  },
+  {
+   "thread_id": "1a166bd3c77aec2e",
+   "responder": "oliver",
+   "case": "INNISFREE × YY（條款放行後提供腳本與 FB 粉專）",
+   "inbound_at": "2026-11-24T02:50:16Z",
+   "replied_at": "2026-11-24T03:11:29Z",
+   "confident": true
   }
  ],
  "pending": [
@@ -2520,11 +2528,6 @@
    "inbound_at": "2026-10-28T07:03:00Z"
   },
   {
-   "thread_id": "1a0f0f2cc2e9bb35",
-   "case": "SIMBA 好瓶 × Leo（品牌已確認影片與文案，指定 11/9 20:00 發布、11/13 刪除優惠訊息）",
-   "inbound_at": "2026-11-05T02:34:05Z"
-  },
-  {
    "thread_id": "1a1b0759cf57e9f6",
    "case": "SM CLASSICS LIVE × YY（對方希望改 LINE 聯繫、Reels 下週二前上線或改票券交換）",
    "inbound_at": "2026-11-06T11:07:07Z"
@@ -2550,11 +2553,6 @@
    "inbound_at": "2026-11-17T08:58:37Z"
   },
   {
-   "thread_id": "1a18b5a6a37673f0",
-   "case": "Disney 歡迎光臨魔法秘境 × YY（陽獅已回傳用印委刊單，待回傳雙方用印版）",
-   "inbound_at": "2026-11-18T07:37:45Z"
-  },
-  {
    "thread_id": "19f7f29b6d3ea2df",
    "case": "三星 Galaxy Z Fold8 × Rio（報價草稿 T2026-0069 未寄）",
    "inbound_at": "2026-11-19T09:22:43Z"
@@ -2563,6 +2561,16 @@
    "thread_id": "1a181521a7cab56e",
    "case": "Suntory VARON × Leo（DAC 請補社群貼文文案）",
    "inbound_at": "2026-11-23T10:47:04Z"
+  },
+  {
+   "thread_id": "1a1c4817a274c0e2",
+   "case": "Uber Eats 2026 金U獎 × Leo＋Rio（對方 11/24 確認成案 $180,000，草稿 T2026-0070 未寄）",
+   "inbound_at": "2026-11-24T03:21:27Z"
+  },
+  {
+   "thread_id": "1a1a6aaf81374270",
+   "case": "Samsung Odyssey G5 × 梅伯（名象追補充條款修訂版委刊單，已送法務）",
+   "inbound_at": "2026-11-24T08:05:55Z"
   }
  ]
 }

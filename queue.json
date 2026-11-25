@@ -1496,5 +1496,24 @@
    "draft_id": "r2513980269840209790",
    "replied_to_message_id": "1a20b93313c9dc41"
   }
+ },
+ {
+  "task_id": "T2026-0071",
+  "type": "委刊單",
+  "thread_id": "1a1c4817a274c0e2",
+  "case": "Uber Eats 2026 金U獎活動出席及分享 × Leo＋Rio",
+  "assignee": "jasmine",
+  "status": "草稿已建立",
+  "created": "2026-11-25",
+  "note": "對方 11/24 確認成案共 $180,000(net)（IG Reels 一則 $120,000 ＋ 金U獎頒獎典禮出席一次 $60,000），已產出委刊單 V20261125-01。甲方簽約代表人尚未取得，草稿內文已一併索取；出席時段異動（Leo 14:00-18:00／Rio 16:00-18:00）仍待確認兩人檔期。",
+  "drive_url": null,
+  "drive_note": "PDF 約 136KB，base64 內嵌不可行，未上傳 Drive；已用 SendUserFile 直接把 xlsx＋PDF 交給 Akimo，請從對話下載後夾帶寄出。",
+  "draft": {
+   "to": "wenyuan@i-shiu.com",
+   "cc": "akimo@dcard.cc",
+   "subject": "Re: 【合作邀約】Uber Eats 2026金​U獎 活動出席及分享",
+   "draft_id": "r-2949348180005823261",
+   "replied_to_message_id": "1a20b93313c9dc41"
+  }
  }
 ]
