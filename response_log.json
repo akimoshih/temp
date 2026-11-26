@@ -2464,6 +2464,126 @@
    "inbound_at": "2026-11-24T02:50:16Z",
    "replied_at": "2026-11-24T03:11:29Z",
    "confident": true
+  },
+  {
+   "thread_id": "1a211988b8b87807",
+   "responder": "oliver",
+   "case": "雨之情傘業《膽大黨》聯名傘 × YY（提供 A／B 兩方案）",
+   "inbound_at": "2026-11-24T09:33:00Z",
+   "replied_at": "2026-11-25T07:25:02Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a2118f306b15c05",
+   "responder": "oliver",
+   "case": "台灣三星 × 奧美 × YY（回問付費或互惠形式）",
+   "inbound_at": "2026-11-24T13:14:00Z",
+   "replied_at": "2026-11-25T07:14:49Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a2120704f048b36",
+   "responder": "oliver",
+   "case": "WitsPer AUKEY 充電新品 × 梅伯（逐項報價）",
+   "inbound_at": "2026-11-24T07:21:00Z",
+   "replied_at": "2026-11-25T09:25:41Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a212183f80b0fd3",
+   "responder": "oliver",
+   "case": "BLEACH 死神快閃店 × YY（同意互惠 Reels）",
+   "inbound_at": "2026-11-25T07:31:00Z",
+   "replied_at": "2026-11-25T09:44:30Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a1abcb5b7794841",
+   "responder": "oliver",
+   "case": "cacaFly 中華電信母親節 × Rio（確認影片形式）",
+   "inbound_at": "2026-11-25T09:41:40Z",
+   "replied_at": "2026-11-25T10:21:33Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a2124e89e6398de",
+   "responder": "oliver",
+   "case": "奈思診所醫美體驗（婉拒）",
+   "inbound_at": "2026-11-23T10:48:00Z",
+   "replied_at": "2026-11-25T10:43:49Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a2127ee57eafd94",
+   "responder": "oliver",
+   "case": "Johnnie Walker × ROSÉ 活動出席 × YY（婉拒）",
+   "inbound_at": "2026-11-24T10:18:00Z",
+   "replied_at": "2026-11-25T11:36:37Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a21280bf7c42998",
+   "responder": "oliver",
+   "case": "Typeless YouTube 專題影片（婉拒）",
+   "inbound_at": "2026-11-23T18:34:00Z",
+   "replied_at": "2026-11-25T11:38:39Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a212830c463cb2f",
+   "responder": "oliver",
+   "case": "Faiya AI × 逸筠（婉拒）",
+   "inbound_at": "2026-11-25T04:47:00Z",
+   "replied_at": "2026-11-25T11:41:10Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a2128540d2279b7",
+   "responder": "oliver",
+   "case": "TAFU 分潤合作 × YY（婉拒）",
+   "inbound_at": "2026-11-25T03:26:00Z",
+   "replied_at": "2026-11-25T11:43:34Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a212871868c22d6",
+   "responder": "oliver",
+   "case": "JADE DROP 年終團購 × YY（婉拒）",
+   "inbound_at": "2026-11-24T19:25:00Z",
+   "replied_at": "2026-11-25T11:45:35Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a2128931e98980c",
+   "responder": "oliver",
+   "case": "Beauty Date 韓國半永久彩妝（婉拒）",
+   "inbound_at": "2026-11-24T09:56:00Z",
+   "replied_at": "2026-11-25T11:47:53Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a2128c9d5162883",
+   "responder": "oliver",
+   "case": "環球影業《暴戾夜2》特映（婉拒）",
+   "inbound_at": "2026-11-23T08:10:00Z",
+   "replied_at": "2026-11-25T11:51:37Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a21483155893d77",
+   "responder": "jasmine",
+   "case": "Rachel Wine × Leo（回覆最快檔期 2027/1 月底）",
+   "inbound_at": "2026-11-18T05:57:00Z",
+   "replied_at": "2026-11-25T21:00:00Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a1a6aaf81374270",
+   "responder": "oliver",
+   "case": "Samsung Odyssey G5 × 梅伯（委刊單法務進度回覆）",
+   "inbound_at": "2026-11-24T08:05:55Z",
+   "replied_at": "2026-11-25T04:02:00Z",
+   "confident": true
   }
  ],
  "pending": [
@@ -2568,9 +2688,14 @@
    "inbound_at": "2026-11-24T03:21:27Z"
   },
   {
-   "thread_id": "1a1a6aaf81374270",
-   "case": "Samsung Odyssey G5 × 梅伯（名象追補充條款修訂版委刊單，已送法務）",
-   "inbound_at": "2026-11-24T08:05:55Z"
+   "thread_id": "1a166bd3c77aec2e",
+   "case": "INNISFREE × YY（AnyMind 回傳腳本 feedback 與廣告主邀約，待確認）",
+   "inbound_at": "2026-11-25T10:13:57Z"
+  },
+  {
+   "thread_id": "1a18b5a6a37673f0",
+   "case": "Disney 魔法秘境 × YY（陽獅請回饋觀影評分與感想，稿件待過稿、11/27 前上線）",
+   "inbound_at": "2026-11-25T13:42:40Z"
   }
  ]
 }
