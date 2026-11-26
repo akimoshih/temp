@@ -1515,5 +1515,22 @@
    "draft_id": "r-2949348180005823261",
    "replied_to_message_id": "1a20b93313c9dc41"
   }
+ },
+ {
+  "task_id": "T2026-0072",
+  "type": "報價回信",
+  "thread_id": "1a21483155893d77",
+  "case": "Rachel Wine 米糠酵素潔顏粉 × Leo",
+  "assignee": "jasmine",
+  "status": "草稿已建立",
+  "created": "2026-11-26",
+  "note": "英樵商貿 Elsie 11/26 確認檔期可配合 2027/1 月底並請我方提供報價。草稿依官方價目表 Leo（12.8W／120,001-150,000 級距）報 IG Reels $80,000(net)、IG 限動（靜態）$20,000(net)，另列授權兩週內 $15,000／兩週至一個月 $25,000(net)，並附收件資訊請對方寄試用品。",
+  "draft": {
+   "to": "elsie@rachelwine.com.tw",
+   "cc": "akimo@dcard.cc",
+   "subject": "Re: 【礦物彩妝邀約】Rachel Wine x Leo道仙人∣ 口碑推廣商業合作",
+   "draft_id": "r8118007759433992703",
+   "replied_to_message_id": "1a2168c4bcd7ebc8"
+  }
  }
 ]
