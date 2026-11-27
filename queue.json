@@ -1549,5 +1549,22 @@
    "draft_id": "r-2567327883696511167",
    "replied_to_message_id": "1a21adacde99647d"
   }
+ },
+ {
+  "task_id": "T2026-0074",
+  "type": "報價回信",
+  "thread_id": "1a1a66d57136b9ec",
+  "case": "EOG 無味艙 × Andrew（加開 FB 平台授權與請款方式）",
+  "assignee": "oliver",
+  "status": "草稿已建立",
+  "created": "2026-11-27",
+  "note": "小行星視覺整合行銷欣平 11/27 告知產品改 12 月寄出，並詢問廣告主可否加開 FB 平台的報價、以及走勞報單或發票。草稿重申 IG 單平台兩週 $8,000(net)／一個月 $15,000(net)、公司開立發票，並重列 IG 貼文 $45,000、Reels $55,000(net) 與合作原則。",
+  "draft": {
+   "to": "whiteholeee@gmail.com",
+   "cc": "akimo@dcard.cc, jasmine.wang@dcard.cc",
+   "subject": "Re: 【 寵物、菸味、霉味救星！台灣唯一專為「車內環境」設計，EOG 無味艙 】合作邀請",
+   "draft_id": "r-2561254658967517334",
+   "replied_to_message_id": "1a21be98a1153e0d"
+  }
  }
 ]
