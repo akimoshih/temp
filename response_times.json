@@ -1,38 +1,38 @@
 {
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 254,
+ "sample_size": 260,
  "excluded_low_confidence": 69,
  "by_person": {
   "jasmine": {
-   "n": 73,
-   "median_min": 338.8,
-   "mean_min": 1582.7,
-   "p90_min": 4879.2,
-   "work_median_min": 334.9,
-   "work_mean_min": 549.2,
-   "within_4h_pct": 38.4,
+   "n": 74,
+   "median_min": 345.5,
+   "mean_min": 1573.1,
+   "p90_min": 4866.7,
+   "work_median_min": 329.3,
+   "work_mean_min": 545.5,
+   "within_4h_pct": 37.8,
    "fastest_min": 5.0,
    "slowest_min": 10983.0
   },
   "oliver": {
-   "n": 181,
-   "median_min": 1468.5,
-   "mean_min": 2590.0,
-   "p90_min": 6926.5,
-   "work_median_min": 598.1,
-   "work_mean_min": 885.8,
-   "within_4h_pct": 22.1,
+   "n": 186,
+   "median_min": 1453.3,
+   "mean_min": 2543.5,
+   "p90_min": 6884.3,
+   "work_median_min": 595.9,
+   "work_mean_min": 874.5,
+   "within_4h_pct": 21.5,
    "fastest_min": 6.1,
    "slowest_min": 12746.1
   }
  },
  "overall": {
-  "n": 254,
-  "median_min": 1334.5,
-  "mean_min": 2300.5,
-  "work_median_min": 502.8,
-  "within_4h_pct": 26.8
+  "n": 260,
+  "median_min": 1319.1,
+  "mean_min": 2267.3,
+  "work_median_min": 497.1,
+  "within_4h_pct": 26.2
  },
  "pending": [
   {
@@ -139,11 +139,6 @@
    "thread_id": "1a166bd3c77aec2e",
    "case": "INNISFREE × YY（AnyMind 回傳腳本 feedback 與廣告主邀約，待確認）",
    "inbound_at": "2026-11-25T10:13:57Z"
-  },
-  {
-   "thread_id": "1a18b5a6a37673f0",
-   "case": "Disney 魔法秘境 × YY（陽獅請回饋觀影評分與感想，稿件待過稿、11/27 前上線）",
-   "inbound_at": "2026-11-25T13:42:40Z"
   }
  ]
 }

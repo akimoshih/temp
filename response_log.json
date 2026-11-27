@@ -2584,6 +2584,54 @@
    "inbound_at": "2026-11-24T08:05:55Z",
    "replied_at": "2026-11-25T04:02:00Z",
    "confident": true
+  },
+  {
+   "thread_id": "1a216da69512bc9e",
+   "responder": "oliver",
+   "case": "台灣大哥大 × VIVEE Bestie × YY（逐項報價）",
+   "inbound_at": "2026-11-25T02:55:00Z",
+   "replied_at": "2026-11-26T07:55:04Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a2176bfdf244274",
+   "responder": "oliver",
+   "case": "寶島眼鏡 K-Design × YY（分項報價＋近視與競業回覆）",
+   "inbound_at": "2026-11-25T09:45:00Z",
+   "replied_at": "2026-11-26T10:34:04Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a212183f80b0fd3",
+   "responder": "oliver",
+   "case": "BLEACH 死神快閃店 × YY（確認標註與攜伴）",
+   "inbound_at": "2026-11-26T03:29:26Z",
+   "replied_at": "2026-11-26T08:21:24Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a1a6aaf81374270",
+   "responder": "oliver",
+   "case": "Samsung Odyssey G5 × 梅伯（回傳更新版委刊單）",
+   "inbound_at": "2026-11-26T02:07:52Z",
+   "replied_at": "2026-11-26T10:03:12Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a18b5a6a37673f0",
+   "responder": "oliver",
+   "case": "Disney 魔法秘境 × YY（回覆影片修改時程）",
+   "inbound_at": "2026-11-26T10:39:59Z",
+   "replied_at": "2026-11-26T15:41:33Z",
+   "confident": true
+  },
+  {
+   "thread_id": "1a21483155893d77",
+   "responder": "jasmine",
+   "case": "Rachel Wine × Leo（報價 IG Reels $80,000）",
+   "inbound_at": "2026-11-26T06:30:09Z",
+   "replied_at": "2026-11-26T21:00:00Z",
+   "confident": true
   }
  ],
  "pending": [
@@ -2691,11 +2739,6 @@
    "thread_id": "1a166bd3c77aec2e",
    "case": "INNISFREE × YY（AnyMind 回傳腳本 feedback 與廣告主邀約，待確認）",
    "inbound_at": "2026-11-25T10:13:57Z"
-  },
-  {
-   "thread_id": "1a18b5a6a37673f0",
-   "case": "Disney 魔法秘境 × YY（陽獅請回饋觀影評分與感想，稿件待過稿、11/27 前上線）",
-   "inbound_at": "2026-11-25T13:42:40Z"
   }
  ]
 }
