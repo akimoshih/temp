@@ -1532,5 +1532,22 @@
    "draft_id": "r8118007759433992703",
    "replied_to_message_id": "1a2168c4bcd7ebc8"
   }
+ },
+ {
+  "task_id": "T2026-0073",
+  "type": "報價回信",
+  "thread_id": "1a2086eae4337683",
+  "case": "白蘭氏養蔘元氣凍 × Leo（原主委案轉推 Leo）",
+  "assignee": "jasmine",
+  "status": "草稿已建立",
+  "created": "2026-11-27",
+  "note": "主委因只做 IG Story 被 PASS 後，Jasmine 11/27 轉推 Leo；CAPSULE Ally 同日回覆業務評估可提案、請提供 Leo 報價。草稿依官方價目表 Leo（120,001-150,000 級距）報 IG Reels $80,000、IG Story 轉發帶連結 $20,000、Meta 廣告主一個月 $25,000、再製素材每版 $20,000(net)，並沿用 11/23 對主委的合作原則答覆。",
+  "draft": {
+   "to": "ally@capsulecorporation.cc",
+   "cc": "chamin.chiu@capsulecorporation.cc, bpu@capsulecorporation.cc, christina.yeh@capsulecorporation.cc, akimo@dcard.cc",
+   "subject": "Re: 【CAPSULE】白蘭氏養蔘元氣凍_合作邀約_吳至晟",
+   "draft_id": "r-2567327883696511167",
+   "replied_to_message_id": "1a21adacde99647d"
+  }
  }
 ]
