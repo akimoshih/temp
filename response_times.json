@@ -1,7 +1,7 @@
 {
- "updated": "2026-11-27",
+ "updated": "2026-11-28",
  "note": "回信速度統計。raw=實際經過時間；work=只計台北週一～五 09:00–19:00 的上班時間。資料為 Gmail 觀測樣本，時間戳為 T00:00:00Z 的訊息（日期截斷假影）已排除。",
- "sample_size": 260,
+ "sample_size": 264,
  "excluded_low_confidence": 69,
  "by_person": {
   "jasmine": {
@@ -16,23 +16,23 @@
    "slowest_min": 10983.0
   },
   "oliver": {
-   "n": 186,
+   "n": 190,
    "median_min": 1453.3,
-   "mean_min": 2543.5,
-   "p90_min": 6884.3,
+   "mean_min": 2523.2,
+   "p90_min": 6850.6,
    "work_median_min": 595.9,
-   "work_mean_min": 874.5,
-   "within_4h_pct": 21.5,
+   "work_mean_min": 867.5,
+   "within_4h_pct": 21.1,
    "fastest_min": 6.1,
    "slowest_min": 12746.1
   }
  },
  "overall": {
-  "n": 260,
+  "n": 264,
   "median_min": 1319.1,
-  "mean_min": 2267.3,
+  "mean_min": 2256.9,
   "work_median_min": 497.1,
-  "within_4h_pct": 26.2
+  "within_4h_pct": 25.8
  },
  "pending": [
   {
@@ -139,6 +139,21 @@
    "thread_id": "1a166bd3c77aec2e",
    "case": "INNISFREE × YY（AnyMind 回傳腳本 feedback 與廣告主邀約，待確認）",
    "inbound_at": "2026-11-25T10:13:57Z"
+  },
+  {
+   "thread_id": "1a2086eae4337683",
+   "case": "白蘭氏養蔘元氣凍 × Leo（已有草稿 T2026-0073 未寄）",
+   "inbound_at": "2026-11-27T02:33:58Z"
+  },
+  {
+   "thread_id": "1a1a66d57136b9ec",
+   "case": "EOG 無味艙 × Andrew（已有草稿 T2026-0074 未寄）",
+   "inbound_at": "2026-11-27T07:29:41Z"
+  },
+  {
+   "thread_id": "1a21483155893d77",
+   "case": "Rachel Wine × Leo（已報價 $80,000，對方寄出試用品待回覆）",
+   "inbound_at": "2026-11-27T01:50:13Z"
   }
  ]
 }
